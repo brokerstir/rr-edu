@@ -355,35 +355,77 @@ def parse_topic(
     return final_questions
 
 def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str, Any]]]) -> None:
+    """
+    Saves parsed questions to individual files and bundled topic files.
+    Updates topics.json manifest by merging newly parsed topics with existing
+    manifest entries or on-disk topic bundles.
+    """
     data_dir.mkdir(parents=True, exist_ok=True)
     questions_dir = data_dir / "questions"
     questions_dir.mkdir(parents=True, exist_ok=True)
 
-    manifest = []
+    manifest_file = data_dir / "topics.json"
+    manifest_dict = {}
+
+    # 1. Load existing manifest if present to preserve previously parsed topics
+    if manifest_file.exists():
+        try:
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                existing_manifest = json.load(f)
+                manifest_dict = {item["topic_number"]: item for item in existing_manifest}
+        except Exception as e:
+            print(f"⚠️ Warning: Could not parse existing topics.json: {e}")
+            manifest_dict = {}
+
+    # 2. Write individual question JSONs and topic bundles for current run
     for t_num, q_list in all_topics_data.items():
-        t_name = TOPIC_PAGES[t_num]["name"]
+        t_name = TOPIC_PAGES.get(t_num, {}).get("name", f"Topic {t_num}")
         t_filename = f"topic_{t_num}.json"
 
-        with open(data_dir / t_filename, "w", encoding="utf-8") as f:
-            json.dump(q_list, f, indent=2, ensure_ascii=False)
-
+        # Save individual question JSON files
         for q in q_list:
             q_file = questions_dir / f"{q['id']}.json"
             with open(q_file, "w", encoding="utf-8") as f:
                 json.dump(q, f, indent=2, ensure_ascii=False)
 
-        manifest.append({
+        # Save bundled topic JSON file
+        with open(data_dir / t_filename, "w", encoding="utf-8") as f:
+            json.dump(q_list, f, indent=2, ensure_ascii=False)
+
+        # Update or add entry in manifest dictionary
+        manifest_dict[t_num] = {
             "topic_number": t_num,
             "topic_name": t_name,
             "question_count": len(q_list),
             "bundle_file": f"data/{t_filename}"
-        })
+        }
 
-    with open(data_dir / "topics.json", "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    # 3. Double-check disk for any existing topic bundles not yet in manifest_dict
+    for t_num in [1, 2, 3, 4, 5]:
+        bundle_path = data_dir / f"topic_{t_num}.json"
+        if bundle_path.exists() and t_num not in manifest_dict:
+            try:
+                with open(bundle_path, "r", encoding="utf-8") as f:
+                    b_data = json.load(f)
+                t_name = TOPIC_PAGES.get(t_num, {}).get("name", f"Topic {t_num}")
+                manifest_dict[t_num] = {
+                    "topic_number": t_num,
+                    "topic_name": t_name,
+                    "question_count": len(b_data),
+                    "bundle_file": f"data/topic_{t_num}.json"
+                }
+            except Exception:
+                pass
 
-    print(f"\n🎉 Static S3 data files generated in: {data_dir.resolve()}")
+    # 4. Save sorted master manifest
+    sorted_manifest = [manifest_dict[k] for k in sorted(manifest_dict.keys())]
 
+    with open(manifest_file, "w", encoding="utf-8") as f:
+        json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
+
+    active_topics = [m["topic_number"] for m in sorted_manifest]
+    print(f"\n🎉 Successfully saved data files and updated master manifest 'topics.json'.")
+    print(f"   Active topics indexed in topics.json: {active_topics}")
 
 def main():
     parser = argparse.ArgumentParser()
