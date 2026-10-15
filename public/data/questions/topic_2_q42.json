@@ -1,0 +1,92 @@
+{
+  "id": "topic_2_q42",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 42,
+  "question_text": "The exponential function $y = a \\times 2^x + b$ passes through the points alongside:\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline y & 20 & p & 35 & q \\\\\\hline\\end{array}$$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down two linear equations which could be used to determine the values of $a$ and $b$.",
+      "final_answer": "$a + b = 20 \\text{ and } 4a + b = 35$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $(0, 20)$ to obtain $a + b = 20$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $(2, 35)$ to obtain $4a + b = 35$"
+        }
+      ],
+      "solution": "When $x = 0$, $y = 20$\n$\\therefore 20 = a \\times 2^0 + b$\n$\\therefore a + b = 20$ .... (1)\nWhen $x = 2$, $y = 35$\n$\\therefore 35 = a \\times 2^2 + b$\n$\\therefore 4a + b = 35$ .... (2)",
+      "ai_explanation": {
+        "concept_rule": "Substitute given $(x, y)$ coordinate pairs into the model equation $y = a \\times 2^x + b$ to form a system of linear equations.",
+        "step_by_step": [
+          "For $x = 0$, $y = 20$: $a \\times 2^0 + b = 20 \\implies a(1) + b = 20 \\implies a + b = 20$.",
+          "For $x = 2$, $y = 35$: $a \\times 2^2 + b = 35 \\implies a(4) + b = 35 \\implies 4a + b = 35$."
+        ],
+        "common_pitfalls": "Calculating $2^0$ as 0 instead of 1."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Solve the linear equations simultaneously to find $a$ and $b$.",
+      "final_answer": "$a = 5 \\text{ and } b = 15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express $b$ in terms of $a$ and substitute into the second equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $a = 5$ and $b = 15$"
+        }
+      ],
+      "solution": "Using (1), $b = 20 - a$ .... (3)\nSubstituting $b = 20 - a$ into (2) gives\n$4a + 20 - a = 35$\n$\\therefore 3a = 15$\n$\\therefore a = 5$\nSubstituting $a = 5$ into (3) gives $b = 20 - 5 = 15$\n$\\therefore a = 5 \\text{ and } b = 15$",
+      "ai_explanation": {
+        "concept_rule": "Solve the simultaneous linear equations using substitution or elimination.",
+        "step_by_step": [
+          "Subtract equation (1) from equation (2): $(4a + b) - (a + b) = 35 - 20$.",
+          "Simplify: $3a = 15 \\implies a = 5$.",
+          "Substitute $a = 5$ into $a + b = 20$: $5 + b = 20 \\implies b = 15$."
+        ],
+        "common_pitfalls": "Arithmetic errors when subtracting equations."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence find the values of $p$ and $q$.",
+      "final_answer": "$p = 25, q = 55$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 1$ to find $p$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $p = 25$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 3$ to find $q$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $q = 55$"
+        }
+      ],
+      "solution": "Using b, $y = 5 \\times 2^x + 15$\nWhen $x = 1$, $y = p$\n$\\therefore p = 5 \\times 2^1 + 15$\n$\\therefore p = 25$\nWhen $x = 3$, $y = q$\n$\\therefore q = 5 \\times 2^3 + 15$\n$\\therefore q = 55$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the values of $a$ and $b$ to complete the function, then substitute $x = 1$ and $x = 3$ to find the corresponding $y$-values.",
+        "step_by_step": [
+          "The equation is $y = 5 \\times 2^x + 15$.",
+          "When $x = 1$: $p = 5(2) + 15 = 10 + 15 = 25$.",
+          "When $x = 3$: $q = 5(8) + 15 = 40 + 15 = 55$."
+        ],
+        "common_pitfalls": "Calculating $2^3$ as 6 instead of 8."
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "topic_2_q33",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 33,
+  "question_text": "Consider the graph of the reciprocal function $f(x) = \\frac{k}{x}$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $k$.",
+      "final_answer": "$k = 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $(5, 2)$ into $y = \\frac{k}{x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $k$"
+        }
+      ],
+      "solution": "When $x = 5$, $y = 2$\n$\\therefore 2 = \\frac{k}{5}$\n$\\therefore k = 10$",
+      "ai_explanation": {
+        "concept_rule": "Since the point lies on the curve, its coordinates satisfy the function equation.",
+        "step_by_step": [
+          "Substitute $x = 5$ and $y = 2$ into $y = \\frac{k}{x}$.",
+          "Multiply both sides by $5$: $k = 2 \\times 5 = 10$."
+        ],
+        "common_pitfalls": "Dividing $2$ by $5$ instead of multiplying."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the domain and range of the function.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\ne 0\\}, \\text{ Range: } \\{y \\mid y \\ne 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range"
+        }
+      ],
+      "solution": "The domain is $\\{x \\mid x \\ne 0\\}$.\nThe range is $\\{y \\mid y \\ne 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For a standard reciprocal function $y = \\frac{k}{x}$, division by zero is undefined, and the output can never be zero.",
+        "step_by_step": [
+          "Denominator cannot be zero: $x \\ne 0$.",
+          "The numerator $10 \\ne 0$, so $y \\ne 0$."
+        ],
+        "common_pitfalls": "Including zero in either the domain or the range."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $f(-\\frac{1}{2})$.",
+      "final_answer": "$-20$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $x = -\\frac{1}{2}$ into $f(x) = \\frac{10}{x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation to $-20$"
+        }
+      ],
+      "solution": "$f\\left(-\\frac{1}{2}\\right) = \\frac{10}{-\\frac{1}{2}} = -20$",
+      "ai_explanation": {
+        "concept_rule": "Dividing by a fraction is equivalent to multiplying by its reciprocal.",
+        "step_by_step": [
+          "Substitute $x = -\\frac{1}{2}$: $f(-\\frac{1}{2}) = \\frac{10}{-1/2}$.",
+          "Multiply by reciprocal: $10 \\times (-2) = -20$."
+        ],
+        "common_pitfalls": "Dividing $10$ by $2$ to get $-5$ instead of multiplying by $2$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Is the function self-inverse? Explain your answer.",
+      "final_answer": "$f^{-1}(x) = \\frac{10}{x} = f(x) \\implies f \\text{ is self-inverse}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Swapping $x$ and $y$ and rearranging to find $f^{-1}(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding that $f^{-1}(x) = f(x)$, hence self-inverse"
+        }
+      ],
+      "solution": "$f$ is $y = \\frac{10}{x}$\n$\\therefore f^{-1}$ is $x = \\frac{10}{y}$\n$\\therefore y = \\frac{10}{x}$\nSo, $f^{-1}(x) = \\frac{10}{x} = f(x)$.\n$\\therefore f$ is self-inverse.",
+      "ai_explanation": {
+        "concept_rule": "A function is self-inverse if $f^{-1}(x) = f(x)$ for all $x$ in its domain.",
+        "step_by_step": [
+          "Write $y = \\frac{10}{x}$.",
+          "Swap $x$ and $y$: $x = \\frac{10}{y}$.",
+          "Solve for $y$: $y = \\frac{10}{x}$.",
+          "Since $f^{-1}(x) = \\frac{10}{x} = f(x)$, $f$ is self-inverse."
+        ],
+        "common_pitfalls": "Stating $f$ is self-inverse without algebraically deriving $f^{-1}(x)$."
+      }
+    }
+  ]
+}

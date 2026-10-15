@@ -1,0 +1,87 @@
+{
+  "id": "topic_2_q1",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 1,
+  "question_text": "A line segment has equation $4x - 3y + 2 = 0$. Its midpoint is $(4, 6)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "State the gradient of the line segment.",
+      "final_answer": "$\\frac{4}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearrange $4x - 3y + 2 = 0$ to $y = \\frac{4}{3}x + \\frac{2}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identify the coefficient of $x$ as $m = \\frac{4}{3}$"
+        }
+      ],
+      "solution": "Rearranging $4x - 3y + 2 = 0 \\implies 3y = 4x + 2 \\implies y = \\frac{4}{3}x + \\frac{2}{3}$. The gradient of the line segment is $\\frac{4}{3}$.",
+      "ai_explanation": {
+        "concept_rule": "In general line equation $ax + by + c = 0$, the gradient $m = -\\frac{a}{b}$.",
+        "step_by_step": [
+          "Isolate $y$: $3y = 4x + 2$.",
+          "Divide by 3: $y = \\frac{4}{3}x + \\frac{2}{3}$.",
+          "State the coefficient of $x$ as the gradient $m = \\frac{4}{3}$."
+        ],
+        "common_pitfalls": "Mistaking $4$ for the gradient without dividing by $3$."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "State the gradient of its perpendicular bisector.",
+      "final_answer": "$-\\frac{3}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply negative reciprocal formula $m_{\\perp} = -\\frac{1}{m}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $m_{\\perp} = -\\frac{3}{4}$"
+        }
+      ],
+      "solution": "The perpendicular bisector has gradient $m_{\\perp} = -\\frac{1}{4/3} = -\\frac{3}{4}$.",
+      "ai_explanation": {
+        "concept_rule": "Perpendicular lines have gradients satisfying $m_1 m_2 = -1$.",
+        "step_by_step": [
+          "Take the negative reciprocal of $\\frac{4}{3}$: $-\\frac{1}{4/3} = -\\frac{3}{4}$."
+        ],
+        "common_pitfalls": "Forgetting to negate the reciprocal gradient."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the equation of the perpendicular bisector. Write your answer in the form $ax + by + d = 0$.",
+      "final_answer": "$3x + 4y - 36 = 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute midpoint $(4, 6)$ and gradient $-\\frac{3}{4}$ into point-slope equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Multiply through by 4 to clear denominator"
+        },
+        {
+          "code": "A1",
+          "desc": "Rearrange to general form $3x + 4y - 36 = 0$"
+        }
+      ],
+      "solution": "The perpendicular bisector passes through midpoint $(4, 6)$ with gradient $m = -\\frac{3}{4}$. Using $y - y_1 = m(x - x_1)$: $y - 6 = -\\frac{3}{4}(x - 4) \\implies 4(y - 6) = -3(x - 4) \\implies 4y - 24 = -3x + 12 \\implies 3x + 4y - 36 = 0$.",
+      "ai_explanation": {
+        "concept_rule": "The perpendicular bisector passes through the segment's midpoint with the perpendicular slope.",
+        "step_by_step": [
+          "Substitute point $(4, 6)$ and $m = -\\frac{3}{4}$ into $y - 6 = -\\frac{3}{4}(x - 4)$.",
+          "Clear denominator: $4y - 24 = -3x + 12$.",
+          "Collect all terms on one side: $3x + 4y - 36 = 0$."
+        ],
+        "common_pitfalls": "Sign error when distributing $-3(x - 4)$ to get $+12$."
+      }
+    }
+  ]
+}

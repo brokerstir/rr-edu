@@ -1,0 +1,107 @@
+{
+  "id": "topic_2_q56",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 56,
+  "question_text": "Consider the function $g: x \\mapsto 4 - \\ln(x-2)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain and range of $g$.",
+      "final_answer": "$\\{x \\mid x > 2\\}, \\{y \\mid y \\in \\mathbb{R}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting argument of logarithm strictly greater than zero: $x - 2 > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range"
+        }
+      ],
+      "solution": "$\\ln(x - 2)$ is defined when $x - 2 > 0 \\implies x > 2$.\nSo, the domain is $\\{x \\mid x > 2\\}$ and the range is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The natural logarithm $\\ln(u)$ is defined only for $u > 0$, and its range is the set of all real numbers $\\mathbb{R}$.",
+        "step_by_step": [
+          "Set the inner linear argument greater than zero: $x - 2 > 0$, which yields $x > 2$.",
+          "The linear transformation $4 - \\ln(x-2)$ does not bound the outputs of $\\ln$, so the range remains all real numbers $\\{y \\mid y \\in \\mathbb{R}\\}$."
+        ],
+        "common_pitfalls": "Including $x = 2$ in the domain ($x \\ge 2$), which is undefined for $\\ln$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Write down the equation of the asymptote of $y = g(x)$.",
+      "final_answer": "$x = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Investigating limits as $x \\to 2^+$ and $x \\to \\infty$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating vertical asymptote $x = 2$ and no horizontal asymptote"
+        }
+      ],
+      "solution": "As $x \\to 2^+$, $y \\to \\infty$, so the vertical asymptote is $x = 2$.\nAs $x \\to \\infty$, $y \\to -\\infty$, so there is no horizontal asymptote.",
+      "ai_explanation": {
+        "concept_rule": "A vertical asymptote of $y = a + b\\ln(x-c)$ occurs where the argument is zero ($x = c$). A horizontal asymptote exists if $\\lim_{x \\to \\infty} y$ is finite.",
+        "step_by_step": [
+          "Find where the argument of the logarithm approaches zero: $x - 2 \\to 0 \\implies x = 2$.",
+          "Evaluate $\\lim_{x \\to 2^+} (4 - \\ln(x - 2)) = 4 - (-\\infty) = \\infty$, confirming a vertical asymptote at $x = 2$.",
+          "Evaluate $\\lim_{x \\to \\infty} (4 - \\ln(x - 2)) = -\\infty$, indicating no horizontal asymptote."
+        ],
+        "common_pitfalls": "Assuming logarithmic functions have a horizontal asymptote at large values of $x$ because they grow slowly."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the function $h$ which is a horizontal stretch of $g$ with scale factor $\\frac{1}{2}$.",
+      "final_answer": "$h(x) = 4 - \\ln(2x - 2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the horizontal stretch rule $h(x) = g(2x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression for $h(x)$"
+        }
+      ],
+      "solution": "The graph of $y = h(x)$ is a horizontal stretch of $y = g(x)$ with scale factor $\\frac{1}{2}$.\n$\\therefore h(x) = g(2x)$\n$\\therefore h(x) = 4 - \\ln(2x - 2)$",
+      "ai_explanation": {
+        "concept_rule": "A horizontal stretch by scale factor $k$ sends $x \\mapsto \\frac{x}{k}$. For scale factor $\\frac{1}{2}$, this corresponds to replacing $x$ with $2x$.",
+        "step_by_step": [
+          "Recognize horizontal stretch factor of $\\frac{1}{2}$ means $h(x) = g(2x)$.",
+          "Substitute $2x$ for $x$ in $g(x) = 4 - \\ln(x - 2)$ to get $h(x) = 4 - \\ln(2x - 2)$."
+        ],
+        "common_pitfalls": "Writing $g(\\frac{1}{2}x)$ instead of $g(2x)$ for a horizontal stretch with factor $\\frac{1}{2}$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Write down the equation of the asymptote of $y = h(x)$.",
+      "final_answer": "$x = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the stretch factor to the asymptote equation or solving $2x - 2 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct asymptote $x = 1$"
+        }
+      ],
+      "solution": "$y = g(x)$ has vertical asymptote $x = 2$ {using b}\n$\\therefore y = h(x)$ has vertical asymptote $x = \\frac{1}{2}(2) = 1$.",
+      "ai_explanation": {
+        "concept_rule": "A horizontal stretch with scale factor $k$ transforms a vertical line $x = c$ to $x = k \\cdot c$.",
+        "step_by_step": [
+          "The vertical asymptote of $g(x)$ is $x = 2$.",
+          "Apply the horizontal stretch with scale factor $\\frac{1}{2}$: $x = \\frac{1}{2} \\times 2 = 1$."
+        ],
+        "common_pitfalls": "Multiplying the asymptote by $2$ instead of $\\frac{1}{2}$."
+      }
+    }
+  ]
+}

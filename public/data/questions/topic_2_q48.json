@@ -1,0 +1,40 @@
+{
+  "id": "topic_2_q48",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 48,
+  "question_text": "The population $P$ of a species after $n$ months follows the rule $P = 1000 + a e^{kn}$. The initial population was 2000. After 1 year the population was 4000. Find how long it will take for the population to reach 10 000.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "$P = 1000 + ae^{kn}$, initial population 2000, $P(12) = 4000$. Find $n$ for $P = 10000$.",
+      "final_answer": "$n = 24 \\text{ months (or } 2 \\text{ years)}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $n = 0, P = 2000 \\implies a = 1000$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $n = 12, P = 4000 \\implies e^{12k} = 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve $1000 + 1000(3^{n/12}) = 10000 \\implies 3^{n/12} = 9 \\implies n = 24$"
+        }
+      ],
+      "solution": "At $n = 0$, $2000 = 1000 + a(1) \\implies a = 1000$. At $n = 12$, $4000 = 1000 + 1000e^{12k} \\implies e^{12k} = 3$. Thus $P = 1000 + 1000(3^{n/12})$. Set $P = 10000 \\implies 9000 = 1000(3^{n/12}) \\implies 3^{n/12} = 9 = 3^2 \\implies \\frac{n}{12} = 2 \\implies n = 24$ months.",
+      "ai_explanation": {
+        "concept_rule": "Find constants $a$ and $k$ sequentially from given boundary values, then solve for target time $n$.",
+        "step_by_step": [
+          "Substitute $n = 0, P = 2000 \\implies a = 1000$.",
+          "Substitute $n = 12, P = 4000 \\implies e^{12k} = 3$.",
+          "Set $1000 + 1000(3^{n/12}) = 10000 \\implies 3^{n/12} = 9 = 3^2$.",
+          "Solve $\\frac{n}{12} = 2 \\implies n = 24$ months."
+        ],
+        "common_pitfalls": "Using $n = 1$ instead of $n = 12$ when time is given in 1 year."
+      }
+    }
+  ]
+}

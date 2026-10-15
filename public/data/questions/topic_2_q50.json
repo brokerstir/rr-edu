@@ -1,0 +1,114 @@
+{
+  "id": "topic_2_q50",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 50,
+  "question_text": "Consider $f(x) = 2^{x-1}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $f(1)$ and $f(2)$.",
+      "final_answer": "$f(1) = 1,\\ f(2) = 2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Calculate $f(1) = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $f(2) = 2$"
+        }
+      ],
+      "solution": "$f(1) = 2^0 = 1$\n$f(2) = 2^1 = 2$",
+      "ai_explanation": {
+        "concept_rule": "Substitute given values directly into $f(x) = 2^{x-1}$.",
+        "step_by_step": [
+          "For $x = 1$: $f(1) = 2^{1-1} = 2^0 = 1$.",
+          "For $x = 2$: $f(2) = 2^{2-1} = 2^1 = 2$."
+        ],
+        "common_pitfalls": "Miscalculating powers of 2, e.g., thinking $2^0 = 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Graph $y = f(x)$ and its inverse function on the same set of axes.",
+      "final_answer": "$\\text{Graph showing } y = f(x) \\text{ and } y = f^{-1}(x) \\text{ reflected in } y = x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch $y = f(x)$ passing through $(1, 1)$ and $(2, 2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch $y = f^{-1}(x)$ as the reflection of $y = f(x)$ in the line $y = x$"
+        }
+      ],
+      "solution": "The graph of $y = f^{-1}(x)$ is a reflection of the graph of $y = f(x)$ in the line $y = x$.\nBoth curves intersect the line $y = x$ at $(1, 1)$ and $(2, 2)$.",
+      "ai_explanation": {
+        "concept_rule": "The graph of an inverse function $f^{-1}(x)$ is obtained by reflecting the graph of $f(x)$ across the line $y = x$.",
+        "step_by_step": [
+          "Plot the line $y = x$.",
+          "Plot $y = 2^{x-1}$ with points $(1, 1)$ and $(2, 2)$ and asymptote $y = 0$.",
+          "Reflect the curve across $y = x$ to obtain $y = f^{-1}(x)$, with asymptote $x = 0$."
+        ],
+        "common_pitfalls": "Drawing the asymptotes incorrectly on the wrong axes."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $f^{-1}(x)$.",
+      "final_answer": "$f^{-1}(x) = \\log_2 x + 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Swap $x$ and $y$ to get $x = 2^{y-1}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Convert to logarithmic form $y - 1 = \\log_2 x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Isolate $y$ to obtain $f^{-1}(x) = \\log_2 x + 1$"
+        }
+      ],
+      "solution": "$f$ is $y = 2^{x-1}$\n$\\therefore f^{-1}$ is $x = 2^{y-1}$\n$\\therefore y - 1 = \\log_2 x$\n$\\therefore y = \\log_2 x + 1$\nSo, $f^{-1}(x) = \\log_2 x + 1$",
+      "ai_explanation": {
+        "concept_rule": "To find an inverse function algebraically, interchange $x$ and $y$ and solve for $y$ using logarithms.",
+        "step_by_step": [
+          "Start with $y = 2^{x-1}$.",
+          "Interchange $x$ and $y$: $x = 2^{y-1}$.",
+          "Apply base-2 logarithm: $\\log_2(x) = y - 1$.",
+          "Add 1 to both sides: $y = \\log_2(x) + 1$."
+        ],
+        "common_pitfalls": "Writing $\\log_2(x+1)$ instead of $\\log_2(x) + 1$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "State the domain and range of $f(x)$ and $f^{-1}(x)$.",
+      "final_answer": "$\\text{Domain of } f: \\{x \\mid x \\in \\mathbb{R}\\}, \\text{ Range of } f: \\{y \\mid y > 0\\}; \\text{ Domain of } f^{-1}: \\{x \\mid x > 0\\}, \\text{ Range of } f^{-1}: \\{y \\mid y \\in \\mathbb{R}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for $f^{-1}(x)$"
+        }
+      ],
+      "solution": "The domain of $f(x)$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range of $f(x)$ is $\\{y \\mid y > 0\\}$.\nThe domain of $f^{-1}(x)$ is $\\{x \\mid x > 0\\}$.\nThe range of $f^{-1}(x)$ is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of $f^{-1}$ is the range of $f$, and the range of $f^{-1}$ is the domain of $f$.",
+        "step_by_step": [
+          "For $f(x) = 2^{x-1}$, exponential functions are defined for all real numbers: domain is $\\mathbb{R}$.",
+          "Outputs are strictly positive: range is $y > 0$.",
+          "Swap the domain and range for $f^{-1}(x)$: domain is $x > 0$, range is $y \\in \\mathbb{R}$."
+        ],
+        "common_pitfalls": "Swapping the domain and range descriptions incorrectly between $f$ and $f^{-1}$."
+      }
+    }
+  ]
+}

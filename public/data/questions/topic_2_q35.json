@@ -1,0 +1,115 @@
+{
+  "id": "topic_2_q35",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 35,
+  "question_text": "Functions $f$ and $g$ are given by $f : x \\mapsto e^{x+1}$ and $g : x \\mapsto \\ln x - 1$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $(f \\circ g)(x)$ and state its domain and range.",
+      "final_answer": "$(f \\circ g)(x) = x$, $\\text{Domain: } \\{x \\mid x > 0\\}$, $\\text{Range: } \\{y \\mid y > 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $g(x)$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to obtain $(f \\circ g)(x) = x$"
+        },
+        {
+          "code": "A1",
+          "desc": "State correct domain and range"
+        }
+      ],
+      "solution": "$(f \\circ g)(x) = f(g(x)) = f(\\ln x - 1) = e^{(\\ln x - 1) + 1} = e^{\\ln x} = x$.\nThe domain is $\\{x \\mid x > 0\\}$.\nThe range is $\\{y \\mid y > 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The composite function $(f \\circ g)(x) = f(g(x))$. Its domain is restricted by the domain of the inner function $g(x)$. Since $\\ln x$ is only defined for $x > 0$, the domain of $(f \\circ g)(x)$ is $x > 0$, giving a range of $y > 0$.",
+        "step_by_step": [
+          "Substitute $g(x) = \\ln x - 1$ into $f(x) = e^{x+1}$: $f(\\ln x - 1) = e^{(\\ln x - 1)+1}$.",
+          "Simplify the exponent: $\\ln x - 1 + 1 = \\ln x$, so $e^{\\ln x} = x$.",
+          "Determine the domain: inner function $\\ln x$ requires $x > 0$.",
+          "Since $(f \\circ g)(x) = x$ for $x > 0$, the range is $y > 0$."
+        ],
+        "common_pitfalls": "Forgetting that $(f \\circ g)(x) = x$ does not have a domain of all real numbers because the inner function $\\ln x$ is only defined for $x > 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $(g \\circ f)(x)$ and state its domain and range.",
+      "final_answer": "$(g \\circ f)(x) = x$, $\\text{Domain: } \\{x \\mid x \\in \\mathbb{R}\\}$, $\\text{Range: } \\{y \\mid y \\in \\mathbb{R}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $f(x)$ into $g(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to obtain $(g \\circ f)(x) = x$"
+        },
+        {
+          "code": "A1",
+          "desc": "State correct domain and range"
+        }
+      ],
+      "solution": "$(g \\circ f)(x) = g(f(x)) = g(e^{x+1}) = \\ln(e^{x+1}) - 1 = x + 1 - 1 = x$.\nThe domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For $(g \\circ f)(x) = g(f(x))$, substitute $f(x)$ into $g(x)$. Since $e^{x+1} > 0$ for all real $x$, the logarithm is always well-defined, so the domain is all real numbers.",
+        "step_by_step": [
+          "Substitute $f(x) = e^{x+1}$ into $g(x) = \\ln x - 1$ to get $\\ln(e^{x+1}) - 1$.",
+          "Use the inverse property $\\ln(e^u) = u$ to obtain $(x + 1) - 1 = x$.",
+          "The inner function $f(x) = e^{x+1}$ is defined for all $x \\in \\mathbb{R}$ and always positive, so the domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $(g \\circ f)(x) = x$ over all reals, the range is $\\{y \\mid y \\in \\mathbb{R}\\}$."
+        ],
+        "common_pitfalls": "Incorrectly restricting the domain because of the natural log in $g$, ignoring that its input $e^{x+1}$ is strictly positive for all $x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Graph $y = f(x)$ and $y = g(x)$ on the same set of axes.",
+      "final_answer": "$Graph showing $y = e^{x+1}$ with horizontal asymptote $y=0$ and intercept $(0,e)$, $y = \\ln x - 1$ with vertical asymptote $x=0$ and intercept $(e,0)$, and the line of symmetry $y = x$.$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch exponential curve and logarithmic curve"
+        },
+        {
+          "code": "A1",
+          "desc": "Include line of reflection $y = x$ and label key features"
+        }
+      ],
+      "solution": "Sketch of $y = e^{x+1}$, $y = \\ln x - 1$, and the line $y = x$ showing reflectional symmetry.",
+      "ai_explanation": {
+        "concept_rule": "Inverse functions are reflections of each other across the diagonal line $y = x$.",
+        "step_by_step": [
+          "Plot the curve $y = e^{x+1}$, passing through $(0, e)$ and $(-1, 1)$, with horizontal asymptote $y=0$.",
+          "Plot the curve $y = \\ln x - 1$, passing through $(e, 0)$ and $(1, -1)$, with vertical asymptote $x=0$.",
+          "Draw the dashed line $y = x$ to demonstrate that each curve is a reflection of the other."
+        ],
+        "common_pitfalls": "Swapping the asymptotes (exponential has horizontal asymptote, logarithmic has vertical asymptote)."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "State the relationship between $f$ and $g$.",
+      "final_answer": "$The graph of $y = g(x)$ is a reflection of the graph of $y = f(x)$ in the line $y = x$, so $f$ and $g$ are inverses of one another.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify reflection across $y = x$ and conclude that $f$ and $g$ are inverse functions"
+        }
+      ],
+      "solution": "The graph of $y = g(x)$ is a reflection of the graph of $y = f(x)$ in the line $y = x$.\n$\\therefore f$ and $g$ are inverses of one another.",
+      "ai_explanation": {
+        "concept_rule": "Two functions are inverses if and only if their graphs are reflections of one another across the line $y = x$.",
+        "step_by_step": [
+          "Observe that reflecting any point $(a, b)$ on $y = f(x)$ across $y = x$ gives $(b, a)$ on $y = g(x)$.",
+          "Conclude that $f$ and $g$ are mutually inverse functions."
+        ],
+        "common_pitfalls": "Stating that they are inverses without referencing the geometric property of reflection across the line $y = x$."
+      }
+    }
+  ]
+}

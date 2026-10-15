@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ComputeEngine } from '@cortex-js/compute-engine';
 import katex from 'katex';
-
-const ce = new ComputeEngine();
 
 // Helper Component: Renders KaTeX math safely
 function MathText({ text }) {
@@ -31,28 +28,17 @@ function MathText({ text }) {
   return <span ref={containerRef} />;
 }
 
-// Option 1 Component: Text Input + Live KaTeX Preview
-function SimpleMathInput({ value, onChange, onCheck }) {
+// Optional Work Input Component (Linear Input + KaTeX Live Preview)
+function OptionalWorkInput({ value, onChange }) {
   return (
     <div className="space-y-2 w-full">
-      <div className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center">
-        <input
-          type="text"
-          value={value || ''}
-          onChange={(e) => onChange(e.target.value)}
-          onKeyDown={(e) => { if (e.key === 'Enter') onCheck(); }}
-          placeholder="e.g. 81m^12 or (x^5 y^10)/32"
-          className="flex-1 bg-slate-950 border border-slate-800 text-white rounded-xl px-4 py-2.5 text-base font-mono focus:outline-none focus:border-indigo-500 transition-colors"
-        />
-        <button
-          onClick={onCheck}
-          className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-semibold text-sm rounded-xl transition-all shadow-md shadow-indigo-600/20 whitespace-nowrap"
-        >
-          Check Answer
-        </button>
-      </div>
-
-      {/* Live KaTeX Preview Box */}
+      <input
+        type="text"
+        value={value || ''}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder="Optional: Type scratch work or linear math (e.g. 81m^12 or (x^5 y^10)/32)..."
+        className="w-full bg-slate-950 border border-slate-800 text-slate-200 rounded-xl px-4 py-2.5 text-sm font-mono focus:outline-none focus:border-indigo-500 transition-colors"
+      />
       {value && value.trim() !== '' && (
         <div className="px-3 py-2 bg-slate-900/80 border border-slate-800 rounded-lg text-xs text-slate-300 flex items-center gap-2">
           <span className="text-indigo-400 font-bold uppercase text-[10px]">Live Preview:</span>
@@ -71,12 +57,12 @@ export default function App() {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Student Performance & Input States
-  const [userInputs, setUserInputs] = useState({});       // { subKey: string }
-  const [checkResults, setCheckResults] = useState({});   // { subKey: { status: 'correct'|'incorrect', mode: 'auto'|'self', attempts: number } }
-  const [selfGradeActive, setSelfGradeActive] = useState({}); // { subKey: boolean }
+  // Student Interactive States
+  const [userInputs, setUserInputs] = useState({});        // { subKey: string }
+  const [revealedTarget, setRevealedTarget] = useState({}); // { subKey: boolean }
+  const [selfGradeStatus, setSelfGradeStatus] = useState({}); // { subKey: 'correct' | 'incorrect' }
 
-  // Drawers
+  // Solution Drawers
   const [showMarkscheme, setShowMarkscheme] = useState({});
   const [showSolution, setShowSolution] = useState({});
   const [showAiLesson, setShowAiLesson] = useState({});
@@ -96,8 +82,8 @@ export default function App() {
       setSelectedTopic(topicNumber);
       setCurrentIndex(0);
       setUserInputs({});
-      setCheckResults({});
-      setSelfGradeActive({});
+      setRevealedTarget({});
+      setSelfGradeStatus({});
       setShowMarkscheme({});
       setShowSolution({});
       setShowAiLesson({});
@@ -108,49 +94,14 @@ export default function App() {
 
   const handleInputChange = (subKey, val) => {
     setUserInputs(prev => ({ ...prev, [subKey]: val }));
-    // Reset status when student types
-    setCheckResults(prev => ({ ...prev, [subKey]: null }));
   };
 
-  // Auto-Check Logic
-  const handleAutoCheck = (subKey, rawExpected) => {
-    const studentInput = userInputs[subKey] || '';
-    if (!studentInput.trim()) return;
-
-    const expectedClean = rawExpected.replace(/^\$/, '').replace(/\$$/, '').trim();
-    let isEquivalent = false;
-
-    try {
-      const studentExpr = ce.parse(studentInput);
-      const expectedExpr = ce.parse(expectedClean);
-      isEquivalent = studentExpr.isSame(expectedExpr) || studentExpr.evaluate().isSame(expectedExpr.evaluate());
-    } catch (e) {
-      // Fallback trimmed match
-      isEquivalent = studentInput.replace(/\s+/g, '') === expectedClean.replace(/\s+/g, '');
-    }
-
-    const prevAttempts = checkResults[subKey]?.attempts || 0;
-    setCheckResults(prev => ({
-      ...prev,
-      [subKey]: {
-        status: isEquivalent ? 'correct' : 'incorrect',
-        mode: 'auto',
-        attempts: prevAttempts + 1
-      }
-    }));
+  const handleRevealTarget = (subKey) => {
+    setRevealedTarget(prev => ({ ...prev, [subKey]: true }));
   };
 
-  // Paper Self-Grade Logic
-  const handleSelfGradeResult = (subKey, status) => {
-    const prevAttempts = checkResults[subKey]?.attempts || 0;
-    setCheckResults(prev => ({
-      ...prev,
-      [subKey]: {
-        status: status, // 'correct' | 'incorrect'
-        mode: 'self',
-        attempts: prevAttempts + 1
-      }
-    }));
+  const handleSelfGrade = (subKey, status) => {
+    setSelfGradeStatus(prev => ({ ...prev, [subKey]: status }));
   };
 
   if (!selectedTopic) {
@@ -164,7 +115,7 @@ export default function App() {
             Skill Builder Practice Engine
           </h1>
           <p className="text-slate-400 text-sm mt-2">
-            Practice questions with live math input evaluation or scratchpad paper self-grading.
+            Practice questions on paper or on screen, check target answers, and self-grade your work.
           </p>
         </header>
 
@@ -195,7 +146,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Sticky Header */}
+      {/* Header */}
       <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button onClick={() => setSelectedTopic(null)} className="text-slate-400 hover:text-white text-sm font-semibold">
@@ -226,12 +177,12 @@ export default function App() {
             <MathText text={currentQ?.question_text} />
           </div>
 
-          {/* Subparts List */}
+          {/* Subparts */}
           <div className="space-y-6 pt-2">
             {currentQ?.subparts.map((sp, idx) => {
               const subKey = `${currentQ.id}_sp_${idx}`;
-              const result = checkResults[subKey];
-              const isSelfGrading = selfGradeActive[subKey];
+              const isTargetRevealed = revealedTarget[subKey];
+              const gradeStatus = selfGradeStatus[subKey];
 
               return (
                 <div key={idx} className="bg-slate-950/60 border border-slate-800 rounded-xl p-5 space-y-4">
@@ -243,87 +194,71 @@ export default function App() {
                     </div>
                   </div>
 
-                  {/* Mode 1: Auto-Check Input */}
-                  {!isSelfGrading && !result && (
-                    <div className="space-y-2">
-                      <SimpleMathInput
+                  {/* Optional Work Area */}
+                  {!isTargetRevealed && (
+                    <div className="space-y-3 pt-1">
+                      <OptionalWorkInput
                         value={userInputs[subKey] || ''}
                         onChange={(val) => handleInputChange(subKey, val)}
-                        onCheck={() => handleAutoCheck(subKey, sp.final_answer)}
                       />
-                      <div className="flex justify-end pt-1">
+                      <div className="flex justify-end">
                         <button
-                          onClick={() => setSelfGradeActive(prev => ({ ...prev, [subKey]: true }))}
-                          className="text-xs text-indigo-400 hover:text-indigo-300 font-medium underline transition-colors"
+                          onClick={() => handleRevealTarget(subKey)}
+                          className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-semibold text-sm rounded-xl transition-all shadow-md shadow-indigo-600/20"
                         >
-                          📝 Solving on paper? Self-grade instead
+                          Check Answer
                         </button>
                       </div>
                     </div>
                   )}
 
-                  {/* Mode 3: Paper Self-Grade Confirmation Tray */}
-                  {isSelfGrading && !result && (
+                  {/* Revealed Target Answer & Self-Grading Bar */}
+                  {isTargetRevealed && (
                     <div className="p-4 bg-slate-900 border border-indigo-500/30 rounded-xl space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider">
-                          Paper Self-Grade
-                        </span>
-                        <button
-                          onClick={() => setSelfGradeActive(prev => ({ ...prev, [subKey]: false }))}
-                          className="text-xs text-slate-400 hover:text-white"
-                        >
-                          ← Switch to Text Input
-                        </button>
+                      <div className="text-xs font-bold text-indigo-400 uppercase tracking-wider">
+                        Official Target Answer
                       </div>
-                      <div className="text-sm text-slate-300">
-                        Compare your scratchpad answer to the official target:
-                        <div className="my-2 p-3 bg-slate-950 rounded-lg text-center text-base font-bold text-white border border-slate-800">
-                          <MathText text={sp.final_answer} />
+                      <div className="p-3 bg-slate-950 rounded-lg text-center text-lg font-bold text-white border border-slate-800">
+                        <MathText text={sp.final_answer} />
+                      </div>
+
+                      {!gradeStatus ? (
+                        <div className="space-y-2 pt-1">
+                          <div className="text-xs text-slate-300 text-center font-medium">
+                            Did your scratchpad or typed answer match the target answer?
+                          </div>
+                          <div className="flex gap-2">
+                            <button
+                              onClick={() => handleSelfGrade(subKey, 'correct')}
+                              className="flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs rounded-lg transition-colors shadow-md shadow-emerald-600/20"
+                            >
+                              🟩 Got It Right
+                            </button>
+                            <button
+                              onClick={() => handleSelfGrade(subKey, 'incorrect')}
+                              className="flex-1 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-semibold text-xs rounded-lg transition-colors shadow-md shadow-rose-600/20"
+                            >
+                              🟥 Got It Wrong
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex gap-2 pt-1">
-                        <button
-                          onClick={() => handleSelfGradeResult(subKey, 'correct')}
-                          className="flex-1 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs rounded-lg transition-colors"
-                        >
-                          🟩 Got It Right
-                        </button>
-                        <button
-                          onClick={() => handleSelfGradeResult(subKey, 'incorrect')}
-                          className="flex-1 py-2 bg-rose-600 hover:bg-rose-500 text-white font-semibold text-xs rounded-lg transition-colors"
-                        >
-                          🟥 Got It Wrong
-                        </button>
-                      </div>
+                      ) : (
+                        <div className="flex items-center justify-between pt-1 border-t border-slate-800">
+                          <span className={`text-xs font-bold ${gradeStatus === 'correct' ? 'text-emerald-400' : 'text-rose-400'}`}>
+                            {gradeStatus === 'correct' ? '🟩 Marked as Correct' : '🟥 Marked as Incorrect'}
+                          </span>
+                          <button
+                            onClick={() => { setSelfGradeStatus(prev => ({ ...prev, [subKey]: null })); setRevealedTarget(prev => ({ ...prev, [subKey]: false })); }}
+                            className="text-xs text-slate-400 hover:text-white underline"
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      )}
                     </div>
                   )}
 
-                  {/* Feedback Badge */}
-                  {result?.status === 'correct' && (
-                    <div className="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 text-sm font-semibold flex items-center justify-between">
-                      <span>🟩 Correct! ({result.mode === 'auto' ? 'Auto-Checked' : 'Paper Self-Graded'})</span>
-                      <button
-                        onClick={() => { setCheckResults(prev => ({ ...prev, [subKey]: null })); setSelfGradeActive(prev => ({ ...prev, [subKey]: false })); }}
-                        className="text-xs text-slate-400 hover:text-white underline"
-                      >
-                        Retry
-                      </button>
-                    </div>
-                  )}
-                  {result?.status === 'incorrect' && (
-                    <div className="p-3 bg-rose-500/10 border border-rose-500/20 rounded-xl text-rose-400 text-sm font-semibold flex items-center justify-between">
-                      <span>🟥 Incorrect. Review the solutions below.</span>
-                      <button
-                        onClick={() => { setCheckResults(prev => ({ ...prev, [subKey]: null })); setSelfGradeActive(prev => ({ ...prev, [subKey]: false })); }}
-                        className="text-xs text-slate-400 hover:text-white underline"
-                      >
-                        Retry
-                      </button>
-                    </div>
-                  )}
-
-                  {/* 3 Toggle Buttons */}
+                  {/* 3 Solution & Lesson Drawers */}
                   <div className="flex flex-wrap gap-2 pt-2">
                     <button
                       onClick={() => setShowMarkscheme(prev => ({ ...prev, [subKey]: !prev[subKey] }))}
@@ -419,7 +354,7 @@ export default function App() {
         </div>
       </main>
 
-      {/* Floating Bottom Navigation */}
+      {/* Floating Footer */}
       <footer className="fixed bottom-0 inset-x-0 bg-slate-900/90 backdrop-blur-md border-t border-slate-800 p-4 z-30">
         <div className="max-w-4xl mx-auto flex justify-between gap-3">
           <button

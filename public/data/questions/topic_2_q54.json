@@ -1,0 +1,87 @@
+{
+  "id": "topic_2_q54",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 54,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain and range of $f(x) = \\frac{1}{\\sqrt{x-4}} + 3$.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x > 4\\}, \\text{ Range: } \\{y \\mid y > 3\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine condition for square root in denominator: $x - 4 > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "State domain: $\\{x \\mid x > 4\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State range: $\\{y \\mid y > 3\\}$"
+        }
+      ],
+      "solution": "$f(x) = \\frac{1}{\\sqrt{x-4}} + 3$ is defined when $\\sqrt{x-4} > 0$\n$\\therefore x - 4 > 0$\n$\\therefore x > 4$\n$\\therefore$ the domain is $\\{x \\mid x > 4\\}$.\nNow, $\\frac{1}{\\sqrt{x-4}} > 0$ {for $x > 4$}\n$\\therefore \\frac{1}{\\sqrt{x-4}} + 3 > 3$\n$\\therefore f(x) > 3$\n$\\therefore$ the range is $\\{y \\mid y > 3\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For $\\frac{1}{\\sqrt{u}}$, the radicand $u$ must be strictly positive ($u > 0$) because denominator cannot be zero and real square roots require non-negative inputs.",
+        "step_by_step": [
+          "Require $x - 4 > 0 \\implies x > 4$, giving domain $\\{x \\mid x > 4\\}$.",
+          "Since $\\sqrt{x-4} > 0$, $\\frac{1}{\\sqrt{x-4}} > 0$.",
+          "Add 3: $\\frac{1}{\\sqrt{x-4}} + 3 > 3$, giving range $\\{y \\mid y > 3\\}$."
+        ],
+        "common_pitfalls": "Writing $x \\ge 4$, which leads to division by zero."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "What transformation maps $y = \\frac{1}{\\sqrt{x}}$ onto the function $f$?",
+      "final_answer": "$\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the translation vector mapping $y = \\frac{1}{\\sqrt{x}}$ to $f(x)$"
+        }
+      ],
+      "solution": "A translation through $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$ maps $y = \\frac{1}{\\sqrt{x}}$ onto $f$.",
+      "ai_explanation": {
+        "concept_rule": "Replacing $x$ with $x - h$ and adding $k$ corresponds to translation vector $\\begin{pmatrix} h \\\\ k \\end{pmatrix}$.",
+        "step_by_step": [
+          "Compare $\\frac{1}{\\sqrt{x}}$ with $f(x) = \\frac{1}{\\sqrt{x-4}} + 3$.",
+          "Here $x$ is replaced by $x - 4$ (shift 4 units right).",
+          "The function has 3 added to it (shift 3 units up).",
+          "The translation vector is $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$."
+        ],
+        "common_pitfalls": "Writing the signs backwards as $\\begin{pmatrix} -4 \\\\ -3 \\end{pmatrix}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the equations of the asymptotes of $y = f(x)$.",
+      "final_answer": "$x = 4,\\ y = 3$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the vertical asymptote $x = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the horizontal asymptote $y = 3$"
+        }
+      ],
+      "solution": "$y = \\frac{1}{\\sqrt{x}}$ has vertical asymptote $x = 0$ and horizontal asymptote $y = 0$.\n$\\therefore y = f(x)$ has vertical asymptote $x = 4$ and horizontal asymptote $y = 3$.",
+      "ai_explanation": {
+        "concept_rule": "Under a translation $\\begin{pmatrix} h \\\\ k \\end{pmatrix}$, the vertical asymptote $x = 0$ becomes $x = h$ and horizontal asymptote $y = 0$ becomes $y = k$.",
+        "step_by_step": [
+          "Base function asymptotes are $x = 0$ and $y = 0$.",
+          "Apply the translation vector $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$.",
+          "Vertical asymptote moves to $x = 0 + 4 = 4$.",
+          "Horizontal asymptote moves to $y = 0 + 3 = 3$."
+        ],
+        "common_pitfalls": "Confusing which line is horizontal ($y = c$) and which is vertical ($x = c$)."
+      }
+    }
+  ]
+}

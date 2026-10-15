@@ -1,0 +1,89 @@
+{
+  "id": "topic_2_q45",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 45,
+  "question_text": "The number of people $N$ on a small island $t$ years after settlement, increases according to the formula $N = 120 \\times (1.04)^t$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the number of people who started the settlement.",
+      "final_answer": "$120$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 0$ into the population model $N = 120 \\times (1.04)^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $N = 120$"
+        }
+      ],
+      "solution": "When $t = 0$, $N = 120$.\n$\\therefore$ there were 120 people who started the settlement.",
+      "ai_explanation": {
+        "concept_rule": "The initial value of an exponential growth model $N(t) = N_0 a^t$ occurs at time $t = 0$, where $a^0 = 1$.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $N = 120 \\times (1.04)^t$.",
+          "Evaluate $(1.04)^0 = 1$, giving $N = 120 \\times 1 = 120$."
+        ],
+        "common_pitfalls": "Forgetting that any non-zero number to the power of 0 is 1."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the number of people on the island after 4 years.",
+      "final_answer": "$140$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 4$ into the formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate and round to the nearest whole number"
+        }
+      ],
+      "solution": "When $t = 4$,\n$N = 120 \\times (1.04)^4 \\approx 140$\n$\\therefore$ there were about 140 people on the island after 4 years.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given time value into the exponential growth equation and evaluate.",
+        "step_by_step": [
+          "Substitute $t = 4$ into $N = 120 \\times (1.04)^4$.",
+          "Calculate $120 \\times 1.16985856 \\approx 140.38$.",
+          "Round to the nearest whole integer for population counts, giving $\\approx 140$."
+        ],
+        "common_pitfalls": "Premature rounding of $(1.04)^4$ before multiplying by 120."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "How many years will it take for the number of people to double?",
+      "final_answer": "$17.7\\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $N = 240$ and isolate the base exponential term $(1.04)^t = 2$"
+        },
+        {
+          "code": "M1",
+          "desc": "Take natural logarithms of both sides to solve for $t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $t \\approx 17.7\\text{ years}$"
+        }
+      ],
+      "solution": "When $N = 120 \\times 2 = 240$,\n$240 = 120 \\times (1.04)^t$\n$\\therefore (1.04)^t = 2$\n$\\therefore t \\ln(1.04) = \\ln 2$\n$\\therefore t = \\frac{\\ln 2}{\\ln(1.04)} \\approx 17.7$\n$\\therefore$ it will take about 17.7 years for the number of people to double.",
+      "ai_explanation": {
+        "concept_rule": "Doubling time occurs when the population is twice the initial amount, solved by taking logarithms: $t = \\frac{\\ln 2}{\\ln(1 + r)}$.",
+        "step_by_step": [
+          "Set $N = 240$, so $240 = 120 \\times (1.04)^t$.",
+          "Divide by 120 to get $(1.04)^t = 2$.",
+          "Take the natural logarithm of both sides: $\\ln((1.04)^t) = \\ln 2 \\implies t \\ln(1.04) = \\ln 2$.",
+          "Divide by $\\ln(1.04)$ to find $t = \\frac{\\ln 2}{\\ln(1.04)} \\approx 17.67 \\approx 17.7$ years."
+        ],
+        "common_pitfalls": "Mistakenly writing $t = \\ln\\left(\\frac{2}{1.04}\\right)$ instead of dividing the logarithms."
+      }
+    }
+  ]
+}

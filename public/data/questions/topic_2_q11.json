@@ -1,0 +1,88 @@
+{
+  "id": "topic_2_q11",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 11,
+  "question_text": "For each of the following quadratics:\ni Find the coordinates of the vertex.\nii State whether the vertex is a minimum or a maximum.\niii State the range of the function.\niv Find the axes intercepts.\nv Sketch the function.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 3x - 4$",
+      "final_answer": "$Vertex $\\left(\\frac{3}{2}, -\\frac{25}{4}\\right)$ (minimum), range $\\{y \\mid y \\ge -\\frac{25}{4}\\}$, axes intercepts: $y = -4$, $x = -1, 4$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding axis of symmetry using $x = -\\frac{b}{2a}$ and evaluating vertex"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating vertex is a minimum since $a > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing correct range"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding $x$-intercepts by factoring $x^2 - 3x - 4 = 0$ and stating $y$-intercept"
+        },
+        {
+          "code": "G1",
+          "desc": "Sketching parabola with axis of symmetry, vertex, and intercepts"
+        }
+      ],
+      "solution": "i $y = x^2 - 3x - 4$ has $a = 1, b = -3, c = -4$. Now $-\\frac{b}{2a} = -\\frac{-3}{2(1)} = \\frac{3}{2}$. $\\therefore$ the axis of symmetry is $x = \\frac{3}{2}$. When $x = \\frac{3}{2}$, $y = (\\frac{3}{2})^2 - 3(\\frac{3}{2}) - 4 = \\frac{9}{4} - \\frac{9}{2} - 4 = -\\frac{25}{4}$. $\\therefore$ the vertex is $(\\frac{3}{2}, -\\frac{25}{4})$. ii $a > 0$, so the shape is concave up. $\\therefore$ the vertex $(\\frac{3}{2}, -\\frac{25}{4})$ is a minimum. iii The range is $\\{y \\mid y \\ge -\\frac{25}{4}\\}$. iv The $y$-intercept is $-4$. When $y = 0$, $x^2 - 3x - 4 = 0 \\implies (x-4)(x+1) = 0 \\implies x = 4$ or $-1$. $\\therefore$ the $x$-intercepts are $4$ and $-1$. v Graph showing axis of symmetry $x = \\frac{3}{2}$, vertex $V(\\frac{3}{2}, -\\frac{25}{4})$, intercepts at $x = -1, 4$, and $y = -4$.",
+      "ai_explanation": {
+        "concept_rule": "The axis of symmetry is $x = -\\frac{b}{2a}$. If $a > 0$, the parabola opens upwards and has a minimum, so range is $y \\ge y_{vertex}$.",
+        "step_by_step": [
+          "Identify $a = 1, b = -3, c = -4$.",
+          "Calculate $x = -\\frac{-3}{2(1)} = \\frac{3}{2}$.",
+          "Substitute $x = \\frac{3}{2}$ into the function to obtain $y = -\\frac{25}{4}$. The vertex is $(\\frac{3}{2}, -\\frac{25}{4})$.",
+          "Since $a = 1 > 0$, the vertex is a minimum, and range is $y \\ge -\\frac{25}{4}$.",
+          "Set $x = 0$ for $y$-intercept ($y = -4$), and set $y = 0$ to solve for $x$-intercepts: $(x-4)(x+1)=0 \\implies x = 4, -1$."
+        ],
+        "common_pitfalls": "Sign error when calculating $-\\frac{b}{2a}$ when $b$ is negative."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = -2x^2 - 5x + 7$",
+      "final_answer": "$Vertex $\\left(-\\frac{5}{4}, \\frac{81}{8}\\right)$ (maximum), range $\\{y \\mid y \\le \\frac{81}{8}\\}$, axes intercepts: $y = 7$, $x = -\\frac{7}{2}, 1$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding axis of symmetry and substituting to find vertex"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating vertex is a maximum since $a < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing correct range"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding $y$-intercept and solving quadratic for $x$-intercepts"
+        },
+        {
+          "code": "G1",
+          "desc": "Sketching parabola showing all features"
+        }
+      ],
+      "solution": "i $y = -2x^2 - 5x + 7$ has $a = -2, b = -5, c = 7$. Now $-\\frac{b}{2a} = -\\frac{-5}{2(-2)} = -\\frac{5}{4}$. $\\therefore$ the axis of symmetry is $x = -\\frac{5}{4}$. When $x = -\\frac{5}{4}$, $y = -2(-\\frac{5}{4})^2 - 5(-\\frac{5}{4}) + 7 = -\\frac{25}{8} + \\frac{25}{4} + 7 = \\frac{81}{8}$. $\\therefore$ the vertex is $(-\\frac{5}{4}, \\frac{81}{8})$. ii $a < 0$, so the shape is concave down. $\\therefore$ the vertex $(-\\frac{5}{4}, \\frac{81}{8})$ is a maximum. iii The range is $\\{y \\mid y \\le \\frac{81}{8}\\}$. iv The $y$-intercept is 7. When $y = 0$, $-2x^2 - 5x + 7 = 0 \\implies -(2x^2 + 5x - 7) = 0 \\implies -(2x + 7)(x - 1) = 0 \\implies x = -\\frac{7}{2}$ or $1$. $\\therefore$ the $x$-intercepts are $-\\frac{7}{2}$ and $1$. v Graph showing axis of symmetry $x = -\\frac{5}{4}$, vertex $V(-\\frac{5}{4}, \\frac{81}{8})$, $y$-intercept $7$, and $x$-intercepts $-\\frac{7}{2}, 1$.",
+      "ai_explanation": {
+        "concept_rule": "For a quadratic $y = ax^2 + bx + c$ with $a < 0$, the parabola opens downwards, making the vertex a maximum, and the range is $y \\le y_{vertex}$.",
+        "step_by_step": [
+          "Determine $a = -2, b = -5, c = 7$.",
+          "Find axis of symmetry: $x = -\\frac{-5}{2(-2)} = -\\frac{5}{4}$.",
+          "Substitute $x = -\\frac{5}{4}$ into the equation to find $y = \\frac{81}{8}$. Vertex is $(-\\frac{5}{4}, \\frac{81}{8})$.",
+          "Because $a < 0$, the graph is concave down and vertex is a maximum, so the range is $\\{y \\mid y \\le \\frac{81}{8}\\}$.",
+          "Intercepts: $y$-intercept is $7$; solve $-2x^2 - 5x + 7 = 0$ by factoring to obtain $x = -\\frac{7}{2}$ and $x = 1$."
+        ],
+        "common_pitfalls": "Arithmetic errors when squaring negative fractions or simplifying $-2(-\\frac{5}{4})^2$."
+      }
+    }
+  ]
+}

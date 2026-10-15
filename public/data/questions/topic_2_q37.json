@@ -1,0 +1,68 @@
+{
+  "id": "topic_2_q37",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 37,
+  "question_text": "Let $f(x) = \\sqrt{x+4}$ and $g(x) = x^2 - 3$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $(f \\circ g)(x)$ and state its domain and range.",
+      "final_answer": "$(f \\circ g)(x) = \\sqrt{x^2 + 1}$, $\\text{Domain: } \\{x \\mid x \\in \\mathbb{R}\\}$, $\\text{Range: } \\{y \\mid y \\ge 1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $g(x)$ into $f(x)$ and simplify"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the domain $\\{x \\mid x \\in \\mathbb{R}\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the range $\\{y \\mid y \\ge 1\\}$"
+        }
+      ],
+      "solution": "$(f \\circ g)(x) = f(g(x)) = f(x^2 - 3) = \\sqrt{x^2 - 3 + 4} = \\sqrt{x^2 + 1}$\n$x^2 + 1 \\ge 1$, so $\\sqrt{x^2 + 1}$ is defined for every value of $x$.\n$\\therefore$ the domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.\n$x^2 + 1 \\ge 1 \\implies \\sqrt{x^2 + 1} \\ge 1$\n$\\therefore$ the range is $\\{y \\mid y \\ge 1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the expression of $g(x)$ into $f(x)$. The domain requires the expression under the square root to be non-negative. Find the range by finding the minimum value of the expression.",
+        "step_by_step": [
+          "Substitute $g(x) = x^2 - 3$ into $f(x) = \\sqrt{x+4}$: $\\sqrt{(x^2 - 3) + 4} = \\sqrt{x^2 + 1}$.",
+          "Analyze the radicand $x^2 + 1$: since $x^2 \\ge 0$, $x^2 + 1 \\ge 1 > 0$ for all real $x$. Hence domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $x^2 + 1 \\ge 1$, $\\sqrt{x^2 + 1} \\ge \\sqrt{1} = 1$. Hence range is $\\{y \\mid y \\ge 1\\}$."
+        ],
+        "common_pitfalls": "Incorrectly stating the range as $y \\ge 0$ instead of $y \\ge 1$ because the minimum value of $x^2 + 1$ is 1."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $(g \\circ f)(x)$ and state its domain and range.",
+      "final_answer": "$(g \\circ f)(x) = x + 1$, $\\text{Domain: } \\{x \\mid x \\ge -4\\}$, $\\text{Range: } \\{y \\mid y \\ge -3\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $f(x)$ into $g(x)$ and simplify"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the domain $\\{x \\mid x \\ge -4\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the range $\\{y \\mid y \\ge -3\\}$"
+        }
+      ],
+      "solution": "$(g \\circ f)(x) = g(f(x)) = g(\\sqrt{x+4}) = (\\sqrt{x+4})^2 - 3 = x + 1$\n$\\sqrt{x+4}$ is defined when $x + 4 \\ge 0 \\implies x \\ge -4$\n$\\therefore$ the domain is $\\{x \\mid x \\ge -4\\}$.\n$x \\ge -4 \\implies x + 1 \\ge -3$\n$\\therefore$ the range is $\\{y \\mid y \\ge -3\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of $(g \\circ f)(x)$ is restricted by the domain of the inner function $f(x)$. Even if the resulting expression simplifies to a linear form, the domain of the inner function must be preserved.",
+        "step_by_step": [
+          "Substitute $f(x) = \\sqrt{x+4}$ into $g(x) = x^2 - 3$: $(\\sqrt{x+4})^2 - 3 = x + 4 - 3 = x + 1$.",
+          "The inner function $\\sqrt{x+4}$ requires $x + 4 \\ge 0 \\implies x \\ge -4$. Domain is $\\{x \\mid x \\ge -4\\}$.",
+          "Substitute $x \\ge -4$ into $x + 1$: $x + 1 \\ge -4 + 1 = -3$. Range is $\\{y \\mid y \\ge -3\\}$."
+        ],
+        "common_pitfalls": "Assuming the domain of $x + 1$ is all real numbers, forgetting to enforce the domain of the inner function $\\sqrt{x+4}$."
+      }
+    }
+  ]
+}

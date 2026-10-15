@@ -1,0 +1,39 @@
+{
+  "id": "topic_2_q53",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 53,
+  "question_text": "The graph of $f(x) = \\frac{5}{x+2}$ is translated by $\\begin{pmatrix} -4 \\\\ 6 \\end{pmatrix}$ to give $g(x)$. Find $g(x)$ in the form $g(x) = \\frac{ax+b}{cx+d}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Translate $f(x) = \\frac{5}{x+2}$ by $\\begin{pmatrix} -4 \\\\ 6 \\end{pmatrix}$.",
+      "final_answer": "$g(x) = \\frac{6x + 41}{x + 6}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply transformation $g(x) = f(x + 4) + 6$"
+        },
+        {
+          "code": "M1",
+          "desc": "Form fraction $\\frac{5}{(x+4)+2} + 6 = \\frac{5}{x+6} + 6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Combine into single fraction $\\frac{6x + 41}{x + 6}$"
+        }
+      ],
+      "solution": "$g(x) = f(x + 4) + 6 = \\frac{5}{(x+4)+2} + 6 = \\frac{5}{x+6} + \\frac{6(x+6)}{x+6} = \\frac{6x + 41}{x + 6}$.",
+      "ai_explanation": {
+        "concept_rule": "A translation vector $\\begin{pmatrix} h \\\\ k \\end{pmatrix}$ maps $f(x) \\to f(x - h) + k$.",
+        "step_by_step": [
+          "Apply $h = -4, k = 6 \\implies g(x) = f(x + 4) + 6$.",
+          "Substitute into $f(x)$: $\\frac{5}{x+6} + 6$.",
+          "Put over common denominator: $\\frac{5 + 6x + 36}{x+6} = \\frac{6x+41}{x+6}$."
+        ],
+        "common_pitfalls": "Subtracting 4 in denominator instead of adding 4."
+      }
+    }
+  ]
+}

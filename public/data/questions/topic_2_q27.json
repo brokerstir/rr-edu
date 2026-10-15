@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q27",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 27,
+  "question_text": "If $f(x) = \\frac{x - 2}{x - 3}$, find in simplest form:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(-x)$",
+      "final_answer": "$\\frac{x+2}{x+3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $-x$ for $x$ in $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Factoring out $-1$ and simplifying"
+        }
+      ],
+      "solution": "$f(-x) = \\frac{-x - 2}{-x - 3} = \\frac{-(x + 2)}{-(x + 3)} = \\frac{x + 2}{x + 3}$",
+      "ai_explanation": {
+        "concept_rule": "To evaluate $f(-x)$, replace every instance of $x$ with $(-x)$ and simplify algebraic signs.",
+        "step_by_step": [
+          "Substitute $-x$: $\\frac{(-x) - 2}{(-x) - 3}$.",
+          "Factor $-1$ from the numerator and denominator: $\\frac{-(x+2)}{-(x+3)}$.",
+          "Cancel the common factor of $-1$: $\\frac{x+2}{x+3}$."
+        ],
+        "common_pitfalls": "Leaving unsimplified negative signs in both numerator and denominator."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x + 2)$",
+      "final_answer": "$\\frac{x}{x-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $x+2$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying numerator and denominator"
+        }
+      ],
+      "solution": "$f(x + 2) = \\frac{(x + 2) - 2}{(x + 2) - 3} = \\frac{x + 2 - 2}{x + 2 - 3} = \\frac{x}{x - 1}$",
+      "ai_explanation": {
+        "concept_rule": "Replace every occurrence of $x$ in $f(x)$ with the expression $(x+2)$ and collect like terms.",
+        "step_by_step": [
+          "Substitute $(x+2)$ for $x$: $\\frac{(x+2)-2}{(x+2)-3}$.",
+          "Simplify numerator: $x+2-2 = x$.",
+          "Simplify denominator: $x+2-3 = x-1$.",
+          "Result: $\\frac{x}{x-1}$."
+        ],
+        "common_pitfalls": "Adding $2$ to the whole function instead of replacing the input $x$ with $(x+2)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f\\left(\\frac{1}{x}\\right)$",
+      "final_answer": "$\\frac{1 - 2x}{1 - 3x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $\\frac{1}{x}$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Multiplying numerator and denominator by $x$ to simplify"
+        }
+      ],
+      "solution": "$f\\left(\\frac{1}{x}\\right) = \\frac{\\frac{1}{x} - 2}{\\frac{1}{x} - 3} = \\frac{\\frac{1}{x} - 2}{\\frac{1}{x} - 3} \\times \\frac{x}{x} = \\frac{1 - 2x}{1 - 3x}$",
+      "ai_explanation": {
+        "concept_rule": "Replace $x$ with $\\frac{1}{x}$ and clear compound fractions by multiplying top and bottom by $x$.",
+        "step_by_step": [
+          "Substitute $\\frac{1}{x}$ for $x$: $\\frac{\\frac{1}{x} - 2}{\\frac{1}{x} - 3}$.",
+          "Multiply both numerator and denominator by $x$: $\\frac{x(\\frac{1}{x} - 2)}{x(\\frac{1}{x} - 3)}$.",
+          "Expand: $\\frac{1 - 2x}{1 - 3x}$."
+        ],
+        "common_pitfalls": "Failing to distribute $x$ across all terms when clearing the fraction."
+      }
+    }
+  ]
+}

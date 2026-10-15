@@ -1,0 +1,65 @@
+{
+  "id": "topic_2_q36",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 36,
+  "question_text": "Suppose $f(x) = \\sqrt[3]{x}$. Find $g(x)$ given that:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(f \\circ g)(x) = 2x - 1$",
+      "final_answer": "$g(x) = (2x - 1)^3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find inverse of $f(x)$, $f^{-1}(x) = x^3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply $f^{-1}$ to both sides of $(f \\circ g)(x) = 2x - 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $g(x) = (2x - 1)^3$"
+        }
+      ],
+      "solution": "$f$ is $y = \\sqrt[3]{x}$\n$\\therefore f^{-1}$ is $x = \\sqrt[3]{y} \\implies y = x^3$\n$\\therefore f^{-1}(x) = x^3$\nIf $(f \\circ g)(x) = 2x - 1$,\nthen $f^{-1}((f \\circ g)(x)) = f^{-1}(2x - 1)$\n$\\therefore (f^{-1} \\circ f)(g(x)) = (2x - 1)^3$\n$\\therefore g(x) = (2x - 1)^3$",
+      "ai_explanation": {
+        "concept_rule": "To solve for the inner function $g(x)$ in $f(g(x)) = h(x)$, apply $f^{-1}$ to both sides: $g(x) = f^{-1}(h(x))$.",
+        "step_by_step": [
+          "Find $f^{-1}(x)$: for $y = \\sqrt[3]{x}$, swap variables to get $x = \\sqrt[3]{y} \\implies y = x^3$, so $f^{-1}(x) = x^3$.",
+          "Apply $f^{-1}$ to both sides: $f^{-1}(f(g(x))) = f^{-1}(2x - 1)$.",
+          "Since $f^{-1}(f(g(x))) = g(x)$, evaluate $f^{-1}(2x - 1) = (2x - 1)^3$."
+        ],
+        "common_pitfalls": "Applying $f$ instead of $f^{-1}$ or cubing individual terms inside the bracket."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(g \\circ f)(x) = 2x - 1$",
+      "final_answer": "$g(x) = 2x^3 - 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply $f^{-1}$ to the input of $(g \\circ f)(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $g(x) = 2x^3 - 1$"
+        }
+      ],
+      "solution": "If $(g \\circ f)(x) = 2x - 1$,\nthen $(g \\circ f)(f^{-1}(x)) = 2f^{-1}(x) - 1$\n$\\therefore g((f \\circ f^{-1})(x)) = 2x^3 - 1$\n$\\therefore g(x) = 2x^3 - 1$",
+      "ai_explanation": {
+        "concept_rule": "To find the outer function $g(x)$ given $g(f(x)) = h(x)$, replace $x$ by $f^{-1}(x)$ so that $g(f(f^{-1}(x))) = g(x) = h(f^{-1}(x))$.",
+        "step_by_step": [
+          "Identify $f^{-1}(x) = x^3$.",
+          "Substitute $x \\to f^{-1}(x)$ into $(g \\circ f)(x) = 2x - 1$.",
+          "This gives $g(f(f^{-1}(x))) = 2(f^{-1}(x)) - 1 = 2(x^3) - 1$.",
+          "Thus, $g(x) = 2x^3 - 1$."
+        ],
+        "common_pitfalls": "Confusing the order of operations between $2x^3 - 1$ and $(2x-1)^3$."
+      }
+    }
+  ]
+}

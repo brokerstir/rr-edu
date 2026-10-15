@@ -1,0 +1,89 @@
+{
+  "id": "topic_2_q61",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 61,
+  "question_text": "Consider the function $f: x \\mapsto \\ln(x-2)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain and range of $f$.",
+      "final_answer": "$\\{x \\mid x > 2\\}, \\{y \\mid y \\in \\mathbb{R}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Solving $x - 2 > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating domain $\\{x \\mid x > 2\\}$ and range $\\{y \\mid y \\in \\mathbb{R}\\}$"
+        }
+      ],
+      "solution": "$\\ln(x - 2)$ is defined when $x - 2 > 0 \\implies x > 2$.\n$\\therefore$ the domain is $\\{x \\mid x > 2\\}$ and the range is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The logarithm $\\ln(u)$ requires argument $u > 0$, and takes all values in $\\mathbb{R}$.",
+        "step_by_step": [
+          "Set the argument strictly positive: $x - 2 > 0 \\implies x > 2$.",
+          "As $x \\to 2^+$, $\\ln(x-2) \\to -\\infty$; as $x \\to \\infty$, $\\ln(x-2) \\to \\infty$.",
+          "Domain is $\\{x \\mid x > 2\\}$, range is $\\{y \\mid y \\in \\mathbb{R}\\}$."
+        ],
+        "common_pitfalls": "Writing the domain as $x \\ge 2$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Write down the equation of the asymptote of $f$.",
+      "final_answer": "$x = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating behaviour near boundary $x = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying vertical asymptote $x = 2$ and noting no horizontal asymptote"
+        }
+      ],
+      "solution": "As $x \\to 2^+$, $y \\to -\\infty$, so the vertical asymptote is $x = 2$.\nAs $x \\to \\infty$, $y \\to \\infty$, so there is no horizontal asymptote.",
+      "ai_explanation": {
+        "concept_rule": "Vertical asymptotes occur where the argument of the logarithm is zero. Horizontal asymptotes exist if $\\lim_{x\\to \\infty} f(x)$ is finite.",
+        "step_by_step": [
+          "Find the value where the inside of the ln is $0$: $x - 2 = 0 \\implies x = 2$.",
+          "Check limit: $\\lim_{x \\to 2^+} \\ln(x - 2) = -\\infty$, confirming the vertical asymptote is $x = 2$.",
+          "Check limit at infinity: $\\lim_{x \\to \\infty} \\ln(x - 2) = \\infty$, so no horizontal asymptote exists."
+        ],
+        "common_pitfalls": "Stating $y = 2$ instead of $x = 2$ for the vertical asymptote."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the resulting function when $f$ is stretched vertically with scale factor 3, then reflected in the $y$-axis.",
+      "final_answer": "$y = 3\\ln(-x - 2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying vertical stretch with scale factor 3 to get $3f(x)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying reflection in the $y$-axis to get $3f(-x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation $y = 3\\ln(-x - 2)$"
+        }
+      ],
+      "solution": "$f(x) \\xrightarrow{\\text{vertical stretch scale factor 3}} 3f(x) \\xrightarrow{\\text{reflection in the } y\\text{-axis}} 3f(-x)$\nThe resulting function has equation $y = 3f(-x)$, which is $y = 3\\ln(-x - 2)$.",
+      "ai_explanation": {
+        "concept_rule": "A vertical stretch with scale factor 3 maps $f(x) \\to 3f(x)$. A reflection in the $y$-axis replaces $x$ with $-x$.",
+        "step_by_step": [
+          "Apply vertical stretch factor 3: $y = 3f(x)$.",
+          "Apply reflection in the $y$-axis: replace $x$ with $-x$, giving $y = 3f(-x)$.",
+          "Substitute into $f(x) = \\ln(x - 2)$: $y = 3\\ln((-x) - 2) = 3\\ln(-x - 2)$."
+        ],
+        "common_pitfalls": "Negating the entire argument to $-(x - 2) = -x + 2$, rather than just substituting $-x$ in place of $x$."
+      }
+    }
+  ]
+}

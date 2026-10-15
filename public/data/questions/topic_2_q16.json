@@ -1,0 +1,40 @@
+{
+  "id": "topic_2_q16",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 16,
+  "question_text": "The line with equation $y = kx - 2$ is a tangent to the quadratic $y = 3x^2 + x + 1$. Find $k$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "$y = kx - 2$ is tangent to $y = 3x^2 + x + 1$.",
+      "final_answer": "$k = 7 \\text{ or } k = -5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equate line and curve: $3x^2 + (1 - k)x + 3 = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set discriminant $\\Delta = (1 - k)^2 - 36 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve $k^2 - 2k - 35 = 0 \\implies k = 7 \\text{ or } -5$"
+        }
+      ],
+      "solution": "Equating expressions: $3x^2 + x + 1 = kx - 2 \\implies 3x^2 + (1 - k)x + 3 = 0$. For tangency, $\\Delta = 0 \\implies (1 - k)^2 - 4(3)(3) = 0 \\implies k^2 - 2k + 1 - 36 = 0 \\implies k^2 - 2k - 35 = 0 \\implies (k - 7)(k + 5) = 0 \\implies k = 7 \\text{ or } -5$.",
+      "ai_explanation": {
+        "concept_rule": "A line is tangent to a parabola when the intersection quadratic has discriminant $\\Delta = 0$.",
+        "step_by_step": [
+          "Equate: $3x^2 + x + 1 = kx - 2 \\implies 3x^2 + (1-k)x + 3 = 0$.",
+          "Set $\\Delta = 0 \\implies (1-k)^2 - 36 = 0$.",
+          "Factorise $k^2 - 2k - 35 = 0 \\implies (k-7)(k+5) = 0$.",
+          "Solve for $k = 7$ or $k = -5$."
+        ],
+        "common_pitfalls": "Forgetting to collect terms into $3x^2 + (1-k)x + 3 = 0$ before computing $\\Delta$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "topic_2_q58",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 58,
+  "question_text": "Find the equation of the resulting image when $y = \\frac{2}{x}$ is:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "reflected in the $y$-axis",
+      "final_answer": "$y = -\\frac{2}{x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $y = f(-x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to $y = -\\frac{2}{x}$"
+        }
+      ],
+      "solution": "The image when $y = f(x)$ is reflected in the $y$-axis has equation\n$y = f(-x)$\n$\\therefore y = \\frac{2}{-x}$\n$\\therefore y = -\\frac{2}{x}$",
+      "ai_explanation": {
+        "concept_rule": "A reflection in the $y$-axis replaces $x$ with $-x$.",
+        "step_by_step": [
+          "Set $y = f(-x)$.",
+          "Substitute $-x$ into $f(x) = \\frac{2}{x}$ to get $y = \\frac{2}{-x} = -\\frac{2}{x}$."
+        ],
+        "common_pitfalls": "Reflecting in the $x$-axis instead, which for this function gives the same algebraic expression, but conceptually represents a different transformation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "translated through $\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$",
+      "final_answer": "$y = \\frac{2}{x + 1} + 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying horizontal translation of $-1$ and vertical translation of $+2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation $y = \\frac{2}{x+1} + 2$"
+        }
+      ],
+      "solution": "The image when $y = f(x)$ is translated through $\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$ has equation\n$y = f(x + 1) + 2$\n$\\therefore y = \\frac{2}{x + 1} + 2$",
+      "ai_explanation": {
+        "concept_rule": "A translation by vector $\\begin{pmatrix} h \\\\ k \\end{pmatrix}$ replaces $x$ with $x - h$ and adds $k$ to the function value.",
+        "step_by_step": [
+          "With $h = -1$, replace $x$ with $x - (-1) = x + 1$.",
+          "With $k = 2$, add $2$ to the entire function.",
+          "Write the equation: $y = \\frac{2}{x+1} + 2$."
+        ],
+        "common_pitfalls": "Writing $x - 1$ instead of $x + 1$ in the denominator."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "stretched horizontally with scale factor 3.",
+      "final_answer": "$y = \\frac{6}{x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Replacing $x$ with $\\frac{1}{3}x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to $y = \\frac{6}{x}$"
+        }
+      ],
+      "solution": "The image when $y = f(x)$ is stretched horizontally with scale factor 3 has equation\n$y = f\\left(\\frac{1}{3}x\\right)$\n$\\therefore y = \\frac{2}{\\frac{1}{3}x}$\n$\\therefore y = \\frac{6}{x}$",
+      "ai_explanation": {
+        "concept_rule": "A horizontal stretch with scale factor $k$ replaces $x$ with $\\frac{x}{k}$.",
+        "step_by_step": [
+          "Replace $x$ with $\\frac{1}{3}x$, giving $y = f(\\frac{1}{3}x)$.",
+          "Substitute into $f(x) = \\frac{2}{x}$: $y = \\frac{2}{\\frac{1}{3}x} = \\frac{6}{x}$."
+        ],
+        "common_pitfalls": "Replacing $x$ with $3x$, leading to $\\frac{2}{3x}$."
+      }
+    }
+  ]
+}

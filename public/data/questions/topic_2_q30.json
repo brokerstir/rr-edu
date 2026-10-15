@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q30",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 30,
+  "question_text": "Consider the function $k(t) = 2t - 4$ for $0 \\leqslant t < 4$, $t \\in \\mathbb{Z}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "List the elements of the domain of $k(t)$.",
+      "final_answer": "$\\{0, 1, 2, 3\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Listing integers satisfying $0 \\leqslant t < 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct set representation of domain"
+        }
+      ],
+      "solution": "The function is defined for $t$ such that $0 \\leqslant t < 4$ and $t \\in \\mathbb{Z}$.\n$\\therefore$ the domain is $\\{0, 1, 2, 3\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain is restricted to integers within the given interval $0 \\leqslant t < 4$.",
+        "step_by_step": [
+          "The condition is $t \\in \\mathbb{Z}$ and $0 \\leqslant t < 4$.",
+          "The integers satisfying this are $0, 1, 2, 3$."
+        ],
+        "common_pitfalls": "Including $4$, even though the inequality is strictly less than ($< 4$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "List the elements of the range of $k(t)$.",
+      "final_answer": "$\\{-4, -2, 0, 2\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $k(t)$ for each element in the domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct set representation of range"
+        }
+      ],
+      "solution": "$k(0) = -4$\n$k(1) = -2$\n$k(2) = 0$\n$k(3) = 2$\n$\\therefore$ the range is $\\{-4, -2, 0, 2\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For a discrete domain, evaluate the function at each point to find the range.",
+        "step_by_step": [
+          "Calculate $k(0) = 2(0) - 4 = -4$.",
+          "Calculate $k(1) = 2(1) - 4 = -2$.",
+          "Calculate $k(2) = 2(2) - 4 = 0$.",
+          "Calculate $k(3) = 2(3) - 4 = 2$.",
+          "The range is the set of these outputs: $\\{-4, -2, 0, 2\\}$."
+        ],
+        "common_pitfalls": "Writing the range as a continuous interval $[-4, 2]$ instead of a discrete set of points."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Sketch the function $k$ on a set of axes, showing all elements in the domain and range.",
+      "final_answer": "$\\text{A plot of discrete points } (0, -4), (1, -2), (2, 0), (3, 2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plotting individual points corresponding to domain elements"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct discrete graph without connecting lines"
+        }
+      ],
+      "solution": "The graph consists of discrete points $(0, -4)$, $(1, -2)$, $(2, 0)$, and $(3, 2)$ plotted on a Cartesian plane.",
+      "ai_explanation": {
+        "concept_rule": "Functions with discrete domains are represented graphically by isolated points, not continuous lines.",
+        "step_by_step": [
+          "Plot the point $(0, -4)$ on the $y$-axis.",
+          "Plot $(1, -2)$, $(2, 0)$, and $(3, 2)$.",
+          "Leave points unconnected since $t \\in \\mathbb{Z}$."
+        ],
+        "common_pitfalls": "Connecting the dots with a solid line."
+      }
+    }
+  ]
+}

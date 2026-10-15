@@ -1,0 +1,108 @@
+{
+  "id": "topic_2_q10",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 10,
+  "question_text": "For each of the following quadratics:\ni Find the $y$-intercept.\nii Write the function in the form $y = a(x - h)^2 + k$.\niii Find the coordinates of the vertex.\niv Sketch the graph of the quadratic.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 4x + 9$",
+      "final_answer": "$9$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the constant term as the y-intercept."
+        }
+      ],
+      "solution": "The $y$-intercept is $9$.",
+      "ai_explanation": {
+        "concept_rule": "In standard form $y = ax^2 + bx + c$, the $y$-intercept is $c$ (the value of $y$ when $x = 0$).",
+        "step_by_step": [
+          "Set $x = 0$ in $y = x^2 - 4x + 9$: $y = 9$."
+        ],
+        "common_pitfalls": "None."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 4x^2 + 16x + 11$",
+      "final_answer": "$y = 4(x+2)^2 - 5$, vertex $(-2, -5)$, $y$-intercept $11$",
+      "mark_breakdown": [
+        {
+          "code": "B1",
+          "desc": "Stating correct $y$-intercept of 11"
+        },
+        {
+          "code": "M1",
+          "desc": "Completing the square on $y = 4x^2 + 16x + 11$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing quadratic in vertex form $y = 4(x+2)^2 - 5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying coordinates of the vertex $(-2, -5)$"
+        },
+        {
+          "code": "G1",
+          "desc": "Sketching a parabola opening upwards with labeled vertex and $y$-intercept"
+        }
+      ],
+      "solution": "i The $y$-intercept is 11. ii $y = 4x^2 + 16x + 11 = 4[x^2 + 4x + \\frac{11}{4}] = 4[x^2 + 4x + 2^2 + \\frac{11}{4} - 2^2] = 4[(x+2)^2 - \\frac{5}{4}] \\therefore y = 4(x+2)^2 - 5$. iii The vertex is $(-2, -5)$. iv A parabola opening upwards with vertex $V(-2, -5)$ and crossing the $y$-axis at $(0, 11)$.",
+      "ai_explanation": {
+        "concept_rule": "The vertex form of a quadratic is $y = a(x - h)^2 + k$, where $(h, k)$ is the vertex. The $y$-intercept is found by setting $x = 0$.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $y = 4x^2 + 16x + 11$ to find the $y$-intercept, which is 11.",
+          "Factor out the coefficient of $x^2$, which is 4: $y = 4(x^2 + 4x + \\frac{11}{4})$.",
+          "Complete the square inside the bracket by adding and subtracting $(\\frac{4}{2})^2 = 4$: $4[(x+2)^2 + \\frac{11}{4} - 4] = 4[(x+2)^2 - \\frac{5}{4}] = 4(x+2)^2 - 5$.",
+          "Read off the vertex $(h, k) = (-2, -5)$.",
+          "Sketch the curve showing the minimum point at $(-2, -5)$ and $y$-intercept at 11."
+        ],
+        "common_pitfalls": "Forgetting to factor out 4 from the constant term or forgetting to multiply $-\\frac{5}{4}$ by 4 when expanding the outer brackets."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = -3x^2 + 12x - 10$",
+      "final_answer": "$y = -3(x-2)^2 + 2$, vertex $(2, 2)$, $y$-intercept $-10$",
+      "mark_breakdown": [
+        {
+          "code": "B1",
+          "desc": "Stating correct $y$-intercept of $-10$"
+        },
+        {
+          "code": "M1",
+          "desc": "Completing the square on $y = -3x^2 + 12x - 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing quadratic in vertex form $y = -3(x-2)^2 + 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying coordinates of the vertex $(2, 2)$"
+        },
+        {
+          "code": "G1",
+          "desc": "Sketching a concave-down parabola with labeled vertex and $y$-intercept"
+        }
+      ],
+      "solution": "i The $y$-intercept is $-10$. ii $y = -3x^2 + 12x - 10 = -3[x^2 - 4x + \\frac{10}{3}] = -3[x^2 - 4x + (-2)^2 + \\frac{10}{3} - (-2)^2] = -3[(x-2)^2 - \\frac{2}{3}] \\therefore y = -3(x-2)^2 + 2$. iii The vertex is $(2, 2)$. iv A concave-down parabola with vertex $V(2, 2)$ and $y$-intercept at $(0, -10)$.",
+      "ai_explanation": {
+        "concept_rule": "To convert $y = ax^2 + bx + c$ into $y = a(x - h)^2 + k$, factor out $a$ first, complete the square inside, and redistribute $a$.",
+        "step_by_step": [
+          "Set $x = 0$ to get the $y$-intercept, which is $-10$.",
+          "Factor out $-3$ from the quadratic expression: $-3[x^2 - 4x + \\frac{10}{3}]$.",
+          "Complete the square: $x^2 - 4x = (x-2)^2 - 4$.",
+          "Combine constants: $-4 + \\frac{10}{3} = -\\frac{2}{3}$.",
+          "Multiply back by $-3$: $-3(x-2)^2 + 2$.",
+          "Identify the vertex as $(2, 2)$ and sketch the curve opening downwards."
+        ],
+        "common_pitfalls": "Sign errors when factoring out a negative coefficient ($-3$)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "topic_2_q17",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 17,
+  "question_text": "Find the coordinates of the point(s) of intersection of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 4x - 5$ and $y = 3x - 11$",
+      "final_answer": "$(6, 7)$ and $(1, -8)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating expressions: $x^2 - 4x - 5 = 3x - 11$"
+        },
+        {
+          "code": "A1",
+          "desc": "Factoring to find $x$-coordinates: $x = 6$ or $1$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x$-values into linear equation to find $y$-values"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating both points of intersection"
+        }
+      ],
+      "solution": "$y = x^2 - 4x - 5$ meets $y = 3x - 11$ where $x^2 - 4x - 5 = 3x - 11 \\implies x^2 - 7x + 6 = 0 \\implies (x - 6)(x - 1) = 0 \\implies x = 6$ or $1$. Substituting into $y = 3x - 11$, when $x = 6$, $y = 7$, and when $x = 1$, $y = -8$. $\\therefore$ the graphs meet at $(6, 7)$ and $(1, -8)$.",
+      "ai_explanation": {
+        "concept_rule": "To find points of intersection between two curves, equate them, solve the resulting quadratic for $x$, and substitute back to find the corresponding $y$-values.",
+        "step_by_step": [
+          "Set $x^2 - 4x - 5 = 3x - 11$.",
+          "Bring all terms to one side: $x^2 - 7x + 6 = 0$.",
+          "Factor: $(x - 6)(x - 1) = 0 \\implies x = 6, 1$.",
+          "Find $y$ for $x = 6$: $y = 3(6) - 11 = 7$.",
+          "Find $y$ for $x = 1$: $y = 3(1) - 11 = -8$.",
+          "Write the points of intersection as $(6, 7)$ and $(1, -8)$."
+        ],
+        "common_pitfalls": "Forgetting to compute the $y$-values and only stating the $x$-values."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = -2x^2 + 5x$ and $y = 5 - 2x$",
+      "final_answer": "$\\left(\\frac{5}{2}, 0\\right)$ and $(1, 3)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating $-2x^2 + 5x = 5 - 2x$ and rearranging"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving quadratic to find $x = \\frac{5}{2}$ or $1$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting into $y = 5 - 2x$ to find $y$-coordinates"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating coordinates of both points of intersection"
+        }
+      ],
+      "solution": "$y = -2x^2 + 5x$ meets $y = 5 - 2x$ where $-2x^2 + 5x = 5 - 2x \\implies -2x^2 + 7x - 5 = 0 \\implies -(2x^2 - 7x + 5) = 0 \\implies -(2x - 5)(x - 1) = 0 \\implies x = \\frac{5}{2}$ or $1$. Substituting into $y = 5 - 2x$, when $x = \\frac{5}{2}$, $y = 0$, and when $x = 1$, $y = 3$. $\\therefore$ the graphs meet at $(\\frac{5}{2}, 0)$ and $(1, 3)$.",
+      "ai_explanation": {
+        "concept_rule": "Equating two equations allows finding intersection points by solving for $x$ and determining corresponding $y$-values.",
+        "step_by_step": [
+          "Set $-2x^2 + 5x = 5 - 2x$.",
+          "Rearrange to $2x^2 - 7x + 5 = 0$.",
+          "Factor as $(2x - 5)(x - 1) = 0$, giving $x = \\frac{5}{2}$ and $x = 1$.",
+          "Substitute $x = \\frac{5}{2}$ into $y = 5 - 2x$: $y = 5 - 2(\\frac{5}{2}) = 0$.",
+          "Substitute $x = 1$ into $y = 5 - 2x$: $y = 5 - 2(1) = 3$.",
+          "State coordinates: $(\\frac{5}{2}, 0)$ and $(1, 3)$."
+        ],
+        "common_pitfalls": "Factoring errors with non-monic quadratics like $2x^2 - 7x + 5$."
+      }
+    }
+  ]
+}

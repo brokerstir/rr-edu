@@ -1,0 +1,96 @@
+{
+  "id": "topic_2_q39",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 39,
+  "question_text": "Suppose $f: x \\mapsto \\ln x$ and $g: x \\mapsto 3 + x$. Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f^{-1}(2) \\times g^{-1}(2)$",
+      "final_answer": "$-e^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $f^{-1}(x) = e^x$ and $g^{-1}(x) = x - 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $f^{-1}(2) \\times g^{-1}(2) = -e^2$"
+        }
+      ],
+      "solution": "$f$ is $y = \\ln x \\implies f^{-1}$ is $x = \\ln y \\implies y = e^x$\nSo, $f^{-1}(x) = e^x$\n$g$ is $y = 3 + x \\implies g^{-1}$ is $x = 3 + y \\implies y = x - 3$\nSo, $g^{-1}(x) = x - 3$\n$\\therefore f^{-1}(2) \\times g^{-1}(2) = e^2(2 - 3) = -e^2$",
+      "ai_explanation": {
+        "concept_rule": "Find individual inverse functions by swapping variables and solving for $y$, then evaluate both at the given input and multiply.",
+        "step_by_step": [
+          "For $f(x) = \\ln x$, the inverse is $f^{-1}(x) = e^x$.",
+          "For $g(x) = 3 + x$, the inverse is $g^{-1}(x) = x - 3$.",
+          "Evaluate $f^{-1}(2) = e^2$ and $g^{-1}(2) = 2 - 3 = -1$.",
+          "Multiply the results: $e^2 \\times (-1) = -e^2$."
+        ],
+        "common_pitfalls": "Forgetting that $(f^{-1} \\times g^{-1})(2)$ means multiplication, not function composition."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(f \\circ g)^{-1}(2)$",
+      "final_answer": "$e^2 - 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $(f \\circ g)(x) = \\ln(3 + x)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find inverse $(f \\circ g)^{-1}(x) = e^x - 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate at $x = 2$ to obtain $e^2 - 3$"
+        }
+      ],
+      "solution": "$(f \\circ g)(x) = f(g(x)) = f(3 + x) = \\ln(3 + x)$\n$f \\circ g$ is $y = \\ln(3 + x)$\n$(f \\circ g)^{-1}$ is $x = \\ln(3 + y) \\implies e^x = 3 + y \\implies y = e^x - 3$\nSo, $(f \\circ g)^{-1}(x) = e^x - 3$\n$\\therefore (f \\circ g)^{-1}(2) = e^2 - 3$",
+      "ai_explanation": {
+        "concept_rule": "Form the composite function first, then find its inverse function and evaluate.",
+        "step_by_step": [
+          "Compose $f$ and $g$: $(f \\circ g)(x) = \\ln(3+x)$.",
+          "Set $x = \\ln(3+y)$ and exponentiate both sides: $e^x = 3+y$.",
+          "Solve for $y$: $(f \\circ g)^{-1}(x) = e^x - 3$.",
+          "Substitute $x = 2$: $(f \\circ g)^{-1}(2) = e^2 - 3$."
+        ],
+        "common_pitfalls": "Incorrectly applying the inverse rule $(f \\circ g)^{-1} = f^{-1} \\circ g^{-1}$ instead of $g^{-1} \\circ f^{-1}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$a$ given that $(g \\circ f)^{-1}(a) = \\sqrt{e}$.",
+      "final_answer": "$a = \\frac{7}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $(g \\circ f)(x) = 3 + \\ln x$ and its inverse $(g \\circ f)^{-1}(x) = e^{x-3}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Equate $e^{a-3} = \\sqrt{e} = e^{\\frac{1}{2}}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $a = \\frac{7}{2}$"
+        }
+      ],
+      "solution": "$(g \\circ f)(x) = g(f(x)) = g(\\ln x) = 3 + \\ln x$\n$g \\circ f$ is $y = 3 + \\ln x$\n$(g \\circ f)^{-1}$ is $x = 3 + \\ln y \\implies \\ln y = x - 3 \\implies y = e^{x-3}$\nSo, $(g \\circ f)^{-1}(x) = e^{x-3}$\nNow $(g \\circ f)^{-1}(a) = \\sqrt{e}\n\\implies e^{a-3} = e^{\\frac{1}{2}}\n\\implies a - 3 = \\frac{1}{2} \\text{ \\{equating indices\\}}\n\\implies a = \\frac{7}{2}$",
+      "ai_explanation": {
+        "concept_rule": "Find $(g \\circ f)^{-1}(x)$, set the expression equal to $\\sqrt{e}$, and equate the powers of $e$.",
+        "step_by_step": [
+          "Determine $(g \\circ f)(x) = 3 + \\ln x$.",
+          "Swap variables to find inverse: $x = 3 + \\ln y \\implies y = e^{x-3}$, so $(g \\circ f)^{-1}(x) = e^{x-3}$.",
+          "Set $(g \\circ f)^{-1}(a) = \\sqrt{e} \\implies e^{a-3} = e^{1/2}$.",
+          "Equate exponents: $a - 3 = \\frac{1}{2} \\implies a = 3 + \\frac{1}{2} = \\frac{7}{2}$."
+        ],
+        "common_pitfalls": "Writing $\\sqrt{e}$ as $e^{-1/2}$ or $e^1$ instead of $e^{1/2}$."
+      }
+    }
+  ]
+}

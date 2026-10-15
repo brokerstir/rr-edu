@@ -1,0 +1,88 @@
+{
+  "id": "topic_2_q24",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 24,
+  "question_text": "Solve for $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$x^2 > 9$",
+      "final_answer": "$x < -3 \\text{ or } x > 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearranging inequality and factoring quadratic expression"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct solution using sign diagram or critical values"
+        }
+      ],
+      "solution": "$x^2 > 9$\n$\\therefore x^2 - 9 > 0$\n$\\therefore (x + 3)(x - 3) > 0$\nSign diagram of LHS has critical values at $-3$ and $3$, positive for $x < -3$ and $x > 3$.\n$\\therefore x < -3 \\text{ or } x > 3$",
+      "ai_explanation": {
+        "concept_rule": "To solve a quadratic inequality of the form $x^2 > a^2$, move all terms to one side, factorise as a difference of squares, and determine the intervals where the product is positive.",
+        "step_by_step": [
+          "Rewrite the inequality as $x^2 - 9 > 0$.",
+          "Factor the LHS: $(x+3)(x-3) > 0$.",
+          "Find critical values where LHS = 0: $x = -3$ and $x = 3$.",
+          "Test intervals or use a sign diagram: positive when $x < -3$ or $x > 3$."
+        ],
+        "common_pitfalls": "Incorrectly taking the square root of both sides to get just $x > 3$, forgetting the negative branch $x < -3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$x^2 - 15 \\leqslant 2x$",
+      "final_answer": "$-3 \\leqslant x \\leqslant 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearranging to standard form and factorising"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct interval including endpoints"
+        }
+      ],
+      "solution": "$x^2 - 15 \\leqslant 2x$\n$\\therefore x^2 - 2x - 15 \\leqslant 0$\n$\\therefore (x - 5)(x + 3) \\leqslant 0$\nSign diagram of LHS shows negative or zero between $-3$ and $5$.\n$\\therefore -3 \\leqslant x \\leqslant 5$",
+      "ai_explanation": {
+        "concept_rule": "For a quadratic inequality $ax^2 + bx + c \\leqslant 0$ with $a > 0$, the solution is the closed interval between the roots.",
+        "step_by_step": [
+          "Rearrange to $x^2 - 2x - 15 \\leqslant 0$.",
+          "Factorise into $(x - 5)(x + 3) \\leqslant 0$.",
+          "Identify roots: $x = -3$ and $x = 5$.",
+          "Since the parabola opens upwards, it is non-positive between the roots: $-3 \\leqslant x \\leqslant 5$."
+        ],
+        "common_pitfalls": "Using strict inequalities instead of non-strict inequalities, omitting endpoints."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$3x^2 < 2(5x + 4)$",
+      "final_answer": "$-\\frac{2}{3} < x < 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding RHS, rearranging to quadratic inequality, and factorising"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct open interval"
+        }
+      ],
+      "solution": "$3x^2 < 2(5x + 4)$\n$\\therefore 3x^2 < 10x + 8$\n$\\therefore 3x^2 - 10x - 8 < 0$\n$\\therefore (3x + 2)(x - 4) < 0$\nSign diagram of LHS shows negative values between $-\\frac{2}{3}$ and $4$.\n$\\therefore -\\frac{2}{3} < x < 4$",
+      "ai_explanation": {
+        "concept_rule": "Expand both sides, collect all terms on one side to get $ax^2 + bx + c < 0$, factorise, and find the interval between roots for an upward-opening parabola.",
+        "step_by_step": [
+          "Expand the right side: $2(5x + 4) = 10x + 8$.",
+          "Subtract to set inequality to zero: $3x^2 - 10x - 8 < 0$.",
+          "Factor the quadratic: $(3x + 2)(x - 4) < 0$.",
+          "Roots are $x = -\\frac{2}{3}$ and $x = 4$. The expression is negative strictly between them: $-\\frac{2}{3} < x < 4$."
+        ],
+        "common_pitfalls": "Factoring errors with non-monic quadratics, or incorrect inequality direction."
+      }
+    }
+  ]
+}

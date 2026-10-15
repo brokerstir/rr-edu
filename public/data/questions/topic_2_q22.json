@@ -1,0 +1,99 @@
+{
+  "id": "topic_2_q22",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 22,
+  "question_text": "Andreas is making an aquarium in the shape of an equilateral triangular prism. The sum of all side lengths of the prism must be $1.8\\text{ m}$.\nLet the equilateral triangle ends have sides of length $x\\text{ cm}$, and the aquarium have height $y\\text{ cm}$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that the area of the end is $\\frac{\\sqrt{3}}{4}x^2\\text{ cm}^2$.",
+      "final_answer": "$\\frac{\\sqrt{3}}{4}x^2\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using Pythagoras' theorem to find height $h$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying the area of a triangle formula $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining the area $\\frac{\\sqrt{3}}{4}x^2\\text{ cm}^2$"
+        }
+      ],
+      "solution": "Let the height of the equilateral triangle ends be $h\\text{ cm}$.\n$\\therefore \\left(\\frac{x}{2}\\right)^2 + h^2 = x^2$ {Pythagoras}\n$\\therefore \\frac{x^2}{4} + h^2 = x^2$\n$\\therefore h^2 = \\frac{3x^2}{4}$\n$\\therefore h = \\frac{\\sqrt{3}}{2}x$ {$h > 0$}\nSo, area of end $= \\frac{1}{2} \\times x \\times h$\n$= \\frac{1}{2} \\times x \\times \\frac{\\sqrt{3}}{2}x$\n$= \\frac{\\sqrt{3}}{4}x^2\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of an equilateral triangle with side length $x$ is given by $\\frac{\\sqrt{3}}{4}x^2$.",
+        "step_by_step": [
+          "Divide the equilateral triangle into two right-angled triangles with base $\\frac{x}{2}$ and hypotenuse $x$.",
+          "Find height using Pythagoras: $h = \\sqrt{x^2 - \\left(\\frac{x}{2}\\right)^2} = \\frac{\\sqrt{3}}{2}x$.",
+          "Calculate area: $\\frac{1}{2} \\times x \\times \\frac{\\sqrt{3}}{2}x = \\frac{\\sqrt{3}}{4}x^2$."
+        ],
+        "common_pitfalls": "Using $x$ instead of $\\frac{x}{2}$ as the base of the right triangle when applying Pythagoras."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence show that the total surface area of the aquarium is $A = \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x\\text{ cm}^2$.",
+      "final_answer": "$A = \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Forming equation for total edge length: $6x + 3y = 180$ and expressing $y$ in terms of $x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding area of one rectangular face and summing the total surface area"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to the required form $A = \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x$"
+        }
+      ],
+      "solution": "The sum of all side lengths of the prism must be $1.8\\text{ m}$ or $180\\text{ cm}$.\n$\\therefore 6x + 3y = 180$\n$\\therefore 3y = 180 - 6x$\n$\\therefore y = 60 - 2x$\nSo, area of rectangular face $= x \\times y$\n$= x(60 - 2x)$\n$= 60x - 2x^2\\text{ cm}^2$\n$\\therefore$ the total surface area $A = 2 \\times \\text{area of end} + 3 \\times \\text{area of rectangular face}$\n$= 2\\left(\\frac{\\sqrt{3}}{4}x^2\\right) + 3(60x - 2x^2)$ {using a}\n$= \\frac{\\sqrt{3}}{2}x^2 + 180x - 6x^2$\n$= \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The total surface area of a prism is the sum of the areas of its two triangular bases and its three rectangular lateral faces.",
+        "step_by_step": [
+          "Convert $1.8\\text{ m}$ to $180\\text{ cm}$.",
+          "Count edges of a triangular prism: 6 edges of length $x$ and 3 edges of length $y$, giving $6x + 3y = 180$.",
+          "Solve for $y$: $y = 60 - 2x$.",
+          "Calculate total surface area: $A = 2\\left(\\frac{\\sqrt{3}}{4}x^2\\right) + 3(xy) = \\frac{\\sqrt{3}}{2}x^2 + 3x(60 - 2x)$.",
+          "Group $x^2$ terms: $A = \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x$."
+        ],
+        "common_pitfalls": "Incorrectly counting the number of edges of the triangular prism."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "What dimensions should Andreas choose for the aquarium to maximise its surface area?",
+      "final_answer": "$x \\approx 17.5\\text{ cm},\\; y \\approx 24.9\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the $x$-coordinate of the maximum using $x = -\\frac{b}{2a}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $x \\approx 17.5\\text{ cm}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $y = 60 - 2x \\approx 24.9\\text{ cm}$"
+        }
+      ],
+      "solution": "$A = \\left(\\frac{\\sqrt{3}}{2} - 6\\right)x^2 + 180x$ has $a = \\frac{\\sqrt{3}}{2} - 6$, $b = 180$, and $c = 0$\nSince $a < 0$, the shape is $\\cap$\nThe maximum surface area occurs when $x = \\frac{-b}{2a} = \\frac{-180}{2\\left(\\frac{\\sqrt{3}}{2} - 6\\right)} \\approx 17.5$\nand $y = 60 - 2x \\approx 24.9$\nSo, the dimensions Andreas should choose for the aquarium are shown alongside: $x \\approx 17.5\\text{ cm}$ and $y \\approx 24.9\\text{ cm}$.",
+      "ai_explanation": {
+        "concept_rule": "To maximize a quadratic expression with negative leading coefficient, find the vertex at $x = -\\frac{b}{2a}$.",
+        "step_by_step": [
+          "Identify $a = \\frac{\\sqrt{3}}{2} - 6 \\approx -5.134$ and $b = 180$.",
+          "Calculate $x = \\frac{-180}{2(\\sqrt{3}/2 - 6)} = \\frac{-180}{\\sqrt{3} - 12} \\approx 17.53\\text{ cm}$.",
+          "Substitute into $y = 60 - 2x$ to obtain $y \\approx 60 - 2(17.53) \\approx 24.9\\text{ cm}$."
+        ],
+        "common_pitfalls": "Rounding $x$ too early, leading to inaccurate value of $y$."
+      }
+    }
+  ]
+}

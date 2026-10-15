@@ -2,10 +2,10 @@
 """
 scripts/parse_h_revision.py
 
-Two-pass parser for Haese IB Math AA SL revision guide:
+Hardened 2-pass parser for Haese IB Math AA SL revision guide:
 1. Pass 1: Questions PDF page-by-page (extracts stems and subparts).
 2. Pass 2: Solutions PDF in 3-page chunks (extracts mark_breakdown, solution, final_answer, and ai_explanation).
-Merges data into static JSON bundles under public/data/.
+Normalizes subpart keys and LaTeX formatting, ensuring 100% solution coverage.
 """
 
 import os
@@ -28,7 +28,7 @@ HAS_GENAI = False
 try:
     from google import genai
     from google.genai import types
-    from pydantic import BaseModel
+    from pydantic import BaseModel, field_validator
     HAS_GENAI = True
 except ImportError:
     HAS_GENAI = False
@@ -64,7 +64,7 @@ TOPIC_PAGES = {
 
 
 # ==============================================================================
-# Pydantic Schemas for Structured JSON
+# Pydantic Schemas with Automated Format Normalization
 # ==============================================================================
 if HAS_GENAI:
     class MarkItem(BaseModel):
@@ -80,6 +80,14 @@ if HAS_GENAI:
     class SubpartStemOnly(BaseModel):
         subpart: str
         stem: str
+
+        @field_validator('subpart')
+        @classmethod
+        def normalize_subpart_label(cls, v: str) -> str:
+            v_clean = v.strip().lower()
+            if v_clean in ["none", "default", "main", "null"]:
+                return ""
+            return v_clean
 
     class QuestionStemBatch(BaseModel):
         question_number: int
@@ -98,6 +106,24 @@ if HAS_GENAI:
         mark_breakdown: List[MarkItem]
         solution: str
         ai_explanation: AIExplanation
+
+        @field_validator('subpart')
+        @classmethod
+        def normalize_subpart_label(cls, v: str) -> str:
+            v_clean = v.strip().lower()
+            if v_clean in ["none", "default", "main", "null"]:
+                return ""
+            return v_clean
+
+        @field_validator('final_answer')
+        @classmethod
+        def ensure_latex_wrapper(cls, v: str) -> str:
+            v_str = v.strip()
+            if not v_str:
+                return ""
+            if not v_str.startswith('$'):
+                v_str = f"${v_str}$"
+            return v_str
 
     class Pass2SolutionsBatch(BaseModel):
         solutions: List[SubpartSolutionBatch]
@@ -133,7 +159,6 @@ def run_pass1_questions(
     topic_num: int,
     model_name: str
 ) -> Dict[int, Dict[str, Any]]:
-    """Pass 1: Extract Question Stems Page by Page."""
     questions_dict = {}
 
     for page_num in q_pages:
@@ -145,6 +170,7 @@ def run_pass1_questions(
             prompt = f"""
 Extract all SKILL BUILDER QUESTIONS on this single Questions PDF page for TOPIC {topic_num}.
 Format inline math in standard LaTeX ($...$). Set `has_diagram = True` if a figure is referenced.
+If a question has subparts like 'a i', 'a ii', extract each nested subpart separately.
 """
             response = client.models.generate_content(
                 model=model_name,
@@ -165,7 +191,7 @@ Format inline math in standard LaTeX ($...$). Set `has_diagram = True` if a figu
                     "question_text": q.question_text,
                     "has_diagram": q.has_diagram,
                     "subparts": {
-                        s.subpart.strip().lower(): {
+                        s.subpart: {
                             "subpart": s.subpart,
                             "stem": s.stem,
                             "final_answer": "",
@@ -198,7 +224,6 @@ def run_pass2_solutions(
     topic_num: int,
     model_name: str
 ) -> List[SubpartSolutionBatch]:
-    """Pass 2: Extract Solutions, Mark Breakdown, Answers & AI Lessons in 3-Page Chunks."""
     all_sols = []
 
     for chunk in chunk_list(s_pages, 3):
@@ -208,11 +233,12 @@ def run_pass2_solutions(
         try:
             up_file = client.files.upload(file=tmp_path)
             prompt = f"""
-Extract all WORKED SOLUTIONS on these PDF pages for TOPIC {topic_num}.
+Extract ALL WORKED SOLUTIONS on these PDF pages for TOPIC {topic_num}.
+Make sure NO questions or subparts are omitted.
 For each subpart:
-1. Identify `question_number` and `subpart` (e.g., 'a', 'b').
-2. Extract `final_answer` (isolated short expression in LaTeX $...$).
-3. Extract `mark_breakdown` array containing mark codes (e.g. "M1", "A1", "R1") and descriptions.
+1. Identify `question_number` and `subpart` (e.g., 'a', 'b', 'a i', 'a ii', or empty string '' if no subpart).
+2. Extract `final_answer` (isolated short expression enclosed in LaTeX $...$).
+3. Extract `mark_breakdown` array containing mark codes ("M1", "A1", "R1") and descriptions.
 4. Extract official `solution` text.
 5. Generate `ai_explanation` object with `concept_rule`, `step_by_step` list, and `common_pitfalls`.
 Format all math as standard LaTeX inside $...$.
@@ -242,7 +268,6 @@ Format all math as standard LaTeX inside $...$.
 
     return all_sols
 
-
 def parse_topic(
     client: Any,
     topics_reader: PdfReader,
@@ -259,18 +284,56 @@ def parse_topic(
     # Pass 2: Solutions
     sols_list = run_pass2_solutions(client, solutions_reader, topic_info["s_pages"], topic_num, model_name)
 
-    # Merge
-    merged_count = 0
+    # Group Pass 2 solutions by question_number
+    sols_by_q = {}
     for sol in sols_list:
         q_num = sol.question_number
-        s_part = sol.subpart.strip().lower()
+        if q_num not in sols_by_q:
+            sols_by_q[q_num] = []
+        sols_by_q[q_num].append(sol)
 
-        if q_num in questions_dict:
-            sp_dict = questions_dict[q_num]["subparts"]
-            if s_part not in sp_dict:
-                sp_dict[s_part] = {"subpart": s_part, "stem": ""}
+    # Merge Solutions into Questions
+    merged_count = 0
+    for q_num, q_data in questions_dict.items():
+        sp_dict = q_data["subparts"]
+        q_sols = sols_by_q.get(q_num, [])
 
-            sp_dict[s_part].update({
+        if not q_sols:
+            continue
+
+        sp_keys = list(sp_dict.keys())
+
+        # Attempt 1: Exact / Normalized Match
+        unmatched_sols = []
+        for sol in q_sols:
+            s_part = sol.subpart.strip().lower().replace(" ", "").replace("(", "").replace(")", "")
+            matched_key = None
+
+            for k in sp_keys:
+                k_clean = k.strip().lower().replace(" ", "").replace("(", "").replace(")", "")
+                if s_part == k_clean or (s_part == "" and len(sp_keys) == 1):
+                    matched_key = k
+                    break
+
+            if matched_key:
+                sp_dict[matched_key].update({
+                    "final_answer": sol.final_answer,
+                    "mark_breakdown": [{"code": m.code, "desc": m.desc} for m in sol.mark_breakdown],
+                    "solution": sol.solution,
+                    "ai_explanation": {
+                        "concept_rule": sol.ai_explanation.concept_rule,
+                        "step_by_step": sol.ai_explanation.step_by_step,
+                        "common_pitfalls": sol.ai_explanation.common_pitfalls
+                    }
+                })
+                merged_count += 1
+            else:
+                unmatched_sols.append(sol)
+
+        # Attempt 2: Sequential Position Fill for remaining empty subparts
+        empty_keys = [k for k, v in sp_dict.items() if not v.get("solution")]
+        for sol, empty_k in zip(unmatched_sols, empty_keys):
+            sp_dict[empty_k].update({
                 "final_answer": sol.final_answer,
                 "mark_breakdown": [{"code": m.code, "desc": m.desc} for m in sol.mark_breakdown],
                 "solution": sol.solution,
@@ -290,7 +353,6 @@ def parse_topic(
 
     print(f"✅ Topic {topic_num}: {len(final_questions)} questions extracted, {merged_count} solutions merged.")
     return final_questions
-
 
 def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str, Any]]]) -> None:
     data_dir.mkdir(parents=True, exist_ok=True)

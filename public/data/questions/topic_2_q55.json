@@ -1,0 +1,136 @@
+{
+  "id": "topic_2_q55",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 55,
+  "question_text": "Copy this graph of $y = f(x)$, and draw the graph of:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = f(x+2)$",
+      "final_answer": "$\\text{Translation 2 units to the left}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify transformation as translating $y = f(x)$ 2 units to the left"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurately sketch the translated graph $y = f(x+2)$"
+        }
+      ],
+      "solution": "The graph of $y = f(x + 2)$ is found by translating $y = f(x)$ 2 units to the left.",
+      "ai_explanation": {
+        "concept_rule": "$y = f(x + c)$ represents a horizontal shift of $c$ units to the left when $c > 0$.",
+        "step_by_step": [
+          "Observe the transformation: $x$ is replaced by $x + 2$.",
+          "Shift every point on the graph of $y = f(x)$ 2 units to the left ($x \\to x - 2$).",
+          "Plot the new curve $y = f(x+2)$."
+        ],
+        "common_pitfalls": "Translating to the right instead of to the left."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 2f(x) - 3$",
+      "final_answer": "$\\text{Vertical stretch scale factor 2, followed by translation 3 units down}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify vertical stretch with scale factor 2"
+        },
+        {
+          "code": "M1",
+          "desc": "Identify vertical translation 3 units downwards"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurately sketch the transformed curve $y = 2f(x) - 3$"
+        }
+      ],
+      "solution": "The graph of $y = 2f(x) - 3$ is a vertical stretch of $y = f(x)$ with scale factor 2, followed by a translation 3 units downwards.",
+      "ai_explanation": {
+        "concept_rule": "For $y = a f(x) + d$, apply the vertical stretch by factor $a$ first, then the vertical shift by $d$.",
+        "step_by_step": [
+          "Multiply each $y$-coordinate of $y = f(x)$ by 2 (vertical stretch by scale factor 2).",
+          "Subtract 3 from the resulting $y$-coordinates (shift downwards by 3 units).",
+          "Plot the transformed graph $y = 2f(x) - 3$."
+        ],
+        "common_pitfalls": "Subtracting 3 before stretching by 2 (order of operations matters)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = 4 - f(x)$",
+      "final_answer": "$y = 4 - f(x)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Reflection in the $x$-axis followed by a vertical translation 4 units upwards"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = 4 - f(x)$"
+        }
+      ],
+      "solution": "The graph of $y = 4 - f(x)$ is found by reflecting $y = f(x)$ in the $x$-axis, then translating 4 units upwards.",
+      "ai_explanation": {
+        "concept_rule": "Transformation of the form $y = -f(x) + c$ reflects the graph across the $x$-axis first, then shifts vertically by $c$ units.",
+        "step_by_step": [
+          "Reflect the given function $y = f(x)$ in the $x$-axis, mapping $(x, y) \\to (x, -y)$.",
+          "Translate the reflected graph vertically upwards by $4$ units, mapping $(x, -y) \\to (x, -y + 4)$."
+        ],
+        "common_pitfalls": "Translating upwards before reflecting, which would result in $y = -(f(x) + 4) = -f(x) - 4$ instead."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$y = f(-x)$",
+      "final_answer": "$y = f(-x)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identification of reflection in the $y$-axis"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = f(-x)$"
+        }
+      ],
+      "solution": "The graph of $y = f(-x)$ is found by reflecting $y = f(x)$ in the $y$-axis.",
+      "ai_explanation": {
+        "concept_rule": "The transformation $y = f(-x)$ reflects the graph horizontally across the $y$-axis.",
+        "step_by_step": [
+          "Identify the reflection line as the $y$-axis ($x = 0$).",
+          "Replace each coordinate $(x, y)$ on $y = f(x)$ with $(-x, y)$ to draw the transformed curve."
+        ],
+        "common_pitfalls": "Confusing reflection across the $y$-axis ($y = f(-x)$) with reflection across the $x$-axis ($y = -f(x)$)."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "$y = f(2x)$",
+      "final_answer": "$y = f(2x)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identification of horizontal stretch with scale factor $\\frac{1}{2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = f(2x)$"
+        }
+      ],
+      "solution": "The graph of $y = f(2x)$ is a horizontal stretch of $y = f(x)$ with scale factor $\\frac{1}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "The transformation $y = f(kx)$ scales the graph horizontally by a factor of $\\frac{1}{k}$ parallel to the $x$-axis.",
+        "step_by_step": [
+          "Recognize $k = 2$, meaning every $x$-coordinate is multiplied by $\\frac{1}{2}$.",
+          "Plot key points with their $x$-coordinates halved while keeping the $y$-coordinates the same."
+        ],
+        "common_pitfalls": "Multiplying the $x$-coordinates by $2$ instead of dividing by $2$."
+      }
+    }
+  ]
+}

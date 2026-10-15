@@ -1,0 +1,107 @@
+{
+  "id": "topic_2_q4",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 4,
+  "question_text": "Tammy buys tickets to a stage show. Tickets cost \\$30 for adults, and \\$15 for children. She spends a total of \\$120 buying tickets for $x$ adults and $y$ children.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why $30x + 15y = 120$.",
+      "final_answer": "$30x + 15y = 120$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Write down the correct linear equation representing total cost."
+        }
+      ],
+      "solution": "$x$ adult tickets at $\\$30$ each and $y$ child tickets at $\\$15$ costs $\\$120$ in total. $\\therefore 30x + 15y = 120$.",
+      "ai_explanation": {
+        "concept_rule": "Total cost is the sum of (cost per item $\\times$ quantity).",
+        "step_by_step": [
+          "Multiply number of adult tickets $x$ by 30.",
+          "Multiply number of child tickets $y$ by 15.",
+          "Equate the sum to the total budget of 120: $30x + 15y = 120$."
+        ],
+        "common_pitfalls": "Swapping the coefficients of $x$ and $y$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "If Tammy bought tickets for $4$ children, how many adult tickets did she buy?",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute y = 4 into 30x + 15y = 120."
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for x = 2 and conclude 2 adult tickets."
+        }
+      ],
+      "solution": "When $y = 4$, $30x + 15(4) = 120 \\implies 30x + 60 = 120 \\implies 30x = 60 \\implies x = 2$. Therefore, Tammy bought $2$ adult tickets.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the known value into the linear equation and solve for the remaining unknown variable.",
+        "step_by_step": [
+          "Substitute $y = 4$: $30x + 15(4) = 120$.",
+          "Simplify to get $30x + 60 = 120$.",
+          "Subtract 60: $30x = 60$.",
+          "Divide by 30 to get $x = 2$."
+        ],
+        "common_pitfalls": "Forgetting to interpret the final numerical answer in the context of the problem."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the $x$-intercept of the line $30x + 15y = 120$, and interpret your answer.",
+      "final_answer": "$4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set y = 0 and solve for x."
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude Tammy bought 4 adult tickets if no child tickets were bought."
+        }
+      ],
+      "solution": "When $y = 0$, $30x + 15(0) = 120 \\implies 30x = 120 \\implies x = 4$. Therefore, the $x$-intercept of the line $30x + 15y = 120$ is $4$. If Tammy did not buy any child tickets, then she bought $4$ adult tickets.",
+      "ai_explanation": {
+        "concept_rule": "The $x$-intercept corresponds to $y = 0$, representing the situation where no child tickets are purchased.",
+        "step_by_step": [
+          "Set $y = 0$ in $30x + 15y = 120$.",
+          "Solve $30x = 120$ to obtain $x = 4$.",
+          "Interpret the result: Tammy bought 4 adult tickets."
+        ],
+        "common_pitfalls": "Finding the $y$-intercept instead of the $x$-intercept."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Draw the graph of $30x + 15y = 120$. Mark two points on your graph to indicate your answers to b and c.",
+      "final_answer": "$Graph of the line passing through $(0, 8)$, $(2, 4)$, and $(4, 0)$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plot intercepts (0, 8) and (4, 0) and point (2, 4)."
+        },
+        {
+          "code": "A1",
+          "desc": "Draw a straight line segment with axes labeled."
+        }
+      ],
+      "solution": "A graph with axes labeled $x$ and $y$, showing the line $30x + 15y = 120$ passing through points $(0, 8)$, $(2, 4)$, and $(4, 0)$ in the first quadrant.",
+      "ai_explanation": {
+        "concept_rule": "A linear relation can be graphed by plotting key points such as intercepts and joining them with a straight line.",
+        "step_by_step": [
+          "Identify points: $(0, 8)$, $(2, 4)$, and $(4, 0)$.",
+          "Plot these points on Cartesian axes restricted to non-negative values.",
+          "Connect the points with a straight line."
+        ],
+        "common_pitfalls": "Extending the line into negative quadrants where ticket numbers cannot exist."
+      }
+    }
+  ]
+}

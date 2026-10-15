@@ -1,0 +1,117 @@
+{
+  "id": "topic_2_q44",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 44,
+  "question_text": "The graph alongside shows the percentage $P$ of radioactive Carbon-14 remaining in an organism $t$ thousands of years after it dies.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Use the graph to estimate the percentage of Carbon-14 remaining after 4000 years.",
+      "final_answer": "$\\approx 60\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Read graph at $t = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "State about $60\\%$ remaining"
+        }
+      ],
+      "solution": "When $t = 4$, $P \\approx 60$\n$\\therefore$ there is about $60\\%$ of Carbon-14 remaining after $4000$ years.",
+      "ai_explanation": {
+        "concept_rule": "Locate $t = 4$ on the horizontal axis and read the corresponding percentage $P$ on the vertical axis.",
+        "step_by_step": [
+          "Find $t = 4$ (thousand years) on the horizontal axis.",
+          "Move vertically up to intersect the decay curve.",
+          "Move horizontally to the vertical axis to read $P \\approx 60$."
+        ],
+        "common_pitfalls": "Misinterpreting the scale of $t$ (4 thousand years corresponds to $t = 4$, not $t = 4000$ on the axis)."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Use the graph to estimate the number of years for the percentage of Carbon-14 to fall to $50\\%$.",
+      "final_answer": "$\\approx 5500 \\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Read graph at $P = 50$"
+        },
+        {
+          "code": "A1",
+          "desc": "Interpret $t \\approx 5.5$ as approximately $5500$ years"
+        }
+      ],
+      "solution": "When $P = 50$, $t \\approx 5.5$\n$\\therefore$ it will take approximately $5500$ years for the percentage of Carbon-14 to fall to $50\\%$.",
+      "ai_explanation": {
+        "concept_rule": "Locate $P = 50$ on the vertical axis and read the corresponding time $t$ on the horizontal axis, then convert to years.",
+        "step_by_step": [
+          "Find $P = 50$ on the vertical axis.",
+          "Move horizontally to intersect the curve.",
+          "Read down to the horizontal axis to find $t \\approx 5.5$.",
+          "Multiply by 1000 to convert to years: $5.5 \\times 1000 = 5500$ years."
+        ],
+        "common_pitfalls": "Forgetting to multiply $t$ by 1000 to get the answer in years."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "The equation of the graph is $P = 100 \\times (1.1318)^{-t}$, $t \\ge 0$. Calculate the percentage of Carbon-14 remaining after 8000 years.",
+      "final_answer": "$\\approx 37.1\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 8$ into the formula $P = 100 \\times (1.1318)^{-t}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $P \\approx 37.1\\%$"
+        }
+      ],
+      "solution": "When $t = 8$, $P = 100 \\times (1.1318)^{-8} \\approx 37.1$\n$\\therefore$ there is about $37.1\\%$ of Carbon-14 remaining after $8000$ years.",
+      "ai_explanation": {
+        "concept_rule": "Substitute $t = 8$ (representing 8000 years) into the exponential model.",
+        "step_by_step": [
+          "Substitute $t = 8$ into $P = 100 \\times (1.1318)^{-t}$.",
+          "Compute $(1.1318)^{-8} \\approx 0.37107$.",
+          "Multiply by 100: $P \\approx 37.1\\%$."
+        ],
+        "common_pitfalls": "Substituting $t = 8000$ instead of $t = 8$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "How long will it take for the percentage to fall to $15\\%$?",
+      "final_answer": "$\\approx 15\\,300 \\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $15 = 100 \\times (1.1318)^{-t}$ and isolate $(1.1318)^{-t} = 0.15$"
+        },
+        {
+          "code": "M1",
+          "desc": "Take natural logarithm of both sides to solve for $t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $t \\approx 15.3$ and state final answer as approximately $15\\,300$ years"
+        }
+      ],
+      "solution": "When $P = 15$, $15 = 100 \\times (1.1318)^{-t}$\n$\\therefore (1.1318)^{-t} = 0.15$\n$\\therefore -t \\ln(1.1318) = \\ln(0.15)$\n$\\therefore t = \\frac{\\ln(0.15)}{-\\ln(1.1318)} \\approx 15.3$\n$\\therefore$ it will take approximately $15\\,300$ years for the percentage of Carbon-14 to fall to $15\\%$.",
+      "ai_explanation": {
+        "concept_rule": "To solve an exponential equation $a^u = b$ for an unknown in the exponent, take the logarithm of both sides.",
+        "step_by_step": [
+          "Set $P = 15$: $100 \\times (1.1318)^{-t} = 15$.",
+          "Divide by 100: $(1.1318)^{-t} = 0.15$.",
+          "Take the natural logarithm: $-t \\ln(1.1318) = \\ln(0.15)$.",
+          "Solve for $t$: $t = -\\frac{\\ln(0.15)}{\\ln(1.1318)} \\approx \\frac{-1.8971}{-0.1238} \\approx 15.326$.",
+          "Convert to years: $15.3 \\times 1000 \\approx 15\\,300$ years."
+        ],
+        "common_pitfalls": "Negative sign error when solving for $t$, or leaving the final answer as 15.3 instead of converting to actual years."
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "topic_2_q3",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 3,
+  "question_text": "Line $L$ has equation $y = 3 - 2x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "If the point $\\text{P}(3, k)$ lies on line $L$, determine the value of $k$.",
+      "final_answer": "$k = -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = 3 and y = k into y = 3 - 2x."
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly calculate k = -3."
+        }
+      ],
+      "solution": "Substituting $x = 3$ and $y = k$ into the equation gives $k = 3 - 2(3) \\implies k = 3 - 6 \\implies k = -3$.",
+      "ai_explanation": {
+        "concept_rule": "If a point lies on a line, its coordinates satisfy the equation of the line.",
+        "step_by_step": [
+          "Set $x = 3$ and $y = k$ in the linear equation $y = 3 - 2x$.",
+          "Compute $k = 3 - 2(3) = 3 - 6 = -3$."
+        ],
+        "common_pitfalls": "Arithmetic errors such as calculating $3 - 6$ as $3$ or $-9$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Write down the gradient of line $L$.",
+      "final_answer": "$-2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the coefficient of x as the gradient."
+        }
+      ],
+      "solution": "Line $L$ has gradient $-2$.",
+      "ai_explanation": {
+        "concept_rule": "In the form $y = mx + c$, the coefficient of $x$ represents the slope/gradient $m$.",
+        "step_by_step": [
+          "Read the coefficient of $x$ from $y = 3 - 2x$, which gives $m = -2$."
+        ],
+        "common_pitfalls": "Mistaking the constant $3$ for the gradient."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the equation of the line perpendicular to $L$ which passes through point $\\text{P}$.",
+      "final_answer": "$y = \\frac{1}{2}x - \\frac{9}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find the perpendicular gradient m = 1/2."
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute point (3, -3) into the equation of a line."
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to y = 1/2 x - 9/2."
+        }
+      ],
+      "solution": "From b, the line is perpendicular to $L$, which has gradient $-2$. Therefore, the line has gradient $\\frac{1}{2}$ and passes through $P(3, -3)$ {from a}. The equation of the line is $y - (-3) = \\frac{1}{2}(x - 3) \\implies y + 3 = \\frac{1}{2}x - \\frac{3}{2} \\implies y = \\frac{1}{2}x - \\frac{9}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "Perpendicular lines satisfy $m_1 m_2 = -1$. The equation passing through $(x_1, y_1)$ with gradient $m$ is $y - y_1 = m(x - x_1)$.",
+        "step_by_step": [
+          "The gradient perpendicular to $-2$ is $-\\frac{1}{-2} = \\frac{1}{2}$.",
+          "Using point $P(3, -3)$, write $y - (-3) = \\frac{1}{2}(x - 3)$.",
+          "Rearrange to slope-intercept form: $y = \\frac{1}{2}x - \\frac{3}{2} - 3 = \\frac{1}{2}x - \\frac{9}{2}$."
+        ],
+        "common_pitfalls": "Sign error with $y - (-3)$ becoming $y - 3$, or forgetting to invert the gradient."
+      }
+    }
+  ]
+}

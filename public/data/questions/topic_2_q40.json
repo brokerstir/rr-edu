@@ -1,0 +1,115 @@
+{
+  "id": "topic_2_q40",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 40,
+  "question_text": "Suppose $f: x \\mapsto x + 5$ and $g: x \\mapsto 7 - 3x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find: $f^{-1}(x)$",
+      "final_answer": "$f^{-1}(x) = x - 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $x = y + 5$ and solve for $y$"
+        },
+        {
+          "code": "A1",
+          "desc": "State $f^{-1}(x) = x - 5$"
+        }
+      ],
+      "solution": "$f$ is $y = x + 5$\n$\\therefore f^{-1}$ is $x = y + 5 \\implies y = x - 5$\nSo, $f^{-1}(x) = x - 5$",
+      "ai_explanation": {
+        "concept_rule": "The inverse of an affine function $y = x + c$ is $y = x - c$.",
+        "step_by_step": [
+          "Write the function as $y = x + 5$.",
+          "Swap $x$ and $y$: $x = y + 5$.",
+          "Solve for $y$: $y = x - 5$."
+        ],
+        "common_pitfalls": "Changing the sign of $x$ instead of the constant."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find: $g^{-1}(x)$",
+      "final_answer": "$g^{-1}(x) = \\frac{7}{3} - \\frac{1}{3}x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $x = 7 - 3y$ and solve for $y$"
+        },
+        {
+          "code": "A1",
+          "desc": "State $g^{-1}(x) = \\frac{7}{3} - \\frac{1}{3}x$"
+        }
+      ],
+      "solution": "$g$ is $y = 7 - 3x$\n$\\therefore g^{-1}$ is $x = 7 - 3y \\implies 3y = 7 - x \\implies y = \\frac{7}{3} - \\frac{1}{3}x$\nSo, $g^{-1}(x) = \\frac{7}{3} - \\frac{1}{3}x$",
+      "ai_explanation": {
+        "concept_rule": "Swap $x$ and $y$ and isolate $y$ to find the inverse.",
+        "step_by_step": [
+          "Write $x = 7 - 3y$.",
+          "Add $3y$ and subtract $x$: $3y = 7 - x$.",
+          "Divide by $3$: $y = \\frac{7 - x}{3} = \\frac{7}{3} - \\frac{1}{3}x$."
+        ],
+        "common_pitfalls": "Sign error when dividing by $-3$ or rearranging $7 - 3y$."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Find: $(f \\circ g)(x)$",
+      "final_answer": "$(f \\circ g)(x) = 12 - 3x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $g(x)$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $12 - 3x$"
+        }
+      ],
+      "solution": "$(f \\circ g)(x) = f(g(x)) = f(7 - 3x) = (7 - 3x) + 5 = 12 - 3x$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the expression for $g(x)$ into $f(x)$.",
+        "step_by_step": [
+          "Identify $g(x) = 7 - 3x$ and $f(u) = u + 5$.",
+          "Substitute $u = 7 - 3x$: $(7 - 3x) + 5$.",
+          "Simplify: $12 - 3x$."
+        ],
+        "common_pitfalls": "Confusing the order of composition and evaluating $g(f(x))$ instead."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Show that $(g^{-1} \\circ f^{-1})(x) = (f \\circ g)^{-1}(x)$.",
+      "final_answer": "$(f \\circ g)^{-1}(x) = 4 - \\frac{1}{3}x$, $(g^{-1} \\circ f^{-1})(x) = (f \\circ g)^{-1}(x)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $(f \\circ g)^{-1}(x) = 4 - \\frac{1}{3}x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluate $(g^{-1} \\circ f^{-1})(x)$ using parts a i and a ii"
+        },
+        {
+          "code": "A1",
+          "desc": "Show both expressions are identical"
+        }
+      ],
+      "solution": "$f \\circ g$ is $y = 12 - 3x$ {using a iii}\n$\\therefore (f \\circ g)^{-1}$ is $x = 12 - 3y \\implies 3y = 12 - x \\implies y = 4 - \\frac{1}{3}x$\nSo, $(f \\circ g)^{-1}(x) = 4 - \\frac{1}{3}x$\n\n$(g^{-1} \\circ f^{-1})(x) = g^{-1}(f^{-1}(x))$\n$= g^{-1}(x - 5)$ {using a i}\n$= \\frac{7}{3} - \\frac{1}{3}(x - 5)$ {using a ii}\n$= \\frac{7}{3} - \\frac{1}{3}x + \\frac{5}{3}$\n$= 4 - \\frac{1}{3}x$\n$= (f \\circ g)^{-1}(x)$",
+      "ai_explanation": {
+        "concept_rule": "The socks-and-shoes property of inverse composition: $(f \\circ g)^{-1} = g^{-1} \\circ f^{-1}$.",
+        "step_by_step": [
+          "Find $(f \\circ g)^{-1}(x)$ by inverting $y = 12 - 3x$: $x = 12 - 3y \\implies y = 4 - \\frac{1}{3}x$.",
+          "Compute $(g^{-1} \\circ f^{-1})(x) = g^{-1}(x - 5) = \\frac{7}{3} - \\frac{1}{3}(x - 5)$.",
+          "Expand and simplify: $\\frac{7}{3} + \\frac{5}{3} - \\frac{1}{3}x = \\frac{12}{3} - \\frac{1}{3}x = 4 - \\frac{1}{3}x$.",
+          "Observe that both expressions are equal."
+        ],
+        "common_pitfalls": "Incorrectly testing $f^{-1} \\circ g^{-1}$ instead of $g^{-1} \\circ f^{-1}$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q23",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 23,
+  "question_text": "Solve for $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(x - 1)(5 - x) \\leqslant 0$",
+      "final_answer": "$x \\le 1\\text{ or } x \\ge 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding roots $x = 1$ and $x = 5$ and determining signs of the quadratic expression"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating correct solution set $x \\le 1$ or $x \\ge 5$"
+        }
+      ],
+      "solution": "$(x - 1)(5 - x) \\le 0$\nSign diagram of LHS is:\nNegative for $x < 1$, positive for $1 < x < 5$, negative for $x > 5$.\n$\\therefore x \\le 1$ or $x \\ge 5$",
+      "ai_explanation": {
+        "concept_rule": "For a quadratic inequality, locate the roots and use a sign diagram or parabola orientation to identify the intervals satisfying the inequality.",
+        "step_by_step": [
+          "Find critical points where $(x - 1)(5 - x) = 0$, which are $x = 1$ and $x = 5$.",
+          "Notice the leading coefficient is negative: $(x - 1)(5 - x) = -x^2 + 6x - 5$.",
+          "Since it opens downwards, the expression is $\\le 0$ outside the roots: $x \\le 1$ or $x \\ge 5$."
+        ],
+        "common_pitfalls": "Assuming a factored expression $(x - a)(b - x)$ always opens upwards without noticing the negative sign in $(5 - x)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$x^2 + 8x - 20 < 0$",
+      "final_answer": "$-10 < x < 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Factoring the quadratic into $(x + 10)(x - 2) < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating correct solution interval $-10 < x < 2$"
+        }
+      ],
+      "solution": "$x^2 + 8x - 20 < 0$\n$\\therefore (x + 10)(x - 2) < 0$\nSign diagram of LHS is positive for $x < -10$, negative for $-10 < x < 2$, and positive for $x > 2$.\n$\\therefore -10 < x < 2$",
+      "ai_explanation": {
+        "concept_rule": "For an upward-opening parabola $(x - r_1)(x - r_2) < 0$, the solution is the open interval between the roots: $r_1 < x < r_2$.",
+        "step_by_step": [
+          "Factor $x^2 + 8x - 20$ into $(x + 10)(x - 2)$.",
+          "Identify roots at $x = -10$ and $x = 2$.",
+          "Since the parabola opens upwards, it is strictly less than 0 between the roots: $-10 < x < 2$."
+        ],
+        "common_pitfalls": "Using non-strict inequalities $\\le$ instead of strict $<$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$-9x^2 + 4x + 5 \\geqslant 0$",
+      "final_answer": "$-\\frac{5}{9} \\le x \\le 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearranging inequality and factoring: $(9x + 5)(x - 1) \\le 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating correct closed interval $-\\frac{5}{9} \\le x \\le 1$"
+        }
+      ],
+      "solution": "$-9x^2 + 4x + 5 \\ge 0$\n$\\therefore 9x^2 - 4x - 5 \\le 0$\n$\\therefore (9x + 5)(x - 1) \\le 0$\nSign diagram of LHS is:\n$\\therefore -\\frac{5}{9} \\le x \\le 1$",
+      "ai_explanation": {
+        "concept_rule": "Multiplying or dividing an inequality by $-1$ reverses the inequality sign.",
+        "step_by_step": [
+          "Multiply both sides by $-1$ to make the leading coefficient positive: $9x^2 - 4x - 5 \\le 0$.",
+          "Factor the quadratic: $(9x + 5)(x - 1) \\le 0$.",
+          "Identify roots $x = -\\frac{5}{9}$ and $x = 1$.",
+          "The expression is $\\le 0$ between and including the roots: $-\\frac{5}{9} \\le x \\le 1$."
+        ],
+        "common_pitfalls": "Forgetting to reverse the inequality sign when dividing/multiplying by $-1$."
+      }
+    }
+  ]
+}

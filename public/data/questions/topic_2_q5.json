@@ -1,0 +1,120 @@
+{
+  "id": "topic_2_q5",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 5,
+  "question_text": "Solve for $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$2x^2 - 9x = 0$",
+      "final_answer": "$x = 0$ or $x = \\frac{9}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Factor out common factor x."
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions x = 0 and x = 9/2."
+        }
+      ],
+      "solution": "$2x^2 - 9x = 0 \\implies x(2x - 9) = 0 \\implies x = 0$ or $2x - 9 = 0 \\implies x = 0$ or $\\frac{9}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "Use the null factor law: if $A \\cdot B = 0$, then $A = 0$ or $B = 0$.",
+        "step_by_step": [
+          "Factor out $x$: $x(2x - 9) = 0$.",
+          "Set each factor to zero: $x = 0$ or $2x - 9 = 0$.",
+          "Solve the second factor: $x = \\frac{9}{2}$."
+        ],
+        "common_pitfalls": "Dividing both sides by $x$ and losing the $x = 0$ root."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$x^2 + 8x - 20 = 0$",
+      "final_answer": "$x = -10$ or $x = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Factorise the quadratic into two linear factors."
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions x = -10 and x = 2."
+        }
+      ],
+      "solution": "$x^2 + 8x - 20 = 0 \\implies (x + 10)(x - 2) = 0 \\implies x = -10$ or $2$.",
+      "ai_explanation": {
+        "concept_rule": "Factorise a monic quadratic $x^2 + bx + c = 0$ by finding two numbers that multiply to $c$ and sum to $b$.",
+        "step_by_step": [
+          "Find two numbers multiplying to $-20$ and adding to $8$: $10$ and $-2$.",
+          "Write in factored form: $(x + 10)(x - 2) = 0$.",
+          "Apply null factor law: $x = -10$ or $x = 2$."
+        ],
+        "common_pitfalls": "Using the wrong signs, such as $(x - 10)(x + 2)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$4x^2 + 11x = 3$",
+      "final_answer": "$x = \\frac{1}{4}$ or $x = -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearrange to standard form 4x^2 + 11x - 3 = 0."
+        },
+        {
+          "code": "M1",
+          "desc": "Factorise into (4x - 1)(x + 3) = 0."
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions x = 1/4 and x = -3."
+        }
+      ],
+      "solution": "$4x^2 + 11x = 3 \\implies 4x^2 + 11x - 3 = 0 \\implies (4x - 1)(x + 3) = 0 \\implies x = \\frac{1}{4}$ or $-3$.",
+      "ai_explanation": {
+        "concept_rule": "Rearrange into standard quadratic form $ax^2 + bx + c = 0$ before factorising.",
+        "step_by_step": [
+          "Subtract 3 to set equation to zero: $4x^2 + 11x - 3 = 0$.",
+          "Factorise: $(4x - 1)(x + 3) = 0$.",
+          "Solve $4x - 1 = 0 \\implies x = \\frac{1}{4}$ and $x + 3 = 0 \\implies x = -3$."
+        ],
+        "common_pitfalls": "Attempting to factorise before moving the constant to the left-hand side."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$(x + 3)(1 - 2x) = -9$",
+      "final_answer": "$x = \\frac{3}{2}$ or $x = -4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand brackets and set equation to 0."
+        },
+        {
+          "code": "M1",
+          "desc": "Factorise 2x^2 + 5x - 12 = 0 into (2x - 3)(x + 4) = 0."
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions x = 3/2 and x = -4."
+        }
+      ],
+      "solution": "$(x + 3)(1 - 2x) = -9 \\implies x - 2x^2 + 3 - 6x = -9 \\implies -2x^2 - 5x + 12 = 0 \\implies 2x^2 + 5x - 12 = 0 \\implies (2x - 3)(x + 4) = 0 \\implies x = \\frac{3}{2}$ or $-4$.",
+      "ai_explanation": {
+        "concept_rule": "Expand both sides, collect like terms into standard quadratic form $ax^2 + bx + c = 0$, then solve.",
+        "step_by_step": [
+          "Expand LHS: $x - 2x^2 + 3 - 6x = -2x^2 - 5x + 3$.",
+          "Set to $-9$: $-2x^2 - 5x + 3 = -9$.",
+          "Add 9: $-2x^2 - 5x + 12 = 0$, multiply by $-1$: $2x^2 + 5x - 12 = 0$.",
+          "Factorise: $(2x - 3)(x + 4) = 0$.",
+          "Solve: $x = \\frac{3}{2}$ or $x = -4$."
+        ],
+        "common_pitfalls": "Errors during expansion of brackets, especially with the negative signs."
+      }
+    }
+  ]
+}

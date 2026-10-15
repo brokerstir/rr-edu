@@ -1,0 +1,100 @@
+{
+  "id": "topic_2_q29",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 29,
+  "question_text": "State the domain and range of each function:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\sqrt{3 - 2x}$",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\leqslant \\frac{3}{2}\\}, \\text{ Range: } \\{y \\mid y \\geqslant 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting radicand $\\geqslant 0$ to find domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range"
+        }
+      ],
+      "solution": "$\\sqrt{3-2x}$ is defined when $3 - 2x \\geqslant 0$\n$\\therefore 2x \\leqslant 3$\n$\\therefore x \\leqslant \\frac{3}{2}$\n$\\therefore$ the domain is $\\{x \\mid x \\leqslant \\frac{3}{2}\\}$.\nA square root cannot be negative.\n$\\therefore$ the range is $\\{y \\mid y \\geqslant 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The square root function $\\sqrt{u}$ is defined for $u \\geqslant 0$, and the principal square root always produces non-negative outputs.",
+        "step_by_step": [
+          "Set $3 - 2x \\geqslant 0$.",
+          "Solve for $x$: $3 \\geqslant 2x \\implies x \\leqslant \\frac{3}{2}$. This is the domain.",
+          "Since the principal square root outputs values $\\geqslant 0$, the minimum value is $0$ (at $x = 3/2$) and it grows without bound as $x \\to -\\infty$.",
+          "Therefore, the range is $\\{y \\mid y \\geqslant 0\\}$."
+        ],
+        "common_pitfalls": "Flipping inequality signs incorrectly or assuming range includes negative numbers."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f : x \\mapsto \\frac{2}{x - 3}$",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\ne 3\\}, \\text{ Range: } \\{y \\mid y \\ne 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting denominator $\\ne 0$ for domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range"
+        }
+      ],
+      "solution": "$\\frac{2}{x-3}$ is defined when $x - 3 \\ne 0$\n$\\therefore x \\ne 3$\n$\\therefore$ the domain is $\\{x \\mid x \\ne 3\\}$.\nNo matter how large or small $x$ is, $y = f(x)$ is never zero.\n$\\therefore$ the range is $\\{y \\mid y \\ne 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "A rational function with a constant numerator cannot equal zero, and is undefined where the denominator is zero.",
+        "step_by_step": [
+          "The denominator cannot be zero: $x - 3 \\ne 0 \\implies x \\ne 3$. Domain: $\\{x \\mid x \\ne 3\\}$.",
+          "A fraction with a non-zero numerator ($2$) can never equal zero. As $x \\to \\pm\\infty$, $y \\to 0$.",
+          "Range: $\\{y \\mid y \\ne 0\\}$."
+        ],
+        "common_pitfalls": "Assuming the range is all real numbers without excluding the horizontal asymptote $y = 0$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f : x \\mapsto \\frac{1}{\\sqrt{x - 2}}$",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\geqslant 0 \\text{ and } x \\ne 4\\}, \\text{ Range: } \\{y \\mid y \\leqslant -\\frac{1}{2} \\text{ or } y > 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding conditions for domain ($x \\geqslant 0$ and $\\sqrt{x} - 2 \\ne 0$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range based on behavior around asymptote"
+        }
+      ],
+      "solution": "$\\frac{1}{\\sqrt{x}-2}$ is defined when $x \\geqslant 0$ and $\\sqrt{x} - 2 \\ne 0$\n$\\therefore x \\geqslant 0$ and $\\sqrt{x} \\ne 2$\n$\\therefore x \\geqslant 0$ and $x \\ne 4$\n$\\therefore$ the domain is $\\{x \\mid x \\geqslant 0 \\text{ and } x \\ne 4\\}$.\nFor $0 \\leqslant x < 4$, $y \\leqslant -\\frac{1}{2}$, and for $x > 4$, $y > 0$.\n$\\therefore$ the range is $\\{y \\mid y \\leqslant -\\frac{1}{2} \\text{ or } y > 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain requires all expressions under square roots to be non-negative and all denominators non-zero. The range is found by analyzing the outputs on each domain interval.",
+        "step_by_step": [
+          "Square root requires $x \\geqslant 0$. Denominator requires $\\sqrt{x} - 2 \\ne 0 \\implies x \\ne 4$.",
+          "Domain is $\\{x \\mid x \\geqslant 0 \\text{ and } x \\ne 4\\}$.",
+          "On $[0, 4)$: as $x = 0$, $y = \\frac{1}{0 - 2} = -\\frac{1}{2}$. As $x \\to 4^-$, $\\sqrt{x} \\to 2^-$ so $y \\to -\\infty$. Thus $y \\leqslant -\\frac{1}{2}$.",
+          "On $(4, \\infty)$: as $x \\to 4^+$, $y \\to +\\infty$. As $x \\to \\infty$, $y \\to 0^+$. Thus $y > 0$.",
+          "Combined range is $\\{y \\mid y \\leqslant -\\frac{1}{2} \\text{ or } y > 0\\}$."
+        ],
+        "common_pitfalls": "Missing the gap in the range between $-\\frac{1}{2}$ and $0$."
+      }
+    }
+  ]
+}

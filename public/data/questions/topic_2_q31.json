@@ -1,0 +1,162 @@
+{
+  "id": "topic_2_q31",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 31,
+  "question_text": "Consider the function $f(x) = \\frac{x+2}{x-1}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the domain and range of $f$.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\ne 1\\}, \\text{ Range: } \\{y \\mid y \\ne 1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding vertical asymptote value for domain"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range"
+        }
+      ],
+      "solution": "$f(x) = \\frac{x+2}{x-1} = \\frac{x-1+3}{x-1} = 1 + \\frac{3}{x-1}$\nThe domain is $\\{x \\mid x \\ne 1\\}$.\nThe range is $\\{y \\mid y \\ne 1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For a rational function $f(x) = c + \\frac{k}{x - a}$, the domain is $x \\ne a$ and the range is $y \\ne c$.",
+        "step_by_step": [
+          "Denominator is zero at $x = 1$, so domain is $\\{x \\mid x \\ne 1\\}$.",
+          "Rewrite $f(x) = 1 + \\frac{3}{x-1}$.",
+          "Since $\\frac{3}{x-1} \\ne 0$ for any $x$, $f(x) \\ne 1$.",
+          "Range is $\\{y \\mid y \\ne 1\\}$."
+        ],
+        "common_pitfalls": "Assuming range is all real numbers or misidentifying the horizontal asymptote."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Write down the equations of the asymptotes of $y = f(x)$.",
+      "final_answer": "$\\text{Vertical asymptote: } x = 1, \\text{ Horizontal asymptote: } y = 1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct vertical asymptote"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct horizontal asymptote"
+        }
+      ],
+      "solution": "The vertical asymptote is $x = 1$.\nThe horizontal asymptote is $y = 1$.",
+      "ai_explanation": {
+        "concept_rule": "The vertical asymptote occurs where the denominator is zero ($x = 1$). The horizontal asymptote is given by the ratio of leading coefficients $\\frac{1}{1} = 1$.",
+        "step_by_step": [
+          "Vertical asymptote: set denominator to $0 \\implies x - 1 = 0 \\implies x = 1$.",
+          "Horizontal asymptote: take $\\lim_{x \\to \\pm\\infty} \\frac{x+2}{x-1} = 1 \\implies y = 1$."
+        ],
+        "common_pitfalls": "Writing asymptotes as numbers rather than line equations ($x = 1$ and $y = 1$)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the axes intercepts.",
+      "final_answer": "$y\\text{-intercept is } -2, x\\text{-intercept is } -2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $x = 0$ for $y$-intercept and $y = 0$ for $x$-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct intercept values"
+        }
+      ],
+      "solution": "$f(0) = \\frac{2}{-1} = -2$, so the $y$-intercept is $-2$.\n$f(x) = 0$ when $x + 2 = 0 \\implies x = -2$, so the $x$-intercept is $-2$.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept occurs at $f(0)$, and the $x$-intercept occurs where $f(x) = 0$ (the numerator is zero).",
+        "step_by_step": [
+          "Substitute $x = 0$: $f(0) = \\frac{0+2}{0-1} = -2$.",
+          "Set $f(x) = 0$: $\\frac{x+2}{x-1} = 0 \\implies x + 2 = 0 \\implies x = -2$."
+        ],
+        "common_pitfalls": "Confusing the numerator and denominator when finding the $x$-intercept."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Draw a sign diagram for $f(x)$.",
+      "final_answer": "$\\text{Sign diagram with critical values } -2 \\text{ (zero) and } 1 \\text{ (undefined)}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying critical values $x = -2$ and $x = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct signs in each interval"
+        }
+      ],
+      "solution": "Sign diagram of LHS:\n- Positive for $x < -2$\n- Negative for $-2 < x < 1$\n- Positive for $x > 1$\nCritical points: $x = -2$ (zero) and $x = 1$ (vertical line/asymptote).",
+      "ai_explanation": {
+        "concept_rule": "A sign diagram shows where a function is positive, zero, negative, or undefined.",
+        "step_by_step": [
+          "Mark the root $x = -2$ and the undefined point $x = 1$ on the number line.",
+          "For $x < -2$, both $(x+2)$ and $(x-1)$ are negative, so their ratio is positive (+).",
+          "For $-2 < x < 1$, $(x+2) > 0$ and $(x-1) < 0$, ratio is negative (-).",
+          "For $x > 1$, both are positive, ratio is positive (+)."
+        ],
+        "common_pitfalls": "Treating $x = 1$ as a zero rather than an undefined point."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Describe the behaviour of the function near the asymptotes.",
+      "final_answer": "$\\text{As } x \\to 1^-, f(x) \\to -\\infty; \\text{ As } x \\to 1^+, f(x) \\to \\infty; \\text{ As } x \\to -\\infty, f(x) \\to 1^-; \\text{ As } x \\to \\infty, f(x) \\to 1^+$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating one-sided limits at $x = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating limits at $\\pm\\infty$ with correct direction"
+        }
+      ],
+      "solution": "As $x \\to 1^-$, $f(x) \\to -\\infty$\nAs $x \\to 1^+$, $f(x) \\to \\infty$\nAs $x \\to -\\infty$, $f(x) \\to 1^-$\nAs $x \\to \\infty$, $f(x) \\to 1^+$",
+      "ai_explanation": {
+        "concept_rule": "Asymptotic behavior describes limits approaching the vertical and horizontal asymptotes from either side.",
+        "step_by_step": [
+          "For $x \\to 1^-$: $x-1 \\to 0^-$ (negative small), so $\\frac{3}{x-1} \\to -\\infty$, $f(x) \\to -\\infty$.",
+          "For $x \\to 1^+$: $x-1 \\to 0^+$ (positive small), so $\\frac{3}{x-1} \\to +\\infty$, $f(x) \\to +\\infty$.",
+          "For $x \\to -\\infty$: $\\frac{3}{x-1} < 0$, so $f(x) = 1 + \\text{negative} \\to 1^-$.",
+          "For $x \\to +\\infty$: $\\frac{3}{x-1} > 0$, so $f(x) = 1 + \\text{positive} \\to 1^+$."
+        ],
+        "common_pitfalls": "Not specifying whether limits at infinity approach from above ($1^+$) or below ($1^-$)."
+      }
+    },
+    {
+      "subpart": "f",
+      "stem": "Sketch the function.",
+      "final_answer": "$\\text{Hyperbolic sketch with asymptotes } x = 1, y = 1 \\text{ and intercepts at } (-2, 0) \\text{ and } (0, -2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Drawing asymptotes $x = 1$ and $y = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketching both hyperbolic branches passing through intercepts $(-2,0)$ and $(0,-2)$"
+        }
+      ],
+      "solution": "Sketch of $f(x) = \\frac{x+2}{x-1}$ showing:\n- Vertical asymptote at $x = 1$\n- Horizontal asymptote at $y = 1$\n- $x$-intercept at $(-2, 0)$\n- $y$-intercept at $(0, -2)$\n- Two hyperbolic branches approaching the asymptotes.",
+      "ai_explanation": {
+        "concept_rule": "A rational function sketch requires asymptotes, axis intercepts, and correct curvature.",
+        "step_by_step": [
+          "Draw dashed lines for asymptotes $x = 1$ and $y = 1$.",
+          "Plot intercepts at $(-2, 0)$ and $(0, -2)$.",
+          "Draw the lower branch passing through the intercepts and approaching $x = 1$ (downwards) and $y = 1$ (from below).",
+          "Draw the upper branch in the first quadrant approaching $x = 1$ (upwards) and $y = 1$ (from above)."
+        ],
+        "common_pitfalls": "Drawing branches that cross or curve away from the asymptotes."
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "topic_2_q51",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 51,
+  "question_text": "Consider $f: x \\mapsto \\ln(x+2) - 5$, $x > -2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $f^{-1}$.",
+      "final_answer": "$f^{-1}(x) = e^{x+5} - 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Swap $x$ and $y$: $x = \\ln(y+2) - 5$"
+        },
+        {
+          "code": "M1",
+          "desc": "Isolate the logarithm and convert to exponential form"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $y$ to obtain $f^{-1}(x) = e^{x+5} - 2$"
+        }
+      ],
+      "solution": "$f$ is $y = \\ln(x+2) - 5$\n$\\therefore f^{-1}$ is $x = \\ln(y+2) - 5$\n$\\therefore x + 5 = \\ln(y+2)$\n$\\therefore y + 2 = e^{x+5}$\n$\\therefore y = e^{x+5} - 2$\nSo, $f^{-1}(x) = e^{x+5} - 2$",
+      "ai_explanation": {
+        "concept_rule": "The inverse of a logarithmic function $\\ln(u)$ is the exponential function $e^u$.",
+        "step_by_step": [
+          "Swap $x$ and $y$: $x = \\ln(y+2) - 5$.",
+          "Isolate $\\ln$: $x + 5 = \\ln(y+2)$.",
+          "Exponentiate both sides with base $e$: $e^{x+5} = y + 2$.",
+          "Subtract 2: $y = e^{x+5} - 2$."
+        ],
+        "common_pitfalls": "Exponentiating before isolating the logarithm, e.g., incorrectly writing $e^x = y + 2 - e^5$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "On the same set of axes, sketch the graphs of $f$ and $f^{-1}$.",
+      "final_answer": "$\\text{Graph showing } y = f(x) \\text{ and } y = f^{-1}(x) \\text{ reflected across } y = x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch $y = f(x)$ with vertical asymptote $x = -2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch $y = f^{-1}(x)$ with horizontal asymptote $y = -2$, showing reflection across $y = x$"
+        }
+      ],
+      "solution": "The graph of $y = f^{-1}(x)$ is a reflection of the graph of $y = f(x)$ in the line $y = x$.\n$y = f(x)$ has vertical asymptote $x = -2$.\n$y = f^{-1}(x)$ has horizontal asymptote $y = -2$.",
+      "ai_explanation": {
+        "concept_rule": "Inverse functions reflect across the diagonal line $y = x$; vertical asymptotes $x = c$ become horizontal asymptotes $y = c$.",
+        "step_by_step": [
+          "Plot the diagonal line $y = x$.",
+          "Draw $f(x) = \\ln(x+2)-5$ with vertical asymptote $x = -2$.",
+          "Draw $f^{-1}(x) = e^{x+5}-2$ with horizontal asymptote $y = -2$ as its reflection across $y = x$."
+        ],
+        "common_pitfalls": "Drawing the asymptote of the inverse function at $x = -2$ rather than $y = -2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "State the domain and range of $f^{-1}$.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\in \\mathbb{R}\\}, \\text{ Range: } \\{y \\mid y > -2\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the domain of $f^{-1}$ as $\\{x \\mid x \\in \\mathbb{R}\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the range of $f^{-1}$ as $\\{y \\mid y > -2\\}$"
+        }
+      ],
+      "solution": "The domain of $f^{-1}$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range of $f^{-1}$ is $\\{y \\mid y > -2\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The exponential function $e^{x+5} - 2$ is defined for all real numbers and is strictly greater than its horizontal asymptote $-2$.",
+        "step_by_step": [
+          "Since $e^{x+5}$ is defined for any real $x$, the domain of $f^{-1}$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $e^{x+5} > 0$ for all $x$, $e^{x+5} - 2 > -2$, so the range is $\\{y \\mid y > -2\\}$."
+        ],
+        "common_pitfalls": "Including $-2$ in the range with $\\ge$ rather than strictly $>$."
+      }
+    }
+  ]
+}

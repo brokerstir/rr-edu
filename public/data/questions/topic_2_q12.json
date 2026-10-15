@@ -1,0 +1,94 @@
+{
+  "id": "topic_2_q12",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 12,
+  "question_text": "Find the value(s) of $k$ for which the graph of $y = (k + 3)x^2 - 2kx + (k - 2)$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "cuts the $x$-axis twice",
+      "final_answer": "$k < 6, k \\ne -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding expression for discriminant $\\Delta = b^2 - 4ac$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\Delta$ to $24 - 4k$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting $\\Delta > 0$ and solving for $k$"
+        },
+        {
+          "code": "R1",
+          "desc": "Excluding $k = -3$ since the equation becomes linear"
+        }
+      ],
+      "solution": "$y = (k+3)x^2 - 2kx + (k-2)$ has $a = k+3, b = -2k, c = k-2$. $\\therefore \\Delta = b^2 - 4ac = (-2k)^2 - 4(k+3)(k-2) = 4k^2 - 4(k^2 + k - 6) = 4k^2 - 4k^2 - 4k + 24 = 24 - 4k$. Also, if $k = -3$, then the function is the line $y = 6x - 5$, in which case it cuts the $x$-axis only once at $x = \\frac{5}{6}$. The graph cuts the $x$-axis twice if $\\Delta > 0$. $\\therefore 24 - 4k > 0 \\implies 4k < 24 \\implies k < 6, k \\ne -3$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic function intersects the $x$-axis twice if its discriminant $\\Delta > 0$, provided $a \\ne 0$ so it remains a quadratic.",
+        "step_by_step": [
+          "Express the discriminant: $\\Delta = (-2k)^2 - 4(k+3)(k-2) = 24 - 4k$.",
+          "Set $\\Delta > 0 \\implies 24 - 4k > 0 \\implies k < 6$.",
+          "Check the leading coefficient: $a = k + 3 = 0 \\implies k = -3$. If $k = -3$, the function is linear ($y = 6x - 5$), which only cuts the $x$-axis once.",
+          "Conclude that $k < 6$ with $k \\ne -3$."
+        ],
+        "common_pitfalls": "Forgetting to exclude $k = -3$, where the coefficient of $x^2$ vanishes."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "touches the $x$-axis",
+      "final_answer": "$k = 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting discriminant $\\Delta = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving $24 - 4k = 0$ to obtain $k = 6$"
+        }
+      ],
+      "solution": "The graph touches the $x$-axis if $\\Delta = 0$. $\\therefore 24 - 4k = 0 \\implies 4k = 24 \\implies k = 6$.",
+      "ai_explanation": {
+        "concept_rule": "A parabola touches the $x$-axis (has a single repeated root) when the discriminant $\\Delta = 0$.",
+        "step_by_step": [
+          "Use the discriminant from the previous part: $\\Delta = 24 - 4k$.",
+          "Set $\\Delta = 0$: $24 - 4k = 0$.",
+          "Solve for $k$: $4k = 24 \\implies k = 6$."
+        ],
+        "common_pitfalls": "Confusing 'touches' (one repeated root, $\\Delta = 0$) with 'cuts twice' ($\\Delta > 0$)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "misses the $x$-axis.",
+      "final_answer": "$k > 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting discriminant $\\Delta < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving $24 - 4k < 0$ to obtain $k > 6$"
+        }
+      ],
+      "solution": "The graph misses the $x$-axis if $\\Delta < 0$. $\\therefore 24 - 4k < 0 \\implies 4k > 24 \\implies k > 6$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic graph misses (does not intersect) the $x$-axis when it has no real roots, which corresponds to $\\Delta < 0$.",
+        "step_by_step": [
+          "Take the discriminant $\\Delta = 24 - 4k$.",
+          "Set the inequality $\\Delta < 0 \\implies 24 - 4k < 0$.",
+          "Rearrange to find $4k > 24 \\implies k > 6$."
+        ],
+        "common_pitfalls": "Failing to flip the inequality sign when dividing by a negative number if rearranging as $-4k < -24$."
+      }
+    }
+  ]
+}

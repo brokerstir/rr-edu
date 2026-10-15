@@ -1,0 +1,123 @@
+{
+  "id": "topic_2_q32",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 32,
+  "question_text": "Consider the graph of $y = f(x)$ where $f(x) = 2 + \\frac{4}{x+1}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the axes intercepts.",
+      "final_answer": "$y\\text{-intercept is } 6, x\\text{-intercept is } -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $f(0)$ and setting $f(x) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct intercepts"
+        }
+      ],
+      "solution": "$f(0) = 2 + \\frac{4}{1} = 6$, so the $y$-intercept is $6$.\n$f(x) = 0$ when $2 + \\frac{4}{x+1} = 0$\n$\\therefore 2(x+1) + 4 = 0$\n$\\therefore 2(x+1) = -4$\n$\\therefore x+1 = -2$\n$\\therefore x = -3$\n$\\therefore$ the $x$-intercept is $-3$.",
+      "ai_explanation": {
+        "concept_rule": "Find $y$-intercept by evaluating $f(0)$ and $x$-intercept by solving $f(x) = 0$.",
+        "step_by_step": [
+          "Substitute $x = 0$: $f(0) = 2 + \\frac{4}{0+1} = 6$.",
+          "Set $2 + \\frac{4}{x+1} = 0 \\implies \\frac{4}{x+1} = -2$.",
+          "Solve: $4 = -2(x+1) \\implies -2 = x+1 \\implies x = -3$."
+        ],
+        "common_pitfalls": "Errors in clearing the denominator when solving $2 + \\frac{4}{x+1} = 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate $f(-2)$.",
+      "final_answer": "$-2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $x = -2$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation to $-2$"
+        }
+      ],
+      "solution": "$f(-2) = 2 + \\frac{4}{-2+1} = 2 + \\frac{4}{-1} = -2$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given numerical value into the function formula.",
+        "step_by_step": [
+          "Substitute $x = -2$: $f(-2) = 2 + \\frac{4}{-2+1}$.",
+          "Simplify denominator: $-2 + 1 = -1$.",
+          "Compute: $2 + \\frac{4}{-1} = 2 - 4 = -2$."
+        ],
+        "common_pitfalls": "Negative sign error when simplifying $\\frac{4}{-1}$."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Determine the equation of the horizontal asymptote.",
+      "final_answer": "$y = 2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct equation of horizontal asymptote"
+        }
+      ],
+      "solution": "The horizontal asymptote is $y = 2$.",
+      "ai_explanation": {
+        "concept_rule": "As $x \\to \\pm\\infty$, $\\frac{4}{x+1} \\to 0$, so $f(x) \\to 2$.",
+        "step_by_step": [
+          "Identify the constant term in the shifted reciprocal function: $y = 2$."
+        ],
+        "common_pitfalls": "Writing just '2' instead of the line equation $y = 2$."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Determine the equation of the vertical asymptote.",
+      "final_answer": "$x = -1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct equation of vertical asymptote"
+        }
+      ],
+      "solution": "The vertical asymptote is $x = -1$.",
+      "ai_explanation": {
+        "concept_rule": "Vertical asymptote occurs where the denominator is zero.",
+        "step_by_step": [
+          "Set $x + 1 = 0 \\implies x = -1$."
+        ],
+        "common_pitfalls": "Writing $x = 1$ instead of $x = -1$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Sketch the graph of $y = 2 + \\frac{4}{x+1}$. Label the axes intercepts and asymptotes clearly.",
+      "final_answer": "$\\text{Hyperbolic sketch with asymptotes } x = -1, y = 2, \\text{ intercepts at } (-3, 0), (0, 6), \\text{ and point } (-2, -2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketching asymptotes $x = -1$ and $y = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Plotting points and drawing both branches correctly"
+        }
+      ],
+      "solution": "Sketch of $f(x) = 2 + \\frac{4}{x+1}$ showing:\n- Vertical asymptote $x = -1$\n- Horizontal asymptote $y = 2$\n- $y$-intercept at $(0, 6)$\n- $x$-intercept at $(-3, 0)$\n- Point $(-2, -2)$ indicated on the lower branch.",
+      "ai_explanation": {
+        "concept_rule": "A complete sketch includes asymptotes labeled with equations, axis intercepts labeled with coordinates, and any explicitly evaluated points.",
+        "step_by_step": [
+          "Draw dashed lines for $x = -1$ and $y = 2$.",
+          "Mark $(0, 6)$, $(-3, 0)$, and $(-2, -2)$.",
+          "Draw two hyperbolic branches approaching the asymptotes."
+        ],
+        "common_pitfalls": "Omitting labels on asymptotes or axis intercepts."
+      }
+    }
+  ]
+}

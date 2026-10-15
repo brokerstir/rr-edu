@@ -1,0 +1,45 @@
+{
+  "id": "topic_2_q20",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 20,
+  "question_text": "A quadratic function cuts the $y$-axis at 4, and touches the lines $y = x - 5$ and $y = -2x$. Find the quadratic function.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Quadratic cuts $y$-axis at 4, touches $y = x - 5$ and $y = -2x$.",
+      "final_answer": "$y = \\frac{9}{100}x^2 - \\frac{4}{5}x + 4 \\text{ or } y = \\frac{9}{4}x^2 - 8x + 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify $c = 4$ from $y$-intercept"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $\\Delta = 0$ for $ax^2 + (b-1)x + 9 = 0 \\implies 36a = (b-1)^2$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $\\Delta = 0$ for $ax^2 + (b+2)x + 4 = 0 \\implies 16a = (b+2)^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $b = -\\frac{4}{5}$ or $b = -8$ and calculate corresponding $a$ values"
+        }
+      ],
+      "solution": "Let $y = ax^2 + bx + c$. Since $y$-intercept is 4, $c = 4$. Touches $y = x - 5 \\implies ax^2 + (b-1)x + 9 = 0 \\implies \\Delta = (b-1)^2 - 36a = 0 \\implies a = \\frac{(b-1)^2}{36}$. Touches $y = -2x \\implies ax^2 + (b+2)x + 4 = 0 \\implies (b+2)^2 - 16a = 0$. Substituting $a$ gives $(b+2)^2 = \\frac{4}{9}(b-1)^2 \\implies 5b^2 + 44b + 32 = 0 \\implies b = -\\frac{4}{5}$ or $-8$. Corresponding $a$ values are $a = \\frac{9}{100}$ and $a = \\frac{9}{4}$. Thus $y = \\frac{9}{100}x^2 - \\frac{4}{5}x + 4$ or $y = \\frac{9}{4}x^2 - 8x + 4$.",
+      "ai_explanation": {
+        "concept_rule": "Tangency to multiple lines sets up a system of equations in coefficients $a$ and $b$ using $\\Delta = 0$.",
+        "step_by_step": [
+          "Identify $c = 4$ from $y$-intercept.",
+          "Form $\\Delta_1 = 0 \\implies 36a = (b-1)^2$.",
+          "Form $\\Delta_2 = 0 \\implies 16a = (b+2)^2$.",
+          "Equate $a$: $\\frac{(b-1)^2}{36} = \\frac{(b+2)^2}{16} \\implies 5b^2 + 44b + 32 = 0$.",
+          "Solve for $b = -4/5, -8$ and corresponding $a = 9/100, 9/4$."
+        ],
+        "common_pitfalls": "Missing one of the quadratic roots for $b$."
+      }
+    }
+  ]
+}

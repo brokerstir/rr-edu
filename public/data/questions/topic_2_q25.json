@@ -1,0 +1,90 @@
+{
+  "id": "topic_2_q25",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 25,
+  "question_text": "Find the value(s) of $k$ for which the graph of the quadratic function $y = kx^2 - (k - 6)x + (k - 6)$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "cuts the $x$-axis twice",
+      "final_answer": "$-2 < k < 6, k \\ne 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding discriminant $\\Delta$ in terms of $k$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting $\\Delta > 0$ and noting $k \\ne 0$ for a quadratic function"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range for $k$"
+        }
+      ],
+      "solution": "$y = kx^2 - (k-6)x + (k-6)$ has $a = k$, $b = -(k-6)$, and $c = k-6$\n$\\therefore \\Delta = b^2 - 4ac$\n$= [-(k-6)]^2 - 4(k)(k-6)$\n$= k^2 - 12k + 36 - 4k^2 + 24k$\n$= -3k^2 + 12k + 36$\n$= -3(k^2 - 4k - 12)$\n$= -3(k-6)(k+2)$\nThe graph cuts the $x$-axis twice if $\\Delta > 0$.\n$\\therefore -2 < k < 6, k \\ne 0$",
+      "ai_explanation": {
+        "concept_rule": "A quadratic graph cuts the $x$-axis twice when its discriminant $\\Delta > 0$ and the leading coefficient $a \\ne 0$.",
+        "step_by_step": [
+          "Identify $a = k$, $b = -(k-6)$, $c = k-6$.",
+          "Calculate discriminant: $\\Delta = [-(k-6)]^2 - 4k(k-6) = -3(k-6)(k+2)$.",
+          "Set $\\Delta > 0 \\implies -3(k-6)(k+2) > 0 \\implies (k-6)(k+2) < 0$, giving $-2 < k < 6$.",
+          "Since the equation is a quadratic, $a \\ne 0 \\implies k \\ne 0$. Hence, $-2 < k < 6, k \\ne 0$."
+        ],
+        "common_pitfalls": "Forgetting to exclude $k = 0$, which would make the function linear rather than quadratic."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "touches the $x$-axis",
+      "final_answer": "$k = -2 \\text{ or } k = 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting discriminant $\\Delta = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct values of $k$"
+        }
+      ],
+      "solution": "The graph touches the $x$-axis if $\\Delta = 0$.\n$\\therefore k = -2 \\text{ or } k = 6$",
+      "ai_explanation": {
+        "concept_rule": "A parabola touches the $x$-axis (has one repeated real root) if and only if $\\Delta = 0$.",
+        "step_by_step": [
+          "Use $\\Delta = -3(k-6)(k+2)$.",
+          "Set $\\Delta = 0 \\implies -3(k-6)(k+2) = 0$.",
+          "Solve for $k$: $k = 6$ or $k = -2$."
+        ],
+        "common_pitfalls": "Neglecting the negative sign or misidentifying roots as $+2$ and $-6$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "misses the $x$-axis.",
+      "final_answer": "$k < -2 \\text{ or } k > 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting discriminant $\\Delta < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct solution range"
+        }
+      ],
+      "solution": "The graph misses the $x$-axis if $\\Delta < 0$.\n$\\therefore k < -2 \\text{ or } k > 6$",
+      "ai_explanation": {
+        "concept_rule": "A quadratic graph misses the $x$-axis (no real roots) when $\\Delta < 0$.",
+        "step_by_step": [
+          "Set $\\Delta < 0 \\implies -3(k-6)(k+2) < 0$.",
+          "Divide by $-3$ (flip inequality): $(k-6)(k+2) > 0$.",
+          "The solution to $(k-6)(k+2) > 0$ is $k < -2$ or $k > 6$."
+        ],
+        "common_pitfalls": "Failing to reverse the inequality sign when dividing by $-3$."
+      }
+    }
+  ]
+}

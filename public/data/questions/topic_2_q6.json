@@ -1,0 +1,60 @@
+{
+  "id": "topic_2_q6",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 6,
+  "question_text": "$x = -2$ is a solution to $x^2 + bx + (b - 2) = 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $b$.",
+      "final_answer": "$b = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = -2 into x^2 + bx + (b - 2) = 0."
+        },
+        {
+          "code": "A1",
+          "desc": "Solve linear equation to find b = 2."
+        }
+      ],
+      "solution": "$x = -2$ is a solution to $x^2 + bx + (b - 2) = 0$. $\\therefore (-2)^2 + b(-2) + b - 2 = 0 \\implies 4 - 2b + b - 2 = 0 \\implies -b = -2 \\implies b = 2$.",
+      "ai_explanation": {
+        "concept_rule": "A root of an equation satisfies the equation when substituted.",
+        "step_by_step": [
+          "Substitute $x = -2$: $(-2)^2 + b(-2) + b - 2 = 0$.",
+          "Simplify: $4 - 2b + b - 2 = 0$.",
+          "Combine like terms: $2 - b = 0 \\implies b = 2$."
+        ],
+        "common_pitfalls": "Evaluating $(-2)^2$ as $-4$ instead of $+4$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the other solution to the equation.",
+      "final_answer": "$x = 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute b = 2 into the original quadratic equation."
+        },
+        {
+          "code": "A1",
+          "desc": "Factorise and identify the other solution as x = 0."
+        }
+      ],
+      "solution": "$x^2 + 2x = 0$ {using a} $\\implies x(x + 2) = 0 \\implies x = 0$ or $-2$. Therefore, the other solution to the equation is $x = 0$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the found parameter back into the quadratic equation to find the second root.",
+        "step_by_step": [
+          "With $b = 2$, equation becomes $x^2 + 2x + (2 - 2) = 0 \\implies x^2 + 2x = 0$.",
+          "Factorise: $x(x + 2) = 0$.",
+          "Roots are $x = 0$ and $x = -2$. The other solution is $x = 0$."
+        ],
+        "common_pitfalls": "Stating both roots instead of specifying the other solution."
+      }
+    }
+  ]
+}

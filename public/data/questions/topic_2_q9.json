@@ -1,0 +1,101 @@
+{
+  "id": "topic_2_q9",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 9,
+  "question_text": "For each of the following functions:\ni Find the $x$-intercepts.\nii Find the equation of the axis of symmetry.\niii Find the coordinates of the vertex.\niv State the $y$-intercept.\nv Sketch the function.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = -4x(x + 3)$",
+      "final_answer": "$0$ and $-3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set y = 0 and solve -4x(x + 3) = 0."
+        },
+        {
+          "code": "A1",
+          "desc": "State x-intercepts as 0 and -3."
+        }
+      ],
+      "solution": "When $y = 0$, $-4x(x + 3) = 0 \\implies x = 0$ or $-3$. Therefore, the $x$-intercepts are $0$ and $-3$.",
+      "ai_explanation": {
+        "concept_rule": "The $x$-intercepts of a function occur where $y = 0$.",
+        "step_by_step": [
+          "Set $-4x(x + 3) = 0$.",
+          "Solve for $x$: $x = 0$ or $x + 3 = 0 \\implies x = -3$."
+        ],
+        "common_pitfalls": "Forgetting the intercept at the origin $x = 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\frac{1}{2}(x + 6)(x - 4)$",
+      "final_answer": "$x = -\\frac{3}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate midpoint of the x-intercepts."
+        },
+        {
+          "code": "A1",
+          "desc": "State equation of axis of symmetry as x = -3/2."
+        }
+      ],
+      "solution": "The axis of symmetry is midway between the $x$-intercepts. Therefore, the axis of symmetry is $x = \\frac{0 + (-3)}{2} = -\\frac{3}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "The axis of symmetry of a parabola lies halfway between its $x$-intercepts.",
+        "step_by_step": [
+          "Find the average of the roots: $x = \\frac{0 + (-3)}{2} = -\\frac{3}{2}$."
+        ],
+        "common_pitfalls": "Writing the answer as a number rather than an equation of a vertical line ($x = c$)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = -3(x - 2)^2$",
+      "final_answer": "$\\left(-\\frac{3}{2}, 9\\right)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute axis of symmetry x = -3/2 into y = -4x(x + 3)."
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate y = 9 and state coordinates of vertex."
+        }
+      ],
+      "solution": "When $x = -\\frac{3}{2}$, $y = -4\\left(-\\frac{3}{2}\\right)\\left(-\\frac{3}{2} + 3\\right) = -4\\left(-\\frac{3}{2}\\right)\\left(\\frac{3}{2}\\right) = 9$. Therefore, the vertex is $\\left(-\\frac{3}{2}, 9\\right)$.",
+      "ai_explanation": {
+        "concept_rule": "The vertex of a parabola lies on its axis of symmetry.",
+        "step_by_step": [
+          "Substitute $x = -\\frac{3}{2}$ into $y = -4x(x + 3)$.",
+          "Evaluate: $-4 \\times -\\frac{3}{2} \\times \\frac{3}{2} = 6 \\times \\frac{3}{2} = 9$.",
+          "Write coordinates: $\\left(-\\frac{3}{2}, 9\\right)$."
+        ],
+        "common_pitfalls": "Sign error when multiplying negative fractions."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$y = 2(x + 5)^2 - 4$",
+      "final_answer": "$0$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Substitute x = 0 to find y-intercept = 0."
+        }
+      ],
+      "solution": "When $x = 0$, $y = 0$. Therefore, the $y$-intercept is $0$.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept is the value of $y$ when $x = 0$.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $y = -4x(x + 3)$ to get $y = 0$."
+        ],
+        "common_pitfalls": "None."
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "topic_2_q46",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 46,
+  "question_text": "Before it is turned on, a refrigerator has an internal temperature of $27^\\circ\\text{C}$. Three hours later it has cooled to $6^\\circ\\text{C}$.\n\nThe internal temperature $T$ (in $^\\circ\\text{C}$) of the refrigerator $t$ hours after being turned on is given by the function $T(t) = A \\times B^{-t} + 3$, where $A$ and $B$ are constants.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Determine the value of: $A$",
+      "final_answer": "$24$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $T(0) = 27$ in the formula $T(t) = A \\times B^{-t} + 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $A$ to obtain $A = 24$"
+        }
+      ],
+      "solution": "The initial internal temperature of the refrigerator was $27^{\\circ}\\text{C}$.\nSo, $T(0) = 27$\n$\\therefore 27 = A + 3$\n$\\therefore A = 24$",
+      "ai_explanation": {
+        "concept_rule": "Initial temperature corresponds to $t = 0$. Since $B^{-0} = B^0 = 1$, $T(0) = A(1) + 3$.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $T(t) = A \\times B^{-t} + 3$.",
+          "Set equal to initial value 27: $27 = A \\times B^0 + 3$.",
+          "Solve for $A$: $A = 27 - 3 = 24$."
+        ],
+        "common_pitfalls": "Forgetting that $B^0 = 1$ rather than 0."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Determine the value of: $B$",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $T(3) = 6$ with $A = 24$"
+        },
+        {
+          "code": "M1",
+          "desc": "Isolate $B^{-3}$ and solve for $B$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $B = 2$"
+        }
+      ],
+      "solution": "After 3 hours, the internal temperature was $6^{\\circ}\\text{C}$.\nSo, $T(3) = 6$\n$\\therefore 6 = 24 \\times B^{-3} + 3$ {using 1}\n$\\therefore 24 \\times B^{-3} = 3$\n$\\therefore B^{-3} = \\frac{1}{8}$\n$\\therefore B^3 = 8$\n$\\therefore B = 2$",
+      "ai_explanation": {
+        "concept_rule": "Use the known parameters and a given data point $(t, T)$ to isolate and solve the unknown base of an exponential function.",
+        "step_by_step": [
+          "Set $t = 3$ and $T(3) = 6$: $6 = 24 \\times B^{-3} + 3$.",
+          "Subtract 3 from both sides: $24 \\times B^{-3} = 3$.",
+          "Divide by 24: $B^{-3} = \\frac{3}{24} = \\frac{1}{8}$.",
+          "Take the reciprocal: $B^3 = 8$.",
+          "Take the cube root: $B = 2$."
+        ],
+        "common_pitfalls": "Confusing negative exponents; $B^{-3} = \\frac{1}{B^3}$ not $-B^3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the internal temperature of the refrigerator 5 hours after being turned on.",
+      "final_answer": "$3.75^{\\circ}\\text{C}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 5$ into $T(t) = 24 \\times 2^{-t} + 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate final temperature $3.75^{\\circ}\\text{C}$"
+        }
+      ],
+      "solution": "$T(t) = 24 \\times 2^{-t} + 3$ {using a}\n$\\therefore T(5) = 24 \\times 2^{-5} + 3$\n$= 3.75$\n$\\therefore$ the internal temperature is $3.75^{\\circ}\\text{C}$ after 5 hours.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate an exponential decay function at a specific value of time $t$.",
+        "step_by_step": [
+          "Substitute $t = 5$ into $T(t) = 24 \\times 2^{-t} + 3$.",
+          "Calculate $2^{-5} = \\frac{1}{32}$.",
+          "Multiply by 24: $24 \\times \\frac{1}{32} = \\frac{3}{4} = 0.75$.",
+          "Add 3: $0.75 + 3 = 3.75^{\\circ}\\text{C}$."
+        ],
+        "common_pitfalls": "Evaluating $24 \\times 2^{-5}$ as $(24 \\times 2)^{-5}$ due to improper order of operations."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the minimum temperature that the refrigerator could be expected to reach.",
+      "final_answer": "$3^{\\circ}\\text{C}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Consider the limit as $t \\to \\infty$, observing $2^{-t} \\to 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the minimum temperature as $3^{\\circ}\\text{C}$"
+        }
+      ],
+      "solution": "As $t \\to \\infty$, $2^{-t} \\to 0$\n$\\therefore T(t) \\to 24 \\times 0 + 3 = 3$\n$\\therefore$ the minimum temperature that the refrigerator could be expected to reach is $3^{\\circ}\\text{C}$.",
+      "ai_explanation": {
+        "concept_rule": "The horizontal asymptote represents the long-term limiting behavior of the exponential function as time approaches infinity.",
+        "step_by_step": [
+          "Take the limit of $T(t) = 24 \\times 2^{-t} + 3$ as $t \\to \\infty$.",
+          "Since the base is 2 and the exponent is negative, $\\lim_{t \\to \\infty} 2^{-t} = 0$.",
+          "Hence, $T(t) \\to 24(0) + 3 = 3^{\\circ}\\text{C}$."
+        ],
+        "common_pitfalls": "Assuming the temperature will reach $0^{\\circ}\\text{C}$ instead of the horizontal asymptote value $+3$."
+      }
+    }
+  ]
+}

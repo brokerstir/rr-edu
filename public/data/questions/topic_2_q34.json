@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q34",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 34,
+  "question_text": "Consider the functions $f(x) = \\frac{1}{x-1} + \\sqrt{x+1}$ and $g(x) = x^2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain of $f$.",
+      "final_answer": "$\\{x \\mid x \\geqslant -1 \\text{ and } x \\ne 1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting denominator $\\ne 0$ and radicand $\\geqslant 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct intersection of conditions"
+        }
+      ],
+      "solution": "$\\frac{1}{x-1}$ is defined when $x - 1 \\ne 0 \\implies x \\ne 1$\n$\\sqrt{x+1}$ is defined when $x + 1 \\geqslant 0 \\implies x \\geqslant -1$\n$\\therefore$ the domain of $f$ is $\\{x \\mid x \\geqslant -1 \\text{ and } x \\ne 1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of a sum of functions is the intersection of the domains of each individual part.",
+        "step_by_step": [
+          "For $\\frac{1}{x-1}$ to be defined, $x \\ne 1$.",
+          "For $\\sqrt{x+1}$ to be defined, $x + 1 \\geqslant 0 \\implies x \\geqslant -1$.",
+          "Take the intersection: $x \\geqslant -1$ and $x \\ne 1$."
+        ],
+        "common_pitfalls": "Omitting the restriction $x \\ne 1$ from the domain."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $(f \\circ g)(x)$.",
+      "final_answer": "$\\frac{1}{x^2 - 1} + \\sqrt{x^2 + 1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $g(x) = x^2$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct composite function expression"
+        }
+      ],
+      "solution": "$(f \\circ g)(x) = f(g(x)) = f(x^2) = \\frac{1}{x^2 - 1} + \\sqrt{x^2 + 1}$",
+      "ai_explanation": {
+        "concept_rule": "The composite function $(f \\circ g)(x)$ is formed by evaluating $f$ at the expression $g(x)$.",
+        "step_by_step": [
+          "Identify $g(x) = x^2$.",
+          "Replace every $x$ in $f(x)$ with $x^2$: $f(x^2) = \\frac{1}{x^2 - 1} + \\sqrt{x^2 + 1}$."
+        ],
+        "common_pitfalls": "Squaring $f(x)$ instead of evaluating $f(g(x))$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Is the domain of $(f \\circ g)$ the same as the domain of either $f$ or $g$? Explain your answer.",
+      "final_answer": "$\\{x \\mid x \\ne -1 \\text{ and } x \\ne 1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding values of $x$ where $x^2 - 1 \\ne 0$ and checking $x^2 + 1 \\geqslant 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain of $(f \\circ g)$ and explanation of difference"
+        }
+      ],
+      "solution": "The domain of $g$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nNow $\\frac{1}{x^2 - 1}$ is defined when $x^2 - 1 \\ne 0$\n$\\therefore (x+1)(x-1) \\ne 0$\n$\\therefore x \\ne -1 \\text{ or } 1$\nand $x^2 + 1 \\geqslant 0$, so $\\sqrt{x^2 + 1}$ is defined for every value of $x$.\n$\\therefore$ the domain of $(f \\circ g)$ is $\\{x \\mid x \\ne -1 \\text{ and } x \\ne 1\\}$.\nThis is different to the domain of $f$ and $g$ since $(f \\circ g)$ is defined using $g$ whose range is $\\{y \\mid y \\geqslant 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of $(f \\circ g)(x)$ consists of all $x$ in the domain of $g$ such that $g(x)$ is in the domain of $f$.",
+        "step_by_step": [
+          "The inner function $g(x) = x^2$ is defined for all $x \\in \\mathbb{R}$.",
+          "Its output $g(x) = x^2$ must satisfy the domain of $f$: $x^2 \\geqslant -1$ and $x^2 \\ne 1$.",
+          "$x^2 \\geqslant -1$ is true for all real $x$.",
+          "$x^2 \\ne 1 \\implies x \\ne \\pm 1$.",
+          "Therefore, the domain is $\\{x \\mid x \\ne -1 \\text{ and } x \\ne 1\\}$."
+        ],
+        "common_pitfalls": "Forgetting that $x = -1$ also makes $x^2 = 1$, thus making the denominator zero."
+      }
+    }
+  ]
+}

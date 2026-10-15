@@ -1,0 +1,40 @@
+{
+  "id": "topic_2_q15",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 15,
+  "question_text": "For what values of $m$ does the graph of $y = mx^2 + 4x + 6$ lie entirely above the $x$-axis?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "$y = mx^2 + 4x + 6$ lies entirely above the $x$-axis.",
+      "final_answer": "$m > \\frac{2}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate discriminant $\\Delta = 16 - 24m$"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply positive definite conditions: $a > 0$ and $\\Delta < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve $16 - 24m < 0 \\implies m > \\frac{2}{3}$"
+        }
+      ],
+      "solution": "$y = mx^2 + 4x + 6$ has $a = m, b = 4, c = 6$. $\\Delta = b^2 - 4ac = 4^2 - 4(m)(6) = 16 - 24m$. The graph lies entirely above the $x$-axis if $a > 0$ and $\\Delta < 0 \\implies m > 0$ and $16 - 24m < 0 \\implies 24m > 16 \\implies m > \\frac{2}{3}$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic curve lies strictly above the $x$-axis (positive definite) if $a > 0$ and $\\Delta < 0$.",
+        "step_by_step": [
+          "Identify $a = m, b = 4, c = 6$.",
+          "Compute $\\Delta = 16 - 24m$.",
+          "Set $a > 0 \\implies m > 0$ and $\\Delta < 0 \\implies 16 - 24m < 0$.",
+          "Solve $24m > 16 \\implies m > \\frac{2}{3}$."
+        ],
+        "common_pitfalls": "Using $\\Delta > 0$ instead of $\\Delta < 0$."
+      }
+    }
+  ]
+}

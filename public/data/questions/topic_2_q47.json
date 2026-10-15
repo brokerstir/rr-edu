@@ -1,0 +1,59 @@
+{
+  "id": "topic_2_q47",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 47,
+  "question_text": "Consider $f: x \\mapsto e^{x-1}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Graph $y = f(x)$.",
+      "final_answer": "$\\text{Graph with points } (0, e^{-1}), (1, 1), (-1, e^{-2})$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate coordinates of key points such as $f(0)$, $f(1)$, and $f(-1)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of the exponential curve showing the $y$-intercept at $(0, \\frac{1}{e})$ and asymptote at $y = 0$"
+        }
+      ],
+      "solution": "$f(0) = e^{-1} = \\frac{1}{e}$\n$f(1) = e^0 = 1$\n$f(-1) = e^{-2} = \\frac{1}{e^2}$\nSketch shows the exponential curve passing through $\\left(0, \\frac{1}{e}\\right)$ and $(1, 1)$, asymptotic to the negative $x$-axis.",
+      "ai_explanation": {
+        "concept_rule": "The graph of $f(x) = e^{x-1}$ is the standard exponential curve $y = e^x$ shifted 1 unit to the right.",
+        "step_by_step": [
+          "Find key points: $f(0) = e^{-1} = \\frac{1}{e}$, $f(1) = 1$, $f(-1) = e^{-2}$.",
+          "Identify the horizontal asymptote at $y = 0$.",
+          "Plot points and draw an increasing concave-up curve approaching $y=0$ as $x \\to -\\infty$."
+        ],
+        "common_pitfalls": "Plotting the $y$-intercept at $(0, 1)$ instead of $(0, \\frac{1}{e})$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the domain and range of $f$.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\in \\mathbb{R}\\}, \\text{ Range: } \\{y \\mid y > 0\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the correct domain $\\{x \\mid x \\in \\mathbb{R}\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the correct range $\\{y \\mid y > 0\\}$"
+        }
+      ],
+      "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range is $\\{y \\mid y > 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "Exponential functions of the form $e^{x-c}$ are defined for all real numbers and strictly positive output values.",
+        "step_by_step": [
+          "Examine the input: any real value can be substituted for $x$, so the domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Examine the output: $e^u > 0$ for all real $u$, so the range is $\\{y \\mid y > 0\\}$."
+        ],
+        "common_pitfalls": "Writing $y \\ge 0$ instead of strictly $y > 0$ (exponential curves do not touch the horizontal asymptote)."
+      }
+    }
+  ]
+}

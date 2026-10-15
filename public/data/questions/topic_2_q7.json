@@ -1,0 +1,40 @@
+{
+  "id": "topic_2_q7",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 7,
+  "question_text": "Find $m$ given that $mx^2 + (m - 2)x + m = 0$ has a repeated root.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "$mx^2 + (m - 2)x + m = 0$ has a repeated root.",
+      "final_answer": "$m = \\frac{2}{3} \\text{ or } m = -2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set discriminant $\\Delta = b^2 - 4ac = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Form quadratic $(m-2)^2 - 4(m)(m) = 0 \\implies -3m^2 - 4m + 4 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve $3m^2 + 4m - 4 = 0 \\implies (3m - 2)(m + 2) = 0$"
+        }
+      ],
+      "solution": "$mx^2 + (m - 2)x + m = 0$ has $a = m, b = m - 2,$ and $c = m$. Therefore, $\\Delta = b^2 - 4ac = (m - 2)^2 - 4(m)(m) = m^2 - 4m + 4 - 4m^2 = -3m^2 - 4m + 4$. For a repeated root, $\\Delta = 0 \\implies -3m^2 - 4m + 4 = 0 \\implies 3m^2 + 4m - 4 = 0 \\implies (3m - 2)(m + 2) = 0 \\implies m = \\frac{2}{3}$ or $-2$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic equation has a repeated root if and only if its discriminant $\\Delta = b^2 - 4ac = 0$.",
+        "step_by_step": [
+          "Identify coefficients: $a = m, b = m - 2, c = m$.",
+          "Compute $\\Delta = (m - 2)^2 - 4(m)(m) = -3m^2 - 4m + 4$.",
+          "Set $\\Delta = 0 \\implies 3m^2 + 4m - 4 = 0$.",
+          "Factorise $(3m - 2)(m + 2) = 0$ to get $m = \\frac{2}{3}$ or $m = -2$."
+        ],
+        "common_pitfalls": "Expansion errors with $(m - 2)^2$, specifically forgetting the middle term $-4m$."
+      }
+    }
+  ]
+}

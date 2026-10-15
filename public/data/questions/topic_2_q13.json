@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q13",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 13,
+  "question_text": "The function $f$ can be written in the form $f(x) = a(x - p)(x - q)$ where $p > q$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the values of $p$ and $q$.",
+      "final_answer": "$p = 5$ and $q = -1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying $x$-intercepts from the graph as $-1$ and $5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating values of $p$ and $q$"
+        }
+      ],
+      "solution": "$y = f(x) = a(x - p)(x - q)$ has $x$-intercepts $-1$ and $5$. $\\therefore p = 5$ and $q = -1$ (or $p > q$).",
+      "ai_explanation": {
+        "concept_rule": "In factored form $f(x) = a(x - p)(x - q)$, $p$ and $q$ represent the $x$-intercepts of the quadratic function.",
+        "step_by_step": [
+          "From the sketch, read the $x$-intercepts where $y = 0$, which are $x = -1$ and $x = 5$.",
+          "Match with the formula $a(x - p)(x - q)$. Since $p > q$, assign $p = 5$ and $q = -1$."
+        ],
+        "common_pitfalls": "Mixing up the signs of the roots inside the factors, e.g., writing $x - (-1) = x - 1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $a$.",
+      "final_answer": "$a = 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $y$-intercept $(0, -20)$ into factored form"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $a$"
+        }
+      ],
+      "solution": "From a, $f(x) = a(x - 5)(x + 1)$. From the graph, $f(0) = -20$. $\\therefore -20 = a(-5)(1) \\implies -20 = -5a \\implies a = 4$.",
+      "ai_explanation": {
+        "concept_rule": "The leading coefficient $a$ can be determined by substituting the coordinates of any known point on the graph into the factored form.",
+        "step_by_step": [
+          "Write the function with known roots: $f(x) = a(x - 5)(x + 1)$.",
+          "Identify the $y$-intercept from the graph: $(0, -20)$.",
+          "Substitute $x = 0, y = -20$: $-20 = a(0 - 5)(0 + 1) = -5a$.",
+          "Solve for $a$: $a = \\frac{-20}{-5} = 4$."
+        ],
+        "common_pitfalls": "Negative sign error when multiplying $(-5)(1)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the equation of the axis of symmetry.",
+      "final_answer": "$x = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the midpoint formula on the $x$-intercepts"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding equation of the axis of symmetry $x = 2$"
+        }
+      ],
+      "solution": "The axis of symmetry is midway between the $x$-intercepts. $\\therefore$ the axis of symmetry is $x = \\frac{-1 + 5}{2} = 2$.",
+      "ai_explanation": {
+        "concept_rule": "The axis of symmetry of a parabola passes through the midpoint of the two $x$-intercepts: $x = \\frac{p + q}{2}$.",
+        "step_by_step": [
+          "Identify the two $x$-intercepts: $-1$ and $5$.",
+          "Calculate their average: $\\frac{-1 + 5}{2} = \\frac{4}{2} = 2$.",
+          "State the equation of the vertical line: $x = 2$."
+        ],
+        "common_pitfalls": "Giving just the number $2$ instead of the equation of the line $x = 2$."
+      }
+    }
+  ]
+}

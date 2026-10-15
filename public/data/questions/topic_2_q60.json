@@ -1,0 +1,106 @@
+{
+  "id": "topic_2_q60",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 60,
+  "question_text": "Let $T_A$ be a horizontal translation 4 units to the right, $T_B$ be a reflection in the $x$-axis, and $T_C$ be a translation through $\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$. Find the resulting function when $y = f(x)$ has the following transformations applied:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$T_A$ then $T_B$",
+      "final_answer": "$-f(x - 4)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying $T_A$ then $T_B$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $-f(x - 4)$"
+        }
+      ],
+      "solution": "$f(x) \\xrightarrow{T_A} f(x - 4) \\xrightarrow{T_B} -f(x - 4)$\nThe resulting function is $-f(x - 4)$.",
+      "ai_explanation": {
+        "concept_rule": "$T_A$ replaces $x$ with $x-4$; $T_B$ negates the entire function.",
+        "step_by_step": [
+          "Apply $T_A$ (horizontal translation 4 units right): $f(x) \\to f(x - 4)$.",
+          "Apply $T_B$ (reflection in the $x$-axis): $f(x - 4) \\to -f(x - 4)$."
+        ],
+        "common_pitfalls": "Negating the variable $x$ instead of the output $f(x-4)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$T_B$ then $T_A$",
+      "final_answer": "$-f(x - 4)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying $T_B$ then $T_A$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $-f(x - 4)$"
+        }
+      ],
+      "solution": "$f(x) \\xrightarrow{T_B} -f(x) \\xrightarrow{T_A} -f(x - 4)$\nThe resulting function is $-f(x - 4)$.",
+      "ai_explanation": {
+        "concept_rule": "Horizontal translation and vertical reflection commute because they act on independent coordinates ($x$ and $y$).",
+        "step_by_step": [
+          "Apply $T_B$ (reflection in the $x$-axis): $f(x) \\to -f(x)$.",
+          "Apply $T_A$ (horizontal translation 4 units right): $-f(x) \\to -f(x - 4)$."
+        ],
+        "common_pitfalls": "Thinking order matters for independent horizontal and vertical transformations."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$T_B$ then $T_C$",
+      "final_answer": "$-f(x - 1) + 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying $T_B$ then $T_C$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $-f(x - 1) + 1$"
+        }
+      ],
+      "solution": "$f(x) \\xrightarrow{T_B} -f(x) \\xrightarrow{T_C} -f(x - 1) + 1$\nThe resulting function is $-f(x - 1) + 1$.",
+      "ai_explanation": {
+        "concept_rule": "$T_B$ negates the function, and $T_C$ translates by $\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$, replacing $x$ with $x-1$ and adding $1$.",
+        "step_by_step": [
+          "Apply $T_B$: $f(x) \\to -f(x)$.",
+          "Apply $T_C$: replace $x$ with $x-1$ and add $1$ to the function: $-f(x - 1) + 1$."
+        ],
+        "common_pitfalls": "Adding $1$ inside the negative sign, e.g., $-(f(x-1) + 1)$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$T_C$ then $T_B$",
+      "final_answer": "$-f(x - 1) - 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying $T_C$ then $T_B$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $-f(x - 1) - 1$"
+        }
+      ],
+      "solution": "$f(x) \\xrightarrow{T_C} f(x - 1) + 1 \\xrightarrow{T_B} -(f(x - 1) + 1) = -f(x - 1) - 1$\nThe resulting function is $-f(x - 1) - 1$.",
+      "ai_explanation": {
+        "concept_rule": "$T_B$ reflects the entire existing expression in the $x$-axis by multiplying it by $-1$.",
+        "step_by_step": [
+          "Apply $T_C$: $f(x) \\to f(x - 1) + 1$.",
+          "Apply $T_B$: negate the entire function: $-(f(x - 1) + 1) = -f(x - 1) - 1$."
+        ],
+        "common_pitfalls": "Negating only the $f$ term and leaving $+1$, forgetting that the reflection in the $x$-axis affects the whole vertical position."
+      }
+    }
+  ]
+}

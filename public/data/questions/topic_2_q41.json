@@ -1,0 +1,106 @@
+{
+  "id": "topic_2_q41",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 41,
+  "question_text": "Consider $y = -1 + 2^{-x}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the axes intercepts.",
+      "final_answer": "$\\text{The } y\\text{-intercept is } 0, \\text{ and the } x\\text{-intercept is } 0.$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $x = 0$ to find the $y$-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude both intercepts are at $(0,0)$"
+        }
+      ],
+      "solution": "When $x = 0$, $y = -1 + 2^{-0} = -1 + 1 = 0$\n$\\therefore$ the $y$-intercept is $0$, and the $x$-intercept is $0$.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept is found by evaluating $y$ when $x=0$. Since the origin $(0,0)$ is a point on the graph, the $x$-intercept is also $0$.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $y = -1 + 2^{-x}$: $y = -1 + 2^0 = -1 + 1 = 0$.",
+          "Since the point $(0,0)$ lies on the curve, the graph passes through the origin.",
+          "Hence both intercepts are $0$."
+        ],
+        "common_pitfalls": "Forgetting that $2^0 = 1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find any asymptotes of the function.",
+      "final_answer": "$y = -1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State horizontal asymptote $y = -1$"
+        }
+      ],
+      "solution": "The horizontal asymptote is $y = -1$.",
+      "ai_explanation": {
+        "concept_rule": "As $x \\to \\infty$, $2^{-x} \\to 0$, so $y \\to -1$.",
+        "step_by_step": [
+          "Consider the behavior of $y = -1 + 2^{-x}$ as $x \\to \\infty$.",
+          "$2^{-x} = \\frac{1}{2^x} \\to 0$.",
+          "Thus, $y \\to -1 + 0 = -1$."
+        ],
+        "common_pitfalls": "Confusing the behavior as $x \\to -\\infty$ (where $2^{-x} \\to \\infty$) with $x \\to \\infty$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "State the domain and range of the function.",
+      "final_answer": "$\\text{Domain: } \\{x \\mid x \\in \\mathbb{R}\\}$, $\\text{Range: } \\{y \\mid y > -1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State domain $\\{x \\mid x \\in \\mathbb{R}\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State range $\\{y \\mid y > -1\\}$"
+        }
+      ],
+      "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range is $\\{y \\mid y > -1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "Exponential functions of the form $a^x$ are defined for all real numbers and strictly positive, so $2^{-x} > 0$ for all $x$.",
+        "step_by_step": [
+          "Domain: $2^{-x}$ is defined for every real $x$, so $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Range: Since $2^{-x} > 0$ for all $x$, adding $-1$ yields $y = -1 + 2^{-x} > -1$.",
+          "Hence, range is $\\{y \\mid y > -1\\}$."
+        ],
+        "common_pitfalls": "Writing $y \\ge -1$ instead of the strict inequality $y > -1$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Hence sketch the function.",
+      "final_answer": "$Graph of $y = -1 + 2^{-x}$ showing passing through the origin $(0,0)$, horizontal asymptote $y = -1$, and decreasing exponential curve.$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch decreasing exponential curve through $(0,0)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Clearly indicate asymptote at $y = -1$"
+        }
+      ],
+      "solution": "Graph showing decreasing exponential curve $y = -1 + 2^{-x}$ passing through $(0,0)$ and approaching horizontal asymptote $y = -1$.",
+      "ai_explanation": {
+        "concept_rule": "Sketch a reflection of $2^x$ in the $y$-axis shifted downwards by 1 unit.",
+        "step_by_step": [
+          "Draw the dashed horizontal line $y = -1$ as the asymptote.",
+          "Mark the intercept at the origin $(0,0)$.",
+          "Draw the curve decreasing from top-left, passing through $(0,0)$, and approaching $y = -1$ from above as $x \\to \\infty$."
+        ],
+        "common_pitfalls": "Drawing an increasing exponential graph instead of a decreasing one."
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "topic_2_q21",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 21,
+  "question_text": "A factory manufactures $x$ radios per day.\nThe production cost of each radio is $\\left(26 + \\frac{10}{x}\\right)$ euros, and the income from selling each radio is $\\left(42 - \\frac{x}{15}\\right)$ euros.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down a formula for the total profit $P$ from selling all the radios made each day.",
+      "final_answer": "$P = -\\frac{1}{15}x^2 + 16x - 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up total profit as Revenue minus Cost"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to the final quadratic expression for $P$"
+        }
+      ],
+      "solution": "Total profit $P = x\\left[\\left(42 - \\frac{x}{15}\\right) - \\left(26 + \\frac{10}{x}\\right)\\right]$\n$= x\\left[-\\frac{x}{15} + 16 - \\frac{10}{x}\\right]$\n$= -\\frac{1}{15}x^2 + 16x - 10$ euros",
+      "ai_explanation": {
+        "concept_rule": "Profit is calculated as total revenue minus total cost, or $x \\times (\\text{selling price per unit} - \\text{cost per unit})$.",
+        "step_by_step": [
+          "Write the profit per item: $\\left(42 - \\frac{x}{15}\\right) - \\left(26 + \\frac{10}{x}\\right)$.",
+          "Simplify inside the brackets: $16 - \\frac{x}{15} - \\frac{10}{x}$.",
+          "Multiply by the number of units $x$: $16x - \\frac{1}{15}x^2 - 10$."
+        ],
+        "common_pitfalls": "Forgetting to distribute the negative sign to all terms of the cost function."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the number of radios that should be made per day to maximise profit.",
+      "final_answer": "$120$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the vertex formula $x = -\\frac{b}{2a}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $x = 120$ radios per day"
+        }
+      ],
+      "solution": "$P = -\\frac{1}{15}x^2 + 16x - 10$ has $a = -\\frac{1}{15}$, $b = 16$, and $c = -10$\nSince $a < 0$, the shape is $\\cap$\nThe maximum profit occurs when $x = \\frac{-b}{2a} = \\frac{-16}{2\\left(-\\frac{1}{15}\\right)} = 120$\nSo, $120$ radios should be made per day to maximise profit.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic function $ax^2 + bx + c$ with $a < 0$ has its maximum at the vertex $x = -\\frac{b}{2a}$.",
+        "step_by_step": [
+          "Identify coefficients: $a = -\\frac{1}{15}$ and $b = 16$.",
+          "Apply $x = -\\frac{b}{2a} = -\\frac{16}{2(-1/15)} = \\frac{16}{2/15} = 16 \\times \\frac{15}{2} = 120$."
+        ],
+        "common_pitfalls": "Arithmetic errors dividing by a fraction."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Calculate the maximum profit per day.",
+      "final_answer": "$€$950$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $x = 120$ into the profit equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining maximum profit of €$950$"
+        }
+      ],
+      "solution": "When $x = 120$, $P = -\\frac{1}{15}(120)^2 + 16(120) - 10$\n$= 950$\nSo, the maximum profit is €$950$.",
+      "ai_explanation": {
+        "concept_rule": "The maximum value is obtained by evaluating the objective function at the optimal input value.",
+        "step_by_step": [
+          "Substitute $x = 120$ into $P = -\\frac{1}{15}x^2 + 16x - 10$.",
+          "Compute $-\\frac{1}{15}(14400) + 1920 - 10 = -960 + 1920 - 10 = 950$."
+        ],
+        "common_pitfalls": "Squaring 120 incorrectly or dropping the constant term $-10$."
+      }
+    }
+  ]
+}

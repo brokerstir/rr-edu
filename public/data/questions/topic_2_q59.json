@@ -1,0 +1,66 @@
+{
+  "id": "topic_2_q59",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 59,
+  "question_text": "The function $f(x)$ has domain $\\{x \\mid x < 0,\\ x \\ge 2\\}$ and range $\\{y \\mid y \\ge 3\\}$. Find the domain and range of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$g(x) = f(x-3) + 2$",
+      "final_answer": "$\\{x \\mid x < 3, x \\ge 5\\}, \\{y \\mid y \\ge 5\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Translating domain 3 units right and range 2 units up"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range"
+        }
+      ],
+      "solution": "$g(x) = f(x - 3) + 2$ translates every point on $y = f(x)$ 3 units to the right and 2 units upwards.\n$\\therefore g(x)$ has domain $\\{x \\mid x < 3, x \\ge 5\\}$ and range $\\{y \\mid y \\ge 5\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For $g(x) = f(x - h) + k$, the domain values shift by $+h$ and range values shift by $+k$.",
+        "step_by_step": [
+          "The transformation is a horizontal translation of $+3$ and a vertical translation of $+2$.",
+          "New domain: $x < 0 + 3 \\implies x < 3$, and $x \\ge 2 + 3 \\implies x \\ge 5$.",
+          "New range: $y \\ge 3 + 2 \\implies y \\ge 5$."
+        ],
+        "common_pitfalls": "Subtracting 3 from the domain values instead of adding 3."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$g(x) = 4 - \\frac{1}{2}f(5x)$",
+      "final_answer": "$\\{x \\mid x < 0, x \\ge \\frac{2}{5}\\}, \\{y \\mid y \\le \\frac{5}{2}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying horizontal scale factor $\\frac{1}{5}$ to domain"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying vertical scale factor $\\frac{1}{2}$, reflection in $x$-axis, and translation $+4$ to range"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range"
+        }
+      ],
+      "solution": "$g(x) = 4 - \\frac{1}{2}f(5x)$ transforms every point by a horizontal stretch with scale factor $\\frac{1}{5}$, a vertical stretch with scale factor $\\frac{1}{2}$, a reflection in the $x$-axis, then a translation 4 units upwards.\n$\\therefore g(x)$ has domain $\\{x \\mid x < 0, x \\ge \\frac{2}{5}\\}$ and range $\\{y \\mid y \\le \\frac{5}{2}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For $x$, the stretch factor is $\\frac{1}{5}$. For $y$, the transformation is $y \\mapsto -\\frac{1}{2}y + 4$.",
+        "step_by_step": [
+          "Transform domain: $x < 0 \\implies x < 0 \\times \\frac{1}{5} = 0$; $x \\ge 2 \\implies x \\ge 2 \\times \\frac{1}{5} = \\frac{2}{5}$. Thus domain is $\\{x \\mid x < 0, x \\ge \\frac{2}{5}\\}$.",
+          "Transform range: start with $y \\ge 3$.",
+          "Multiply by $-\\frac{1}{2}$ (reversing the inequality): $-\\frac{1}{2}y \\le -\\frac{3}{2}$.",
+          "Add 4: $4 - \\frac{1}{2}y \\le 4 - \\frac{3}{2} = \\frac{5}{2}$.",
+          "Range is $\\{y \\mid y \\le \\frac{5}{2}\\}$."
+        ],
+        "common_pitfalls": "Forgetting to flip the inequality sign when multiplying by $-\\frac{1}{2}$."
+      }
+    }
+  ]
+}

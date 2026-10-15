@@ -1,0 +1,121 @@
+{
+  "id": "topic_2_q14",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 14,
+  "question_text": "Consider the graph of $y = -3x^2 - x + 1$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Describe the shape of the graph.",
+      "final_answer": "$concave down$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating graph is concave down as $a < 0$"
+        }
+      ],
+      "solution": "$y = -3x^2 - x + 1$ has $a = -3, b = -1$, and $c = 1$. Since $a < 0$, the graph is concave down.",
+      "ai_explanation": {
+        "concept_rule": "The sign of $a$ in $y = ax^2 + bx + c$ dictates the concavity: $a > 0$ is concave up, $a < 0$ is concave down.",
+        "step_by_step": [
+          "Identify $a = -3$.",
+          "Since $-3 < 0$, the parabola opens downwards (concave down)."
+        ],
+        "common_pitfalls": "Confusing concave down with concave up."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Use the discriminant to show that the graph cuts the $x$-axis twice.",
+      "final_answer": "$cuts the $x$-axis twice$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating discriminant $\\Delta = b^2 - 4ac$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding graph cuts the $x$-axis twice since $\\Delta > 0$"
+        }
+      ],
+      "solution": "$\\Delta = b^2 - 4ac = (-1)^2 - 4(-3)(1) = 13$. Since $\\Delta > 0$, the graph cuts the $x$-axis twice.",
+      "ai_explanation": {
+        "concept_rule": "The discriminant $\\Delta = b^2 - 4ac$ determines the number of $x$-intercepts: $\\Delta > 0$ means two distinct real roots (cuts twice).",
+        "step_by_step": [
+          "Substitute $a = -3, b = -1, c = 1$ into $\\Delta = b^2 - 4ac$.",
+          "Compute $\\Delta = (-1)^2 - 4(-3)(1) = 1 + 12 = 13$.",
+          "Since $13 > 0$, the parabola cuts the $x$-axis twice."
+        ],
+        "common_pitfalls": "Writing $(-1)^2 = -1$ instead of $+1$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the $x$-intercepts, rounding your answers to 2 decimal places.",
+      "final_answer": "$x \\approx 0.43$ or $x \\approx -0.77$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the quadratic formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating solutions to two decimal places"
+        }
+      ],
+      "solution": "When $y = 0$, $-3x^2 - x + 1 = 0$. $\\therefore x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a} = \\frac{-(-1) \\pm \\sqrt{13}}{2(-3)} = -\\frac{1}{6} \\pm \\frac{\\sqrt{13}}{6} \\therefore x \\approx 0.43$ or $-0.77$. $\\therefore$ the $x$-intercepts are $\\approx 0.43$ or $\\approx -0.77$.",
+      "ai_explanation": {
+        "concept_rule": "The quadratic formula gives roots: $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "step_by_step": [
+          "Set $y = 0$ to get $-3x^2 - x + 1 = 0$.",
+          "Substitute into formula: $x = \\frac{1 \\pm \\sqrt{13}}{-6}$.",
+          "Calculate $x_1 = \\frac{1 + 3.6056}{-6} \\approx -0.77$.",
+          "Calculate $x_2 = \\frac{1 - 3.6056}{-6} \\approx 0.43$."
+        ],
+        "common_pitfalls": "Dividing by $2a = -6$ and forgetting to apply the negative sign to the entire numerator."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "State the $y$-intercept.",
+      "final_answer": "$1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identifying the $y$-intercept as 1"
+        }
+      ],
+      "solution": "The $y$-intercept is 1.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept of $y = ax^2 + bx + c$ is the constant term $c$.",
+        "step_by_step": [
+          "Evaluate $y$ when $x = 0$: $y = -3(0)^2 - (0) + 1 = 1$."
+        ],
+        "common_pitfalls": "None."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Hence sketch the function.",
+      "final_answer": "$See sketch$",
+      "mark_breakdown": [
+        {
+          "code": "G1",
+          "desc": "Sketching concave-down parabola with labeled intercepts"
+        }
+      ],
+      "solution": "Graph of $y = -3x^2 - x + 1$ showing a concave down parabola with $y$-intercept at $(0, 1)$ and $x$-intercepts at approximately $-0.77$ and $0.43$.",
+      "ai_explanation": {
+        "concept_rule": "Combine concavity, $x$-intercepts, and $y$-intercept to sketch an accurate quadratic graph.",
+        "step_by_step": [
+          "Plot the $y$-intercept at $(0, 1)$.",
+          "Plot the $x$-intercepts at $\\approx -0.77$ and $\\approx 0.43$.",
+          "Draw a smooth concave-down curve passing through these points."
+        ],
+        "common_pitfalls": "Drawing a straight-edged V-shape instead of a smooth parabola."
+      }
+    }
+  ]
+}

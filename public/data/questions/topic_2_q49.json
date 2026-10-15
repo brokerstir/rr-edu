@@ -1,0 +1,39 @@
+{
+  "id": "topic_2_q49",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 49,
+  "question_text": "Show that $\\left(\\frac{e^x + e^{-x}}{2}\\right)^2 - \\left(\\frac{e^x - e^{-x}}{2}\\right)^2 = 1$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Show that $\\left(\\frac{e^x + e^{-x}}{2}\\right)^2 - \\left(\\frac{e^x - e^{-x}}{2}\\right)^2 = 1$.",
+      "final_answer": "$1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand $(e^x + e^{-x})^2 = e^{2x} + 2 + e^{-2x}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Expand $(e^x - e^{-x})^2 = e^{2x} - 2 + e^{-2x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Subtract expansions over 4: $\\frac{4}{4} = 1$"
+        }
+      ],
+      "solution": "$\\frac{(e^x + e^{-x})^2 - (e^x - e^{-x})^2}{4} = \\frac{(e^{2x} + 2 + e^{-2x}) - (e^{2x} - 2 + e^{-2x})}{4} = \\frac{4}{4} = 1$.",
+      "ai_explanation": {
+        "concept_rule": "Apply identity $(A+B)^2 - (A-B)^2 = 4AB$ with $A = e^x, B = e^{-x}$.",
+        "step_by_step": [
+          "Expand numerators over common denominator 4.",
+          "Cancel $e^{2x}$ and $e^{-2x}$ terms.",
+          "Simplify $\\frac{2 - (-2)}{4} = \\frac{4}{4} = 1$."
+        ],
+        "common_pitfalls": "Sign error when expanding the second binomial."
+      }
+    }
+  ]
+}

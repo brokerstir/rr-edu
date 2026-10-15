@@ -4,5 +4,11 @@
     "topic_name": "Number and Algebra",
     "question_count": 58,
     "bundle_file": "data/topic_1.json"
+  },
+  {
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_count": 61,
+    "bundle_file": "data/topic_2.json"
   }
 ]

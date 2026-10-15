@@ -1,0 +1,61 @@
+{
+  "id": "topic_2_q8",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 8,
+  "question_text": "Use technology to solve:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\frac{2}{x} = 5x - 3$",
+      "final_answer": "$x = -0.4$ or $x = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiply by x to form quadratic 5x^2 - 3x - 2 = 0."
+        },
+        {
+          "code": "A1",
+          "desc": "Use technology/factorisation to find x = -0.4 or 1."
+        }
+      ],
+      "solution": "$\\frac{2}{x} = 5x - 3 \\implies 2 = 5x^2 - 3x \\implies 5x^2 - 3x - 2 = 0$. Using technology, $x = -0.4$ or $1$.",
+      "ai_explanation": {
+        "concept_rule": "Multiply through by the denominator to form a standard polynomial equation.",
+        "step_by_step": [
+          "Multiply both sides by $x$: $2 = x(5x - 3) = 5x^2 - 3x$.",
+          "Rearrange into standard form: $5x^2 - 3x - 2 = 0$.",
+          "Solve using graphics calculator or factoring: $(5x + 2)(x - 1) = 0 \\implies x = -0.4$ or $1$."
+        ],
+        "common_pitfalls": "Forgetting to multiply the constant term by $x$ when clearing the fraction."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$2^x - x^3 = 0$",
+      "final_answer": "$x \\approx 1.37$ or $x \\approx 9.94$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Define function y = 2^x - x^3 to find x-intercepts using technology."
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions to 2 decimal places: 1.37 and 9.94."
+        }
+      ],
+      "solution": "We graph $y = 2^x - x^3$. The $x$-intercepts are $\\approx 1.37$ and $9.94$. Therefore, the solutions are $x \\approx 1.37$ or $9.94$.",
+      "ai_explanation": {
+        "concept_rule": "To solve equations involving mixed transcendental functions, plot $y = f(x) - g(x)$ and locate the roots using technology.",
+        "step_by_step": [
+          "Set up the equation $2^x - x^3 = 0$.",
+          "Graph $y = 2^x - x^3$ on a GDC.",
+          "Use the root/zero finding feature to find the $x$-intercepts: $x \\approx 1.373$ and $x \\approx 9.939$.",
+          "Round answers to two decimal places: $1.37$ and $9.94$."
+        ],
+        "common_pitfalls": "Missing the second root by not using an appropriate viewing window."
+      }
+    }
+  ]
+}

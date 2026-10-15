@@ -1,0 +1,39 @@
+{
+  "id": "topic_2_q18",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 18,
+  "question_text": "For what values of $c$ does the line $y = 2x + c$ never meet the parabola with equation $y = 3x^2 + 5x + 7$?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "$y = 2x + c$ never meets $y = 3x^2 + 5x + 7$.",
+      "final_answer": "$c < \\frac{25}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equate expressions: $3x^2 + 3x + (7 - c) = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set discriminant $\\Delta < 0 \\implies 3^2 - 4(3)(7-c) < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve $9 - 84 + 12c < 0 \\implies c < \\frac{25}{4}$"
+        }
+      ],
+      "solution": "Equating equations gives $3x^2 + 5x + 7 = 2x + c \\implies 3x^2 + 3x + (7 - c) = 0$. No intersections requires $\\Delta < 0 \\implies 3^2 - 4(3)(7 - c) < 0 \\implies 9 - 84 + 12c < 0 \\implies 12c < 75 \\implies c < \\frac{25}{4}$.",
+      "ai_explanation": {
+        "concept_rule": "Two curves never intersect if the quadratic equation representing their intersection has no real roots ($\\Delta < 0$).",
+        "step_by_step": [
+          "Equate: $3x^2 + 5x + 7 = 2x + c \\implies 3x^2 + 3x + (7-c) = 0$.",
+          "Set $\\Delta < 0 \\implies 3^2 - 4(3)(7-c) < 0$.",
+          "Simplify: $-75 + 12c < 0 \\implies 12c < 75 \\implies c < \\frac{25}{4}$."
+        ],
+        "common_pitfalls": "Sign error when expanding $-12(7-c)$ as $-84 - 12c$ instead of $-84 + 12c$."
+      }
+    }
+  ]
+}
