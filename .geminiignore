@@ -6,4 +6,5 @@ dist/
 __pycache__/
 *.pdf
 *.epub
-*.dump
+*.dump.env
+ib/
