@@ -1,0 +1,54 @@
+{
+  "id": "topic_1_q28",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 28,
+  "question_text": "Consider the binomial expansion of $(a + b)^6$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the general term in the expansion.",
+      "final_answer": "$T_{r+1} = \\binom{6}{r} a^{6-r} b^r, \\quad r = 0, 1, 2, \\dots, 6$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct expression for general term $T_{r+1}$"
+        }
+      ],
+      "solution": "\\text{The general term of the expansion is } T_{r+1} = \\binom{6}{r} a^{6-r} b^r, \\; r = 0, 1, 2, \\dots, 6.",
+      "ai_explanation": {
+        "concept_rule": "The general term of $(a+b)^n$ is $T_{r+1} = \\binom{n}{r} a^{n-r} b^r$.",
+        "step_by_step": [
+          "Identify $n=6$.",
+          "Write $T_{r+1} = \\binom{6}{r} a^{6-r} b^r$ with $r \\in \\{0, 1, \\dots, 6\\}$."
+        ],
+        "common_pitfalls": "Confusing the term number $r+1$ with the index $r$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Given that $\\binom{6}{4} = 15$, find the coefficient of $a^4 b^2$.",
+      "final_answer": "$15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying $r=2$ for the term $a^4 b^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\binom{6}{2} = 15$"
+        }
+      ],
+      "solution": "\\text{For } a^4b^2, \\; r = 2\n\\therefore T_3 = \\binom{6}{2} a^4 b^2\n= \\binom{6}{2} a^4 b^2 \\quad \\left\\{\\binom{6}{2} = \\binom{6}{4}\\right\\}\n= 15a^4b^2\n\\therefore \\text{the coefficient of } a^4b^2 \\text{ is } 15.",
+      "ai_explanation": {
+        "concept_rule": "Find $r$ such that $6-r = 4$ and $r = 2$, then compute $\\binom{6}{2}$.",
+        "step_by_step": [
+          "Set $r = 2$ in the general term.",
+          "Calculate $\\binom{6}{2} = \\frac{6 \\times 5}{2 \\times 1} = 15$."
+        ],
+        "common_pitfalls": "Writing the entire term $15a^4b^2$ when only the coefficient is asked."
+      }
+    }
+  ]
+}

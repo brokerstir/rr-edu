@@ -1,0 +1,62 @@
+{
+  "id": "topic_1_q6",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 6,
+  "question_text": "The fluoride concentration of lakes in a particular region was found to be $3 \\times 10^{-4}\\text{ g per litre}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "One lake has $5.6 \\times 10^8\\text{ litres}$ of water. Find the amount of fluoride in the lake, giving your answer in scientific notation.",
+      "final_answer": "$1.68 \\times 10^5\\text{ g}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use formula Amount = concentration $\\times$ volume"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation with correct units"
+        }
+      ],
+      "solution": "$\\text{Amount of fluoride} = \\text{concentration} \\times \\text{volume} = (3 \\times 10^{-4}) \\times (5.6 \\times 10^8) = 1.68 \\times 10^5\\text{ g}$",
+      "ai_explanation": {
+        "concept_rule": "Total mass equals concentration multiplied by volume.",
+        "step_by_step": [
+          "Multiply: $(3 \\times 10^{-4}) \\times (5.6 \\times 10^8)$.",
+          "Multiply coefficients: $3 \\times 5.6 = 16.8$.",
+          "Add powers of 10: $10^{-4 + 8} = 10^4$.",
+          "Convert to standard scientific notation: $16.8 \\times 10^4 = 1.68 \\times 10^5\\text{ g}$."
+        ],
+        "common_pitfalls": "Leaving the final coefficient greater than 10."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Another lake contains $4.13 \\times 10^7\\text{ g}$ of fluoride. Find the volume of the lake.",
+      "final_answer": "$\\approx 1.38 \\times 10^{11}\\text{ litres}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use formula Volume = amount / concentration"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer rounded to 3 significant figures"
+        }
+      ],
+      "solution": "$\\text{Volume} = \\frac{\\text{amount of fluoride}}{\\text{concentration}} = \\frac{4.13 \\times 10^7}{3 \\times 10^{-4}} \\approx 1.38 \\times 10^{11}\\text{ litres}$",
+      "ai_explanation": {
+        "concept_rule": "Volume is found by dividing total amount by concentration.",
+        "step_by_step": [
+          "Divide amount by concentration: $\\frac{4.13 \\times 10^7}{3 \\times 10^{-4}}$.",
+          "Divide numbers: $\\frac{4.13}{3} \\approx 1.37667...$.",
+          "Subtract exponents: $7 - (-4) = 11$.",
+          "Round to 3 s.f.: $1.38 \\times 10^{11}\\text{ litres}$."
+        ],
+        "common_pitfalls": "Subtracting powers incorrectly: $7 - (-4) = 11$, not $3$."
+      }
+    }
+  ]
+}

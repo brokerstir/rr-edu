@@ -1,0 +1,62 @@
+{
+  "id": "topic_1_q24",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 24,
+  "question_text": "Write using factorial notation:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$10 \\times 9 \\times 8 \\times 7$",
+      "final_answer": "$\\frac{10!}{6!}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiplying numerator and denominator by 6 x 5 x 4 x 3 x 2 x 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Expressing the result as 10! / 6!"
+        }
+      ],
+      "solution": "$10 \\times 9 \\times 8 \\times 7 = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = \\frac{10!}{6!}$.",
+      "ai_explanation": {
+        "concept_rule": "A product of consecutive descending integers starting from $n$ and ending at $n - r + 1$ can be represented using factorials as $\\frac{n!}{(n - r)!}$.",
+        "step_by_step": [
+          "Start with $10 \\times 9 \\times 8 \\times 7$.",
+          "Multiply and divide by the remaining factors from 6 down to 1: $6!$.",
+          "Rewrite the product as $\\frac{10!}{6!}$."
+        ],
+        "common_pitfalls": "Dividing by $7!$ instead of $6!$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}$",
+      "final_answer": "$\\frac{9!}{6!\\,3!}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiplying numerator and denominator by 5 x 4 x 3 x 2 x 1 (or 6!)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying the fraction into factorial notation 9! / (6! 3!)"
+        }
+      ],
+      "solution": "$\\frac{9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = \\frac{9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\times 3 \\times 2 \\times 1} = \\frac{9!}{6!3!}$.",
+      "ai_explanation": {
+        "concept_rule": "Complete the factorials in both the numerator and denominator by multiplying both by the missing consecutive descending integers.",
+        "step_by_step": [
+          "The numerator $9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4$ is missing $3 \\times 2 \\times 1 = 3!$ to become $9!$.",
+          "Multiply numerator and denominator by $3 \\times 2 \\times 1$.",
+          "The numerator becomes $9!$.",
+          "The denominator becomes $(6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1) \\times (3 \\times 2 \\times 1) = 6!3!$.",
+          "Result is $\\frac{9!}{6!3!}$."
+        ],
+        "common_pitfalls": "Canceling terms out completely and evaluating to a numerical value instead of writing in factorial notation."
+      }
+    }
+  ]
+}

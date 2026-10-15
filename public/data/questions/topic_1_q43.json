@@ -1,0 +1,91 @@
+{
+  "id": "topic_1_q43",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 43,
+  "question_text": "If $x = \\log_a 5$, write in terms of $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\log_a(5a)$",
+      "final_answer": "$x + 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the product rule of logarithms"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $x = \\log_a 5$ to get $x + 1$"
+        }
+      ],
+      "solution": "$\\log_a(5a) = \\log_a 5 + \\log_a a = x + 1$",
+      "ai_explanation": {
+        "concept_rule": "Product rule: $\\log_a(uv) = \\log_a u + \\log_a v$, and $\\log_a a = 1$.",
+        "step_by_step": [
+          "Expand $\\log_a(5a)$ into $\\log_a 5 + \\log_a a$.",
+          "Substitute $\\log_a 5 = x$ and $\\log_a a = 1$.",
+          "Result is $x + 1$."
+        ],
+        "common_pitfalls": "Writing $\\log_a(5a) = 5\\log_a a$ instead of applying the product rule."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\log_a\\left(\\frac{125}{a^2}\\right)$",
+      "final_answer": "$3x - 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply quotient and power laws of logarithms"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $\\log_a 5 = x$ to obtain $3x - 2$"
+        }
+      ],
+      "solution": "$\\log_a\\left(\\frac{125}{a^2}\\right) = \\log_a 125 - \\log_a(a^2) = \\log_a(5^3) - 2 = 3\\log_a 5 - 2 = 3x - 2$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule $\\log(u/v) = \\log u - \\log v$ and power rule $\\log(u^k) = k\\log u$.",
+        "step_by_step": [
+          "Split quotient: $\\log_a 125 - \\log_a(a^2)$.",
+          "Write 125 as $5^3$: $\\log_a(5^3) = 3\\log_a 5$.",
+          "Simplify $\\log_a(a^2) = 2$.",
+          "Substitute $x$: $3x - 2$."
+        ],
+        "common_pitfalls": "Forgetting that $\\log_a(a^2) = 2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\log_{25a} 5$",
+      "final_answer": "$\\frac{x}{2x + 1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply change of base rule to base $a$"
+        },
+        {
+          "code": "M1",
+          "desc": "Expand denominator using product and power rules"
+        },
+        {
+          "code": "A1",
+          "desc": "Express fully in terms of $x$"
+        }
+      ],
+      "solution": "$\\log_{25a} 5 = \\frac{\\log_a 5}{\\log_a(25a)} = \\frac{x}{\\log_a 25 + \\log_a a} = \\frac{x}{\\log_a(5^2) + 1} = \\frac{x}{2\\log_a 5 + 1} = \\frac{x}{2x + 1}$",
+      "ai_explanation": {
+        "concept_rule": "Change of base formula: $\\log_b c = \\frac{\\log_a c}{\\log_a b}$.",
+        "step_by_step": [
+          "Change base to $a$: $\\frac{\\log_a 5}{\\log_a(25a)}$.",
+          "Numerator becomes $x$.",
+          "Expand denominator: $\\log_a(25a) = \\log_a(5^2) + \\log_a a = 2\\log_a 5 + 1 = 2x + 1$.",
+          "Combine to get $\\frac{x}{2x + 1}$."
+        ],
+        "common_pitfalls": "Incorrectly splitting $\\log_a(25a)$ as $25\\log_a a$."
+      }
+    }
+  ]
+}

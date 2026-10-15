@@ -1,0 +1,61 @@
+{
+  "id": "topic_1_q13",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 13,
+  "question_text": "A television was purchased for £2000, and depreciates at $30\\%$ p.a. for 3 years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of the television at the end of this period.",
+      "final_answer": "£$686$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply depreciation formula $u_3 = u_0 \\times (1-d)^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value with currency units"
+        }
+      ],
+      "solution": "$u_3 = u_0 \\times (1 - d)^3 = 2000 \\times (0.7)^3 \\{30\\% = 0.3\\} = 686$. So, after 3 years the value of the television is £686.",
+      "ai_explanation": {
+        "concept_rule": "Depreciation formula: $V = V_0(1-d)^n$, where $d$ is annual rate of depreciation.",
+        "step_by_step": [
+          "Determine retention factor: $1 - 0.30 = 0.70$.",
+          "Raise factor to 3 years: $(0.7)^3 = 0.343$.",
+          "Multiply initial value: $2000 \\times 0.343 = 686$.",
+          "Television value is £686."
+        ],
+        "common_pitfalls": "Using linear depreciation ($2000 - 3 \\times 600$) instead of compounding."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "By how much has the television depreciated?",
+      "final_answer": "£$1314$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtract depreciated value from original value"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct depreciation amount"
+        }
+      ],
+      "solution": "$\\text{Depreciation} = £2000 - £686 = £1314$",
+      "ai_explanation": {
+        "concept_rule": "Total depreciation is the difference between initial cost and final value.",
+        "step_by_step": [
+          "Identify initial price: £2000.",
+          "Identify final price: £686.",
+          "Subtract final from initial: $2000 - 686 = 1314$."
+        ],
+        "common_pitfalls": "Giving the final remaining value instead of the lost value."
+      }
+    }
+  ]
+}

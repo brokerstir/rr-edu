@@ -1,0 +1,64 @@
+{
+  "id": "topic_1_q21",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 21,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the sum to infinity of the infinite geometric series $1 + 0.6 + (0.6)^2 + (0.6)^3 + \\dots$",
+      "final_answer": "$2.5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying geometric series parameters u_1 = 1 and r = 0.6"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating the sum to infinity S = 2.5"
+        }
+      ],
+      "solution": "$S = 1 + 0.6 + (0.6)^2 + (0.6)^3 + \\dots$ is an infinite geometric series with $u_1 = 1$ and $r = 0.6$. $S = \\frac{u_1}{1 - r} = \\frac{1}{1 - 0.6} = \\frac{1}{0.4} = 2.5$.",
+      "ai_explanation": {
+        "concept_rule": "The sum of an infinite geometric series with first term $u_1$ and common ratio $|r| < 1$ is $S = \\frac{u_1}{1 - r}$.",
+        "step_by_step": [
+          "Identify $u_1 = 1$ and $r = 0.6$.",
+          "Compute $1 - r = 1 - 0.6 = 0.4$.",
+          "Evaluate $S = \\frac{1}{0.4} = 2.5$."
+        ],
+        "common_pitfalls": "Arithmetic error when dividing $1$ by $0.4$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "When a ball is dropped from a height of 1 m, on each bounce it returns to 60% of the height it reached previously. Find the total distance travelled by the ball until it stops bouncing.",
+      "final_answer": "$4\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing total distance as 1 + 2 * sum of bounces or in terms of S"
+        },
+        {
+          "code": "A1",
+          "desc": "Relating total distance to 2S - 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating total distance to be 4 m"
+        }
+      ],
+      "solution": "Each time the ball bounces upward, it must travel the same distance on its way downward. Therefore, $\\text{total distance} = 1 + 2(0.6) + 2(0.6)^2 + 2(0.6)^3 + \\dots = 1 + 0.6 + (0.6)^2 + (0.6)^3 + \\dots + 0.6 + (0.6)^2 + (0.6)^3 + \\dots = S + (S - 1) = 2S - 1 = 2(2.5) - 1 = 5 - 1 = 4\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "The initial drop is traveled once, but every subsequent bounce (up and down) is traveled twice.",
+        "step_by_step": [
+          "Write the total distance as $1 + 2(0.6 + 0.6^2 + 0.6^3 + \\dots)$.",
+          "Notice that this equals $2(1 + 0.6 + 0.6^2 + \\dots) - 1 = 2S - 1$.",
+          "Substitute $S = 2.5$: $2(2.5) - 1 = 5 - 1 = 4\\text{ m}$."
+        ],
+        "common_pitfalls": "Multiplying the initial drop by 2 as well, resulting in $2S = 5$ instead of $4$."
+      }
+    }
+  ]
+}

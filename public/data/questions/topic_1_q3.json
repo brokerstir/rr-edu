@@ -1,0 +1,64 @@
+{
+  "id": "topic_1_q3",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 3,
+  "question_text": "Expand the brackets and write in simplest form:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(x^2 + x^{-2})^2$",
+      "final_answer": "$x^4 + 2 + x^{-4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand binomial square using $(a+b)^2 = a^2 + 2ab + b^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expanded expression"
+        }
+      ],
+      "solution": "$(x^2 + x^{-2})^2 = (x^2)^2 + 2x^2 \\times x^{-2} + (x^{-2})^2 = x^4 + 2 + x^{-4}$",
+      "ai_explanation": {
+        "concept_rule": "Binomial expansion identity: $(a+b)^2 = a^2 + 2ab + b^2$.",
+        "step_by_step": [
+          "Identify $a = x^2$ and $b = x^{-2}$.",
+          "Square the first term: $(x^2)^2 = x^4$.",
+          "Calculate middle term: $2(x^2)(x^{-2}) = 2x^{2-2} = 2x^0 = 2$.",
+          "Square the second term: $(x^{-2})^2 = x^{-4}$.",
+          "Combine to get $x^4 + 2 + x^{-4}$."
+        ],
+        "common_pitfalls": "Omitting the middle cross term $2ab$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(x^4 - x^2)(x^3 + 3)$",
+      "final_answer": "$x^7 + 3x^4 - x^5 - 3x^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand product of binomials using distributive property"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expanded polynomial"
+        }
+      ],
+      "solution": "$(x^4 - x^2)(x^3 + 3) = x^4 \\times x^3 + 3x^4 + (-x^2) \\times x^3 + (-x^2) \\times 3 = x^7 + 3x^4 - x^5 - 3x^2$",
+      "ai_explanation": {
+        "concept_rule": "Use the distributive law (FOIL) and index law $x^m \\times x^n = x^{m+n}$.",
+        "step_by_step": [
+          "Multiply first terms: $x^4 \\times x^3 = x^7$.",
+          "Multiply outer terms: $x^4 \\times 3 = 3x^4$.",
+          "Multiply inner terms: $-x^2 \\times x^3 = -x^5$.",
+          "Multiply last terms: $-x^2 \\times 3 = -3x^2$.",
+          "Sum all terms: $x^7 + 3x^4 - x^5 - 3x^2$."
+        ],
+        "common_pitfalls": "Incorrect signs when multiplying negative terms."
+      }
+    }
+  ]
+}

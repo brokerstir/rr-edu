@@ -1,0 +1,65 @@
+{
+  "id": "topic_1_q19",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 19,
+  "question_text": "Kapil invested 2000 rupees in a bank account on January 1st 2012. The account pays 8.25% per annum compounded annually.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the total value of Kapil's investment on January 1st 2019.",
+      "final_answer": "$3484\\text{ rupees}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up compound interest formula with n = 7 and i = 0.0825"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining approximately 3483.58 and rounding to 3484 rupees"
+        }
+      ],
+      "solution": "The interest is calculated annually, so $n = 7$ time periods. $u_7 = u_0 \\times (1 + i)^7 = 2000 \\times (1.0825)^7 \\approx 3483.58$. The total value of Kapil's investment on January 1st 2019 is $3484\\text{ rupees}$.",
+      "ai_explanation": {
+        "concept_rule": "Compound interest compounded annually follows $u_n = u_0(1 + i)^n$, where $i$ is the annual interest rate as a decimal.",
+        "step_by_step": [
+          "Identify $n = 7$ years, $u_0 = 2000$, and $i = 8.25\\% = 0.0825$.",
+          "Compute $u_7 = 2000 \\times (1.0825)^7 \\approx 3483.58$.",
+          "Round to the nearest whole rupee: 3484 rupees."
+        ],
+        "common_pitfalls": "Incorrect conversion of percentage to decimal (e.g., using $0.825$ instead of $0.0825$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Would it have been a better option for Kapil to invest his money in an account paying 8% per annum interest compounded monthly? Justify your answer.",
+      "final_answer": "$3495\\text{ rupees}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating number of periods n = 84 and periodic interest rate"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating the future value to be approx 3494.84 (or 3495 rupees)"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that the monthly compounding option is better by 11 rupees"
+        }
+      ],
+      "solution": "There are $n = 7 \\times 12 = 84$ time periods. Each time period the investment increases by $i = \\frac{8\\%}{12} \\approx 0.667\\%$. The value after 7 years is $u_{84} = u_0 \\times (1 + i)^{84} \\approx 2000 \\times (1.00667)^{84} \\approx 3494.84$. The total value of Kapil's investment on January 1st 2019 for this account is $3495\\text{ rupees}$, which is 11 rupees more than the account in a. Therefore, investing in the account paying $8\\%$ per annum interest compounded monthly is the better option.",
+      "ai_explanation": {
+        "concept_rule": "For monthly compounding, multiply the number of years by 12 to get periods $n$, and divide the annual rate by 12 to get the periodic interest rate $i$.",
+        "step_by_step": [
+          "Find total periods: $n = 7 \\times 12 = 84$.",
+          "Calculate monthly rate: $i = \\frac{0.08}{12} \\approx 0.006667$.",
+          "Compute compound value: $2000 \\times (1 + \\frac{0.08}{12})^{84} \\approx 3494.84$, rounding to $3495\\text{ rupees}$.",
+          "Compare with part a: $3495 - 3484 = 11\\text{ rupees}$ more, making monthly compounding better."
+        ],
+        "common_pitfalls": "Rounding the monthly rate prematurely, which can lead to significant discrepancies over 84 periods."
+      }
+    }
+  ]
+}

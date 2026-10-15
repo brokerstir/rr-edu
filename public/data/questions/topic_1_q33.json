@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q33",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 33,
+  "question_text": "Without using a calculator, write in simplest rational form:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$4^{\\frac{5}{2}}$",
+      "final_answer": "$32$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing base 4 as $2^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $2^5 = 32$"
+        }
+      ],
+      "solution": "4^{\\frac{5}{2}} = (2^2)^{\\frac{5}{2}} = 2^5 = 32",
+      "ai_explanation": {
+        "concept_rule": "Power of a power index law: $(a^m)^n = a^{mn}$.",
+        "step_by_step": [
+          "Rewrite $4$ as $2^2$.",
+          "Multiply exponents: $2 \\times \\frac{5}{2} = 5$.",
+          "Evaluate $2^5 = 32$."
+        ],
+        "common_pitfalls": "Taking the root after raising 4 to the 5th power, which creates unnecessarily large numbers."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$49^{-\\frac{3}{2}}$",
+      "final_answer": "$\\frac{1}{343}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting base 49 as $7^2$ and applying exponent laws"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating as $\\frac{1}{343}$"
+        }
+      ],
+      "solution": "49^{-\\frac{3}{2}} = (7^2)^{-\\frac{3}{2}} = 7^{-3} = \\frac{1}{7^3} = \\frac{1}{343}",
+      "ai_explanation": {
+        "concept_rule": "Negative fractional indices: $a^{-m/n} = \\frac{1}{(\\sqrt[n]{a})^m}$.",
+        "step_by_step": [
+          "Express $49$ as $7^2$.",
+          "Multiply indices: $2 \\times -\\frac{3}{2} = -3$.",
+          "Evaluate $7^{-3} = \\frac{1}{7^3} = \\frac{1}{343}$."
+        ],
+        "common_pitfalls": "Leaving the answer with a negative index instead of as a simplified fraction."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$27^{\\frac{4}{3}}$",
+      "final_answer": "$243$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting 27 as $3^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $3^5 = 243$"
+        }
+      ],
+      "solution": "27^{\\frac{5}{3}} = (3^3)^{\\frac{5}{3}} = 3^5 = 243",
+      "ai_explanation": {
+        "concept_rule": "Fractional indices: $(a^m)^n = a^{mn}$.",
+        "step_by_step": [
+          "Write 27 as $3^3$.",
+          "Multiply powers: $3 \\times \\frac{5}{3} = 5$.",
+          "Compute $3^5 = 243$."
+        ],
+        "common_pitfalls": "Multiplying the base by the exponent instead of raising to the power."
+      }
+    }
+  ]
+}

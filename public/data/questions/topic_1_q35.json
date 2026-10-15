@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q35",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 35,
+  "question_text": "Factorise:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$36 - 16^x$",
+      "final_answer": "$(6 - 4^x)(6 + 4^x)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognizing the difference of two squares $6^2 - (4^x)^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Factorizing correctly"
+        }
+      ],
+      "solution": "36 - 16^x = 6^2 - (4^x)^2 = (6 - 4^x)(6 + 4^x)",
+      "ai_explanation": {
+        "concept_rule": "Difference of two squares: $A^2 - B^2 = (A - B)(A + B)$.",
+        "step_by_step": [
+          "Rewrite $36 = 6^2$.",
+          "Rewrite $16^x = (4^2)^x = (4^x)^2$.",
+          "Factorize as $(6 - 4^x)(6 + 4^x)$."
+        ],
+        "common_pitfalls": "Incorrectly rewriting $16^x$ as $4^{x^2}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$9^x + 4(3^x) - 12$",
+      "final_answer": "$(3^x + 6)(3^x - 2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Treating as a quadratic in $3^x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct factorization"
+        }
+      ],
+      "solution": "9^x + 4(3^x) - 12 = (3^x)^2 + 4(3^x) - 12 = (3^x + 6)(3^x - 2)",
+      "ai_explanation": {
+        "concept_rule": "Quadratic substitution: Let $u = 3^x$, then $9^x = u^2$.",
+        "step_by_step": [
+          "Express as $u^2 + 4u - 12$.",
+          "Find two numbers that multiply to $-12$ and add to $4$: $+6$ and $-2$.",
+          "Factorize: $(u + 6)(u - 2) = (3^x + 6)(3^x - 2)$."
+        ],
+        "common_pitfalls": "Forgetting to substitute $3^x$ back in place of $u$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$25^x - 5^{x+1} - 24$",
+      "final_answer": "$(5^x - 8)(5^x + 3)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting $25^x$ as $(5^x)^2$ and $5^{x+1}$ as $5(5^x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct factors $(5^x - 8)(5^x + 3)$"
+        }
+      ],
+      "solution": "25^x - 5^{x+1} - 24 = (5^x)^2 - 5(5^x) - 24 = (5^x - 8)(5^x + 3)",
+      "ai_explanation": {
+        "concept_rule": "Decompose $5^{x+1} = 5 \\times 5^x$ to write as a standard quadratic in $5^x$.",
+        "step_by_step": [
+          "Let $u = 5^x$, equation becomes $u^2 - 5u - 24$.",
+          "Find factors of $-24$ that sum to $-5$: $-8$ and $+3$.",
+          "Write factors: $(5^x - 8)(5^x + 3)$."
+        ],
+        "common_pitfalls": "Failing to convert $5^{x+1}$ to $5 \\times 5^x$."
+      }
+    }
+  ]
+}

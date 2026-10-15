@@ -1,0 +1,109 @@
+{
+  "id": "topic_1_q25",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 25,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use Pascal's triangle to find the binomial expansion of $(a + b)^4$.",
+      "final_answer": "$(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Constructing Pascal's triangle to the 4th row"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expansion of $(a+b)^4$"
+        }
+      ],
+      "solution": "1 \\quad 1\n1 \\quad 2 \\quad 1\n1 \\quad 3 \\quad 3 \\quad 1\n1 \\quad 4 \\quad 6 \\quad 4 \\quad 1 \\quad \\text{--- the 4th row for } (a+b)^4\n\\therefore (a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4",
+      "ai_explanation": {
+        "concept_rule": "Pascal's triangle provides the binomial coefficients $\\binom{n}{r}$ for the expansion of $(a+b)^n$.",
+        "step_by_step": [
+          "Write out rows of Pascal's triangle down to $n=4$: $1, 4, 6, 4, 1$.",
+          "Attach the decreasing powers of $a$ and increasing powers of $b$ to these coefficients: $a^4, a^3b, a^2b^2, ab^3, b^4$."
+        ],
+        "common_pitfalls": "Forgetting that the top row '1' is considered row 0."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Hence find the binomial expansion of: $(2 + x)^4$",
+      "final_answer": "$16 + 32x + 24x^2 + 8x^3 + x^4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $a=2$ and $b=x$ into the binomial expansion formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Fully simplifying each term correctly"
+        }
+      ],
+      "solution": "$(2+x)^4 = 2^4 + 4(2)^3(x) + 6(2)^2(x)^2 + 4(2)(x)^3 + x^4 = 16 + 32x + 24x^2 + 8x^3 + x^4$",
+      "ai_explanation": {
+        "concept_rule": "Use the formula $(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$ with $a=2$ and $b=x$.",
+        "step_by_step": [
+          "Substitute $a=2, b=x$: $2^4 + 4(2^3)(x) + 6(2^2)(x^2) + 4(2)(x^3) + x^4$.",
+          "Evaluate powers of 2: $16 + 4(8)x + 6(4)x^2 + 8x^3 + x^4$.",
+          "Multiply coefficients: $16 + 32x + 24x^2 + 8x^3 + x^4$."
+        ],
+        "common_pitfalls": "Incorrectly calculating powers of 2, such as writing $2^4 = 8$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Hence find the binomial expansion of: $(3x - y)^4$",
+      "final_answer": "$81x^4 - 108x^3y + 54x^2y^2 - 12xy^3 + y^4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $a=3x$ and $b=-y$ into the expansion"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct alternating signs and simplified coefficients"
+        }
+      ],
+      "solution": "$(3x-y)^4 = (3x)^4 + 4(3x)^3(-y) + 6(3x)^2(-y)^2 + 4(3x)(-y)^3 + (-y)^4 = 81x^4 - 108x^3y + 54x^2y^2 - 12xy^3 + y^4$",
+      "ai_explanation": {
+        "concept_rule": "Substitute $a=3x$ and $b=-y$ into the expanded binomial formula.",
+        "step_by_step": [
+          "Substitute into terms: $(3x)^4 + 4(3x)^3(-y) + 6(3x)^2(-y)^2 + 4(3x)(-y)^3 + (-y)^4$.",
+          "Simplify each power: $81x^4 - 4(27x^3)(y) + 6(9x^2)(y^2) - 4(3x)(y^3) + y^4$.",
+          "Multiply coefficients: $81x^4 - 108x^3y + 54x^2y^2 - 12xy^3 + y^4$."
+        ],
+        "common_pitfalls": "Failing to apply powers to the coefficient 3, e.g., writing $3x^4$ instead of $81x^4$."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Hence find the binomial expansion of: $\\left(x - \\frac{2}{x}\\right)^4$",
+      "final_answer": "$x^4 - 8x^2 + 24 - \\frac{32}{x^2} + \\frac{16}{x^4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $a=x$ and $b=-\\frac{2}{x}$ into the expansion"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying powers of $x$ and constants correctly"
+        }
+      ],
+      "solution": "$(x-\\frac{2}{x})^4 = x^4 + 4(x)^3(-\\frac{2}{x}) + 6(x)^2(-\\frac{2}{x})^2 + 4(x)(-\\frac{2}{x})^3 + (-\\frac{2}{x})^4 = x^4 - 8x^2 + 24 - \\frac{32}{x^2} + \\frac{16}{x^4}$",
+      "ai_explanation": {
+        "concept_rule": "Substitute terms containing negative powers/fractions into the binomial expansion and simplify index laws.",
+        "step_by_step": [
+          "Set $a=x, b=-\\frac{2}{x}$.",
+          "Expand: $x^4 + 4x^3(-\\frac{2}{x}) + 6x^2(\\frac{4}{x^2}) + 4x(-\\frac{8}{x^3}) + \\frac{16}{x^4}$.",
+          "Simplify powers of $x$: $x^4 - 8x^2 + 24 - \\frac{32}{x^2} + \\frac{16}{x^4}$."
+        ],
+        "common_pitfalls": "Sign errors when raising negative fractions to odd or even powers."
+      }
+    }
+  ]
+}

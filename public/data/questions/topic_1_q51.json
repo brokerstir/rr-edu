@@ -1,0 +1,126 @@
+{
+  "id": "topic_1_q51",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 51,
+  "question_text": "Solve for $x$ exactly:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$3^x = 15$",
+      "final_answer": "$\\frac{\\log 15}{\\log 3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Take logarithm of both sides and apply power rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Isolate $x$ in terms of logarithms"
+        }
+      ],
+      "solution": "$3^x = 15 \\implies \\log(3^x) = \\log 15 \\implies x\\log 3 = \\log 15 \\implies x = \\frac{\\log 15}{\\log 3}$",
+      "ai_explanation": {
+        "concept_rule": "Take the logarithm of both sides to bring the variable down from the exponent: $\\log(a^x) = x\\log a$.",
+        "step_by_step": [
+          "Take the logarithm of both sides: $\\log(3^x) = \\log 15$.",
+          "Apply power property: $x\\log 3 = \\log 15$.",
+          "Divide by $\\log 3$: $x = \\frac{\\log 15}{\\log 3}$."
+        ],
+        "common_pitfalls": "Incorrectly simplifying $\\frac{\\log 15}{\\log 3}$ as $\\log(15/3) = \\log 5$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$3^{x+1} = 8$",
+      "final_answer": "$\\frac{\\log 8}{\\log 3} - 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Take logarithm of both sides and bring $(x + 1)$ to the front"
+        },
+        {
+          "code": "A1",
+          "desc": "Rearrange and solve for $x$"
+        }
+      ],
+      "solution": "$3^{x+1} = 8 \\implies \\log(3^{x+1}) = \\log 8 \\implies (x + 1)\\log 3 = \\log 8 \\implies x + 1 = \\frac{\\log 8}{\\log 3} \\implies x = \\frac{\\log 8}{\\log 3} - 1$",
+      "ai_explanation": {
+        "concept_rule": "Solve exponential equations by taking logs: $\\log(b^{x+1}) = (x+1)\\log b$.",
+        "step_by_step": [
+          "Take logs of both sides: $\\log(3^{x+1}) = \\log 8$.",
+          "Use power rule: $(x + 1)\\log 3 = \\log 8$.",
+          "Divide by $\\log 3$: $x + 1 = \\frac{\\log 8}{\\log 3}$.",
+          "Subtract 1: $x = \\frac{\\log 8}{\\log 3} - 1$."
+        ],
+        "common_pitfalls": "Forgetting parentheses around $(x + 1)$, leading to $x + \\log 3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$e^{2x} - 20 = e^x$",
+      "final_answer": "$x = \\ln 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearranging to a quadratic in $e^x$ and factorising: $(e^x - 5)(e^x + 4) = 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Rejecting $e^x = -4$ since $e^x > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $x = \\ln 5$"
+        }
+      ],
+      "solution": "$e^{2x} - 20 = e^x$\n$\\therefore e^{2x} - e^x - 20 = 0$\n$\\therefore (e^x)^2 - e^x - 20 = 0$\n$\\therefore (e^x - 5)(e^x + 4) = 0$\n$\\therefore e^x = 5 \\quad \\{e^x > 0\\}$\n$\\therefore x = \\ln 5$",
+      "ai_explanation": {
+        "concept_rule": "Equations quadratic in form: substitute or treat $u = e^x$ to solve the quadratic equation, remembering that $e^x > 0$ for all real $x$.",
+        "step_by_step": [
+          "Rewrite the equation as a standard quadratic: $(e^x)^2 - e^x - 20 = 0$.",
+          "Factorise the quadratic expression: $(e^x - 5)(e^x + 4) = 0$.",
+          "Since $e^x > 0$ for all real $x$, $e^x + 4 \\neq 0$, leaving $e^x = 5$.",
+          "Take the natural logarithm of both sides to get $x = \\ln 5$."
+        ],
+        "common_pitfalls": "Failing to discard the negative root $e^x = -4$, leading to an extraneous or invalid solution."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$3 \\times 4^x - 2^x = 0$",
+      "final_answer": "$x = -\\frac{\\log 3}{\\log 2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting $4^x$ as $(2^x)^2$ and factoring out $2^x$"
+        },
+        {
+          "code": "R1",
+          "desc": "Rejecting $2^x = 0$ since $2^x > 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Taking logarithms of both sides of $2^x = \\frac{1}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $x = -\\frac{\\log 3}{\\log 2}$"
+        }
+      ],
+      "solution": "$3 \\times 4^x - 2^x = 0$\n$\\therefore 3 \\times (2^x)^2 - 2^x = 0$\n$\\therefore 2^x(3 \\times 2^x - 1) = 0$\n$\\therefore 3 \\times 2^x - 1 = 0 \\quad \\{2^x > 0\\}$\n$\\therefore 3 \\times 2^x = 1$\n$\\therefore 2^x = \\frac{1}{3}$\n$\\therefore \\log(2^x) = \\log\\left(\\frac{1}{3}\\right) = -\\log 3$\n$\\therefore x \\log 2 = -\\log 3$\n$\\therefore x = -\\frac{\\log 3}{\\log 2}$",
+      "ai_explanation": {
+        "concept_rule": "Use power rules $4^x = (2^2)^x = (2^x)^2$ to transform the equation into a factorable exponential expression.",
+        "step_by_step": [
+          "Express $4^x$ as $(2^x)^2$.",
+          "Factor out $2^x$: $2^x(3 \\times 2^x - 1) = 0$.",
+          "Since $2^x > 0$, divide by $2^x$ or set $3 \\times 2^x - 1 = 0$, giving $2^x = \\frac{1}{3}$.",
+          "Take the logarithm of both sides: $x\\log 2 = \\log(3^{-1}) = -\\log 3$.",
+          "Solve for $x$: $x = -\\frac{\\log 3}{\\log 2}$."
+        ],
+        "common_pitfalls": "Forgetting that $\\log(1/3) = -\\log 3$ or trying to set $2^x = 0$."
+      }
+    }
+  ]
+}

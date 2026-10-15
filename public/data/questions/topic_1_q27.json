@@ -1,0 +1,46 @@
+{
+  "id": "topic_1_q27",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 27,
+  "question_text": "If $(a + bx)^n = 1 - 12x + 54x^2 - \\dots$, $a > 0$, $n \\in \\mathbb{Z}^+$, find the values of $a$, $b$, and $n$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "",
+      "final_answer": "$a=1,\\; b=-3,\\; n=4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the general binomial expansion of $(a+bx)^n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $a=1$"
+        },
+        {
+          "code": "M1",
+          "desc": "Equating coefficients to obtain a system of equations in $n$ and $b$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $n=4$ and $b=-3$"
+        }
+      ],
+      "solution": "$(a+bx)^n = 1 - 12x + 54x^2 - \\dots, \\quad a > 0, \\; n \\in \\mathbb{Z}^+\n\\therefore \\sum_{r=0}^n \\binom{n}{r} a^{n-r}(bx)^r = 1 - 12x + 54x^2 - \\dots\n\\therefore \\binom{n}{0}a^n + \\binom{n}{1}a^{n-1}bx + \\binom{n}{2}a^{n-2}b^2x^2 + \\dots = 1 - 12x + 54x^2 - \\dots\n\\therefore a^n + na^{n-1}bx + \\frac{n(n-1)}{2}a^{n-2}b^2x^2 + \\dots = 1 - 12x + 54x^2 - \\dots\n\\text{Equating coefficients:}\na^n = 1 \\implies a = 1 \\text{ (since } a > 0) \\quad \\dots (1)\nna^{n-1}b = -12 \\implies nb = -12 \\implies b = -\\frac{12}{n} \\quad \\dots (2)\n\\frac{n(n-1)}{2}a^{n-2}b^2 = 54 \\quad \\dots (3)\n\\text{Substituting into (3):}\n\\frac{n(n-1)}{2}\\left(-\\frac{12}{n}\\right)^2 = 54\n\\frac{n(n-1)}{2}\\left(\\frac{144}{n^2}\\right) = 54\n\\frac{144(n-1)}{n} = 108\n144n - 144 = 108n\n36n = 144 \\implies n = 4\n\\therefore b = -\\frac{12}{4} = -3$",
+      "ai_explanation": {
+        "concept_rule": "Equate corresponding coefficients from the binomial expansion to known series coefficients.",
+        "step_by_step": [
+          "Expand $(a+bx)^n$ up to $x^2$: $a^n + n a^{n-1} b x + \\frac{n(n-1)}{2} a^{n-2} b^2 x^2$.",
+          "Equate constant term: $a^n = 1 \\implies a = 1$.",
+          "Equate $x$ term: $n(1)^{n-1} b = -12 \\implies nb = -12$.",
+          "Equate $x^2$ term: $\\frac{n(n-1)}{2}(1)^{n-2} b^2 = 54$.",
+          "Substitute $b = -\\frac{12}{n}$ into the $x^2$ equation and solve the linear equation for $n$.",
+          "Substitute $n$ back to find $b$."
+        ],
+        "common_pitfalls": "Squaring $-\\frac{12}{n}$ as $-\\frac{144}{n^2}$ instead of $+\\frac{144}{n^2}$."
+      }
+    }
+  ]
+}

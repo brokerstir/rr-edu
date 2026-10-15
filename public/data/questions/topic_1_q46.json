@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q46",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 46,
+  "question_text": "Write as a single logarithm:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\ln 20 - \\ln 10$",
+      "final_answer": "$\\ln 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply quotient law for natural logarithms"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $\\ln 2$"
+        }
+      ],
+      "solution": "$\\ln 20 - \\ln 10 = \\ln(2 \\times 10) - \\ln 10 = \\ln 2 + \\ln 10 - \\ln 10 = \\ln 2$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule: $\\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right)$.",
+        "step_by_step": [
+          "Apply quotient rule: $\\ln\\left(\\frac{20}{10}\\right)$.",
+          "Simplify fraction: $\\ln 2$."
+        ],
+        "common_pitfalls": "Writing $\\ln(20 - 10) = \\ln 10$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$-\\ln 13 - 3$",
+      "final_answer": "$\\ln\\left(\\frac{1}{13e^3}\\right)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewrite 3 as $\\ln(e^3)$ and factor negative sign"
+        },
+        {
+          "code": "A1",
+          "desc": "Combine into a single natural logarithm"
+        }
+      ],
+      "solution": "$-\\ln 13 - 3 = -(\\ln 13 + 3) = -(\\ln 13 + \\ln(e^3)) = -\\ln(13e^3) = \\ln\\left(\\frac{1}{13e^3}\\right)$",
+      "ai_explanation": {
+        "concept_rule": "Express numbers in terms of $\\ln$: $k = \\ln(e^k)$, and use $- \\ln u = \\ln(1/u)$.",
+        "step_by_step": [
+          "Write 3 as $\\ln(e^3)$.",
+          "Factor out $-1$: $-(\\ln 13 + \\ln(e^3))$.",
+          "Combine inside brackets: $-\\ln(13e^3)$.",
+          "Bring the negative inside as reciprocal: $\\ln\\left(\\frac{1}{13e^3}\\right)$."
+        ],
+        "common_pitfalls": "Leaving the constant 3 unexpressed as a logarithm."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{1}{3}\\ln 64 + 2\\ln 2$",
+      "final_answer": "$\\ln 16$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply power law to each logarithmic term"
+        },
+        {
+          "code": "A1",
+          "desc": "Combine using product law"
+        }
+      ],
+      "solution": "$\\frac{1}{3}\\ln 64 + 2\\ln 2 = \\ln(64^{\\frac{1}{3}}) + \\ln(2^2) = \\ln 4 + \\ln 4 = 2\\ln 4 = \\ln(4^2) = \\ln 16$",
+      "ai_explanation": {
+        "concept_rule": "Power law $k\\ln a = \\ln(a^k)$ and product law $\\ln a + \\ln b = \\ln(ab)$.",
+        "step_by_step": [
+          "Calculate $64^{1/3} = 4$, so $\\frac{1}{3}\\ln 64 = \\ln 4$.",
+          "Calculate $2^2 = 4$, so $2\\ln 2 = \\ln 4$.",
+          "Add: $\\ln 4 + \\ln 4 = \\ln(4 \\times 4) = \\ln 16$."
+        ],
+        "common_pitfalls": "Multiplying coefficients instead of taking them into powers."
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "topic_1_q37",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 37,
+  "question_text": "Simplify:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\log(10^a \\times 1000^b)$",
+      "final_answer": "$9 + 3b$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using log product rule and writing 1000 as $10^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying using $\\log_{10}(10^k) = k$"
+        }
+      ],
+      "solution": "\\log(10^9 \\times 1000^b) = \\log(10^9 \\times (10^3)^b) = \\log(10^9 \\times 10^{3b}) = \\log(10^{9+3b}) = 9 + 3b",
+      "ai_explanation": {
+        "concept_rule": "Base-10 logarithm law: $\\log_{10}(10^k) = k$.",
+        "step_by_step": [
+          "Rewrite $1000^b = (10^3)^b = 10^{3b}$.",
+          "Combine terms using multiplication rule of indices: $10^9 \\times 10^{3b} = 10^{9+3b}$.",
+          "Evaluate $\\log_{10}(10^{9+3b}) = 9+3b$."
+        ],
+        "common_pitfalls": "Forgetting that $\\log$ without a base indicates common logarithm (base 10)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\log\\left(\\frac{10^a}{100}\\right)$",
+      "final_answer": "$n - 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing denominator as $10^2$ and simplifying quotient"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $n-2$"
+        }
+      ],
+      "solution": "\\log\\left(\\frac{10^n}{100}\\right) = \\log\\left(\\frac{10^n}{10^2}\\right) = \\log(10^{n-2}) = n - 2",
+      "ai_explanation": {
+        "concept_rule": "Use division index laws inside the logarithm: $\\frac{10^n}{10^m} = 10^{n-m}$.",
+        "step_by_step": [
+          "Write 100 as $10^2$.",
+          "Simplify fraction to $10^{n-2}$.",
+          "Evaluate $\\log_{10}(10^{n-2}) = n-2$."
+        ],
+        "common_pitfalls": "Writing $\\log(10^n) / \\log(100)$ as equal to $n/2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\log(2^c \\times 5^c)$",
+      "final_answer": "$t$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Combining $2^t \\times 5^t$ into $(2 \\times 5)^t = 10^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\log(10^t) = t$"
+        }
+      ],
+      "solution": "\\log(2^t \\times 5^t) = \\log((2 \\times 5)^t) = \\log(10)^t = t",
+      "ai_explanation": {
+        "concept_rule": "Power of a product law: $a^t b^t = (ab)^t$.",
+        "step_by_step": [
+          "Recognize common exponent $t$: $2^t \\times 5^t = (2 \\times 5)^t = 10^t$.",
+          "Take $\\log_{10}(10^t) = t$."
+        ],
+        "common_pitfalls": "Expanding into $\\log(2^t) + \\log(5^t)$ and not realizing $t(\\log 2 + \\log 5) = t \\log 10 = t$."
+      }
+    }
+  ]
+}

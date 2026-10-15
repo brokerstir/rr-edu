@@ -1,0 +1,88 @@
+{
+  "id": "topic_1_q15",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 15,
+  "question_text": "An arithmetic sequence has terms $u_7 = 1$ and $u_{15} = -23$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the first term $u_1$ and common difference $d$.",
+      "final_answer": "$u_1 = 19,\\ d = -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up simultaneous equations using u_n = u_1 + (n - 1)d"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly solving for d = -3"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly solving for u_1 = 19"
+        }
+      ],
+      "solution": "$u_7 = 1 \\implies u_1 + 6d = 1$ ...(1) and $u_{15} = -23 \\implies u_1 + 14d = -23$ ...(2). Multiply both sides of (1) by $-1$: $-u_1 - 6d = -1$. Adding the equations: $8d = -24 \\implies d = -3$. Substituting into (1): $u_1 + 6(-3) = 1 \\implies u_1 - 18 = 1 \\implies u_1 = 19$.",
+      "ai_explanation": {
+        "concept_rule": "The $n$-th term of an arithmetic sequence is $u_n = u_1 + (n - 1)d$. Given two terms, set up a system of two linear equations in terms of $u_1$ and $d$.",
+        "step_by_step": [
+          "Write the equation for $u_7$: $u_1 + 6d = 1$.",
+          "Write the equation for $u_{15}$: $u_1 + 14d = -23$.",
+          "Subtract the first equation from the second: $8d = -24 \\implies d = -3$.",
+          "Substitute $d = -3$ back into the first equation to solve for $u_1 = 19$."
+        ],
+        "common_pitfalls": "Arithmetic errors when subtracting negative numbers (e.g., $-23 - 1 = -24$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the 27th term $u_{27}$.",
+      "final_answer": "$-59$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting u_1 and d into the formula for u_27"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation to obtain -59"
+        }
+      ],
+      "solution": "$u_n = u_1 + (n - 1)d \\implies u_{27} = 19 + 26(-3) = -59$.",
+      "ai_explanation": {
+        "concept_rule": "Use the general formula $u_n = u_1 + (n - 1)d$ with the values of $u_1$ and $d$ found in part a.",
+        "step_by_step": [
+          "Identify $n = 27$, $u_1 = 19$, and $d = -3$.",
+          "Compute $u_{27} = 19 + 26(-3) = 19 - 78 = -59$."
+        ],
+        "common_pitfalls": "Using $n$ instead of $n - 1$ (multiplying by 27 instead of 26)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the sum of the first 27 terms of the series.",
+      "final_answer": "$-540$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the formula S_n = n/2(u_1 + u_n)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation to -540"
+        }
+      ],
+      "solution": "$S_n = \\frac{n}{2}(u_1 + u_n) \\implies S_{27} = \\frac{27}{2}(19 + (-59)) = \\frac{27}{2}(-40) = -540$.",
+      "ai_explanation": {
+        "concept_rule": "The sum of the first $n$ terms of an arithmetic progression can be computed directly using the first and last terms: $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+        "step_by_step": [
+          "Substitute $n = 27$, $u_1 = 19$, and $u_{27} = -59$ into the sum formula.",
+          "Simplify: $\\frac{27}{2} \\times (-40) = 27 \\times (-20) = -540$."
+        ],
+        "common_pitfalls": "Sign errors during addition inside parentheses: $19 + (-59) = -40$."
+      }
+    }
+  ]
+}

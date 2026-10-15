@@ -1,0 +1,83 @@
+{
+  "id": "topic_1_q18",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 18,
+  "question_text": "The first four terms of a geometric sequence are $0.125, 0.25, 0.5$, and $1$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the common ratio $r$.",
+      "final_answer": "$r = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Computing the common ratio r = u_2 / u_1"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating r = 2"
+        }
+      ],
+      "solution": "$r = \\frac{0.25}{0.125} = 2$.",
+      "ai_explanation": {
+        "concept_rule": "In a geometric sequence, the common ratio $r$ is the quotient of any term and the preceding term: $r = \\frac{u_{k+1}}{u_k}$.",
+        "step_by_step": [
+          "Divide the second term ($0.25$) by the first term ($0.125$).",
+          "Compute $\\frac{0.25}{0.125} = 2$."
+        ],
+        "common_pitfalls": "Dividing the first term by the second term instead."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the 20th term $u_{20}$.",
+      "final_answer": "$65\\,536$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the geometric term formula u_n = u_1 r^{n-1}"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining 65536"
+        }
+      ],
+      "solution": "Using $u_n = u_1 \\times r^{n-1}$, $u_{20} = 0.125 \\times 2^{19} = 65\\,536$.",
+      "ai_explanation": {
+        "concept_rule": "The $n$-th term of a geometric sequence is given by $u_n = u_1 r^{n-1}$.",
+        "step_by_step": [
+          "Substitute $u_1 = 0.125$, $r = 2$, and $n = 20$.",
+          "Evaluate $u_{20} = 0.125 \\times 2^{19} = 2^{-3} \\times 2^{19} = 2^{16} = 65\\,536$."
+        ],
+        "common_pitfalls": "Using the power $n$ instead of $n - 1$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the sum of the first 10 terms.",
+      "final_answer": "$127.875$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the geometric sum formula S_n = u_1(r^n - 1)/(r - 1)"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating S_10 = 127.875"
+        }
+      ],
+      "solution": "Using $S_n = \\frac{u_1(r^n - 1)}{r - 1}$, $S_{10} = \\frac{0.125(2^{10} - 1)}{2 - 1} = 127.875$.",
+      "ai_explanation": {
+        "concept_rule": "The sum of the first $n$ terms of a geometric progression is $S_n = \\frac{u_1(r^n - 1)}{r - 1}$.",
+        "step_by_step": [
+          "Substitute $u_1 = 0.125$, $r = 2$, and $n = 10$.",
+          "Calculate $2^{10} - 1 = 1024 - 1 = 1023$.",
+          "Multiply: $0.125 \\times 1023 = 127.875$."
+        ],
+        "common_pitfalls": "Using $n - 1$ in the exponent of the sum formula instead of $n$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "topic_1_q50",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 50,
+  "question_text": "Write $\\frac{8}{\\log_5 9}$ in the form $a\\log_3 b$ where $a, b \\in \\mathbb{Z}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "",
+      "final_answer": "$4\\log_3 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply change of base rule to base 3 in denominator"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify fraction to final form"
+        }
+      ],
+      "solution": "$\\frac{8}{\\log_5 9} = \\frac{8}{\\left(\\frac{\\log_3 9}{\\log_3 5}\\right)} = \\frac{8\\log_3 5}{\\log_3(3^2)} = \\frac{8\\log_3 5}{2} = 4\\log_3 5$",
+      "ai_explanation": {
+        "concept_rule": "Use $\\log_a b = \\frac{1}{\\log_b a}$ or general change of base formula.",
+        "step_by_step": [
+          "Change base of denominator to 3: $\\log_5 9 = \\frac{\\log_3 9}{\\log_3 5}$.",
+          "Invert and multiply: $8 \\times \\frac{\\log_3 5}{\\log_3 9}$.",
+          "Evaluate $\\log_3 9 = 2$.",
+          "Simplify: $\\frac{8\\log_3 5}{2} = 4\\log_3 5$."
+        ],
+        "common_pitfalls": "Assuming $\\frac{8}{\\log_5 9} = 8 - \\log_5 9$."
+      }
+    }
+  ]
+}

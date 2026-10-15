@@ -1,0 +1,39 @@
+{
+  "id": "topic_1_q58",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 58,
+  "question_text": "Suppose $x, y, z > 0$. Show that $xyz = 1 \\Leftrightarrow \\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "none",
+      "stem": "",
+      "final_answer": "$\\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y \\iff xyz = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Showing the forward direction $(\\Rightarrow)$: assuming $xyz = 1$, find common denominator for LHS to show it equals RHS"
+        },
+        {
+          "code": "M1",
+          "desc": "Showing the reverse direction $(\\Leftarrow)$: assuming the equation, rewrite LHS over common denominator $xyz$"
+        },
+        {
+          "code": "R1",
+          "desc": "Dividing by $x^2z + y^2x + z^2y \\neq 0$ (since $x,y,z > 0$) to conclude $xyz = 1$"
+        }
+      ],
+      "solution": "$(\\Rightarrow)$ Suppose $xyz = 1$, then $\\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = \\frac{x^2z + y^2x + z^2y}{xyz} = x^2z + y^2x + z^2y$\n$(\\Leftarrow)$ Suppose $\\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y$\n$\\therefore \\frac{x^2z + y^2x + z^2y}{xyz} = x^2z + y^2x + z^2y$\n$\\therefore xyz = \\frac{x^2z + y^2x + z^2y}{x^2z + y^2x + z^2y} = 1 \\quad \\text{since } x, y, z > 0 \\implies x^2z + y^2x + z^2y > 0$.",
+      "ai_explanation": {
+        "concept_rule": "To prove an equivalence ($P \\iff Q$), prove both directions: $P \\implies Q$ and $Q \\implies P$.",
+        "step_by_step": [
+          "Direction 1 $(\\Rightarrow)$: Assume $xyz = 1$. Express the left-hand side over a common denominator $xyz$: $\\frac{x^2z + y^2x + z^2y}{xyz}$. Replace $xyz$ with 1 to get $x^2z + y^2x + z^2y$.",
+          "Direction 2 $(\\Leftarrow)$: Assume $\\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y$. Write the left-hand side over $xyz$: $\\frac{x^2z + y^2x + z^2y}{xyz} = x^2z + y^2x + z^2y$.",
+          "Since $x, y, z > 0$, the numerator $x^2z + y^2x + z^2y > 0$, allowing division by this quantity to yield $xyz = 1$."
+        ],
+        "common_pitfalls": "Proving only one implication direction rather than both, or dividing by an expression without noting it is strictly non-zero."
+      }
+    }
+  ]
+}

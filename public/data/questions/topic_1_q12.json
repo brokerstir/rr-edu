@@ -1,0 +1,91 @@
+{
+  "id": "topic_1_q12",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 12,
+  "question_text": "Paige invests €500 in an account that pays $7.2\\%$ p.a. compounded monthly. The amount of money in Paige's account at the end of each month follows a geometric sequence with common ratio $r$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $r$.",
+      "final_answer": "$1.006$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate monthly interest rate $i = 7.2\\% / 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find monthly multiplier $r = 1 + i$"
+        }
+      ],
+      "solution": "If the interest rate per annum is $7.2\\%$, then the interest rate per month $i = \\frac{7.2\\%}{12} = 0.6\\% = 0.006$. $r = 1 + i = 1 + 0.006 = 1.006$.",
+      "ai_explanation": {
+        "concept_rule": "Monthly interest multiplier is $1 + \\frac{\\text{annual rate}}{12}$.",
+        "step_by_step": [
+          "Divide annual rate by 12: $\\frac{7.2\\%}{12} = 0.6\\%$.",
+          "Convert percentage to decimal: $0.6\\% = 0.006$.",
+          "Add 1 to get multiplier: $r = 1 + 0.006 = 1.006$."
+        ],
+        "common_pitfalls": "Forgetting to divide the percentage by 100 when expressing as a decimal."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the value of the account after 3 years.",
+      "final_answer": "€$620.15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine number of compounding periods $n = 36$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute into compound interest formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value rounded to 2 decimal places"
+        }
+      ],
+      "solution": "The interest is calculated monthly, so $n = 3 \\times 12 = 36$ time periods. $u_{36} = u_0 \\times r^{36} = 500 \\times (1.006)^{36} \\approx 620.15$. The value of the account after 3 years is €620.15.",
+      "ai_explanation": {
+        "concept_rule": "Compound interest formula: $A = P(1+i)^n$, where $n$ is total compounding periods.",
+        "step_by_step": [
+          "Determine number of months: $n = 3 \\times 12 = 36$.",
+          "Apply formula: $u_{36} = 500 \\times (1.006)^{36}$.",
+          "Compute value: $500 \\times 1.2403... \\approx 620.15$.",
+          "State value in currency: €620.15."
+        ],
+        "common_pitfalls": "Using $n = 3$ years instead of $n = 36$ months."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Given that inflation averages $2\\%$ p.a. over the 3 years, find the real value of the investment after 3 years.",
+      "final_answer": "€$584.38$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equation $\\text{real value} \\times (1.02)^3 = 620.15$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value rounded to 2 decimal places"
+        }
+      ],
+      "solution": "$\\text{real value} \\times (1.02)^3 = 620.15 \\implies \\text{real value} = \\frac{620.15}{(1.02)^3} \\approx 584.38\\text{ euros}$.",
+      "ai_explanation": {
+        "concept_rule": "Real value adjusts future nominal value by discounting inflation: $\\text{Real Value} = \\frac{\\text{Nominal Value}}{(1 + \\text{inflation rate})^t}$.",
+        "step_by_step": [
+          "Account for 2% annual inflation over 3 years: factor is $(1.02)^3$.",
+          "Set up the relationship: $\\text{real value} \\times (1.02)^3 = 620.15$.",
+          "Divide by inflation factor: $\\frac{620.15}{1.061208} \\approx 584.38$.",
+          "State answer as €584.38."
+        ],
+        "common_pitfalls": "Subtracting 6% directly instead of compounding $(1.02)^3$."
+      }
+    }
+  ]
+}

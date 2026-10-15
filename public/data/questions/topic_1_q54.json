@@ -1,0 +1,87 @@
+{
+  "id": "topic_1_q54",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 54,
+  "question_text": "State, with justification, whether each statement is true or false:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "If $x > 1$ then $\\frac{1}{x} < 1$.",
+      "final_answer": "$\\text{True}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating that the statement is true"
+        },
+        {
+          "code": "R1",
+          "desc": "Providing the reason that $f(x) = \\frac{1}{x}$ is decreasing for $x > 0$"
+        }
+      ],
+      "solution": "The statement \"If $x > 1$ then $\\frac{1}{x} < 1$\" is true, since the function $f(x) = \\frac{1}{x}$ is decreasing for $x > 0$.",
+      "ai_explanation": {
+        "concept_rule": "The function $f(x) = \\frac{1}{x}$ is strictly decreasing on the interval $(0, \\infty)$.",
+        "step_by_step": [
+          "Consider the condition $x > 1$. Both sides are strictly positive.",
+          "Taking reciprocals of positive numbers reverses the inequality: $\\frac{1}{x} < \\frac{1}{1} = 1$.",
+          "Alternatively, since $f(x) = \\frac{1}{x}$ is strictly decreasing for $x > 0$, $x > 1 \\implies f(x) < f(1)$, so $\\frac{1}{x} < 1$."
+        ],
+        "common_pitfalls": "Forgetting that reciprocating both sides only reverses inequalities when both sides have the same sign."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "If $\\frac{1}{x} < 1$ then $x > 1$.",
+      "final_answer": "$\\text{False}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating that the statement is false"
+        },
+        {
+          "code": "R1",
+          "desc": "Providing a counterexample such as $x = -2$"
+        }
+      ],
+      "solution": "The statement \"If $\\frac{1}{x} < 1$ then $x > 1$\" is false, since $-\\frac{1}{2} < 1$, but $-2 \\ngtr 1$.",
+      "ai_explanation": {
+        "concept_rule": "A conditional statement can be disproved by a single counterexample.",
+        "step_by_step": [
+          "Test negative numbers since the reciprocal of any negative number is negative and thus $< 1$.",
+          "Choose $x = -2$, where $\\frac{1}{x} = -\\frac{1}{2} < 1$.",
+          "Check whether the conclusion holds: $-2 > 1$ is false.",
+          "Hence, the statement is false."
+        ],
+        "common_pitfalls": "Assuming $x$ must be positive when no domain restriction is specified."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$x > 1$ if and only if $\\frac{1}{x} < 1$.",
+      "final_answer": "$\\text{False}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating that the statement is false"
+        },
+        {
+          "code": "R1",
+          "desc": "Noting that $\\frac{1}{x} < 1$ does not imply $x > 1$ (from part b)"
+        }
+      ],
+      "solution": "The statement \"$x > 1$ if and only if $\\frac{1}{x} < 1$\" is false, since $\\frac{1}{x} < 1$ does not imply $x > 1$ (from b).",
+      "ai_explanation": {
+        "concept_rule": "An 'if and only if' (biconditional) statement $P \\iff Q$ is true only if both implications $P \\implies Q$ and $Q \\implies P$ are true.",
+        "step_by_step": [
+          "An equivalence statement requires both directions to hold.",
+          "From part (a), $x > 1 \\implies \\frac{1}{x} < 1$ is true.",
+          "From part (b), the converse $\\frac{1}{x} < 1 \\implies x > 1$ is false.",
+          "Therefore, the biconditional statement is false."
+        ],
+        "common_pitfalls": "Believing an equivalence holds when only one direction of the implication is valid."
+      }
+    }
+  ]
+}

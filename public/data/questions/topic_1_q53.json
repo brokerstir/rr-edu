@@ -1,0 +1,115 @@
+{
+  "id": "topic_1_q53",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 53,
+  "question_text": "The population of kangaroos on an island is given by $K(t) = 3200 \\times (0.85)^t$, where $t$ is the time in years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "What was the initial kangaroo population?",
+      "final_answer": "$3200$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $t = 0$ into the population model"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating initial population is 3200 kangaroos"
+        }
+      ],
+      "solution": "$K(0) = 3200 \\times (0.85)^0$\n$= 3200 \\times 1$\n$= 3200$\n$\\therefore$ the initial population was 3200 kangaroos.",
+      "ai_explanation": {
+        "concept_rule": "Initial value occurs at $t = 0$. Any non-zero base raised to the power of 0 equals 1.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $K(t) = 3200 \\times (0.85)^t$.",
+          "Evaluate $(0.85)^0 = 1$.",
+          "Multiply to find $K(0) = 3200$."
+        ],
+        "common_pitfalls": "Thinking $(0.85)^0 = 0$ instead of $1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How many kangaroos were on the island after 5 years?",
+      "final_answer": "$1420$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $K(5) = 3200 \\times (0.85)^5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Rounding to the nearest whole kangaroo (or approximately 1420 kangaroos)"
+        }
+      ],
+      "solution": "$K(5) = 3200 \\times (0.85)^5$\n$= 1419.857$\n$\\therefore$ after 5 years, there were about 1420 kangaroos.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate an exponential decay function at a specific time value and round sensibly for a population context.",
+        "step_by_step": [
+          "Substitute $t = 5$ into the decay formula.",
+          "Calculate $3200 \\times 0.85^5 \\approx 1419.857$.",
+          "Round to the nearest whole integer or sensible number of kangaroos, giving approximately 1420."
+        ],
+        "common_pitfalls": "Not rounding or truncating to a sensible integer representing a discrete population."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Use technology to estimate how many years it will take for the kangaroo population to fall to 1000.",
+      "final_answer": "$7.16\\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equation $3200 \\times (0.85)^t = 1000$"
+        },
+        {
+          "code": "A1",
+          "desc": "Using technology/graphical calculator to obtain $t \\approx 7.16$"
+        }
+      ],
+      "solution": "We need to find when $3200 \\times (0.85)^t = 1000$.\nUsing technology, $t \\approx 7.16$.\n$\\therefore$ it will take approximately 7.16 years for the kangaroo population to fall to 1000.",
+      "ai_explanation": {
+        "concept_rule": "Solve an exponential equation using graphing technology (finding the intersection of $Y_1 = 3200(0.85)^t$ and $Y_2 = 1000$).",
+        "step_by_step": [
+          "Set the model function equal to 1000.",
+          "Graph $Y = 3200 \\times (0.85)^x$ and $Y = 1000$ on a graphics calculator.",
+          "Find the point of intersection: $X \\approx 7.157$, which rounds to $7.16$ years."
+        ],
+        "common_pitfalls": "Setting incorrect viewing window bounds on the calculator."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Check your answer to c using logarithms.",
+      "final_answer": "$t \\approx 7.16$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Isolating $(0.85)^t = \\frac{1000}{3200} = 0.3125$"
+        },
+        {
+          "code": "M1",
+          "desc": "Taking logarithms of both sides: $t \\log(0.85) = \\log(0.3125)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $t = \\frac{\\log(0.3125)}{\\log(0.85)} \\approx 7.16$"
+        }
+      ],
+      "solution": "$3200 \\times (0.85)^t = 1000$\n$\\therefore (0.85)^t = \\frac{1000}{3200} = 0.3125$\n$\\therefore t \\log(0.85) = \\log(0.3125)$\n$\\therefore t = \\frac{\\log(0.3125)}{\\log(0.85)}$\n$\\approx 7.16 \\quad \\checkmark$",
+      "ai_explanation": {
+        "concept_rule": "Algebraic solution using logarithms: isolate the exponential term and apply logarithms to both sides.",
+        "step_by_step": [
+          "Divide both sides by 3200 to get $(0.85)^t = 0.3125$.",
+          "Take the logarithm of both sides: $\\log((0.85)^t) = \\log(0.3125)$.",
+          "Apply the power law of logarithms: $t \\log(0.85) = \\log(0.3125)$.",
+          "Divide by $\\log(0.85)$ to find $t = \\frac{\\log(0.3125)}{\\log(0.85)} \\approx 7.16$."
+        ],
+        "common_pitfalls": "Dividing by 0.85 instead of taking logarithms."
+      }
+    }
+  ]
+}

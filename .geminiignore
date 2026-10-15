@@ -1,0 +1,9 @@
+# Prevent AI indexing on heavy files and builds
+node_modules/
+build/
+dist/
+.venv/
+__pycache__/
+*.pdf
+*.epub
+*.dump

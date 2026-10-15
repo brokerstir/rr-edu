@@ -1,0 +1,59 @@
+{
+  "id": "topic_1_q31",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 31,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Expand $(x - 2)^3$.",
+      "final_answer": "$x^3 - 6x^2 + 12x - 8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding $(x-2)^3$ using binomial coefficients"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly simplified polynomial"
+        }
+      ],
+      "solution": "(x-2)^3 = x^3 + 3(x)^2(-2) + 3(x)(-2)^2 + (-2)^3 = x^3 - 6x^2 + 12x - 8",
+      "ai_explanation": {
+        "concept_rule": "Use $(a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$.",
+        "step_by_step": [
+          "Set $a=x, b=2$.",
+          "Compute terms: $x^3 - 3(x^2)(2) + 3(x)(4) - 8 = x^3 - 6x^2 + 12x - 8$."
+        ],
+        "common_pitfalls": "Sign errors on $(-2)^2$ and $(-2)^3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find the coefficient of $x^3$ in $(3x^2 - 7)(x - 2)^3$.",
+      "final_answer": "$29$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiplying $(3x^2-7)$ with $(x^3 - 6x^2 + 12x - 8)$ to isolate $x^3$ terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining coefficient $36 - 7 = 29$"
+        }
+      ],
+      "solution": "(3x^2-7)(x-2)^3 = (3x^2-7)(x^3 - 6x^2 + 12x - 8) \\quad \\{\\text{using a}\\}\n\\text{So, the terms containing } x^3 \\text{ are } 36x^3 \\text{ from } 3x^2(12x) \\text{ and } -7x^3 \\text{ from } -7(x^3)\n\\therefore \\text{the coefficient of } x^3 \\text{ is } 36 - 7 = 29.",
+      "ai_explanation": {
+        "concept_rule": "Identify which term combinations produce an exponent of 3 in $x$.",
+        "step_by_step": [
+          "$3x^2 \\times 12x = 36x^3$.",
+          "$-7 \\times x^3 = -7x^3$.",
+          "Combine coefficients: $36 - 7 = 29$."
+        ],
+        "common_pitfalls": "Expanding the entire polynomial, which wastes time and increases error chances."
+      }
+    }
+  ]
+}

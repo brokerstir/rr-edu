@@ -1,0 +1,79 @@
+{
+  "id": "topic_1_q32",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 32,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use the formula $\\binom{n}{r} = \\frac{n!}{r!(n - r)!}$ to evaluate $\\binom{6}{2}$.",
+      "final_answer": "$15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the formula $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation leading to 15"
+        }
+      ],
+      "solution": "\\text{Using } \\binom{n}{r} = \\frac{n!}{r!(n-r)!}, \\quad \\binom{6}{2} = \\frac{6!}{2!4!} = \\frac{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1}{2 \\times 1 \\times 4 \\times 3 \\times 2 \\times 1} = \\frac{6 \\times 5}{2 \\times 1} = \\frac{30}{2} = 15",
+      "ai_explanation": {
+        "concept_rule": "Definition of combinations: $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$.",
+        "step_by_step": [
+          "Substitute $n=6, r=2$: $\\frac{6!}{2!4!}$.",
+          "Cancel out $4!$: $\\frac{6 \\times 5}{2 \\times 1} = 15$."
+        ],
+        "common_pitfalls": "Not canceling factorials efficiently."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence state the value of $\\binom{6}{4}$.",
+      "final_answer": "$15$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Using symmetry $\\binom{6}{4} = \\binom{6}{2} = 15$"
+        }
+      ],
+      "solution": "\\binom{6}{4} = \\frac{6!}{4!2!} = \\binom{6}{2} = 15",
+      "ai_explanation": {
+        "concept_rule": "Symmetry property of binomial coefficients: $\\binom{n}{r} = \\binom{n}{n-r}$.",
+        "step_by_step": [
+          "$\\binom{6}{4} = \\frac{6!}{4!2!}$.",
+          "Notice this is identical to $\\binom{6}{2}$, which is 15."
+        ],
+        "common_pitfalls": "Re-calculating from scratch instead of applying the symmetry rule."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Given that $\\binom{6}{3} = 20$, write down the expansion of $(x - 2)^6$. Simplify your answer.",
+      "final_answer": "$x^6 - 12x^5 + 60x^4 - 160x^3 + 240x^2 - 192x + 64$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Writing out the binomial expansion for $(x-2)^6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expansion with correct coefficients and signs"
+        }
+      ],
+      "solution": "(x-2)^6 = x^6 + \\binom{6}{1}(x)^5(-2)^1 + \\binom{6}{2}(x)^4(-2)^2 + \\binom{6}{3}(x)^3(-2)^3 + \\binom{6}{4}(x)^2(-2)^4 + \\binom{6}{5}(x)^1(-2)^5 + (-2)^6 = x^6 - 12x^5 + 60x^4 - 160x^3 + 240x^2 - 192x + 64",
+      "ai_explanation": {
+        "concept_rule": "Apply the Binomial Theorem $(x+a)^n = \\sum_{r=0}^n \\binom{n}{r} x^{n-r} a^r$.",
+        "step_by_step": [
+          "Coefficients are $1, 6, 15, 20, 15, 6, 1$.",
+          "Powers of $-2$ are $1, -2, 4, -8, 16, -32, 64$.",
+          "Multiply coefficients: $1x^6 - 12x^5 + 60x^4 - 160x^3 + 240x^2 - 192x + 64$."
+        ],
+        "common_pitfalls": "Alternating sign errors when raising $-2$ to powers."
+      }
+    }
+  ]
+}

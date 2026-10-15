@@ -1,0 +1,138 @@
+{
+  "id": "topic_1_q14",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 14,
+  "question_text": "Find the sum of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$11 + 15 + 19 + 23 + \\dots$ to 20 terms",
+      "final_answer": "$980$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify $u_1 = 11$, $d = 4$, $n = 20$ and state sum formula"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute parameters into $S_n = \\frac{n}{2}(2u_1 + (n-1)d)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sum"
+        }
+      ],
+      "solution": "The series is arithmetic with $u_1 = 11$, $d = 4$, and $n = 20$. Now $S_n = \\frac{n}{2}(2u_1 + (n - 1)d) \\implies S_{20} = \\frac{20}{2}(2 \\times 11 + 19 \\times 4) = 10(22 + 76) = 980$.",
+      "ai_explanation": {
+        "concept_rule": "Arithmetic series sum: $S_n = \\frac{n}{2}[2u_1 + (n-1)d]$.",
+        "step_by_step": [
+          "Identify parameters: $u_1 = 11$, $d = 4$, $n = 20$.",
+          "Substitute into formula: $S_{20} = \\frac{20}{2}[2(11) + (20-1)(4)]$.",
+          "Simplify inside brackets: $22 + 19 \\times 4 = 22 + 76 = 98$.",
+          "Multiply: $10 \\times 98 = 980$."
+        ],
+        "common_pitfalls": "Using $u_1$ instead of $2u_1$ in the bracket."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$7 + 12.5 + 18 + 23.5 + \\dots + 106$",
+      "final_answer": "$1073.5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use $u_n = u_1 + (n-1)d$ to find $n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct number of terms $n = 19$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use $S_n = \\frac{n}{2}(u_1 + u_n)$ to calculate sum"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sum"
+        }
+      ],
+      "solution": "$7 + 12.5 + 18 + 23.5 + ... + 106$. The series is arithmetic with $u_1 = 7$, $d = 5.5$, and $u_n = 106$. First we need to find $n$. Now $u_n = 106 \\implies u_1 + (n - 1)d = 106 \\implies 7 + 5.5(n - 1) = 106 \\implies 5.5(n - 1) = 99 \\implies n - 1 = 18 \\implies n = 19$. Using $S_n = \\frac{n}{2}(u_1 + u_n) \\implies S_{19} = \\frac{19}{2}(7 + 106) = \\frac{19}{2} \\times 113 = 1073.5$.",
+      "ai_explanation": {
+        "concept_rule": "Find $n$ first using the nth term formula $u_n = u_1 + (n-1)d$, then calculate the sum using $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+        "step_by_step": [
+          "Determine common difference: $d = 12.5 - 7 = 5.5$.",
+          "Find number of terms $n$: $7 + 5.5(n-1) = 106 \\implies 5.5(n-1) = 99 \\implies n-1 = 18 \\implies n = 19$.",
+          "Calculate sum: $S_{19} = \\frac{19}{2}(7 + 106) = 9.5 \\times 113$.",
+          "Evaluate: $1073.5$."
+        ],
+        "common_pitfalls": "Forgetting to find $n$ first or miscalculating the common difference $d$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$1 - 2 + 3 - 4 + 5 - 6 + 7 - \\dots$ to 100 terms",
+      "final_answer": "$-50$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Splitting the alternating series into two separate arithmetic series of 50 terms each"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying the arithmetic sum formula S_n = n/2(2u_1 + (n - 1)d) to each series"
+        },
+        {
+          "code": "A1",
+          "desc": "Summing the results to obtain the final answer -50"
+        }
+      ],
+      "solution": "$1 - 2 + 3 - 4 + 5 - 6 + 7 - \\dots$ to $100$ terms can be expressed as two separate arithmetic series: $1 + 3 + 5 + 7 + \\dots$ where $u_1 = 1$, $d = 2$, $n = 50$, and $-2 - 4 - 6 - 8 - \\dots$ where $u_1 = -2$, $d = -2$, $n = 50$. Using $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$, the sum of the first series is $\\frac{50}{2}(2(1) + 49(2)) = 25(2 + 98) = 2500$. The sum of the second series is $\\frac{50}{2}(2(-2) + 49(-2)) = 25(-4 - 98) = -2550$. Therefore, the sum of both series is $2500 + (-2550) = -50$.",
+      "ai_explanation": {
+        "concept_rule": "An alternating sequence can often be split into two separate arithmetic progressions (one consisting of the odd-indexed terms and the other of the even-indexed terms). The sum of an arithmetic sequence is given by $S_n = \\frac{n}{2}(2u_1 + (n-1)d)$.",
+        "step_by_step": [
+          "Separate the 100 terms into two series of 50 terms each: positive odd terms and negative even terms.",
+          "Calculate the sum of the positive terms: $u_1 = 1$, $d = 2$, $n = 50 \\implies S_{50} = 25(2 + 98) = 2500$.",
+          "Calculate the sum of the negative terms: $u_1 = -2$, $d = -2$, $n = 50 \\implies S_{50} = 25(-4 - 98) = -2550$.",
+          "Combine the two sums: $2500 - 2550 = -50$."
+        ],
+        "common_pitfalls": "Forgetting that each sub-series only contains half of the total number of terms ($n = 50$, not $100$)."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "the integers from 1 to 200 not divisible by 3.",
+      "final_answer": "$13\\,467$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Separating numbers not divisible by 3 into two arithmetic sequences"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding the number of terms n = 67 for each series"
+        },
+        {
+          "code": "M1",
+          "desc": "Summing both arithmetic series using S_n = n/2(u_1 + u_n)"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining the correct total sum 13467"
+        }
+      ],
+      "solution": "The integers from 1 to 200 which are not divisible by 3 are $1, 2, 4, 5, 7, 8, \\dots, 200$. The sum of these integers can be expressed as two separate arithmetic series $A$ and $B$: $S_A = 1 + 4 + 7 + \\dots + 196 + 199$ where $u_1 = 1$, $d = 3$, $u_n = 199$, and $S_B = 2 + 5 + 8 + \\dots + 197 + 200$ where $u_1 = 2$, $d = 3$, $u_n = 200$. For $S_A$, $u_n = u_1 + (n - 1)d \\implies 199 = 1 + 3(n - 1) \\implies 198 = 3(n - 1) \\implies 66 = n - 1 \\implies n = 67$. For $S_B$, $u_n = u_1 + (n - 1)d \\implies 200 = 2 + 3(n - 1) \\implies 198 = 3(n - 1) \\implies 66 = n - 1 \\implies n = 67$. Using $S_n = \\frac{n}{2}(u_1 + u_n)$, $S_A = \\frac{67}{2}(1 + 199) = 6700$ and $S_B = \\frac{67}{2}(2 + 200) = 6767$. The total sum is $S_A + S_B = 6700 + 6767 = 13\\,467$.",
+      "ai_explanation": {
+        "concept_rule": "Integers not divisible by 3 leave a remainder of either 1 or 2 when divided by 3, forming two separate arithmetic progressions with common difference $d = 3$. The sum of an arithmetic progression can be calculated using $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+        "step_by_step": [
+          "Group numbers with remainder 1 ($1, 4, \\dots, 199$) and remainder 2 ($2, 5, \\dots, 200$).",
+          "Determine the number of terms in each series using $u_n = u_1 + (n - 1)d$, yielding $n = 67$ for both.",
+          "Compute the sum of each progression using $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+          "Add the two sums together to get $6700 + 6767 = 13\\,467$."
+        ],
+        "common_pitfalls": "An alternative method is (Total sum from 1 to 200) - (Sum of multiples of 3). When using the two-series approach, make sure not to miscount the number of terms."
+      }
+    }
+  ]
+}

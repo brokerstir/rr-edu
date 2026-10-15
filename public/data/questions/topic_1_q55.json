@@ -1,0 +1,40 @@
+{
+  "id": "topic_1_q55",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 55,
+  "question_text": "Prove that the sum of three consecutive odd integers is divisible by 3.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "none",
+      "stem": "",
+      "final_answer": "$3x \\text{ is divisible by } 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Representing three consecutive odd integers algebraically, e.g., $(x - 2), x, (x + 2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Summing the expressions to get $3x$"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that $3x$ is clearly divisible by 3"
+        }
+      ],
+      "solution": "Let the middle number be $x$.\n$\\therefore$ the sum of the three consecutive odd integers is $(x - 2) + x + (x + 2) = 3x$ which is divisible by 3.",
+      "ai_explanation": {
+        "concept_rule": "Algebraic proof: represent consecutive odd integers using a suitable variable and show that their sum contains a factor of 3.",
+        "step_by_step": [
+          "Let $x$ be an odd integer, representing the middle of the three consecutive odd numbers.",
+          "The three consecutive odd numbers are $x - 2$, $x$, and $x + 2$.",
+          "Sum the three numbers: $(x - 2) + x + (x + 2) = 3x$.",
+          "Since $3x = 3(x)$, where $x$ is an integer, the sum is divisible by 3."
+        ],
+        "common_pitfalls": "Using variables for three unrelated numbers rather than using expressions with step size 2 for consecutive odd integers."
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "topic_1_q8",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 8,
+  "question_text": "An empty hamster cage has mass $800\\text{ g}$. When 5 hamsters are placed in the cage, the total mass is $1400\\text{ g}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the average mass of the hamsters in the cage.",
+      "final_answer": "$120\\text{ g}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtract mass of cage from total mass and divide by number of hamsters"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct average mass with units"
+        }
+      ],
+      "solution": "$\\text{Average mass} = \\frac{\\text{total mass} - \\text{mass of cage}}{\\text{number of hamsters}} = \\frac{1400 - 800}{5} = \\frac{600}{5} = 120\\text{ g}$",
+      "ai_explanation": {
+        "concept_rule": "The net mass of hamsters is the total mass minus the cage mass, divided evenly among the hamsters.",
+        "step_by_step": [
+          "Subtract cage mass from total mass: $1400 - 800 = 600\\text{ g}$.",
+          "Divide by the number of hamsters: $\\frac{600}{5} = 120\\text{ g}$."
+        ],
+        "common_pitfalls": "Dividing the total mass $1400$ directly by $5$ without subtracting the cage mass."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence write an arithmetic sequence for $u_n$, the approximate total mass when $n$ hamsters are placed in the cage.",
+      "final_answer": "$u_n = 800 + 120n$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify initial mass and rate of mass per hamster"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct linear formula"
+        }
+      ],
+      "solution": "$u_n = 800 + 120n$",
+      "ai_explanation": {
+        "concept_rule": "Linear equation of the form $u_n = u_0 + d \\cdot n$, where $u_0$ is the base weight and $d$ is the weight per hamster.",
+        "step_by_step": [
+          "Identify the base mass (cage): $800\\text{ g}$.",
+          "Identify the mass per hamster: $120\\text{ g}$.",
+          "Write the total mass for $n$ hamsters: $u_n = 800 + 120n$."
+        ],
+        "common_pitfalls": "Using $n-1$ instead of $n$ when $n=0$ corresponds to the empty cage."
+      }
+    }
+  ]
+}

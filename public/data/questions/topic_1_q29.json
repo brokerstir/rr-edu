@@ -1,0 +1,39 @@
+{
+  "id": "topic_1_q29",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 29,
+  "question_text": "Find the coefficient of $x^5$ in the expansion of $(x + 2)(1 - x)^{10}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "",
+      "final_answer": "$-294$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding $(1-x)^{10}$ up to power 5"
+        },
+        {
+          "code": "M1",
+          "desc": "Identifying the two contributions to $x^5$: $x \\times x^4$ term and $2 \\times x^5$ term"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $-294$"
+        }
+      ],
+      "solution": "(x+2)(1-x)^{10} = (x+2)\\left[1^{10} + \\binom{10}{1}(1)^9(-x) + \\binom{10}{2}(1)^8(-x)^2 + \\binom{10}{3}(1)^7(-x)^3 + \\binom{10}{4}(1)^6(-x)^4 + \\binom{10}{5}(1)^5(-x)^5 + \\dots\\right]\n= (x+2)\\left[1 - \\binom{10}{1}x + \\binom{10}{2}x^2 - \\binom{10}{3}x^3 + \\binom{10}{4}x^4 - \\binom{10}{5}x^5 + \\dots\\right]\n\\text{So, the terms containing } x^5 \\text{ are } \\binom{10}{4}x^5 \\text{ and } -2\\binom{10}{5}x^5\n\\therefore \\text{the coefficient of } x^5 \\text{ is } \\binom{10}{4} - 2\\binom{10}{5} = 210 - 2(252) = -294",
+      "ai_explanation": {
+        "concept_rule": "When multiplying a binomial $(x+k)$ by a polynomial expansion, $x^n$ comes from $x \\times x^{n-1}$ and $k \\times x^n$.",
+        "step_by_step": [
+          "Identify $x^4$ term in $(1-x)^{10}$: $\\binom{10}{4}(-x)^4 = 210x^4$. Multiplying by $x$ yields $210x^5$.",
+          "Identify $x^5$ term in $(1-x)^{10}$: $\\binom{10}{5}(-x)^5 = -252x^5$. Multiplying by $2$ yields $-504x^5$.",
+          "Sum coefficients: $210 - 504 = -294$."
+        ],
+        "common_pitfalls": "Missing the negative sign inside $(-x)^5$."
+      }
+    }
+  ]
+}

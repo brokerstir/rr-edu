@@ -1,0 +1,79 @@
+{
+  "id": "topic_1_q9",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 9,
+  "question_text": "Find the general term $u_n$ of the geometric sequence which has:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$u_5 = 324$ and $u_{10} = 78\\,732$",
+      "final_answer": "$u_n = 4 \\times 3^{n-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equations for $u_5$ and $u_{10}$ and divide to find $r$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct common ratio $r = 3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $r$ to find first term $u_1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct formula for $u_n$"
+        }
+      ],
+      "solution": "$u_5 = u_1 r^4 = 324$ ...(1) and $u_{10} = u_1 r^9 = 78\\,732$ ...(2). Now $\\frac{u_1 r^9}{u_1 r^4} = \\frac{78\\,732}{324} \\implies r^5 = 243 \\implies r = \\sqrt[5]{243} \\implies r = 3$. Using (1), $u_1(3)^4 = 324 \\implies 81u_1 = 324 \\implies u_1 = 4$. Thus $u_n = 4 \\times 3^{n-1}$.",
+      "ai_explanation": {
+        "concept_rule": "The general term of a geometric sequence is $u_n = u_1 r^{n-1}$.",
+        "step_by_step": [
+          "Express terms in terms of $u_1$ and $r$: $u_5 = u_1 r^4 = 324$ and $u_{10} = u_1 r^9 = 78\\,732$.",
+          "Divide equations: $\\frac{u_1 r^9}{u_1 r^4} = r^5 = \\frac{78\\,732}{324} = 243$.",
+          "Take fifth root: $r = 3$.",
+          "Substitute $r=3$ into $u_1(3)^4 = 324$ to find $u_1 = \\frac{324}{81} = 4$.",
+          "Form general term: $u_n = 4 \\times 3^{n-1}$."
+        ],
+        "common_pitfalls": "Writing $r^5 = 243 \\implies r = \\pm 3$; odd roots only have one real solution."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$u_8 = -10$ and $u_{12} = -160$",
+      "final_answer": "$u_n = -\\frac{5}{64} \\times 2^{n-1}\\text{ or } u_n = \\frac{5}{64} \\times (-2)^{n-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equations for $u_8$ and $u_{12}$ and divide to find $r^4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct common ratios $r = \\pm 2$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find $u_1$ for each value of $r$"
+        },
+        {
+          "code": "A1",
+          "desc": "Both correct expressions for $u_n$"
+        }
+      ],
+      "solution": "$u_8 = u_1 r^7 = -10$ ...(1) and $u_{12} = u_1 r^{11} = -160$ ...(2). Now $\\frac{u_1 r^{11}}{u_1 r^7} = \\frac{-160}{-10} \\implies r^4 = 16 \\implies r = \\pm \\sqrt[4]{16} \\implies r = \\pm 2$. If $r = 2$, then using (1), $u_1(2)^7 = -10 \\implies 128u_1 = -10 \\implies u_1 = -\\frac{10}{128} = -\\frac{5}{64}$. Thus $u_n = -\\frac{5}{64} \\times 2^{n-1}$. If $r = -2$, then using (1), $u_1(-2)^7 = -10 \\implies -128u_1 = -10 \\implies u_1 = \\frac{10}{128} = \\frac{5}{64}$. Thus $u_n = \\frac{5}{64} \\times (-2)^{n-1}$.",
+      "ai_explanation": {
+        "concept_rule": "Even powers produce both positive and negative roots: $r^4 = k \\implies r = \\pm \\sqrt[4]{k}$.",
+        "step_by_step": [
+          "Divide $u_{12}$ by $u_8$: $r^4 = \\frac{-160}{-10} = 16$.",
+          "Solve for $r$: $r = \\pm 2$.",
+          "For $r = 2$: $u_1(2)^7 = -10 \\implies u_1 = -\\frac{5}{64}$, giving $u_n = -\\frac{5}{64} \\times 2^{n-1}$.",
+          "For $r = -2$: $u_1(-2)^7 = -10 \\implies -128u_1 = -10 \\implies u_1 = \\frac{5}{64}$, giving $u_n = \\frac{5}{64} \\times (-2)^{n-1}$."
+        ],
+        "common_pitfalls": "Forgetting the negative root $r = -2$ when taking an even root."
+      }
+    }
+  ]
+}

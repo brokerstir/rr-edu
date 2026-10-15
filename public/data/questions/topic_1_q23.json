@@ -1,0 +1,41 @@
+{
+  "id": "topic_1_q23",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 23,
+  "question_text": "Find $x$ if $\\sum_{k=1}^\\infty \\left(\\frac{4x}{3}\\right)^{k-1} = \\frac{5}{2}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "",
+      "final_answer": "$x = \\frac{9}{20}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the sum to infinity formula with u_1 = 1 and r = 4x/3"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the algebraic equation 3 / (3 - 4x) = 5/2"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for x to find x = 9/20"
+        }
+      ],
+      "solution": "$\\sum_{k=1}^\\infty \\left(\\frac{4x}{3}\\right)^{k-1} = \\frac{5}{2} \\implies \\frac{1}{1 - \\frac{4x}{3}} = \\frac{5}{2} \\implies \\frac{3}{3 - 4x} = \\frac{5}{2} \\implies 6 = 5(3 - 4x) \\implies 6 = 15 - 20x \\implies 20x = 9 \\implies x = \\frac{9}{20}$.",
+      "ai_explanation": {
+        "concept_rule": "The sum of the infinite geometric series $\\sum_{k=1}^\\infty r^{k-1}$ is $\\frac{1}{1 - r}$. Set this equal to the given value and solve for $x$.",
+        "step_by_step": [
+          "Identify $u_1 = 1$ and $r = \\frac{4x}{3}$.",
+          "Write $S = \\frac{1}{1 - \\frac{4x}{3}} = \\frac{3}{3 - 4x}$.",
+          "Set equal to $\\frac{5}{2}$: $\\frac{3}{3 - 4x} = \\frac{5}{2}$.",
+          "Cross-multiply: $6 = 5(3 - 4x) = 15 - 20x$.",
+          "Solve for $x$: $20x = 9 \\implies x = \\frac{9}{20}$."
+        ],
+        "common_pitfalls": "Failing to check that $|r| < 1$: for $x = \\frac{9}{20}$, $r = \\frac{4(9/20)}{3} = \\frac{3}{5} < 1$, which is valid."
+      }
+    }
+  ]
+}

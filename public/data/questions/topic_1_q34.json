@@ -1,0 +1,86 @@
+{
+  "id": "topic_1_q34",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 34,
+  "question_text": "Expand and simplify:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$x^{\\frac{1}{2}}\\left(x^{-\\frac{1}{2}} + 2x - x^{\\frac{3}{2}}\\right)$",
+      "final_answer": "$1 + 2x^{\\frac{4}{3}} - x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Distributing $x^{1/3}$ and adding indices"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly simplified expression"
+        }
+      ],
+      "solution": "x^{\\frac{1}{3}}(x^{-\\frac{1}{3}} + 2x - x^{\\frac{2}{3}}) = x^{\\frac{1}{3}} \\times x^{-\\frac{1}{3}} + x^{\\frac{1}{3}} \\times 2x - x^{\\frac{1}{3}} \\times x^{\\frac{2}{3}} = x^0 + 2x^{\\frac{4}{3}} - x^1 = 1 + 2x^{\\frac{4}{3}} - x",
+      "ai_explanation": {
+        "concept_rule": "Product of powers rule: $x^a \\times x^b = x^{a+b}$.",
+        "step_by_step": [
+          "Distribute: $x^{\\frac{1}{3}} x^{-\\frac{1}{3}} + 2 x^{\\frac{1}{3}} x^1 - x^{\\frac{1}{3}} x^{\\frac{2}{3}}$.",
+          "Sum exponents for each term: $\\frac{1}{3}-\\frac{1}{3}=0$, $\\frac{1}{3}+1=\\frac{4}{3}$, $\\frac{1}{3}+\\frac{2}{3}=1$.",
+          "Write final simplified expression: $1 + 2x^{4/3} - x$."
+        ],
+        "common_pitfalls": "Assuming $x^0 = 0$ instead of $1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$5^x(5^{-x} + 5^{3x})$",
+      "final_answer": "$1 + 5^{4x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding the brackets using index laws"
+        },
+        {
+          "code": "A1",
+          "desc": "Fully simplifying to $1 + 5^{4x}$"
+        }
+      ],
+      "solution": "5^x(5^{-x} + 5^{3x}) = 5^x \\times 5^{-x} + 5^x \\times 5^{3x} = 5^0 + 5^{4x} = 1 + 5^{4x}",
+      "ai_explanation": {
+        "concept_rule": "Base remains the same while adding exponents: $a^m \\times a^n = a^{m+n}$.",
+        "step_by_step": [
+          "Multiply $5^x$ by $5^{-x}$: $5^{x-x} = 5^0 = 1$.",
+          "Multiply $5^x$ by $5^{3x}$: $5^{x+3x} = 5^{4x}$.",
+          "Combine terms: $1 + 5^{4x}$."
+        ],
+        "common_pitfalls": "Multiplying the bases to get $25^{4x}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$2^{-2x}(2^{2x+3} - 2^{-4x} + 3)$",
+      "final_answer": "$8 - 2^{-6x} + 3 \\times 2^{-2x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Distributing $2^{-2x}$ across all three terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying each term correctly"
+        }
+      ],
+      "solution": "2^{-2x}(2^{2x+3} - 2^{-4x} + 3) = 2^{-2x} \\times 2^{2x+3} - 2^{-2x} \\times 2^{-4x} + 3 \\times 2^{-2x} = 2^3 - 2^{-6x} + 3 \\times 2^{-2x} = 8 - 2^{-6x} + 3 \\times 2^{-2x}",
+      "ai_explanation": {
+        "concept_rule": "Distribute and add indices: $-2x + (2x+3) = 3$, $-2x + (-4x) = -6x$.",
+        "step_by_step": [
+          "Term 1: $2^{-2x + 2x + 3} = 2^3 = 8$.",
+          "Term 2: $-2^{-2x - 4x} = -2^{-6x}$.",
+          "Term 3: $3 \\times 2^{-2x}$.",
+          "Result: $8 - 2^{-6x} + 3 \\times 2^{-2x}$."
+        ],
+        "common_pitfalls": "Multiplying $3 \\times 2^{-2x}$ as $6^{-2x}$."
+      }
+    }
+  ]
+}

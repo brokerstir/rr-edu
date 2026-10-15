@@ -1,0 +1,67 @@
+{
+  "id": "topic_1_q16",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 16,
+  "question_text": "The first term of a finite arithmetic series is 18 and the sum of the series is $-210$. The common difference is $-3$. Suppose there are $n$ terms in the series.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $\\frac{n}{2}(39 - 3n) = -210$.",
+      "final_answer": "$\\frac{n}{2}(39 - 3n) = -210$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting u_1 = 18 and d = -3 into the arithmetic sum formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying the expression to reach (n/2)(39 - 3n) = -210"
+        }
+      ],
+      "solution": "$S_n = \\frac{n}{2}(2u_1 + (n - 1)d) \\implies -210 = \\frac{n}{2}(2 \\times 18 - 3(n - 1)) \\implies \\frac{n}{2}(36 - 3n + 3) = -210 \\implies \\frac{n}{2}(39 - 3n) = -210$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute known parameters into $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$ and algebraically expand and simplify.",
+        "step_by_step": [
+          "Start with $S_n = -210$, $u_1 = 18$, $d = -3$.",
+          "Substitute into formula: $-210 = \\frac{n}{2}(36 - 3(n - 1))$.",
+          "Expand inside the brackets: $36 - 3n + 3 = 39 - 3n$.",
+          "Conclude $\\frac{n}{2}(39 - 3n) = -210$."
+        ],
+        "common_pitfalls": "Expanding $-3(n - 1)$ incorrectly as $-3n - 3$ instead of $-3n + 3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $n$.",
+      "final_answer": "$n = 20$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding the equation to form a quadratic equation in n"
+        },
+        {
+          "code": "M1",
+          "desc": "Factoring the quadratic equation (n - 20)(n + 7) = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Rejecting negative solution to state n = 20"
+        }
+      ],
+      "solution": "From a, $\\frac{n}{2}(39 - 3n) = -210 \\implies n(39 - 3n) = -420 \\implies 39n - 3n^2 = -420 \\implies 3n^2 - 39n - 420 = 0 \\implies n^2 - 13n - 140 = 0 \\implies (n - 20)(n + 7) = 0 \\implies n = 20$ since $n > 0$.",
+      "ai_explanation": {
+        "concept_rule": "Multiply by 2 to clear the fraction, rearrange into a standard quadratic equation $an^2 + bn + c = 0$, factorize, and select the positive integer root.",
+        "step_by_step": [
+          "Multiply both sides by 2: $n(39 - 3n) = -420$.",
+          "Rearrange to standard form: $3n^2 - 39n - 420 = 0$.",
+          "Divide by 3: $n^2 - 13n - 140 = 0$.",
+          "Factorize: $(n - 20)(n + 7) = 0$.",
+          "Since the number of terms $n$ must be positive, discard $n = -7$ to give $n = 20$."
+        ],
+        "common_pitfalls": "Forgetting to discard the negative value of $n$."
+      }
+    }
+  ]
+}

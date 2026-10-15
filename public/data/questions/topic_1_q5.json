@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q5",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 5,
+  "question_text": "Use your calculator to evaluate the following, giving your answer in scientific notation:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(3.57 \\times 10^6) \\times (2.38 \\times 10^3)$",
+      "final_answer": "$8.4966 \\times 10^9$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiply numbers in scientific notation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer in scientific notation"
+        }
+      ],
+      "solution": "$(3.57 \\times 10^6) \\times (2.38 \\times 10^3) = 8.4966 \\times 10^9$",
+      "ai_explanation": {
+        "concept_rule": "Multiply decimal parts and add powers of 10: $(a \\times 10^m)(b \\times 10^n) = (ab) \\times 10^{m+n}$.",
+        "step_by_step": [
+          "Multiply coefficients: $3.57 \\times 2.38 = 8.4966$.",
+          "Add exponents: $6 + 3 = 9$.",
+          "Result is $8.4966 \\times 10^9$."
+        ],
+        "common_pitfalls": "Multiplying the exponents instead of adding them."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{4.61 \\times 10^{-7}}{3.45 \\times 10^8}$",
+      "final_answer": "$\\approx 1.34 \\times 10^{-15}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Divide numbers in scientific notation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value rounded to 3 significant figures"
+        }
+      ],
+      "solution": "$\\frac{4.61 \\times 10^{-7}}{3.45 \\times 10^8} \\approx 1.34 \\times 10^{-15}$",
+      "ai_explanation": {
+        "concept_rule": "Divide coefficients and subtract exponents: $\\frac{a \\times 10^m}{b \\times 10^n} = (\\frac{a}{b}) \\times 10^{m-n}$.",
+        "step_by_step": [
+          "Divide coefficients: $\\frac{4.61}{3.45} \\approx 1.33623...$.",
+          "Subtract exponents: $-7 - 8 = -15$.",
+          "Round to 3 significant figures: $1.34 \\times 10^{-15}$."
+        ],
+        "common_pitfalls": "Incorrect subtraction of exponents: $-7 - 8 = -15$, not $1$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$(0.000\\,08)^4$",
+      "final_answer": "$4.096 \\times 10^{-17}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express in scientific notation or evaluate power directly"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer in scientific notation"
+        }
+      ],
+      "solution": "$(0.000\\,08)^4 = 4.096 \\times 10^{-17}$",
+      "ai_explanation": {
+        "concept_rule": "Convert to standard form $(8 \\times 10^{-5})^4$ and apply power.",
+        "step_by_step": [
+          "Write $0.000\\,08$ as $8 \\times 10^{-5}$.",
+          "Raise to 4th power: $8^4 \\times (10^{-5})^4 = 4096 \\times 10^{-20}$.",
+          "Adjust to scientific notation: $4.096 \\times 10^3 \\times 10^{-20} = 4.096 \\times 10^{-17}$."
+        ],
+        "common_pitfalls": "Miscounting the number of decimal places."
+      }
+    }
+  ]
+}

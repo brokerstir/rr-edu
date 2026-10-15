@@ -1,0 +1,98 @@
+{
+  "id": "topic_1_q7",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 7,
+  "question_text": "Find $k$ given the consecutive arithmetic terms:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$3, k, 11$",
+      "final_answer": "$k = 7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up common difference equation $k - 3 = 11 - k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $k$"
+        }
+      ],
+      "solution": "If $3, k, 11$ are consecutive terms of an arithmetic sequence, then $k - 3 = 11 - k$ {equating differences} $\\therefore 2k = 14 \\implies k = 7$",
+      "ai_explanation": {
+        "concept_rule": "In an arithmetic sequence, the difference between consecutive terms is constant: $u_2 - u_1 = u_3 - u_2$.",
+        "step_by_step": [
+          "Set up the equation: $k - 3 = 11 - k$.",
+          "Add $k$ to both sides: $2k - 3 = 11$.",
+          "Add 3 to both sides: $2k = 14$.",
+          "Divide by 2: $k = 7$."
+        ],
+        "common_pitfalls": "Equating ratios instead of differences."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$-2, k + 4, k^2 + 11$",
+      "final_answer": "$k = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equate differences to form a quadratic equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Simplify and factor quadratic expression"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $k$"
+        }
+      ],
+      "solution": "If $-2, k + 4, k^2 + 11$ are consecutive terms of an arithmetic sequence, then $k + 4 - (-2) = k^2 + 11 - (k + 4)$ {equating differences} $\\therefore k + 6 = k^2 + 11 - k - 4 \\implies k^2 - 2k + 1 = 0 \\implies (k - 1)^2 = 0 \\implies k = 1$",
+      "ai_explanation": {
+        "concept_rule": "Consecutive terms have equal common differences: $u_2 - u_1 = u_3 - u_2$.",
+        "step_by_step": [
+          "Set up the differences: $(k+4) - (-2) = (k^2+11) - (k+4)$.",
+          "Simplify each side: $k + 6 = k^2 - k + 7$.",
+          "Rearrange into standard quadratic form: $k^2 - 2k + 1 = 0$.",
+          "Factor the perfect square: $(k - 1)^2 = 0$.",
+          "Solve for $k$: $k = 1$."
+        ],
+        "common_pitfalls": "Sign error when distributing the minus sign in $-(k+4)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$k - 5, 2k, 2k^2$",
+      "final_answer": "$k = -1\\text{ or } k = \\frac{5}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equate differences to set up quadratic equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Factorise quadratic equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Both correct values of $k$"
+        }
+      ],
+      "solution": "If $k - 5, 2k, 2k^2$ are consecutive terms of an arithmetic sequence, then $2k - (k - 5) = 2k^2 - 2k$ {equating differences} $\\therefore k + 5 = 2k^2 - 2k \\implies 2k^2 - 3k - 5 = 0 \\implies 2k^2 + 2k - 5k - 5 = 0 \\implies 2k(k + 1) - 5(k + 1) = 0 \\implies (k + 1)(2k - 5) = 0 \\implies k = -1\\text{ or } k = \\frac{5}{2}$",
+      "ai_explanation": {
+        "concept_rule": "Equate successive differences: $u_2 - u_1 = u_3 - u_2$ and solve the resulting quadratic equation.",
+        "step_by_step": [
+          "Equate differences: $2k - (k - 5) = 2k^2 - 2k$.",
+          "Simplify left side: $k + 5 = 2k^2 - 2k$.",
+          "Rearrange to $2k^2 - 3k - 5 = 0$.",
+          "Factor by grouping: $2k(k+1) - 5(k+1) = (k+1)(2k-5) = 0$.",
+          "Solve for $k$: $k = -1$ or $k = \\frac{5}{2}$."
+        ],
+        "common_pitfalls": "Forgetting the negative root or making a sign error expanding $-(k-5)$."
+      }
+    }
+  ]
+}

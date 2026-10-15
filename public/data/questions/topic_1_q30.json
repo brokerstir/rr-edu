@@ -1,0 +1,82 @@
+{
+  "id": "topic_1_q30",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 30,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use technology to find $^7C_r$ for $r = 0, 1, \\dots, 7$.",
+      "final_answer": "$\\begin{array}{c|c} r & ^7C_r \\\\ \\hline 0 & 1 \\\\ 1 & 7 \\\\ 2 & 21 \\\\ 3 & 35 \\\\ 4 & 35 \\\\ 5 & 21 \\\\ 6 & 7 \\\\ 7 & 1 \\end{array}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly tabulating all values of $\\binom{7}{r}$ for $r=0$ to $7$"
+        }
+      ],
+      "solution": "\\begin{array}{|c|c|}\n\\hline\nr & ^7C_r \\\\\n\\hline\n0 & 1 \\\\\n1 & 7 \\\\\n2 & 21 \\\\\n3 & 35 \\\\\n4 & 35 \\\\\n5 & 21 \\\\\n6 & 7 \\\\\n7 & 1 \\\\\n\\hline\n\\end{array}",
+      "ai_explanation": {
+        "concept_rule": "Compute combinations using $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$.",
+        "step_by_step": [
+          "Calculate $\\binom{7}{0}=1, \\binom{7}{1}=7$.",
+          "$\\binom{7}{2} = \\frac{7 \\times 6}{2} = 21$.",
+          "$\\binom{7}{3} = \\frac{7 \\times 6 \\times 5}{6} = 35$.",
+          "Use symmetry $\\binom{7}{r} = \\binom{7}{7-r}$ for the remaining entries."
+        ],
+        "common_pitfalls": "Arithmetic errors in computing factorial products."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $r$ such that $^7C_r = 35$.",
+      "final_answer": "$r = 3 \\text{ or } 4$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating both values $r = 3$ and $r = 4$"
+        }
+      ],
+      "solution": "^7C_r = 35 \\implies r = 3 \\text{ or } 4 \\quad \\{\\text{from a}\\}",
+      "ai_explanation": {
+        "concept_rule": "Look up value 35 in the table from part a.",
+        "step_by_step": [
+          "Check values in table where $^7C_r = 35$.",
+          "These correspond to $r=3$ and $r=4$."
+        ],
+        "common_pitfalls": "Forgetting that combinations are symmetric and missing the second value."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "In the expansion of $(2x + k)^7$, $k > 0$, the coefficient of $x^3$ is 10 times the coefficient of $x$. Find the value of $k$.",
+      "final_answer": "$k = \\frac{\\sqrt{7}}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding expressions for coefficients of $x^3$ and $x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the relation: coefficient of $x^3 = 10 \\times$ coefficient of $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $k > 0$"
+        }
+      ],
+      "solution": "\\text{The coefficient of } x^3 \\text{ is } ^7C_4 2^3 k^4 = 35 \\times 8k^4 = 280k^4 \\quad \\dots (1)\n\\text{The coefficient of } x \\text{ is } ^7C_6 2k^6 = 7 \\times 2k^6 = 16k^6 \\quad \\dots (2)\n(1) \\text{ is } 10 \\text{ times larger than } (2), \\text{ so } 280k^4 = 10 \\times 16k^6\n\\therefore 28k^4 = 16k^6\n\\therefore k^2 = \\frac{7}{4} \\quad \\{k \\neq 0\\}\n\\therefore k = \\frac{\\sqrt{7}}{2} \\quad \\{k > 0\\}",
+      "ai_explanation": {
+        "concept_rule": "Equate the terms from the binomial expansion $(2+kx)^7$ using the given proportional relation.",
+        "step_by_step": [
+          "Coefficient of $x^3$ is $\\binom{7}{3} 2^{7-3} k^3$ or equivalent depending on definition.",
+          "From the problem: $280k^4 = 10(16k^6) = 160k^6$.",
+          "Divide by $k^4$: $280 = 160 k^2 \\implies k^2 = \\frac{280}{160} = \\frac{7}{4}$.",
+          "Take square root for $k > 0$: $k = \\frac{\\sqrt{7}}{2}$."
+        ],
+        "common_pitfalls": "Forgetting to exclude the negative square root when $k > 0$ is specified."
+      }
+    }
+  ]
+}

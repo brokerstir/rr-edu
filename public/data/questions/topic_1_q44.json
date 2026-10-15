@@ -1,0 +1,80 @@
+{
+  "id": "topic_1_q44",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 44,
+  "question_text": "Suppose $A = \\log_{10} P$, $B = \\log_{10} Q$, and $C = \\log_{10} R$. Write in terms of $A$, $B$, and $C$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\log_{10}(PQ)$",
+      "final_answer": "$A + B$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct application of product rule to express in terms of $A$ and $B$"
+        }
+      ],
+      "solution": "$\\log_{10}(PQ) = \\log_{10} P + \\log_{10} Q = A + B$",
+      "ai_explanation": {
+        "concept_rule": "Product property of logarithms: $\\log_b(xy) = \\log_b x + \\log_b y$.",
+        "step_by_step": [
+          "Use the product law: $\\log_{10}(PQ) = \\log_{10} P + \\log_{10} Q$.",
+          "Substitute $A = \\log_{10} P$ and $B = \\log_{10} Q$."
+        ],
+        "common_pitfalls": "Multiplying the terms: writing $AB$ instead of $A + B$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\log_{10}(P^2 Q\\sqrt{R})$",
+      "final_answer": "$2A + B + \\frac{1}{2}C$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply product and power rules to separate terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct substitution of $A, B, C$"
+        }
+      ],
+      "solution": "$\\log_{10}(P^2 Q \\sqrt{R}) = \\log_{10}(P^2) + \\log_{10} Q + \\log_{10}(R^{\\frac{1}{2}}) = 2\\log_{10} P + \\log_{10} Q + \\frac{1}{2}\\log_{10} R = 2A + B + \\frac{1}{2}C$",
+      "ai_explanation": {
+        "concept_rule": "Logarithm laws: $\\log(xyz) = \\log x + \\log y + \\log z$ and $\\log(x^k) = k\\log x$.",
+        "step_by_step": [
+          "Separate the factors: $\\log_{10}(P^2) + \\log_{10} Q + \\log_{10}(R^{1/2})$.",
+          "Bring powers to the front: $2\\log_{10} P + \\log_{10} Q + \\frac{1}{2}\\log_{10} R$.",
+          "Substitute $A, B, C$: $2A + B + \\frac{1}{2}C$."
+        ],
+        "common_pitfalls": "Missing the exponent $1/2$ for the square root."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\log_{10}\\left(\\frac{PQ^3}{R^2}\\right)$",
+      "final_answer": "$A + 3B - 2C$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply quotient and product rules"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly substitute $A, B, C$"
+        }
+      ],
+      "solution": "$\\log_{10}\\left(\\frac{PQ^3}{R^2}\\right) = \\log_{10} P + \\log_{10}(Q^3) - \\log_{10}(R^2) = A + 3\\log_{10} Q - 2\\log_{10} R = A + 3B - 2C$",
+      "ai_explanation": {
+        "concept_rule": "Combine quotient, product, and power rules of logarithms.",
+        "step_by_step": [
+          "Split numerator and denominator: $\\log_{10}(PQ^3) - \\log_{10}(R^2)$.",
+          "Expand: $\\log_{10} P + 3\\log_{10} Q - 2\\log_{10} R$.",
+          "Substitute variables: $A + 3B - 2C$."
+        ],
+        "common_pitfalls": "Adding $2C$ instead of subtracting it."
+      }
+    }
+  ]
+}

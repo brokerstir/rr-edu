@@ -1,0 +1,66 @@
+{
+  "id": "topic_1_q17",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 17,
+  "question_text": "Consider the arithmetic sequence $7, 10, 13, 16, 19, \\dots$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down an expression for the sum of the first $n$ terms $S_n$.",
+      "final_answer": "$S_n = \\frac{n}{2}(11 + 3n)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the arithmetic sum formula with u_1 = 7 and d = 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to S_n = (n/2)(11 + 3n)"
+        }
+      ],
+      "solution": "The sequence is arithmetic with $u_1 = 7$ and $d = 3$. Now $S_n = \\frac{n}{2}(2u_1 + (n - 1)d) \\implies S_n = \\frac{n}{2}(2(7) + 3(n - 1)) \\implies S_n = \\frac{n}{2}(14 + 3n - 3) \\implies S_n = \\frac{n}{2}(11 + 3n)$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the first term $u_1$ and common difference $d$ into the sum formula $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$.",
+        "step_by_step": [
+          "Identify $u_1 = 7$ and $d = 3$.",
+          "Substitute into $S_n = \\frac{n}{2}(2(7) + 3(n - 1))$.",
+          "Simplify the expression inside the brackets: $14 + 3n - 3 = 11 + 3n$.",
+          "Write the final formula: $S_n = \\frac{n}{2}(11 + 3n)$."
+        ],
+        "common_pitfalls": "Failing to simplify $14 - 3$ correctly."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $n$ such that $S_n = 140$.",
+      "final_answer": "$n = 8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting (n/2)(11 + 3n) = 140 and converting to quadratic form"
+        },
+        {
+          "code": "M1",
+          "desc": "Factoring the quadratic (n - 8)(3n + 35) = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Rejecting negative/fractional root to get n = 8"
+        }
+      ],
+      "solution": "$S_n = 140 \\implies \\frac{n}{2}(11 + 3n) = 140 \\implies n(11 + 3n) = 280 \\implies 11n + 3n^2 = 280 \\implies 3n^2 + 11n - 280 = 0 \\implies 3n^2 - 24n + 35n - 280 = 0 \\implies 3n(n - 8) + 35(n - 8) = 0 \\implies (n - 8)(3n + 35) = 0 \\implies n = 8$ since $n > 0$.",
+      "ai_explanation": {
+        "concept_rule": "Equate the sum formula found in part a to 140, form a quadratic equation, and find the positive integer solution.",
+        "step_by_step": [
+          "Set $\\frac{n}{2}(11 + 3n) = 140$.",
+          "Multiply by 2 and expand: $3n^2 + 11n - 280 = 0$.",
+          "Factorize: $(n - 8)(3n + 35) = 0$.",
+          "Since $n$ must be a positive integer, $n = 8$."
+        ],
+        "common_pitfalls": "Algebraic sign errors when factorizing quadratic trinomials with a leading coefficient other than 1."
+      }
+    }
+  ]
+}

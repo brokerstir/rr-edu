@@ -1,0 +1,104 @@
+{
+  "id": "topic_1_q52",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 52,
+  "question_text": "Solve for $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$9^x - 6(3^x) + 8 = 0$",
+      "final_answer": "$x = \\frac{\\log 4}{\\log 3} \\text{ or } \\frac{\\log 2}{\\log 3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting $9^x$ as $(3^x)^2$ and factorising: $(3^x - 4)(3^x - 2) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying $3^x = 4$ or $3^x = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x = \\frac{\\log 4}{\\log 3} \\text{ or } \\frac{\\log 2}{\\log 3}$"
+        }
+      ],
+      "solution": "$9^x - 6(3^x) + 8 = 0$\n$\\therefore (3^x)^2 - 6(3^x) + 8 = 0$\n$\\therefore (3^x - 4)(3^x - 2) = 0$\n$\\therefore 3^x = 4 \\text{ or } 2$\n$\\therefore \\log(3^x) = \\log 4 \\text{ or } \\log 2$\n$\\therefore x \\log 3 = \\log 4 \\text{ or } \\log 2$\n$\\therefore x = \\frac{\\log 4}{\\log 3} \\text{ or } \\frac{\\log 2}{\\log 3}$",
+      "ai_explanation": {
+        "concept_rule": "Substitute $u = 3^x$ to obtain a quadratic equation, factorise, and use logarithms to solve for $x$.",
+        "step_by_step": [
+          "Recognise $9^x = (3^2)^x = (3^x)^2$.",
+          "Factorise the quadratic: $(3^x - 4)(3^x - 2) = 0$.",
+          "Set each factor to zero: $3^x = 4$ or $3^x = 2$.",
+          "Apply logarithms to solve for $x$: $x = \\frac{\\log 4}{\\log 3}$ or $x = \\frac{\\log 2}{\\log 3}$."
+        ],
+        "common_pitfalls": "Confusing $9^x$ with $3 \\times 3^x$ or making sign errors in the factorisation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$25^x - 5^{x+1} + 6 = 0$",
+      "final_answer": "$x = \\frac{\\log 2}{\\log 5} \\text{ or } \\frac{\\log 3}{\\log 5}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing equation in terms of $5^x$: $(5^x)^2 - 5(5^x) + 6 = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Factorising into $(5^x - 2)(5^x - 3) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x = \\frac{\\log 2}{\\log 5} \\text{ or } \\frac{\\log 3}{\\log 5}$"
+        }
+      ],
+      "solution": "$25^x - 5^{x+1} + 6 = 0$\n$\\therefore (5^x)^2 - 5(5^x) + 6 = 0$\n$\\therefore (5^x - 2)(5^x - 3) = 0$\n$\\therefore 5^x = 2 \\text{ or } 3$\n$\\therefore \\log(5^x) = \\log 2 \\text{ or } \\log 3$\n$\\therefore x \\log 5 = \\log 2 \\text{ or } \\log 3$\n$\\therefore x = \\frac{\\log 2}{\\log 5} \\text{ or } \\frac{\\log 3}{\\log 5}$",
+      "ai_explanation": {
+        "concept_rule": "Use index laws $25^x = (5^x)^2$ and $5^{x+1} = 5 \\cdot 5^x$ to set up a quadratic equation in $5^x$.",
+        "step_by_step": [
+          "Rewrite $25^x$ as $(5^x)^2$ and $5^{x+1}$ as $5(5^x)$.",
+          "Factorise the quadratic: $(5^x - 2)(5^x - 3) = 0$.",
+          "Obtain roots $5^x = 2$ and $5^x = 3$.",
+          "Apply logarithms: $x = \\frac{\\log 2}{\\log 5}$ or $x = \\frac{\\log 3}{\\log 5}$."
+        ],
+        "common_pitfalls": "Misinterpreting $5^{x+1}$ as $(5^x)+1$ instead of $5 \\times 5^x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$2 \\times 3^{2x} + 3^{x+1} = 5$",
+      "final_answer": "$x = 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting in terms of $3^x$: $2(3^x)^2 + 3(3^x) - 5 = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Factorising into $(3^x - 1)(2(3^x) + 5) = 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Rejecting $3^x = -\\frac{5}{2}$ since $3^x > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving $3^x = 1$ to give $x = 0$"
+        }
+      ],
+      "solution": "$2 \\times 3^{2x} + 3^{x+1} = 5$\n$\\therefore 2 \\times (3^x)^2 + 3(3^x) - 5 = 0$\n$\\therefore 2 \\times (3^x)^2 - 2(3^x) + 5(3^x) - 5 = 0$\n$\\therefore 2(3^x)(3^x - 1) + 5(3^x - 1) = 0$\n$\\therefore (3^x - 1)(2(3^x) + 5) = 0$\n$\\therefore 3^x = 1 \\quad \\{3^x > 0\\}$\n$\\therefore \\log(3^x) = \\log 1$\n$\\therefore x \\log 3 = 0$\n$\\therefore x = 0$",
+      "ai_explanation": {
+        "concept_rule": "Recognise the quadratic form with base 3, factorise, and eliminate any negative exponential roots.",
+        "step_by_step": [
+          "Rearrange to $2(3^x)^2 + 3(3^x) - 5 = 0$.",
+          "Factorise by grouping: $(3^x - 1)(2 \\cdot 3^x + 5) = 0$.",
+          "Discard the root $3^x = -\\frac{5}{2}$ as $3^x > 0$ for all real $x$.",
+          "Solve $3^x = 1$ by taking logarithms or using $3^0 = 1$ to find $x = 0$."
+        ],
+        "common_pitfalls": "Forgetting to discard the negative root $3^x = -2.5$."
+      }
+    }
+  ]
+}

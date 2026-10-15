@@ -1,0 +1,41 @@
+{
+  "id": "topic_1_q40",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 40,
+  "question_text": "Find $x$ in terms of $a$ if $a > 1$ and $\\log_a(x + 2) = \\log_a x + 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "",
+      "final_answer": "$\\frac{2}{a^2 - 1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Collect logarithmic terms on one side and apply quotient law"
+        },
+        {
+          "code": "M1",
+          "desc": "Convert to exponential form and solve for $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final algebraic expression with domain restriction"
+        }
+      ],
+      "solution": "$\\log_a(x + 2) = \\log_a x + 2 \\implies \\log_a(x + 2) - \\log_a x = 2 \\implies \\log_a\\left(\\frac{x + 2}{x}\\right) = 2 \\implies \\frac{x + 2}{x} = a^2 \\implies x + 2 = a^2 x \\implies (1 - a^2)x = -2 \\implies x = \\frac{-2}{1 - a^2} = \\frac{2}{a^2 - 1} \\quad \\{a > 1\\}$",
+      "ai_explanation": {
+        "concept_rule": "Use the quotient rule of logarithms $\\log_b u - \\log_b v = \\log_b\\left(\\frac{u}{v}\\right)$ and convert to exponential form.",
+        "step_by_step": [
+          "Subtract $\\log_a x$ from both sides: $\\log_a(x + 2) - \\log_a x = 2$.",
+          "Apply the quotient rule: $\\log_a\\left(\\frac{x+2}{x}\\right) = 2$.",
+          "Convert to exponential form: $\\frac{x+2}{x} = a^2$.",
+          "Multiply through by $x$: $x + 2 = a^2 x$.",
+          "Rearrange terms: $x(1 - a^2) = -2$, so $x = \\frac{2}{a^2 - 1}$."
+        ],
+        "common_pitfalls": "Forgetting that $x > 0$ and $a > 1$ to maintain validity of logarithms."
+      }
+    }
+  ]
+}

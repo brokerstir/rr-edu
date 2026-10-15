@@ -1,0 +1,93 @@
+{
+  "id": "topic_1_q1",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 1,
+  "question_text": "Write without brackets:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(-3m^3)^4$",
+      "final_answer": "$81m^{12}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply power of a product rule to each factor"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression"
+        }
+      ],
+      "solution": "$(-3m^3)^4 = (-3)^4 \\times (m^3)^4 = 81m^{12}$",
+      "ai_explanation": {
+        "concept_rule": "Power of a product rule: $(ab)^n = a^n b^n$ and power of a power rule: $(a^m)^n = a^{mn}$.",
+        "step_by_step": [
+          "Distribute the exponent 4 to both $-3$ and $m^3$: $(-3)^4 \\times (m^3)^4$.",
+          "Calculate $(-3)^4 = 81$.",
+          "Multiply the exponents for the variable term: $(m^3)^4 = m^{3 \\times 4} = m^{12}$.",
+          "Combine to get $81m^{12}$."
+        ],
+        "common_pitfalls": "Forgetting that $(-3)^4$ is positive $81$, or adding exponents instead of multiplying."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\left(\\frac{xy^2}{2}\\right)^5$",
+      "final_answer": "$\\frac{x^5 y^{10}}{32}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply exponent to numerator and denominator"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final simplified fraction"
+        }
+      ],
+      "solution": "$(\\frac{xy^2}{2})^5 = \\frac{(xy^2)^5}{2^5} = \\frac{x^5 y^{10}}{32}$",
+      "ai_explanation": {
+        "concept_rule": "Power of a quotient rule: $(\\frac{a}{b})^n = \\frac{a^n}{b^n}$.",
+        "step_by_step": [
+          "Apply the power 5 to both numerator and denominator: $\\frac{(xy^2)^5}{2^5}$.",
+          "Distribute the power to each term in the numerator: $x^5 (y^2)^5 = x^5 y^{10}$.",
+          "Evaluate the denominator: $2^5 = 32$.",
+          "Write the final quotient: $\\frac{x^5 y^{10}}{32}$."
+        ],
+        "common_pitfalls": "Forgetting to raise the denominator $2$ to the power 5."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$7s^2t \\times (4st^3)^3$",
+      "final_answer": "$448s^5 t^{10}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand power $(4st^3)^3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Multiply coefficients and add exponents of like bases"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final expression"
+        }
+      ],
+      "solution": "$7s^2 t \\times (4st^3)^3 = 7s^2 t \\times 4^3 s^3 t^9 = 7 \\times 64 s^5 t^{10} = 448s^5 t^{10}$",
+      "ai_explanation": {
+        "concept_rule": "Expand powers first using $(ab)^n = a^n b^n$, then multiply terms with same bases using $a^m \\times a^n = a^{m+n}$.",
+        "step_by_step": [
+          "Expand $(4st^3)^3 = 4^3 s^3 (t^3)^3 = 64s^3 t^9$.",
+          "Multiply with the first term: $7s^2 t \\times 64s^3 t^9$.",
+          "Multiply coefficients: $7 \\times 64 = 448$.",
+          "Combine powers of $s$: $s^2 \\times s^3 = s^{2+3} = s^5$.",
+          "Combine powers of $t$: $t^1 \\times t^9 = t^{1+9} = t^{10}$."
+        ],
+        "common_pitfalls": "Forgetting to raise $4$ to the power of 3."
+      }
+    }
+  ]
+}

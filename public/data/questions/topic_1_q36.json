@@ -1,0 +1,119 @@
+{
+  "id": "topic_1_q36",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 36,
+  "question_text": "Solve for $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$5 \\times 2^x = 160$",
+      "final_answer": "$x = 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Dividing by 5 to isolate $2^x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Equating indices to find $x = 5$"
+        }
+      ],
+      "solution": "5 \\times 2^x = 160\n\\therefore 2^x = 32\n\\therefore 2^x = 2^5\n\\therefore x = 5 \\quad \\{\\text{equating indices}\\}",
+      "ai_explanation": {
+        "concept_rule": "Isolate the exponential term and express both sides with the same base.",
+        "step_by_step": [
+          "Divide both sides by 5: $2^x = 32$.",
+          "Write 32 as a power of 2: $32 = 2^5$.",
+          "Equate powers: $x = 5$."
+        ],
+        "common_pitfalls": "Multiplying 5 by 2 first to get $10^x$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$8^{2x-3} = 16^{2-x}$",
+      "final_answer": "$x = \\frac{17}{10}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Converting both sides to base 2"
+        },
+        {
+          "code": "M1",
+          "desc": "Equating exponents and forming a linear equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x = \\frac{17}{10}$"
+        }
+      ],
+      "solution": "8^{2x-3} = 16^{2-x}\n\\therefore (2^3)^{2x-3} = (2^4)^{2-x}\n\\therefore 2^{6x-9} = 2^{8-4x}\n\\therefore 6x - 9 = 8 - 4x \\quad \\{\\text{equating indices}\\}\n\\therefore 10x = 17\n\\therefore x = \\frac{17}{10}",
+      "ai_explanation": {
+        "concept_rule": "Convert both bases to powers of 2: $8 = 2^3, 16 = 2^4$.",
+        "step_by_step": [
+          "Rewrite as $2^{3(2x-3)} = 2^{4(2-x)}$.",
+          "Expand exponents: $6x - 9 = 8 - 4x$.",
+          "Rearrange: $10x = 17 \\implies x = \\frac{17}{10}$."
+        ],
+        "common_pitfalls": "Failing to distribute the power to both terms inside the exponent bracket, e.g., writing $3(2x-3) = 6x-3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\left(\\frac{1}{3}\\right)^{2x-5} = 27$",
+      "final_answer": "$x = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting both sides with base 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Equating indices and finding $x=1$"
+        }
+      ],
+      "solution": "\\left(\\frac{1}{3}\\right)^{2x-5} = 27\n\\therefore (3^{-1})^{2x-5} = 3^3\n\\therefore 3^{5-2x} = 3^3\n\\therefore 5 - 2x = 3 \\quad \\{\\text{equating indices}\\}\n\\therefore -2x = -2\n\\therefore x = 1",
+      "ai_explanation": {
+        "concept_rule": "Use negative exponents to change fractional bases: $\\frac{1}{3} = 3^{-1}$.",
+        "step_by_step": [
+          "Rewrite LHS as $(3^{-1})^{2x-5} = 3^{-2x+5}$.",
+          "Rewrite RHS as $3^3$.",
+          "Equate exponents: $5 - 2x = 3 \\implies 2x = 2 \\implies x = 1$."
+        ],
+        "common_pitfalls": "Incorrect multiplication of $-1$ across $(2x-5)$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$25^x + 2(5^x) = 35$",
+      "final_answer": "$x = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the quadratic in $5^x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Factoring and rejecting the negative root since $5^x > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving $5^x = 5 \\implies x = 1$"
+        }
+      ],
+      "solution": "25^x + 2(5^x) = 35\n\\therefore (5^x)^2 + 2(5^x) - 35 = 0\n\\therefore (5^x - 5)(5^x + 7) = 0\n\\therefore 5^x = 5 \\quad \\text{or} \\quad 5^x = -7\n\\therefore 5^x = 5^1 \\quad \\{5^x > 0 \\text{ for all } x\\}\n\\therefore x = 1 \\quad \\{\\text{equating indices}\\}",
+      "ai_explanation": {
+        "concept_rule": "Solve quadratic exponential equations by substitution and reject extraneous negative solutions.",
+        "step_by_step": [
+          "Let $u = 5^x$, yielding $u^2 + 2u - 35 = 0$.",
+          "Factorize: $(u-5)(u+7) = 0 \\implies u = 5$ or $u = -7$.",
+          "Since $5^x > 0$ for all real $x$, $5^x = -7$ has no real solution.",
+          "Solve $5^x = 5^1 \\implies x = 1$."
+        ],
+        "common_pitfalls": "Attempting to take the logarithm of $-7$ to find a second solution."
+      }
+    }
+  ]
+}
