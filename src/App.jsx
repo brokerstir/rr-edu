@@ -124,6 +124,7 @@ function MainApp() {
 
         {!selectedCourse ? (
           <CourseCatalog
+            user={user}
             onSelectCourse={(course) => setSelectedCourse(course)}
             onBackToLanding={() => setView('landing')}
           />

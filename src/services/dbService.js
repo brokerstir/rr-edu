@@ -115,9 +115,9 @@ export async function saveQuestionAttempt({ userId, courseId, questionId, mode, 
  */
 export async function fetchCourseProgress(userId, courseId) {
   try {
-    const db = await getDbClient();
     const resolvedUserId = resolveUserId(userId);
     if (!resolvedUserId) return [];
+    const db = await getDbClient();
     const res = await db.send(new QueryCommand({
       TableName: TABLE_NAME,
       KeyConditionExpression: 'PK = :pk AND begins_with(SK, :skPrefix)',
@@ -130,5 +130,60 @@ export async function fetchCourseProgress(userId, courseId) {
   } catch (err) {
     console.error('Error fetching course progress:', err);
     return [];
+  }
+}
+
+/**
+ * Fetch all enrolled courses for a user
+ */
+export async function fetchUserEnrollments(userId) {
+  try {
+    const resolvedUserId = resolveUserId(userId);
+    if (!resolvedUserId) return [];
+    const db = await getDbClient();
+    const res = await db.send(new QueryCommand({
+      TableName: TABLE_NAME,
+      KeyConditionExpression: 'PK = :pk AND begins_with(SK, :skPrefix)',
+      ExpressionAttributeValues: {
+        ':pk': `USER#${resolvedUserId}`,
+        ':skPrefix': 'ENROLLMENT#'
+      }
+    }));
+    return res.Items || [];
+  } catch (err) {
+    console.error('Error fetching user enrollments:', err);
+    return [];
+  }
+}
+
+/**
+ * Enroll a user in a course
+ */
+export async function enrollUserInCourse({ userId, courseId, tier = 'free' }) {
+  try {
+    const resolvedUserId = resolveUserId(userId);
+    if (!resolvedUserId) {
+      console.warn('Cannot enroll user: no userId resolved');
+      return null;
+    }
+    const db = await getDbClient();
+    const timestamp = new Date().toISOString();
+    const item = {
+      PK: `USER#${resolvedUserId}`,
+      SK: `ENROLLMENT#${courseId}`,
+      courseId,
+      tier,
+      enrolledAt: timestamp,
+      updatedAt: timestamp
+    };
+
+    await db.send(new PutCommand({
+      TableName: TABLE_NAME,
+      Item: item
+    }));
+    return item;
+  } catch (err) {
+    console.error('Error enrolling user in course:', err);
+    throw err;
   }
 }
