@@ -33,7 +33,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     checkUser();
 
-    // Listen for OAuth redirect completion or auth state changes
+    // Listen for auth state changes (sign in, sign out)
     const unsubscribe = Hub.listen('auth', ({ payload }) => {
       switch (payload.event) {
         case 'signedIn':
@@ -43,9 +43,6 @@ export function AuthProvider({ children }) {
         case 'signedOut':
           setUser(null);
           break;
-        case 'signInWithRedirect_failure':
-          console.error('OAuth redirect sign-in failure:', payload.data);
-          break;
         default:
           break;
       }
@@ -54,14 +51,30 @@ export function AuthProvider({ children }) {
     return () => unsubscribe();
   }, []);
 
-  const handleSignIn = async (email, password) => {
+  const handleSignIn = async (credentials, maybePassword) => {
+    // Support either structured object { username, password } or positional arguments
+    const signInParams = (typeof credentials === 'object' && credentials !== null)
+      ? credentials
+      : { username: credentials, password: maybePassword };
+
     // If user state is already present in React state, return success
     if (user) {
+      await checkUser();
       return { isSignedIn: true };
     }
 
     try {
-      const result = await signIn({ username: email, password });
+      // Check if an active session already exists in Amplify storage
+      const existingUser = await checkUser();
+      if (existingUser) {
+        return { isSignedIn: true };
+      }
+
+      const result = await signIn({
+        username: signInParams.username,
+        password: signInParams.password
+      });
+
       if (result.isSignedIn) {
         await checkUser();
       }
@@ -69,7 +82,8 @@ export function AuthProvider({ children }) {
     } catch (err) {
       if (
         err.name === 'UserAlreadyAuthenticatedException' ||
-        err.message?.includes('already a signed in user')
+        err.message?.includes('already a signed in user') ||
+        err.message?.includes('UserAlreadyAuthenticatedException')
       ) {
         await checkUser();
         return { isSignedIn: true };
@@ -78,20 +92,37 @@ export function AuthProvider({ children }) {
     }
   };
 
-  const handleSignUp = async (email, password) => {
+  const handleSignUp = async (params, maybePassword) => {
+    const signUpParams = (typeof params === 'object' && params !== null)
+      ? params
+      : {
+          username: params,
+          password: maybePassword,
+          options: {
+            userAttributes: { email: params }
+          }
+        };
+
     return await signUp({
-      username: email,
-      password,
-      options: {
-        userAttributes: { email }
+      username: signUpParams.username,
+      password: signUpParams.password,
+      options: signUpParams.options || {
+        userAttributes: { email: signUpParams.username }
       }
     });
   };
 
-  const handleConfirmSignUp = async (email, code) => {
+  const handleConfirmSignUp = async (params, maybeCode) => {
+    const confirmParams = (typeof params === 'object' && params !== null)
+      ? params
+      : {
+          username: params,
+          confirmationCode: maybeCode
+        };
+
     return await confirmSignUp({
-      username: email,
-      confirmationCode: code
+      username: confirmParams.username,
+      confirmationCode: confirmParams.confirmationCode
     });
   };
 

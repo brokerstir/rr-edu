@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { signInWithRedirect } from '@aws-amplify/auth';
 
 export default function AuthModal({ isOpen, onClose }) {
-  const { user, signIn, signUp, confirmSignUp } = useAuth();
+  const { signIn, signUp, confirmSignUp } = useAuth();
 
   const [mode, setMode] = useState('signin'); // 'signin' | 'signup' | 'confirm'
   const [email, setEmail] = useState('');
@@ -22,41 +21,29 @@ export default function AuthModal({ isOpen, onClose }) {
 
     try {
       if (mode === 'signin') {
-        await signIn(email, password);
+        await signIn({ username: email, password });
         onClose();
       } else if (mode === 'signup') {
-        await signUp(email, password);
+        await signUp({
+          username: email,
+          password,
+          options: {
+            userAttributes: { email }
+          }
+        });
         setMode('confirm');
       } else if (mode === 'confirm') {
-        await confirmSignUp(email, code);
-        await signIn(email, password);
+        await confirmSignUp({
+          username: email,
+          confirmationCode: code
+        });
+        await signIn({ username: email, password });
         onClose();
       }
     } catch (err) {
       setError(err.message || 'Authentication error occurred.');
     } finally {
       setLoading(false);
-    }
-  };
-
-  const handleGoogleSignIn = async () => {
-    if (user) {
-      onClose();
-      return;
-    }
-
-    try {
-      await signInWithRedirect({ provider: 'Google' });
-    } catch (err) {
-      if (
-        err.name === 'UserAlreadyAuthenticatedException' ||
-        err.message?.includes('already authenticated')
-      ) {
-        onClose();
-      } else {
-        console.error('Google Sign-In redirect error:', err);
-        setError(err.message || 'Google Sign-In failed.');
-      }
     }
   };
 
@@ -88,32 +75,6 @@ export default function AuthModal({ isOpen, onClose }) {
         {error && (
           <div className="p-3 bg-rose-500/10 border border-rose-500/30 rounded-xl text-rose-400 text-xs font-medium">
             {error}
-          </div>
-        )}
-
-        {/* Google Sign-In Button */}
-        {mode !== 'confirm' && (
-          <div className="space-y-4">
-            <button
-              type="button"
-              onClick={handleGoogleSignIn}
-              className="w-full flex items-center justify-center gap-3 py-2.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-white font-semibold text-sm rounded-xl transition-all shadow-md hover:border-slate-700"
-            >
-              <svg className="w-4 h-4" viewBox="0 0 24 24">
-                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3h3.88c2.28-2.1 3.665-5.2 3.665-9.12z"/>
-                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3c-1.08.72-2.45 1.16-4.05 1.16-3.1 0-5.74-2.1-6.68-4.92H1.31v3.08C3.3 21.3 7.37 24 12 24z"/>
-                <path fill="#FBBC05" d="M5.32 14.33c-.24-.72-.38-1.49-.38-2.33s.14-1.61.38-2.33V6.59H1.31C.48 8.24 0 10.06 0 12s.48 3.76 1.31 5.41l4.01-3.08z"/>
-                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.37 0 3.3 2.7 1.31 6.59l4.01 3.08c.94-2.82 3.58-4.92 6.68-4.92z"/>
-              </svg>
-              Continue with Google
-            </button>
-
-            <div className="relative flex items-center justify-center">
-              <div className="border-t border-slate-800 w-full"></div>
-              <span className="bg-slate-900 px-3 text-[11px] font-semibold text-slate-500 uppercase tracking-wider absolute">
-                or
-              </span>
-            </div>
           </div>
         )}
 
