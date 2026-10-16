@@ -19,9 +19,12 @@ export function AuthProvider({ children }) {
     try {
       const currentUser = await getCurrentUser();
       const attributes = await fetchUserAttributes();
-      setUser({ ...currentUser, attributes });
+      const userData = { ...currentUser, attributes };
+      setUser(userData);
+      return userData;
     } catch (err) {
       setUser(null);
+      return null;
     } finally {
       setLoading(false);
     }
@@ -40,6 +43,9 @@ export function AuthProvider({ children }) {
         case 'signedOut':
           setUser(null);
           break;
+        case 'signInWithRedirect_failure':
+          console.error('OAuth redirect sign-in failure:', payload.data);
+          break;
         default:
           break;
       }
@@ -49,16 +55,27 @@ export function AuthProvider({ children }) {
   }, []);
 
   const handleSignIn = async (email, password) => {
-    // If already signed in, refresh user and return
+    // If user state is already present in React state, return success
     if (user) {
-      await checkUser();
-      return;
+      return { isSignedIn: true };
     }
-    const result = await signIn({ username: email, password });
-    if (result.isSignedIn) {
-      await checkUser();
+
+    try {
+      const result = await signIn({ username: email, password });
+      if (result.isSignedIn) {
+        await checkUser();
+      }
+      return result;
+    } catch (err) {
+      if (
+        err.name === 'UserAlreadyAuthenticatedException' ||
+        err.message?.includes('already a signed in user')
+      ) {
+        await checkUser();
+        return { isSignedIn: true };
+      }
+      throw err;
     }
-    return result;
   };
 
   const handleSignUp = async (email, password) => {

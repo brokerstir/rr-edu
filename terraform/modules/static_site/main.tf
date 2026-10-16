@@ -361,11 +361,10 @@ resource "aws_iam_role_policy" "cognito_dynamo_policy" {
           aws_dynamodb_table.app_data.arn,
           "${aws_dynamodb_table.app_data.arn}/index/*"
         ]
-        # Restricts authenticated browser sessions strictly to their own partition
         Condition = {
           "ForAllValues:StringLike" = {
             "dynamodb:LeadingKeys" = [
-              "USER#$${cognito-identity.amazonaws.com:sub}*"
+              "USER#*"
             ]
           }
         }

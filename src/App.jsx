@@ -7,7 +7,7 @@ import LandingPage from './components/LandingPage';
 import CourseCatalog from './components/CourseCatalog';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { generatePracticeSession } from './utils/quizUtils';
-import { syncUserProfile, saveQuestionAttempt } from './services/dbService';
+import { syncUserProfile, saveQuestionAttempt, resolveUserId } from './services/dbService';
 
 function MainApp() {
   const { user, signOut } = useAuth();
@@ -38,12 +38,14 @@ function MainApp() {
       .catch(err => console.error("Error loading topics.json:", err));
   }, []);
 
-  // Add this effect inside MainApp in src/App.jsx:
+  // Auto-redirect authenticated users from landing page to catalog; redirect unauthenticated users to landing
   useEffect(() => {
-    if (!user && view !== 'landing') {
+    if (user && view === 'landing') {
+      setView('catalog');
+    } else if (!user && view !== 'landing') {
       setView('landing');
     }
-  }, [user, view]);
+  }, [user]);
 
   const handleTopicClick = (topic) => {
     setActiveTopic(topic);
@@ -249,7 +251,7 @@ function MainApp() {
             onClick={() => {
               if (user && currentQ) {
                 saveQuestionAttempt({
-                  userId: user.username || user.userId,
+                  userId: resolveUserId(user),
                   courseId: selectedCourse?.id || 'ib_math_aa_sl',
                   questionId: currentQ.id,
                   mode: 'self',

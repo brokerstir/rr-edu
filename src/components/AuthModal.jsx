@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { signInWithRedirect } from '@aws-amplify/auth';
 
 export default function AuthModal({ isOpen, onClose }) {
-  const { signIn, signUp, confirmSignUp } = useAuth();
+  const { user, signIn, signUp, confirmSignUp } = useAuth();
 
   const [mode, setMode] = useState('signin'); // 'signin' | 'signup' | 'confirm'
   const [email, setEmail] = useState('');
@@ -44,13 +44,18 @@ export default function AuthModal({ isOpen, onClose }) {
       onClose();
       return;
     }
+
     try {
       await signInWithRedirect({ provider: 'Google' });
     } catch (err) {
-      if (err.name === 'UserAlreadyAuthenticatedException') {
+      if (
+        err.name === 'UserAlreadyAuthenticatedException' ||
+        err.message?.includes('already authenticated')
+      ) {
         onClose();
       } else {
-        setError(err.message);
+        console.error('Google Sign-In redirect error:', err);
+        setError(err.message || 'Google Sign-In failed.');
       }
     }
   };

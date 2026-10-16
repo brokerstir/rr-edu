@@ -27,12 +27,27 @@ async function getDbClient() {
 }
 
 /**
+ * Resolves user ID consistently across Email and OAuth login providers
+ */
+export function resolveUserId(user) {
+  if (!user) return '';
+  if (typeof user === 'string') return user;
+  return user.userId || user.attributes?.sub || user.username || '';
+}
+
+export const getUserId = resolveUserId;
+
+/**
  * Sync or create student profile & entitlements on login
  */
 export async function syncUserProfile(user) {
   try {
     const db = await getDbClient();
-    const userId = user.username || user.userId;
+    const userId = resolveUserId(user);
+    if (!userId) {
+      console.warn('Cannot sync user profile: no userId resolved');
+      return;
+    }
 
     const profile = {
       PK: `USER#${userId}`,
@@ -58,20 +73,25 @@ export async function syncUserProfile(user) {
 export async function saveQuestionAttempt({ userId, courseId, questionId, mode, result, score }) {
   try {
     const db = await getDbClient();
+    const resolvedUserId = resolveUserId(userId);
+    if (!resolvedUserId) {
+      console.warn('Cannot save question attempt: no userId resolved');
+      return;
+    }
     const timestamp = new Date().toISOString();
     const sk = `PROGRESS#${courseId}#${questionId}`;
 
     // Get current record if exists
     const existing = await db.send(new GetCommand({
       TableName: TABLE_NAME,
-      Key: { PK: `USER#${userId}`, SK: sk }
+      Key: { PK: `USER#${resolvedUserId}`, SK: sk }
     }));
 
     const history = existing.Item?.history || [];
     history.push({ timestamp, mode, result, score });
 
     const item = {
-      PK: `USER#${userId}`,
+      PK: `USER#${resolvedUserId}`,
       SK: sk,
       courseId,
       questionId,
@@ -96,11 +116,13 @@ export async function saveQuestionAttempt({ userId, courseId, questionId, mode, 
 export async function fetchCourseProgress(userId, courseId) {
   try {
     const db = await getDbClient();
+    const resolvedUserId = resolveUserId(userId);
+    if (!resolvedUserId) return [];
     const res = await db.send(new QueryCommand({
       TableName: TABLE_NAME,
       KeyConditionExpression: 'PK = :pk AND begins_with(SK, :skPrefix)',
       ExpressionAttributeValues: {
-        ':pk': `USER#${userId}`,
+        ':pk': `USER#${resolvedUserId}`,
         ':skPrefix': `PROGRESS#${courseId}#`
       }
     }));
