@@ -296,3 +296,80 @@ resource "aws_cognito_identity_pool_roles_attachment" "roles_attach" {
     authenticated = aws_iam_role.authenticated_user.arn
   }
 }
+
+# ==============================================================================
+# DYNAMODB TABLE (SINGLE-TABLE DESIGN)
+# ==============================================================================
+
+resource "aws_dynamodb_table" "app_data" {
+  name         = "rr-edu-data-${var.environment}"
+  billing_mode = "PAY_PER_REQUEST" # On-Demand / Free-tier friendly
+  hash_key     = "PK"
+  range_key    = "SK"
+
+  attribute {
+    name = "PK"
+    type = "S"
+  }
+
+  attribute {
+    name = "SK"
+    type = "S"
+  }
+
+  attribute {
+    name = "GSI1PK"
+    type = "S"
+  }
+
+  attribute {
+    name = "GSI1SK"
+    type = "S"
+  }
+
+  # Global Secondary Index for Reverse Lookups (e.g., Students in a Class)
+  global_secondary_index {
+    name            = "GSI1"
+    hash_key        = "GSI1PK"
+    range_key       = "GSI1SK"
+    projection_type = "ALL"
+  }
+
+  tags = {
+    Environment = var.environment
+    Project     = "RR-EDU"
+  }
+}
+
+# IAM Policy for Authenticated Cognito Users to access DynamoDB
+resource "aws_iam_role_policy" "cognito_dynamo_policy" {
+  name = "rr-edu-cognito-dynamo-policy-${var.environment}"
+  role = aws_iam_role.authenticated_user.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "dynamodb:GetItem",
+          "dynamodb:PutItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:Query"
+        ]
+        Resource = [
+          aws_dynamodb_table.app_data.arn,
+          "${aws_dynamodb_table.app_data.arn}/index/*"
+        ]
+        # Restricts authenticated browser sessions strictly to their own partition
+        Condition = {
+          "ForAllValues:StringLike" = {
+            "dynamodb:LeadingKeys" = [
+              "USER#$${cognito-identity.amazonaws.com:sub}*"
+            ]
+          }
+        }
+      }
+    ]
+  })
+}

@@ -58,3 +58,7 @@ output "user_pool_client_id" {
 output "identity_pool_id" {
   value = module.dev_site.identity_pool_id
 }
+
+output "dynamodb_table_name" {
+  value = module.dev_site.dynamodb_table_name
+}

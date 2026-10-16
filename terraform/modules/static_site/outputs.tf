@@ -21,3 +21,7 @@ output "user_pool_client_id" {
 output "identity_pool_id" {
   value = aws_cognito_identity_pool.identity_pool.id
 }
+
+output "dynamodb_table_name" {
+  value = aws_dynamodb_table.app_data.name
+}

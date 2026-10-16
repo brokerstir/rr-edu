@@ -3,11 +3,18 @@ import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
 import SessionLengthModal from './components/SessionLengthModal';
 import AuthModal from './components/AuthModal';
+import LandingPage from './components/LandingPage';
+import CourseCatalog from './components/CourseCatalog';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { generatePracticeSession } from './utils/quizUtils';
+import { syncUserProfile, saveQuestionAttempt } from './services/dbService';
 
 function MainApp() {
   const { user, signOut } = useAuth();
+
+  // Navigation State: 'landing' | 'catalog' | 'practice'
+  const [view, setView] = useState('landing');
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   const [topics, setTopics] = useState([]);
   const [activeTopic, setActiveTopic] = useState(null);
@@ -16,6 +23,13 @@ function MainApp() {
 
   const [sessionQuestions, setSessionQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Sync profile when signed in
+  useEffect(() => {
+    if (user) {
+      syncUserProfile(user);
+    }
+  }, [user]);
 
   useEffect(() => {
     fetch('./data/topics.json')
@@ -34,30 +48,46 @@ function MainApp() {
     try {
       const res = await fetch(`./data/topic_${activeTopic.topic_number}.json`);
       const fullTopicData = await res.json();
-
       const randomizedSet = generatePracticeSession(fullTopicData, questionCount);
 
       setSessionQuestions(randomizedSet);
       setCurrentIndex(0);
       setModalOpen(false);
+      setView('practice');
     } catch (err) {
       console.error("Error loading practice bundle:", err);
     }
   };
 
   const handleExitPractice = () => {
-    setActiveTopic(null);
     setSessionQuestions([]);
     setCurrentIndex(0);
+    setView('catalog');
   };
 
-  // 1. Topic List View
-  if (sessionQuestions.length === 0) {
+  // 1. Landing View
+  if (view === 'landing') {
     return (
-      <div className="max-w-5xl mx-auto px-4 py-8">
+      <>
+        <LandingPage
+          onExploreCourses={() => setView('catalog')}
+          onOpenAuth={() => setAuthModalOpen(true)}
+        />
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+        />
+      </>
+    );
+  }
+
+  // 2. Course Catalog View
+  if (view === 'catalog' && sessionQuestions.length === 0) {
+    return (
+      <div className="min-h-screen text-slate-100">
         {/* Navigation Bar */}
-        <div className="flex justify-between items-center mb-10 pb-4 border-b border-slate-800">
-          <div className="flex items-center gap-2">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center border-b border-slate-800">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => setView('landing')}>
             <span className="text-xl">📐</span>
             <span className="text-base font-extrabold text-white tracking-tight">RR-EDU</span>
           </div>
@@ -68,17 +98,14 @@ function MainApp() {
                 <span className="text-xs text-slate-300 font-medium bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-xl">
                   👤 {user.attributes?.email || 'Student'}
                 </span>
-                <button
-                  onClick={signOut}
-                  className="text-xs font-semibold text-slate-400 hover:text-white transition-colors"
-                >
+                <button onClick={signOut} className="text-xs font-semibold text-slate-400 hover:text-white">
                   Sign Out
                 </button>
               </div>
             ) : (
               <button
                 onClick={() => setAuthModalOpen(true)}
-                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs rounded-xl transition-all shadow-md shadow-indigo-600/20"
+                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs rounded-xl shadow-md"
               >
                 Sign In / Register
               </button>
@@ -86,39 +113,48 @@ function MainApp() {
           </div>
         </div>
 
-        <header className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold mb-3">
-            IB Mathematics AA SL
-          </div>
-          <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-            Skill Builder Practice Engine
-          </h1>
-          <p className="text-slate-400 text-sm mt-2">
-            Practice questions on paper or on screen, check target answers, and self-grade your work.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {topics.map(t => (
-            <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
-              <div>
-                <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
-                  Topic {t.topic_number}
-                </span>
-                <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
-                <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
-              </div>
+        {!selectedCourse ? (
+          <CourseCatalog
+            onSelectCourse={(course) => setSelectedCourse(course)}
+            onBackToLanding={() => setView('landing')}
+          />
+        ) : (
+          /* Topic Selection for Course */
+          <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <button
-                onClick={() => handleTopicClick(t)}
-                className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
+                onClick={() => setSelectedCourse(null)}
+                className="text-xs font-semibold text-slate-400 hover:text-white"
               >
-                Select Practice Set →
+                ← All Courses
               </button>
+              <span className="text-xs text-indigo-400 font-bold uppercase bg-indigo-500/10 px-3 py-1 rounded-full">
+                {selectedCourse.title}
+              </span>
             </div>
-          ))}
-        </div>
 
-        {/* Modals */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {topics.map(t => (
+                <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                  <div>
+                    <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
+                      Topic {t.topic_number}
+                    </span>
+                    <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
+                    <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
+                  </div>
+                  <button
+                    onClick={() => handleTopicClick(t)}
+                    className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
+                  >
+                    Select Practice Set →
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {modalOpen && (
           <SessionLengthModal
             topic={activeTopic}
@@ -135,12 +171,11 @@ function MainApp() {
     );
   }
 
-  // 2. Practice Mode View
+  // 3. Practice Engine View
   const currentQ = sessionQuestions[currentIndex];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
+    <div className="min-h-screen flex flex-col text-slate-100">
       <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button onClick={handleExitPractice} className="text-slate-400 hover:text-white text-sm font-semibold">
@@ -160,17 +195,13 @@ function MainApp() {
               👤 {user.attributes?.email}
             </span>
           ) : (
-            <button
-              onClick={() => setAuthModalOpen(true)}
-              className="text-xs text-indigo-400 hover:underline font-semibold"
-            >
+            <button onClick={() => setAuthModalOpen(true)} className="text-xs text-indigo-400 hover:underline font-semibold">
               Sign In
             </button>
           )}
         </div>
       </header>
 
-      {/* Main Viewport */}
       <main className="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-6 pb-28 space-y-6">
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6 shadow-2xl">
           <div className="flex items-center justify-between">
@@ -188,7 +219,6 @@ function MainApp() {
             <MathText text={currentQ?.question_text} />
           </div>
 
-          {/* Subparts */}
           <div className="space-y-6 pt-2">
             {currentQ?.subparts.map((sp, idx) => {
               const subKey = `${currentQ.id}_sp_${idx}`;
@@ -198,7 +228,6 @@ function MainApp() {
         </div>
       </main>
 
-      {/* Floating Footer */}
       <footer className="fixed bottom-0 inset-x-0 bg-slate-900/90 backdrop-blur-md border-t border-slate-800 p-4 z-30">
         <div className="max-w-4xl mx-auto flex justify-between gap-3">
           <button
@@ -210,7 +239,19 @@ function MainApp() {
           </button>
           <button
             disabled={currentIndex === sessionQuestions.length - 1}
-            onClick={() => { setCurrentIndex(i => i + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            onClick={() => {
+              if (user && currentQ) {
+                saveQuestionAttempt({
+                  userId: user.username || user.userId,
+                  courseId: selectedCourse?.id || 'ib_math_aa_sl',
+                  questionId: currentQ.id,
+                  mode: 'self',
+                  result: 'completed'
+                });
+              }
+              setCurrentIndex(i => i + 1);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
             className="flex-1 py-3 px-4 bg-indigo-600 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg"
           >
             Next Question →
@@ -218,10 +259,7 @@ function MainApp() {
         </div>
       </footer>
 
-      <AuthModal
-        isOpen={authModalOpen}
-        onClose={() => setAuthModalOpen(false)}
-      />
+      <AuthModal isOpen={authModalOpen} onClose={() => setAuthModalOpen(false)} />
     </div>
   );
 }
