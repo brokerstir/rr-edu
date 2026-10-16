@@ -2,12 +2,17 @@ import React, { useState, useEffect } from 'react';
 import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
 import SessionLengthModal from './components/SessionLengthModal';
+import AuthModal from './components/AuthModal';
+import { AuthProvider, useAuth } from './context/AuthContext';
 import { generatePracticeSession } from './utils/quizUtils';
 
-export default function App() {
+function MainApp() {
+  const { user, signOut } = useAuth();
+
   const [topics, setTopics] = useState([]);
-  const [activeTopic, setActiveTopic] = useState(null); // Selected topic object for modal
+  const [activeTopic, setActiveTopic] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
 
   const [sessionQuestions, setSessionQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,20 +24,17 @@ export default function App() {
       .catch(err => console.error("Error loading topics.json:", err));
   }, []);
 
-  // Modal Open Handler
   const handleTopicClick = (topic) => {
     setActiveTopic(topic);
     setModalOpen(true);
   };
 
-  // Start Session Handler
   const handleStartSession = async (questionCount) => {
     if (!activeTopic) return;
     try {
       const res = await fetch(`./data/topic_${activeTopic.topic_number}.json`);
       const fullTopicData = await res.json();
 
-      // Shuffle & Slice based on user choice
       const randomizedSet = generatePracticeSession(fullTopicData, questionCount);
 
       setSessionQuestions(randomizedSet);
@@ -43,7 +45,6 @@ export default function App() {
     }
   };
 
-  // Exit Practice Mode
   const handleExitPractice = () => {
     setActiveTopic(null);
     setSessionQuestions([]);
@@ -53,7 +54,38 @@ export default function App() {
   // 1. Topic List View
   if (sessionQuestions.length === 0) {
     return (
-      <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="max-w-5xl mx-auto px-4 py-8">
+        {/* Navigation Bar */}
+        <div className="flex justify-between items-center mb-10 pb-4 border-b border-slate-800">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">📐</span>
+            <span className="text-base font-extrabold text-white tracking-tight">RR-EDU</span>
+          </div>
+
+          <div>
+            {user ? (
+              <div className="flex items-center gap-3">
+                <span className="text-xs text-slate-300 font-medium bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-xl">
+                  👤 {user.attributes?.email || 'Student'}
+                </span>
+                <button
+                  onClick={signOut}
+                  className="text-xs font-semibold text-slate-400 hover:text-white transition-colors"
+                >
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setAuthModalOpen(true)}
+                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs rounded-xl transition-all shadow-md shadow-indigo-600/20"
+              >
+                Sign In / Register
+              </button>
+            )}
+          </div>
+        </div>
+
         <header className="text-center mb-10">
           <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold mb-3">
             IB Mathematics AA SL
@@ -86,7 +118,7 @@ export default function App() {
           ))}
         </div>
 
-        {/* Session Length Modal */}
+        {/* Modals */}
         {modalOpen && (
           <SessionLengthModal
             topic={activeTopic}
@@ -94,6 +126,11 @@ export default function App() {
             onStartSession={handleStartSession}
           />
         )}
+
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+        />
       </div>
     );
   }
@@ -115,6 +152,21 @@ export default function App() {
               Question {currentIndex + 1} of {sessionQuestions.length}
             </div>
           </div>
+        </div>
+
+        <div>
+          {user ? (
+            <span className="text-xs text-slate-400 font-mono">
+              👤 {user.attributes?.email}
+            </span>
+          ) : (
+            <button
+              onClick={() => setAuthModalOpen(true)}
+              className="text-xs text-indigo-400 hover:underline font-semibold"
+            >
+              Sign In
+            </button>
+          )}
         </div>
       </header>
 
@@ -165,6 +217,19 @@ export default function App() {
           </button>
         </div>
       </footer>
+
+      <AuthModal
+        isOpen={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+      />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <MainApp />
+    </AuthProvider>
   );
 }

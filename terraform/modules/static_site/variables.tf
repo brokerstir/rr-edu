@@ -13,3 +13,16 @@ variable "parent_domain" {
   default     = "robertrisk.com"
   description = "Parent Route 53 domain name"
 }
+
+variable "google_client_id" {
+  type        = string
+  description = "Google OAuth Client ID"
+  default     = ""
+}
+
+variable "google_client_secret" {
+  type        = string
+  description = "Google OAuth Client Secret"
+  sensitive   = true
+  default     = ""
+}

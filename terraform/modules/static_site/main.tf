@@ -193,7 +193,32 @@ resource "aws_cognito_user_pool" "pool" {
   }
 }
 
-# 2. Cognito User Pool Client (Web App Client with PKCE)
+# 2. Cognito Domain Prefix (required for hosted OAuth / Social flows)
+resource "aws_cognito_user_pool_domain" "domain" {
+  domain       = "auth-${var.environment}-${replace(var.parent_domain, ".", "-")}"
+  user_pool_id = aws_cognito_user_pool.pool.id
+}
+
+# 3. Google Identity Provider Resource
+resource "aws_cognito_identity_provider" "google" {
+  count         = var.google_client_id != "" ? 1 : 0
+  user_pool_id  = aws_cognito_user_pool.pool.id
+  provider_name = "Google"
+  provider_type = "Google"
+
+  provider_details = {
+    client_id        = var.google_client_id
+    client_secret    = var.google_client_secret
+    authorize_scopes = "email profile openid"
+  }
+
+  attribute_mapping = {
+    email    = "email"
+    username = "sub"
+  }
+}
+
+# 4. Cognito User Pool Client (Web App Client with PKCE & Social Auth)
 resource "aws_cognito_user_pool_client" "client" {
   name         = "rr-edu-web-client-${var.environment}"
   user_pool_id = aws_cognito_user_pool.pool.id
@@ -210,6 +235,8 @@ resource "aws_cognito_user_pool_client" "client" {
   allowed_oauth_flows_user_pool_client = true
   allowed_oauth_scopes                 = ["email", "openid", "profile"]
 
+  supported_identity_providers = var.google_client_id != "" ? ["COGNITO", "Google"] : ["COGNITO"]
+
   callback_urls = [
     "http://localhost:5173",
     "https://${var.domain_name}"
@@ -219,9 +246,11 @@ resource "aws_cognito_user_pool_client" "client" {
     "http://localhost:5173",
     "https://${var.domain_name}"
   ]
+
+  depends_on = [aws_cognito_identity_provider.google]
 }
 
-# 3. Cognito Identity Pool (Federated Identities for Direct AWS Service Access)
+# 5. Cognito Identity Pool (Federated Identities for Direct AWS Service Access)
 resource "aws_cognito_identity_pool" "identity_pool" {
   identity_pool_name               = "rredu_identity_pool_${var.environment}"
   allow_unauthenticated_identities = false
