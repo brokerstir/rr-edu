@@ -7,17 +7,13 @@ import {
   getCurrentUser, 
   fetchUserAttributes 
 } from '@aws-amplify/auth';
+import { Hub } from 'aws-amplify/utils';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  // Check current auth status on app load
-  useEffect(() => {
-    checkUser();
-  }, []);
 
   const checkUser = async () => {
     try {
@@ -31,7 +27,33 @@ export function AuthProvider({ children }) {
     }
   };
 
+  useEffect(() => {
+    checkUser();
+
+    // Listen for OAuth redirect completion or auth state changes
+    const unsubscribe = Hub.listen('auth', ({ payload }) => {
+      switch (payload.event) {
+        case 'signedIn':
+        case 'autoSignIn':
+          checkUser();
+          break;
+        case 'signedOut':
+          setUser(null);
+          break;
+        default:
+          break;
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   const handleSignIn = async (email, password) => {
+    // If already signed in, refresh user and return
+    if (user) {
+      await checkUser();
+      return;
+    }
     const result = await signIn({ username: email, password });
     if (result.isSignedIn) {
       await checkUser();

@@ -39,8 +39,20 @@ export default function AuthModal({ isOpen, onClose }) {
     }
   };
 
-  const handleGoogleSignIn = () => {
-    signInWithRedirect({ provider: 'Google' });
+  const handleGoogleSignIn = async () => {
+    if (user) {
+      onClose();
+      return;
+    }
+    try {
+      await signInWithRedirect({ provider: 'Google' });
+    } catch (err) {
+      if (err.name === 'UserAlreadyAuthenticatedException') {
+        onClose();
+      } else {
+        setError(err.message);
+      }
+    }
   };
 
   return (

@@ -38,6 +38,13 @@ function MainApp() {
       .catch(err => console.error("Error loading topics.json:", err));
   }, []);
 
+  // Add this effect inside MainApp in src/App.jsx:
+  useEffect(() => {
+    if (!user && view !== 'landing') {
+      setView('landing');
+    }
+  }, [user, view]);
+
   const handleTopicClick = (topic) => {
     setActiveTopic(topic);
     setModalOpen(true);
