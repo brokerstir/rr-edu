@@ -1,0 +1,64 @@
+{
+  "id": "topic_3_q20",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 20,
+  "question_text": "Find the area of:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$2.97\\text{ m}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use triangle area formula Area = 1/2 * b * c * sin A"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate area correct to 3 significant figures"
+        }
+      ],
+      "solution": "$$\\begin{aligned} \\text{Area} &= \\frac{1}{2}bc\\sin A \\\\ &= \\frac{1}{2} \\times 2 \\times 3 \\times \\sin 82^{\\circ} \\\\ &\\approx 2.97\\text{ m}^2 \\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area of any triangle is $\\text{Area} = \\frac{1}{2}ab\\sin C$, where $a$ and $b$ are two sides and $C$ is the included angle.",
+        "step_by_step": [
+          "Identify the given two sides: $b = 2\\text{ m}$, $c = 3\\text{ m}$.",
+          "Identify the included angle: $A = 82^{\\circ}$.",
+          "Substitute into the formula: $\\text{Area} = \\frac{1}{2}(2)(3)\\sin(82^{\\circ}) = 3\\sin(82^{\\circ}) \\approx 2.97\\text{ m}^2$."
+        ],
+        "common_pitfalls": "Calculator in radian mode instead of degree mode."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$17.2\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find the included angle ABC using angle sum of triangle"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply area formula Area = 1/2 * a * c * sin B"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate correct area to 3 significant figures"
+        }
+      ],
+      "solution": "$$\\text{A}\\hat{\\text{B}}\\text{C} = 180^{\\circ} - 62^{\\circ} - 39^{\\circ} = 79^{\\circ} \\quad \\{\\text{angles in a triangle}\\}$$\n$$\\begin{aligned} \\therefore \\text{area} &= \\frac{1}{2}ac\\sin B \\\\ &= \\frac{1}{2} \\times 7 \\times 5 \\times \\sin 79^{\\circ} \\\\ &\\approx 17.2\\text{ cm}^2 \\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "To use the sine area formula, the angle must be the included angle between the two known sides.",
+        "step_by_step": [
+          "The sides given are $a = 7\\text{ cm}$ and $c = 5\\text{ cm}$, so the included angle is $\\hat{B}$.",
+          "Compute $\\hat{B} = 180^{\\circ} - 62^{\\circ} - 39^{\\circ} = 79^{\\circ}$.",
+          "Apply the area formula: $\\text{Area} = \\frac{1}{2}(7)(5)\\sin 79^{\\circ} \\approx 17.2\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Using one of the given non-included angles ($62^{\\circ}$ or $39^{\\circ}$) directly in the area formula."
+      }
+    }
+  ]
+}

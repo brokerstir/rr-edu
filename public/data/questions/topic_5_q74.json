@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q74",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 74,
+  "question_text": "Find $a$ if $\\int_{0}^{a} \\frac{x}{x^2+1}\\,dx = 3$ and $a > 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Find $a$ if $\\int_{0}^{a} \\frac{x}{x^2+1}\\,dx = 3$ and $a > 0$.",
+      "final_answer": "$\\sqrt{e^6 - 1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $u = x^2+1$ to find the antiderivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $\\frac{1}{2}\\ln|x^2+1|$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral equal to 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $a = \\sqrt{e^6 - 1}$ considering $a > 0$"
+        }
+      ],
+      "solution": "$\\int \\frac{x}{x^2+1}\\,dx = \\int \\frac{1}{u}\\left(\\frac{1}{2}\\frac{du}{dx}\\right)\\,dx = \\int \\frac{1}{2u}\\,du = \\frac{1}{2}\\ln|u| + c = \\frac{1}{2}\\ln|x^2+1| + c \\quad (\\ast)$. Now $\\int_0^a \\frac{x}{x^2+1}\\,dx = 3 \\implies \\left[\\frac{1}{2}\\ln|x^2+1|\\right]_0^a = 3 \\implies \\frac{1}{2}\\ln|a^2+1| - \\frac{1}{2}\\ln|0^2+1| = 3 \\implies \\frac{1}{2}\\ln(a^2+1) - 0 = 3 \\implies \\ln(a^2+1) = 6 \\implies a^2+1 = e^6 \\implies a^2 = e^6 - 1 \\implies a = \\sqrt{e^6-1} \\quad \\{a > 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "Substitution leading to logarithmic form and solving exponential equations.",
+        "step_by_step": [
+          "Find the antiderivative using substitution $u = x^2+1$, giving $\\frac{1}{2}\\ln(x^2+1)$.",
+          "Evaluate between limits $0$ and $a$: $\\frac{1}{2}\\ln(a^2+1) - 0 = 3$.",
+          "Multiply by 2 to get $\\ln(a^2+1) = 6$.",
+          "Exponentiate both sides: $a^2+1 = e^6$.",
+          "Solve for positive $a$: $a = \\sqrt{e^6-1}$."
+        ],
+        "common_pitfalls": "Forgetting the factor of $\\frac{1}{2}$ from $du = 2x\\,dx$."
+      }
+    }
+  ]
+}

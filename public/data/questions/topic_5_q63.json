@@ -1,0 +1,114 @@
+{
+  "id": "topic_5_q63",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 63,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int 3x^2(5+x^3)^4\\,dx$",
+      "final_answer": "$\\frac{1}{5}(5+x^3)^5 + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Choose substitution $u = 5+x^3$ and find $\\frac{du}{dx} = 3x^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate in terms of $u$ and substitute back"
+        }
+      ],
+      "solution": "$\\int 3x^2(5+x^3)^4\\,dx = \\int u^4\\frac{du}{dx}\\,dx\\quad \\left\\{u = 5+x^3 \\implies \\frac{du}{dx} = 3x^2\\right\\} = \\int u^4\\,du = \\frac{1}{5}u^5 + c = \\frac{1}{5}(5+x^3)^5 + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution: recognise $g'(x)[g(x)]^n$ and set $u = g(x)$.",
+        "step_by_step": [
+          "Let $u = 5 + x^3$, then $du = 3x^2 dx$.",
+          "The integral becomes $\\int u^4\\,du$.",
+          "Evaluate to $\\frac{1}{5}u^5 + c$.",
+          "Substitute back $u = 5 + x^3$."
+        ],
+        "common_pitfalls": "Expanding the 4th power algebraically instead of using substitution."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int x e^{x^2+2}\\,dx$",
+      "final_answer": "$\\frac{1}{2}e^{x^2+2} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = x^2+2$ so that $x\\,dx = \\frac{1}{2}\\,du$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate and substitute back"
+        }
+      ],
+      "solution": "$\\int x e^{x^2+2}\\,dx = \\int e^u \\times \\frac{1}{2}\\frac{du}{dx}\\,dx\\quad \\left\\{u = x^2+2 \\implies \\frac{du}{dx} = 2x\\right\\} = \\int \\frac{1}{2}e^u\\,du = \\frac{1}{2}e^u + c = \\frac{1}{2}e^{x^2+2} + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution for exponential functions of the form $f'(x)e^{f(x)}$.",
+        "step_by_step": [
+          "Let $u = x^2 + 2$, then $\\frac{du}{dx} = 2x$, so $x\\,dx = \\frac{1}{2}\\,du$.",
+          "Rewrite the integral as $\\frac{1}{2}\\int e^u\\,du$.",
+          "Integrate to get $\\frac{1}{2}e^u + c$.",
+          "Substitute back $u = x^2 + 2$."
+        ],
+        "common_pitfalls": "Forgetting the factor of $\\frac{1}{2}$ when converting $x\\,dx$ to $du$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\int \\frac{e^{\\frac{1}{x}}}{x^2}\\,dx$",
+      "final_answer": "$-e^{\\frac{1}{x}} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = \\frac{1}{x}$ with $\\frac{du}{dx} = -\\frac{1}{x^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate and substitute back"
+        }
+      ],
+      "solution": "$\\int \\frac{e^{\\frac{1}{x}}}{x^2}\\,dx = \\int e^u\\left(-\\frac{du}{dx}\\right)dx\\quad \\left\\{u = \\frac{1}{x} \\implies \\frac{du}{dx} = -\\frac{1}{x^2}\\right\\} = \\int -e^u\\,du = -e^u + c = -e^{\\frac{1}{x}} + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution where the derivative of $\\frac{1}{x}$ is $-\\frac{1}{x^2}$.",
+        "step_by_step": [
+          "Set $u = \\frac{1}{x}$, so $du = -\\frac{1}{x^2}\\,dx$ or $\\frac{1}{x^2}\\,dx = -du$.",
+          "Substitute to get $\\int -e^u\\,du$.",
+          "Evaluate the integral: $-e^u + c$.",
+          "Substitute back $u = \\frac{1}{x}$."
+        ],
+        "common_pitfalls": "Missing the negative sign resulting from the derivative of $\\frac{1}{x} = x^{-1}$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$\\int \\frac{2(\\ln x)^2}{x}\\,dx$",
+      "final_answer": "$\\frac{2}{3}(\\ln x)^3 + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = \\ln x$ with $\\frac{du}{dx} = \\frac{1}{x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate power of $u$ and substitute back"
+        }
+      ],
+      "solution": "$\\int \\frac{2(\\ln x)^2}{x}\\,dx = \\int 2u^2\\frac{du}{dx}\\,dx\\quad \\left\\{u = \\ln x \\implies \\frac{du}{dx} = \\frac{1}{x}\\right\\} = \\int 2u^2\\,du = \\frac{2}{3}u^3 + c = \\frac{2}{3}(\\ln x)^3 + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution using $u = \\ln x$ and $\\frac{1}{x}dx = du$.",
+        "step_by_step": [
+          "Let $u = \\ln x$, which gives $du = \\frac{1}{x}dx$.",
+          "Rewrite integral as $2\\int u^2\\,du$.",
+          "Apply power rule: $2 \\times \\frac{u^3}{3} + c = \\frac{2}{3}u^3 + c$.",
+          "Substitute back $u = \\ln x$."
+        ],
+        "common_pitfalls": "Attempting integration by parts instead of noticing the straightforward substitution $u = \\ln x$."
+      }
+    }
+  ]
+}

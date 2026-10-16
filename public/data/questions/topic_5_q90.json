@@ -1,0 +1,60 @@
+{
+  "id": "topic_5_q90",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 90,
+  "question_text": "A particle is moving in a straight line with velocity given by $v(t) = t^3 - 3t^2 \\text{e}^{0.05t}$, where $t \\geqslant 0$ is in seconds, and distance units are in metres.\n\nUse technology to find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the greatest speed reached by the particle in the first 4 seconds of motion",
+      "final_answer": "$\\approx 5.66\\text{ ms}^{-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Defining speed as $|v(t)|$"
+        },
+        {
+          "code": "A1",
+          "desc": "Using technology to find the maximum value of $|v(t)|$ on $0 \\le t \\le 4$, giving $\\approx 5.66\\text{ ms}^{-1}$ at $t \\approx 2.39$"
+        }
+      ],
+      "solution": "$$\\text{speed} = |v(t)|$$\nUsing technology, the maximum of $|v(t)|$ over $0 \\le t \\le 4$ is $\\approx 5.66\\text{ ms}^{-1}$ when $t \\approx 2.39$.",
+      "ai_explanation": {
+        "concept_rule": "Speed is the absolute value of velocity: $\\text{speed} = |v(t)|$. To find the maximum speed, locate the absolute maximum of $|v(t)|$ on the given interval.",
+        "step_by_step": [
+          "Plot $y = |x^3 - 3x^2 e^{0.05x}|$ on a graphing calculator for $0 \\le x \\le 4$.",
+          "Find the local maximum / peak of the absolute value curve.",
+          "Identify the maximum speed value and the corresponding time."
+        ],
+        "common_pitfalls": "Looking for the maximum of $v(t)$ instead of $|v(t)|$, which would ignore negative velocity with large magnitude."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the total distance travelled by the particle in the first 4 seconds of motion.",
+      "final_answer": "$\\approx 12.5\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing total distance as $\\int_0^4 |v(t)|\\,dt$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating the integral numerically using technology to get $\\approx 12.5\\text{ m}$"
+        }
+      ],
+      "solution": "$$\\text{Total distance} = \\int_0^4 |v(t)|\\,dt$$\n$$= \\int_0^4 |t^3 - 3t^2 e^{0.05t}|\\,dt$$\n$$\\approx 12.5\\text{ m}$$",
+      "ai_explanation": {
+        "concept_rule": "Total distance traveled is the integral of speed over time: $\\int_{t_1}^{t_2} |v(t)|\\,dt$.",
+        "step_by_step": [
+          "State the integral for total distance: $\\int_0^4 |v(t)|\\,dt$.",
+          "Use the numerical integration feature on the GDC for $\\int_0^4 |x^3 - 3x^2 e^{0.05x}|\\,dx$.",
+          "Round to three significant figures: $12.5\\text{ m}$."
+        ],
+        "common_pitfalls": "Integrating $v(t)$ without the absolute value, which calculates displacement instead of total distance."
+      }
+    }
+  ]
+}

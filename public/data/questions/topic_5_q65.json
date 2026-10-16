@@ -1,0 +1,92 @@
+{
+  "id": "topic_5_q65",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 65,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int \\sin^4 x \\cos x\\,dx$",
+      "final_answer": "$\\frac{1}{5}\\sin^5 x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = \\sin x$ with $\\frac{du}{dx} = \\cos x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate $u^4$ and substitute back"
+        }
+      ],
+      "solution": "$\\int \\sin^4 x \\cos x\\,dx = \\int u^4\\frac{du}{dx}\\,dx\\quad \\left\\{u = \\sin x \\implies \\frac{du}{dx} = \\cos x\\right\\} = \\int u^4\\,du = \\frac{1}{5}u^5 + c = \\frac{1}{5}\\sin^5 x + c$",
+      "ai_explanation": {
+        "concept_rule": "Power of a trigonometric function multiplied by its derivative: $\\int (\\sin x)^n \\cos x\\,dx = \\frac{1}{n+1}\\sin^{n+1} x + c$.",
+        "step_by_step": [
+          "Set $u = \\sin x$, so $du = \\cos x\\,dx$.",
+          "Substitute to get $\\int u^4\\,du$.",
+          "Evaluate to $\\frac{1}{5}u^5 + c$.",
+          "Substitute back $u = \\sin x$ to get $\\frac{1}{5}\\sin^5 x + c$."
+        ],
+        "common_pitfalls": "Mistaking $\\cos x$ for $-\\cos x$ as the derivative of $\\sin x$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int 3x^3 \\sin(x^4)\\,dx$",
+      "final_answer": "$-\\frac{3}{4}\\cos(x^4) + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = x^4$ so $x^3 dx = \\frac{1}{4}du$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate $\\frac{3}{4}\\sin u$ and substitute back"
+        }
+      ],
+      "solution": "$\\int 3x^3 \\sin(x^4)\\,dx = \\int \\sin u\\left(\\frac{3}{4}\\frac{du}{dx}\\right)dx\\quad \\left\\{u = x^4 \\implies \\frac{du}{dx} = 4x^3\\right\\} = \\int \\frac{3}{4}\\sin u\\,du = -\\frac{3}{4}\\cos u + c = -\\frac{3}{4}\\cos(x^4) + c$",
+      "ai_explanation": {
+        "concept_rule": "Substitution of an inner polynomial argument in a trigonometric function.",
+        "step_by_step": [
+          "Let $u = x^4$, giving $du = 4x^3 dx$, so $3x^3 dx = \\frac{3}{4}du$.",
+          "Rewrite the integral as $\\frac{3}{4}\\int \\sin u\\,du$.",
+          "Integrate to get $-\\frac{3}{4}\\cos u + c$.",
+          "Substitute back $u = x^4$."
+        ],
+        "common_pitfalls": "Omitting the negative sign from integrating sine."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\int \\frac{\\sin 2x}{(3-\\cos 2x)^3}\\,dx$",
+      "final_answer": "$-\\frac{1}{4(3-\\cos 2x)^2} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = 3-\\cos 2x$ with $\\frac{du}{dx} = 2\\sin 2x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Integrate $\\frac{1}{2}u^{-3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to single algebraic fraction"
+        }
+      ],
+      "solution": "$\\int \\frac{\\sin 2x}{(3-\\cos 2x)^3}\\,dx = \\int \\frac{1}{u^3}\\left(\\frac{1}{2}\\frac{du}{dx}\\right)dx\\quad \\left\\{u = 3-\\cos 2x \\implies \\frac{du}{dx} = 2\\sin 2x\\right\\} = \\int \\frac{1}{2}u^{-3}\\,du = \\frac{1}{2} \\times \\left(-\\frac{1}{2}u^{-2}\\right) + c = -\\frac{1}{4u^2} + c = -\\frac{1}{4(3-\\cos 2x)^2} + c$",
+      "ai_explanation": {
+        "concept_rule": "Use $u$-substitution for composite negative powers: $\\int [g(x)]^{-n} g'(x)\\,dx$.",
+        "step_by_step": [
+          "Let $u = 3 - \\cos 2x$. Then $\\frac{du}{dx} = -(-\\sin 2x \\cdot 2) = 2\\sin 2x$.",
+          "Rewrite integral as $\\frac{1}{2}\\int u^{-3}\\,du$.",
+          "Integrate: $\\frac{1}{2}\\left(\\frac{u^{-2}}{-2}\\right) + c = -\\frac{1}{4u^2} + c$.",
+          "Substitute back $u = 3 - \\cos 2x$."
+        ],
+        "common_pitfalls": "Sign errors when differentiating $-\\cos 2x$ (which gives $+2\\sin 2x$), or when integrating $u^{-3}$ (giving $\\frac{u^{-2}}{-2}$)."
+      }
+    }
+  ]
+}

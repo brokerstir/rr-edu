@@ -23,4 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 ib/
+
+# Stuff I should have added in the first place...
 .env
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl

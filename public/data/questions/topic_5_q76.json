@@ -1,0 +1,70 @@
+{
+  "id": "topic_5_q76",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 76,
+  "question_text": "For a continuous function $f(x)$ defined on the interval $a \\leqslant x \\leqslant b$, the length of the curve can be found using $L = \\int_{a}^{b} \\sqrt{1+[f'(x)]^2}\\,dx$. Find the length of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = x^2$ on the interval $0 \\leqslant x \\leqslant 1$",
+      "final_answer": "$1.48\\text{ units}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding derivative $f'(x) = 2x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up arc length formula $L = \\int_0^1 \\sqrt{1 + (2x)^2}\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating arc length numerically to 3 significant figures: $1.48$"
+        }
+      ],
+      "solution": "$f(x) = x^2, \\ 0 \\le x \\le 1 \\implies f'(x) = 2x$. So, $L = \\int_0^1 \\sqrt{1 + (2x)^2}\\,dx = \\int_0^1 \\sqrt{1 + 4x^2}\\,dx \\approx 1.48\\text{ units}$",
+      "ai_explanation": {
+        "concept_rule": "Arc length of a curve given by $y = f(x)$ is $L = \\int_a^b \\sqrt{1 + [f'(x)]^2}\\,dx$.",
+        "step_by_step": [
+          "Differentiate $f(x) = x^2$ to find $f'(x) = 2x$.",
+          "Square the derivative: $(f'(x))^2 = 4x^2$.",
+          "Substitute into the arc length formula: $L = \\int_0^1 \\sqrt{1 + 4x^2}\\,dx$.",
+          "Evaluate using GDC: $\\approx 1.4789\\dots \\approx 1.48\\text{ units}$."
+        ],
+        "common_pitfalls": "Forgetting to square the derivative inside the square root."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = \\sin x$ on the interval $0 \\leqslant x \\leqslant \\pi$.",
+      "final_answer": "$3.82\\text{ units}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding derivative $f'(x) = \\cos x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up arc length integral $L = \\int_0^\\pi \\sqrt{1 + \\cos^2 x}\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating arc length numerically to 3 significant figures: $3.82$"
+        }
+      ],
+      "solution": "$f(x) = \\sin x, \\ 0 \\le x \\le \\pi \\implies f'(x) = \\cos x$. So, $L = \\int_0^{\\pi} \\sqrt{1 + \\cos^2 x}\\,dx \\approx 3.82\\text{ units}$",
+      "ai_explanation": {
+        "concept_rule": "Arc length formula $L = \\int_a^b \\sqrt{1 + [f'(x)]^2}\\,dx$.",
+        "step_by_step": [
+          "Differentiate $f(x) = \\sin x$ to get $f'(x) = \\cos x$.",
+          "Set up the integral $L = \\int_0^\\pi \\sqrt{1 + \\cos^2 x}\\,dx$.",
+          "Evaluate the integral numerically using GDC in radian mode.",
+          "Round $3.820197\\dots$ to 3 significant figures: $3.82\\text{ units}$."
+        ],
+        "common_pitfalls": "Confusing the derivative of $\\sin x$ as $-\\cos x$ (though squared it gives the same, good practice is essential)."
+      }
+    }
+  ]
+}

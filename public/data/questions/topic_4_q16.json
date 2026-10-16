@@ -1,0 +1,143 @@
+{
+  "id": "topic_4_q16",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 16,
+  "question_text": "A box plot has been drawn to show the heights of some petunia seedlings, in centimetres.\nState the:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "minimum value",
+      "final_answer": "$4\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct minimum value read from plot"
+        }
+      ],
+      "solution": "$$\\text{minimum value} = 4\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The minimum value is the position of the leftmost tip of the whisker.",
+        "step_by_step": [
+          "Read the value at the end of the lower whisker: 4 cm."
+        ],
+        "common_pitfalls": "Reading from the edge of the box rather than the whisker."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "maximum value",
+      "final_answer": "$22\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct maximum value read from plot"
+        }
+      ],
+      "solution": "$$\\text{maximum value} = 22\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The maximum value is the position of the rightmost tip of the whisker.",
+        "step_by_step": [
+          "Read the value at the end of the upper whisker: 22 cm."
+        ],
+        "common_pitfalls": "Misreading the scale intervals."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "median",
+      "final_answer": "$17\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct median read from plot"
+        }
+      ],
+      "solution": "$$\\text{median} = 17\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The median is indicated by the vertical line inside the box.",
+        "step_by_step": [
+          "Find the line inside the box and read the corresponding axis value: 17 cm."
+        ],
+        "common_pitfalls": "Assuming the median is always in the exact geometric center of the box."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "upper quartile",
+      "final_answer": "$19\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct upper quartile read from plot"
+        }
+      ],
+      "solution": "$$\\text{upper quartile} = 19\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The upper quartile ($Q_3$) is the right edge of the box.",
+        "step_by_step": [
+          "Read the value at the right edge of the box: 19 cm."
+        ],
+        "common_pitfalls": "Confusing the upper quartile with the maximum."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "lower quartile",
+      "final_answer": "$11\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct lower quartile read from plot"
+        }
+      ],
+      "solution": "$$\\text{lower quartile} = 11\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The lower quartile ($Q_1$) is the left edge of the box.",
+        "step_by_step": [
+          "Read the value at the left edge of the box: 11 cm."
+        ],
+        "common_pitfalls": "Confusing the lower quartile with the minimum."
+      }
+    },
+    {
+      "subpart": "f",
+      "stem": "range",
+      "final_answer": "$18\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct range calculation"
+        }
+      ],
+      "solution": "$$\\text{range} = \\text{maximum} - \\text{minimum} = 22 - 4 = 18\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "Range is calculated as the maximum value minus the minimum value.",
+        "step_by_step": [
+          "Subtract the minimum (4) from the maximum (22): $22 - 4 = 18\\text{ cm}$."
+        ],
+        "common_pitfalls": "Forgetting the units or subtracting quartiles."
+      }
+    },
+    {
+      "subpart": "g",
+      "stem": "interquartile range.",
+      "final_answer": "$8\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct IQR calculation"
+        }
+      ],
+      "solution": "$$\\text{IQR} = Q_3 - Q_1 = 19 - 11 = 8\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "Interquartile range is the width of the box: $Q_3 - Q_1$.",
+        "step_by_step": [
+          "Subtract the lower quartile (11) from the upper quartile (19): $19 - 11 = 8\\text{ cm}$."
+        ],
+        "common_pitfalls": "Subtracting minimum from lower quartile."
+      }
+    }
+  ]
+}

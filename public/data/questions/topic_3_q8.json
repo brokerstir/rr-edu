@@ -1,0 +1,160 @@
+{
+  "id": "topic_3_q8",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 8,
+  "question_text": "For each pair of points, find:\ni the distance AB\nii the midpoint of [AB].",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "the distance $AB$ for $A(2, 4, 1)$ and $B(4, 0, 7)$",
+      "final_answer": "$\\sqrt{56}\\text{ units}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply 3D distance formula: $AB = \\sqrt{(4-2)^2 + (0-4)^2 + (7-1)^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $\\sqrt{56}\\text{ units}$"
+        }
+      ],
+      "solution": "$A(2, 4, 1)$ and $B(4, 0, 7)$\n$AB = \\sqrt{(4-2)^2 + (0-4)^2 + (7-1)^2}$\n$= \\sqrt{2^2 + (-4)^2 + 6^2}$\n$= \\sqrt{4 + 16 + 36}$\n$= \\sqrt{56}\\text{ units}$",
+      "ai_explanation": {
+        "concept_rule": "The distance between two points $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ is $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$.",
+        "step_by_step": [
+          "Compute coordinate differences: $\\Delta x = 2$, $\\Delta y = -4$, $\\Delta z = 6$.",
+          "Square and sum: $2^2 + (-4)^2 + 6^2 = 4 + 16 + 36 = 56$.",
+          "Take square root: $AB = \\sqrt{56}$."
+        ],
+        "common_pitfalls": "Squaring negative numbers incorrectly (e.g., writing $(-4)^2 = -16$ instead of $16$)."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "the midpoint of $[AB]$ for $A(2, 4, 1)$ and $B(4, 0, 7)$",
+      "final_answer": "$(3, 2, 4)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply midpoint formula: $\\left(\\frac{2+4}{2}, \\frac{4+0}{2}, \\frac{1+7}{2}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate coordinates to $(3, 2, 4)$"
+        }
+      ],
+      "solution": "The midpoint is $\\left(\\frac{2+4}{2}, \\frac{4+0}{2}, \\frac{1+7}{2}\\right)$, which is $(3, 2, 4)$.",
+      "ai_explanation": {
+        "concept_rule": "The midpoint between $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ is given by $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$.",
+        "step_by_step": [
+          "Average the $x$-coordinates: $\\frac{2+4}{2} = 3$.",
+          "Average the $y$-coordinates: $\\frac{4+0}{2} = 2$.",
+          "Average the $z$-coordinates: $\\frac{1+7}{2} = 4$."
+        ],
+        "common_pitfalls": "Subtracting coordinates instead of adding them."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "the distance $AB$ for $A(3, -5, 2)$ and $B(-1, 2, -3)$",
+      "final_answer": "$\\sqrt{90}\\text{ units}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply 3D distance formula: $AB = \\sqrt{(-1-3)^2 + (2-(-5))^2 + (-3-2)^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $\\sqrt{90}\\text{ units}$"
+        }
+      ],
+      "solution": "$A(3, -5, 2)$ and $B(-1, 2, -3)$\n$AB = \\sqrt{(-1-3)^2 + (2 - (-5))^2 + (-3-2)^2}$\n$= \\sqrt{(-4)^2 + 7^2 + (-5)^2}$\n$= \\sqrt{16 + 49 + 25}$\n$= \\sqrt{90}\\text{ units}$",
+      "ai_explanation": {
+        "concept_rule": "Distance between two 3D points is given by $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$.",
+        "step_by_step": [
+          "Differences: $\\Delta x = -1 - 3 = -4$, $\\Delta y = 2 - (-5) = 7$, $\\Delta z = -3 - 2 = -5$.",
+          "Square the differences: $(-4)^2 = 16$, $7^2 = 49$, $(-5)^2 = 25$.",
+          "Sum and root: $\\sqrt{16 + 49 + 25} = \\sqrt{90}$."
+        ],
+        "common_pitfalls": "Sign errors when subtracting negative values like $2 - (-5) = 7$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "the midpoint of $[AB]$ for $A(3, -5, 2)$ and $B(-1, 2, -3)$",
+      "final_answer": "$\\left(1, -\\frac{3}{2}, -\\frac{1}{2}\\right)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up midpoint coordinates: $\\left(\\frac{3+(-1)}{2}, \\frac{-5+2}{2}, \\frac{2+(-3)}{2}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\left(1, -\\frac{3}{2}, -\\frac{1}{2}\\right)$"
+        }
+      ],
+      "solution": "The midpoint is $\\left(\\frac{3+(-1)}{2}, \\frac{-5+2}{2}, \\frac{2+(-3)}{2}\\right)$, which is $\\left(1, -\\frac{3}{2}, -\\frac{1}{2}\\right)$.",
+      "ai_explanation": {
+        "concept_rule": "The midpoint is calculated by taking the arithmetic mean of each coordinate.",
+        "step_by_step": [
+          "$x = \\frac{3 - 1}{2} = 1$.",
+          "$y = \\frac{-5 + 2}{2} = -\\frac{3}{2}$.",
+          "$z = \\frac{2 - 3}{2} = -\\frac{1}{2}$."
+        ],
+        "common_pitfalls": "Incorrectly combining signs in the numerator, e.g. $-5 + 2 = -7$."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "the distance $AB$ for $A(-6, 0, 5)$ and $B(-3, -3, 1)$",
+      "final_answer": "$\\sqrt{34}\\text{ units}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply 3D distance formula: $AB = \\sqrt{(-3-(-6))^2 + (-3-0)^2 + (1-5)^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $\\sqrt{34}\\text{ units}$"
+        }
+      ],
+      "solution": "$A(-6, 0, 5)$ and $B(-3, -3, 1)$\n$AB = \\sqrt{(-3 - (-6))^2 + (-3-0)^2 + (1-5)^2}$\n$= \\sqrt{3^2 + (-3)^2 + (-4)^2}$\n$= \\sqrt{9 + 9 + 16}$\n$= \\sqrt{34}\\text{ units}$",
+      "ai_explanation": {
+        "concept_rule": "Distance between two 3D points: $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$.",
+        "step_by_step": [
+          "Differences: $\\Delta x = -3 - (-6) = 3$, $\\Delta y = -3 - 0 = -3$, $\\Delta z = 1 - 5 = -4$.",
+          "Sum of squares: $3^2 + (-3)^2 + (-4)^2 = 9 + 9 + 16 = 34$.",
+          "Result is $\\sqrt{34}\\text{ units}$."
+        ],
+        "common_pitfalls": "Sign error on $-3 - (-6) = 3$."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "the midpoint of $[AB]$ for $A(-6, 0, 5)$ and $B(-3, -3, 1)$",
+      "final_answer": "$\\left(-\\frac{9}{2}, -\\frac{3}{2}, 3\\right)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply midpoint formula: $\\left(\\frac{-6+(-3)}{2}, \\frac{0+(-3)}{2}, \\frac{5+1}{2}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\left(-\\frac{9}{2}, -\\frac{3}{2}, 3\\right)$"
+        }
+      ],
+      "solution": "The midpoint is $\\left(\\frac{-6+(-3)}{2}, \\frac{0+(-3)}{2}, \\frac{5+1}{2}\\right)$, which is $\\left(-\\frac{9}{2}, -\\frac{3}{2}, 3\\right)$.",
+      "ai_explanation": {
+        "concept_rule": "The midpoint coordinate formula averages the coordinates of both points.",
+        "step_by_step": [
+          "$x = \\frac{-6 + (-3)}{2} = -\\frac{9}{2}$.",
+          "$y = \\frac{0 + (-3)}{2} = -\\frac{3}{2}$.",
+          "$z = \\frac{5 + 1}{2} = 3$."
+        ],
+        "common_pitfalls": "Dropping the negative sign on $-6 + (-3)$."
+      }
+    }
+  ]
+}

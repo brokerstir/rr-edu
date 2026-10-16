@@ -1,0 +1,45 @@
+{
+  "id": "topic_4_q67",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 67,
+  "question_text": "Suppose $X$ is normally distributed with $\\mathrm{P}(X \\le 24) = 0.035$ and $\\mathrm{P}(X \\ge 33) = 0.262$. Find the mean and standard deviation of $X$ correct to 3 significant figures.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Suppose $X$ is normally distributed with $\\mathrm{P}(X \\le 24) = 0.035$ and $\\mathrm{P}(X \\ge 33) = 0.262$. Find the mean and standard deviation of $X$ correct to 3 significant figures.",
+      "final_answer": "$\\mu \\approx 30.7, \\sigma \\approx 3.67$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Standardizing both given tail probabilities to form equations in terms of $\\mu$ and $\\sigma$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding correct $z$-scores: $z_1 \\approx -1.8119$ and $z_2 \\approx 0.6372$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up simultaneous linear equations for $\\mu$ and $\\sigma$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly solving for both $\\mu \\approx 30.7$ and $\\sigma \\approx 3.67$"
+        }
+      ],
+      "solution": "$X \\sim \\text{N}(\\mu, \\sigma^2)$ where we have to find $\\mu$ and $\\sigma$.\\\\We start by finding $z_1$ and $z_2$ which correspond to $x_1 = 24$ and $x_2 = 33$.\\\\Now $\\text{P}(X \\leqslant x_1) = 0.035$\\\\\\begin{aligned} \\therefore \\text{P}\\left(\\frac{X - \\mu}{\\sigma} \\leqslant \\frac{24 - \\mu}{\\sigma}\\right) &= 0.035 \\\\ \\therefore \\text{P}\\left(Z \\leqslant \\frac{24 - \\mu}{\\sigma}\\right) &= 0.035 \\quad \\left\\{Z = \\frac{X - \\mu}{\\sigma}\\right\\} \\\\ \\therefore z_1 = \\frac{24 - \\mu}{\\sigma} &\\approx -1.8119 \\quad \\left\\{Z \\sim \\text{N}(0, 1^2)\\right\\} \\\\ \\therefore 24 - \\mu &\\approx -1.8119\\sigma \\quad \\dots (1) \\end{aligned}\\\\and $\\text{P}(X \\geqslant x_2) = 0.262$\\\\\\begin{aligned} \\therefore \\text{P}(X < x_2) &= 0.738 \\\\ \\therefore \\text{P}\\left(\\frac{X - \\mu}{\\sigma} < \\frac{33 - \\mu}{\\sigma}\\right) &= 0.738 \\\\ \\therefore \\text{P}\\left(Z < \\frac{33 - \\mu}{\\sigma}\\right) &= 0.738 \\quad \\left\\{Z = \\frac{X - \\mu}{\\sigma}\\right\\} \\\\ \\therefore z_2 = \\frac{33 - \\mu}{\\sigma} &\\approx 0.6372 \\quad \\left\\{Z \\sim \\text{N}(0, 1^2)\\right\\} \\\\ \\therefore 33 - \\mu &\\approx 0.6372\\sigma \\quad \\dots (2) \\end{aligned}\\\\Solving (1) and (2) simultaneously, $\\mu \\approx 30.7$ and $\\sigma \\approx 3.67$.",
+      "ai_explanation": {
+        "concept_rule": "When both $\\mu$ and $\\sigma$ are unknown, two conditions with given probabilities can be converted to standard normal $z$-scores to form a system of two linear equations in $\\mu$ and $\\sigma$.",
+        "step_by_step": [
+          "Use the lower tail $\\text{P}(X \\leqslant 24) = 0.035$ with inverse normal to get $z_1 \\approx -1.8119$, giving $24 - \\mu = -1.8119\\sigma$.",
+          "Convert the upper tail $\\text{P}(X \\geqslant 33) = 0.262$ into a lower tail cumulative probability: $\\text{P}(X < 33) = 1 - 0.262 = 0.738$.",
+          "Use inverse normal on $0.738$ to find $z_2 \\approx 0.6372$, giving $33 - \\mu = 0.6372\\sigma$.",
+          "Subtract equation (1) from equation (2): $(33 - 24) = (0.6372 - (-1.8119))\\sigma \\implies 9 = 2.4491\\sigma \\implies \\sigma \\approx 3.67$.",
+          "Substitute $\\sigma$ back into either equation to find $\\mu \\approx 30.7$."
+        ],
+        "common_pitfalls": "Using the upper-tail probability directly in the standard inverse normal function without converting it to the cumulative left-tail area ($1 - p$)."
+      }
+    }
+  ]
+}

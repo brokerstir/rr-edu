@@ -1,0 +1,79 @@
+{
+  "id": "topic_4_q22",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 22,
+  "question_text": "Ten students were given aptitude tests on language skills and mathematics. The table below shows the results:\n\n| Language ($x$) | 12.5 | 15.0 | 10.5 | 12.0 | 9.5 | 10.5 | 15.5 | 10.0 | 14.0 | 12.0 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Mathematics ($y$) | 32 | 45 | 27 | 38 | 18 | 25 | 35 | 22 | 40 | 40 |",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Plot the data on a scatter diagram.",
+      "final_answer": "$Scatter plot plotted$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly labeled and scaled axes"
+        },
+        {
+          "code": "A1",
+          "desc": "All points plotted accurately"
+        }
+      ],
+      "solution": "Plot Language scores on the horizontal axis ($x$) and Mathematics scores on the vertical axis ($y$) for each pair of data points: $(12.5, 32), (15.0, 45), (10.5, 27), (12.0, 38), (9.5, 18), (10.5, 25), (15.5, 35), (10.0, 22), (14.0, 40), (12.0, 40)$.",
+      "ai_explanation": {
+        "concept_rule": "Scatter plots display bivariate data points on a Cartesian coordinate plane.",
+        "step_by_step": [
+          "Choose an appropriate scale for both axes ($x$ from 8 to 18, $y$ from 15 to 50).",
+          "Plot each paired observation $(x, y)$."
+        ],
+        "common_pitfalls": "Inverting the $x$ and $y$ axes or misplotting decimal coordinates."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the correlation coefficient $r$.",
+      "final_answer": "$r \\approx 0.819$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Entering data into graphics calculator to perform linear regression"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of correlation coefficient r"
+        }
+      ],
+      "solution": "Using technology for linear regression: $a \\approx 3.4528$, $b \\approx -9.7520$, $r \\approx 0.8188878$. Therefore, $r \\approx 0.819$.",
+      "ai_explanation": {
+        "concept_rule": "Pearson's correlation coefficient $r$ measures the strength and direction of a linear relationship.",
+        "step_by_step": [
+          "Input lists into calculator: List 1 for $x$ and List 2 for $y$.",
+          "Calculate linear regression $y = ax + b$.",
+          "Read the value of $r$ and round to 3 significant figures: $r \\approx 0.819$."
+        ],
+        "common_pitfalls": "Confusing the coefficient of determination $r^2$ with $r$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Use your results to comment on the statement: \"Those who do well in languages also do well in mathematics.\"",
+      "final_answer": "$Moderately reasonable$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Sensible interpretation linking correlation strength to the statement"
+        }
+      ],
+      "solution": "The data suggests that there is a moderate, positive, linear correlation between the students' language scores and their mathematics scores. So, 'Those who do well in languages also do well in mathematics.' is a moderately reasonable statement.",
+      "ai_explanation": {
+        "concept_rule": "An $r$ value around 0.8 indicates a moderate to strong positive linear correlation, making the generalized positive trend reasonable.",
+        "step_by_step": [
+          "Evaluate the strength indicated by $r \\approx 0.819$.",
+          "Explain that while not a perfect relationship, higher scores in language generally correspond to higher scores in mathematics."
+        ],
+        "common_pitfalls": "Stating that the statement is absolute or proven true rather than 'moderately reasonable'."
+      }
+    }
+  ]
+}

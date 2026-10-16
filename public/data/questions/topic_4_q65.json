@@ -1,0 +1,65 @@
+{
+  "id": "topic_4_q65",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 65,
+  "question_text": "The continuous random variable $X$ is normally distributed with $\\mathrm{P}(X < 56) = 0.8$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "How many standard deviations from the mean is a score of 56?",
+      "final_answer": "$0.842\\sigma$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Standardizing the variable: $P\\left(Z < \\frac{56-\\mu}{\\sigma}\\right) = 0.8$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using inverse standard normal distribution to find the $z$-value"
+        },
+        {
+          "code": "A1",
+          "desc": "Deducing $56 - \\mu \\approx 0.842\\sigma$ and interpreting as $0.842$ standard deviations from the mean"
+        }
+      ],
+      "solution": "$P(X < 56) = 0.8$\n\n$\\therefore P\\left(\\frac{X - \\mu}{\\sigma} < \\frac{56 - \\mu}{\\sigma}\\right) = 0.8$\n\n$\\therefore P\\left(Z < \\frac{56 - \\mu}{\\sigma}\\right) = 0.8 \\quad \\left\\{Z = \\frac{X - \\mu}{\\sigma}\\right\\}$\n\n$\\therefore \\frac{56 - \\mu}{\\sigma} \\approx 0.842 \\quad \\{Z \\sim \\text{N}(0, 1^2)\\}\n\n$\\therefore 56 - \\mu \\approx 0.842\\sigma \\quad \\ldots (*)$\n\nSo, a score of 56 is about $0.842$ standard deviations from the mean.",
+      "ai_explanation": {
+        "concept_rule": "Standardization of normal random variables using $Z = \\frac{X-\\mu}{\\sigma}$.",
+        "step_by_step": [
+          "Set up the probability equation $P(X < 56) = 0.8$.",
+          "Standardize to standard normal variable $Z$: $P\\left(Z < \\frac{56 - \\mu}{\\sigma}\\right) = 0.8$.",
+          "Find $z_{0.8}$ using inverse normal with area $0.8$, giving $z \\approx 0.84162 \\approx 0.842$.",
+          "Rearrange to show $56 - \\mu \\approx 0.842\\sigma$."
+        ],
+        "common_pitfalls": "Forgetting that standard deviations from the mean represents the $z$-score directly."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "If the standard deviation of $X$ is 4, find the mean of the distribution. Give your answer correct to one decimal place.",
+      "final_answer": "$52.6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $\\sigma = 4$ into equation $(*)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\mu \\approx 52.6$"
+        }
+      ],
+      "solution": "If $\\sigma = 4$, then $(*)$ gives $56 - \\mu \\approx 0.842 \\times 4$\n\n$\\therefore \\mu \\approx 56 - 0.842 \\times 4$\n\n$\\therefore \\mu \\approx 52.6$",
+      "ai_explanation": {
+        "concept_rule": "Solving a linear equation for the mean $\\mu$ given the standard deviation $\\sigma$ and $z$-score relationship.",
+        "step_by_step": [
+          "Substitute $\\sigma = 4$ into $56 - \\mu = 0.842 \\times \\sigma$.",
+          "Compute $0.842 \\times 4 = 3.368$.",
+          "Calculate $\\mu = 56 - 3.368 = 52.632 \\approx 52.6$."
+        ],
+        "common_pitfalls": "Adding instead of subtracting $0.842 \\times 4$ from 56."
+      }
+    }
+  ]
+}

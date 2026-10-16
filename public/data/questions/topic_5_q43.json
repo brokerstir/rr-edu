@@ -1,0 +1,50 @@
+{
+  "id": "topic_5_q43",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 43,
+  "question_text": "Rectangle ABCD is inscribed under one arch of $y = \\cos x$. Suppose the point C has $x$-coordinate $x$.\nFind the coordinates of C such that ABCD has maximum area.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Rectangle ABCD is inscribed under one arch of $y = \\cos x$. Suppose the point C has $x$-coordinate $x$.\nFind the coordinates of C such that ABCD has maximum area.",
+      "final_answer": "$(0.860, 0.652)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express the area of the rectangle in terms of $x$ as $A = 2x\\cos x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Differentiate $A$ using the product rule: $\\frac{dA}{dx} = 2\\cos x - 2x\\sin x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $\\frac{dA}{dx} = 0$ and solve for $x$ numerically or graphically"
+        },
+        {
+          "code": "R1",
+          "desc": "Justify the maximum using a sign diagram of $\\frac{dA}{dx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the coordinates of $C$ to 3 significant figures"
+        }
+      ],
+      "solution": "$C$ has coordinates $(x, \\cos x)$.\\nLet $A$ be the area of rectangle $ABCD$.\\n$\\therefore A = 2x\\cos x\\text{ units}^2, \\; 0 \\leqslant x \\leqslant \\frac{\\pi}{2}$\\nNow $\\frac{dA}{dx} = 2\\cos x + 2x(-\\sin x) = 2\\cos x - 2x\\sin x = 2(\\cos x - x\\sin x)$\\n$A$ is maximised when $\\frac{dA}{dx} = 0\\implies 2(\\cos x - x\\sin x) = 0\\implies \\cos x - x\\sin x = 0\\implies \\cos x = x\\sin x$\\n$\\therefore x \\approx 0.860$ {using technology}\\nThe sign diagram of $\\frac{dA}{dx}$ shows that $\\frac{dA}{dx} > 0$ for $x < 0.860$ and $\\frac{dA}{dx} < 0$ for $x > 0.860$.\\n$\\therefore A$ is maximised when $x \\approx 0.860$.\\n$\\therefore$ when $ABCD$ has maximum area, $C$ has coordinates $(\\approx 0.860, \\approx \\cos 0.860)$ which is $(\\approx 0.860, \\approx 0.652)$.",
+      "ai_explanation": {
+        "concept_rule": "Geometric optimization requires writing the quantity to be maximized as a function of a single variable, finding stationary points by setting the derivative to zero, and testing for a maximum.",
+        "step_by_step": [
+          "Identify symmetry: rectangle width is $2x$ and height is $\\cos x$, so $A(x) = 2x\\cos x$.",
+          "Differentiate with respect to $x$ using the product rule: $\\frac{dA}{dx} = 2\\cos x - 2x\\sin x$.",
+          "Set the derivative to zero: $\\cos x = x\\sin x$, or $x = \\cot x$.",
+          "Solve numerically using technology: $x \\approx 0.860$.",
+          "Verify maximum using a sign diagram.",
+          "Find the $y$-coordinate by evaluating $\\cos(0.860) \\approx 0.652$."
+        ],
+        "common_pitfalls": "Writing the width of the rectangle as $x$ instead of $2x$, or using degree mode instead of radian mode on the calculator."
+      }
+    }
+  ]
+}

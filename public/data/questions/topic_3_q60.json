@@ -1,0 +1,26 @@
+{
+  "id": "topic_3_q60",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 60,
+  "question_text": "Solve for $x$ on $0 \\leqslant x \\leqslant 2\\pi$, giving your answers as exact values:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$2\\sin^2 x + 3\\cos x = 3$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\sin 2x + \\sin x = 0$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

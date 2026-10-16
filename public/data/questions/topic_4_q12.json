@@ -1,0 +1,70 @@
+{
+  "id": "topic_4_q12",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 12,
+  "question_text": "After seven netball matches, Kai has averaged 11 goals per game.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $a$.",
+      "final_answer": "$a = 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up weighted mean equation $\\frac{\\sum xf}{\\sum f} = 11$"
+        },
+        {
+          "code": "M1",
+          "desc": "Simplify to $\\frac{a + 67}{7} = 11$ and solve $a + 67 = 77$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $a = 10$"
+        }
+      ],
+      "solution": "$\\bar{x} = \\frac{\\sum xf}{\\sum f}$. $\\therefore 11 = \\frac{7 \\times 1 + 9 \\times 2 + a \\times 1 + 13 \\times 2 + 16 \\times 1}{1 + 2 + 1 + 2 + 1} \\implies 11 = \\frac{a + 67}{7} \\implies a + 67 = 77 \\implies a = 10$.",
+      "ai_explanation": {
+        "concept_rule": "The weighted mean formula is $\\bar{x} = \\frac{\\sum x_i f_i}{\\sum f_i}$.",
+        "step_by_step": [
+          "Total frequency $\\sum f = 1 + 2 + 1 + 2 + 1 = 7$.",
+          "Sum of products $\\sum xf = 7(1) + 9(2) + a(1) + 13(2) + 16(1) = 7 + 18 + a + 26 + 16 = a + 67$.",
+          "Set $\\frac{a+67}{7} = 11$.",
+          "Multiply both sides by 7: $a + 67 = 77$.",
+          "Subtract 67: $a = 10$."
+        ],
+        "common_pitfalls": "Forgetting to multiply each score by its corresponding frequency."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How many goals will she need to score in the next game to improve her overall average to 12?",
+      "final_answer": "$19\\text{ goals}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Formulate new mean expression $\\frac{7 \\times 11 + k}{8} = 12$"
+        },
+        {
+          "code": "M1",
+          "desc": "Solve linear equation $k + 77 = 96$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $k = 19$"
+        }
+      ],
+      "solution": "Let $k$ be the number of goals that Kai will need to score in the next game. Since she averaged 11 goals in her first 7 games, her average after the next game $= \\frac{7 \\times 11 + k}{8} = \\frac{k + 77}{8}$. For her overall average to improve to 12, we require $\\frac{k + 77}{8} = 12 \\implies k + 77 = 96 \\implies k = 19$. So, Kai will need to score 19 goals in the next game to improve her overall average to 12.",
+      "ai_explanation": {
+        "concept_rule": "The total sum after $n+1$ events is $(n \\times \\bar{x}_{old}) + x_{new} = (n+1) \\times \\bar{x}_{new}$.",
+        "step_by_step": [
+          "Total goals in first 7 games $= 7 \\times 11 = 77$.",
+          "Total goals needed after 8 games to have an average of 12 $= 8 \\times 12 = 96$.",
+          "Required goals in game 8: $k = 96 - 77 = 19$."
+        ],
+        "common_pitfalls": "Dividing by 7 instead of 8 for the new mean."
+      }
+    }
+  ]
+}

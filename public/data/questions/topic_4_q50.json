@@ -1,0 +1,115 @@
+{
+  "id": "topic_4_q50",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 50,
+  "question_text": "80% of residents in a particular suburb oppose the construction of traffic lights at a particular intersection. A survey of 20 randomly selected residents is conducted.\n\nFind the probability that:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "exactly 16 residents oppose the construction",
+      "final_answer": "$\\approx 0.218$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognize binomial distribution $X \\sim \\text{B}(20, 0.8)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use binomial formula $P(X=16) = \\binom{20}{16} (0.8)^{16} (0.2)^4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to obtain approximately $0.218$"
+        }
+      ],
+      "solution": "Let $X$ be the number of residents who oppose the construction.\n$n = 20$, so $X = 0, 1, 2, 3, \\dots, 20$, and $p = 80\\% = 0.8$\n$\\therefore X \\sim \\text{B}(20, 0.8)$\n\n$\\begin{aligned} P(X = 16) &= \\binom{20}{16} (0.8)^{16}(0.2)^4 \\\\ &\\approx 0.218 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Binomial probability formula: $P(X = r) = \\binom{n}{r} p^r (1-p)^{n-r}$.",
+        "step_by_step": [
+          "Identify parameters: $n = 20$, $p = 0.8$, $1-p = 0.2$.",
+          "Substitute $r = 16$: $P(X = 16) = \\binom{20}{16} (0.8)^{16} (0.2)^4$.",
+          "Calculate $\\binom{20}{16} = 4845$, $(0.8)^{16} \\approx 0.0281475$, $(0.2)^4 = 0.0016$.",
+          "Multiply: $4845 \\times 0.0281475 \\times 0.0016 \\approx 0.218$."
+        ],
+        "common_pitfalls": "Swapping the powers of $p$ and $1-p$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "16 or more residents oppose the construction",
+      "final_answer": "$0.630$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up binomial cumulative probability $P(X \\ge 16)$ with $n = 20$ and $p = 0.8$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability value of approximately $0.630$"
+        }
+      ],
+      "solution": "Using technology for $X \\sim \\text{B}(20, 0.8)$:\n$$\\text{BinomialCD}(16, 20, 20, 0.8) \\approx 0.629648$$\n$$P(X \\ge 16) \\approx 0.630$$",
+      "ai_explanation": {
+        "concept_rule": "The binomial cumulative distribution function computes the probability of obtaining a range of successes in $n$ independent Bernoulli trials.",
+        "step_by_step": [
+          "Identify parameters: $n = 20$, $p = 0.8$.",
+          "Set up the lower bound as $16$ and upper bound as $20$.",
+          "Evaluate using a graphic calculator: $P(X \\ge 16) \\approx 0.630$."
+        ],
+        "common_pitfalls": "Confusing lower bounds, such as using $X > 16$ ($X \\ge 17$) instead of $X \\ge 16$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "between 10 and 15 residents oppose the construction",
+      "final_answer": "$0.370$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up binomial cumulative distribution $P(10 \\le X \\le 15)$ with $n = 20$ and $p = 0.8$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability calculation yielding approximately $0.370$"
+        }
+      ],
+      "solution": "Using technology:\n$$\\text{BinomialCD}(10, 15, 20, 0.8) \\approx 0.369788$$\n$$P(10 \\le X \\le 15) \\approx 0.370$$",
+      "ai_explanation": {
+        "concept_rule": "The probability that a binomial random variable falls in an interval $[a, b]$ is $P(a \\le X \\le b) = \\sum_{k=a}^b \\binom{n}{k} p^k (1-p)^{n-k}$.",
+        "step_by_step": [
+          "Identify parameters $n = 20$, $p = 0.8$.",
+          "Input lower bound $10$ and upper bound $15$ into technology.",
+          "Round the calculated result to three significant figures: $0.370$."
+        ],
+        "common_pitfalls": "Mistakenly excluding the endpoints $10$ or $15$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "more than 8 residents support the construction.",
+      "final_answer": "$0.000102$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Interpreting the condition that more than 8 support means 8 or fewer oppose, setting up $P(X \\le 8)$ with $n = 20, p = 0.8$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability of approximately $0.000102$"
+        }
+      ],
+      "solution": "If more than 8 residents support the construction, then 8 or fewer residents oppose the construction.\nUsing technology:\n$$\\text{BinomialCD}(0, 8, 20, 0.8) \\approx 1.017288 \\times 10^{-4}$$\n$$P(X \\le 8) \\approx 0.000102$$",
+      "ai_explanation": {
+        "concept_rule": "Complementary events or perspective shifts in binomial distributions require adjusting either $p$ or the inequality condition.",
+        "step_by_step": [
+          "Recognize that the condition corresponds to $P(X \\le 8)$.",
+          "Use a GDC to calculate the cumulative probability with lower bound $0$ and upper bound $8$.",
+          "Obtain $1.017 \\times 10^{-4} \\approx 0.000102$."
+        ],
+        "common_pitfalls": "Forgetting the scientific notation power ($10^{-4}$) displayed on the calculator."
+      }
+    }
+  ]
+}

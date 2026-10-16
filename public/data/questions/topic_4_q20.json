@@ -1,0 +1,40 @@
+{
+  "id": "topic_4_q20",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 20,
+  "question_text": "This table shows the distribution of marks obtained on a logic test.\n\n| Mark | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 1 | 3 | 5 | 8 | 4 | 2 | 0 | 1 |\n\nUse technology to find the mean and population standard deviation of the test scores.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Use technology to find the mean and population standard deviation of the test scores.",
+      "final_answer": "$\\mu \\approx 5.92, \\sigma \\approx 1.50$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Entering frequency table data into calculator or calculating $\\sum f = 24$, $\\sum fx = 142$"
+        },
+        {
+          "code": "A1",
+          "desc": "Mean $\\mu \\approx 5.92$"
+        },
+        {
+          "code": "A1",
+          "desc": "Population standard deviation $\\sigma \\approx 1.50$"
+        }
+      ],
+      "solution": "Using technology for the frequency distribution:\n$$\\sum f = n = 24$$\n$$\\sum fx = 142$$\n$$\\bar{x} = \\frac{142}{24} = 5.9166... \\approx 5.92$$\n$$\\sigma \\approx 1.4976... \\approx 1.50$$\nThe mean test score is $\\mu \\approx 5.92$, and the population standard deviation is $\\sigma \\approx 1.50$.",
+      "ai_explanation": {
+        "concept_rule": "For a discrete frequency distribution, $\\mu = \\frac{\\sum fx}{\\sum f}$ and $\\sigma = \\sqrt{\\frac{\\sum fx^2}{\\sum f} - \\mu^2}$.",
+        "step_by_step": [
+          "Compute $\\sum f = 1+3+5+8+4+2+0+1 = 24$.",
+          "Compute $\\sum fx = 3(1) + 4(3) + 5(5) + 6(8) + 7(4) + 8(2) + 9(0) + 10(1) = 142$.",
+          "Compute mean: $\\mu = \\frac{142}{24} \\approx 5.92$.",
+          "Compute population standard deviation: $\\sigma \\approx 1.50$."
+        ],
+        "common_pitfalls": "Not including frequencies when calculating the mean and standard deviation (i.e. averaging the distinct mark values)."
+      }
+    }
+  ]
+}

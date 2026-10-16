@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q11",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 11,
+  "question_text": "Find the perimeter and area of triangle ABC:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\text{Perimeter} \\approx 25.7\\text{ cm},\\; \\text{Area} \\approx 28.2\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use trigonometric ratios to find side lengths $AB$ and $BC$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate perimeter accurately to 3 significant figures"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate triangle area accurately to 3 significant figures"
+        }
+      ],
+      "solution": "$\\sin 41^\\circ = \\frac{7}{AB} \\implies AB = \\frac{7}{\\sin 41^\\circ}$\n$\\tan 41^\\circ = \\frac{7}{BC} \\implies BC = \\frac{7}{\\tan 41^\\circ}$\n\n$\\text{Perimeter} = AB + BC + AC$\n$= \\frac{7}{\\sin 41^\\circ} + \\frac{7}{\\tan 41^\\circ} + 7$\n$\\approx 25.7\\text{ cm}$\n\n$\\text{Area} = \\frac{1}{2} \\times AC \\times BC$\n$= \\frac{1}{2} \\times 7 \\times \\frac{7}{\\tan 41^\\circ}$\n$\\approx 28.2\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "In a right-angled triangle, $\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}$ and $\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$. The area is $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+        "step_by_step": [
+          "Identify opposite side $AC = 7\\text{ cm}$ relative to the angle $41^\\circ$.",
+          "Compute hypotenuse $AB = \\frac{7}{\\sin 41^\\circ}$ and adjacent side $BC = \\frac{7}{\\tan 41^\\circ}$.",
+          "Add all three side lengths to find the perimeter.",
+          "Use the formula $\\text{Area} = \\frac{1}{2} \\times AC \\times BC$ to calculate the area."
+        ],
+        "common_pitfalls": "Mixing up opposite and adjacent sides relative to angle $B = 41^\\circ$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$\\text{Perimeter} \\approx 24.0\\text{ m},\\; \\text{Area} \\approx 21.5\\text{ m}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find angle $\\hat{ABC} = 90^\\circ - 28^\\circ = 62^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find lengths of $AB$ and $BC$ using trigonometry in $\\triangle ABC$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain perimeter $\\approx 24.0\\text{ m}$ and area $\\approx 21.5\\text{ m}^2$"
+        }
+      ],
+      "solution": "$\\hat{ABC} = 90^\\circ - 28^\\circ = 62^\\circ$ {angles in triangle BCD}\n\nNow in triangle ABC:\n$\\tan 62^\\circ = \\frac{9}{BC} \\implies BC = \\frac{9}{\\tan 62^\\circ}$\n$\\sin 62^\\circ = \\frac{9}{AB} \\implies AB = \\frac{9}{\\sin 62^\\circ}$\n\n$\\text{Perimeter} = AB + BC + AC$\n$= \\frac{9}{\\sin 62^\\circ} + \\frac{9}{\\tan 62^\\circ} + 9$\n$\\approx 24.0\\text{ m}$\n\n$\\text{Area} = \\frac{1}{2} \\times AC \\times BC$\n$= \\frac{1}{2} \\times 9 \\times \\frac{9}{\\tan 62^\\circ}$\n$\\approx 21.5\\text{ m}^2$",
+      "ai_explanation": {
+        "concept_rule": "First deduce the unknown acute angle in the main right-angled triangle by angle subtraction in the sub-triangle, then apply standard right-triangle trigonometry.",
+        "step_by_step": [
+          "Calculate $\\angle ABC = 90^\\circ - 28^\\circ = 62^\\circ$ using right triangle $BCD$.",
+          "In right triangle $ABC$ with opposite side $AC = 9\\text{ m}$, find $BC = \\frac{9}{\\tan 62^\\circ}$ and $AB = \\frac{9}{\\sin 62^\\circ}$.",
+          "Compute the perimeter as $AB + BC + AC \\approx 24.0\\text{ m}$.",
+          "Compute the area as $\\frac{1}{2} \\times AC \\times BC \\approx 21.5\\text{ m}^2$."
+        ],
+        "common_pitfalls": "Using the wrong angle ($28^\\circ$ instead of $62^\\circ$) for the overall triangle $ABC$."
+      }
+    }
+  ]
+}

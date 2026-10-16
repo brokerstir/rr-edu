@@ -1,0 +1,59 @@
+{
+  "id": "topic_3_q4",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 4,
+  "question_text": "A sector of a circle of radius $10\\text{ cm}$ has perimeter $40\\text{ cm}$. Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the arc length of the sector",
+      "final_answer": "$20\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set perimeter equal to $2r + \\text{arc length}$ with $r = 10$ and perimeter $= 40$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\text{arc length} = 20\\text{ cm}$"
+        }
+      ],
+      "solution": "$\\text{Perimeter} = 2r + \\text{arc length}$\n$\\therefore 40 = 2(10) + \\text{arc length}$\n$\\therefore \\text{arc length} = 20\\text{ cm}$",
+      "ai_explanation": {
+        "concept_rule": "The perimeter of a sector consists of the two straight edges (radii) and the curved boundary (arc length): $P = 2r + s$.",
+        "step_by_step": [
+          "Substitute $P = 40$ and $r = 10$ into $P = 2r + \\text{arc length}$.",
+          "$40 = 20 + \\text{arc length}$.",
+          "$\\text{arc length} = 20\\text{ cm}$."
+        ],
+        "common_pitfalls": "Confusing sector perimeter with just the curved arc length."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the area of the sector.",
+      "final_answer": "$100\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express arc length in terms of $\\theta$: $20 = \\frac{\\theta}{360} \\times 2\\pi(10)$ to find $\\theta = \\frac{360}{\\pi}$ or $\\frac{\\theta}{360} = \\frac{1}{\\pi}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Compute area $= \\frac{\\theta}{360} \\times \\pi r^2 = 100\\text{ cm}^2$"
+        }
+      ],
+      "solution": "Now, $\\text{arc length} = \\frac{\\theta}{360} \\times 2\\pi r$\n$\\therefore 20 = \\frac{\\theta}{360} \\times 2\\pi(10) \\quad \\{\\text{from a}\\}$\n$\\therefore 20 = \\frac{\\theta\\pi}{18}$\n$\\therefore \\theta = \\frac{360}{\\pi}$\n$\\therefore \\text{area} = \\frac{\\theta}{360} \\times \\pi r^2$\n$= \\frac{\\left(\\frac{360}{\\pi}\\right)}{360} \\times \\pi(10)^2$\n$= 100\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of a sector can be calculated from its central angle, or directly using $\\text{Area} = \\frac{1}{2} r s$, where $s$ is the arc length.",
+        "step_by_step": [
+          "Using arc length $20\\text{ cm} = \\frac{\\theta}{360} \\times 2\\pi(10)$, find $\\frac{\\theta}{360} = \\frac{1}{\\pi}$.",
+          "Substitute into area formula: $\\text{Area} = \\frac{\\theta}{360} \\times \\pi(10)^2 = \\frac{1}{\\pi} \\times 100\\pi = 100\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Rounding $\\theta$ too early when computing area, which leads to precision errors."
+      }
+    }
+  ]
+}

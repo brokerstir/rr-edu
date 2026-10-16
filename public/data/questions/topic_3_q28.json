@@ -1,0 +1,63 @@
+{
+  "id": "topic_3_q28",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 28,
+  "question_text": "In triangle ABC, $\\text{AB} = 15\\text{ cm}$, $\\text{AC} = 12\\text{ cm}$, and $\\text{A}\\widehat{\\text{B}}\\text{C}$ measures $30^\\circ$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the two possible values of $\\text{A}\\widehat{\\text{C}}\\text{B}$.",
+      "final_answer": "$\\text{A}\\widehat{\\text{C}}\\text{B} \\approx 38.7^\\circ \\text{ or } 141.3^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule for $\\sin\\text{A}\\widehat{\\text{C}}\\text{B}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding acute value $38.7^\\circ$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding obtuse supplementary angle $141.3^\\circ$"
+        }
+      ],
+      "solution": "$\\frac{\\sin\\text{A}\\widehat{\\text{C}}\\text{B}}{15} = \\frac{\\sin 30^\\circ}{12} \\implies \\sin\\text{A}\\widehat{\\text{C}}\\text{B} = \\frac{15\\sin 30^\\circ}{12}$. Thus $\\text{A}\\widehat{\\text{C}}\\text{B} = \\sin^{-1}\\left(\\frac{15\\sin 30^\\circ}{12}\\right)$ or its supplement $\\implies \\text{A}\\widehat{\\text{C}}\\text{B} \\approx 38.7^\\circ \\text{ or } 180^\\circ - 38.7^\\circ \\implies \\text{A}\\widehat{\\text{C}}\\text{B} \\approx 38.7^\\circ \\text{ or } 141.3^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The ambiguous case of the sine rule occurs when finding an angle, since $\\sin(\\theta) = \\sin(180^\\circ - \\theta)$.",
+        "step_by_step": [
+          "Set up the sine rule using opposite pairs.",
+          "Find the principal angle using inverse sine.",
+          "Determine the supplementary angle by subtracting from $180^\\circ$."
+        ],
+        "common_pitfalls": "Omitting the obtuse solution when both angles are geometrically possible."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Given that $\\text{B}\\widehat{\\text{A}}\\text{C}$ is acute, find its measure.",
+      "final_answer": "$\\text{B}\\widehat{\\text{A}}\\text{C} \\approx 8.7^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the obtuse angle for $\\text{A}\\widehat{\\text{C}}\\text{B}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Computing $\\text{B}\\widehat{\\text{A}}\\text{C}$"
+        }
+      ],
+      "solution": "$\\text{B}\\widehat{\\text{A}}\\text{C}$ is acute if $\\text{A}\\widehat{\\text{C}}\\text{B}$ is obtuse. $\\therefore \\text{B}\\widehat{\\text{A}}\\text{C} \\approx 180^\\circ - 30^\\circ - 141.3^\\circ \\approx 8.7^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The sum of angles in a triangle is $180^\\circ$.",
+        "step_by_step": [
+          "Select the obtuse angle $\\text{A}\\widehat{\\text{C}}\\text{B} \\approx 141.3^\\circ$ from part (a).",
+          "Subtract the known angles ($30^\\circ$ and $141.3^\\circ$) from $180^\\circ$ to find angle $A$."
+        ],
+        "common_pitfalls": "Using the acute angle from part (a) instead of the obtuse angle specified by the condition."
+      }
+    }
+  ]
+}

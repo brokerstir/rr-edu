@@ -1,0 +1,89 @@
+{
+  "id": "topic_4_q49",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 49,
+  "question_text": "A bag contains 1 blue ticket, 3 red tickets, and 8 yellow tickets. A player randomly selects a ticket from the bag, and receives $40 for a blue ticket, $20 for a red ticket, and $5 for a yellow ticket.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the expected return for one trial of this game.",
+      "final_answer": "$\\approx \\$11.67$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up expected return $E(X) = 40\\left(\\frac{1}{12}\\right) + 20\\left(\\frac{3}{12}\\right) + 5\\left(\\frac{8}{12}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate to get $\\frac{140}{12} \\approx \\$11.67$"
+        }
+      ],
+      "solution": "Let $X$ be the return from each game.\n$$\\begin{array}{|c|c|c|c|} \\hline \\text{Ticket colour} & \\text{Blue} & \\text{Red} & \\text{Yellow} \\\\ \\hline \\text{Winnings} & \\$40 & \\$20 & \\$5 \\\\ \\hline \\text{Probability} & \\frac{1}{12} & \\frac{3}{12} & \\frac{8}{12} \\\\ \\hline \\end{array}$$\n\n$\\begin{aligned} E(X) &= 40\\left(\\frac{1}{12}\\right) + 20\\left(\\frac{3}{12}\\right) + 5\\left(\\frac{8}{12}\\right) \\\\ &= \\frac{40 + 60 + 40}{12} \\\\ &= \\frac{140}{12} \\\\ &\\approx \\$11.67 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The expected return is the sum of the product of each payout and its probability.",
+        "step_by_step": [
+          "Multiply winnings by probabilities: $40\\left(\\frac{1}{12}\\right) + 20\\left(\\frac{3}{12}\\right) + 5\\left(\\frac{8}{12}\\right)$.",
+          "Sum the values: $\\frac{40 + 60 + 40}{12} = \\frac{140}{12} = \\frac{35}{3}$.",
+          "Convert to dollars and cents: $\\approx \\$11.67$."
+        ],
+        "common_pitfalls": "Subtracting the ticket cost prematurely when asked for the expected return."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Given that the game costs $15 to play, explain why it would not be advisable to play this game.",
+      "final_answer": "$\\text{No, expected loss of } \\$3.33 \\text{ per game}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Compute net gain: expected return minus cost"
+        },
+        {
+          "code": "R1",
+          "desc": "Conclude that playing is not advisable due to negative expected gain"
+        }
+      ],
+      "solution": "The expected return per game is $\\$11.67$. It costs $\\$15$ to play.\nSo, the expected gain $\\approx \\$11.67 - \\$15 \\approx -\\$3.33$.\nIt is not advisable to play this game many times as the player can expect to lose $\\$3.33$ on average per game.",
+      "ai_explanation": {
+        "concept_rule": "A game is favorable if expected net gain $> 0$, fair if $= 0$, and unfavorable if $< 0$.",
+        "step_by_step": [
+          "Calculate net expected gain: $E(\\text{Gain}) = E(X) - \\text{cost} = \\$11.67 - \\$15 = -\\$3.33$.",
+          "Since expected gain is negative, it is not advisable to play repeatedly."
+        ],
+        "common_pitfalls": "Neglecting to provide a clear concluding recommendation."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the number of extra red tickets that should be added to the bag to make the game fair.",
+      "final_answer": "$8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express new probabilities in terms of $k$ extra red tickets"
+        },
+        {
+          "code": "M1",
+          "desc": "Set expected return equal to game cost of $\\$15$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve linear equation to find $k = 8$"
+        }
+      ],
+      "solution": "Let $k$ be the number of extra red tickets added to the bag.\n$$\\begin{array}{|c|c|c|c|} \\hline \\text{Ticket colour} & \\text{Blue} & \\text{Red} & \\text{Yellow} \\\\ \\hline \\text{Winnings} & \\$40 & \\$20 & \\$5 \\\\ \\hline \\text{Probability} & \\frac{1}{12+k} & \\frac{k+3}{12+k} & \\frac{8}{12+k} \\\\ \\hline \\end{array}$$\n\nFor the game to be fair, the expected return must equal the cost of each game.\n$\\begin{aligned} \\therefore E(X) = 40\\left(\\frac{1}{12+k}\\right) + 20\\left(\\frac{k+3}{12+k}\\right) + 5\\left(\\frac{8}{12+k}\\right) &= 15 \\\\ \\frac{40}{12+k} + \\frac{20k + 60}{12+k} + \\frac{40}{12+k} &= 15 \\\\ \\frac{20k + 140}{12+k} &= 15 \\\\ 20k + 140 &= 15(12+k) \\\\ 20k + 140 &= 180 + 15k \\\\ 5k &= 40 \\\\ k &= 8 \\end{aligned}$\n\nSo, 8 extra red tickets should be added to the bag to make the game fair.",
+      "ai_explanation": {
+        "concept_rule": "A game is fair when the expected return equals the cost to play ($E(X) = 15$).",
+        "step_by_step": [
+          "With $k$ red tickets added, total tickets become $12+k$, and red tickets become $3+k$.",
+          "Set up expected value equation: $\\frac{40(1) + 20(k+3) + 5(8)}{12+k} = 15$.",
+          "Simplify numerator: $40 + 20k + 60 + 40 = 20k + 140$.",
+          "Solve: $20k + 140 = 15(12+k) = 180 + 15k \\implies 5k = 40 \\implies k = 8$."
+        ],
+        "common_pitfalls": "Forgetting to update the denominator to $12+k$ for all ticket types."
+      }
+    }
+  ]
+}

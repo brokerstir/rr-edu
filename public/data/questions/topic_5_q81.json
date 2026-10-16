@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q81",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 81,
+  "question_text": "The area of the region bounded by $f(x) = \\frac{10}{x+5}$, the $x$-axis, $x = 0$, and $x = k$, is $10\\ln 3\\text{ units}^2$. Find the possible values of $k$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The area of the region bounded by $f(x) = \\frac{10}{x+5}$, the $x$-axis, $x = 0$, and $x = k$, is $10\\ln 3\\text{ units}^2$. Find the possible values of $k$.",
+      "final_answer": "$k = 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral equation $\\int_0^k \\frac{10}{x+5}\\,dx = 10\\ln 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrating to obtain $[10\\ln|x+5|]_0^k = 10\\ln 3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Solving the logarithmic equation to get $k = 10$ or $k = -20$"
+        },
+        {
+          "code": "R1",
+          "desc": "Rejecting $k = -20$ due to domain discontinuity at $x = -5$"
+        }
+      ],
+      "solution": "$\\text{Area} = 10\\ln 3\\text{ units}^2$\n$\\int_{0}^{k} \\frac{10}{x+5}\\,dx = 10\\ln 3$\n$\\therefore [10\\ln|x+5|]_0^k = 10\\ln 3$\n$\\therefore 10\\ln|k+5| - 10\\ln 5 = 10\\ln 3$\n$\\therefore \\ln|k+5| - \\ln 5 = \\ln 3$\n$\\therefore \\ln\\left|\\frac{k+5}{5}\\right| = \\ln 3$\n$\\therefore \\left|\\frac{k+5}{5}\\right| = 3$\n$\\therefore |k+5| = 15$\n$\\therefore k+5 = \\pm 15$\n$\\therefore k = 10\\text{ or } -20$\n\nBut for $k = -20$, $f(x)$ is not defined for all $x$ such that $k \\le x \\le 0$ as $f(x)$ is not defined for $x = -5$.\nSo, the only possible value of $k$ is $10$.",
+      "ai_explanation": {
+        "concept_rule": "The area under a rational curve is evaluated using logarithmic integration: $\\int \\frac{1}{x+a}\\,dx = \\ln|x+a| + C$. The integrand must be continuous on the interval of integration.",
+        "step_by_step": [
+          "Set up the area integral equation $\\int_0^k \\frac{10}{x+5}\\,dx = 10\\ln 3$.",
+          "Integrate to obtain $10[\\ln|x+5|]_0^k = 10\\ln 3$.",
+          "Simplify $\\ln|k+5| - \\ln 5 = \\ln 3$ to $\\frac{|k+5|}{5} = 3$.",
+          "Solve $|k+5| = 15$, which gives $k = 10$ or $k = -20$.",
+          "Check continuity: on $[-20, 0]$, $x = -5$ causes a vertical asymptote, making the integral improper/divergent. Therefore, reject $k = -20$."
+        ],
+        "common_pitfalls": "Failing to check the domain of validity for the integral across the interval $[k, 0]$ or $[0, k]$ and keeping extraneous solutions."
+      }
+    }
+  ]
+}

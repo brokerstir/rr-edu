@@ -1,0 +1,93 @@
+{
+  "id": "topic_5_q73",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 73,
+  "question_text": "Suppose $\\int_{0}^{2} f(x)\\,dx = 2$. Determine the value of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int_{2}^{0} f(x)\\,dx$",
+      "final_answer": "$-2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the reversal of limits property $\\int_b^a f(x)\\,dx = -\\int_a^b f(x)\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $-2$"
+        }
+      ],
+      "solution": "$\\int_2^0 f(x)\\,dx = -\\int_0^2 f(x)\\,dx = -2$",
+      "ai_explanation": {
+        "concept_rule": "Reversing limits of integration changes the sign of the integral.",
+        "step_by_step": [
+          "Recall that $\\int_a^b f(x)\\,dx = -\\int_b^a f(x)\\,dx$.",
+          "Given $\\int_0^2 f(x)\\,dx = 2$, swapping limits yields $-2$."
+        ],
+        "common_pitfalls": "Forgetting that reversing integration limits negates the value."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int_{0}^{2} (3+2f(x))\\,dx$",
+      "final_answer": "$10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Splitting the integral using linearity properties"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\int_0^2 3\\,dx = 6$ and $2\\int_0^2 f(x)\\,dx = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Summing to get $10$"
+        }
+      ],
+      "solution": "$\\int_0^2 (3 + 2f(x))\\,dx = \\int_0^2 3\\,dx + \\int_0^2 2f(x)\\,dx = 3(2-0) + 2\\int_0^2 f(x)\\,dx = 6 + 2(2) = 6 + 4 = 10$",
+      "ai_explanation": {
+        "concept_rule": "Linearity property of integrals: $\\int (af(x) + bg(x))\\,dx = a\\int f(x)\\,dx + b\\int g(x)\\,dx$.",
+        "step_by_step": [
+          "Separate into $\\int_0^2 3\\,dx$ and $2\\int_0^2 f(x)\\,dx$.",
+          "Compute the constant integral: $3 \\times (2 - 0) = 6$.",
+          "Use the given value $\\int_0^2 f(x)\\,dx = 2$ to compute $2(2) = 4$.",
+          "Add the results: $6 + 4 = 10$."
+        ],
+        "common_pitfalls": "Forgetting to integrate the constant term $3$ with respect to $x$ over the interval $[0, 2]$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$k$ such that $\\int_{0}^{2} (kf(x)+2)\\,dx = 10$.",
+      "final_answer": "$3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying linearity to express equation in terms of $k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Forming linear equation $2k + 4 = 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $k = 3$"
+        }
+      ],
+      "solution": "$\\int_0^2 (kf(x) + 2)\\,dx = 10 \\implies \\int_0^2 kf(x)\\,dx + \\int_0^2 2\\,dx = 10 \\implies k\\int_0^2 f(x)\\,dx + 2(2-0) = 10 \\implies k(2) + 4 = 10 \\implies 2k + 4 = 10 \\implies 2k = 6 \\implies k = 3$",
+      "ai_explanation": {
+        "concept_rule": "Use linearity properties of definite integrals to form and solve an algebraic equation.",
+        "step_by_step": [
+          "Split the integral into $k\\int_0^2 f(x)\\,dx + \\int_0^2 2\\,dx = 10$.",
+          "Substitute $\\int_0^2 f(x)\\,dx = 2$ and $\\int_0^2 2\\,dx = 4$.",
+          "Solve $2k + 4 = 10$ for $k$."
+        ],
+        "common_pitfalls": "Treating $\\int_0^2 2\\,dx$ as $2$ instead of $2(2 - 0) = 4$."
+      }
+    }
+  ]
+}

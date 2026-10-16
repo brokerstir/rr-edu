@@ -1,0 +1,98 @@
+{
+  "id": "topic_5_q7",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 7,
+  "question_text": "Find the gradient of the tangent to:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = (3 - x)^3$ at $x = 2$",
+      "final_answer": "$-3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding $\\frac{dy}{dx}$ using the chain rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x = 2$ into the derivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct gradient $-3$"
+        }
+      ],
+      "solution": "$y = (3 - x)^3$\n$\\therefore \\frac{dy}{dx} = 3(3 - x)^2 \\times (-1) \\quad \\{\\text{chain rule}\\}\n= -3(3 - x)^2$\n\nWhen $x = 2$, $\\frac{dy}{dx} = -3(3 - 2)^2 = -3$.\nSo, the tangent has gradient $-3$.",
+      "ai_explanation": {
+        "concept_rule": "The gradient of the tangent to a curve at a given point is the value of the first derivative evaluated at that $x$-value.",
+        "step_by_step": [
+          "Differentiate $y = (3 - x)^3$ with respect to $x$ using chain rule: $3(3 - x)^2 \\cdot (-1) = -3(3 - x)^2$.",
+          "Substitute $x = 2$: $\\frac{dy}{dx}\\big|_{x=2} = -3(3 - 2)^2 = -3(1)^2 = -3$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign from the inner derivative $\\frac{d}{dx}[3 - x] = -1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\frac{1}{(x + 2)^4}$ at $x = -1$",
+      "final_answer": "$-4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $y = (x + 2)^{-4}$ using the chain rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x = -1$ into the derivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct gradient $-4$"
+        }
+      ],
+      "solution": "$y = \\frac{1}{(x + 2)^4} = (x + 2)^{-4}$\n$\\therefore \\frac{dy}{dx} = -4(x + 2)^{-5} = \\frac{-4}{(x + 2)^5}$\n\nWhen $x = -1$, $\\frac{dy}{dx} = \\frac{-4}{(-1 + 2)^5} = -4$.\nSo, the tangent has gradient $-4$.",
+      "ai_explanation": {
+        "concept_rule": "Find $\\frac{dy}{dx}$ using power/chain rule, then substitute $x = -1$ to get the slope.",
+        "step_by_step": [
+          "Rewrite as $y = (x + 2)^{-4}$.",
+          "Differentiate: $\\frac{dy}{dx} = -4(x + 2)^{-5} = \\frac{-4}{(x + 2)^5}$.",
+          "Evaluate at $x = -1$: $\\frac{-4}{(-1 + 2)^5} = \\frac{-4}{1^5} = -4$."
+        ],
+        "common_pitfalls": "Miscalculating $(-1 + 2)^5$ or dropping the negative sign on $-4$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = \\sqrt{x + \\frac{1}{x^2} + 1}$ at $x = 4$.",
+      "final_answer": "$\\frac{31}{144}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing root as power $\\frac{1}{2}$ and differentiating via chain rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x = 4$ into $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation to $\\frac{31}{144}$"
+        }
+      ],
+      "solution": "$y = \\sqrt{x + \\frac{1}{x^2} + 1} = (x + x^{-2} + 1)^{\\frac{1}{2}}$\n$\\therefore \\frac{dy}{dx} = \\frac{1}{2}(x + x^{-2} + 1)^{-\\frac{1}{2}} \\times (1 - 2x^{-3}) \\quad \\{\\text{chain rule}\\}\n= \\frac{1 - \\frac{2}{x^3}}{2\\sqrt{x + \\frac{1}{x^2} + 1}}$\n\nWhen $x = 4$,\n$\\frac{dy}{dx} = \\frac{1 - \\frac{2}{4^3}}{2\\sqrt{4 + \\frac{1}{4^2} + 1}}\n= \\frac{1 - \\frac{2}{64}}{2\\sqrt{5 + \\frac{1}{16}}}\n= \\frac{\\frac{31}{32}}{2\\sqrt{\\frac{81}{16}}}\n= \\frac{\\frac{31}{32}}{2 \\times \\frac{9}{4}}\n= \\frac{31}{2 \\times 32} \\times \\frac{4}{9}\n= \\frac{31}{144}$\n\nSo, the tangent has gradient $\\frac{31}{144}$.",
+      "ai_explanation": {
+        "concept_rule": "Chain rule with radical and negative powers, followed by numerical simplification of complex fractions.",
+        "step_by_step": [
+          "Write $y = (x + x^{-2} + 1)^{1/2}$ and differentiate to obtain $\\frac{1 - 2x^{-3}}{2\\sqrt{x + x^{-2} + 1}}$.",
+          "Substitute $x = 4$: numerator becomes $1 - \\frac{2}{64} = \\frac{31}{32}$.",
+          "Inside the square root: $4 + 1 + \\frac{1}{16} = \\frac{81}{16}$, whose square root is $\\frac{9}{4}$.",
+          "Denominator becomes $2 \\times \\frac{9}{4} = \\frac{9}{2}$.",
+          "Divide numerator by denominator: $\\frac{31/32}{9/2} = \\frac{31}{32} \\times \\frac{2}{9} = \\frac{31}{144}$."
+        ],
+        "common_pitfalls": "Arithmetic errors when simplifying the nested fractions and square roots."
+      }
+    }
+  ]
+}

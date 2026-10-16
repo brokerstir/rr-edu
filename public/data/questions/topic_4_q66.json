@@ -1,0 +1,65 @@
+{
+  "id": "topic_4_q66",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 66,
+  "question_text": "The lengths of steel rods cut by a machine are normally distributed with mean $13.8\\text{ cm}$. It is found that 1.5% of all rods are less than $13.2\\text{ cm}$ long.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the probability that a randomly selected rod has length between 13.2 cm and 13.8 cm.",
+      "final_answer": "$0.485$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using properties of the normal distribution to express the interval probability as a difference of cumulative probabilities"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly calculating the probability to obtain 0.485"
+        }
+      ],
+      "solution": "Let the length of a randomly selected steel rod be $X\\text{ cm}$. So, $X \\sim \\text{N}(13.8, \\sigma^2)$.\\\\\\begin{aligned} \\text{P}(13.2 < X < 13.8) &= \\text{P}(X < 13.8) - \\text{P}(X < 13.2) \\\\ &= 0.5 - 0.015 \\\\ &= 0.485 \\end{aligned}",
+      "ai_explanation": {
+        "concept_rule": "For a normal distribution $X \\sim \\text{N}(\\mu, \\sigma^2)$, $\\text{P}(X < \\mu) = 0.5$ due to symmetry about the mean. The probability of an interval is given by $\\text{P}(a < X < b) = \\text{P}(X < b) - \\text{P}(X < a)$.",
+        "step_by_step": [
+          "Recognize that the upper limit $13.8$ is the mean $\\mu$, so $\\text{P}(X < 13.8) = 0.5$.",
+          "Use the given lower-tail probability $\\text{P}(X < 13.2) = 0.015$.",
+          "Subtract the cumulative probability of the lower bound from that of the upper bound: $0.5 - 0.015 = 0.485$."
+        ],
+        "common_pitfalls": "Forgetting that the normal distribution is symmetrical about $\\mu$, or confusing $P(X < 13.8)$ with a standard normal value."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the standard deviation of rod lengths produced by this machine.",
+      "final_answer": "$\\sigma \\approx 0.276$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Standardizing the variable using $Z = \\frac{X - \\mu}{\\sigma}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Using inverse normal to find the critical value $z \\approx -2.17$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\sigma$ to obtain approximately 0.276"
+        }
+      ],
+      "solution": "\\begin{aligned} \\text{P}(X < 13.2) &= 0.015 \\\\ \\therefore \\text{P}\\left(\\frac{X - 13.8}{\\sigma} < \\frac{13.2 - 13.8}{\\sigma}\\right) &= 0.015 \\\\ \\therefore \\text{P}\\left(Z < \\frac{-0.6}{\\sigma}\\right) &= 0.015 \\quad \\left\\{Z = \\frac{X - 13.8}{\\sigma}\\right\\} \\\\ \\therefore \\frac{-0.6}{\\sigma} &\\approx -2.17 \\quad \\left\\{Z \\sim \\text{N}(0, 1^2)\\right\\} \\\\ \\therefore \\sigma &\\approx \\frac{-0.6}{-2.17} \\\\ \\therefore \\sigma &\\approx 0.276 \\end{aligned}",
+      "ai_explanation": {
+        "concept_rule": "To find an unknown parameter of a normal distribution from a known tail probability, standardize to $Z = \\frac{X - \\mu}{\\sigma} \\sim \\text{N}(0, 1)$ and use the inverse normal function.",
+        "step_by_step": [
+          "Standardize the given probability equation: $\\text{P}\\left(Z < \\frac{13.2 - 13.8}{\\sigma}\\right) = 0.015$.",
+          "Use the inverse normal distribution with area $0.015$, mean $0$, and standard deviation $1$ to find $z \\approx -2.17009$.",
+          "Set up the equation $\\frac{-0.6}{\\sigma} \\approx -2.17$.",
+          "Solve for $\\sigma$: $\\sigma \\approx \\frac{-0.6}{-2.17} \\approx 0.276$."
+        ],
+        "common_pitfalls": "Omitting the negative sign on the $z$-score for a probability in the lower tail ($< 0.5$), which would lead to an invalid negative standard deviation."
+      }
+    }
+  ]
+}

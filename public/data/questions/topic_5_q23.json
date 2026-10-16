@@ -1,0 +1,69 @@
+{
+  "id": "topic_5_q23",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 23,
+  "question_text": "Let $g(x) = -x\\cos x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $g'(x)$.",
+      "final_answer": "$g'(x) = -\\cos x + x\\sin x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule to $-x\\cos x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative"
+        }
+      ],
+      "solution": "$g(x) = -x\\cos x$\n$\\therefore g'(x) = (-1)\\cos x - x(-\\sin x) \\quad \\{\\text{product rule}\\}$\n$= -\\cos x + x\\sin x$",
+      "ai_explanation": {
+        "concept_rule": "Product rule: $(uv)' = u'v + uv'$ with $u = -x$ and $v = \\cos x$.",
+        "step_by_step": [
+          "Let $u = -x$, so $u' = -1$.",
+          "Let $v = \\cos x$, so $v' = -\\sin x$.",
+          "Form $u'v + uv' = (-1)\\cos x + (-x)(-\\sin x) = -\\cos x + x\\sin x$."
+        ],
+        "common_pitfalls": "Negative sign error when multiplying $(-x)(-\\sin x)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the equation of the tangent to the graph $y = g(x)$ at the point where $x = \\frac{\\pi}{3}$.",
+      "final_answer": "$y = \\left(-\\frac{1}{2} + \\frac{\\pi}{2\\sqrt{3}}\\right)x - \\frac{\\pi^2}{6\\sqrt{3}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the point of contact $g(\\pi/3)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating $g'(\\pi/3)$ to find the gradient"
+        },
+        {
+          "code": "A1",
+          "desc": "Setting up the tangent equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to the final linear form"
+        }
+      ],
+      "solution": "Since $g\\left(\\frac{\\pi}{3}\\right) = -\\frac{\\pi}{3}\\cos\\frac{\\pi}{3} = -\\frac{\\pi}{3} \\times \\frac{1}{2} = -\\frac{\\pi}{6}$, the point of contact is $\\left(\\frac{\\pi}{3}, -\\frac{\\pi}{6}\\right)$.\nNow $g'\\left(\\frac{\\pi}{3}\\right) = -\\cos\\frac{\\pi}{3} + \\frac{\\pi}{3}\\sin\\frac{\\pi}{3}$\n$= -\\frac{1}{2} + \\frac{\\pi}{3} \\times \\frac{\\sqrt{3}}{2}$\n$= -\\frac{1}{2} + \\frac{\\pi}{2\\sqrt{3}}$\nThe tangent has equation $y = g'\\left(\\frac{\\pi}{3}\\right)\\left(x-\\frac{\\pi}{3}\\right) + g\\left(\\frac{\\pi}{3}\\right)$\n$\\therefore y = \\left(-\\frac{1}{2} + \\frac{\\pi}{2\\sqrt{3}}\\right)\\left(x-\\frac{\\pi}{3}\\right) - \\frac{\\pi}{6}$\n$\\therefore y = \\left(-\\frac{1}{2} + \\frac{\\pi}{2\\sqrt{3}}\\right)x + \\frac{\\pi}{6} - \\frac{\\pi^2}{6\\sqrt{3}} - \\frac{\\pi}{6}$\n$\\therefore y = \\left(-\\frac{1}{2} + \\frac{\\pi}{2\\sqrt{3}}\\right)x - \\frac{\\pi^2}{6\\sqrt{3}}$",
+      "ai_explanation": {
+        "concept_rule": "Tangent line formula: $y - y_0 = m(x - x_0)$ using exact values of trigonometric functions.",
+        "step_by_step": [
+          "Calculate $g(\\pi/3) = -(\\pi/3)(1/2) = -\\pi/6$.",
+          "Calculate the slope $m = g'(\\pi/3) = -\\cos(\\pi/3) + (\\pi/3)\\sin(\\pi/3) = -1/2 + \\frac{\\pi\\sqrt{3}}{6} = -1/2 + \\frac{\\pi}{2\\sqrt{3}}$.",
+          "Substitute into $y - (-\\pi/6) = m(x - \\pi/3)$.",
+          "Expand: $m(x - \\pi/3) - \\pi/6 = mx - (-\\frac{1}{2})(\\pi/3) - \\frac{\\pi^2}{6\\sqrt{3}} - \\frac{\\pi}{6} = mx + \\frac{\\pi}{6} - \\frac{\\pi^2}{6\\sqrt{3}} - \\frac{\\pi}{6} = mx - \\frac{\\pi^2}{6\\sqrt{3}}$."
+        ],
+        "common_pitfalls": "Failing to notice that $+\\pi/6$ and $-\\pi/6$ cancel out in the constant term."
+      }
+    }
+  ]
+}

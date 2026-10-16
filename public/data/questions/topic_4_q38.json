@@ -1,0 +1,87 @@
+{
+  "id": "topic_4_q38",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 38,
+  "question_text": "40% of students in a class own an orange highlighter, 20% own a blue highlighter, and 50% do not own either coloured highlighter.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a Venn diagram to describe the situation.",
+      "final_answer": "$0.1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equation $(0.4 - x) + x + (0.2 - x) = 1 - 0.5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x = 0.1$"
+        }
+      ],
+      "solution": "Let $O$ represent a student who owns an orange highlighter, and $B$ represent a student who owns a blue highlighter.\nLet the proportion of students in $O \\cap B$ be $x$.\n$$\\therefore \\text{the proportion in } O \\cap B' \\text{ is } 0.4 - x$$\n$$\\text{and the proportion in } O' \\cap B \\text{ is } 0.2 - x.$$\n$$\\text{The proportion in } O' \\cap B' \\text{ is } 0.5.$$\n$$\\therefore (0.4 - x) + x + (0.2 - x) = 1 - 0.5$$\n$$\\therefore 0.6 - x = 0.5$$\n$$\\therefore x = 0.1$$",
+      "ai_explanation": {
+        "concept_rule": "The sum of probabilities of all disjoint regions in a Venn diagram equals 1.",
+        "step_by_step": [
+          "Let $x = \\text{P}(O \\cap B)$.",
+          "Then only orange is $0.4 - x$ and only blue is $0.2 - x$.",
+          "Outside both is $0.5$.",
+          "The union has probability $1 - 0.5 = 0.5$.",
+          "Therefore, $(0.4 - x) + x + (0.2 - x) = 0.5 \\implies 0.6 - x = 0.5 \\implies x = 0.1$."
+        ],
+        "common_pitfalls": "Adding the total probabilities $\\text{P}(O) + \\text{P}(B)$ without subtracting the intersection."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find the probability that a randomly selected student owns a blue highlighter, given they own an orange highlighter.",
+      "final_answer": "$\\frac{1}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using formula $\\text{P}(B \\mid O) = \\frac{\\text{P}(B \\cap O)}{\\text{P}(O)}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $\\frac{0.1}{0.4} = \\frac{1}{4}$"
+        }
+      ],
+      "solution": "$$\\text{P}(B \\mid O) = \\frac{\\text{P}(B \\cap O)}{\\text{P}(O)} = \\frac{0.1}{0.4} = \\frac{1}{4}$$",
+      "ai_explanation": {
+        "concept_rule": "The conditional probability formula is $\\text{P}(B \\mid O) = \\frac{\\text{P}(B \\cap O)}{\\text{P}(O)}$.",
+        "step_by_step": [
+          "From part a, $\\text{P}(B \\cap O) = 0.1$.",
+          "Given $\\text{P}(O) = 0.4$.",
+          "Compute $\\frac{0.1}{0.4} = \\frac{1}{4}$."
+        ],
+        "common_pitfalls": "Putting $\\text{P}(B)$ in the denominator instead of $\\text{P}(O)$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the probability that a randomly selected student owns an orange highlighter, given they do not own a blue highlighter.",
+      "final_answer": "$\\frac{3}{8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using formula $\\text{P}(O \\mid B') = \\frac{\\text{P}(O \\cap B')}{\\text{P}(B')}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\frac{0.3}{0.8} = \\frac{3}{8}$"
+        }
+      ],
+      "solution": "$$\\text{P}(O \\mid B') = \\frac{\\text{P}(O \\cap B')}{\\text{P}(B')} = \\frac{0.3}{0.8} = \\frac{3}{8}$$",
+      "ai_explanation": {
+        "concept_rule": "Conditional probability on a complement: $\\text{P}(O \\mid B') = \\frac{\\text{P}(O \\cap B')}{\\text{P}(B')}$.",
+        "step_by_step": [
+          "Find $\\text{P}(O \\cap B') = 0.4 - x = 0.4 - 0.1 = 0.3$.",
+          "Find $\\text{P}(B') = 1 - \\text{P}(B) = 1 - 0.2 = 0.8$.",
+          "Divide: $\\frac{0.3}{0.8} = \\frac{3}{8}$."
+        ],
+        "common_pitfalls": "Using $1 - \\text{P}(O)$ or miscalculating $\\text{P}(B')$."
+      }
+    }
+  ]
+}

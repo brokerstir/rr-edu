@@ -1,0 +1,44 @@
+{
+  "id": "topic_5_q53",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 53,
+  "question_text": "By considering $\\frac{d}{dx}(x^2 \\ln x)$, find $\\int x \\ln x\\,dx$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "By considering $\\frac{d}{dx}(x^2 \\ln x)$, find $\\int x \\ln x\\,dx$.",
+      "final_answer": "$\\frac{1}{2}x^2\\ln x - \\frac{1}{4}x^2 + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $x^2 \\ln x$ using the product rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Rearrange the resulting equation to isolate $x \\ln x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Integrate both sides with respect to $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain final anti-derivative with $+ c$"
+        }
+      ],
+      "solution": "$\\frac{d}{dx}(x^2 \\ln x) = 2x\\ln x + x^2\\left(\\frac{1}{x}\\right) \\quad \\{\\text{product rule}\\}$\n$= 2x\\ln x + x$\n\nNow $\\int x\\ln x\\,dx = \\int \\frac{\\frac{d}{dx}(x^2\\ln x) - x}{2}\\,dx$\n$= \\frac{1}{2}\\int \\left(\\frac{d}{dx}(x^2\\ln x) - x\\right)dx$\n$= \\frac{1}{2}\\left(x^2\\ln x - \\frac{1}{2}x^2\\right) + c$\n$= \\frac{1}{2}x^2\\ln x - \\frac{1}{4}x^2 + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by recognition: differentiate a given product, then rearrange the equality to integrate the desired term.",
+        "step_by_step": [
+          "Differentiate $x^2\\ln x$ using product rule: $2x\\ln x + x$.",
+          "Isolate $x\\ln x$: $x\\ln x = \\frac{1}{2}\\left[\\frac{d}{dx}(x^2\\ln x) - x\\right]$.",
+          "Integrate both sides with respect to $x$.",
+          "Simplify the result: $\\frac{1}{2}x^2\\ln x - \\frac{1}{4}x^2 + c$."
+        ],
+        "common_pitfalls": "Forgetting to distribute the factor of $\\frac{1}{2}$ to the integrated $-x$ term, yielding $-\\frac{1}{2}x^2$ instead of $-\\frac{1}{4}x^2$."
+      }
+    }
+  ]
+}

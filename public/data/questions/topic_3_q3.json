@@ -1,0 +1,40 @@
+{
+  "id": "topic_3_q3",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 3,
+  "question_text": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+      "final_answer": "$5.03\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up volume formula as volume of outer cylinder minus volume of hollow inner cylinder"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $r_1=1$ and $r_2=0.9$: $3 = \\pi(1)^2 l - \\pi(0.9)^2 l = 0.19\\pi l$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $l$: $l = \\frac{3}{0.19\\pi} \\approx 5.03\\text{ m}$"
+        }
+      ],
+      "solution": "Let the pipe have length $l\\text{ m}$.\nNow $\\text{volume of concrete} = \\text{volume of whole cylinder} - \\text{volume of hollow section}$\n$\\therefore 3 = \\pi(1)^2 \\times l - \\pi(0.9)^2 \\times l$\n$\\therefore 3 = \\pi l - 0.81\\pi l$\n$\\therefore 3 = 0.19\\pi l$\n$\\therefore l = \\frac{3}{0.19\\pi} \\approx 5.03$\n$\\therefore$ the pipe is approximately $5.03\\text{ m}$ long.",
+      "ai_explanation": {
+        "concept_rule": "The volume of a hollow cylinder is given by $V = \\pi(R^2 - r^2)l$, where $R$ is the outer radius, $r$ is the inner radius, and $l$ is the length.",
+        "step_by_step": [
+          "Identify the outer diameter as $2\\text{ m}$, so the outer radius $R = 1\\text{ m}$.",
+          "Given wall thickness $0.1\\text{ m}$, inner radius $r = 1 - 0.1 = 0.9\\text{ m}$.",
+          "Equate volume of concrete: $3 = \\pi(1^2 - 0.9^2)l = 0.19\\pi l$.",
+          "Solve for $l$: $l = \\frac{3}{0.19\\pi} \\approx 5.03\\text{ m}$."
+        ],
+        "common_pitfalls": "Subtracting thickness from diameter rather than radius, or squaring $(R - r)$ instead of $(R^2 - r^2)$."
+      }
+    }
+  ]
+}

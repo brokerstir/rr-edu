@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q42",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 42,
+  "question_text": "Find the equation of the straight line illustrated:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$y = \\frac{1}{\\sqrt{3}}x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the gradient using $m = \\tan 30^\\circ$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating the equation of the line through the origin"
+        }
+      ],
+      "solution": "The line has gradient $m = \\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$ and $y$-intercept $0$.\n$\\therefore$ the line has equation $y = \\frac{1}{\\sqrt{3}}x$.",
+      "ai_explanation": {
+        "concept_rule": "The gradient of a straight line is related to the angle of inclination $\\theta$ with the positive $x$-axis by $m = \\tan\\theta$.",
+        "step_by_step": [
+          "Determine the angle the line makes with the positive $x$-axis: $\\theta = 30^\\circ$.",
+          "Calculate the gradient: $m = \\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$.",
+          "Since the line passes through the origin $(0, 0)$, the $y$-intercept is $c = 0$.",
+          "Write the equation: $y = \\frac{1}{\\sqrt{3}}x$."
+        ],
+        "common_pitfalls": "Confusing $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$ with $\\tan 60^\\circ = \\sqrt{3}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$y = -\\sqrt{3}x + 4\\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the angle of inclination with the positive $x$-axis"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating the gradient $m = \\tan\\frac{2\\pi}{3} = -\\sqrt{3}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting the $x$-intercept $(4, 0)$ to solve for $c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation of the line"
+        }
+      ],
+      "solution": "The line makes an angle of $\\frac{\\pi}{2} + \\frac{\\pi}{6} = \\frac{2\\pi}{3}$ with the positive $x$-axis {exterior angle of a triangle theorem}.\n$\\therefore$ the line has gradient $m = \\tan\\frac{2\\pi}{3} = -\\sqrt{3}$.\n$\\therefore$ the line has equation $y = -\\sqrt{3}x + c$.\nWhen $x = 4, y = 0$,\n$\\therefore 0 = -\\sqrt{3}(4) + c$\n$\\therefore 0 = -4\\sqrt{3} + c$\n$\\therefore c = 4\\sqrt{3}$\n$\\therefore$ the equation of the line is $y = -\\sqrt{3}x + 4\\sqrt{3}$.",
+      "ai_explanation": {
+        "concept_rule": "The angle of inclination $\\theta$ must be measured counterclockwise from the positive $x$-axis. The gradient is then $m = \\tan\\theta$.",
+        "step_by_step": [
+          "Use the exterior angle of the triangle to find the angle with the positive $x$-axis: $\\theta = \\frac{\\pi}{2} + \\frac{\\pi}{6} = \\frac{2\\pi}{3}$.",
+          "Calculate the slope: $m = \\tan\\frac{2\\pi}{3} = -\\sqrt{3}$.",
+          "Use the point $(4, 0)$ in the slope-intercept form $y = mx + c$ to find $c$: $0 = -\\sqrt{3}(4) + c \\implies c = 4\\sqrt{3}$.",
+          "State the equation of the line: $y = -\\sqrt{3}x + 4\\sqrt{3}$."
+        ],
+        "common_pitfalls": "Using the interior angle $\\frac{\\pi}{3}$ directly without accounting for the negative slope in the second quadrant."
+      }
+    }
+  ]
+}

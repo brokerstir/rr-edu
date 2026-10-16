@@ -1,0 +1,114 @@
+{
+  "id": "topic_3_q33",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 33,
+  "question_text": "Let $a = \\sin 20^\\circ$ and $b = \\tan 50^\\circ$. Write, in terms of $a$ and $b$, expressions for:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin 160^\\circ$",
+      "final_answer": "$a$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the supplement identity $\\sin(180^\\circ - \\theta) = \\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Expressing in terms of $a$"
+        }
+      ],
+      "solution": "$\\sin 160^\\circ = \\sin(180^\\circ - 20^\\circ) = \\sin 20^\\circ = a$.",
+      "ai_explanation": {
+        "concept_rule": "The sine function satisfies the supplementary angle identity $\\sin(180^\\circ - \\theta) = \\sin\\theta$.",
+        "step_by_step": [
+          "Express $160^\\circ$ as $180^\\circ - 20^\\circ$.",
+          "Apply the identity $\\sin(180^\\circ - \\theta) = \\sin\\theta$.",
+          "Substitute $a = \\sin 20^\\circ$."
+        ],
+        "common_pitfalls": "Incorrectly introducing a negative sign; sine is positive in the second quadrant."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\tan(-50^\\circ)$",
+      "final_answer": "$-b$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using odd property of tangent or sine/cosine"
+        },
+        {
+          "code": "A1",
+          "desc": "Expressing in terms of $b$"
+        }
+      ],
+      "solution": "$\\tan(-50^\\circ) = \\frac{\\sin(-50^\\circ)}{\\cos(-50^\\circ)} = \\frac{-\\sin 50^\\circ}{\\cos 50^\\circ} = -\\tan 50^\\circ = -b$.",
+      "ai_explanation": {
+        "concept_rule": "The tangent function is odd: $\\tan(-\\theta) = -\\tan\\theta$.",
+        "step_by_step": [
+          "Write $\\tan(-\\theta) = \\frac{\\sin(-\\theta)}{\\cos(-\\theta)}$.",
+          "Use $\\sin(-\\theta) = -\\sin\\theta$ and $\\cos(-\\theta) = \\cos\\theta$.",
+          "Conclude $\\tan(-50^\\circ) = -\\tan 50^\\circ = -b$."
+        ],
+        "common_pitfalls": "Confusing the sign property of cosine (even) with tangent (odd)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\cos 70^\\circ$",
+      "final_answer": "$a$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the co-function identity $\\cos(90^\\circ - \\theta) = \\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Expressing in terms of $a$"
+        }
+      ],
+      "solution": "$\\cos 70^\\circ = \\cos(90^\\circ - 20^\\circ) = \\sin 20^\\circ = a$.",
+      "ai_explanation": {
+        "concept_rule": "Co-function identity: $\\cos(90^\\circ - \\theta) = \\sin\\theta$.",
+        "step_by_step": [
+          "Write $70^\\circ$ as $90^\\circ - 20^\\circ$.",
+          "Apply the identity $\\cos(90^\\circ - \\theta) = \\sin\\theta$.",
+          "Substitute $\\sin 20^\\circ = a$."
+        ],
+        "common_pitfalls": "Writing $\\cos(90^\\circ - \\theta) = -\\sin\\theta$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$\\tan 20^\\circ$",
+      "final_answer": "$\\frac{a}{\\sqrt{1 - a^2}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing $\\tan 20^\\circ$ as $\\frac{\\sin 20^\\circ}{\\cos 20^\\circ}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Expressing $\\cos 20^\\circ$ as $\\sqrt{1 - \\sin^2 20^\\circ}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Final answer in terms of $a$"
+        }
+      ],
+      "solution": "$\\tan 20^\\circ = \\frac{\\sin 20^\\circ}{\\cos 20^\\circ} = \\frac{\\sin 20^\\circ}{\\sqrt{1 - \\sin^2 20^\\circ}} = \\frac{a}{\\sqrt{1 - a^2}}$ (since $0^\\circ < 20^\\circ < 90^\\circ$, so $\\cos 20^\\circ > 0$).",
+      "ai_explanation": {
+        "concept_rule": "Use the quotient identity $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$ and Pythagorean identity $\\cos\\theta = \\sqrt{1 - \\sin^2\\theta}$ in Quadrant I.",
+        "step_by_step": [
+          "Write $\\tan 20^\\circ = \\frac{\\sin 20^\\circ}{\\cos 20^\\circ}$.",
+          "Replace $\\cos 20^\\circ$ with $\\sqrt{1 - \\sin^2 20^\\circ}$ as $20^\\circ$ is in Quadrant I.",
+          "Substitute $\\sin 20^\\circ = a$ to get $\\frac{a}{\\sqrt{1 - a^2}}$."
+        ],
+        "common_pitfalls": "Forgetting the square root over $1 - a^2$ or failing to verify the positive sign for the cosine in Quadrant I."
+      }
+    }
+  ]
+}

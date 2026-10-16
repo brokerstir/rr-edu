@@ -1,0 +1,104 @@
+{
+  "id": "topic_4_q14",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 14,
+  "question_text": "Cailan and Miles regularly play golf together, and have recorded their scores from their last 10 rounds:\nCailan: 84, 81, 86, 92, 85, 83, 80, 87, 90, 79\nMiles: 87, 85, 83, 90, 88, 82, 84, 84, 91, 82",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the range and interquartile range for each data set.",
+      "final_answer": "$\\text{Cailan: Range} = 13, \\text{IQR} = 6; \\text{ Miles: Range} = 9, \\text{IQR} = 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding maximum minus minimum for both players"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct ranges for Cailan (13) and Miles (9)"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding quartiles $Q_1$ and $Q_3$ for both players"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct interquartile ranges for Cailan (6) and Miles (5)"
+        }
+      ],
+      "solution": "Cailan:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 92 - 79 = 13$$\nLower half: 79, 80, 81, 83, 84 $\\Rightarrow Q_1 = 81$\nUpper half: 85, 86, 87, 90, 92 $\\Rightarrow Q_3 = 87$\n$$\\text{IQR} = Q_3 - Q_1 = 87 - 81 = 6$$\n\nMiles:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 91 - 82 = 9$$\nLower half: 82, 82, 83, 84, 84 $\\Rightarrow Q_1 = 83$\nUpper half: 85, 87, 88, 90, 91 $\\Rightarrow Q_3 = 88$\n$$\\text{IQR} = Q_3 - Q_1 = 88 - 83 = 5$$",
+      "ai_explanation": {
+        "concept_rule": "Range is $\\text{max} - \\text{min}$. For an even number of values ($n=10$), split the ordered data evenly into halves of 5 values; $Q_1$ is the median of the lower half and $Q_3$ is the median of the upper half. $\\text{IQR} = Q_3 - Q_1$.",
+        "step_by_step": [
+          "For Cailan, calculate range: $92 - 79 = 13$.",
+          "Find middle value of lower 5 values ($Q_1 = 81$) and upper 5 values ($Q_3 = 87$), so $\\text{IQR} = 87 - 81 = 6$.",
+          "For Miles, calculate range: $91 - 82 = 9$.",
+          "Find middle value of lower 5 values ($Q_1 = 83$) and upper 5 values ($Q_3 = 88$), so $\\text{IQR} = 88 - 83 = 5$."
+        ],
+        "common_pitfalls": "Incorrectly splitting the dataset when computing quartiles."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Which golfer had the lower: range",
+      "final_answer": "$\\text{Miles}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifying Miles' data as having the lower range"
+        }
+      ],
+      "solution": "Miles' data has the lower range ($9 < 13$).",
+      "ai_explanation": {
+        "concept_rule": "Compare the two calculated range values directly.",
+        "step_by_step": [
+          "Cailan's range is 13; Miles' range is 9.",
+          "Since $9 < 13$, Miles has the lower range."
+        ],
+        "common_pitfalls": "Confusing range with IQR."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Which golfer had the lower: interquartile range?",
+      "final_answer": "$\\text{Miles}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifying Miles' data as having the lower interquartile range"
+        }
+      ],
+      "solution": "Miles' data has the lower interquartile range ($5 < 6$).",
+      "ai_explanation": {
+        "concept_rule": "Compare the two calculated IQR values directly.",
+        "step_by_step": [
+          "Cailan's IQR is 6; Miles' IQR is 5.",
+          "Since $5 < 6$, Miles has the lower IQR."
+        ],
+        "common_pitfalls": "Mixing up the values of IQR between Cailan and Miles."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Which measure of spread is more appropriate for determining who is generally the more consistent golfer? Explain your answer.",
+      "final_answer": "$\\text{The interquartile range, as it is less affected by outliers.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Valid reason stating that the interquartile range is less affected by extreme values or outliers"
+        }
+      ],
+      "solution": "The interquartile range is more appropriate than the range for determining who is generally the more consistent golfer as it is less affected by outliers.",
+      "ai_explanation": {
+        "concept_rule": "The interquartile range measures the spread of the middle 50% of the data and is resistant to extreme values (outliers), whereas range considers only the two extreme values.",
+        "step_by_step": [
+          "State which measure is preferred (IQR).",
+          "Provide the justification: IQR is not distorted by extreme high or low scores (outliers)."
+        ],
+        "common_pitfalls": "Claiming that range is better because it uses all the extreme data."
+      }
+    }
+  ]
+}

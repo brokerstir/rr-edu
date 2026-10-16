@@ -1,0 +1,18 @@
+{
+  "id": "topic_3_q65",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 65,
+  "question_text": "If $\\cos 2x = \\frac{5}{8}$, find the exact value of $\\sin x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "If $\\cos 2x = \\frac{5}{8}$, find the exact value of $\\sin x$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

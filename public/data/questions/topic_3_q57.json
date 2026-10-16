@@ -1,0 +1,34 @@
+{
+  "id": "topic_3_q57",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 57,
+  "question_text": "Simplify:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$2\\sin^2\\theta + 3\\sin^2\\theta$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\cos x\\tan x - 2\\sin x$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{-\\cos\\left(\\frac{\\pi}{2} - \\theta\\right)\\sin(-\\theta)}{\\cos(-\\theta)\\sin(\\pi - \\theta)}$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

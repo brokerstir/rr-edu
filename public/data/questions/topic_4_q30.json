@@ -1,0 +1,182 @@
+{
+  "id": "topic_4_q30",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 30,
+  "question_text": "A die is rolled, and a square spinner with sectors 1, 2, 3, and 4 is spun.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a grid to illustrate the sample space of possible outcomes.",
+      "final_answer": "$\\text{2D grid of 24 points (die: 1 to 6, spinner: 1 to 4)}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Axes labeled die ($1$ to $6$) and spinner ($1$ to $4$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Grid plotted with all $24$ sample points"
+        }
+      ],
+      "solution": "A grid representation with horizontal axis representing the die outcome ($1, 2, 3, 4, 5, 6$) and vertical axis representing the spinner outcome ($1, 2, 3, 4$). The sample space consists of $6 \\times 4 = 24$ points representing all possible pairs.",
+      "ai_explanation": {
+        "concept_rule": "A sample space diagram for two independent discrete events displays all outcomes as points in a 2D Cartesian grid.",
+        "step_by_step": [
+          "Draw a horizontal axis for the die outcomes from $1$ to $6$.",
+          "Draw a vertical axis for the spinner outcomes from $1$ to $4$.",
+          "Place a dot at each intersection $(d, s)$, resulting in $24$ outcomes."
+        ],
+        "common_pitfalls": "Plotting only subsets or confusing the range of the spinner ($1$ to $4$) with the die ($1$ to $6$)."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Use your grid to find the probability of getting two 1s",
+      "final_answer": "$\\frac{1}{24}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct probability"
+        }
+      ],
+      "solution": "$$\\text{P}(\\text{two } 1\\text{s}) = \\frac{1}{24}$$",
+      "ai_explanation": {
+        "concept_rule": "Count the number of outcomes corresponding to the die showing 1 and spinner showing 1, then divide by the total outcomes 24.",
+        "step_by_step": [
+          "Only one outcome gives two 1s: $(1, 1)$.",
+          "Total outcomes $= 24$.",
+          "$\\text{P}(\\text{two } 1\\text{s}) = \\frac{1}{24}$."
+        ],
+        "common_pitfalls": "Multiplying probabilities incorrectly or miscounting the total outcomes."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Use your grid to find the probability of getting two 5s",
+      "final_answer": "$0$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating 0 with reason that the spinner does not have a 5"
+        }
+      ],
+      "solution": "$$\\text{P}(\\text{two } 5\\text{s}) = 0 \\quad \\{\\text{the spinner does not have a } 5\\}$$",
+      "ai_explanation": {
+        "concept_rule": "The probability of an impossible event is zero.",
+        "step_by_step": [
+          "The spinner outcomes are $\\{1, 2, 3, 4\\}$.",
+          "Since getting a $5$ on the spinner is impossible, the event 'two 5s' has $0$ favorable outcomes.",
+          "$\\text{P}(\\text{two } 5\\text{s}) = 0$."
+        ],
+        "common_pitfalls": "Assuming the spinner has 6 outcomes like a standard die."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Use your grid to find the probability of getting a sum of 6",
+      "final_answer": "$\\frac{1}{6}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying pairs summing to 6: (5,1), (4,2), (3,3), (2,4)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{4}{24} = \\frac{1}{6}$"
+        }
+      ],
+      "solution": "The outcomes giving a sum of $6$ are $(5, 1), (4, 2), (3, 3), (2, 4)$.\n$$\\text{P}(\\text{a sum of } 6) = \\frac{4}{24} = \\frac{1}{6}$$",
+      "ai_explanation": {
+        "concept_rule": "Sum of two outcomes: count all pairs $(d, s)$ such that $d + s = 6$ within valid ranges $d \\in \\{1..6\\}, s \\in \\{1..4\\}$.",
+        "step_by_step": [
+          "List pairs with sum 6: $(2, 4), (3, 3), (4, 2), (5, 1)$.",
+          "Note that $(1, 5)$ and $(6, 0)$ are impossible since $s \\in \\{1, 2, 3, 4\\}$.",
+          "Number of outcomes $= 4$.",
+          "$\\text{P}(\\text{sum of } 6) = \\frac{4}{24} = \\frac{1}{6}$."
+        ],
+        "common_pitfalls": "Including $(1, 5)$ assuming the spinner has a 5."
+      }
+    },
+    {
+      "subpart": "b iv",
+      "stem": "Use your grid to find the probability of getting a 2 and a 3",
+      "final_answer": "$\\frac{1}{12}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying the outcomes (2, 3) and (3, 2)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{2}{24} = \\frac{1}{12}$"
+        }
+      ],
+      "solution": "The outcomes are $(2, 3)$ and $(3, 2)$.\n$$\\text{P}(\\text{a } 2 \\text{ and a } 3) = \\frac{2}{24} = \\frac{1}{12}$$",
+      "ai_explanation": {
+        "concept_rule": "The event 'a 2 and a 3' means one outcome is 2 and the other is 3 in any order.",
+        "step_by_step": [
+          "Case 1: die shows 2 and spinner shows 3, giving $(2, 3)$.",
+          "Case 2: die shows 3 and spinner shows 2, giving $(3, 2)$.",
+          "Total favorable outcomes $= 2$.",
+          "Probability $= \\frac{2}{24} = \\frac{1}{12}$."
+        ],
+        "common_pitfalls": "Counting only one ordered pair (e.g., die = 2, spinner = 3) instead of both orders."
+      }
+    },
+    {
+      "subpart": "b v",
+      "stem": "Use your grid to find the probability of getting a 2 or a 3 (or both)",
+      "final_answer": "$\\frac{2}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying all outcomes where at least one outcome is 2 or 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{16}{24} = \\frac{2}{3}$"
+        }
+      ],
+      "solution": "Outcomes where the die is $2$ or $3$, or the spinner is $2$ or $3$, or both.\nNumber of outcomes $= 16$.\n$$\\text{P}(\\text{a } 2 \\text{ or a } 3 \\text{ (or both)}) = \\frac{16}{24} = \\frac{2}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "Using inclusion-exclusion: outcomes with die $\\in \\{2, 3\\}$ plus outcomes with spinner $\\in \\{2, 3\\}$ minus their overlap.",
+        "step_by_step": [
+          "Die shows 2 or 3: $2 \\times 4 = 8$ outcomes.",
+          "Spinner shows 2 or 3: $6 \\times 2 = 12$ outcomes.",
+          "Overlap (both die and spinner show 2 or 3): $2 \\times 2 = 4$ outcomes.",
+          "Total favorable outcomes $= 8 + 12 - 4 = 16$.",
+          "$\\text{P} = \\frac{16}{24} = \\frac{2}{3}$."
+        ],
+        "common_pitfalls": "Double counting the four intersection points where both the die and spinner are 2 or 3."
+      }
+    },
+    {
+      "subpart": "b vi",
+      "stem": "Use your grid to find the probability of getting exactly one 4.",
+      "final_answer": "$\\frac{1}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying outcomes with exactly one 4"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{8}{24} = \\frac{1}{3}$"
+        }
+      ],
+      "solution": "Outcomes with exactly one $4$ are:\nDie is $4$ and spinner is not $4$ ($3$ outcomes: $(4, 1), (4, 2), (4, 3)$),\nSpinner is $4$ and die is not $4$ ($5$ outcomes: $(1, 4), (2, 4), (3, 4), (5, 4), (6, 4)$).\nTotal favorable outcomes $= 3 + 5 = 8$.\n$$\\text{P}(\\text{exactly one } 4) = \\frac{8}{24} = \\frac{1}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "'Exactly one 4' excludes the outcome $(4, 4)$ where both show 4.",
+        "step_by_step": [
+          "Count die = 4, spinner $\\ne$ 4: $1 \\times 3 = 3$ outcomes.",
+          "Count spinner = 4, die $\\ne$ 4: $5 \\times 1 = 5$ outcomes.",
+          "Sum of favorable outcomes $= 3 + 5 = 8$.",
+          "Probability $= \\frac{8}{24} = \\frac{1}{3}$."
+        ],
+        "common_pitfalls": "Including $(4, 4)$ which has two fours instead of exactly one."
+      }
+    }
+  ]
+}

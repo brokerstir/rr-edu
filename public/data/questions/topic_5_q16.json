@@ -1,0 +1,87 @@
+{
+  "id": "topic_5_q16",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 16,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\frac{d}{dx}\\left(\\ln\\left(\\frac{x-4}{x^2+4}\\right)\\right)$",
+      "final_answer": "$\\frac{1}{x-4} - \\frac{2x}{x^2+4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the logarithm quotient law $\\ln(a/b) = \\ln a - \\ln b$"
+        },
+        {
+          "code": "A1",
+          "desc": "Differentiating both logarithmic terms correctly"
+        }
+      ],
+      "solution": "$\\frac{d}{dx}\\left(\\ln\\left(\\frac{x-4}{x^2+4}\\right)\\right) = \\frac{d}{dx}(\\ln(x-4) - \\ln(x^2+4))$\n$= \\frac{1}{x-4} - \\frac{2x}{x^2+4}$",
+      "ai_explanation": {
+        "concept_rule": "Logarithm laws allow splitting quotients: $\\ln\\left(\\frac{u}{v}\\right) = \\ln u - \\ln v$, making differentiation much simpler than using the quotient rule directly.",
+        "step_by_step": [
+          "Rewrite $\\ln\\left(\\frac{x-4}{x^2+4}\\right)$ as $\\ln(x-4) - \\ln(x^2+4)$.",
+          "Differentiate $\\ln(x-4)$ to get $\\frac{1}{x-4}$.",
+          "Differentiate $\\ln(x^2+4)$ to get $\\frac{2x}{x^2+4}$.",
+          "Combine the terms: $\\frac{1}{x-4} - \\frac{2x}{x^2+4}$."
+        ],
+        "common_pitfalls": "Trying to differentiate the fraction inside the log directly via the quotient rule, which leads to complicated algebra."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{d}{dx}\\left(\\ln\\left(x\\sqrt{x^2+4}\\right)\\right)$",
+      "final_answer": "$\\frac{1}{x} + \\frac{x}{x^2+4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding the logarithm using product and power laws"
+        },
+        {
+          "code": "A1",
+          "desc": "Differentiating each term correctly"
+        }
+      ],
+      "solution": "$\\frac{d}{dx}\\left(\\ln(x\\sqrt{x^2+4})\\right) = \\frac{d}{dx}\\left(\\ln x + \\ln(x^2+4)^{\\frac{1}{2}}\\right)$\n$= \\frac{d}{dx}\\left(\\ln x + \\frac{1}{2}\\ln(x^2+4)\\right)$\n$= \\frac{1}{x} + \\frac{1}{2}\\left(\\frac{2x}{x^2+4}\\right)$\n$= \\frac{1}{x} + \\frac{x}{x^2+4}$",
+      "ai_explanation": {
+        "concept_rule": "Use $\\ln(ab) = \\ln a + \\ln b$ and $\\ln(a^k) = k\\ln a$ before differentiating.",
+        "step_by_step": [
+          "Expand the argument: $\\ln(x\\sqrt{x^2+4}) = \\ln x + \\frac{1}{2}\\ln(x^2+4)$.",
+          "Differentiate $\\ln x$ to obtain $\\frac{1}{x}$.",
+          "Differentiate $\\frac{1}{2}\\ln(x^2+4)$ to obtain $\\frac{1}{2} \\cdot \\frac{2x}{x^2+4} = \\frac{x}{x^2+4}$.",
+          "Add the resulting terms."
+        ],
+        "common_pitfalls": "Forgetting the factor of $\\frac{1}{2}$ from the square root power."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{d}{dx}\\left(\\ln\\left(\\frac{\\sqrt{x^2+1}}{(x+3)(x-2)}\\right)\\right)$",
+      "final_answer": "$\\frac{x}{x^2+1} - \\frac{1}{x+3} - \\frac{1}{x-2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using log laws to expand into a sum and differences of logs"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly applying derivative rules to all three terms"
+        }
+      ],
+      "solution": "$\\frac{d}{dx}\\left(\\ln\\left(\\frac{\\sqrt{x^2+1}}{(x+3)(x-2)}\\right)\\right) = \\frac{d}{dx}\\left(\\ln(x^2+1)^{\\frac{1}{2}} - \\ln((x+3)(x-2))\\right)$\n$= \\frac{d}{dx}\\left(\\frac{1}{2}\\ln(x^2+1) - \\ln(x+3) - \\ln(x-2)\\right)$\n$= \\frac{1}{2}\\left(\\frac{2x}{x^2+1}\\right) - \\frac{1}{x+3} - \\frac{1}{x-2}$\n$= \\frac{x}{x^2+1} - \\frac{1}{x+3} - \\frac{1}{x-2}$",
+      "ai_explanation": {
+        "concept_rule": "Expand composite logarithmic terms: $\\ln\\left(\\frac{u}{vw}\\right) = \\ln u - \\ln v - \\ln w$.",
+        "step_by_step": [
+          "Rewrite the expression as $\\frac{1}{2}\\ln(x^2+1) - \\ln(x+3) - \\ln(x-2)$.",
+          "Differentiate each component separately.",
+          "Simplify $\\frac{1}{2}\\left(\\frac{2x}{x^2+1}\\right)$ to $\\frac{x}{x^2+1}$."
+        ],
+        "common_pitfalls": "Forgetting that the denominator terms both acquire a negative sign after distribution of the minus sign: $-\\ln((x+3)(x-2)) = -\\ln(x+3) - \\ln(x-2)$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "topic_3_q15",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 15,
+  "question_text": "O is the centre of a circle of radius $32\\text{ cm}$. Chord [AB] is $50\\text{ cm}$ long.\nFind:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the measure of $\\mathrm{A}\\widehat{\\mathrm{O}}\\mathrm{B}$, in radians",
+      "final_answer": "$1.79\\text{ radians}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use right triangle $OMB$ with $\\sin\\frac{\\theta}{2} = \\frac{25}{32}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\theta \\approx 1.79\\text{ radians}$"
+        }
+      ],
+      "solution": "Let $A\\hat{O}B = \\theta \\implies B\\hat{O}M = \\frac{\\theta}{2}$\n\nIn triangle OMB, $\\sin\\frac{\\theta}{2} = \\frac{25}{32}$\n$\\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{25}{32}\\right)$\n$\\theta = 2\\sin^{-1}\\left(\\frac{25}{32}\\right)$\n$\\theta \\approx 1.79\\text{ radians}$",
+      "ai_explanation": {
+        "concept_rule": "The perpendicular from the center of a circle to a chord bisects the chord and the central angle. The sine ratio in the right-angled triangle gives half the angle.",
+        "step_by_step": [
+          "Bisect chord $AB$ at $M$, giving $MB = 25\\text{ cm}$.",
+          "The radius is $OB = 32\\text{ cm}$.",
+          "In right $\\triangle OMB$, $\\sin\\left(\\frac{\\theta}{2}\\right) = \\frac{MB}{OB} = \\frac{25}{32}$.",
+          "Evaluate $\\theta = 2\\sin^{-1}\\left(\\frac{25}{32}\\right)$ in radians: $\\theta \\approx 1.79\\text{ rad}$."
+        ],
+        "common_pitfalls": "Calculating the answer in degrees instead of radians."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the area of the shaded segment.",
+      "final_answer": "$419\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate sector area using $A = \\frac{1}{2}r^2\\theta$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate triangle area using $A = \\frac{1}{2}r^2\\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Subtract triangle area from sector area to get $419\\text{ cm}^2$"
+        }
+      ],
+      "solution": "$\\text{Sector area} = \\frac{1}{2}\\theta r^2 \\approx \\frac{1}{2}(1.79)(32)^2 \\approx 918.19\\text{ cm}^2$\n\n$\\text{Triangle area} = \\frac{1}{2}r^2\\sin\\theta \\approx \\frac{1}{2}(32)^2\\sin(1.79) \\approx 499.37\\text{ cm}^2$\n\n$\\text{area of shaded segment} = \\text{sector area} - \\text{triangle area}$\n$\\approx 918.19 - 499.37$\n$\\approx 418.81$\n$\\approx 419\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of a circular segment is the difference between the sector area $\\frac{1}{2}r^2\\theta$ and the triangle area $\\frac{1}{2}r^2\\sin\\theta$, with $\\theta$ measured in radians.",
+        "step_by_step": [
+          "Compute the sector area: $\\frac{1}{2} \\times 1.79 \\times 32^2 \\approx 918.19\\text{ cm}^2$.",
+          "Compute the triangle area: $\\frac{1}{2} \\times 32^2 \\times \\sin(1.79\\text{ rad}) \\approx 499.37\\text{ cm}^2$.",
+          "Subtract the triangle area from the sector area: $918.19 - 499.37 = 418.81\\text{ cm}^2$.",
+          "Round to 3 significant figures: $419\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Evaluating $\\sin(1.79)$ with the calculator in degree mode instead of radian mode."
+      }
+    }
+  ]
+}

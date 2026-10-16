@@ -1,0 +1,40 @@
+{
+  "id": "topic_4_q32",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 32,
+  "question_text": "Given that $P(A) = \\frac{23}{50}$, $P(B) = \\frac{4}{7}$, and $P((A \\cup B)') = \\frac{1}{12}$, find $P(A \\cap B)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Given that $P(A) = \\frac{23}{50}$, $P(B) = \\frac{4}{7}$, and $P((A \\cup B)') = \\frac{1}{12}$, find $P(A \\cap B)$.",
+      "final_answer": "$\\frac{541}{2100}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating $\\text{P}(A \\cup B) = 1 - \\text{P}((A \\cup B)') = 1 - \\frac{1}{12} = \\frac{11}{12}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\text{P}(A \\cap B) = \\frac{541}{2100}$"
+        }
+      ],
+      "solution": "$$\\text{P}(A \\cup B) = 1 - \\text{P}((A \\cup B)') = 1 - \\frac{1}{12} = \\frac{11}{12}$$\n$$\\text{Now } \\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$$\n$$\\therefore \\frac{11}{12} = \\frac{23}{50} + \\frac{5}{7} - \\text{P}(A \\cap B)$$\n$$\\therefore \\text{P}(A \\cap B) = \\frac{23}{50} + \\frac{5}{7} - \\frac{11}{12} = \\frac{541}{2100}$$",
+      "ai_explanation": {
+        "concept_rule": "Use the complement rule $\\text{P}(E) = 1 - \\text{P}(E')$ and the addition rule $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$.",
+        "step_by_step": [
+          "Compute $\\text{P}(A \\cup B) = 1 - \\frac{1}{12} = \\frac{11}{12}$.",
+          "Substitute into the addition rule: $\\frac{11}{12} = \\frac{23}{50} + \\frac{5}{7} - \\text{P}(A \\cap B)$.",
+          "Find a common denominator for $50, 7, 12$, which is $2100$.",
+          "$\\frac{23 \\times 42}{2100} + \\frac{5 \\times 300}{2100} - \\frac{11 \\times 175}{2100} = \\frac{966 + 1500 - 1925}{2100} = \\frac{541}{2100}$."
+        ],
+        "common_pitfalls": "Errors when finding the common denominator for three fractions."
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "topic_4_q9",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 9,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "The mean of 7 integers is 14. In ascending order, the integers are 9, 10, $a$, 13, $b$, 16, 21.\nFind the values of $a$ and $b$.",
+      "final_answer": "$a = 13\\text{ and }b = 16$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equation for mean: $\\frac{69 + a + b}{7} = 14$ and solve for $a + b = 29$"
+        },
+        {
+          "code": "A1",
+          "desc": "Use given bounds $10 \\le a \\le 13$ and $13 \\le b \\le 16$ to deduce $a = 13, b = 16$"
+        }
+      ],
+      "solution": "$\\frac{9 + 10 + a + 13 + b + 16 + 21}{7} = 14 \\implies \\frac{69 + a + b}{7} = 14 \\implies 69 + a + b = 98 \\implies a + b = 29$. Now, $a$ and $b$ are integers such that $10 \\le a \\le 13$ and $13 \\le b \\le 16$. $\\therefore$ the only possible solution is $a = 13$ and $b = 16$.",
+      "ai_explanation": {
+        "concept_rule": "In an ordered list, unknown values are constrained by adjacent known values and the overall mean equation.",
+        "step_by_step": [
+          "Sum of the 7 numbers is $7 \\times 14 = 98$.",
+          "Sum of known values is $9 + 10 + 13 + 16 + 21 = 69$.",
+          "$a + b = 98 - 69 = 29$.",
+          "Since the list is ordered: $10 \\le a \\le 13$ and $13 \\le b \\le 16$.",
+          "Maximum possible sum of $a+b$ within bounds is $13 + 16 = 29$.",
+          "Thus, $a = 13$ and $b = 16$."
+        ],
+        "common_pitfalls": "Failing to use the ordered property of the list to restrict the range of $a$ and $b$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "In ascending order, a set of six numbers are: 1, 5, 9, 11, 16, $p$. The mean of the six numbers is the same as their median. Find $p$.",
+      "final_answer": "$\\text{median} = 10, p = 18$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate median as average of 3rd and 4th terms: $\\frac{9+11}{2} = 10$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up equation using mean equals median: $\\frac{42+p}{6} = 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $p = 18$"
+        }
+      ],
+      "solution": "Since $n = 6$, $\\frac{n+1}{2} = 3.5$. So the median is the average of the 3rd and 4th ordered data values. The ordered data set is: $1, 5, 9, 11, 16, p$. $\\therefore \\text{median} = \\frac{9 + 11}{2} = 10$. Now, $\\frac{1 + 5 + 9 + 11 + 16 + p}{6} = 10 \\implies \\frac{42 + p}{6} = 10 \\implies 42 + p = 60 \\implies p = 18$.",
+      "ai_explanation": {
+        "concept_rule": "When mean equals median, calculate the median first from the central positions, then solve for the unknown in the mean formula.",
+        "step_by_step": [
+          "The ordered list has 6 terms: 3rd is 9, 4th is 11.",
+          "Median $= \\frac{9 + 11}{2} = 10$.",
+          "Mean $= \\frac{1 + 5 + 9 + 11 + 16 + p}{6} = 10$.",
+          "Solve $42 + p = 60 \\implies p = 18$."
+        ],
+        "common_pitfalls": "Assuming $p$ could be in the middle of the dataset without checking the order."
+      }
+    }
+  ]
+}

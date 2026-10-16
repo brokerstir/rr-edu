@@ -1,0 +1,122 @@
+{
+  "id": "topic_3_q18",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 18,
+  "question_text": "Find the angle between the following line segments and the base plane of the triangular prism:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "[AE]",
+      "final_answer": "$21.8^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify projection [DE] and setup trigonometric ratio for angle AED"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle to obtain approximately 21.8°"
+        }
+      ],
+      "solution": "The projection of $[\\text{AE}]$ onto the base plane is $[\\text{DE}]$.\n$\\therefore$ the required angle is $\\text{A}\\hat{\\text{E}}\\text{D}$.\n$$\\tan\\theta = \\frac{4}{10}$$\n$$\\therefore \\theta = \\tan^{-1}\\left(\\frac{4}{10}\\right) \\approx 21.8^{\\circ}$$\nThe angle is about $21.8^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "The angle between a line and a plane is the angle between the line and its orthogonal projection on that plane.",
+        "step_by_step": [
+          "Project vertex A vertically down onto the base plane, which gives point D.",
+          "Identify the right-angled triangle $\\Delta \\text{ADE}$ where $\\angle \\text{ADE} = 90^\\circ$.",
+          "Use the tangent ratio: $\\tan(\\text{A}\\hat{\\text{E}}\\text{D}) = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{\\text{AD}}{\\text{DE}} = \\frac{4}{10}$.",
+          "Take the inverse tangent: $\\theta = \\tan^{-1}(0.4) \\approx 21.8^{\\circ}$."
+        ],
+        "common_pitfalls": "Confusing the hypotenuse with the base side, or projecting onto the wrong edge of the base."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "[BD]",
+      "final_answer": "$20.0^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify projection [CD] and state tan ratio for angle BDC"
+        },
+        {
+          "code": "A1",
+          "desc": "Compute inverse tangent to find angle approximately 20.0°"
+        }
+      ],
+      "solution": "The projection of $[\\text{BD}]$ onto the base plane is $[\\text{CD}]$.\n$\\therefore$ the required angle is $\\text{B}\\hat{\\text{D}}\\text{C}$.\n$$\\tan\\theta = \\frac{4}{11}$$\n$$\\therefore \\theta = \\tan^{-1}\\left(\\frac{4}{11}\\right) \\approx 20.0^{\\circ}$$\nThe angle is about $20.0^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "The angle between a line and a plane is formed by the line and its projection onto the plane.",
+        "step_by_step": [
+          "The orthogonal projection of B onto the base plane is C, so the projection of $[\\text{BD}]$ is $[\\text{CD}]$.",
+          "In right-angled triangle $\\Delta \\text{BCD}$, the opposite side is $\\text{BC} = 4\\text{ cm}$ and the adjacent side is $\\text{CD} = 11\\text{ cm}$.",
+          "Set up $\\tan\\theta = \\frac{4}{11}$.",
+          "Calculate $\\theta = \\tan^{-1}\\left(\\frac{4}{11}\\right) \\approx 20.0^{\\circ}$."
+        ],
+        "common_pitfalls": "Incorrectly identifying the adjacent side length along the base plane."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "[BE]",
+      "final_answer": "$15.1^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use Pythagoras' theorem in triangle ECF to find length of base diagonal CE"
+        },
+        {
+          "code": "M1",
+          "desc": "Formulate tan ratio for angle BEC"
+        },
+        {
+          "code": "A1",
+          "desc": "Compute angle to obtain approximately 15.1°"
+        }
+      ],
+      "solution": "The projection of $[\\text{BE}]$ onto the base plane is $[\\text{CE}]$.\n$\\therefore$ the required angle is $\\text{B}\\hat{\\text{E}}\\text{C}$.\nLet $\\text{CE}$ be $x\\text{ cm}$.\nUsing Pythagoras in $\\Delta \\text{ECF}$:\n$$x^2 = 10^2 + 11^2 = 221$$\n$$\\therefore x = \\sqrt{221} \\quad \\{x > 0\\}$$\nLet $\\text{B}\\hat{\\text{E}}\\text{C}$ be $\\alpha$.\n$$\\therefore \\tan\\alpha = \\frac{4}{\\sqrt{221}}$$\n$$\\therefore \\alpha = \\tan^{-1}\\left(\\frac{4}{\\sqrt{221}}\\right) \\approx 15.1^{\\circ}$$\nThe angle is about $15.1^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "In 3D trigonometry, the projection of a space diagonal onto a base plane requires calculating the 2D plane diagonal first via Pythagoras' theorem.",
+        "step_by_step": [
+          "Find the length of projection $[\\text{CE}]$ in the rectangular base: $\\text{CE} = \\sqrt{10^2 + 11^2} = \\sqrt{221}$.",
+          "In the vertical right triangle $\\Delta \\text{BCE}$, side $\\text{BC} = 4$ is perpendicular to the base plane.",
+          "Use $\\tan\\alpha = \\frac{\\text{BC}}{\\text{CE}} = \\frac{4}{\\sqrt{221}}$.",
+          "Compute $\\alpha \\approx 15.1^{\\circ}$."
+        ],
+        "common_pitfalls": "Premature rounding of the intermediate length $\\sqrt{221}$, leading to inaccuracies."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "[AM]",
+      "final_answer": "$18.3^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use Pythagoras' theorem to calculate base segment DM"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tan ratio for angle AMD"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate angle to find approximately 18.3°"
+        }
+      ],
+      "solution": "The projection of $[\\text{AM}]$ onto the base plane is $[\\text{DM}]$.\n$\\therefore$ the required angle is $\\text{A}\\hat{\\text{M}}\\text{D}$.\nLet $\\text{DM}$ be $x\\text{ cm}$.\nUsing Pythagoras in $\\Delta \\text{DCM}$:\n$$x^2 = 11^2 + 5^2 = 146$$\n$$\\therefore x = \\sqrt{146} \\quad \\{x > 0\\}$$\nLet $\\text{A}\\hat{\\text{M}}\\text{D}$ be $\\alpha$.\n$$\\therefore \\tan\\alpha = \\frac{4}{\\sqrt{146}}$$\n$$\\therefore \\alpha = \\tan^{-1}\\left(\\frac{4}{\\sqrt{146}}\\right) \\approx 18.3^{\\circ}$$\nThe angle is about $18.3^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "Find the length of the projection segment on the base using the coordinates or right-triangle geometry of the base, then apply the tangent ratio with the vertical height.",
+        "step_by_step": [
+          "M is the midpoint of the side of length 10 cm, so $\\text{CM} = 5\\text{ cm}$.",
+          "Find $\\text{DM}$ using the right triangle $\\Delta \\text{DCM}$: $\\text{DM} = \\sqrt{11^2 + 5^2} = \\sqrt{146}\\text{ cm}$.",
+          "In right-angled triangle $\\Delta \\text{ADM}$, $\\tan(\\text{A}\\hat{\\text{M}}\\text{D}) = \\frac{\\text{AD}}{\\text{DM}} = \\frac{4}{\\sqrt{146}}$.",
+          "Solve for the angle: $\\alpha = \\tan^{-1}\\left(\\frac{4}{\\sqrt{146}}\\right) \\approx 18.3^{\\circ}$."
+        ],
+        "common_pitfalls": "Using the full length of 10 cm instead of the half-length 5 cm to the midpoint M."
+      }
+    }
+  ]
+}

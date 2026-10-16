@@ -1,0 +1,75 @@
+{
+  "id": "topic_5_q30",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 30,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that if $f(x) = \\ln\\left(\\frac{1-2x}{x^2+2}\\right)$, then $f'(x) = \\frac{2(x-2)(x+1)}{(1-2x)(x^2+2)}$.",
+      "final_answer": "$f'(x) = \\frac{2(x-2)(x+1)}{(x^2+2)(1-2x)}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use logarithm laws to expand $\\ln\\left(\\frac{1-2x}{x^2+2}\\right) = \\ln(1-2x) - \\ln(x^2+2)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Differentiate each logarithmic term"
+        },
+        {
+          "code": "M1",
+          "desc": "Combine over a common denominator"
+        },
+        {
+          "code": "A1",
+          "desc": "Factorise the numerator to obtain the final expression"
+        }
+      ],
+      "solution": "$f(x) = \\ln\\left(\\frac{1-2x}{x^2+2}\\right) = \\ln(1-2x) - \\ln(x^2+2)$\n$\\therefore f'(x) = \\frac{-2}{1-2x} - \\frac{2x}{x^2+2}$\n$= \\frac{-2(x^2+2) - 2x(1-2x)}{(1-2x)(x^2+2)}$\n$= \\frac{-2x^2 - 4 - 2x + 4x^2}{(x^2+2)(1-2x)}$\n$= \\frac{2x^2 - 2x - 4}{(x^2+2)(1-2x)}$\n$= \\frac{2(x-2)(x+1)}{(x^2+2)(1-2x)}$",
+      "ai_explanation": {
+        "concept_rule": "Using log properties $\\ln(a/b) = \\ln(a) - \\ln(b)$ simplifies differentiation before applying $\\frac{d}{dx}[\\ln(u)] = \\frac{u'}{u}$.",
+        "step_by_step": [
+          "Rewrite $f(x)$ as $\\ln(1-2x) - \\ln(x^2+2)$.",
+          "Differentiate: $\\frac{-2}{1-2x} - \\frac{2x}{x^2+2}$.",
+          "Find common denominator: $\\frac{-2(x^2+2) - 2x(1-2x)}{(x^2+2)(1-2x)}$.",
+          "Expand the numerator: $-2x^2 - 4 - 2x + 4x^2 = 2x^2 - 2x - 4$.",
+          "Factorise: $2(x^2 - x - 2) = 2(x-2)(x+1)$."
+        ],
+        "common_pitfalls": "Applying quotient rule directly inside $\\ln(u)$ without expanding, which is much more algebraically cumbersome and prone to error."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "On what intervals is $f(x)$ decreasing?",
+      "final_answer": "$-1 \\leqslant x < \\frac{1}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Create the sign diagram for $f'(x)$ using critical values $-1, \\frac{1}{2}, 2$"
+        },
+        {
+          "code": "R1",
+          "desc": "Identify where $f(x)$ is defined (requires $1 - 2x > 0 \\implies x < \\frac{1}{2}$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine decreasing interval where $f'(x) \\leqslant 0$ within the domain: $-1 \\leqslant x < \\frac{1}{2}$"
+        }
+      ],
+      "solution": "The sign diagram of $f'(x)$ is:\n[Sign diagram showing signs $+$, $-$, $+$, $-$ partitioned by $-1$, $\\frac{1}{2}$, $2$]\n$f(x)$ is decreasing whenever $f'(x) \\leqslant 0$.\nBut $f(x)$ is undefined when $1 - 2x \\leqslant 0$ which is when $x \\geqslant \\frac{1}{2}$.\n$\\therefore f(x)$ is decreasing for $-1 \\leqslant x < \\frac{1}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "A function is decreasing where $f'(x) \\leqslant 0$, strictly restricted to the domain of the function.",
+        "step_by_step": [
+          "Find critical values where $f'(x) = 0$ or undefined: $x = -1, \\frac{1}{2}, 2$.",
+          "Test intervals to draw the sign diagram of $f'(x)$.",
+          "State the domain of $f(x)$: the argument of the logarithm must be positive, so $\\frac{1-2x}{x^2+2} > 0 \\implies 1-2x > 0 \\implies x < \\frac{1}{2}$.",
+          "Find where $f'(x) \\leqslant 0$ on the domain $x < \\frac{1}{2}$, which is $[-1, \\frac{1}{2})$."
+        ],
+        "common_pitfalls": "Forgetting the domain restriction of the logarithmic function and including $x \\geqslant 2$ as a decreasing interval."
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "topic_5_q78",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 78,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Sketch the curve $y = 3x^2 + 1$ for $0 \\leqslant x \\leqslant 3$.",
+      "final_answer": "$Graph of $y = 3x^2 + 1$ plotted from $x = 0$ to $x = 3$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plotting points for $y = 3x^2 + 1$ at $x = 0, 1, 2, 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Drawing a smooth parabolic curve starting at $(0,1)$ and passing through $(1,4)$, $(2,13)$, and $(3,28)$"
+        }
+      ],
+      "solution": "Graph drawn for $y = 3x^2 + 1$ over the domain $0 \\le x \\le 3$. The key points plotted are $(0, 1)$, $(1, 4)$, $(2, 13)$, and $(3, 28)$ with a smooth upward-curving parabola.",
+      "ai_explanation": {
+        "concept_rule": "Graphing a quadratic function on a restricted domain.",
+        "step_by_step": [
+          "Determine key coordinates by calculating $y$ for $x = 0, 1, 2, 3$.",
+          "Plot the $y$-intercept at $(0, 1)$.",
+          "Plot points $(1, 4)$, $(2, 13)$, and $(3, 28)$.",
+          "Connect the points with a smooth, increasing curve."
+        ],
+        "common_pitfalls": "Drawing straight line segments between points instead of a smooth parabola."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the area between the curve and the $x$-axis for $0 \\leqslant x \\leqslant 3$.",
+      "final_answer": "$30\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral $\\int_0^3 (3x^2+1)\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding antiderivative $x^3 + x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating at limits to obtain $30\\text{ units}^2$"
+        }
+      ],
+      "solution": "$\\text{Area} = \\int_0^3 (3x^2+1)\\,dx = \\left[x^3+x\\right]_0^3 = 3^3 + 3 - 0 = 27 + 3 = 30\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "Definite integration to find area under a polynomial curve.",
+        "step_by_step": [
+          "Set up $\\int_0^3 (3x^2+1)\\,dx$.",
+          "Find the antiderivative: $\\frac{3x^3}{3} + x = x^3 + x$.",
+          "Substitute upper limit $3$: $3^3 + 3 = 30$.",
+          "Subtract lower limit value at $0$: $30 - 0 = 30$."
+        ],
+        "common_pitfalls": "Forgetting to integrate the constant term $1$ to $x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $k$ such that the area between the curve and the $x$-axis for $0 \\leqslant x \\leqslant k$ is $10\\text{ units}^2$.",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $\\int_0^k (3x^2+1)\\,dx = 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Forming cubic equation $k^3 + k = 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving to obtain $k = 2$"
+        }
+      ],
+      "solution": "$\\text{Area} = 10\\text{ units}^2 \\implies \\int_0^k (3x^2+1)\\,dx = 10 \\implies \\left[x^3+x\\right]_0^k = 10 \\implies k^3 + k = 10 \\implies k = 2 \\quad \\{\\text{using technology}\\}$",
+      "ai_explanation": {
+        "concept_rule": "Finding an unknown upper integration limit corresponding to a given area.",
+        "step_by_step": [
+          "Express area as a function of $k$: $[x^3+x]_0^k = k^3+k$.",
+          "Set $k^3+k = 10$.",
+          "Solve for $k$ using technology or inspection: $2^3 + 2 = 8 + 2 = 10$, so $k = 2$."
+        ],
+        "common_pitfalls": "Attempting complicated factoring when inspection or GDC quickly gives the integer root."
+      }
+    }
+  ]
+}

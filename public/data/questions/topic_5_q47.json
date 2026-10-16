@@ -1,0 +1,74 @@
+{
+  "id": "topic_5_q47",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 47,
+  "question_text": "Terry wants to fence off a rectangular garden plot of area $48\\text{ m}^2$. Three sides will be fenced with strong wire mesh costing $18 per metre, and the remaining side will be fenced with corrugated iron costing $30 per metre.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "By letting $x$ be the length in metres of the side fenced with corrugated iron, show that the cost of fencing is $C = 48\\left(\\frac{36}{x} + x\\right)$ dollars.",
+      "final_answer": "$C = 48\\left(\\frac{36}{x} + x\\right)\\text{ dollars}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express $y$ in terms of $x$ using the area constraint $xy = 48$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up the total cost equation considering the different fencing rates"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify and factor to obtain $48\\left(\\frac{36}{x} + x\\right)$"
+        }
+      ],
+      "solution": "Let the length of the side adjacent to the corrugated iron fence be $y\\text{ m}$.\\nNow $\\text{area} = xy\\implies xy = 48\\implies y = \\frac{48}{x}$\\n$\\text{Cost of fencing} = 18(2y + x) + 30x$\\n$\\therefore C = 18\\left(\\frac{2 \\times 48}{x} + x\\right) + 30x$\\n$\\therefore C = \\frac{2 \\times 48 \\times 18}{x} + 18x + 30x$\\n$\\therefore C = \\frac{2 \\times 48 \\times 18}{x} + 48x$\\n$\\therefore C = 48\\left(\\frac{36}{x} + x\\right)\\text{ dollars}$",
+      "ai_explanation": {
+        "concept_rule": "Constructing an objective cost function involves multiplying each side length by its respective unit cost and substituting the constraint variable.",
+        "step_by_step": [
+          "Use area $xy = 48$ to express $y = \\frac{48}{x}$.",
+          "Three sides use standard fencing at $\\$18$/m (two sides of length $y$ and one side of length $x$), and one side of length $x$ uses corrugated iron at $\\$30$/m.",
+          "Write total cost: $C = 18(2y + x) + 30x = 36y + 48x$.",
+          "Substitute $y = \\frac{48}{x}$: $C = 36\\left(\\frac{48}{x}\\right) + 48x = 48\\left(\\frac{36}{x} + x\\right)$."
+        ],
+        "common_pitfalls": "Applying the corrugated iron cost to both $x$ sides rather than only one."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the dimensions of the garden plot which will minimise the cost of fencing.",
+      "final_answer": "$6\\text{ m} \\times 8\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set the derivative equal to zero to find the critical value"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for positive $x$"
+        },
+        {
+          "code": "R1",
+          "desc": "Verify minimum using sign diagram or second derivative"
+        },
+        {
+          "code": "A1",
+          "desc": "State the dimensions that minimize the cost"
+        }
+      ],
+      "solution": "$\\frac{dC}{dx} = 48\\left(-\\frac{36}{x^2} + 1\\right)$\nNow $C$ is minimised when $\\frac{dC}{dx} = 0$:\n$\\therefore 48\\left(-\\frac{36}{x^2} + 1\\right) = 0$\n$\\therefore -\\frac{36}{x^2} + 1 = 0$\n$\\therefore \\frac{36}{x^2} = 1$\n$\\therefore x^2 = 36$\n$\\therefore x = 6 \\quad \\{x > 0\\}$\n\nThe sign diagram of $\\frac{dC}{dx}$ shows a sign change from negative to positive at $x = 6$.\n$\\therefore C$ is minimised when $x = 6$.\nWhen $x = 6$, $y = \\frac{48}{6} = 8$.\n\nThe dimensions that minimise the cost of fencing are $6\\text{ m} \\times 8\\text{ m}$, where one of the $6\\text{ m}$ sides is fenced with corrugated iron.",
+      "ai_explanation": {
+        "concept_rule": "To find an optimum value (minimum/maximum), find the first derivative, set it to zero, solve for the variable, and justify that it is indeed a local extremum using a sign diagram or second derivative test.",
+        "step_by_step": [
+          "Set the given derivative $\\frac{dC}{dx} = 0$.",
+          "Solve for the positive critical value $x = 6$.",
+          "Test intervals around $x=6$ to verify that the derivative changes sign from negative to positive, indicating a minimum.",
+          "Calculate the corresponding dimension $y$ and state the final dimensions."
+        ],
+        "common_pitfalls": "Neglecting to discard negative roots in geometric problems where length must be positive ($x > 0$)."
+      }
+    }
+  ]
+}

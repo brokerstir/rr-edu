@@ -1,0 +1,120 @@
+{
+  "id": "topic_3_q19",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 19,
+  "question_text": "Consider the triangular prism shown.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the coordinates of M.",
+      "final_answer": "$(-5, 4, 6)$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct coordinates of midpoint M"
+        }
+      ],
+      "solution": "$\\text{M}$ is $(-5, 4, 6)$",
+      "ai_explanation": {
+        "concept_rule": "The midpoint of two points in 3D space with coordinates $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ is given by $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$.",
+        "step_by_step": [
+          "Take the coordinates of points A$(0, 4, 6)$ and D$(-10, 4, 6)$.",
+          "Calculate midpoint: $\\left(\\frac{0 + (-10)}{2}, \\frac{4 + 4}{2}, \\frac{6 + 6}{2}\\right) = (-5, 4, 6)$."
+        ],
+        "common_pitfalls": "Sign errors when averaging negative coordinates."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the measure of $\\mathrm{C\\widehat{M}D}$.",
+      "final_answer": "$55.3^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate distances DM and CD using the 3D distance formula"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tan ratio for angle CMD"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle CMD to obtain approximately 55.3°"
+        }
+      ],
+      "solution": "Let $\\text{C}\\hat{\\text{M}}\\text{D}$ be $\\theta$.\nNow $\\text{DM} = 5\\text{ units}$\nand\n$$\\text{CD} = \\sqrt{(-10 - (-10))^2 + (4 - 0)^2 + (6 - 0)^2} = \\sqrt{0^2 + 4^2 + 6^2} = \\sqrt{52}\\text{ units}$$\n$$\\therefore \\tan\\theta = \\frac{\\sqrt{52}}{5}$$\n$$\\therefore \\theta = \\tan^{-1}\\left(\\frac{\\sqrt{52}}{5}\\right) \\approx 55.3^{\\circ}$$\n$$\\therefore \\text{C}\\hat{\\text{M}}\\text{D} \\approx 55.3^{\\circ}$$",
+      "ai_explanation": {
+        "concept_rule": "In a right-angled triangle in 3D space, calculate the lengths of the two legs using coordinate differences, then use the tangent ratio.",
+        "step_by_step": [
+          "Determine length $\\text{DM} = 5$ from coordinates $\\text{D}(-10,4,6)$ and $\\text{M}(-5,4,6)$.",
+          "Find length $\\text{CD} = \\sqrt{(-10 - (-10))^2 + (4 - 0)^2 + (6 - 0)^2} = \\sqrt{52}$.",
+          "Recognize $\\Delta \\text{CDM}$ is right-angled at D, so $\\tan\\theta = \\frac{\\text{CD}}{\\text{DM}} = \\frac{\\sqrt{52}}{5}$.",
+          "Find $\\theta = \\tan^{-1}\\left(\\frac{\\sqrt{52}}{5}\\right) \\approx 55.3^{\\circ}$."
+        ],
+        "common_pitfalls": "Identifying the wrong vertex as the right angle."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Find the angle between the following line segments and the base plane BECO: [OD]",
+      "final_answer": "$29.1^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify coordinates of point N and compute distances DN and NO"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tan ratio for angle DON"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle to obtain approximately 29.1°"
+        }
+      ],
+      "solution": "The required angle is $\\text{D}\\hat{\\text{O}}\\text{N}$, where $\\text{N}$ has coordinates $(-10, 4, 0)$.\nNow $\\text{DN} = 6\\text{ units}$\nand\n$$\\text{NO} = \\sqrt{(-10 - 0)^2 + (4 - 0)^2 + (0 - 0)^2} = \\sqrt{(-10)^2 + 4^2 + 0^2} = \\sqrt{116}\\text{ units}$$\n$$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{116}}$$\n$$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{116}}\\right) \\approx 29.1^{\\circ}$$\nThe angle is about $29.1^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "To find the angle a line makes with a coordinate plane, project the line onto that plane and calculate the angle in the resulting right triangle.",
+        "step_by_step": [
+          "The orthogonal projection of D$(-10, 4, 6)$ on the xy-plane is $\\text{N}(-10, 4, 0)$.",
+          "Calculate the vertical height $\\text{DN} = 6$.",
+          "Calculate the base distance $\\text{NO} = \\sqrt{(-10)^2 + 4^2 + 0^2} = \\sqrt{116}$.",
+          "Use $\\tan\\theta = \\frac{\\text{DN}}{\\text{NO}} = \\frac{6}{\\sqrt{116}}$ to obtain $\\theta \\approx 29.1^{\\circ}$."
+        ],
+        "common_pitfalls": "Using the distance OD directly in the tangent function instead of the adjacent side ON."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Find the angle between the following line segments and the base plane BECO: [EM]",
+      "final_answer": "$43.1^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify coordinates of P and calculate distances MP and PE"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tan ratio for angle MEP"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate angle to find approximately 43.1°"
+        }
+      ],
+      "solution": "The required angle is $\\text{M}\\hat{\\text{E}}\\text{P}$, where $\\text{P}$ has coordinates $(-5, 4, 0)$.\nNow $\\text{MP} = 6\\text{ units}$\nand\n$$\\text{PE} = \\sqrt{(-10 - (-5))^2 + (8 - 4)^2 + (0 - 0)^2} = \\sqrt{(-5)^2 + 4^2 + 0^2} = \\sqrt{41}\\text{ units}$$\n$$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{41}}$$\n$$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{41}}\\right) \\approx 43.1^{\\circ}$$\nThe angle is about $43.1^{\\circ}$.",
+      "ai_explanation": {
+        "concept_rule": "The angle between a line segment and the base plane is the angle between the segment and its projection on the base plane.",
+        "step_by_step": [
+          "The projection of M$(-5, 4, 6)$ onto the base plane is $\\text{P}(-5, 4, 0)$.",
+          "The vertical opposite side is $\\text{MP} = 6$.",
+          "The projection length $\\text{PE}$ is found using distance formula between $\\text{P}(-5, 4, 0)$ and $\\text{E}(-10, 8, 0)$: $\\text{PE} = \\sqrt{(-5)^2 + 4^2} = \\sqrt{41}$.",
+          "Calculate $\\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{41}}\\right) \\approx 43.1^{\\circ}$."
+        ],
+        "common_pitfalls": "Incorrect coordinates for projection point P or the vertex E."
+      }
+    }
+  ]
+}

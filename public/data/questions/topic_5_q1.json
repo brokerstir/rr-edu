@@ -1,0 +1,26 @@
+{
+  "id": "topic_5_q1",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 1,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Copy and complete this table of values:\n\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\n$x$ & 50 & 100 & 200 & 500 & 1000 \\\\\n\\hline\n$\\frac{\\ln x}{x}$ & & & & & \\\\\n\\hline\n\\end{tabular}",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence predict the value of $\\lim_{x \\to \\infty} \\frac{\\ln x}{x}$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "topic_3_q12",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 12,
+  "question_text": "Find all unknowns in these figures:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$y \\approx 12.1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $x$ using sine in right triangle $ABC$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find angle $\\theta$ using sine in right triangle $ACD$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate $\\hat{DAB}$ using angle sum of triangle $DAB$"
+        },
+        {
+          "code": "A1",
+          "desc": "Apply cosine rule in $\\triangle DAB$ to determine $y \\approx 12.1$"
+        }
+      ],
+      "solution": "In triangle ABC, $\\sin 35^\\circ = \\frac{x}{9} \\implies x = 9\\sin 35^\\circ \\approx 5.16$\n\nIn triangle ACD, $\\sin\\theta = \\frac{x}{7} = \\frac{9\\sin 35^\\circ}{7} \\implies \\theta = \\sin^{-1}\\left(\\frac{9\\sin 35^\\circ}{7}\\right) \\approx 47.5^\\circ$\n\n$\\hat{DAB} = 180^\\circ - 35^\\circ - 47.5^\\circ = 97.5^\\circ$ {angles in triangle DAB}\n\nUsing the cosine rule in triangle DAB:\n$y \\approx \\sqrt{7^2 + 9^2 - 2(7)(9)\\cos 97.5^\\circ} \\approx 12.1$",
+      "ai_explanation": {
+        "concept_rule": "Use right-angle trigonometry to find shared perpendicular heights and unknown angles, then use the cosine rule $c = \\sqrt{a^2 + b^2 - 2ab\\cos C}$ for non-right-angled triangles.",
+        "step_by_step": [
+          "Calculate $x = 9\\sin 35^\\circ$ from right triangle $ABC$.",
+          "Calculate $\\theta = \\sin^{-1}\\left(\\frac{x}{7}\\right) \\approx 47.5^\\circ$ from right triangle $ACD$.",
+          "Find the third angle of $\\triangle DAB$: $\\hat{DAB} = 180^\\circ - 35^\\circ - 47.5^\\circ = 97.5^\\circ$.",
+          "Apply the cosine rule to $\\triangle DAB$ to find side $y = DB$."
+        ],
+        "common_pitfalls": "Rounding intermediate values like $x$ and $\\theta$ too early, causing compounding rounding errors."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$x \\approx 0.485$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $AD = 8\\tan 40^\\circ$ in $\\triangle ACD$"
+        },
+        {
+          "code": "M1",
+          "desc": "Determine angle $\\theta$ and length $AE$ in $\\triangle ADE$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate angle $\\hat{EAB}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Use cosine in $\\triangle ABE$ to find $x \\approx 0.485$"
+        }
+      ],
+      "solution": "In triangle ACD, $\\tan 40^\\circ = \\frac{AD}{8} \\implies AD = 8\\tan 40^\\circ$\n\nIn triangle ADE, $\\tan\\theta = \\frac{5}{AD} = \\frac{5}{8\\tan 40^\\circ} \\implies \\theta = \\tan^{-1}\\left(\\frac{5}{8\\tan 40^\\circ}\\right) \\approx 36.68^\\circ \\approx 36.7^\\circ$\n\nand $\\sin 36.68^\\circ \\approx \\frac{5}{AE} \\implies AE \\approx \\frac{5}{\\sin 36.68^\\circ}$\n\nNow $\\hat{DAC} = 90^\\circ - 40^\\circ = 50^\\circ$ {angles in triangle ACD}\n$\\therefore \\hat{EAB} \\approx 50^\\circ + 36.68^\\circ \\approx 86.68^\\circ$\n\nIn triangle ABE, $\\cos\\hat{EAB} = \\frac{x}{AE} \\implies \\cos 86.68^\\circ \\approx \\frac{x}{\\left(\\frac{5}{\\sin 36.68^\\circ}\\right)}$\n$\\therefore x \\approx \\frac{5\\cos 86.68^\\circ}{\\sin 36.68^\\circ} \\approx 0.485$",
+      "ai_explanation": {
+        "concept_rule": "Chain trigonometric ratios across adjacent right-angled triangles sharing common sides and vertices to determine target lengths.",
+        "step_by_step": [
+          "Express side $AD$ using $\\tan 40^\\circ = \\frac{AD}{8}$.",
+          "Find $\\theta = \\angle EAD = \\tan^{-1}\\left(\\frac{5}{AD}\\right)$ and side $AE = \\frac{5}{\\sin\\theta}$.",
+          "Determine $\\angle DAC = 50^\\circ$ and sum with $\\theta$ to obtain $\\angle EAB$.",
+          "Use $\\cos\\angle EAB = \\frac{x}{AE}$ to solve for $x$."
+        ],
+        "common_pitfalls": "Incorrectly identifying which angle forms $\\hat{EAB}$ by misinterpreting the adjacent right triangles."
+      }
+    }
+  ]
+}

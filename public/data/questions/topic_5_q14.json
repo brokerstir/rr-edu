@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q14",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 14,
+  "question_text": "Given $f(x) = e^{ax + 2} + x^2$ and $f(2) = f'(2)$, find $a$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Given $f(x) = e^{ax + 2} + x^2$ and $f(2) = f'(2)$, find $a$.",
+      "final_answer": "$a = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $f(x)$ using the chain rule for the exponential term"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative $f'(x) = ae^{ax+2} + 2x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Equating $f(2) = f'(2)$ to form an equation in terms of $a$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $a$ using the property $e^u > 0$"
+        }
+      ],
+      "solution": "$f(x) = e^{ax+2} + x^2 \\text{ and } f(2) = f'(2)$\n$\\therefore f'(x) = ae^{ax+2} + 2x$\nNow $f(2) = e^{2a+2} + 4$ and $f'(2) = ae^{2a+2} + 4$\n$\\therefore e^{2a+2} + 4 = ae^{2a+2} + 4$\n$\\therefore e^{2a+2} = ae^{2a+2}$\n$\\therefore (a-1)e^{2a+2} = 0$\n$\\therefore a-1 = 0 \\quad \\{e^x > 0 \\text{ for all } x\\}$\n$\\therefore a = 1$",
+      "ai_explanation": {
+        "concept_rule": "The derivative of an exponential function of the form $e^{g(x)}$ is $g'(x)e^{g(x)}$.",
+        "step_by_step": [
+          "Differentiate $f(x) = e^{ax+2} + x^2$ with respect to $x$ to find $f'(x) = ae^{ax+2} + 2x$.",
+          "Evaluate $f(2)$ and $f'(2)$ by substituting $x = 2$.",
+          "Set $f(2) = f'(2)$, yielding $e^{2a+2} + 4 = ae^{2a+2} + 4$.",
+          "Subtract 4 from both sides: $e^{2a+2} = ae^{2a+2}$.",
+          "Rearrange to $(a-1)e^{2a+2} = 0$. Since $e^{2a+2} \\neq 0$ for all real $a$, deduce $a - 1 = 0$, giving $a = 1$."
+        ],
+        "common_pitfalls": "Dividing by an expression without verifying it cannot be zero (though $e^u > 0$ holds here, it is best practice to state this explicitly)."
+      }
+    }
+  ]
+}

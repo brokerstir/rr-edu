@@ -1,0 +1,76 @@
+{
+  "id": "topic_5_q28",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 28,
+  "question_text": "Let $f(x) = \\frac{x+2}{\\sqrt{x-1}}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain of $f(x)$.",
+      "final_answer": "$\\{x \\mid x > 1\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "State conditions where $f(x)$ is undefined ($x - 1 < 0$ and $x = 1$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine domain as $x > 1$ or $\\{x \\mid x > 1\\}$"
+        }
+      ],
+      "solution": "$f(x) = \\frac{x+2}{\\sqrt{x-1}}$\n$f(x)$ is undefined when $x - 1 < 0$ and $x = 1$\n$\\therefore x < 1$\nSo, the domain of $f(x)$ is $\\{x \\mid x > 1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "A square root $\\sqrt{u}$ requires $u \\geqslant 0$, and being in the denominator requires $u \\neq 0$. Thus, $u > 0$.",
+        "step_by_step": [
+          "Identify restrictions on the expression: the denominator contains $\\sqrt{x-1}$.",
+          "For the square root to be real, $x - 1 \\geqslant 0$.",
+          "For the fraction to be defined, the denominator cannot be zero, so $x - 1 \\neq 0$.",
+          "Combine conditions to obtain $x - 1 > 0$, hence $x > 1$."
+        ],
+        "common_pitfalls": "Including $x = 1$ in the domain (dividing by zero)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the equation of the normal to $y = f(x)$ at $x = 10$.",
+      "final_answer": "$y = -9x + 94$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate $f(10)$ to find the point of contact"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply the quotient rule to find $f'(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $f'(10)$ to find the tangent gradient $\\frac{1}{9}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find normal gradient $m_{\\text{normal}} = -\\frac{1}{f'(10)} = -9$"
+        },
+        {
+          "code": "A1",
+          "desc": "Write equation of the normal line and simplify to $y = -9x + 94$"
+        }
+      ],
+      "solution": "$f(10) = \\frac{10+2}{\\sqrt{10-1}} = \\frac{12}{\\sqrt{9}} = \\frac{12}{3} = 4$, so the point of contact is $(10, 4)$.\nNow $f(x) = \\frac{x+2}{\\sqrt{x-1}} = \\frac{x+2}{(x-1)^{\\frac{1}{2}}}$ has derivative\n$f'(x) = \\frac{(1)(x-1)^{\\frac{1}{2}} - \\frac{1}{2}(x-1)^{-\\frac{1}{2}}(x+2)}{x-1}$ {quotient rule}\n$= \\frac{\\sqrt{x-1} - \\frac{x+2}{2\\sqrt{x-1}}}{x-1}\n= \\frac{2(x-1) - x - 2}{2(x-1)^{\\frac{3}{2}}}\n= \\frac{x-4}{2(x-1)^{\\frac{3}{2}}}$\n$\\therefore f'(10) = \\frac{10-4}{2(10-1)^{\\frac{3}{2}}} = \\frac{6}{2 \\times 9^{\\frac{3}{2}}} = \\frac{6}{2 \\times 27} = \\frac{1}{9}$\nSo, the normal has gradient $-9$.\nThe normal has equation $y = -9(x-10) + 4$\n$\\therefore y = -9x + 90 + 4$\n$\\therefore y = -9x + 94$",
+      "ai_explanation": {
+        "concept_rule": "The normal line is perpendicular to the tangent line at the point of contact. If the tangent gradient is $m$, the normal gradient is $-\\frac{1}{m}$.",
+        "step_by_step": [
+          "Evaluate $f(10) = 4$ to find point $(10, 4)$.",
+          "Differentiate $f(x)$ using the quotient rule: $\\frac{u'v - uv'}{v^2}$.",
+          "Simplify $f'(x)$ to $\\frac{x-4}{2(x-1)^{3/2}}$.",
+          "Substitute $x = 10$ into $f'(x)$ to find tangent gradient $m = \\frac{1}{9}$.",
+          "Determine normal gradient: $m_{\\text{normal}} = -\\frac{1}{1/9} = -9$.",
+          "Use line equation $y - 4 = -9(x - 10)$ and simplify to $y = -9x + 94$."
+        ],
+        "common_pitfalls": "Algebraic errors when simplifying the compound fraction in the quotient rule derivative."
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "topic_4_q41",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 41,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "If 3 coins are tossed, find the probability that two fall heads and the other falls tails.",
+      "final_answer": "$\\frac{3}{8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying all favorable outcomes (HHT, HTH, THH) and their probabilities"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly evaluating the probability as $\\frac{3}{8}$"
+        }
+      ],
+      "solution": "Let H represent a head, and T represent a tail.\n$\\begin{aligned} P(2\\text{ heads and }1\\text{ tail}) &= P(\\text{HHT, HTH, or THH}) \\\\ &= \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} + \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} + \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} \\\\ &= \\frac{1}{8} + \\frac{1}{8} + \\frac{1}{8} \\\\ &= \\frac{3}{8} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Binomial probability or listing outcomes for tossing 3 coins: $\\binom{3}{2} \\left(\\frac{1}{2}\\right)^3$.",
+        "step_by_step": [
+          "List the outcomes with 2 heads and 1 tail: HHT, HTH, THH.",
+          "Find the probability of each outcome: $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$.",
+          "Sum the probabilities: $3 \\times \\frac{1}{8} = \\frac{3}{8}$."
+        ],
+        "common_pitfalls": "Missing one of the permutations of two heads and one tail."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Suppose 3 coins are tossed 400 times. On how many occasions would you expect to see exactly one tail?",
+      "final_answer": "$150\\text{ times}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use of expected value formula $E(X) = np$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation to get 150 times"
+        }
+      ],
+      "solution": "$n = 400\\text{ times}$\n$p = P(\\text{exactly }1\\text{ tail}) = \\frac{3}{8}$ {from a}\nYou would expect to see exactly one tail\n$np = 400 \\times \\frac{3}{8} = 150\\text{ times}$.",
+      "ai_explanation": {
+        "concept_rule": "The expected number of occurrences in $n$ independent trials is given by $E(X) = np$.",
+        "step_by_step": [
+          "Identify $n = 400$ and $p = \\frac{3}{8}$ (since 1 tail is equivalent to 2 heads and 1 tail).",
+          "Multiply $n$ by $p$: $400 \\times \\frac{3}{8} = 150$."
+        ],
+        "common_pitfalls": "Using the wrong probability value for $p$."
+      }
+    }
+  ]
+}

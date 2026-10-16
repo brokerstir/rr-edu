@@ -1,0 +1,84 @@
+{
+  "id": "topic_4_q54",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 54,
+  "question_text": "A multiple choice test consists of 30 questions with 5 answers to choose from. For each question, only one choice is correct. Let $Y$ be the number of correct answers chosen if each answer is randomly guessed.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the mean $\\mu$ and standard deviation $\\sigma$ of $Y$.",
+      "final_answer": "$\\mu = 6,\\; \\sigma \\approx 2.19$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Calculating $\\mu = np = 6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $\\sigma = \\sqrt{\\frac{24}{5}} \\approx 2.19$"
+        }
+      ],
+      "solution": "$Y \\sim \\text{B}(30, \\frac{1}{5})$\n$$\\mu = np = 30 \\times \\frac{1}{5} = 6$$\n$$\\sigma = \\sqrt{np(1-p)} = \\sqrt{30 \\times \\frac{1}{5} \\times \\frac{4}{5}} = \\sqrt{\\frac{24}{5}} \\approx 2.19$$",
+      "ai_explanation": {
+        "concept_rule": "The mean and standard deviation of a binomial distribution are given by $\\mu = np$ and $\\sigma = \\sqrt{np(1-p)}$.",
+        "step_by_step": [
+          "Substitute $n = 30$ and $p = \\frac{1}{5}$ into $\\mu = np = 6$.",
+          "Substitute into $\\sigma = \\sqrt{30 \\times \\frac{1}{5} \\times \\frac{4}{5}} = \\sqrt{4.8} \\approx 2.19$."
+        ],
+        "common_pitfalls": "Using $p$ instead of $1-p$ inside the square root."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $\\mathrm{P}(Y = 20)$.",
+      "final_answer": "$3.38 \\times 10^{-8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Writing the binomial probability formula for $P(Y = 20)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value $3.38 \\times 10^{-8}$"
+        }
+      ],
+      "solution": "$$P(Y = 20) = \\binom{30}{20}\\left(\\frac{1}{5}\\right)^{20}\\left(\\frac{4}{5}\\right)^{10} \\approx 3.38 \\times 10^{-8}$$",
+      "ai_explanation": {
+        "concept_rule": "Binomial point probability formula is $P(Y = r) = \\binom{n}{r} p^r (1-p)^{n-r}$.",
+        "step_by_step": [
+          "Set $n = 30$, $r = 20$, $p = \\frac{1}{5}$.",
+          "Compute $\\binom{30}{20} (0.2)^{20} (0.8)^{10}$.",
+          "State the value in scientific notation: $3.38 \\times 10^{-8}$."
+        ],
+        "common_pitfalls": "Rounding to 0 prematurely instead of writing in scientific notation."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $\\mathrm{P}(Y \\geqslant \\mu + 2\\sigma)$.",
+      "final_answer": "$0.0256$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing $P(Y \\ge \\mu + 2\\sigma)$ as $P(Y \\ge 11)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating probability using technology to get $\\approx 0.0256$"
+        }
+      ],
+      "solution": "$$P(Y \\ge \\mu + 2\\sigma) = P\\left(Y \\ge 6 + 2\\sqrt{\\frac{24}{5}}\\right) \\quad \\{\\text{from a}\\}$$\n$$= P(Y \\ge 10.38)$$\n$$= P(Y \\ge 11)$$\nUsing technology:\n$$\\text{BinomialCD}(11, 30, 30, 0.2) \\approx 0.02561625534$$\n$$\\approx 0.0256$$",
+      "ai_explanation": {
+        "concept_rule": "Since $Y$ is a discrete integer random variable, $Y \\ge 10.38$ is equivalent to $Y \\ge 11$.",
+        "step_by_step": [
+          "Compute $\\mu + 2\\sigma = 6 + 2(2.19089) \\approx 10.38$.",
+          "Convert to integer inequality: $P(Y \\ge 10.38) = P(Y \\ge 11)$.",
+          "Evaluate cumulative probability for $11 \\le Y \\le 30$ using technology: $\\approx 0.0256$."
+        ],
+        "common_pitfalls": "Rounding $10.38$ down to 10 instead of rounding up to the next integer 11 for a '$\\ge$' condition."
+      }
+    }
+  ]
+}

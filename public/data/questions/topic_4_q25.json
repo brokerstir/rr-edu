@@ -1,0 +1,128 @@
+{
+  "id": "topic_4_q25",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 25,
+  "question_text": "9 students sat a Mathematics examination. The number of hours that each of them studied and the results they obtained are shown in the table: Study time ($x\\text{ h}$): 7, 6, 3, 16, 15, 11, 18, 32, 20; Result ($y\\text{ \\%}$): 56, 42, 25, 80, 65, 60, 85, 96, 90.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the equation of the least squares regression line.",
+      "final_answer": "$y \\approx 2.43x + 32.0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using linear regression on graphics calculator"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct regression line equation"
+        }
+      ],
+      "solution": "Using technology, the least squares regression line is $y = ax + b$ with $a \\approx 2.4326$, $b \\approx 31.957$. Thus, $y \\approx 2.43x + 32.0$.",
+      "ai_explanation": {
+        "concept_rule": "The least squares regression line minimizes the sum of squared vertical residuals.",
+        "step_by_step": [
+          "Enter $x$ (Study time) and $y$ (Result) into the calculator.",
+          "Run linear regression.",
+          "Obtain $a \\approx 2.43$ and $b \\approx 32.0$."
+        ],
+        "common_pitfalls": "Switching the slope $a$ and $y$-intercept $b$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Describe the correlation between the variables.",
+      "final_answer": "$r \\approx 0.913$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct r value"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct interpretation of correlation"
+        }
+      ],
+      "solution": "From part a, $r \\approx 0.913$. So, there is a strong, positive correlation between the number of hours that a student studies and their examination result.",
+      "ai_explanation": {
+        "concept_rule": "A correlation coefficient $r > 0.8$ indicates a strong positive linear relationship.",
+        "step_by_step": [
+          "Read $r = 0.91326... \\approx 0.913$ from the regression output.",
+          "Interpret $r$: close to 1 means strong and positive."
+        ],
+        "common_pitfalls": "Forgetting to interpret the meaning in context."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Do you think there is a causal relationship between the variables? Explain your answer.",
+      "final_answer": "$Yes, this is a causal relationship$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Valid explanation of why study time causes better examination performance"
+        }
+      ],
+      "solution": "Yes, this is a causal relationship as spending more time studying for the examination is likely to cause a better result.",
+      "ai_explanation": {
+        "concept_rule": "A causal relationship exists when the explanatory variable directly produces or influences the change in the response variable.",
+        "step_by_step": [
+          "Consider whether more studying leads directly to better test performance.",
+          "Confirm that increased studying improves knowledge and preparation, thus directly increasing scores."
+        ],
+        "common_pitfalls": "Denying causation simply because 'correlation is not causation' without analyzing the specific context."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Tony's score in the examination was 70%. Use the line of best fit to estimate how long he studied for.",
+      "final_answer": "$15.6\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting y = 70 in regression line and solving for x"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct study time"
+        }
+      ],
+      "solution": "When $y = 70$, $70 \\approx 2.43x + 32.0 \\implies 38 \\approx 2.43x \\implies x \\approx 15.6$. So, Tony studied for approximately $15.6\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the response variable $y$ and solve linearly for explanatory variable $x$.",
+        "step_by_step": [
+          "Set $2.43x + 32.0 = 70$.",
+          "Subtract 32.0 from 70 to get $38.0$.",
+          "Divide by $2.43$ to get $x \\approx 15.6398... \\approx 15.6$."
+        ],
+        "common_pitfalls": "Substituting 70 for $x$ instead of $y$."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Interpret the $y$-intercept and the gradient of the equation of the line of best fit.",
+      "final_answer": "$y$-intercept $\\approx 32.0$, gradient $\\approx 2.43$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct interpretation of y-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct interpretation of gradient"
+        }
+      ],
+      "solution": "The $y$-intercept of the line of best fit $\\approx 32.0$. This indicates that if a student did not spend any time studying, they would obtain a result of $32\\%$ on average. The gradient of the line of best fit $\\approx 2.43$. This indicates that for every additional hour of study, the result obtained increases by an average of $2.43\\%$.",
+      "ai_explanation": {
+        "concept_rule": "In $y = mx + c$, $c$ is the value of $y$ when $x = 0$, and $m$ represents the rate of change of $y$ per unit increase in $x$.",
+        "step_by_step": [
+          "Identify $y$-intercept $c = 32.0$, which corresponds to study time $x = 0$.",
+          "Identify gradient $m = 2.43$, which corresponds to the percentage increase in result for each extra 1 hour studied."
+        ],
+        "common_pitfalls": "Failing to mention 'on average' or omitting units (percentage and hours)."
+      }
+    }
+  ]
+}

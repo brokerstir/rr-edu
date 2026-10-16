@@ -1,0 +1,34 @@
+{
+  "id": "topic_3_q59",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 59,
+  "question_text": "Expand and simplify, if possible:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(\\sin^2 x + 3)^2$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$(\\tan\\alpha + 1)^2$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "$(\\sin x - 1)(\\sin x + 1)$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "topic_5_q91",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 91,
+  "question_text": "For the first 6 seconds of its motion, a particle moving in a straight line has velocity given by $v = t^3 - 9t^2 + 24t\\text{ ms}^{-1}$, where $t$ is the time in seconds.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the acceleration function for the particle.",
+      "final_answer": "$3t^2 - 18t + 24\\text{ ms}^{-2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating velocity $v(t)$ with respect to $t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative: $3t^2 - 18t + 24\\text{ ms}^{-2}$"
+        }
+      ],
+      "solution": "$$a = \\frac{dv}{dt} = 3t^2 - 18t + 24\\text{ ms}^{-2}$$",
+      "ai_explanation": {
+        "concept_rule": "Acceleration is the derivative of velocity with respect to time: $a(t) = v'(t)$.",
+        "step_by_step": [
+          "Apply the power rule to each term in $v(t) = t^3 - 9t^2 + 24t$.",
+          "Derivative of $t^3$ is $3t^2$, $-9t^2$ is $-18t$, and $24t$ is $24$."
+        ],
+        "common_pitfalls": "Integrating instead of differentiating."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the greatest velocity of the particle in the first 6 seconds.",
+      "final_answer": "$36\\text{ ms}^{-1}$ at $t = 6\\text{ seconds}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $a = 0$ to find stationary points"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding critical values $t = 2, 4$"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating $v(t)$ at the local maximum and endpoints ($t = 0, 2, 6$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding greatest velocity is $36\\text{ ms}^{-1}$ occurring at $t = 6$"
+        }
+      ],
+      "solution": "The greatest velocity of the particle occurs when $\\frac{dv}{dt} = a = 0$ or at endpoints:\n$$3t^2 - 18t + 24 = 0$$\n$$t^2 - 6t + 8 = 0$$\n$$(t - 2)(t - 4) = 0$$\n$$\\therefore t = 2\\text{ or } 4$$\n\nFrom the sign diagram of $a$, there is a local maximum at $t = 2$.\nTesting critical values and endpoints:\n- At $t = 0$ (end point): $v = 0\\text{ ms}^{-1}$\n- At $t = 2$ (local maximum): $v = 2^3 - 9(2)^2 + 24(2) = 8 - 36 + 48 = 20\\text{ ms}^{-1}$\n- At $t = 6$ (end point): $v = 6^3 - 9(6)^2 + 24(6) = 216 - 324 + 144 = 36\\text{ ms}^{-1}$\n\n$\\therefore$ the greatest velocity of the particle is $36\\text{ ms}^{-1}$ which occurs at $t = 6\\text{ seconds}$.",
+      "ai_explanation": {
+        "concept_rule": "The absolute maximum of a continuous function on a closed interval occurs at either a critical point (where $v'(t) = 0$) or at one of the endpoints of the interval.",
+        "step_by_step": [
+          "Solve $a(t) = 0$ for $t \\in [0, 6]$ to find critical points $t = 2$ and $t = 4$.",
+          "Identify $t = 2$ as a local maximum via sign change of $a(t)$.",
+          "Evaluate $v(t)$ at $t = 0$, $t = 2$, and $t = 6$.",
+          "Compare values: $0, 20, 36$. The greatest is $36$ at $t = 6$."
+        ],
+        "common_pitfalls": "Forgetting to test the endpoints of the interval, mistakenly assuming the local maximum at $t=2$ is the global maximum."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "At what times in the first 6 seconds is the speed of the particle decreasing?",
+      "final_answer": "$2 < t < 4$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating that speed is decreasing when $v$ and $a$ have opposite signs"
+        },
+        {
+          "code": "R1",
+          "desc": "Observing that $v \\ge 0$ for all $0 \\le t \\le 6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Deducing that speed is decreasing when $a < 0$, giving $2 < t < 4$"
+        }
+      ],
+      "solution": "The speed of the particle is decreasing when $v$ and $a$ have opposite signs.\nNow $v \\ge 0$ for all $0 \\le t \\le 6$.\n$\\therefore$ the speed of the particle is decreasing when $a < 0$, which is when $2 < t < 4$.",
+      "ai_explanation": {
+        "concept_rule": "Speed is decreasing if and only if velocity and acceleration have opposite signs (i.e. $v(t) \\cdot a(t) < 0$).",
+        "step_by_step": [
+          "Recall the condition for decreasing speed: $v$ and $a$ have opposite signs.",
+          "Check the sign of $v(t)$ on $[0, 6]$; since $v(t) \\ge 0$, we require $a(t) < 0$.",
+          "From the sign diagram of $a(t) = 3(t - 2)(t - 4)$, $a(t) < 0$ on the interval $(2, 4)$."
+        ],
+        "common_pitfalls": "Thinking speed decreases whenever acceleration is negative, which is only true when velocity is positive."
+      }
+    }
+  ]
+}

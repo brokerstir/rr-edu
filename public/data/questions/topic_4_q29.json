@@ -1,0 +1,136 @@
+{
+  "id": "topic_4_q29",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 29,
+  "question_text": "A hospital recorded the age and gender of its 1020 melanoma patients over one year. The data is shown alongside.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Complete the table.",
+      "final_answer": "$\\begin{array}{|c|c|c|c|c|}\\hline & <40 & 40-59 & \\ge 60 & \\text{Total} \\\\\\hline \\text{Male} & 56 & 127 & 419 & 602 \\\\\\hline \\text{Female} & 75 & 113 & 230 & 418 \\\\\\hline \\text{Total} & 131 & 240 & 649 & 1020 \\\\\\hline\\end{array}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Completing row and column totals in the two-way table"
+        },
+        {
+          "code": "A1",
+          "desc": "Fully correct table"
+        }
+      ],
+      "solution": "The completed two-way table is:\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n & $< 40$ & $40-59$ & $\\ge 60$ & Total \\\\\n\\hline\nMale & $56$ & $127$ & $419$ & $602$ \\\\\n\\hline\nFemale & $75$ & $113$ & $230$ & $418$ \\\\\n\\hline\nTotal & $131$ & $240$ & $649$ & $1020$ \\\\\n\\hline\n\\end{tabular}",
+      "ai_explanation": {
+        "concept_rule": "Two-way tables require that the sum of each row equals its row total, and the sum of each column equals its column total, with the grand total equal to the sum of all categories.",
+        "step_by_step": [
+          "Sum the Male row: $56 + 127 + 419 = 602$.",
+          "Sum the Female row: $75 + 113 + 230 = 418$.",
+          "Sum each column to obtain totals $131$, $240$, and $649$.",
+          "Check the grand total: $602 + 418 = 1020$ and $131 + 240 + 649 = 1020$."
+        ],
+        "common_pitfalls": "Arithmetic errors when adding multiple columns or rows."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find the probability that a randomly selected melanoma patient was male",
+      "final_answer": "$\\approx 0.590$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying total males (602) over total patients (1020)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct fraction $\\frac{602}{1020}$ and decimal $\\approx 0.590$"
+        }
+      ],
+      "solution": "$602$ out of the $1020$ patients were male.\n$$\\therefore \\text{P}(\\text{male}) = \\frac{602}{1020} \\approx 0.590$$",
+      "ai_explanation": {
+        "concept_rule": "Probability is found by dividing the favorable number of outcomes by the total number of outcomes.",
+        "step_by_step": [
+          "Find total number of male patients: $602$.",
+          "Find total number of patients: $1020$.",
+          "Calculate $\\text{P}(\\text{male}) = \\frac{602}{1020} \\approx 0.590$."
+        ],
+        "common_pitfalls": "Dividing by the female total or a single age group instead of the overall total."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the probability that a randomly selected melanoma patient was female and younger than 40",
+      "final_answer": "$\\approx 0.0735$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying intersection of female and younger than 40 over total patients"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct fraction $\\frac{75}{1020}$ and decimal $\\approx 0.0735$"
+        }
+      ],
+      "solution": "$75$ out of the $1020$ patients were female and younger than $40$.\n$$\\therefore \\text{P}(\\text{female and younger than } 40) \\approx \\frac{75}{1020} \\approx 0.0735$$",
+      "ai_explanation": {
+        "concept_rule": "The joint probability $\\text{P}(A \\cap B)$ is the number of elements in $A \\cap B$ divided by the total sample size.",
+        "step_by_step": [
+          "Locate the cell for Female and $<40$, which is $75$.",
+          "Divide by the grand total $1020$.",
+          "$\\frac{75}{1020} \\approx 0.0735$."
+        ],
+        "common_pitfalls": "Confusing joint probability with conditional probability $\\text{P}(\\text{younger than } 40 \\mid \\text{female})$."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Find the probability that a randomly selected melanoma patient was 60 or older, given they were female",
+      "final_answer": "$\\approx 0.550$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Restricting the sample space to female patients (418)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct fraction $\\frac{230}{418}$ and decimal $\\approx 0.550$"
+        }
+      ],
+      "solution": "$230$ out of the $418$ female patients were $60$ or older.\n$$\\therefore \\text{P}(60 \\text{ or older, given they were female}) \\approx \\frac{230}{418} \\approx 0.550$$",
+      "ai_explanation": {
+        "concept_rule": "Conditional probability $\\text{P}(A \\mid B) = \\frac{n(A \\cap B)}{n(B)}$.",
+        "step_by_step": [
+          "Given condition is 'female', so the denominator is total females: $418$.",
+          "Count females who are $\\ge 60$: $230$.",
+          "Compute $\\frac{230}{418} \\approx 0.550$."
+        ],
+        "common_pitfalls": "Using the grand total $1020$ as the denominator instead of the given group's total ($418$)."
+      }
+    },
+    {
+      "subpart": "b iv",
+      "stem": "Find the probability that a randomly selected melanoma patient was male, given they were 40 or older.",
+      "final_answer": "$\\approx 0.614$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding total patients aged 40 or older ($240 + 649 = 889$) and males in that group ($127 + 419 = 546$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability $\\frac{546}{889} \\approx 0.614$"
+        }
+      ],
+      "solution": "$127 + 419 = 546$ out of the $240 + 649 = 889$ patients who were $40$ or older were male.\n$$\\therefore \\text{P}(\\text{male, given they were } 40 \\text{ or older}) \\approx \\frac{546}{889} \\approx 0.614$$",
+      "ai_explanation": {
+        "concept_rule": "Use conditional probability formula $\\text{P}(A \\mid B) = \\frac{n(A \\cap B)}{n(B)}$ summing over the relevant sub-categories.",
+        "step_by_step": [
+          "Condition $B$: patient is $40$ or older, so $n(B) = 240 + 649 = 889$.",
+          "Event $A \\cap B$: male and $40$ or older, so $n(A \\cap B) = 127 + 419 = 546$.",
+          "Calculate $\\frac{546}{889} \\approx 0.614$."
+        ],
+        "common_pitfalls": "Forgetting to include both the $40-59$ and $\\ge 60$ age groups in both numerator and denominator."
+      }
+    }
+  ]
+}

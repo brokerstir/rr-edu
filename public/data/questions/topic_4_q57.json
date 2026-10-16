@@ -1,0 +1,73 @@
+{
+  "id": "topic_4_q57",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 57,
+  "question_text": "Suppose a population is normally distributed with mean $\\mu = 30$ and standard deviation $\\sigma = 5$. Copy and complete:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Approximately 68% of the population lies between ...... and 35.",
+      "final_answer": "$\\text{between } 25 \\text{ and } 35$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating the interval within 1 standard deviation of the mean: 25 to 35"
+        }
+      ],
+      "solution": "Approximately $68\\%$ of the population lies within one standard deviation of the mean, i.e., between $25$ and $35$.",
+      "ai_explanation": {
+        "concept_rule": "The 68-95-99.7 rule states that approximately $68\\%$ of data in a normal distribution lies within $\\mu \\pm \\sigma$.",
+        "step_by_step": [
+          "Identify $\\mu = 30$ and $\\sigma = 5$ from the context.",
+          "Calculate $\\mu - \\sigma = 30 - 5 = 25$ and $\\mu + \\sigma = 30 + 5 = 35$.",
+          "Conclude that $68\\%$ lies between 25 and 35."
+        ],
+        "common_pitfalls": "Using 2 standard deviations instead of 1."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Approximately 95% of the population lies between 20 and ......",
+      "final_answer": "$\\text{between } 20 \\text{ and } 40$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating the interval within 2 standard deviations of the mean: 20 to 40"
+        }
+      ],
+      "solution": "Approximately $95\\%$ of the population lies within two standard deviations of the mean, i.e., between $20$ and $40$.",
+      "ai_explanation": {
+        "concept_rule": "Approximately $95\\%$ of data lies within $\\mu \\pm 2\\sigma$.",
+        "step_by_step": [
+          "Calculate $\\mu - 2\\sigma = 30 - 2(5) = 20$.",
+          "Calculate $\\mu + 2\\sigma = 30 + 2(5) = 40$.",
+          "Conclude that $95\\%$ lies between 20 and 40."
+        ],
+        "common_pitfalls": "Confusing the $95\\%$ rule with $99.7\\%$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Approximately ...... of the population lies between 15 and 45.",
+      "final_answer": "$\\text{between } 15 \\text{ and } 45$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating the interval within 3 standard deviations of the mean: 15 to 45"
+        }
+      ],
+      "solution": "Approximately $99.7\\%$ of the population lies within three standard deviations of the mean, i.e., between $15$ and $45$.",
+      "ai_explanation": {
+        "concept_rule": "Approximately $99.7\\%$ of data lies within $\\mu \\pm 3\\sigma$.",
+        "step_by_step": [
+          "Calculate $\\mu - 3\\sigma = 30 - 3(5) = 15$.",
+          "Calculate $\\mu + 3\\sigma = 30 + 3(5) = 45$.",
+          "Conclude that $99.7\\%$ lies between 15 and 45."
+        ],
+        "common_pitfalls": "Arithmetic errors in multiplying standard deviation."
+      }
+    }
+  ]
+}

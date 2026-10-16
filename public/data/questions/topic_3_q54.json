@@ -1,0 +1,26 @@
+{
+  "id": "topic_3_q54",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 54,
+  "question_text": "Solve exactly:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin\\left(x - \\frac{\\pi}{3}\\right) = 0$, $-2\\pi \\leqslant x \\leqslant \\pi$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\cos\\left(3x + \\frac{\\pi}{4}\\right) = -\\frac{1}{2}$, $0 \\leqslant x \\leqslant \\pi$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

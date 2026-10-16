@@ -1,0 +1,96 @@
+{
+  "id": "topic_4_q21",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 21,
+  "question_text": "A journalist compares the scores given to two camera models by 6 online reviewers.\n\n| Camera A | 8.5 | 8 | 9 | 7 | 8.5 | 7.5 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Camera B | 7 | 6 | 7.5 | 9 | 7.5 | 6 |",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a scatter diagram of the data.",
+      "final_answer": "$\\text{Scatter plot of Camera A vs Camera B}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up appropriate axes for Camera A and Camera B"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly plotting all 6 data points: $(8.5, 7), (8, 6), (9, 7.5), (7, 9), (8.5, 7.5), (7.5, 6)$"
+        }
+      ],
+      "solution": "Plot the points with Camera A on the horizontal axis and Camera B on the vertical axis:\n$(8.5, 7)$, $(8, 6)$, $(9, 7.5)$, $(7, 9)$, $(8.5, 7.5)$, $(7.5, 6)$.",
+      "ai_explanation": {
+        "concept_rule": "In a scatter plot, each paired observation is plotted as a point $(x, y)$ on a Cartesian coordinate plane.",
+        "step_by_step": [
+          "Label the horizontal axis 'camera A' and vertical axis 'camera B'.",
+          "Plot each pair of scores as a single point.",
+          "Ensure coordinates match each column of the table."
+        ],
+        "common_pitfalls": "Swapping the $x$ and $y$ coordinates."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Identify the outlier in the data.",
+      "final_answer": "$(7, 9)$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identifying $(7, 9)$ as the outlier and describing its meaning in context"
+        }
+      ],
+      "solution": "The point $(7, 9)$ appears to be an outlier. This corresponds to the review scoring camera A a 7, and camera B a 9.",
+      "ai_explanation": {
+        "concept_rule": "An outlier in bivariate data is a point that deviates noticeably from the overall trend shown by the rest of the points.",
+        "step_by_step": [
+          "Observe that most points show camera A scored higher than or equal to camera B.",
+          "The point $(7, 9)$ lies well away from the pattern, as camera B scored much higher than camera A.",
+          "Conclude that $(7, 9)$ is an outlier."
+        ],
+        "common_pitfalls": "Looking for outliers in a single variable rather than considering the bivariate trend."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "It was found that the outlier was a recording error, and was removed.\nDescribe the correlation between camera A's scores and camera B's scores.",
+      "final_answer": "$Strong, positive, linear correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct description of correlation direction and strength"
+        }
+      ],
+      "solution": "With the outlier removed, there appears to be a strong, positive, linear correlation between camera A's scores and camera B's scores.",
+      "ai_explanation": {
+        "concept_rule": "Removing outliers typically reveals a clearer underlying linear relationship between two variables.",
+        "step_by_step": [
+          "Observe the scatter plot after excluding the outlier.",
+          "Identify that as camera A scores increase, camera B scores also increase in a linear pattern, indicating a strong positive linear correlation."
+        ],
+        "common_pitfalls": "Failing to state all aspects of correlation (strength, direction, and linearity)."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Does an increase in camera A's scores cause an increase in camera B's scores? Explain your answer.",
+      "final_answer": "$No, correlation does not imply causation.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Correct explanation distinguishing correlation from causation"
+        }
+      ],
+      "solution": "No, an increase in camera A's scores is not likely to cause an increase in camera B's scores. It is more likely that both scores are related to the preferences of each reviewer.",
+      "ai_explanation": {
+        "concept_rule": "Correlation does not imply causation; external confounding variables or shared underlying factors often explain associations.",
+        "step_by_step": [
+          "Assess whether one variable directly causes a change in the other.",
+          "Conclude that independent reviewers assessing the same items will correlate due to common camera quality or reviewer preferences, not because one causes the other."
+        ],
+        "common_pitfalls": "Assuming a high correlation value implies a direct cause-and-effect relationship."
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "topic_3_q41",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 41,
+  "question_text": "Find all $\\theta$ such that $0^\\circ \\leqslant \\theta \\leqslant 360^\\circ$ and:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\cos \\theta = -0.3$",
+      "final_answer": "$\\theta \\approx 107^\\circ, 253^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph $Y_1 = \\cos X$ and $Y_2 = -0.3$ on the same axes"
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions to the nearest degree: $\\theta \\approx 107^\\circ, 253^\\circ$"
+        }
+      ],
+      "solution": "We graph the functions $Y_1 = \\cos X$ and $Y_2 = -0.3$ on the same set of axes.\\\\The solutions are $\\theta \\approx 107^\\circ, 253^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Solving trigonometric equations graphically by finding the intersection points of the function curve and a horizontal line.",
+        "step_by_step": [
+          "Set up a graphing calculator in degree mode.",
+          "Plot $Y_1 = \\cos X$ and $Y_2 = -0.3$ over the domain $[0^\\circ, 360^\\circ]$.",
+          "Use the intersect feature to find intersection points: $X \\approx 107.46^\\circ$ and $X \\approx 252.54^\\circ$.",
+          "Round answers to the nearest whole degree: $107^\\circ$ and $253^\\circ$."
+        ],
+        "common_pitfalls": "Reading only one intersection point or having the calculator set to radian mode."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\sin \\theta = -\\frac{7}{9}$",
+      "final_answer": "$\\theta \\approx 231^\\circ, 309^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph $Y_1 = \\sin X$ and $Y_2 = -\\frac{7}{9}$ on the same axes"
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions to the nearest degree: $\\theta \\approx 231^\\circ, 309^\\circ$"
+        }
+      ],
+      "solution": "We graph the functions $Y_1 = \\sin X$ and $Y_2 = -\\frac{7}{9}$ on the same set of axes.\\\\The solutions are $\\theta \\approx 231^\\circ, 309^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Find intersections between $Y_1 = \\sin X$ and the horizontal line $Y_2 = -\\frac{7}{9}$.",
+        "step_by_step": [
+          "Graph $Y_1 = \\sin X$ and $Y_2 = -\\frac{7}{9} \\approx -0.778$ on $[0^\\circ, 360^\\circ]$.",
+          "Find points of intersection using the calculator's intersect function: $X \\approx 231.06^\\circ$ and $X \\approx 308.94^\\circ$.",
+          "Round to the nearest degree: $231^\\circ$ and $309^\\circ$."
+        ],
+        "common_pitfalls": "Finding the angle in Quadrant IV as a negative value rather than between $0^\\circ$ and $360^\\circ$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\tan \\theta = -\\frac{3}{\\sqrt{5}}$",
+      "final_answer": "$\\theta \\approx 127^\\circ, 307^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph $Y_1 = \\tan X$ and $Y_2 = -\\frac{3}{\\sqrt{5}}$ on the same axes"
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions to the nearest degree: $\\theta \\approx 127^\\circ, 307^\\circ$"
+        }
+      ],
+      "solution": "We graph the functions $Y_1 = \\tan X$ and $Y_2 = -\\frac{3}{\\sqrt{5}}$ on the same set of axes.\\\\The solutions are $\\theta \\approx 127^\\circ, 307^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Find intersections between $Y_1 = \\tan X$ and $Y_2 = -\\frac{3}{\\sqrt{5}}$ within $[0^\\circ, 360^\\circ]$.",
+        "step_by_step": [
+          "Graph $Y_1 = \\tan X$ and $Y_2 = -\\frac{3}{\\sqrt{5}} \\approx -1.3416$ on $[0^\\circ, 360^\\circ]$.",
+          "Identify intersections at $X \\approx 126.70^\\circ$ and $X \\approx 306.70^\\circ$.",
+          "Round to the nearest degree to obtain $127^\\circ$ and $307^\\circ$."
+        ],
+        "common_pitfalls": "Missing the second solution caused by the period of $\\tan X$ being $180^\\circ$."
+      }
+    }
+  ]
+}

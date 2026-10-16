@@ -1,0 +1,64 @@
+{
+  "id": "topic_3_q26",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 26,
+  "question_text": "Find the value of $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$x \\approx 14.1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating the value of $x$"
+        }
+      ],
+      "solution": "By the sine rule: $\\frac{x}{\\sin 27^\\circ} = \\frac{16}{\\sin 31^\\circ} \\implies x = \\frac{16\\sin 27^\\circ}{\\sin 31^\\circ} \\approx 14.1$.",
+      "ai_explanation": {
+        "concept_rule": "The sine rule states that $\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$.",
+        "step_by_step": [
+          "Pair the side $x$ with the opposite angle $27^\\circ$, and $16$ with $31^\\circ$.",
+          "Equate the ratios using the sine rule.",
+          "Rearrange to solve for $x$ and evaluate."
+        ],
+        "common_pitfalls": "Pairing sides with adjacent angles instead of opposite angles."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$x \\approx 5.40$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the third angle of the triangle"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating the final value of $x$"
+        }
+      ],
+      "solution": "$\\text{B}\\widehat{\\text{A}}\\text{C} = 180^\\circ - 57^\\circ - 83^\\circ = 40^\\circ$ (angles in a triangle). Now by the sine rule: $\\frac{x}{\\sin 83^\\circ} = \\frac{3.5}{\\sin 40^\\circ} \\implies x = \\frac{3.5\\sin 83^\\circ}{\\sin 40^\\circ} \\approx 5.40$.",
+      "ai_explanation": {
+        "concept_rule": "When a side is given opposite an unknown angle, first use the angle sum of a triangle ($180^\\circ$) before applying the sine rule.",
+        "step_by_step": [
+          "Find angle $A$: $180^\\circ - 57^\\circ - 83^\\circ = 40^\\circ$.",
+          "Set up the sine rule: $\\frac{x}{\\sin 83^\\circ} = \\frac{3.5}{\\sin 40^\\circ}$.",
+          "Multiply both sides by $\\sin 83^\\circ$ and compute."
+        ],
+        "common_pitfalls": "Using the wrong angle opposite to $3.5\\text{ km}$."
+      }
+    }
+  ]
+}

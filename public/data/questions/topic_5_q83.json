@@ -1,0 +1,94 @@
+{
+  "id": "topic_5_q83",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 83,
+  "question_text": "Consider the graph of $f(x) = x^3 - x^2 - 4x + 4$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $\\int_{-2}^{2} f(x)\\,dx$.",
+      "final_answer": "$\\frac{32}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral of $f(x) = x^3 - x^2 - 4x + 4$ from $-2$ to $2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding the antiderivative $\\frac{1}{4}x^4 - \\frac{1}{3}x^3 - 2x^2 + 4x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating correctly to obtain $\\frac{32}{3}$"
+        }
+      ],
+      "solution": "$\\int_{-2}^{2} f(x)\\,dx = \\int_{-2}^{2} (x^3 - x^2 - 4x + 4)\\,dx$\n$= \\left[ \\frac{1}{4}x^4 - \\frac{1}{3}x^3 - 2x^2 + 4x \\right]_{-2}^{2}$\n$= \\left( \\frac{1}{4}(2)^4 - \\frac{1}{3}(2)^3 - 2(2)^2 + 4(2) \\right) - \\left( \\frac{1}{4}(-2)^4 - \\frac{1}{3}(-2)^3 - 2(-2)^2 + 4(-2) \\right)$\n$= -\\frac{8}{3} + 8 - \\frac{8}{3} + 8$\n$= \\frac{32}{3}$",
+      "ai_explanation": {
+        "concept_rule": "The definite integral is computed via the Fundamental Theorem of Calculus: $\\int_a^b f(x)\\,dx = F(b) - F(a)$. Note that odd powers cancel over symmetric limits $[-a, a]$ while even powers double.",
+        "step_by_step": [
+          "Integrate term-by-term: $\\frac{x^4}{4} - \\frac{x^3}{3} - 2x^2 + 4x$.",
+          "Evaluate at $x = 2$ and $x = -2$.",
+          "Subtract the values: $\\left(4 - \\frac{8}{3} - 8 + 8\\right) - \\left(4 + \\frac{8}{3} - 8 - 8\\right) = \\frac{32}{3}$."
+        ],
+        "common_pitfalls": "Confusing the definite integral (which accounts for signs) with geometric area."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Explain why the value obtained in a does not represent the shaded area.",
+      "final_answer": "$\\int_{-2}^{2} f(x)\\,dx$ is the difference of areas A and B.",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Noting that for $1 \\le x \\le 2$, $f(x) \\le 0$ so $\\int_1^2 f(x)\\,dx$ is negative"
+        },
+        {
+          "code": "R1",
+          "desc": "Explaining that the integral represents the difference of areas A and B (Area A - Area B)"
+        }
+      ],
+      "solution": "For $1 \\le x \\le 2$, the graph of $y = f(x)$ is below the $x$-axis, so $\\int_{1}^{2} f(x)\\,dx$ is negative.\n$\\int_{-2}^{2} f(x)\\,dx$ is the difference of areas A and B.",
+      "ai_explanation": {
+        "concept_rule": "Definite integrals compute net signed area: regions above the $x$-axis contribute positively, and regions below contribute negatively.",
+        "step_by_step": [
+          "Observe that Region A lies above the $x$-axis from $x = -2$ to $x = 1$, yielding a positive integral.",
+          "Observe that Region B lies below the $x$-axis from $x = 1$ to $x = 2$, yielding a negative integral.",
+          "Conclude that the total definite integral over $[-2, 2]$ equals $\\text{Area}(A) - \\text{Area}(B)$."
+        ],
+        "common_pitfalls": "Stating that the integral is the total area rather than the difference of the two areas."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the shaded area.",
+      "final_answer": "$11\\frac{5}{6}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sum of integrals: $\\int_{-2}^1 f(x)\\,dx - \\int_1^2 f(x)\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating each integral with proper signs"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining the correct total area $11\\frac{5}{6}$"
+        }
+      ],
+      "solution": "$\\text{Shaded area} = \\int_{-2}^{1} f(x)\\,dx + \\int_{1}^{2} -f(x)\\,dx$\n$= \\int_{-2}^{1} f(x)\\,dx - \\int_{1}^{2} f(x)\\,dx$\n$= \\int_{-2}^{1} (x^3 - x^2 - 4x + 4)\\,dx - \\int_{1}^{2} (x^3 - x^2 - 4x + 4)\\,dx$\n$= \\left[ \\frac{1}{4}x^4 - \\frac{1}{3}x^3 - 2x^2 + 4x \\right]_{-2}^{1} - \\left[ \\frac{1}{4}x^4 - \\frac{1}{3}x^3 - 2x^2 + 4x \\right]_{1}^{2}$\n$= \\left( \\left(\\frac{1}{4}(1)^4 - \\frac{1}{3}(1)^3 - 2(1)^2 + 4(1)\\right) - \\left(\\frac{1}{4}(-2)^4 - \\frac{1}{3}(-2)^3 - 2(-2)^2 + 4(-2)\\right) \\right)$\n$\\quad - \\left( \\left(\\frac{1}{4}(2)^4 - \\frac{1}{3}(2)^3 - 2(2)^2 + 4(2)\\right) - \\left(\\frac{1}{4}(1)^4 - \\frac{1}{3}(1)^3 - 2(1)^2 + 4(1)\\right) \\right)$\n$= \\left( (\\frac{1}{4} - \\frac{1}{3} - 2 + 4) - (\\frac{16}{4} + \\frac{8}{3} - 8 - 8) \\right) - \\left( (\\frac{16}{4} - \\frac{8}{3} - 8 + 8) - (\\frac{1}{4} - \\frac{1}{3} - 2 + 4) \\right)$\n$= (-\\frac{1}{12} + 2) - (-4) - (-4) + (-\\frac{1}{12} + 2)$\n$= -\\frac{1}{6} + 12$\n$= \\frac{71}{6} = 11\\frac{5}{6}\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "Total geometric area is obtained by integrating separately over intervals where the function is positive and negative, taking the absolute value or negating regions below the axis: $\\text{Area} = \\int_{-2}^1 f(x)\\,dx - \\int_1^2 f(x)\\,dx$.",
+        "step_by_step": [
+          "Split the integral at the root $x = 1$.",
+          "Evaluate $\\int_{-2}^1 f(x)\\,dx = \\frac{45}{4} - \\left(-\\frac{4}{3}\\dots\\right)$ correctly.",
+          "Evaluate $\\int_1^2 f(x)\\,dx$ which will be negative.",
+          "Subtract the second integral from the first to get $\\frac{71}{6} = 11\\frac{5}{6}$."
+        ],
+        "common_pitfalls": "Subtracting incorrectly or neglecting the double negative when subtracting a negative integral."
+      }
+    }
+  ]
+}

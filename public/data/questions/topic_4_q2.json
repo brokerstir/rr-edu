@@ -1,0 +1,122 @@
+{
+  "id": "topic_4_q2",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 2,
+  "question_text": "The students at Hoylebury Middle School are to be surveyed on their attitudes on wearing school uniform. The numbers of students in each year level are shown.\n\n$$\\begin{array}{|c|c|c|}\n\\hline\n& \\text{Boys} & \\text{Girls} \\\\\n\\hline\n\\text{Year 8} & 135 & 140 \\\\\n\\hline\n\\text{Year 9} & 130 & 145 \\\\\n\\hline\n\\text{Year 10} & 125 & 130 \\\\\n\\hline\n\\end{array}$$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "What are the advantages of surveying 50 students?",
+      "final_answer": "$A survey of 50 students is manageable in time and sufficiently representative of the student body.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that 50 students is feasible within time constraints and large enough to be representative"
+        }
+      ],
+      "solution": "A survey of 50 students can be completed in a reasonable time frame. It is also large enough that the results can be representative of the whole student body.",
+      "ai_explanation": {
+        "concept_rule": "An effective sample balances practical constraints (time, cost) with statistical validity (representativeness).",
+        "step_by_step": [
+          "Consider the feasibility in terms of time and resources.",
+          "Consider whether the sample is large enough to reflect the target population."
+        ],
+        "common_pitfalls": "Failing to mention both the practical benefit and representativeness."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "What are the disadvantages of surveying all students?",
+      "final_answer": "$Surveying all students is time-consuming and risks non-response error due to absences.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Explain that surveying all students is impractical/time-consuming and risks non-response error"
+        }
+      ],
+      "solution": "Surveying all students is time-consuming and often impractical. A non-response error may be produced if students are absent.",
+      "ai_explanation": {
+        "concept_rule": "A full census is often resource-intensive and prone to non-response bias when members of the population are unavailable.",
+        "step_by_step": [
+          "Identify the difficulty and time required to survey an entire population.",
+          "Note the potential for missing data (non-response error) from absent students."
+        ],
+        "common_pitfalls": "Assuming a census always gives perfect data without considering absent individuals."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "A stratified sample system is used to select 50 students. How many Year 8 boys will be selected?",
+      "final_answer": "$8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate total population and set up proportional stratified formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\frac{135}{805} \\times 50 \\approx 8$"
+        }
+      ],
+      "solution": "Total number of students $= 135 + 140 + 130 + 145 + 125 + 130 = 805$. For the survey, $\\frac{135}{805} \\times 50 \\approx 8$ Year 8 boys will be selected.",
+      "ai_explanation": {
+        "concept_rule": "Stratified sampling allocates sample size proportionally: $n_i = \\frac{N_i}{N} \\times n$.",
+        "step_by_step": [
+          "Sum all frequencies: $135 + 140 + 130 + 145 + 125 + 130 = 805$.",
+          "Calculate stratum proportion for Year 8 boys: $\\frac{135}{805}$.",
+          "Multiply by desired sample size: $\\frac{135}{805} \\times 50 \\approx 8.385$.",
+          "Round to the nearest whole person: $8$."
+        ],
+        "common_pitfalls": "Rounding to the wrong whole number or calculating out of total boys instead of total students."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "How many girls will be selected in total?",
+      "final_answer": "$26$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find total number of girls across all year levels"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\frac{415}{805} \\times 50 \\approx 26$"
+        }
+      ],
+      "solution": "For the survey, $\\frac{140 + 145 + 130}{805} \\times 50 = \\frac{415}{805} \\times 50 \\approx 26$ girls will be selected.",
+      "ai_explanation": {
+        "concept_rule": "Stratified sampling requires finding the total count of the specified subgroup over the entire population.",
+        "step_by_step": [
+          "Sum total girls: $140 + 145 + 130 = 415$.",
+          "Divide by total population: $\\frac{415}{805}$.",
+          "Multiply by sample size: $\\frac{415}{805} \\times 50 \\approx 25.776$.",
+          "Round to nearest integer: $26$."
+        ],
+        "common_pitfalls": "Selecting only one year level of girls instead of all girls."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Explain why a stratified sample is better than a random sample in this case.",
+      "final_answer": "$A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Explain that stratified sampling guarantees proportional representation of each stratum"
+        }
+      ],
+      "solution": "A stratified sample is better than a random sample in this case as a stratified sample will fairly represent each year level and gender. A random sample cannot guarantee such a fair representation.",
+      "ai_explanation": {
+        "concept_rule": "Stratified sampling ensures subgroups with known characteristics are proportionally represented, preventing accidental under- or over-representation that may occur in simple random sampling.",
+        "step_by_step": [
+          "Compare how simple random sampling can introduce imbalance purely by chance.",
+          "State that stratified sampling preserves subgroup proportions (gender and year levels)."
+        ],
+        "common_pitfalls": "Stating that random sampling is always inferior without citing subgroup representation."
+      }
+    }
+  ]
+}

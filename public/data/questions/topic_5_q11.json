@@ -1,0 +1,71 @@
+{
+  "id": "topic_5_q11",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 11,
+  "question_text": "Find the gradient of the tangent to:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = \\frac{x^3}{x^2 - 1}$ at $x = 2$",
+      "final_answer": "$\\frac{4}{9}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying quotient rule $\\frac{u'v - uv'}{v^2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x = 2$ into the derivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct tangent gradient $\\frac{4}{9}$"
+        }
+      ],
+      "solution": "$y = \\frac{x^3}{x^2 - 1}$\n$\\frac{dy}{dx} = \\frac{3x^2(x^2 - 1) - (2x)x^3}{(x^2 - 1)^2} \\quad \\{\\text{quotient rule}\\}\n= \\frac{3x^4 - 3x^2 - 2x^4}{(x^2 - 1)^2}\n= \\frac{x^4 - 3x^2}{(x^2 - 1)^2}$\n\nWhen $x = 2$, $\\frac{dy}{dx} = \\frac{(2)^4 - 3(2)^2}{(2^2 - 1)^2} = \\frac{16 - 12}{9} = \\frac{4}{9}$.\nSo, the tangent has gradient $\\frac{4}{9}$.",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule: $\\frac{d}{dx}\\left[\\frac{u}{v}\\right] = \\frac{u'v - uv'}{v^2}$.",
+        "step_by_step": [
+          "Identify $u = x^3$, $v = x^2 - 1$, so $u' = 3x^2$, $v' = 2x$.",
+          "Apply quotient rule: $\\frac{3x^2(x^2 - 1) - x^3(2x)}{(x^2 - 1)^2}$.",
+          "Simplify the numerator: $3x^4 - 3x^2 - 2x^4 = x^4 - 3x^2$.",
+          "Substitute $x = 2$: $\\frac{2^4 - 3(2^2)}{(2^2 - 1)^2} = \\frac{16 - 12}{3^2} = \\frac{4}{9}$."
+        ],
+        "common_pitfalls": "Reversing the terms in the numerator of the quotient rule ($uv' - u'v$ instead of $u'v - uv'$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\frac{\\sqrt{x}}{2x + 5}$ at $x = 4$",
+      "final_answer": "$-\\frac{3}{676}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the quotient rule to $\\frac{x^{\\frac{1}{2}}}{2x + 5}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Simplifying the derivative to $\\frac{5 - 2x}{2\\sqrt{x}(2x + 5)^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating correctly at $x = 4$ to obtain $-\\frac{3}{676}$"
+        }
+      ],
+      "solution": "$y = \\frac{\\sqrt{x}}{2x + 5} = \\frac{x^{\\frac{1}{2}}}{2x + 5}$\n$\\therefore \\frac{dy}{dx} = \\frac{\\frac{1}{2}x^{-\\frac{1}{2}}(2x + 5) - (2) \\times x^{\\frac{1}{2}}}{(2x + 5)^2} \\quad \\{\\text{quotient rule}\\}\n= \\frac{2x + 5 - 4x}{2\\sqrt{x}(2x + 5)^2}\n= \\frac{5 - 2x}{2\\sqrt{x}(2x + 5)^2}$\n\nWhen $x = 4$,\n$\\frac{dy}{dx} = \\frac{5 - 2(4)}{2\\sqrt{4}(2(4) + 5)^2} = \\frac{-3}{2 \\times 2 \\times 169} = -\\frac{3}{676}$.\nSo, the tangent has gradient $-\\frac{3}{676}$.",
+      "ai_explanation": {
+        "concept_rule": "Differentiate using the quotient rule, clear negative fractional powers from the numerator by multiplying numerator and denominator by $2\\sqrt{x}$, then evaluate at the given point.",
+        "step_by_step": [
+          "Set $u = x^{1/2}$, $v = 2x + 5$, then $u' = \\frac{1}{2\\sqrt{x}}$, $v' = 2$.",
+          "Apply quotient rule: $\\frac{\\frac{1}{2\\sqrt{x}}(2x + 5) - 2\\sqrt{x}}{(2x + 5)^2}$.",
+          "Multiply top and bottom by $2\\sqrt{x}$: $\\frac{(2x + 5) - 4x}{2\\sqrt{x}(2x + 5)^2} = \\frac{5 - 2x}{2\\sqrt{x}(2x + 5)^2}$.",
+          "Substitute $x = 4$: numerator is $5 - 8 = -3$, denominator is $2(2)(13^2) = 4 \\times 169 = 676$.",
+          "Gradient is $-\\frac{3}{676}$."
+        ],
+        "common_pitfalls": "Errors in simplifying the compound fraction with $\\frac{1}{2\\sqrt{x}}$ in the numerator."
+      }
+    }
+  ]
+}

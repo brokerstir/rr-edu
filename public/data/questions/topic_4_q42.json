@@ -1,0 +1,76 @@
+{
+  "id": "topic_4_q42",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 42,
+  "question_text": "Two fair dice are rolled. Let $X$ be the difference between the numbers rolled.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why $X$ is a discrete random variable.",
+      "final_answer": "$X$ is a discrete random variable because $X$ has a set of distinct possible values.",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Valid reason stating that $X$ takes distinct/countable possible values"
+        }
+      ],
+      "solution": "$X$ is the difference of a number from one die and a number from the other die. So $X$ is a discrete random variable because $X$ has a set of distinct possible values.",
+      "ai_explanation": {
+        "concept_rule": "A random variable is discrete if its possible values form a finite or countably infinite set of isolated points.",
+        "step_by_step": [
+          "State what $X$ represents (the absolute difference between two dice values).",
+          "Note that the differences can only take specific, distinct integer values, making it discrete."
+        ],
+        "common_pitfalls": "Confusing discrete random variables with continuous ones."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the possible values of $X$.",
+      "final_answer": "$X = 0, 1, 2, 3, 4, 5$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Listing all possible integer values from 0 to 5"
+        }
+      ],
+      "solution": "$X = 0, 1, 2, 3, 4, 5$",
+      "ai_explanation": {
+        "concept_rule": "The possible values are the absolute differences between two dice rolls: $|d_1 - d_2|$ where $d_1, d_2 \\in \\{1, 2, 3, 4, 5, 6\\}$.",
+        "step_by_step": [
+          "The minimum difference is $|1-1| = 0$.",
+          "The maximum difference is $|6-1| = 5$.",
+          "All integer values between 0 and 5 can be achieved."
+        ],
+        "common_pitfalls": "Including negative values when difference means non-negative magnitude, or omitting 0."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $P(X = 3)$.",
+      "final_answer": "$\\frac{1}{6}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Count favorable outcomes out of 36 possible outcomes"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to $\\frac{1}{6}$"
+        }
+      ],
+      "solution": "From the sample space grid for two dice:\n$\\begin{aligned} P(X = 3) &= \\frac{6}{36} \\\\ &= \\frac{1}{6} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Probability is the number of favorable outcomes divided by the total number of outcomes in the sample space ($36$).",
+        "step_by_step": [
+          "Identify pairs with difference 3: $(1,4), (2,5), (3,6), (4,1), (5,2), (6,3)$.",
+          "Count the pairs: 6 pairs.",
+          "Compute probability: $\\frac{6}{36} = \\frac{1}{6}$."
+        ],
+        "common_pitfalls": "Forgetting that order matters (e.g., counting $(1,4)$ but forgetting $(4,1)$)."
+      }
+    }
+  ]
+}

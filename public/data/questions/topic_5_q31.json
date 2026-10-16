@@ -1,0 +1,97 @@
+{
+  "id": "topic_5_q31",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 31,
+  "question_text": "Let $f(x) = \\frac{3x-4}{(x-1)(x+4)}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $f'(x) = \\frac{-x(3x-8)}{(x-1)^2(x+4)^2}$, and draw its sign diagram.",
+      "final_answer": "$f'(x) = \\frac{-x(3x-8)}{(x-1)^2(x+4)^2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand the denominator or apply quotient rule with product rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Differentiate using quotient rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Expand and simplify the numerator"
+        },
+        {
+          "code": "A1",
+          "desc": "Factorise numerator to obtain $\\frac{-x(3x-8)}{(x-1)^2(x+4)^2}$"
+        }
+      ],
+      "solution": "$f(x) = \\frac{3x-4}{(x-1)(x+4)} = \\frac{3x-4}{x^2+3x-4}$\n$\\therefore f'(x) = \\frac{3(x^2+3x-4) - (2x+3)(3x-4)}{(x^2+3x-4)^2}$ {quotient rule}\n$= \\frac{3x^2 + 9x - 12 - 6x^2 + 8x - 9x + 12}{(x-1)^2(x+4)^2}$\n$= \\frac{-3x^2 + 8x}{(x-1)^2(x+4)^2}$\n$= \\frac{-x(3x-8)}{(x-1)^2(x+4)^2}$",
+      "ai_explanation": {
+        "concept_rule": "Apply the quotient rule: $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$. Expanding the quadratic in the denominator first makes differentiation straightforward.",
+        "step_by_step": [
+          "Expand denominator: $(x-1)(x+4) = x^2 + 3x - 4$.",
+          "Apply quotient rule: $u = 3x - 4, u' = 3$, $v = x^2 + 3x - 4, v' = 2x + 3$.",
+          "Form the numerator: $3(x^2+3x-4) - (2x+3)(3x-4) = (3x^2+9x-12) - (6x^2-8x+9x-12)$.",
+          "Simplify numerator: $-3x^2 + 8x$.",
+          "Factor out $-x$: $-x(3x-8)$."
+        ],
+        "common_pitfalls": "Minus sign distribution error when subtracting the product $(2x+3)(3x-4)$."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Hence find intervals where $y = f(x)$ is increasing.",
+      "final_answer": "$0 \\leqslant x < 1 \\text{ and } 1 < x \\leqslant \\frac{8}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify sign diagram critical points at $-4, 0, 1, \\frac{8}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State intervals where $f'(x) \\geqslant 0$, excluding vertical asymptote $x = 1$"
+        }
+      ],
+      "solution": "$f'(x)$ has sign diagram with critical values $-4, 0, 1, \\frac{8}{3}$ and signs $-, -, +, +, -$.\n$y = f(x)$ is increasing where $f'(x) \\geqslant 0$\n$\\therefore 0 \\leqslant x < 1$ and $1 < x \\leqslant \\frac{8}{3}$",
+      "ai_explanation": {
+        "concept_rule": "A function is increasing where $f'(x) \\geqslant 0$, excluding points where the function is undefined (vertical asymptotes).",
+        "step_by_step": [
+          "Identify zeros of $f'(x)$: $x = 0$ and $x = \\frac{8}{3}$.",
+          "Identify undefined points (asymptotes): $x = -4$ and $x = 1$.",
+          "Construct the sign diagram: the squared terms in the denominator are always positive (for $x \\neq -4, 1$), so sign depends on $-x(3x-8)$, which is positive for $0 < x < \\frac{8}{3}$.",
+          "Exclude the asymptote $x = 1$, giving $0 \\leqslant x < 1$ and $1 < x \\leqslant \\frac{8}{3}$."
+        ],
+        "common_pitfalls": "Writing $0 \\leqslant x \\leqslant \\frac{8}{3}$ and forgetting to exclude the asymptote at $x = 1$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Hence find intervals where $y = f(x)$ is decreasing.",
+      "final_answer": "$x < -4, -4 < x \\leqslant 0, \\text{ and } x \\geqslant \\frac{8}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine regions where $f'(x) \\leqslant 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Exclude asymptote $x = -4$ and write correct intervals"
+        }
+      ],
+      "solution": "$y = f(x)$ is decreasing where $f'(x) \\leqslant 0$\n$\\therefore x < -4$, $-4 < x \\leqslant 0$, and $x \\geqslant \\frac{8}{3}$",
+      "ai_explanation": {
+        "concept_rule": "A function is decreasing where $f'(x) \\leqslant 0$, excluding points of discontinuity.",
+        "step_by_step": [
+          "Check the sign diagram for intervals where $f'(x)$ is negative or zero.",
+          "For $x < 0$, $f'(x)$ is negative except at $x = -4$ where it is undefined.",
+          "For $x > \\frac{8}{3}$, $f'(x)$ is negative.",
+          "Combine intervals with inclusion of endpoints where $f'(x) = 0$: $x < -4$, $-4 < x \\leqslant 0$, and $x \\geqslant \\frac{8}{3}$."
+        ],
+        "common_pitfalls": "Writing $x \\leqslant 0$ as a single interval without excluding the asymptote at $x = -4$."
+      }
+    }
+  ]
+}

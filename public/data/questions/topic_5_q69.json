@@ -1,0 +1,44 @@
+{
+  "id": "topic_5_q69",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 69,
+  "question_text": "If $y = x\\sqrt{4-x}$, find $\\frac{dy}{dx}$ and simplify your answer. Hence evaluate $\\int_0^2 \\frac{8-3x}{\\sqrt{4-x}}\\,dx$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "If $y = x\\sqrt{4-x}$, find $\\frac{dy}{dx}$ and simplify your answer. Hence evaluate $\\int_0^2 \\frac{8-3x}{\\sqrt{4-x}}\\,dx$.",
+      "final_answer": "$2\\sqrt{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule and chain rule to find $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{dy}{dx}$ to $\\frac{8-3x}{2\\sqrt{4-x}}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Relating the integral to the derivative result"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating the definite integral to obtain $2\\sqrt{2}$"
+        }
+      ],
+      "solution": "$y = x\\sqrt{4-x} = x(4-x)^{\\frac{1}{2}} \\implies \\frac{dy}{dx} = (1)(4-x)^{\\frac{1}{2}} + x\\left(\\frac{1}{2}(4-x)^{-\\frac{1}{2}}(-1)\\right) = \\sqrt{4-x} - \\frac{x}{2\\sqrt{4-x}} = \\frac{2(4-x) - x}{2\\sqrt{4-x}} = \\frac{8 - 3x}{2\\sqrt{4-x}} \\quad (\\ast)$. Using $(\\ast)$, $\\int_0^2 \\frac{8-3x}{\\sqrt{4-x}}\\,dx = [x\\sqrt{4-x}]_0^2 = 2\\sqrt{4-2} - 0\\sqrt{4-0} = 2\\sqrt{2}$",
+      "ai_explanation": {
+        "concept_rule": "Integration by differentiation (recognition/reverse chain rule): using $\\frac{d}{dx}[f(x)]$ to find $\\int f'(x)\\,dx$.",
+        "step_by_step": [
+          "Differentiate $y = x(4-x)^{1/2}$ using the product and chain rules.",
+          "Obtain a common denominator $2\\sqrt{4-x}$ and simplify the numerator to $8-3x$.",
+          "Use this relationship to integrate the given expression.",
+          "Evaluate the resulting antiderivative at limits $2$ and $0$ to obtain $2\\sqrt{2}$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign from differentiating $(4-x)$ when using the chain rule."
+      }
+    }
+  ]
+}

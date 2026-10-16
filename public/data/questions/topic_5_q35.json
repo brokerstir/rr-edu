@@ -1,0 +1,150 @@
+{
+  "id": "topic_5_q35",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 35,
+  "question_text": "Consider the function $f(x) = \\frac{e^{3x}}{kx}$, $k \\neq 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the $x$-coordinate of the stationary point.",
+      "final_answer": "$x = \\frac{1}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying quotient rule to find f'(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying derivative to (e^(3x)(3x - 1)) / (k x^2)"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving f'(x) = 0 for x = 1/3"
+        }
+      ],
+      "solution": "$f(x) = \\frac{e^{3x}}{kx}, \\quad k \\neq 0$\n$\\therefore f'(x) = \\frac{3e^{3x}(kx) - k e^{3x}}{(kx)^2} = \\frac{k e^{3x}(3x - 1)}{k^2 x^2} = \\frac{e^{3x}(3x - 1)}{kx^2}$\nStationary points occur where $f'(x) = 0$\n$\\therefore e^{3x}(3x - 1) = 0$\n$\\therefore 3x - 1 = 0 \\quad \\{e^{3x} > 0 \\text{ for all } x\\}$\n$\\therefore x = \\frac{1}{3}$\nSo, the stationary point has $x$-coordinate $\\frac{1}{3}$.",
+      "ai_explanation": {
+        "concept_rule": "The derivative of a quotient $\\frac{u}{v}$ is $\\frac{u'v - uv'}{v^2}$. Stationary points occur where $f'(x) = 0$.",
+        "step_by_step": [
+          "Use the quotient rule with $u = e^{3x}$ and $v = kx$.",
+          "Compute $u' = 3e^{3x}$ and $v' = k$.",
+          "Form $\\frac{3e^{3x}(kx) - ke^{3x}}{k^2 x^2}$ and factor out $ke^{3x}$ in the numerator.",
+          "Cancel factor $k$ to get $f'(x) = \\frac{e^{3x}(3x-1)}{kx^2}$.",
+          "Set numerator $e^{3x}(3x-1) = 0$. Since $e^{3x} \\neq 0$, $3x - 1 = 0 \\implies x = \\frac{1}{3}$."
+        ],
+        "common_pitfalls": "Failing to cancel $k$ correctly or accidentally setting $kx^2 = 0$ as a stationary point."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "For what values of $k$ is the stationary point a local minimum?",
+      "final_answer": "$k > 0$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Establishing sign diagram requirement for a local minimum"
+        },
+        {
+          "code": "A1",
+          "desc": "Deducing condition k > 0"
+        }
+      ],
+      "solution": "If the stationary point is a local minimum, then the sign diagram of $f'(x)$ should be:\nnegative for $x < \\frac{1}{3}$ and positive for $x > \\frac{1}{3}$.\nSince $e^{3x} > 0$ and $x^2 > 0$ for all $x \\neq 0$, the sign of $f'(x) = \\frac{e^{3x}(3x-1)}{k x^2}$ matches the sign of $\\frac{3x-1}{k}$.\nFor $f'(x)$ to change from negative to positive as $x$ increases through $\\frac{1}{3}$, the denominator $k$ must be positive.\nThis occurs when $k > 0$.",
+      "ai_explanation": {
+        "concept_rule": "A stationary point is a local minimum if $f'(x)$ changes sign from negative to positive from left to right.",
+        "step_by_step": [
+          "Identify factors that are always positive: $e^{3x} > 0$ and $x^2 > 0$ for $x \\neq 0$.",
+          "Analyze the numerator $(3x - 1)$, which is negative for $x < \\frac{1}{3}$ and positive for $x > \\frac{1}{3}$.",
+          "To keep $f'(x) < 0$ when $x < \\frac{1}{3}$ and $f'(x) > 0$ when $x > \\frac{1}{3}$, $k$ must be positive ($k > 0$)."
+        ],
+        "common_pitfalls": "Neglecting the effect of the vertical asymptote at $x = 0$ on the domain."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "For what values of $k$ is the stationary point a local maximum?",
+      "final_answer": "$k < 0$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating opposite condition for a local maximum using part b i"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding k < 0"
+        }
+      ],
+      "solution": "Using **b i**, if the stationary point is a local maximum, then $k < 0$.\n*Note:* It is not possible for the stationary point to be an inflection point because the factor $(3x - 1)$ in $f'(x)$ is raised to an odd power. So, the sign of $f'(x)$ will always be different on either side of $x = \\frac{1}{3}$.",
+      "ai_explanation": {
+        "concept_rule": "A local maximum requires $f'(x)$ to transition from positive to negative across the critical point.",
+        "step_by_step": [
+          "For $f'(x)$ to change from positive to negative across $x = \\frac{1}{3}$, the sign of the derivative must be opposite to $(3x - 1)$.",
+          "Thus, $k$ must be negative ($k < 0$)."
+        ],
+        "common_pitfalls": "Assuming a stationary inflection could occur; since $(3x-1)$ has odd multiplicity (degree 1), it must change signs across $\\frac{1}{3}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Given that the stationary point has $y$-coordinate $-\\frac{e}{2}$, find $k$ and determine the nature of the stationary point.",
+      "final_answer": "$k = -6$, local maximum",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting f(1/3) = -e/2"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for k = -6"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that the stationary point is a local maximum because k < 0"
+        }
+      ],
+      "solution": "The stationary point has $y$-coordinate $-\\frac{e}{2}$.\n$\\therefore f\\left(\\frac{1}{3}\\right) = -\\frac{e}{2} \\quad \\{\\text{using } \\mathbf{a}\\}$\n$\\therefore \\frac{e^{3\\left(\\frac{1}{3}\\right)}}{k\\left(\\frac{1}{3}\\right)} = -\\frac{e}{2}$\n$\\therefore \\frac{3e}{k} = -\\frac{e}{2}$\n$\\therefore \\frac{k}{3} = -2$\n$\\therefore k = -6$\nSince $k < 0$, the stationary point is a local maximum.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the stationary point into the original function to determine unknown parameters, then use the sign of $k$ to deduce its nature.",
+        "step_by_step": [
+          "Substitute $x = \\frac{1}{3}$ into $f(x) = \\frac{e^{3x}}{kx}$ and set it equal to $-\\frac{e}{2}$.",
+          "Simplify $\\frac{e^1}{k/3} = \\frac{3e}{k} = -\\frac{e}{2}$.",
+          "Divide by $e$ to get $\\frac{3}{k} = -\\frac{1}{2} \\implies k = -6$.",
+          "Since $k = -6 < 0$, by part b ii, the stationary point is a local maximum."
+        ],
+        "common_pitfalls": "Algebraic errors when simplifying the compound fraction $\\frac{e}{k/3}$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "State the location and nature of the stationary point of $g(x) = -f(2x)$.",
+      "final_answer": "$\\left(\\frac{1}{6}, \\frac{e}{2}\\right)$, local minimum",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying geometric transformations from f(x) to -f(2x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Applying transformations to the coordinates of the stationary point"
+        },
+        {
+          "code": "R1",
+          "desc": "Deducing that reflection in x-axis turns the local maximum into a local minimum"
+        }
+      ],
+      "solution": "$g(x) = -f(2x)$\n$f(x) \\xrightarrow{\\text{reflection in } x\\text{-axis}} -f(x) \\xrightarrow{\\text{horizontal stretch scale factor } \\frac{1}{2}} -f(2x)$\nSo, a reflection in the $x$-axis, followed by a horizontal stretch with scale factor $\\frac{1}{2}$ maps $y = f(x)$ onto $y = g(x)$.\nThe stationary point of $f(x)$ is $\\left(\\frac{1}{3}, -\\frac{e}{2}\\right)$, so for the stationary point of $g(x)$:\n$\\left(\\frac{1}{3}, -\\frac{e}{2}\\right) \\xrightarrow{\\text{reflection in } x\\text{-axis}} \\left(\\frac{1}{3}, \\frac{e}{2}\\right) \\xrightarrow{\\text{horizontal stretch scale factor } \\frac{1}{2}} \\left(\\frac{1}{6}, \\frac{e}{2}\\right)$\nSo, the stationary point of $g(x)$ is $\\left(\\frac{1}{6}, \\frac{e}{2}\\right)$ which is a local minimum due to the reflection in the $x$-axis.",
+      "ai_explanation": {
+        "concept_rule": "Transformation rules: $y = -f(x)$ reflects in the $x$-axis (inverting maximums and minimums), while $y = f(2x)$ scales the $x$-coordinates horizontally by a factor of $\\frac{1}{2}$.",
+        "step_by_step": [
+          "Start with the stationary point of $f(x)$: $\\left(\\frac{1}{3}, -\\frac{e}{2}\\right)$, which is a local maximum.",
+          "Reflect across the $x$-axis: $y \\to -y$, so the coordinate becomes $\\left(\\frac{1}{3}, \\frac{e}{2}\\right)$, and the point becomes a local minimum.",
+          "Apply horizontal compression by factor $\\frac{1}{2}$: $x \\to \\frac{x}{2} = \\frac{1}{6}$.",
+          "The transformed point is $\\left(\\frac{1}{6}, \\frac{e}{2}\\right)$, which is a local minimum."
+        ],
+        "common_pitfalls": "Multiplying the $x$-coordinate by $2$ instead of $\\frac{1}{2}$ when evaluating $f(2x)$."
+      }
+    }
+  ]
+}

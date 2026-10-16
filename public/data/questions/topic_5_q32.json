@@ -1,0 +1,71 @@
+{
+  "id": "topic_5_q32",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 32,
+  "question_text": "Find the exact coordinates and nature of the stationary points of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = xe^{-x}$",
+      "final_answer": "$\\left(1, \\frac{1}{e}\\right) \\text{ is a local maximum}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $y = xe^{-x}$ using the product rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $\\frac{dy}{dx} = 0$ and solve for $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find the corresponding $y$-value"
+        },
+        {
+          "code": "R1",
+          "desc": "Use the sign diagram of $f'(x)$ to classify the stationary point as a local maximum"
+        }
+      ],
+      "solution": "$y = xe^{-x}$\n$\\therefore \\frac{dy}{dx} = (1)e^{-x} + x(-e^{-x})$ {product rule}\n$= e^{-x} - xe^{-x}$\nStationary points occur where $\\frac{dy}{dx} = 0$\n$\\therefore e^{-x} - xe^{-x} = 0$\n$\\therefore e^{-x}(1-x) = 0$\n$\\therefore 1-x = 0$ {$e^{-x} > 0$}\n$\\therefore x = 1$\nWhen $x = 1$, $y = (1)e^{-1} = \\frac{1}{e}$\nNow $f'(x)$ has sign diagram showing $+$ to the left of $1$ and $-$ to the right of $1$.\nSo, $\\left(1, \\frac{1}{e}\\right)$ is a local maximum.",
+      "ai_explanation": {
+        "concept_rule": "A stationary point occurs where $f'(x) = 0$. If $f'(x)$ changes from positive to negative, the point is a local maximum.",
+        "step_by_step": [
+          "Apply product rule to differentiate $y = xe^{-x}$: $\\frac{dy}{dx} = e^{-x}(1 - x)$.",
+          "Set derivative equal to $0$. Since $e^{-x} > 0$ for all real $x$, $1 - x = 0 \\implies x = 1$.",
+          "Find coordinates: $y(1) = 1 \\cdot e^{-1} = \\frac{1}{e}$.",
+          "Check signs around $x = 1$: for $x < 1$, $f'(x) > 0$; for $x > 1$, $f'(x) < 0$.",
+          "Conclude $\\left(1, \\frac{1}{e}\\right)$ is a local maximum."
+        ],
+        "common_pitfalls": "Forgetting the negative sign from the derivative of $e^{-x}$ via chain rule."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\frac{x-3}{x^2-5}$",
+      "final_answer": "$\\frac{dy}{dx} = \\frac{-x^2+6x-5}{(x^2-5)^2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the quotient rule to $y = \\frac{x-3}{x^2-5}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify the numerator to obtain $\\frac{-x^2+6x-5}{(x^2-5)^2}$"
+        }
+      ],
+      "solution": "$y = \\frac{x-3}{x^2-5}$\n$\\frac{dy}{dx} = \\frac{(1)(x^2-5) - (2x)(x-3)}{(x^2-5)^2}$ {quotient rule}\n$= \\frac{x^2 - 5 - 2x^2 + 6x}{(x^2-5)^2}$\n$= \\frac{-x^2 + 6x - 5}{(x^2-5)^2}$",
+      "ai_explanation": {
+        "concept_rule": "The quotient rule states that $\\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\frac{u'v - uv'}{v^2}$.",
+        "step_by_step": [
+          "Identify $u = x-3 \\implies u' = 1$ and $v = x^2-5 \\implies v' = 2x$.",
+          "Apply quotient rule: $\\frac{1(x^2-5) - (2x)(x-3)}{(x^2-5)^2}$.",
+          "Expand numerator: $x^2 - 5 - 2x^2 + 6x$.",
+          "Group like terms: $-x^2 + 6x - 5$."
+        ],
+        "common_pitfalls": "Incorrect distribution of negative sign when subtracting $2x(x-3)$, leading to $-6x$ instead of $+6x$."
+      }
+    }
+  ]
+}

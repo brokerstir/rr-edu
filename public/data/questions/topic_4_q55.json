@@ -1,0 +1,72 @@
+{
+  "id": "topic_4_q55",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 55,
+  "question_text": "Suppose $X \\sim \\mathrm{N}(\\mu, \\sigma^2)$. Match each pair of parameters with the correct curve.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\mu = 4,\\quad \\sigma = 1$",
+      "final_answer": "$\\text{C}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct matching to curve C"
+        }
+      ],
+      "solution": "$\\text{A}$ and $\\text{B}$ both have $\\mu = 2$, $\\text{C}$ has $\\mu = 4$.\n$\\therefore \\mu = 4, \\sigma = 1$ corresponds to $\\text{C}$.",
+      "ai_explanation": {
+        "concept_rule": "The mean corresponds to the center of symmetry along the horizontal axis.",
+        "step_by_step": [
+          "Identify the line of symmetry for each curve: A and B are centered at $x = 2$, while C is centered at $x = 4$.",
+          "Therefore, the distribution with $\\mu = 4$ must be curve C."
+        ],
+        "common_pitfalls": "Confusing mean (horizontal position) with standard deviation (spread and peak height)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\mu = 2,\\quad \\sigma = 2$",
+      "final_answer": "$\\text{A}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct matching to curve A"
+        }
+      ],
+      "solution": "$\\text{B}$ has a greater spread, and hence a larger standard deviation than $\\text{A}$.\nSince both have $\\mu = 2$, $\\mu = 2, \\sigma = 2$ corresponds to $\\text{A}$.",
+      "ai_explanation": {
+        "concept_rule": "A smaller standard deviation results in a narrower spread and a taller peak.",
+        "step_by_step": [
+          "Both A and B have $\\mu = 2$.",
+          "Curve A is narrower and taller than curve B, meaning it has the smaller standard deviation ($\\sigma = 2$).",
+          "Therefore, $\\mu = 2, \\sigma = 2$ corresponds to A."
+        ],
+        "common_pitfalls": "Assuming a taller peak implies a larger standard deviation."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\mu = 2,\\quad \\sigma = 3$",
+      "final_answer": "$\\text{B}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct matching to curve B"
+        }
+      ],
+      "solution": "$\\text{B}$ has a greater spread, and hence a larger standard deviation than $\\text{A}$.\n$\\therefore \\mu = 2, \\sigma = 3$ corresponds to $\\text{B}$.",
+      "ai_explanation": {
+        "concept_rule": "A larger standard deviation results in a wider, flatter curve.",
+        "step_by_step": [
+          "Compare curves A and B, which are both centered at $\\mu = 2$.",
+          "Curve B is more spread out and flatter, indicating a larger standard deviation ($\\sigma = 3$).",
+          "Therefore, $\\mu = 2, \\sigma = 3$ corresponds to B."
+        ],
+        "common_pitfalls": "Failing to check that the total area under each probability curve remains 1."
+      }
+    }
+  ]
+}

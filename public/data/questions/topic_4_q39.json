@@ -1,0 +1,106 @@
+{
+  "id": "topic_4_q39",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 39,
+  "question_text": "Suppose $P(X) = \\frac{3}{7}$, $P(Y) = \\frac{2}{5}$, and $P(X \\cup Y) = \\frac{2}{3}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find $P(X \\cap Y)$.",
+      "final_answer": "$\\frac{16}{315}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use of the addition rule for probability: $P(X \\cap Y) = P(X) + P(Y) - P(X \\cup Y)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation to find $P(X \\cap Y) = \\frac{16}{315}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(X \\cap Y) &= P(X) + P(Y) - P(X \\cup Y) \\\\ &= \\frac{3}{7} + \\frac{2}{9} - \\frac{3}{5} \\\\ &= \\frac{16}{315} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The addition rule of probability relates the probability of the union and intersection of two events: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+        "step_by_step": [
+          "Rearrange the addition rule to solve for the intersection: $P(X \\cap Y) = P(X) + P(Y) - P(X \\cup Y)$.",
+          "Substitute the given probabilities: $\\frac{3}{7} + \\frac{2}{9} - \\frac{3}{5}$.",
+          "Find a common denominator ($315$) and simplify: $\\frac{135 + 70 - 189}{315} = \\frac{16}{315}$."
+        ],
+        "common_pitfalls": "Arithmetic errors when combining fractions with different denominators."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find $P(X \\mid Y)$.",
+      "final_answer": "$\\frac{8}{35}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use of conditional probability formula $P(X \\mid Y) = \\frac{P(X \\cap Y)}{P(Y)}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplification to $\\frac{8}{35}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(X \\mid Y) &= \\frac{P(X \\cap Y)}{P(Y)} \\\\ &= \\frac{\\frac{16}{315}}{\\frac{2}{9}} \\\\ &= \\frac{8}{35} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The conditional probability of $A$ given $B$ is defined as $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$.",
+        "step_by_step": [
+          "State the conditional probability formula $P(X \\mid Y) = \\frac{P(X \\cap Y)}{P(Y)}$.",
+          "Substitute $P(X \\cap Y) = \\frac{16}{315}$ from part (a)(i) and $P(Y) = \\frac{2}{9}$.",
+          "Divide the fractions: $\\frac{16}{315} \\times \\frac{9}{2} = \\frac{8}{35}$."
+        ],
+        "common_pitfalls": "Confusing $P(X \\mid Y)$ with $P(Y \\mid X)$ by dividing by the wrong denominator."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Find $P(Y \\mid X)$.",
+      "final_answer": "$\\frac{16}{135}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use of conditional probability formula $P(Y \\mid X) = \\frac{P(Y \\cap X)}{P(X)}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplification to $\\frac{16}{135}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(Y \\mid X) &= \\frac{P(Y \\cap X)}{P(X)} \\\\ &= \\frac{\\frac{16}{315}}{\\frac{3}{7}} \\\\ &= \\frac{16}{135} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The conditional probability of $Y$ given $X$ is defined as $P(Y \\mid X) = \\frac{P(Y \\cap X)}{P(X)}$.",
+        "step_by_step": [
+          "State the conditional probability formula $P(Y \\mid X) = \\frac{P(X \\cap Y)}{P(X)}$.",
+          "Substitute $P(X \\cap Y) = \\frac{16}{315}$ and $P(X) = \\frac{3}{7}$.",
+          "Divide the fractions: $\\frac{16}{315} \\times \\frac{7}{3} = \\frac{16}{135}$."
+        ],
+        "common_pitfalls": "Inverting the wrong fraction during division."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Are $X$ and $Y$ independent events? Explain your answer.",
+      "final_answer": "$X$ and $Y$ are not independent",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Comparing conditional probabilities to unconditional probabilities or checking $P(X \\cap Y) \\neq P(X)P(Y)$ with a valid conclusion"
+        }
+      ],
+      "solution": "$X$ and $Y$ are not independent as $P(X \\mid Y) \\neq P(X)$ and $P(Y \\mid X) \\neq P(Y)$.",
+      "ai_explanation": {
+        "concept_rule": "Two events $A$ and $B$ are independent if and only if $P(A \\mid B) = P(A)$ (or equivalently $P(A \\cap B) = P(A)P(B)$).",
+        "step_by_step": [
+          "Compare $P(X \\mid Y) = \\frac{8}{35}$ with $P(X) = \\frac{3}{7} = \\frac{15}{35}$.",
+          "Observe that $P(X \\mid Y) \\neq P(X)$.",
+          "Conclude that $X$ and $Y$ are not independent."
+        ],
+        "common_pitfalls": "Stating that events are mutually exclusive instead of addressing independence."
+      }
+    }
+  ]
+}

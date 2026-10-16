@@ -1,0 +1,109 @@
+{
+  "id": "topic_4_q11",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 11,
+  "question_text": "The frequency table alongside shows the number of cars owned by different families.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Add a column to the table showing the cumulative frequency values.",
+      "final_answer": "$Cumulative frequencies: $78, 195, 264, 282, 284$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Add successive frequencies to calculate running totals"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly complete cumulative frequency column: 78, 195, 264, 282, 284"
+        }
+      ],
+      "solution": "Number of cars | Frequency | Cumulative frequency:\n0 | 78 | 78\n1 | 117 | 195\n2 | 69 | 264\n3 | 18 | 282\n4 | 2 | 284\nTotal = 284.",
+      "ai_explanation": {
+        "concept_rule": "Cumulative frequency is the running total of frequencies up to the current class.",
+        "step_by_step": [
+          "Row 0: 78.",
+          "Row 1: $78 + 117 = 195$.",
+          "Row 2: $195 + 69 = 264$.",
+          "Row 3: $264 + 18 = 282$.",
+          "Row 4: $282 + 2 = 284$."
+        ],
+        "common_pitfalls": "Adding the 'Number of cars' variable instead of the frequencies."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "For this data set, calculate the: mean.",
+      "final_answer": "$1.12\\text{ cars}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate $\\sum xf = 0(78) + 1(117) + 2(69) + 3(18) + 4(2) = 317$"
+        },
+        {
+          "code": "A1",
+          "desc": "Divide by 284 to obtain $\\approx 1.12$"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{0 \\times 78 + 1 \\times 117 + 2 \\times 69 + 3 \\times 18 + 4 \\times 2}{284} = \\frac{317}{284} \\approx 1.12\\text{ cars}$",
+      "ai_explanation": {
+        "concept_rule": "The mean of a frequency distribution is $\\bar{x} = \\frac{\\sum xf}{\\sum f}$.",
+        "step_by_step": [
+          "Multiply each score by its frequency: $0, 117, 138, 54, 8$.",
+          "Sum products: $0 + 117 + 138 + 54 + 8 = 317$.",
+          "Divide by total frequency 284: $\\frac{317}{284} \\approx 1.116... \\approx 1.12$."
+        ],
+        "common_pitfalls": "Dividing by 5 (number of rows) instead of $\\sum f = 284$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "For this data set, calculate the: median.",
+      "final_answer": "$1\\text{ car}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find position $\\frac{284+1}{2} = 142.5$ and locate within cumulative frequency"
+        },
+        {
+          "code": "A1",
+          "desc": "State median is 1 car"
+        }
+      ],
+      "solution": "There are 284 data values, so $n = 284$. $\\frac{n+1}{2} = 142.5$, so the median is the average of the 142nd and 143rd ordered data values. From the cumulative frequency column, the 79th to 195th ordered data values are 1 car. $\\therefore$ the 142nd and 143rd data values are 1 car. $\\therefore \\text{median} = \\frac{1+1}{2} = 1\\text{ car}$.",
+      "ai_explanation": {
+        "concept_rule": "The median position is found using $\\frac{n+1}{2}$, and its value is identified using the cumulative frequency column.",
+        "step_by_step": [
+          "Position is $142.5$, meaning average of 142nd and 143rd values.",
+          "Cumulative frequency shows values 1 to 78 are 0, and 79 to 195 are 1.",
+          "Both 142nd and 143rd values fall in the interval for 1 car.",
+          "Median $= 1$."
+        ],
+        "common_pitfalls": "Reading cumulative frequency value instead of the variable value (number of cars)."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "For this data set, calculate the: mode.",
+      "final_answer": "$1\\text{ car}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify mode as 1 car based on highest frequency 117"
+        }
+      ],
+      "solution": "Looking down the frequency column, the highest frequency is 117. This corresponds to 1 car, so the mode is 1 car.",
+      "ai_explanation": {
+        "concept_rule": "The mode corresponds to the category with the highest frequency.",
+        "step_by_step": [
+          "Inspect frequency column: values are 78, 117, 69, 18, 2.",
+          "Maximum frequency is 117.",
+          "The corresponding score is 1 car."
+        ],
+        "common_pitfalls": "Reporting 117 as the mode rather than 1 car."
+      }
+    }
+  ]
+}

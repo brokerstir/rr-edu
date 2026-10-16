@@ -1,0 +1,59 @@
+{
+  "id": "topic_5_q3",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 3,
+  "question_text": "The graph of $f(x) = \\frac{x^3 - x^2 + 2x - 2}{x - 1}$ is shown alongside.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why the function is undefined at $x = 1$.",
+      "final_answer": "$Undefined at $x = 1$$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identifying that the denominator is zero when $x = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding that the function is undefined at $x = 1$"
+        }
+      ],
+      "solution": "When $x = 1$, the denominator of $\\frac{x^3 - x^2 + 2x - 2}{x - 1}$ is zero. So, the function is undefined at $x = 1$.",
+      "ai_explanation": {
+        "concept_rule": "A rational function is undefined at any input value where the denominator evaluates to zero.",
+        "step_by_step": [
+          "Substitute $x = 1$ into the denominator: $1 - 1 = 0$.",
+          "Since division by zero is undefined, the function $f(x)$ is undefined at $x = 1$."
+        ],
+        "common_pitfalls": "Simplifying the fraction first by factoring and concluding the function is defined at $x = 1$ without noting the original domain restriction."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Use the graph to find $\\lim_{x \\to 1} f(x)$.",
+      "final_answer": "$\\lim_{x \\to 1} f(x) = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Observing the behaviour of $y$ as $x$ approaches 1 from both sides"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct limit value of 3"
+        }
+      ],
+      "solution": "From the graph, we can see that $y \\to 3$ as $x \\to 1$ from either direction.\nSo, $\\lim_{x \\to 1} f(x) = 3$.",
+      "ai_explanation": {
+        "concept_rule": "The limit of a function as $x \\to a$ is the value the function approaches from both the left and right, regardless of whether $f(a)$ exists.",
+        "step_by_step": [
+          "Trace the graph as $x$ approaches $1$ from the left ($x \\to 1^-$); $y$ approaches $3$.",
+          "Trace the graph as $x$ approaches $1$ from the right ($x \\to 1^+$); $y$ approaches $3$.",
+          "Since both one-sided limits are equal to $3$, $\\lim_{x \\to 1} f(x) = 3$."
+        ],
+        "common_pitfalls": "Confusing the function being undefined at $x = 1$ with the limit not existing."
+      }
+    }
+  ]
+}

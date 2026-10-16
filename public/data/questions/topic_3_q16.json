@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q16",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 16,
+  "question_text": "At 2:35 pm Fari sees an airplane directly overhead. At 2:38 pm he estimates that the angle of elevation to the plane is $15^\\circ$.\nThe plane is travelling in a straight line at $110\\text{ m s}^{-1}$. Calculate:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the height of the plane above the ground",
+      "final_answer": "$5310\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate horizontal distance $x = 110 \\times 180 = 19\\,800\\text{ m}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up $\\tan 15^\\circ = \\frac{h}{19\\,800}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate height $h \\approx 5310\\text{ m}$"
+        }
+      ],
+      "solution": "$x = \\text{speed} \\times \\text{time} = 110 \\times 180 = 19\\,800$ $\\{3\\text{ minutes} = 180\\text{ seconds}\\}$\n\n$\\tan 15^\\circ = \\frac{h}{19\\,800}$\n$h = 19\\,800\\tan 15^\\circ$\n$h \\approx 5305.39 \\approx 5310$\n\n$\\therefore$ the plane is approximately $5310\\text{ m} \\approx 5.31\\text{ km}$ above the ground.",
+      "ai_explanation": {
+        "concept_rule": "Distance traveled at constant speed is $\\text{distance} = \\text{speed} \\times \\text{time}$. The angle of elevation relates height to horizontal distance via $\\tan\\theta = \\frac{h}{d}$.",
+        "step_by_step": [
+          "Convert time to seconds: $3\\text{ min} = 180\\text{ s}$.",
+          "Find horizontal distance: $x = 110\\text{ m/s} \\times 180\\text{ s} = 19\\,800\\text{ m}$.",
+          "Use $\\tan 15^\\circ = \\frac{h}{19\\,800}$.",
+          "Solve for $h = 19\\,800\\tan 15^\\circ \\approx 5310\\text{ m}$."
+        ],
+        "common_pitfalls": "Not converting the time of 3 minutes into seconds before multiplying by speed in m/s."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the angle of elevation to the plane at 2:42 pm.",
+      "final_answer": "$6.55^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate horizontal distance $y = 110 \\times 420 = 46\\,200\\text{ m}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up $\\tan\\theta = \\frac{5305.39}{46\\,200}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Compute $\\theta \\approx 6.55^\\circ$"
+        }
+      ],
+      "solution": "$y = \\text{speed} \\times \\text{time} = 110 \\times 420 = 46\\,200$ $\\{7\\text{ minutes} = 420\\text{ seconds}\\}$\n\n$\\tan\\theta \\approx \\frac{5305.39}{46\\,200}$\n$\\theta \\approx \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right)$\n$\\theta \\approx 6.55^\\circ$\n\n$\\therefore$ the angle of elevation of the plane at 2:42 pm is approximately $6.55^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The angle of elevation $\\theta$ from an observer to an object at height $h$ and horizontal distance $y$ is given by $\\theta = \\tan^{-1}\\left(\\frac{h}{y}\\right)$.",
+        "step_by_step": [
+          "Convert elapsed time: $7\\text{ minutes} = 420\\text{ seconds}$.",
+          "Compute horizontal distance: $y = 110 \\times 420 = 46\\,200\\text{ m}$.",
+          "Use unrounded height $h \\approx 5305.39\\text{ m}$ to set up $\\tan\\theta = \\frac{5305.39}{46\\,200}$.",
+          "Evaluate $\\theta = \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right) \\approx 6.55^\\circ$."
+        ],
+        "common_pitfalls": "Using the 4-minute interval between 2:38 and 2:42 instead of the total elapsed time from the start."
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q46",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 46,
+  "question_text": "For each of the following functions:\ni State the period.\nii Write the equations of the asymptotes.\niii Sketch the function.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = \\tan\\frac{x}{2}$ for $-2\\pi \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{period} = 2\\pi, \\text{undefined when } x = \\pi + 2k\\pi, k \\in \\mathbb{Z}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Period is $2\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Undefined values: $x = \\pi + 2k\\pi, k \\in \\mathbb{Z}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch with asymptotes"
+        }
+      ],
+      "solution": "i $y = \\tan\\frac{x}{2}$ has period $\\frac{\\pi}{b} = \\frac{\\pi}{\\left(\\frac{1}{2}\\right)} = 2\\pi$.\nii $y = \\tan\\frac{x}{2}$ is undefined when\n$\\frac{x}{2} = \\frac{\\pi}{2} + k\\pi, \\quad k \\in \\mathbb{Z}$\n$\\therefore x = \\pi + 2k\\pi, \\quad k \\in \\mathbb{Z}$\niii Graph of $y = \\tan\\frac{x}{2}$ passing through $(0, 0)$ with vertical asymptotes at $x = \\pm\\pi, \\pm 3\\pi, \\dots$.",
+      "ai_explanation": {
+        "concept_rule": "The standard tangent function has period $\\pi$. For $y = \\tan(bx)$, the period is $\\frac{\\pi}{b}$, and it is undefined at $bx = \\frac{\\pi}{2} + k\\pi$.",
+        "step_by_step": [
+          "Find the period: $\\frac{\\pi}{1/2} = 2\\pi$.",
+          "Find undefined points (vertical asymptotes): Set argument $\\frac{x}{2} = \\frac{\\pi}{2} + k\\pi$.",
+          "Multiply by $2$: $x = \\pi + 2k\\pi, k \\in \\mathbb{Z}$.",
+          "Sketch the tangent branches between the vertical asymptotes."
+        ],
+        "common_pitfalls": "Using $2\\pi/b$ for the tangent function instead of $\\pi/b$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 5\\tan 3x$ for $0 \\leqslant x \\leqslant \\pi$",
+      "final_answer": "$\\text{period} = \\frac{\\pi}{3}, \\text{undefined when } x = \\frac{\\pi}{6} + \\frac{k\\pi}{3}, k \\in \\mathbb{Z}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Period is $\\frac{\\pi}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Undefined values: $x = \\frac{\\pi}{6} + \\frac{k\\pi}{3}, k \\in \\mathbb{Z}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch with asymptotes"
+        }
+      ],
+      "solution": "i $y = 5\\tan 3x$ has period $\\frac{\\pi}{b} = \\frac{\\pi}{3}$.\nii $y = 5\\tan 3x$ is undefined when\n$3x = \\frac{\\pi}{2} + k\\pi, \\quad k \\in \\mathbb{Z}$\n$\\therefore x = \\frac{\\pi}{6} + \\frac{k\\pi}{3}, \\quad k \\in \\mathbb{Z}$\niii Graph of $y = 5\\tan 3x$ with period $\\frac{\\pi}{3}$ and vertical asymptotes at $x = \\frac{\\pi}{6} + \\frac{k\\pi}{3}$.",
+      "ai_explanation": {
+        "concept_rule": "For $y = A\\tan(bx)$, the period is $\\frac{\\pi}{b}$, and asymptotes occur at $bx = \\frac{\\pi}{2} + k\\pi$.",
+        "step_by_step": [
+          "Period: $\\frac{\\pi}{3}$.",
+          "Set the angle equal to the undefined points of tangent: $3x = \\frac{\\pi}{2} + k\\pi$.",
+          "Solve for $x$: $x = \\frac{\\pi}{6} + \\frac{k\\pi}{3}, k \\in \\mathbb{Z}$.",
+          "Sketch branches passing through multiples of $\\frac{\\pi}{3}$."
+        ],
+        "common_pitfalls": "Forgetting to divide both $\\frac{\\pi}{2}$ and $k\\pi$ by $3$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "topic_3_q61",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 61,
+  "question_text": "Factorise:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$1 - \\cos^2 x$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$2\\cos^2\\alpha - 7\\cos\\alpha\\sin\\alpha - 4\\sin^2\\alpha$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "$2\\cos^2\\theta - 3\\sin\\theta$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

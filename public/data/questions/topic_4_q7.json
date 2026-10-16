@@ -1,0 +1,80 @@
+{
+  "id": "topic_4_q7",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 7,
+  "question_text": "The number of customers entering a convenience store each hour on a particular day were:\n\n$$14, 23, 26, 34, 24, 18, 26, 16, 25$$\n\nWithout using technology, find the:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "mode of the data.",
+      "final_answer": "$26\\text{ customers}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the mode as 26"
+        }
+      ],
+      "solution": "26 is the data value which occurs most often, so the mode is 26 customers.",
+      "ai_explanation": {
+        "concept_rule": "The mode is the data value that appears most frequently in a data set.",
+        "step_by_step": [
+          "Count frequencies of values: 26 appears twice, all others once.",
+          "The mode is 26."
+        ],
+        "common_pitfalls": "Stating the frequency instead of the value itself."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "median of the data.",
+      "final_answer": "$24\\text{ customers}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Order data values and identify the 5th value"
+        },
+        {
+          "code": "A1",
+          "desc": "State median is 24 customers"
+        }
+      ],
+      "solution": "As $n = 9$, $\\frac{n+1}{2} = 5$. The ordered data set is: 14, 16, 18, 23, 24, 25, 26, 26, 34. $\\therefore \\text{median} = 24\\text{ customers}$.",
+      "ai_explanation": {
+        "concept_rule": "For an odd number of data points $n$, the median position is $\\frac{n+1}{2}$.",
+        "step_by_step": [
+          "Sort data in ascending order: 14, 16, 18, 23, 24, 25, 26, 26, 34.",
+          "Find position: $\\frac{9+1}{2} = 5$.",
+          "The 5th value is 24."
+        ],
+        "common_pitfalls": "Finding the median before sorting the data in numerical order."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "mean of the data.",
+      "final_answer": "$22.9\\text{ customers}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum all 9 values and divide by 9"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\frac{206}{9} \\approx 22.9$"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{14 + 23 + \\dots + 16 + 25}{9} = \\frac{206}{9} \\approx 22.9\\text{ customers}$",
+      "ai_explanation": {
+        "concept_rule": "The mean is calculated as the sum of all values divided by the total number of values.",
+        "step_by_step": [
+          "Sum values: $14+16+18+23+24+25+26+26+34 = 206$.",
+          "Divide by 9: $\\frac{206}{9} \\approx 22.888...$.",
+          "Round to one decimal place: $22.9$."
+        ],
+        "common_pitfalls": "Arithmetic errors when adding multiple two-digit numbers."
+      }
+    }
+  ]
+}

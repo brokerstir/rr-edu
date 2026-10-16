@@ -1,0 +1,82 @@
+{
+  "id": "topic_4_q34",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 34,
+  "question_text": "Suppose you toss a coin and roll a die simultaneously.\nLet $T$ represent a tail with the coin and $E$ represent a 2 or a 5 with the die.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Complete the tree diagram showing the probabilities of the different outcomes.",
+      "final_answer": "$\\text{Tree diagram with outcomes and probabilities shown}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Drawing tree diagram with events T and E"
+        },
+        {
+          "code": "A1",
+          "desc": "All branch probabilities and outcome probabilities correctly calculated"
+        }
+      ],
+      "solution": "The tree diagram has:\n- First branch: $T$ with $\\frac{1}{2}$, $T'$ with $\\frac{1}{2}$\n- Second branch from $T$: $E$ with $\\frac{1}{3}$, $E'$ with $\\frac{2}{3}$\n- Second branch from $T'$: $E$ with $\\frac{1}{3}$, $E'$ with $\\frac{2}{3}$\n\nOutcomes and probabilities:\n- $T \\text{ and } E$: $\\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$\n- $T \\text{ and } E'$: $\\frac{1}{2} \\times \\frac{2}{3} = \\frac{1}{3}$\n- $T' \\text{ and } E$: $\\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$\n- $T' \\text{ and } E'$: $\\frac{1}{2} \\times \\frac{2}{3} = \\frac{1}{3}$\n$$\\text{total } = \\frac{6}{6} = 1$$",
+      "ai_explanation": {
+        "concept_rule": "In a tree diagram, probabilities along paths are multiplied to determine the probability of joint events.",
+        "step_by_step": [
+          "Identify initial probabilities: $\\text{P}(T) = \\frac{1}{2}$, $\\text{P}(T') = \\frac{1}{2}$.",
+          "Given conditional probabilities: $\\text{P}(E) = \\frac{1}{3}$, $\\text{P}(E') = \\frac{2}{3}$.",
+          "Multiply along each of the 4 paths to find each joint probability.",
+          "Sum all outcomes to verify the total is 1."
+        ],
+        "common_pitfalls": "Failing to check that the probabilities on each set of branches sum to 1."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find $P(T \\cap E')$",
+      "final_answer": "$\\frac{1}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Directly reading from tree diagram: $\\text{P}(T \\cap E') = \\frac{1}{3}$"
+        }
+      ],
+      "solution": "$$\\text{P}(T \\cap E') = \\frac{1}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "Read the probability corresponding to the path $T$ then $E'$ from the tree diagram.",
+        "step_by_step": [
+          "Locate branch for $T$ then $E'$.",
+          "Compute $\\frac{1}{2} \\times \\frac{2}{3} = \\frac{2}{6} = \\frac{1}{3}$."
+        ],
+        "common_pitfalls": "Confusing intersection with conditional probability."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find $P(T' \\cup E')$",
+      "final_answer": "$\\frac{5}{6}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using addition rule $\\text{P}(T \\cup E') = \\text{P}(T) + \\text{P}(E') - \\text{P}(T \\cap E')$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $\\frac{5}{6}$"
+        }
+      ],
+      "solution": "$$\\text{P}(T \\cup E') = \\text{P}(T) + \\text{P}(E') - \\text{P}(T \\cap E')$$\n$$= \\frac{1}{2} + \\frac{2}{3} - \\frac{1}{3} \\quad \\{\\text{from a}\\}$$\n$$= \\frac{5}{6}$$",
+      "ai_explanation": {
+        "concept_rule": "The addition rule: $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$.",
+        "step_by_step": [
+          "From the diagram, $\\text{P}(T) = \\frac{1}{2}$.",
+          "$\\text{P}(E') = \\frac{2}{3}$.",
+          "$\\text{P}(T \\cap E') = \\frac{1}{3}$.",
+          "Evaluate: $\\frac{1}{2} + \\frac{2}{3} - \\frac{1}{3} = \\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}$."
+        ],
+        "common_pitfalls": "Forgetting to subtract the intersection $\\text{P}(T \\cap E')$."
+      }
+    }
+  ]
+}

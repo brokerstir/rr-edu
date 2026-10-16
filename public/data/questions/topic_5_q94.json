@@ -1,0 +1,126 @@
+{
+  "id": "topic_5_q94",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 94,
+  "question_text": "A particle moves from rest along a straight line. Its velocity is given by $v = 2\\sqrt{t} - t\\text{ ms}^{-1}$, where $t \\geqslant 0$ is the time in seconds.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the speed of the particle after 5 seconds.",
+      "final_answer": "$\\text{speed} \\approx 0.528\\text{ ms}^{-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 5$ into the velocity function to find velocity."
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate speed as the absolute value of velocity."
+        }
+      ],
+      "solution": "When $t = 5$,\n$$v = 2\\sqrt{5} - 5 \\approx -0.528\\text{ ms}^{-1}$$\n$$\\therefore \\text{speed} = |v| \\approx 0.528\\text{ ms}^{-1}$$",
+      "ai_explanation": {
+        "concept_rule": "Speed is defined as the magnitude (absolute value) of velocity: $\\text{speed} = |v(t)|$.",
+        "step_by_step": [
+          "Substitute $t = 5$ into the given velocity equation $v(t) = 2\\sqrt{t} - t$.",
+          "Calculate $v(5) = 2\\sqrt{5} - 5 \\approx -0.528\\text{ ms}^{-1}$.",
+          "Take the absolute value of the velocity to find the speed: $|-0.528| \\approx 0.528\\text{ ms}^{-1}$."
+        ],
+        "common_pitfalls": "Forgetting that speed cannot be negative and leaving the final answer as $-0.528\\text{ ms}^{-1}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the acceleration function of the particle.",
+      "final_answer": "$a = \\left(\\frac{1}{\\sqrt{t}} - 1\\right)\\text{ ms}^{-2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate velocity $v(t)$ with respect to time $t$ to obtain acceleration."
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expression for acceleration."
+        }
+      ],
+      "solution": "$$a = \\frac{dv}{dt} = \\frac{2}{2\\sqrt{t}} - 1 = \\frac{1}{\\sqrt{t}} - 1\\text{ ms}^{-2}$$",
+      "ai_explanation": {
+        "concept_rule": "Acceleration is the derivative of velocity with respect to time: $a(t) = \\frac{dv}{dt}$.",
+        "step_by_step": [
+          "Express $v(t)$ in power form: $v(t) = 2t^{1/2} - t$.",
+          "Differentiate with respect to $t$: $\\frac{dv}{dt} = 2 \\left(\\frac{1}{2}t^{-1/2}\\right) - 1$.",
+          "Simplify to get $a = \\frac{1}{\\sqrt{t}} - 1\\text{ ms}^{-2}$."
+        ],
+        "common_pitfalls": "Incorrectly differentiating the square root term or forgetting to differentiate the $-t$ term."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Show that the particle changes direction after 4 seconds.",
+      "final_answer": "$t = 4\\text{ s}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set velocity $v(t) = 0$ and solve for $t$."
+        },
+        {
+          "code": "R1",
+          "desc": "Reason why $t = 0$ is rejected as a point where the direction of motion changes."
+        },
+        {
+          "code": "A1",
+          "desc": "State that direction of motion changes at $t = 4\\text{ seconds}$."
+        }
+      ],
+      "solution": "The direction of motion changes when $v = 0$.\n$$\\therefore 2\\sqrt{t} - t = 0$$\n$$2\\sqrt{t} = t$$\n$$4t = t^2$$\n$$t^2 - 4t = 0$$\n$$t(t - 4) = 0$$\n$$\\therefore t = 0 \\text{ or } 4$$\nNow $v = 0$ when $t = 0$ means that the particle was initially stationary. So, it does not make sense to talk about the direction of motion changing when there is nothing to compare its current direction to.\n$$\\therefore \\text{the direction of motion changes at } t = 4\\text{ seconds.}$$",
+      "ai_explanation": {
+        "concept_rule": "A particle changes its direction of motion when velocity changes sign (passing through $v = 0$).",
+        "step_by_step": [
+          "Set $v(t) = 0$: $2\\sqrt{t} - t = 0$.",
+          "Rearrange and square both sides: $4t = t^2 \\implies t(t - 4) = 0$.",
+          "Obtain solutions $t = 0$ and $t = 4$.",
+          "Disregard $t = 0$ because it is the initial time where motion begins from rest rather than an actual reversal of direction.",
+          "Conclude that direction changes at $t = 4\\text{ s}$."
+        ],
+        "common_pitfalls": "Including $t = 0$ as a change of direction, without considering that it is the starting point of motion."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the total distance travelled in the first 9 seconds.",
+      "final_answer": "$9\\frac{5}{6}\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up the integral of absolute velocity for total distance from $t=0$ to $t=9$."
+        },
+        {
+          "code": "M1",
+          "desc": "Split the integral at $t = 4$ into $\\int_0^4 v\\,dt - \\int_4^9 v\\,dt$."
+        },
+        {
+          "code": "A1",
+          "desc": "Find the correct antiderivative $\\left[\\frac{4}{3}t^{3/2} - \\frac{1}{2}t^2\\right]$."
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain the exact final distance $\\frac{59}{6}\\text{ m}$ (or $9\\frac{5}{6}\\text{ m}$)."
+        }
+      ],
+      "solution": "$$\\text{Total distance} = \\int_0^9 |v|\\,dt$$\n$$= \\int_0^4 v\\,dt + \\int_4^9 -v\\,dt$$\n$$= \\int_0^4 v\\,dt - \\int_4^9 v\\,dt$$\n$$= \\int_0^4 (2\\sqrt{t} - t)\\,dt - \\int_4^9 (2\\sqrt{t} - t)\\,dt$$\n$$= \\left[ \\frac{4}{3}t^{\\frac{3}{2}} - \\frac{1}{2}t^2 \\right]_0^4 - \\left[ \\frac{4}{3}t^{\\frac{3}{2}} - \\frac{1}{2}t^2 \\right]_4^9$$\n$$= \\left( \\frac{4}{3}(4)^{\\frac{3}{2}} - \\frac{1}{2}(4)^2 \\right) - 0 - \\left( \\frac{4}{3}(9)^{\\frac{3}{2}} - \\frac{1}{2}(9)^2 \\right) + \\left( \\frac{4}{3}(4)^{\\frac{3}{2}} - \\frac{1}{2}(4)^2 \\right)$$\n$$= \\frac{32}{3} - 8 - 36 + \\frac{81}{2} + \\frac{32}{3} - 8$$\n$$= \\frac{64}{3} + \\frac{81}{2} - 52$$\n$$= \\frac{59}{6} = 9\\frac{5}{6}\\text{ m}$$\n\nAlternatively, using technology:\n$$\\int_0^9 |v|\\,dt \\approx 9.833 \\approx 9\\frac{5}{6}\\text{ m}$$",
+      "ai_explanation": {
+        "concept_rule": "Total distance traveled is the integral of speed: $\\int_{t_1}^{t_2} |v(t)|\\,dt$. When $v(t)$ changes sign, the integral must be split at the roots.",
+        "step_by_step": [
+          "Identify the intervals where $v(t) \\ge 0$ and $v(t) \\le 0$. Here, $v(t) \\ge 0$ on $[0, 4]$ and $v(t) \\le 0$ on $[4, 9]$.",
+          "Split the integral into $\\int_0^4 (2\\sqrt{t}-t)\\,dt - \\int_4^9 (2\\sqrt{t}-t)\\,dt$.",
+          "Integrate $2t^{1/2} - t$ to obtain $\\frac{4}{3}t^{3/2} - \\frac{1}{2}t^2$.",
+          "Substitute the boundary limits: evaluate at $4$, $0$, and $9$.",
+          "Combine the terms to arrive at $\\frac{59}{6} = 9\\frac{5}{6}\\text{ m}$."
+        ],
+        "common_pitfalls": "Calculating displacement $\\int_0^9 v(t)\\,dt$ instead of total distance $\\int_0^9 |v(t)|\\,dt$, failing to split the integral where velocity changes sign."
+      }
+    }
+  ]
+}

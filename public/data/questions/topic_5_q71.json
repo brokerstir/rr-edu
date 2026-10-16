@@ -1,0 +1,70 @@
+{
+  "id": "topic_5_q71",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 71,
+  "question_text": "Find $\\int (2x+3)(x^2+3x+4)^3\\,dx$ using an appropriate substitution. Hence find $\\int_0^1 (2x+3)(x^2+3x+4)^3\\,dx$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $\\int (2x+3)(x^2+3x+4)^3\\,dx$ using an appropriate substitution.",
+      "final_answer": "$\\frac{1}{4}(x^2+3x+4)^4 + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $u = x^2+3x+4$ and finding $\\frac{du}{dx} = 2x+3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrating $u^3\\,du$ to $\\frac{1}{4}u^4 + c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substituting back in terms of $x$"
+        }
+      ],
+      "solution": "$\\int (2x+3)(x^2+3x+4)^3\\,dx = \\int u^3 \\frac{du}{dx}\\,dx \\quad \\{u = x^2+3x+4 \\implies \\frac{du}{dx} = 2x+3\\} = \\int u^3\\,du = \\frac{1}{4}u^4 + c = \\frac{1}{4}(x^2+3x+4)^4 + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution of the form $\\int f'(x)[f(x)]^n\\,dx = \\frac{[f(x)]^{n+1}}{n+1} + c$.",
+        "step_by_step": [
+          "Let $u = x^2+3x+4$, then $du = (2x+3)\\,dx$.",
+          "Substitute to rewrite the integral as $\\int u^3\\,du$.",
+          "Integrate using the power rule to get $\\frac{1}{4}u^4 + c$.",
+          "Substitute back $u = x^2+3x+4$."
+        ],
+        "common_pitfalls": "Omitting the constant of integration $+c$ in an indefinite integral."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $\\int_0^1 (2x+3)(x^2+3x+4)^3\\,dx$.",
+      "final_answer": "$960$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the antiderivative found in part a with limits 0 and 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $(8)^4$ and $(4)^4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining final answer $960$"
+        }
+      ],
+      "solution": "$\\int_0^1 (2x+3)(x^2+3x+4)^3\\,dx = \\left[\\frac{1}{4}(x^2+3x+4)^4\\right]_0^1 = \\frac{1}{4}(1^2+3(1)+4)^4 - \\frac{1}{4}(0^2+3(0)+4)^4 = \\frac{1}{4}(8)^4 - \\frac{1}{4}(4)^4 = 1024 - 64 = 960$",
+      "ai_explanation": {
+        "concept_rule": "Fundamental Theorem of Calculus applied to the result of an indefinite integral.",
+        "step_by_step": [
+          "Use the antiderivative from part a: $\\frac{1}{4}(x^2+3x+4)^4$.",
+          "Evaluate at $x = 1$: $\\frac{1}{4}(8^4) = \\frac{4096}{4} = 1024$.",
+          "Evaluate at $x = 0$: $\\frac{1}{4}(4^4) = \\frac{256}{4} = 64$.",
+          "Subtract the lower limit value: $1024 - 64 = 960$."
+        ],
+        "common_pitfalls": "Arithmetic errors when raising numbers to the 4th power."
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q25",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 25,
+  "question_text": "Find $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$3.23$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply cosine rule with side lengths 4, 6 and angle pi/6"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute cos(pi/6) = sqrt(3)/2 to get exact expression for x^2"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate positive root to find x approximately 3.23"
+        }
+      ],
+      "solution": "By the cosine rule:\n$$x^2 = 4^2 + 6^2 - 2(4)(6)\\cos\\frac{\\pi}{6}$$\n$$\\therefore x^2 = 16 + 36 - 48\\left(\\frac{\\sqrt{3}}{2}\\right)$$\n$$\\therefore x^2 = 52 - 24\\sqrt{3}$$\n$$\\therefore x = \\sqrt{52 - 24\\sqrt{3}} \\quad \\{x > 0\\}$$\n$$\\therefore x \\approx 3.23$$",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule in radians is applied identically: $c^2 = a^2 + b^2 - 2ab\\cos C$, with $\\cos\\left(\\frac{\\pi}{6}\\right) = \\frac{\\sqrt{3}}{2}$.",
+        "step_by_step": [
+          "Set up the cosine rule for the unknown side $x$: $x^2 = 4^2 + 6^2 - 2(4)(6)\\cos\\left(\\frac{\\pi}{6}\\right)$.",
+          "Use the exact trigonometric value $\\cos\\left(\\frac{\\pi}{6}\\right) = \\frac{\\sqrt{3}}{2}$.",
+          "Simplify: $x^2 = 52 - 24\\sqrt{3}$.",
+          "Take the principal square root: $x = \\sqrt{52 - 24\\sqrt{3}} \\approx 3.23$."
+        ],
+        "common_pitfalls": "Evaluating $\\cos\\left(\\frac{\\pi}{6}\\right)$ with calculator in degree mode instead of radian mode."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$x \\approx 3.15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Application of the cosine rule with angle $2\\pi/3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Forming the quadratic equation $x^2 + 7x - 32 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for positive $x$ to obtain $x \\approx 3.15$"
+        }
+      ],
+      "solution": "By the cosine rule: $9^2 = x^2 + 7^2 - 2(x)(7)\\cos\\frac{2\\pi}{3} \\implies 81 = x^2 + 49 - 14\\left(-\\frac{1}{2}\\right)x \\implies 81 = x^2 + 49 + 7x \\implies x^2 + 7x - 32 = 0$. Using the quadratic formula: $x = \\frac{-7 \\pm \\sqrt{49 - 4(1)(-32)}}{2(1)} = \\frac{-7 \\pm \\sqrt{177}}{2}$. Since $x > 0$, $x = \\frac{-7 + \\sqrt{177}}{2} \\approx 3.15$.",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule relates the lengths of the sides of a triangle to the cosine of one of its angles: $c^2 = a^2 + b^2 - 2ab\\cos C$.",
+        "step_by_step": [
+          "Substitute the given side lengths and angle into the cosine rule formula.",
+          "Evaluate $\\cos(2\\pi/3) = -1/2$ and simplify the algebraic terms.",
+          "Rearrange into a standard quadratic equation $ax^2 + bx + c = 0$.",
+          "Solve using the quadratic formula and discard the negative length."
+        ],
+        "common_pitfalls": "Forgetting that $\\cos(2\\pi/3) = -1/2$ is negative, which turns the subtracted term into addition."
+      }
+    }
+  ]
+}

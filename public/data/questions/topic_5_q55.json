@@ -1,0 +1,66 @@
+{
+  "id": "topic_5_q55",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 55,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int (x-3)^2\\,dx$",
+      "final_answer": "$\\frac{1}{3}(x - 3)^3 + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply linear substitution or reverse chain rule to $(x-3)^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the anti-derivative with $+ c$"
+        }
+      ],
+      "solution": "$\\int (x - 3)^2\\,dx = \\frac{1}{3}(x - 3)^3 + c$",
+      "ai_explanation": {
+        "concept_rule": "For a linear function inside a power, $\\int (ax + b)^n\\,dx = \\frac{(ax + b)^{n+1}}{a(n+1)} + c$. Here $a = 1$.",
+        "step_by_step": [
+          "Notice the inner expression has a derivative of $1$.",
+          "Increase the power by 1: from 2 to 3.",
+          "Divide by the new power: $\\frac{1}{3}(x-3)^3$.",
+          "Add $+ c$."
+        ],
+        "common_pitfalls": "Expanding unnecessarily, which while valid, increases the risk of arithmetic error."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int \\frac{x^2+3x+5}{\\sqrt[3]{x}}\\,dx$",
+      "final_answer": "$\\frac{3}{8}x^{\\frac{8}{3}} + \\frac{9}{5}x^{\\frac{5}{3}} + \\frac{15}{2}x^{\\frac{2}{3}} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Divide each term in the numerator by $x^{1/3}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Integrate each power term using the power rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify fractional coefficients and add $+ c$"
+        }
+      ],
+      "solution": "$\\int \\frac{x^2 + 3x + 5}{\\sqrt[3]{x}}\\,dx = \\int \\frac{x^2 + 3x + 5}{x^{\\frac{1}{3}}}\\,dx$\n$= \\int \\left(x^{\\frac{5}{3}} + 3x^{\\frac{2}{3}} + 5x^{-\\frac{1}{3}}\\right)dx$\n$= \\frac{3}{8}x^{\\frac{8}{3}} + \\frac{9}{5}x^{\\frac{5}{3}} + \\frac{15}{2}x^{\\frac{2}{3}} + c$",
+      "ai_explanation": {
+        "concept_rule": "Separate the rational function term by term before integrating: $\\frac{a + b + c}{d} = \\frac{a}{d} + \\frac{b}{d} + \\frac{c}{d}$.",
+        "step_by_step": [
+          "Convert $\\sqrt[3]{x}$ to $x^{1/3}$.",
+          "Divide each term: $x^{2 - 1/3} = x^{5/3}$, $3x^{1 - 1/3} = 3x^{2/3}$, $5x^{-1/3}$.",
+          "Integrate term-by-term using the power rule.",
+          "Simplify each coefficient: $\\frac{1}{8/3} = \\frac{3}{8}$, $\\frac{3}{5/3} = \\frac{9}{5}$, $\\frac{5}{2/3} = \\frac{15}{2}$."
+        ],
+        "common_pitfalls": "Trying to integrate numerator and denominator separately (quotient rule does not exist for integrals)."
+      }
+    }
+  ]
+}

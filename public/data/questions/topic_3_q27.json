@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q27",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 27,
+  "question_text": "Find the value of $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$x \\approx 46.5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule for angle $x^\\circ$"
+        },
+        {
+          "code": "A1",
+          "desc": "Applying inverse sine and solving for $x$"
+        }
+      ],
+      "solution": "By the sine rule: $\\frac{\\sin x^\\circ}{8} = \\frac{\\sin 65^\\circ}{10} \\implies \\sin x^\\circ = \\frac{8\\sin 65^\\circ}{10} \\implies x = \\sin^{-1}\\left(\\frac{8\\sin 65^\\circ}{10}\\right) \\approx 46.5$.",
+      "ai_explanation": {
+        "concept_rule": "The sine rule in angle form is $\\frac{\\sin A}{a} = \\frac{\\sin B}{b}$.",
+        "step_by_step": [
+          "Identify opposite pairs: $x^\\circ$ opposite $8$, and $65^\\circ$ opposite $10$.",
+          "Rearrange to isolate $\\sin x^\\circ$.",
+          "Calculate using the inverse sine function."
+        ],
+        "common_pitfalls": "Inverting the ratio by dividing angle by side instead of sine of angle by side."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$x \\approx 27.3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule for angle $x^\\circ$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x$"
+        }
+      ],
+      "solution": "By the sine rule: $\\frac{\\sin x^\\circ}{20} = \\frac{\\sin 35^\\circ}{25} \\implies \\sin x^\\circ = \\frac{20\\sin 35^\\circ}{25} \\implies x = \\sin^{-1}\\left(\\frac{20\\sin 35^\\circ}{25}\\right) \\approx 27.3$.",
+      "ai_explanation": {
+        "concept_rule": "Use $\\frac{\\sin A}{a} = \\frac{\\sin B}{b}$ to solve for an unknown angle.",
+        "step_by_step": [
+          "Match side $20$ with angle $x^\\circ$ and side $25$ with angle $35^\\circ$.",
+          "Compute $\\sin x^\\circ = \\frac{20\\sin 35^\\circ}{25}$.",
+          "Take $\\arcsin$ to find $x$."
+        ],
+        "common_pitfalls": "Calculator in radian mode instead of degree mode."
+      }
+    }
+  ]
+}

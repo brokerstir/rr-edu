@@ -1,0 +1,91 @@
+{
+  "id": "topic_3_q14",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 14,
+  "question_text": "Find the value of the unknown:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$45.6^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify diameter as hypotenuse $AB = 10\\text{ cm}$ and angle in semi-circle as $90^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up cosine ratio $\\cos\\theta = \\frac{7}{10}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\theta \\approx 45.6^\\circ$"
+        }
+      ],
+      "solution": "$A\\hat{C}B = 90^\\circ$ {angle in a semi-circle}\n$\\therefore \\triangle ABC$ is right angled at C.\n$\\cos\\theta = \\frac{7}{AB}$\n$\\cos\\theta = \\frac{7}{10}$\n$\\theta = \\cos^{-1}\\left(\\frac{7}{10}\\right) \\approx 45.6^\\circ$",
+      "ai_explanation": {
+        "concept_rule": "The angle subtended by a diameter at any point on the circumference of a circle is a right angle ($90^\\circ$). Therefore, the inscribed triangle is a right triangle with diameter as the hypotenuse.",
+        "step_by_step": [
+          "State that $\\angle ACB = 90^\\circ$ because it is inscribed in a semi-circle.",
+          "Find the hypotenuse $AB = 2 \\times 5 = 10\\text{ cm}$.",
+          "Use $\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{7}{10}$.",
+          "Compute $\\theta = \\cos^{-1}(0.7) \\approx 45.6^\\circ$."
+        ],
+        "common_pitfalls": "Using the radius $5\\text{ cm}$ instead of diameter $10\\text{ cm}$ as the hypotenuse."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$61.6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Construct right-angled triangle and write $\\tan 18^\\circ = \\frac{20}{x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $x \\approx 61.6$"
+        }
+      ],
+      "solution": "We construct the right angled triangle as shown.\nFor the shaded triangle, $\\tan 18^\\circ = \\frac{20}{x}$\n$x = \\frac{20}{\\tan 18^\\circ}$\n$x \\approx 61.6$",
+      "ai_explanation": {
+        "concept_rule": "In an isosceles triangle formed by chords or radii, the altitude bisects the vertex angle, yielding a right-angled triangle.",
+        "step_by_step": [
+          "Construct the altitude to create a right-angled triangle with angle $18^\\circ$, opposite side $20\\text{ m}$, and adjacent side $x\\text{ m}$.",
+          "Write $\\tan 18^\\circ = \\frac{20}{x}$.",
+          "Rearrange to solve for $x$: $x = \\frac{20}{\\tan 18^\\circ} \\approx 61.6$."
+        ],
+        "common_pitfalls": "Multiplying by $\\tan 18^\\circ$ instead of dividing: $x \\neq 20\\tan 18^\\circ$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$97.2^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Construct altitude to bisect the angle into $\\frac{\\theta}{2}$ and apply $\\sin$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate full angle $\\theta = 2\\sin^{-1}\\left(\\frac{3}{4}\\right) \\approx 97.2^\\circ$"
+        }
+      ],
+      "solution": "We construct the altitude as shown.\nFor the shaded triangle, $\\sin\\frac{\\theta}{2} = \\frac{3}{4}$\n$\\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{3}{4}\\right)$\n$\\theta = 2\\sin^{-1}\\left(\\frac{3}{4}\\right)$\n$\\theta \\approx 97.2^\\circ$",
+      "ai_explanation": {
+        "concept_rule": "Dropping a perpendicular from the center to a chord bisects both the chord and the central angle, forming two congruent right-angled triangles.",
+        "step_by_step": [
+          "The altitude bisects angle $\\theta$ into $\\frac{\\theta}{2}$ and the chord into halves of length $3\\text{ m}$.",
+          "In the right triangle, the hypotenuse is the radius $4\\text{ m}$ and the opposite side is $3\\text{ m}$.",
+          "Use $\\sin\\left(\\frac{\\theta}{2}\\right) = \\frac{3}{4}$.",
+          "Find $\\theta = 2\\sin^{-1}(0.75) \\approx 97.2^\\circ$."
+        ],
+        "common_pitfalls": "Forgetting to double $\\sin^{-1}\\left(\\frac{3}{4}\\right)$ to obtain the full angle $\\theta$."
+      }
+    }
+  ]
+}

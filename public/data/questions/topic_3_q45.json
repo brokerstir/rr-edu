@@ -1,0 +1,214 @@
+{
+  "id": "topic_3_q45",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 45,
+  "question_text": "For each of the following functions:\ni State the amplitude.\nii State the principal axis.\niii State the period.\niv Sketch the function.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = 2\\sin(x - \\frac{\\pi}{3})$ for $0 \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{amplitude} = 2, \\text{principal axis: } y = 0, \\text{period} = 2\\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $2\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of the sine function shifted horizontally"
+        }
+      ],
+      "solution": "For $y = 2\\sin\\left(x - \\frac{\\pi}{3}\\right)$:\ni The amplitude is $|a| = 2$.\nii The principal axis is $y = 0$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{1} = 2\\pi$.\niv A sine curve translated $\\frac{\\pi}{3}$ units to the right, oscillating between $-2$ and $2$ with period $2\\pi$.",
+      "ai_explanation": {
+        "concept_rule": "In $y = a\\sin(b(x - c)) + d$, amplitude is $|a|$, principal axis is $y = d$, period is $\\frac{2\\pi}{b}$, and $c$ is the horizontal shift.",
+        "step_by_step": [
+          "Amplitude: $|a| = |2| = 2$.",
+          "Principal axis: $y = 0$.",
+          "Period: $\\frac{2\\pi}{1} = 2\\pi$.",
+          "Sketch: Start the cycle at $x = \\frac{\\pi}{3}$, peaking at $\\left(\\frac{5\\pi}{6}, 2\\right)$, crossing axis at $\\frac{4\\pi}{3}$, trough at $\\left(\\frac{11\\pi}{6}, -2\\right)$."
+        ],
+        "common_pitfalls": "Shifting to the left instead of to the right for $(x - \\frac{\\pi}{3})$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\sin x + 2$ for $-\\pi \\leqslant x \\leqslant \\pi$",
+      "final_answer": "$\\text{amplitude} = 1, \\text{principal axis: } y = 2, \\text{period} = 2\\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $2\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = \\sin x + 2$"
+        }
+      ],
+      "solution": "For $y = \\sin x + 2$:\ni The amplitude is $|a| = 1$.\nii The principal axis is $y = 2$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{1} = 2\\pi$.\niv A standard sine curve shifted vertically upwards by $2$ units, oscillating between $y = 1$ and $y = 3$.",
+      "ai_explanation": {
+        "concept_rule": "The constant term $d = 2$ translates the graph vertically upwards by $2$ units.",
+        "step_by_step": [
+          "Amplitude: $|a| = 1$.",
+          "Principal axis: $y = 2$.",
+          "Period: $\\frac{2\\pi}{1} = 2\\pi$.",
+          "Sketch: Oscillates around $y = 2$ with maximum $y = 3$ and minimum $y = 1$."
+        ],
+        "common_pitfalls": "Forgetting that the curve now oscillates between $1$ and $3$ rather than $-1$ and $1$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = 3\\cos 2x$ for $0 \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{amplitude} = 3, \\text{principal axis: } y = 0, \\text{period} = \\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = 3\\cos 2x$"
+        }
+      ],
+      "solution": "For $y = 3\\cos 2x$:\ni The amplitude is $|a| = 3$.\nii The principal axis is $y = 0$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{2} = \\pi$.\niv A cosine curve starting at $(0, 3)$, completing one cycle every $\\pi$ units, oscillating between $-3$ and $3$.",
+      "ai_explanation": {
+        "concept_rule": "For $y = a\\cos(bx)$, the amplitude is $|a|$ and the period is compressed by a factor of $b$: $\\text{Period} = \\frac{2\\pi}{b}$.",
+        "step_by_step": [
+          "Amplitude: $|3| = 3$.",
+          "Principal axis: $y = 0$.",
+          "Period: $\\frac{2\\pi}{2} = \\pi$.",
+          "Sketch: Has peaks at $(0, 3), (\\pi, 3), (2\\pi, 3)$ and troughs at $\\left(\\frac{\\pi}{2}, -3\\right), \\left(\\frac{3\\pi}{2}, -3\\right)$."
+        ],
+        "common_pitfalls": "Plotting a period of $2\\pi$ instead of $\\pi$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$y = \\cos\\frac{x}{2} - 1$ for $0 \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{amplitude} = 1, \\text{principal axis: } y = -1, \\text{period} = 4\\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = -1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $4\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = \\cos\\frac{x}{2} - 1$"
+        }
+      ],
+      "solution": "For $y = \\cos\\frac{x}{2} - 1$:\ni The amplitude is $|a| = 1$.\nii The principal axis is $y = -1$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{\\frac{1}{2}} = 4\\pi$.\niv A cosine curve translated downwards by $1$ unit and horizontally stretched by a factor of $2$, oscillating between $y = 0$ and $y = -2$.",
+      "ai_explanation": {
+        "concept_rule": "A coefficient $b = \\frac{1}{2}$ doubles the period of the cosine function to $4\\pi$.",
+        "step_by_step": [
+          "Amplitude: $|1| = 1$.",
+          "Principal axis: $y = -1$.",
+          "Period: $\\frac{2\\pi}{1/2} = 4\\pi$.",
+          "Sketch: At $x = 0$, $y = \\cos(0) - 1 = 0$. Reaches a trough at $x = 2\\pi$ where $y = -2$."
+        ],
+        "common_pitfalls": "Taking the period as $\\pi$ instead of dividing $2\\pi$ by $\\frac{1}{2}$ to get $4\\pi$."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "$y = \\sin(2(x + \\frac{\\pi}{4}))$ for $0 \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{amplitude} = 1, \\text{principal axis: } y = 0, \\text{period} = \\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $\\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = \\sin\\left(2\\left(x + \\frac{\\pi}{4}\\right)\\right)$"
+        }
+      ],
+      "solution": "For $y = \\sin\\left(2\\left(x + \\frac{\\pi}{4}\\right)\\right)$:\ni The amplitude is $|a| = 1$.\nii The principal axis is $y = 0$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{2} = \\pi$.\niv A sine curve shifted left by $\\frac{\\pi}{4}$ with period $\\pi$. Note that $\\sin\\left(2x + \\frac{\\pi}{2}\\right) = \\cos 2x$.",
+      "ai_explanation": {
+        "concept_rule": "The horizontal shift is given by $c = -\\frac{\\pi}{4}$ (shift left), and the period is $\\frac{2\\pi}{b}$.",
+        "step_by_step": [
+          "Amplitude: $|1| = 1$.",
+          "Principal axis: $y = 0$.",
+          "Period: $\\frac{2\\pi}{2} = \\pi$.",
+          "Sketch: At $x = 0$, $y = \\sin\\left(\\frac{\\pi}{2}\\right) = 1$, which is equivalent to $y = \\cos 2x$."
+        ],
+        "common_pitfalls": "Misinterpreting the horizontal shift by not factoring out $b$ (here it is already factored)."
+      }
+    },
+    {
+      "subpart": "f",
+      "stem": "$y = 10 - 6\\sin 3x$ for $0 \\leqslant x \\leqslant 2\\pi$",
+      "final_answer": "$\\text{amplitude} = 6, \\text{principal axis: } y = 10, \\text{period} = \\frac{2\\pi}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 10$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $\\frac{2\\pi}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of $y = 10 - 6\\sin 3x$"
+        }
+      ],
+      "solution": "For $y = 10 - 6\\sin 3x$:\ni The amplitude is $|a| = |-6| = 6$.\nii The principal axis is $y = 10$.\niii The period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{3}$.\niv An inverted sine curve oscillating between $y = 4$ and $y = 16$ around the line $y = 10$.",
+      "ai_explanation": {
+        "concept_rule": "In $y = d - a\\sin(bx)$, the negative sign reflects the wave across the principal axis $y = d$.",
+        "step_by_step": [
+          "Amplitude: $|-6| = 6$.",
+          "Principal axis: $y = 10$.",
+          "Period: $\\frac{2\\pi}{3}$.",
+          "Sketch: At $x = 0$, $y = 10$. As $x$ increases, $y$ decreases first due to the negative sign, reaching a minimum of $4$ before rising to $16$."
+        ],
+        "common_pitfalls": "Giving a negative value for the amplitude, or drawing the wave starting with an upward crest instead of downward trough."
+      }
+    }
+  ]
+}

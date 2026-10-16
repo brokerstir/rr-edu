@@ -1,0 +1,87 @@
+{
+  "id": "topic_5_q51",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 51,
+  "question_text": "Integrate with respect to $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$3x^2 + 2x + 1$",
+      "final_answer": "$x^3 + x^2 + x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the power rule of integration term by term"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify coefficients and include the constant of integration $+ c$"
+        }
+      ],
+      "solution": "$\\int (3x^2 + 2x + 1)\\,dx$\n$= \\frac{3x^3}{3} + \\frac{2x^2}{2} + x + c$\n$= x^3 + x^2 + x + c$",
+      "ai_explanation": {
+        "concept_rule": "The power rule for integration states $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + c$ for $n \\neq -1$.",
+        "step_by_step": [
+          "Integrate $3x^2$ to get $3\\cdot\\frac{x^3}{3} = x^3$.",
+          "Integrate $2x$ to get $2\\cdot\\frac{x^2}{2} = x^2$.",
+          "Integrate $1$ to get $x$.",
+          "Add the constant of integration $c$."
+        ],
+        "common_pitfalls": "Forgetting to add the arbitrary constant of integration $c$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$e^{4x}$",
+      "final_answer": "$\\frac{1}{4}e^{4x} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use exponential integration rule $\\int e^{kx}\\,dx = \\frac{1}{k}e^{kx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the final expression including $+ c$"
+        }
+      ],
+      "solution": "$\\int e^{4x}\\,dx = \\frac{1}{4}e^{4x} + c$",
+      "ai_explanation": {
+        "concept_rule": "For an exponential function with a linear exponent, $\\int e^{ax + b}\\,dx = \\frac{1}{a}e^{ax + b} + c$.",
+        "step_by_step": [
+          "Identify the coefficient of $x$ inside the exponential, which is $4$.",
+          "Apply the standard integral rule: divide by $4$.",
+          "Add the constant of integration $c$."
+        ],
+        "common_pitfalls": "Multiplying by 4 instead of dividing by 4."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\cos(2x + 1)$",
+      "final_answer": "$\\frac{1}{2}\\sin(2x + 1) + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use trigonometric integration rule $\\int \\cos(ax + b)\\,dx = \\frac{1}{a}\\sin(ax + b)$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the final expression with $+ c$"
+        }
+      ],
+      "solution": "$\\int \\cos(2x + 1)\\,dx = \\frac{1}{2}\\sin(2x + 1) + c$",
+      "ai_explanation": {
+        "concept_rule": "The integral of $\\cos(ax + b)$ with respect to $x$ is $\\frac{1}{a}\\sin(ax + b) + c$.",
+        "step_by_step": [
+          "Identify the linear argument $u = 2x + 1$ with $a = 2$.",
+          "Integrate $\\cos$ to get $\\sin$.",
+          "Divide by the coefficient of $x$, which is $2$.",
+          "Add the integration constant $c$."
+        ],
+        "common_pitfalls": "Confusing the sign with derivative of cosine, mistakenly writing $-\\frac{1}{2}\\sin(2x+1)$."
+      }
+    }
+  ]
+}

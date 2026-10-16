@@ -1,0 +1,88 @@
+{
+  "id": "topic_5_q64",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 64,
+  "question_text": "Integrate with respect to $x$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sqrt{x^2+3x-1}(2x+3)$",
+      "final_answer": "$\\frac{2}{3}(x^2+3x-1)^{\\frac{3}{2}} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $u = x^2+3x-1$ so $\\frac{du}{dx} = 2x+3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate $u^{\\frac{1}{2}}$ and back-substitute"
+        }
+      ],
+      "solution": "$\\int \\sqrt{x^2+3x-1}(2x+3)\\,dx = \\int \\sqrt{u}\\frac{du}{dx}\\,dx\\quad \\left\\{u = x^2+3x-1 \\implies \\frac{du}{dx} = 2x+3\\right\\} = \\int u^{\\frac{1}{2}}\\,du = \\frac{2}{3}u^{\\frac{3}{2}} + c = \\frac{2}{3}(x^2+3x-1)^{\\frac{3}{2}} + c$",
+      "ai_explanation": {
+        "concept_rule": "Recognise the form $\\int [f(x)]^n f'(x)\\,dx = \\frac{[f(x)]^{n+1}}{n+1} + c$.",
+        "step_by_step": [
+          "Set $u = x^2 + 3x - 1$, noting that $\\frac{du}{dx} = 2x + 3$.",
+          "Rewrite the integral as $\\int u^{1/2}\\,du$.",
+          "Integrate using the power rule to obtain $\\frac{2}{3}u^{3/2} + c$.",
+          "Substitute $u = x^2 + 3x - 1$ back into the expression."
+        ],
+        "common_pitfalls": "Dividing by $\\frac{3}{2}$ incorrectly, or forgetting to rewrite the radical as a fractional index."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{e^x+2}{e^x+2x}$",
+      "final_answer": "$\\ln|e^x+2x| + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognise $\\frac{f'(x)}{f(x)}$ form or substitute $u = e^x+2x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate to natural log expression"
+        }
+      ],
+      "solution": "$\\int \\frac{e^x+2}{e^x+2x}\\,dx = \\int \\frac{1}{u}\\frac{du}{dx}\\,dx\\quad \\left\\{u = e^x+2x \\implies \\frac{du}{dx} = e^x+2\\right\\} = \\int \\frac{1}{u}\\,du = \\ln|u| + c = \\ln|e^x+2x| + c$",
+      "ai_explanation": {
+        "concept_rule": "Standard logarithmic form: $\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)| + c$.",
+        "step_by_step": [
+          "Observe that the derivative of the denominator $e^x + 2x$ is $e^x + 2$, which is the numerator.",
+          "Let $u = e^x + 2x$, giving $du = (e^x + 2)dx$.",
+          "The integral becomes $\\int \\frac{1}{u}\\,du = \\ln|u| + c$.",
+          "Substitute back $u = e^x + 2x$."
+        ],
+        "common_pitfalls": "Not recognising that the numerator is the exact derivative of the denominator."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{6-8x}{2x^2-3x+2}$",
+      "final_answer": "$-2\\ln|2x^2-3x+2| + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognise derivative relation $6-8x = -2(4x-3)$ and substitute $u = 2x^2-3x+2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate and back-substitute"
+        }
+      ],
+      "solution": "$\\int \\frac{6-8x}{2x^2-3x+2}\\,dx = \\int \\frac{1}{u}\\left(-2\\frac{du}{dx}\\right)dx\\quad \\left\\{u = 2x^2-3x+2 \\implies \\frac{du}{dx} = 4x-3\\right\\} = \\int -\\frac{2}{u}\\,du = -2\\ln|u| + c = -2\\ln|2x^2-3x+2| + c$",
+      "ai_explanation": {
+        "concept_rule": "Recognise $\\int \\frac{k f'(x)}{f(x)}\\,dx = k\\ln|f(x)| + c$.",
+        "step_by_step": [
+          "Find the derivative of the denominator: $\\frac{d}{dx}(2x^2 - 3x + 2) = 4x - 3$.",
+          "Notice that $6 - 8x = -2(4x - 3)$.",
+          "Rewrite integral as $-2\\int \\frac{4x-3}{2x^2-3x+2}\\,dx$.",
+          "Integrate to obtain $-2\\ln|2x^2-3x+2| + c$."
+        ],
+        "common_pitfalls": "Factoring out $+2$ instead of $-2$, leading to a sign error."
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "topic_5_q41",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 41,
+  "question_text": "The graph of $y = f'(x)$ is shown alongside.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "For what values of $x$ is $f(x)$ increasing?",
+      "final_answer": "$x \\le x_1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "State condition $f'(x) \\ge 0$ for increasing function"
+        },
+        {
+          "code": "A1",
+          "desc": "Read interval from given graph as $x \\le x_1$"
+        }
+      ],
+      "solution": "$f(x)$ is increasing when $f'(x) \\ge 0$. From the graph of $f'$, this occurs for $x \\le x_1$.",
+      "ai_explanation": {
+        "concept_rule": "A function is increasing where the graph of its derivative lies above or on the $x$-axis.",
+        "step_by_step": [
+          "Inspect the provided graph of $y = f'(x)$.",
+          "Locate where $y \\ge 0$, which is to the left of $x_1$.",
+          "Conclude that $f(x)$ is increasing for $x \\le x_1$."
+        ],
+        "common_pitfalls": "Looking for where $f'(x)$ is sloping upward instead of where its values are positive."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "For what values of $x$ is $f(x)$ concave down?",
+      "final_answer": "$x \\le x_2 \\text{ and } x \\ge x_3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "State that concavity down corresponds to $f'(x)$ decreasing"
+        },
+        {
+          "code": "A1",
+          "desc": "Read intervals from the graph: $x \\le x_2$ and $x \\ge x_3$"
+        }
+      ],
+      "solution": "$f(x)$ is concave down when $f'(x)$ is decreasing. From the graph, $f'(x)$ is decreasing for $x \\le x_2$ and $x \\ge x_3$.",
+      "ai_explanation": {
+        "concept_rule": "Concavity is determined by whether the derivative $f'(x)$ is increasing (concave up) or decreasing (concave down).",
+        "step_by_step": [
+          "Identify local extrema of $f'(x)$: local minimum at $x_2$ and local maximum at $x_3$.",
+          "Determine intervals where $f'(x)$ has a negative slope (decreasing): to the left of $x_2$ and to the right of $x_3$.",
+          "State intervals: $x \\le x_2$ and $x \\ge x_3$."
+        ],
+        "common_pitfalls": "Confusing intervals where $f'(x)$ is negative with intervals where $f'(x)$ is decreasing."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Given that $y = f(x)$ passes through the origin, sketch the graph of $y = f(x)$.",
+      "final_answer": "$Graph of $y = f(x)$ with local maximum at $x_1$, point of inflection at $x_2$, and stationary inflection point at $x_3$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Show maximum at $x_1$ and decreasing trend thereafter"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurately show inflections at $x_2$ and stationary inflection at $x_3$"
+        }
+      ],
+      "solution": "The graph of $y = f(x)$ increases to a local maximum at $x = x_1$, then decreases. It changes concavity from downwards to upwards at $x = x_2$ (inflection point), and at $x = x_3$, it has a horizontal tangent ($f'(x_3) = 0$) where it changes concavity from upwards back to downwards, forming a stationary point of inflection.",
+      "ai_explanation": {
+        "concept_rule": "Translate features of $f'(x)$ to $f(x)$: zeros where sign changes give local extrema; tangent touching the axis gives stationary inflection points; extrema of $f'$ give inflection points.",
+        "step_by_step": [
+          "$f'(x)$ crosses from positive to negative at $x_1 \\implies$ local maximum at $x_1$.",
+          "$f'(x)$ has a minimum at $x_2 \\implies$ inflection point at $x_2$ where concavity changes from down to up.",
+          "$f'(x)$ touches 0 at $x_3$ with a local maximum $\\implies$ stationary inflection point at $x_3$ with concavity changing from up to down."
+        ],
+        "common_pitfalls": "Drawing a local extremum at $x_3$ instead of a stationary point of inflection."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Sketch the graph of $y = f''(x)$.",
+      "final_answer": "$Graph of $y = f''(x)$ with $x$-intercepts at $x_2$ and $x_3$, positive on $(x_2, x_3)$ and negative elsewhere$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify $x$-intercepts of $f''(x)$ at turning points of $f'(x)$ ($x_2$ and $x_3$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch curve crossing $x$-axis at $x_2$ and $x_3$, with a maximum between them"
+        }
+      ],
+      "solution": "The graph of $y = f''(x)$ represents the gradient of $f'(x)$. It is zero at the turning points of $f'(x)$, which are $x = x_2$ and $x = x_3$. It is negative for $x < x_2$, positive for $x_2 < x < x_3$, and negative for $x > x_3$. Thus, it is an inverted curve crossing the axis at $x_2$ and $x_3$.",
+      "ai_explanation": {
+        "concept_rule": "The second derivative is the slope of the first derivative: zeros occur at extrema of $f'$, positive where $f'$ is increasing, negative where $f'$ is decreasing.",
+        "step_by_step": [
+          "Find where the slope of $f'(x)$ is zero: at the local min $x_2$ and local max $x_3$.",
+          "Between $x_2$ and $x_3$, $f'(x)$ increases, so $f''(x) > 0$.",
+          "For $x < x_2$ and $x > x_3$, $f'(x)$ decreases, so $f''(x) < 0$.",
+          "Sketch an inverted curve with roots at $x_2$ and $x_3$."
+        ],
+        "common_pitfalls": "Placing the $x$-intercepts of $f''(x)$ at $x_1$ instead of at the turning points $x_2$ and $x_3$."
+      }
+    }
+  ]
+}

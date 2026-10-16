@@ -1,0 +1,40 @@
+{
+  "id": "topic_5_q25",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 25,
+  "question_text": "Find the equation of the tangent to $f(x) = \\ln(2x+3)$ at the point where $x = 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Find the equation of the tangent to $f(x) = \\ln(2x+3)$ at the point where $x = 2$.",
+      "final_answer": "$y = \\frac{2}{7}x - \\frac{4}{7} + \\ln 7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the point of contact $(2, \\ln 7)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding gradient at $x=2$ using $f'(x) = \\frac{2}{2x+3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing the equation of the tangent line"
+        }
+      ],
+      "solution": "Since $f(2) = \\ln(2(2)+3) = \\ln 7$, the point of contact is $(2, \\ln 7)$.\nNow $f'(x) = \\frac{2}{2x+3}$, so at $x = 2$ the tangent has gradient $f'(2) = \\frac{2}{2(2)+3} = \\frac{2}{7}$.\nThe tangent has equation $y = f'(2)(x-2) + f(2)$\n$\\therefore y = \\frac{2}{7}(x-2) + \\ln 7$\n$\\therefore y = \\frac{2}{7}x - \\frac{4}{7} + \\ln 7$",
+      "ai_explanation": {
+        "concept_rule": "The equation of a tangent line at $x = x_0$ is $y - f(x_0) = f'(x_0)(x - x_0)$.",
+        "step_by_step": [
+          "Determine $f(2)$: $\\ln(2(2)+3) = \\ln 7$.",
+          "Compute derivative $f'(x) = \\frac{2}{2x+3}$ and evaluate at $x = 2$: $f'(2) = \\frac{2}{7}$.",
+          "Set up the point-slope form: $y - \\ln 7 = \\frac{2}{7}(x - 2)$.",
+          "Expand to obtain $y = \\frac{2}{7}x - \\frac{4}{7} + \\ln 7$."
+        ],
+        "common_pitfalls": "Attempting to approximate $\\ln 7$ as a decimal instead of leaving it in exact form."
+      }
+    }
+  ]
+}

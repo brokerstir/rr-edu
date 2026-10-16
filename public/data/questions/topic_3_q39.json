@@ -1,0 +1,127 @@
+{
+  "id": "topic_3_q39",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 39,
+  "question_text": "Without using a calculator, find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin \\theta$ if $\\cos \\theta = -\\frac{1}{4}$ and $\\pi < \\theta < \\frac{3\\pi}{2}$",
+      "final_answer": "$-\\frac{\\sqrt{15}}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to find $\\sin^2\\theta$"
+        },
+        {
+          "code": "R1",
+          "desc": "Identify that $\\theta$ is in quadrant 3, so $\\sin\\theta < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\sin\\theta = -\\frac{\\sqrt{15}}{4}$"
+        }
+      ],
+      "solution": "$\\cos \\theta = -\\frac{1}{4}$ and $\\pi < \\theta < \\frac{3\\pi}{2}$.\\\\$\\theta$ is in quadrant 3, so $\\sin \\theta$ is negative.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\left(-\\frac{1}{4}\\right)^2 + \\sin^2 \\theta = 1$\\\\$\\therefore \\frac{1}{16} + \\sin^2 \\theta = 1$\\\\$\\therefore \\sin^2 \\theta = \\frac{15}{16}$ \\\\$\\therefore \\sin \\theta = -\\frac{\\sqrt{15}}{4} \\quad \\{\\sin \\theta < 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "In Quadrant III ($\\\\pi < \\theta < \\frac{3\\pi}{2}$), sine is strictly negative.",
+        "step_by_step": [
+          "Identify quadrant: $\\pi < \\theta < \\frac{3\\pi}{2}$ is Quadrant III, where $\\sin\\theta < 0$.",
+          "Use identity $\\cos^2\\theta + \\sin^2\\theta = 1$: $\\frac{1}{16} + \\sin^2\\theta = 1 \\implies \\sin^2\\theta = \\frac{15}{16}$.",
+          "Select the negative root: $\\sin\\theta = -\\frac{\\sqrt{15}}{4}$."
+        ],
+        "common_pitfalls": "Choosing the positive square root instead of considering the quadrant constraint."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\cos \\theta$ if $\\sin \\theta = \\frac{2}{3}$ and $\\frac{\\pi}{2} < \\theta < \\pi$",
+      "final_answer": "$-\\frac{\\sqrt{5}}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to find $\\cos^2\\theta$"
+        },
+        {
+          "code": "R1",
+          "desc": "Identify that $\\theta$ is in quadrant 2, so $\\cos\\theta < 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\cos\\theta = -\\frac{\\sqrt{5}}{3}$"
+        }
+      ],
+      "solution": "$\\sin \\theta = \\frac{2}{3}$ and $\\frac{\\pi}{2} < \\theta < \\pi$.\\\\$\\theta$ is in quadrant 2, so $\\cos \\theta$ is negative.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\cos^2 \\theta + \\left(\\frac{2}{3}\\right)^2 = 1$\\\\$\\therefore \\cos^2 \\theta + \\frac{4}{9} = 1$\\\\$\\therefore \\cos^2 \\theta = \\frac{5}{9}$ \\\\$\\therefore \\cos \\theta = -\\frac{\\sqrt{5}}{3} \\quad \\{\\cos \\theta < 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "In Quadrant II, cosine is negative.",
+        "step_by_step": [
+          "Identify quadrant: $\\frac{\\pi}{2} < \\theta < \\pi$ is Quadrant II, where $\\cos\\theta < 0$.",
+          "Substitute into $\\cos^2\\theta + \\sin^2\\theta = 1$: $\\cos^2\\theta + \\frac{4}{9} = 1 \\implies \\cos^2\\theta = \\frac{5}{9}$.",
+          "Select the negative root: $\\cos\\theta = -\\frac{\\sqrt{5}}{3}$."
+        ],
+        "common_pitfalls": "Neglecting to apply the quadrant constraint to the sign of the cosine."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\tan \\theta$ if $\\sin \\theta = -\\frac{5}{6}$ and $\\frac{3\\pi}{2} < \\theta < 2\\pi$",
+      "final_answer": "$-\\frac{5}{\\sqrt{11}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use $\\cos^2\\theta + \\sin^2\\theta = 1$ to find $\\cos\\theta$, selecting positive sign for quadrant 4"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\tan\\theta = -\\frac{5}{\\sqrt{11}}$"
+        }
+      ],
+      "solution": "$\\sin \\theta = -\\frac{5}{6}$ and $\\frac{3\\pi}{2} < \\theta < 2\\pi$.\\\\$\\theta$ is in quadrant 4, so $\\cos \\theta$ is positive.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\cos^2 \\theta + \\left(-\\frac{5}{6}\\right)^2 = 1$\\\\$\\therefore \\cos^2 \\theta + \\frac{25}{36} = 1$\\\\$\\therefore \\cos^2 \\theta = \\frac{11}{36}$ \\\\$\\therefore \\cos \\theta = \\frac{\\sqrt{11}}{6} \\quad \\{\\cos \\theta > 0\\}$\\\\So, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{-\\frac{5}{6}}{\\frac{\\sqrt{11}}{6}} = -\\frac{5}{\\sqrt{11}}$",
+      "ai_explanation": {
+        "concept_rule": "In Quadrant IV, $\\cos\\theta > 0$ and $\\tan\\theta < 0$. Tangent is computed as $\\frac{\\sin\\theta}{\\cos\\theta}$.",
+        "step_by_step": [
+          "Determine the sign of $\\cos\\theta$ in Quadrant IV, which is positive.",
+          "Find $\\cos^2\\theta = 1 - \\left(-\\frac{5}{6}\\right)^2 = 1 - \\frac{25}{36} = \\frac{11}{36}$.",
+          "Thus, $\\cos\\theta = \\frac{\\sqrt{11}}{6}$.",
+          "Compute $\\tan\\theta = \\frac{-\\frac{5}{6}}{\\frac{\\sqrt{11}}{6}} = -\\frac{5}{\\sqrt{11}}$."
+        ],
+        "common_pitfalls": "Forgetting to evaluate $\\tan\\theta$ after finding $\\cos\\theta$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$\\tan \\theta$ if $\\cos \\theta = \\frac{1}{3}$ and $0 < \\theta < \\frac{\\pi}{2}$.",
+      "final_answer": "$\\sqrt{8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $\\sin\\theta$ using identity $\\cos^2\\theta + \\sin^2\\theta = 1$, choosing positive sign for quadrant 1"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\sqrt{8}$"
+        }
+      ],
+      "solution": "$\\cos \\theta = \\frac{1}{3}$ and $0 < \\theta < \\frac{\\pi}{2}$.\\\\$\\theta$ is in quadrant 1, so $\\sin \\theta$ is positive.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\left(\\frac{1}{3}\\right)^2 + \\sin^2 \\theta = 1$\\\\$\\therefore \\frac{1}{9} + \\sin^2 \\theta = 1$\\\\$\\therefore \\sin^2 \\theta = \\frac{8}{9}$ \\\\$\\therefore \\sin \\theta = \\frac{\\sqrt{8}}{3} \\quad \\{\\sin \\theta > 0\\}$\\\\So, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{\\frac{\\sqrt{8}}{3}}{\\frac{1}{3}} = \\sqrt{8}$",
+      "ai_explanation": {
+        "concept_rule": "In Quadrant I, all trigonometric ratios are positive.",
+        "step_by_step": [
+          "Identify quadrant: $0 < \\theta < \\frac{\\pi}{2}$ is Quadrant I, where $\\sin\\theta > 0$.",
+          "Find $\\sin^2\\theta = 1 - \\left(\\frac{1}{3}\\right)^2 = \\frac{8}{9}$, so $\\sin\\theta = \\frac{\\sqrt{8}}{3}$.",
+          "Compute $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\sqrt{8}/3}{1/3} = \\sqrt{8}$."
+        ],
+        "common_pitfalls": "Incorrect calculation of $1 - \\frac{1}{9}$."
+      }
+    }
+  ]
+}

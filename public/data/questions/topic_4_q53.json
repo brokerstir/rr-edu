@@ -1,0 +1,64 @@
+{
+  "id": "topic_4_q53",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 53,
+  "question_text": "In a game, a player rolls a biased four-sided die. The probability of obtaining each possible score is shown in the table.\n\n$$\\begin{array}{|l|c|c|c|c|} \\hline \\text{Score} & 1 & 2 & 3 & 4 \\\\ \\hline \\text{Probability} & \\frac{1}{12} & k & \\frac{1}{4} & \\frac{1}{3} \\\\ \\hline \\end{array}$$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $k$.",
+      "final_answer": "$k = \\frac{1}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the total probability property $\\sum P(x_i) = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $k = \\frac{1}{3}$"
+        }
+      ],
+      "solution": "Since this is a probability distribution, $\\sum_{i=1}^n P(x_i) = 1$.\n$$\\therefore \\frac{1}{12} + k + \\frac{1}{4} + \\frac{1}{3} = 1$$\n$$\\frac{1}{12} + k + \\frac{3}{12} + \\frac{4}{12} = 1$$\n$$k + \\frac{8}{12} = 1 \\implies k = 1 - \\frac{2}{3} = \\frac{1}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "For any discrete probability distribution, the sum of all probabilities must equal 1.",
+        "step_by_step": [
+          "Sum the probabilities in the table: $\\frac{1}{12} + k + \\frac{1}{4} + \\frac{1}{3}$.",
+          "Equate the sum to 1.",
+          "Solve for $k$: $k = 1 - \\frac{8}{12} = \\frac{1}{3}$."
+        ],
+        "common_pitfalls": "Arithmetic errors when adding fractions with different denominators."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Let the random variable $X$ denote the number of 2s that occur when the die is rolled 2400 times. Calculate the exact mean and standard deviation of $X$.",
+      "final_answer": "$\\mu = 800,\\; \\sigma = \\frac{40\\sqrt{3}}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $X \\sim \\text{B}(2400, \\frac{1}{3})$ with $p = k = \\frac{1}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating mean $\\mu = np = 800$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating standard deviation $\\sigma = \\sqrt{np(1-p)} = \\frac{40\\sqrt{3}}{3}$"
+        }
+      ],
+      "solution": "Let $X$ be the number of 2s rolled.\n$n = 2400$, so $X = 0, 1, 2, 3, \\dots, 2400$, and $p = \\frac{1}{3}$ {from a}\n$\\therefore X \\sim \\text{B}(2400, \\frac{1}{3})$\nSo, $\\mu = np = 2400 \\times \\frac{1}{3} = 800$\nand\n$$\\sigma = \\sqrt{np(1-p)} = \\sqrt{2400 \\times \\frac{1}{3} \\times \\frac{2}{3}} = \\sqrt{\\frac{1600}{3}} = \\frac{40}{\\sqrt{3}} = \\frac{40\\sqrt{3}}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "For a binomial random variable $X \\sim \\text{B}(n, p)$, the mean is $\\mu = np$ and standard deviation is $\\sigma = \\sqrt{np(1-p)}$.",
+        "step_by_step": [
+          "Identify $n = 2400$ and $p = P(X=2) = k = \\frac{1}{3}$.",
+          "Calculate the mean: $\\mu = 2400 \\times \\frac{1}{3} = 800$.",
+          "Calculate the standard deviation: $\\sigma = \\sqrt{2400 \\times \\frac{1}{3} \\times \\frac{2}{3}} = \\sqrt{\\frac{1600}{3}} = \\frac{40\\sqrt{3}}{3}$."
+        ],
+        "common_pitfalls": "Forgetting to rationalize the denominator or taking the variance instead of standard deviation."
+      }
+    }
+  ]
+}

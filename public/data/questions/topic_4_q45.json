@@ -1,0 +1,100 @@
+{
+  "id": "topic_4_q45",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 45,
+  "question_text": "A bag contains 3 red tickets and 2 blue tickets. Tickets are selected from the bag, without replacement, until at least one ticket of each colour is selected. Let $X$ be the total number of tickets selected.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the possible values of $X$.",
+      "final_answer": "$X = 2, 3, 4$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifying possible values of $X$"
+        }
+      ],
+      "solution": "$X = 2, 3, 4$",
+      "ai_explanation": {
+        "concept_rule": "Identify the number of draws required until a condition is met (sampling without replacement).",
+        "step_by_step": [
+          "Minimum draws is 2 (e.g., BR or RB).",
+          "Maximum draws occurs if same colors are picked first, stopping when one of each is obtained, giving at most 4 draws."
+        ],
+        "common_pitfalls": "Including 1, which is impossible since at least two tickets are needed to have tickets of both colors."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the probability distribution of $X$.",
+      "final_answer": "$\\begin{array}{|c|c|c|c|} \\hline x & 2 & 3 & 4 \\\\ \\hline P(X=x) & \\frac{3}{5} & \\frac{3}{10} & \\frac{1}{10} \\\\ \\hline \\end{array}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate probabilities for each outcome using conditional probability without replacement"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability distribution table"
+        }
+      ],
+      "solution": "Let B represent a blue ticket, and R represent a red ticket.\nThe possible selections that can be made are:\n$\\begin{aligned} &\\text{BR} \\quad (X = 2) \\\\ &\\text{RB} \\\\ &\\text{BBR} \\quad (X = 3) \\\\ &\\text{RRB} \\\\ &\\text{RRRB} \\quad (X = 4) \\end{aligned}$\n\nSo,\n$\\begin{aligned} P(X = 2) &= \\frac{2}{5} \\times \\frac{3}{4} + \\frac{3}{5} \\times \\frac{2}{4} = \\frac{3}{5} \\\\ P(X = 3) &= \\frac{2}{5} \\times \\frac{1}{4} \\times \\frac{3}{3} + \\frac{3}{5} \\times \\frac{2}{4} \\times \\frac{2}{3} = \\frac{3}{10} \\\\ P(X = 4) &= \\frac{3}{5} \\times \\frac{2}{4} \\times \\frac{1}{3} \\times \\frac{2}{2} = \\frac{1}{10} \\end{aligned}$\n\n$\\therefore$ the probability distribution of $X$ is:\n$$\\begin{array}{|c|c|c|c|} \\hline x & 2 & 3 & 4 \\\\ \\hline P(X = x) & \\frac{3}{5} & \\frac{3}{10} & \\frac{1}{10} \\\\ \\hline \\end{array}$$",
+      "ai_explanation": {
+        "concept_rule": "Calculate probability of sequences of selections without replacement and construct the probability distribution table.",
+        "step_by_step": [
+          "For $X=2$: outcomes are BR and RB. $P(BR) = \\frac{2}{5}\\times\\frac{3}{4} = \\frac{3}{10}$, $P(RB) = \\frac{3}{5}\\times\\frac{2}{4} = \\frac{3}{10}$. Total = $\\frac{6}{10} = \\frac{3}{5}$.",
+          "For $X=3$: outcomes are BBR and RRB. $P(BBR) = \\frac{2}{5}\\times\\frac{1}{4}\\times 1 = \\frac{1}{10}$, $P(RRB) = \\frac{3}{5}\\times\\frac{2}{4}\\times\\frac{2}{3} = \\frac{2}{10}$. Total = $\\frac{3}{10}$.",
+          "For $X=4$: outcome is RRRB. $P(RRRB) = \\frac{3}{5}\\times\\frac{2}{4}\\times\\frac{1}{3}\\times 1 = \\frac{1}{10}$.",
+          "Present as a distribution table and check sum equals 1."
+        ],
+        "common_pitfalls": "Forgetting to reduce the total number of tickets in the denominator after each draw (sampling without replacement)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the mode of $X$.",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifying mode as 2"
+        }
+      ],
+      "solution": "It is most likely that 2 tickets are drawn, so the mode is 2.",
+      "ai_explanation": {
+        "concept_rule": "The mode is the value of $x$ that corresponds to the largest probability $P(X=x)$.",
+        "step_by_step": [
+          "Compare probabilities: $P(X=2) = \\frac{3}{5} = 0.6$, $P(X=3) = 0.3$, $P(X=4) = 0.1$.",
+          "Since $0.6$ is the highest probability, the mode is 2."
+        ],
+        "common_pitfalls": "Writing the probability $\\frac{3}{5}$ instead of the value $2$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the expected value of $X$.",
+      "final_answer": "$2.5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply formula $E(X) = \\sum x_i P(X = x_i)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly compute $E(X) = 2.5$"
+        }
+      ],
+      "solution": "$\\begin{aligned} E(X) &= \\sum_{i=1}^n x_i p_i \\\\ &= 2\\left(\\frac{3}{5}\\right) + 3\\left(\\frac{3}{10}\\right) + 4\\left(\\frac{1}{10}\\right) \\\\ &= \\frac{5}{2} = 2.5 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Expected value is the sum of products of each outcome and its probability: $E(X) = \\sum x P(X=x)$.",
+        "step_by_step": [
+          "Write the formula: $E(X) = 2(0.6) + 3(0.3) + 4(0.1)$.",
+          "Compute: $1.2 + 0.9 + 0.4 = 2.5$ (or $\\frac{12}{10} + \\frac{9}{10} + \\frac{4}{10} = \\frac{25}{10} = \\frac{5}{2}$)."
+        ],
+        "common_pitfalls": "Dividing by the number of outcomes instead of computing the weighted sum."
+      }
+    }
+  ]
+}

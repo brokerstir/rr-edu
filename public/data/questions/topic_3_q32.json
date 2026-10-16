@@ -1,0 +1,95 @@
+{
+  "id": "topic_3_q32",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 32,
+  "question_text": "Trains A and B are $10\\text{ km}$ apart, and are approaching the same train station.\nTrain A is $8\\text{ km}$ from the train station on the bearing $071^\\circ$. Train B is on the bearing $296^\\circ$ from the train station.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Display this information on a diagram.",
+      "final_answer": "$\\text{[Diagram]}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct diagram showing North lines, bearing of $296^\\circ$, angle $71^\\circ$, and distances"
+        }
+      ],
+      "solution": "Diagram showing the positions of points $S$, $A$, and $B$ relative to the North line at $S$, with bearing of $B$ from $S$ being $296^\\circ$, angle between North and $A$ being $71^\\circ$, $SA = 8\\text{ km}$, and $AB = 10\\text{ km}$.",
+      "ai_explanation": {
+        "concept_rule": "Bearings are measured clockwise from North ($0^\\circ$ to $360^\\circ$).",
+        "step_by_step": [
+          "Draw North reference lines at vertices $S$, $B$, and $A$.",
+          "Draw bearing of $B$ from $S$ as $296^\\circ$ clockwise from North.",
+          "Draw $A$ at bearing $71^\\circ$ from $S$ with distance $8\\text{ km}$, and connect $AB = 10\\text{ km}$."
+        ],
+        "common_pitfalls": "Measuring bearings counterclockwise or confusing the reference point 'from'."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the bearing of train B from train A.",
+      "final_answer": "$262^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating angle $B\\widehat{S}A = 135^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using the sine rule to find angle $\\alpha \\approx 34.4^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Finding $\\theta \\approx 10.6^\\circ$ and bearing of $B$ from $A$"
+        },
+        {
+          "code": "A1",
+          "desc": "Final bearing $262^\\circ$"
+        }
+      ],
+      "solution": "$\\text{N}_1\\widehat{\\text{S}}\\text{B} = 360^\\circ - 296^\\circ = 64^\\circ$ {angles at a point}. $\\therefore \\text{B}\\widehat{\\text{S}}\\text{A} = 64^\\circ + 71^\\circ = 135^\\circ$. By the sine rule: $\\frac{\\sin\\alpha}{8} = \\frac{\\sin 135^\\circ}{10} \\implies \\sin\\alpha = \\frac{8\\sin 135^\\circ}{10} \\implies \\alpha = \\sin^{-1}\\left(\\frac{8\\sin 135^\\circ}{10}\\right) \\approx 34.4^\\circ$. Now $\\theta = 180^\\circ - 135^\\circ - \\alpha \\approx 180^\\circ - 135^\\circ - 34.4^\\circ \\approx 10.6^\\circ$ {angles in a triangle}. $\\text{N}_2\\widehat{\\text{A}}\\text{S} = 180^\\circ - 71^\\circ = 109^\\circ$ {co-interior angles}. $\\therefore \\text{bearing of } B \\text{ from } A \\approx 360^\\circ - 109^\\circ + 10.6^\\circ \\approx 262^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Use angle relations around points, co-interior angles between parallel North lines, and the sine rule to determine bearings.",
+        "step_by_step": [
+          "Find $\\angle N_1SB = 360^\\circ - 296^\\circ = 64^\\circ$, hence $\\angle BSA = 64^\\circ + 71^\\circ = 135^\\circ$.",
+          "Apply the sine rule to find angle $\\alpha$ at vertex $B$: $\\alpha \\approx 34.4^\\circ$.",
+          "Calculate angle $\\theta$ at vertex $A$: $\\theta = 180^\\circ - 135^\\circ - 34.4^\\circ = 10.6^\\circ$.",
+          "Use co-interior angles to find angle from South to North at $A$: $180^\\circ - 71^\\circ = 109^\\circ$.",
+          "Calculate the bearing from North at $A$: $360^\\circ - 109^\\circ + 10.6^\\circ \\approx 262^\\circ$."
+        ],
+        "common_pitfalls": "Incorrect co-interior angle calculation between the two parallel North lines."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Train B is travelling at an average speed of $7\\text{ m}\\text{ s}^{-1}$. Find, to the nearest second, the time it will take for train B to reach the train station.",
+      "final_answer": "$370\\text{ seconds}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the cosine rule to calculate side $BS$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using $\\text{time} = \\text{distance}/\\text{speed}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Final time in seconds or minutes and seconds"
+        }
+      ],
+      "solution": "By the cosine rule: $\\text{BS}^2 = 10^2 + 8^2 - 2(10)(8)\\cos\\theta \\implies \\text{BS} = \\sqrt{10^2 + 8^2 - 2(10)(8)\\cos\\theta} \\implies \\text{BS} \\approx \\sqrt{10^2 + 8^2 - 2(10)(8)\\cos 10.6^\\circ} \\approx 2.59\\text{ km} \\approx 2590\\text{ m}$. Now $\\text{time} = \\frac{\\text{distance}}{\\text{speed}} \\approx \\frac{2590}{7} \\approx 370\\text{ seconds}$. It will take about $370\\text{ seconds}$ or $6\\text{ minutes } 10\\text{ seconds}$ for train B to reach the train station.",
+      "ai_explanation": {
+        "concept_rule": "Find the distance using the cosine rule, convert units to meters, and use $\\text{time} = \\frac{\\text{distance}}{\\text{speed}}$.",
+        "step_by_step": [
+          "Use cosine rule with angle $\\theta \\approx 10.6^\\circ$ and adjacent sides $10\\text{ km}$ and $8\\text{ km}$ to find $BS \\approx 2.59\\text{ km}$.",
+          "Convert kilometers to meters: $2.59\\text{ km} = 2590\\text{ m}$.",
+          "Divide by speed $7\\text{ m/s}$ to get the time in seconds."
+        ],
+        "common_pitfalls": "Forgetting to convert kilometers to meters before dividing by speed in m/s."
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "topic_5_q21",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 21,
+  "question_text": "Given $f(x) = \\ln(\\cos x)$, find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f\\left(\\frac{\\pi}{4}\\right)$",
+      "final_answer": "$f\\left(\\frac{\\pi}{4}\\right) = -\\frac{1}{2}\\ln 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $\\cos(\\pi/4)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying logarithmic expression to $-\\frac{1}{2}\\ln 2$"
+        }
+      ],
+      "solution": "$f(x) = \\ln(\\cos x)$\n$f\\left(\\frac{\\pi}{4}\\right) = \\ln\\left(\\cos\\frac{\\pi}{4}\\right)$\n$= \\ln\\left(\\frac{1}{\\sqrt{2}}\\right)$\n$= \\ln(2^{-\\frac{1}{2}})$\n$= -\\frac{1}{2}\\ln 2$",
+      "ai_explanation": {
+        "concept_rule": "Logarithm power rule: $\\ln(a^k) = k\\ln a$.",
+        "step_by_step": [
+          "Substitute $x = \\pi/4$ into $f(x)$: $\\cos(\\pi/4) = \\frac{1}{\\sqrt{2}} = 2^{-1/2}$.",
+          "Apply power property of logarithms: $\\ln(2^{-1/2}) = -\\frac{1}{2}\\ln 2$."
+        ],
+        "common_pitfalls": "Leaving the answer as $\\ln(1/\\sqrt{2})$ without simplifying."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f'\\left(\\frac{\\pi}{4}\\right)$",
+      "final_answer": "$f'\\left(\\frac{\\pi}{4}\\right) = -1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $\\ln(\\cos x)$ to get $-\\tan x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $f'(\\pi/4) = -1$"
+        }
+      ],
+      "solution": "$f'(x) = \\frac{-\\sin x}{\\cos x} \\quad \\{\\text{chain rule}\\}$\n$= -\\tan x$\n$\\therefore f'\\left(\\frac{\\pi}{4}\\right) = -\\tan\\frac{\\pi}{4}$\n$= -1$",
+      "ai_explanation": {
+        "concept_rule": "Chain rule: $\\frac{d}{dx}(\\ln(\\cos x)) = \\frac{-\\sin x}{\\cos x} = -\\tan x$.",
+        "step_by_step": [
+          "Differentiate $\\ln(\\cos x)$ using chain rule: $\\frac{1}{\\cos x} \\cdot (-\\sin x) = -\\tan x$.",
+          "Evaluate at $x = \\pi/4$: $-\\tan(\\pi/4) = -1$."
+        ],
+        "common_pitfalls": "Missing the minus sign from differentiating $\\cos x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f''\\left(\\frac{\\pi}{4}\\right)$.",
+      "final_answer": "$f''\\left(\\frac{\\pi}{4}\\right) = -2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $f'(x) = -\\tan x$ or $\\frac{-\\sin x}{\\cos x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $f''(x) = -\\frac{1}{\\cos^2 x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating at $x = \\pi/4$ to get $-2$"
+        }
+      ],
+      "solution": "$f'(x) = \\frac{-\\sin x}{\\cos x} \\quad \\{\\text{from b}\\}$\n$\\therefore f''(x) = \\frac{-\\cos x(\\cos x) - (-\\sin x)(-\\sin x)}{\\cos^2 x} \\quad \\{\\text{quotient rule}\\}$\n$= \\frac{-\\cos^2 x - \\sin^2 x}{\\cos^2 x}$\n$= \\frac{-1}{\\cos^2 x}$\n$\\therefore f''\\left(\\frac{\\pi}{4}\\right) = \\frac{-1}{\\cos^2\\left(\\frac{\\pi}{4}\\right)}$\n$= \\frac{-1}{\\left(\\frac{1}{\\sqrt{2}}\\right)^2}$\n$= -2$",
+      "ai_explanation": {
+        "concept_rule": "Derivative of $-\\tan x$ is $-\\sec^2 x = -\\frac{1}{\\cos^2 x}$.",
+        "step_by_step": [
+          "Compute second derivative: $f''(x) = -\\sec^2 x = -\\frac{1}{\\cos^2 x}$.",
+          "Substitute $x = \\pi/4$: $\\cos(\\pi/4) = \\frac{1}{\\sqrt{2}}$.",
+          "Calculate $\\cos^2(\\pi/4) = 1/2$.",
+          "Hence, $f''(\\pi/4) = \\frac{-1}{1/2} = -2$."
+        ],
+        "common_pitfalls": "Incorrect squaring of $\\frac{1}{\\sqrt{2}}$ or sign mistakes with $-(\\cos^2 x + \\sin^2 x)$."
+      }
+    }
+  ]
+}

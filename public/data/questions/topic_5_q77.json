@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q77",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 77,
+  "question_text": "The shaded region has area $0.42\\text{ units}^2$. Find $k$, correct to 2 decimal places.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The shaded region has area $0.42\\text{ units}^2$. Find $k$, correct to 2 decimal places.",
+      "final_answer": "$0.95$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral $\\int_0^k \\sin x\\,dx = 0.42$"
+        },
+        {
+          "code": "A1",
+          "desc": "Antiderivative $[-\\cos x]_0^k$ leading to $1 - \\cos k = 0.42$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\cos k = 0.58$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $k \\approx 0.95$"
+        }
+      ],
+      "solution": "$\\text{Shaded area} = 0.42\\text{ units}^2 \\implies \\int_0^k \\sin x\\,dx = 0.42 \\implies [-\\cos x]_0^k = 0.42 \\implies -\\cos k + \\cos 0 = 0.42 \\implies -\\cos k + 1 = 0.42 \\implies -\\cos k = -0.58 \\implies \\cos k = 0.58 \\implies k = \\cos^{-1}(0.58) \\approx 0.95 \\quad \\{2\\text{ d.p.}\\}$",
+      "ai_explanation": {
+        "concept_rule": "The area under a curve is given by the definite integral; setting this equal to a given value solves for a boundary parameter.",
+        "step_by_step": [
+          "Set up the area integral $\\int_0^k \\sin x\\,dx = 0.42$.",
+          "Integrate $\\sin x$ to get $-\\cos x$.",
+          "Evaluate at the limits: $(-\\cos k) - (-\\cos 0) = 1 - \\cos k = 0.42$.",
+          "Rearrange to find $\\cos k = 0.58$.",
+          "Compute $k = \\arccos(0.58) \\approx 0.95$ radians."
+        ],
+        "common_pitfalls": "Forgetting that $-\\cos(0) = -1$, leading to a sign error in $1 - \\cos k$."
+      }
+    }
+  ]
+}

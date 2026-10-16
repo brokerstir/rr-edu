@@ -1,0 +1,115 @@
+{
+  "id": "topic_4_q17",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 17,
+  "question_text": "These parallel box plots show the weights of particular species of fungi collected from 3 different sites in a forest.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the five-number summary for site 1.",
+      "final_answer": "$\\text{minimum} = 15, Q_1 = 30, \\text{median} = 50, Q_3 = 60, \\text{maximum} = 70$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "All five values correctly read from the box plot for site 1"
+        }
+      ],
+      "solution": "From the box plot for site 1:\n$$\\text{minimum} = 15, \\quad Q_1 = 30, \\quad \\text{median} = 50, \\quad Q_3 = 60, \\quad \\text{maximum} = 70$$",
+      "ai_explanation": {
+        "concept_rule": "Read the key points of the boxplot: lower whisker tip (min), left box edge ($Q_1$), central line (median), right box edge ($Q_3$), and upper whisker tip (max).",
+        "step_by_step": [
+          "Lower whisker tip is at 15.",
+          "Left edge of box is at 30.",
+          "Middle line is at 50.",
+          "Right edge of box is at 60.",
+          "Upper whisker tip is at 70."
+        ],
+        "common_pitfalls": "Misreading the vertical scale intervals."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Which site has the greatest range of weights?",
+      "final_answer": "$\\text{Site 3}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct site identified"
+        }
+      ],
+      "solution": "Site 3 has the greatest overall spread from whisker to whisker, hence Site 3 has the greatest range of weights.",
+      "ai_explanation": {
+        "concept_rule": "The range is represented by the total span from the bottom whisker tip to the top whisker tip.",
+        "step_by_step": [
+          "Check the total vertical span for Site 1, Site 2, and Site 3.",
+          "Site 3 extends over the largest vertical distance, so it has the greatest range."
+        ],
+        "common_pitfalls": "Looking only at the length of the box (IQR) rather than the entire plot span."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "At which site do the weights of fungi have the least variation?",
+      "final_answer": "$\\text{Site 2}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct site identified"
+        }
+      ],
+      "solution": "The weights of fungi have the least variation at site 2, as it has the smallest overall span and smallest box length.",
+      "ai_explanation": {
+        "concept_rule": "Variation is measured by spread (range or IQR); the smallest spread corresponds to the least variation.",
+        "step_by_step": [
+          "Site 2 has both the shortest total length and the shortest box.",
+          "Thus, site 2 has the least variation."
+        ],
+        "common_pitfalls": "Confusing position (median) with variation (spread)."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Which site has the highest median weight of fungi?",
+      "final_answer": "$\\text{Site 1}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct site identified"
+        }
+      ],
+      "solution": "Site 1 has the highest median weight of fungi (median = 50 g).",
+      "ai_explanation": {
+        "concept_rule": "Compare the positions of the horizontal lines indicating the median in each box.",
+        "step_by_step": [
+          "Site 1 median is at 50.",
+          "Site 2 and Site 3 have medians below 50.",
+          "Therefore, Site 1 has the highest median."
+        ],
+        "common_pitfalls": "Looking at the maximum rather than the median."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Which site has the highest proportion of weights above 40 grams?",
+      "final_answer": "$\\text{Site 1}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct site identified"
+        }
+      ],
+      "solution": "Site 1 has the highest proportion of weights above 40 grams (around 75% are above 30, and the median is 50, meaning over 50% are above 50 g).",
+      "ai_explanation": {
+        "concept_rule": "Quartiles split the data into 25% sections. Determine the fraction of data lying above 40 grams for each site.",
+        "step_by_step": [
+          "For Site 1, $Q_1 = 30$ and median $= 50$, so more than 50% of the distribution lies above 40 g.",
+          "For Sites 2 and 3, 40 g is at or above the median/upper quartile, meaning a smaller proportion is above 40 g.",
+          "Hence, Site 1 has the highest proportion above 40 g."
+        ],
+        "common_pitfalls": "Comparing absolute numbers rather than proportions."
+      }
+    }
+  ]
+}

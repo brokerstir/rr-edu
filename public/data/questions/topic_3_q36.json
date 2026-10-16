@@ -1,0 +1,95 @@
+{
+  "id": "topic_3_q36",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 36,
+  "question_text": "Without using a calculator, evaluate:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin\\frac{\\pi}{3} \\cos\\frac{\\pi}{3}$",
+      "final_answer": "$\\frac{\\sqrt{6}}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute exact values for $\\sin\\frac{\\pi}{3}$ and $\\cos\\frac{\\pi}{4}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Rationalize and simplify to $\\frac{\\sqrt{6}}{4}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\sin \\frac{\\pi}{3} \\cos \\frac{\\pi}{4} &= \\left(\\frac{\\sqrt{3}}{2}\\right)\\left(\\frac{1}{\\sqrt{2}}\\right) \\\\ &= \\frac{\\sqrt{3}}{2\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} \\\\ &= \\frac{\\sqrt{6}}{4} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Product of standard trigonometric ratios at exact special angles.",
+        "step_by_step": [
+          "Substitute standard values: $\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$ and $\\cos\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$.",
+          "Multiply to get $\\frac{\\sqrt{3}}{2\\sqrt{2}}$.",
+          "Rationalize the denominator by multiplying numerator and denominator by $\\sqrt{2}$ to obtain $\\frac{\\sqrt{6}}{4}$."
+        ],
+        "common_pitfalls": "Leaving the denominator unrationalized when an exact simplified surd is required."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$2\\tan^2\\left(\\frac{2\\pi}{3}\\right) + 1$",
+      "final_answer": "$7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $\\tan\\frac{2\\pi}{3}$ using sine and cosine"
+        },
+        {
+          "code": "M1",
+          "desc": "Square the value and substitute into $2\\tan^2\\left(\\frac{2\\pi}{3}\\right) + 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to obtain $7$"
+        }
+      ],
+      "solution": "$\\begin{aligned} 2\\tan^2\\left(\\frac{2\\pi}{3}\\right) + 1 &= 2\\left(\\frac{\\sin\\frac{2\\pi}{3}}{\\cos\\frac{2\\pi}{3}}\\right)^2 + 1 \\\\ &= 2\\left(\\frac{\\frac{\\sqrt{3}}{2}}{-\\frac{1}{2}}\\right)^2 + 1 \\\\ &= 2(-\\sqrt{3})^2 + 1 \\\\ &= 2(3) + 1 \\\\ &= 7 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Evaluate exact values of tangent for obtuse angles and apply the order of operations.",
+        "step_by_step": [
+          "Find $\\sin\\frac{2\\pi}{3} = \\frac{\\sqrt{3}}{2}$ and $\\cos\\frac{2\\pi}{3} = -\\frac{1}{2}$.",
+          "Divide to find $\\tan\\frac{2\\pi}{3} = -\\sqrt{3}$.",
+          "Square the result: $(-\\sqrt{3})^2 = 3$.",
+          "Compute $2(3) + 1 = 7$."
+        ],
+        "common_pitfalls": "Squaring $-\\sqrt{3}$ to obtain $-3$ instead of $3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{\\cos\\frac{5\\pi}{6} \\tan^2\\left(\\frac{3\\pi}{4}\\right)}{\\sin\\left(-\\frac{\\pi}{3}\\right)}$",
+      "final_answer": "$1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute exact values for the trigonometric terms"
+        },
+        {
+          "code": "M1",
+          "desc": "Cancel identical terms and simplify $\\tan^2\\left(\\frac{3\\pi}{4}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $1$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\frac{\\cos \\frac{5\\pi}{6}\\tan^2\\left(\\frac{3\\pi}{4}\\right)}{\\sin\\left(-\\frac{\\pi}{3}\\right)} &= \\frac{\\cos \\frac{5\\pi}{6}\\left(\\frac{\\sin\\frac{3\\pi}{4}}{\\cos\\frac{3\\pi}{4}}\\right)^2}{\\sin\\left(-\\frac{\\pi}{3}\\right)} \\\\ &= \\frac{\\left(-\\frac{\\sqrt{3}}{2}\\right)\\left(\\frac{\\frac{1}{\\sqrt{2}}}{-\\frac{1}{\\sqrt{2}}}\\right)^2}{\\left(-\\frac{\\sqrt{3}}{2}\\right)} \\\\ &= (-1)^2 \\\\ &= 1 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Recognize identical factors in numerator and denominator: $\\cos\\frac{5\\pi}{6} = -\\frac{\\sqrt{3}}{2}$ and $\\sin\\left(-\\frac{\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}$.",
+        "step_by_step": [
+          "Find the value of $\\cos\\frac{5\\pi}{6} = -\\frac{\\sqrt{3}}{2}$.",
+          "Find the value of $\\sin(-\\frac{\\pi}{3}) = -\\frac{\\sqrt{3}}{2}$.",
+          "Cancel out $-\\frac{\\sqrt{3}}{2}$ from the numerator and denominator.",
+          "Evaluate $\\tan\\frac{3\\pi}{4} = -1$, then square it: $(-1)^2 = 1$."
+        ],
+        "common_pitfalls": "Failing to notice that $\\cos\\frac{5\\pi}{6} = \\sin(-\\frac{\\pi}{3})$, leading to unnecessarily complex arithmetic."
+      }
+    }
+  ]
+}

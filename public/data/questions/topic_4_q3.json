@@ -1,0 +1,70 @@
+{
+  "id": "topic_4_q3",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 3,
+  "question_text": "Marie is organising a staff lunch in a large office building.\n\nShe asks the first 10 people to visit her office for their preferences, and then makes a decision.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why this is a convenience sample.",
+      "final_answer": "$Convenience sampling$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify and justify convenience sampling based on ease of access"
+        }
+      ],
+      "solution": "This is a convenience sample because it is more convenient for Marie to sample the first 10 people to visit her office than to sample 10 random people from the whole building for example.",
+      "ai_explanation": {
+        "concept_rule": "Convenience sampling selects subjects who are easiest to reach or most readily available.",
+        "step_by_step": [
+          "Observe that Marie only samples people coming to her office first.",
+          "Classify this method as convenience sampling because it relies on ease of access."
+        ],
+        "common_pitfalls": "Confusing convenience sampling with systematic sampling."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "In what ways will Marie's sample be biased?",
+      "final_answer": "$Biased and not representative$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Explain that visitors to her office may share specific traits or work closely with her, causing bias"
+        }
+      ],
+      "solution": "The preferences of the first 10 people to visit Marie's office are likely to come from people who work with her. This may not be representative of the preferences of all people in the building, and so the sample may be biased.",
+      "ai_explanation": {
+        "concept_rule": "Selection bias occurs when the sample population differs systematically from the target population.",
+        "step_by_step": [
+          "Recognize that colleagues visiting her office likely share similar roles, locations, or opinions.",
+          "Conclude that this fails to represent everyone in the building."
+        ],
+        "common_pitfalls": "Assuming a small sample is always biased only because of size rather than location/access bias."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Suggest a more appropriate sampling method that Marie should use.",
+      "final_answer": "$Stratified sampling by department or floor number$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Suggest stratified sampling based on relevant subgroups like departments or floors"
+        }
+      ],
+      "solution": "Marie could use a stratified sample where the subgroups may correspond to departments, floor number, and so on. In this way, a fair representation of preferences is more likely to be obtained.",
+      "ai_explanation": {
+        "concept_rule": "Stratified sampling groups an organization by naturally distinct strata (e.g., departments, floors) before taking random samples.",
+        "step_by_step": [
+          "Identify relevant divisions in the building (floors, departments).",
+          "Recommend sampling proportionally from each division."
+        ],
+        "common_pitfalls": "Suggesting another biased method, such as voluntary response."
+      }
+    }
+  ]
+}

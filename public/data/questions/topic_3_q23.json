@@ -1,0 +1,110 @@
+{
+  "id": "topic_3_q23",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 23,
+  "question_text": "Triangle ABC has $\\mathrm{AB} = 17\\text{ cm}$, $\\mathrm{AC} = 19\\text{ cm}$, and its area is $120\\text{ cm}^2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a diagram to display this information.",
+      "final_answer": "$[Diagram]$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct diagram of triangle ABC with sides 17 cm, 19 cm, and Area = 120 cm^2"
+        }
+      ],
+      "solution": "[Diagram of triangle ABC with AB = 17 cm, AC = 19 cm, and labeled Area = 120 cm^2]",
+      "ai_explanation": {
+        "concept_rule": "Sketch and label the given side lengths and area on the triangle.",
+        "step_by_step": [
+          "Draw triangle ABC.",
+          "Label side lengths $AB = 17\\text{ cm}$ and $AC = 19\\text{ cm}$.",
+          "Note that $\\text{Area} = 120\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "None."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Determine the measure of $\\mathrm{B\\widehat{A}C}$.",
+      "final_answer": "$48.0^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equation Area = 1/2 * b * c * sin BAC = 120"
+        },
+        {
+          "code": "M1",
+          "desc": "Rearrange to solve for sin BAC"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate acute angle BAC to obtain approximately 48.0°"
+        }
+      ],
+      "solution": "$$\\text{Area} = 120\\text{ cm}^2$$\n$$\\therefore \\frac{1}{2} \\times 17 \\times 19 \\times \\sin\\text{B}\\hat{\\text{A}}\\text{C} = 120$$\n$$\\therefore \\sin\\text{B}\\hat{\\text{A}}\\text{C} = \\frac{120 \\times 2}{17 \\times 19}$$\n$$\\therefore \\sin\\text{B}\\hat{\\text{A}}\\text{C} = \\frac{240}{323}$$\n$$\\therefore \\text{B}\\hat{\\text{A}}\\text{C} = \\sin^{-1}\\left(\\frac{240}{323}\\right) \\approx 48.0^{\\circ}$$",
+      "ai_explanation": {
+        "concept_rule": "Rearrange the sine area formula $\\text{Area} = \\frac{1}{2}bc\\sin A$ to solve for angle $A$.",
+        "step_by_step": [
+          "Substitute known values: $\\frac{1}{2}(17)(19)\\sin(\\text{B}\\hat{\\text{A}}\\text{C}) = 120$.",
+          "Simplify: $\\frac{323}{2}\\sin(\\text{B}\\hat{\\text{A}}\\text{C}) = 120 \\implies \\sin(\\text{B}\\hat{\\text{A}}\\text{C}) = \\frac{240}{323}$.",
+          "Evaluate $\\text{B}\\hat{\\text{A}}\\text{C} = \\sin^{-1}\\left(\\frac{240}{323}\\right) \\approx 48.0^{\\circ}$."
+        ],
+        "common_pitfalls": "Forgetting to consider whether the problem specifies an acute or obtuse angle (the acute value is given here)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Determine the length of the remaining side.",
+      "final_answer": "$14.8\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use cosine rule to find length BC"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate length BC to obtain approximately 14.8 cm"
+        }
+      ],
+      "solution": "By the cosine rule:\n$$\\text{BC}^2 \\approx 17^2 + 19^2 - 2(17)(19)\\cos 48.0^{\\circ}$$\n$$\\therefore \\text{BC} \\approx \\sqrt{17^2 + 19^2 - 2(17)(19)\\cos 48.0^{\\circ}}$$\n$$\\therefore \\text{BC} \\approx 14.8\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "Use the cosine rule $a^2 = b^2 + c^2 - 2bc\\cos A$ to find the side opposite the known angle.",
+        "step_by_step": [
+          "Substitute $b = 19$, $c = 17$, and $A = 48.0^{\\circ}$ into the cosine formula.",
+          "Compute $\\text{BC}^2 \\approx 289 + 361 - 2(17)(19)\\cos(48.0^{\\circ}) = 650 - 646\\cos(48.0^{\\circ})$.",
+          "Take the square root: $\\text{BC} \\approx 14.8\\text{ cm}$."
+        ],
+        "common_pitfalls": "Order of operations: subtracting $2bc$ before multiplying by $\\cos A$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the volume of a triangular prism with triangular cross-section ABC, and with length $13.5\\text{ cm}$.",
+      "final_answer": "$1620\\text{ cm}^3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use formula Volume = cross-sectional area * length"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate volume as 1620 cm^3"
+        }
+      ],
+      "solution": "$$\\begin{aligned} \\text{Volume} &= \\text{cross-sectional area} \\times \\text{length} \\\\ &= 120 \\times 13.5 \\\\ &= 1620\\text{ cm}^3 \\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The volume of a prism is the product of its cross-sectional area and length/height.",
+        "step_by_step": [
+          "Identify cross-sectional area $= 120\\text{ cm}^2$.",
+          "Multiply by the length of the prism, $13.5\\text{ cm}$.",
+          "$\\text{Volume} = 120 \\times 13.5 = 1620\\text{ cm}^3$."
+        ],
+        "common_pitfalls": "Dividing by 3 as if it were a pyramid instead of a prism."
+      }
+    }
+  ]
+}

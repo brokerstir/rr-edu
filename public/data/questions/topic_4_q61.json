@@ -1,0 +1,89 @@
+{
+  "id": "topic_4_q61",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 61,
+  "question_text": "The time taken for a skier to complete a particular downhill run is normally distributed with mean $45\\text{ seconds}$ and standard deviation $4\\text{ seconds}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the probability that the skier completes one downhill run in under 40 seconds.",
+      "final_answer": "$0.106$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $P(X < 40)$ with $X \\sim \\text{N}(45, 4^2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating probability $0.106$"
+        }
+      ],
+      "solution": "Let the completion time of a randomly selected run be $X$ seconds.\n\n$X \\sim \\text{N}(45, 4^2)$\n\n$P(X < 40) \\approx 0.106$",
+      "ai_explanation": {
+        "concept_rule": "Evaluating lower tail of a normal distribution with mean $\\mu=45$ and standard deviation $\\sigma=4$.",
+        "step_by_step": [
+          "Identify $X \\sim \\text{N}(45, 16)$, so $\\sigma = 4$.",
+          "Find $P(X < 40)$ using Normal CD.",
+          "Result is $0.1056... \\approx 0.106$."
+        ],
+        "common_pitfalls": "Entering variance $16$ as standard deviation instead of $4$."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the probability that the skier completes two consecutive downhill runs in under 40 seconds each.",
+      "final_answer": "$0.0112$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Squaring the probability of a single run under 40 seconds"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $[P(X < 40)]^2 \\approx 0.0112$"
+        }
+      ],
+      "solution": "$P(\\text{two consecutive runs under } 40 \\text{ seconds}) = [P(X < 40)]^2 \\approx 0.0112$",
+      "ai_explanation": {
+        "concept_rule": "Product rule for independent events: $P(A \\cap B) = P(A) \\times P(B)$.",
+        "step_by_step": [
+          "Take the probability of one run under 40 seconds: $p \\approx 0.10565$.",
+          "Square the value for two independent consecutive runs: $p^2$.",
+          "Evaluate to get $0.01116... \\approx 0.0112$."
+        ],
+        "common_pitfalls": "Squaring the rounded value ($0.106^2 = 0.011236$) instead of using the unrounded value."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "The skier completes a total of 60 independent runs. How many times would you expect the run to take between 44 seconds and 47 seconds?",
+      "final_answer": "$17$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating probability $P(44 \\le X \\le 47)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Multiplying calculated probability by sample size $n = 60$"
+        },
+        {
+          "code": "A1",
+          "desc": "Rounding to the nearest whole number: 17 runs"
+        }
+      ],
+      "solution": "$P(44 \\le X \\le 47) \\approx 0.290$\n\n$\\therefore$ we expect about $0.290 \\times 60 \\approx 17$ runs to take between 44 seconds and 47 seconds.",
+      "ai_explanation": {
+        "concept_rule": "Expected value of a binomial count: $\\text{E}(Y) = n \\times p$.",
+        "step_by_step": [
+          "Compute $P(44 \\le X \\le 47) \\approx 0.29017$.",
+          "Multiply the probability by total number of runs: $60 \\times 0.29017 \\approx 17.41$.",
+          "State expectation as approximately 17 runs."
+        ],
+        "common_pitfalls": "Leaving the expected number as a decimal without stating the integer approximation if whole counts are expected."
+      }
+    }
+  ]
+}

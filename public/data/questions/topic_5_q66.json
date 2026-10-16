@@ -1,0 +1,68 @@
+{
+  "id": "topic_5_q66",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 66,
+  "question_text": "Show that $\\cos^4 x = \\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$. Hence find $\\int \\cos^4 x\\,dx$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $\\cos^4 x = \\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$.",
+      "final_answer": "$\\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express $\\cos^4 x$ as $(\\cos^2 x)^2$ and apply $\\cos^2 x = \\frac{1}{2}\\cos 2x + \\frac{1}{2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Expand square and apply identity to $\\cos^2 2x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Combine constant and cosine terms correctly"
+        }
+      ],
+      "solution": "$\\cos^4 x = (\\cos^2 x)^2 = \\left(\\frac{1}{2}\\cos 2x + \\frac{1}{2}\\right)^2\\quad \\{\\text{double angle formula}\\} = \\frac{1}{4}\\cos^2 2x + \\frac{1}{2}\\cos 2x + \\frac{1}{4} = \\frac{1}{4}\\left(\\frac{1}{2}\\cos 4x + \\frac{1}{2}\\right) + \\frac{1}{2}\\cos 2x + \\frac{1}{4}\\quad \\{\\text{double angle formula}\\} = \\frac{1}{8}\\cos 4x + \\frac{1}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{4} = \\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$",
+      "ai_explanation": {
+        "concept_rule": "Successive application of the cosine power-reduction/double-angle identity $\\cos^2\\theta = \\frac{1 + \\cos 2\\theta}{2}$.",
+        "step_by_step": [
+          "Write $\\cos^4 x = (\\cos^2 x)^2 = \\left(\\frac{1}{2}\\cos 2x + \\frac{1}{2}\\right)^2$.",
+          "Expand the square: $\\frac{1}{4}\\cos^2 2x + \\frac{1}{2}\\cos 2x + \\frac{1}{4}$.",
+          "Use the identity again on $\\cos^2 2x$: $\\cos^2 2x = \\frac{1}{2}\\cos 4x + \\frac{1}{2}$.",
+          "Substitute and expand: $\\frac{1}{8}\\cos 4x + \\frac{1}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{4}$.",
+          "Combine constant terms $\\frac{1}{8} + \\frac{1}{4} = \\frac{3}{8}$."
+        ],
+        "common_pitfalls": "Algebraic mistakes when expanding the squared bracket, or forgetting to double the argument again ($2x \\to 4x$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $\\int \\cos^4 x\\,dx$.",
+      "final_answer": "$\\frac{3}{8}x + \\frac{1}{4}\\sin 2x + \\frac{1}{32}\\sin 4x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute expansion from part (a) into integral"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate each term correctly and include constant $c$"
+        }
+      ],
+      "solution": "$\\int \\cos^4 x\\,dx = \\int \\left(\\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x\\right)dx\\quad \\{\\text{using a}\\} = \\frac{3}{8}x + \\frac{1}{4}\\sin 2x + \\frac{1}{32}\\sin 4x + c$",
+      "ai_explanation": {
+        "concept_rule": "Integrate a trigonometric polynomial term by term using $\\int \\cos(kx)\\,dx = \\frac{1}{k}\\sin(kx)$.",
+        "step_by_step": [
+          "Replace $\\cos^4 x$ with the expanded form from part (a): $\\frac{3}{8} + \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$.",
+          "Integrate $\\frac{3}{8}$ to get $\\frac{3}{8}x$.",
+          "Integrate $\\frac{1}{2}\\cos 2x$ to get $\\frac{1}{2} \\times \\frac{1}{2}\\sin 2x = \\frac{1}{4}\\sin 2x$.",
+          "Integrate $\\frac{1}{8}\\cos 4x$ to get $\\frac{1}{8} \\times \\frac{1}{4}\\sin 4x = \\frac{1}{32}\\sin 4x$.",
+          "Combine terms and add $+ c$."
+        ],
+        "common_pitfalls": "Forgetting to divide by the inner coefficient (e.g. dividing by 4 for the $\\cos 4x$ term)."
+      }
+    }
+  ]
+}

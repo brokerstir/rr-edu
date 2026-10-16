@@ -1,0 +1,65 @@
+{
+  "id": "topic_4_q51",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 51,
+  "question_text": "5% of all items coming off a production line are defective. The manufacturer packages the items in boxes of six, and guarantees a refund if more than two items in a box are defective.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "On what percentage of boxes will the manufacturer have to pay a refund?",
+      "final_answer": "$0.223\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Defining $X \\sim \\text{B}(6, 0.05)$ and setting up $P(X > 2) = P(X \\ge 3)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating probability $\\approx 0.00223$ and converting to percentage $0.223\\%$"
+        }
+      ],
+      "solution": "Let $X$ be the number of defective items.\n$n = 6$, so $X = 0, 1, 2, 3, 4, 5,$ or $6$, and $p = 5\\% = 0.05$.\n$\\therefore X \\sim \\text{B}(6, 0.05)$\nUsing technology:\n$$P(X > 2) = P(X \\ge 3) \\approx 0.00223$$\n$\\therefore$ the manufacturer will have to pay a refund on about $0.00223 \\times 100\\% \\approx 0.223\\%$ of boxes.",
+      "ai_explanation": {
+        "concept_rule": "A refund is paid when there are more than 2 defective items in a box of 6 items, modelled by a binomial distribution.",
+        "step_by_step": [
+          "State distribution: $X \\sim \\text{B}(6, 0.05)$.",
+          "Translate 'more than 2' to $X \\ge 3$.",
+          "Compute $P(X \\ge 3) \\approx 0.00223$ using technology.",
+          "Multiply by $100\\%$ to express as a percentage: $0.223\\%$."
+        ],
+        "common_pitfalls": "Computing $P(X \\ge 2)$ instead of $P(X \\ge 3)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Patrick purchases 10 boxes. Find the probability that he will get a refund for exactly 1 box.",
+      "final_answer": "$0.0219$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Defining $Y \\sim \\text{B}(10, 0.00223)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying binomial formula for $P(Y = 1)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final answer of approximately $0.0219$"
+        }
+      ],
+      "solution": "Let $Y$ be the number of boxes refunded.\n$n = 10$, so $Y = 0, 1, 2, 3, \\dots, 10$, and $p \\approx 0.00223$ {from a}\n$\\therefore Y \\sim \\text{B}(10, 0.00223)$\n$$P(Y = 1) \\approx \\binom{10}{1}(0.00223)^1(1 - 0.00223)^9 \\approx 0.0219$$\nSo, the probability that Patrick will get a refund for exactly 1 box is about $0.0219$.",
+      "ai_explanation": {
+        "concept_rule": "The number of refunded boxes follows a second binomial distribution where the probability of success is the answer from part a.",
+        "step_by_step": [
+          "Set up the new variable $Y \\sim \\text{B}(10, 0.00223)$.",
+          "Calculate $P(Y = 1) = 10 \\times (0.00223) \\times (0.99777)^9$.",
+          "Obtain $0.0219$."
+        ],
+        "common_pitfalls": "Premature rounding of $p$ from part (a)."
+      }
+    }
+  ]
+}

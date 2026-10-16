@@ -1,0 +1,85 @@
+{
+  "id": "topic_3_q22",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 22,
+  "question_text": "Triangle ABC has $\\mathrm{AB} = 8\\text{ cm}$, $\\mathrm{BC} = 10\\text{ cm}$, and $\\mathrm{AC} = 12\\text{ cm}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a diagram clearly showing this information.",
+      "final_answer": "$[Diagram]$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct diagram of triangle ABC with sides 8 cm, 10 cm, 12 cm"
+        }
+      ],
+      "solution": "[Diagram of triangle ABC with side lengths AB = 8 cm, BC = 10 cm, AC = 12 cm]",
+      "ai_explanation": {
+        "concept_rule": "Construct a triangle labeled with given side lengths opposite their corresponding vertices.",
+        "step_by_step": [
+          "Draw triangle ABC.",
+          "Label side lengths: $AB = 8\\text{ cm}$, $BC = 10\\text{ cm}$, $AC = 12\\text{ cm}$."
+        ],
+        "common_pitfalls": "Mislabelling sides opposite the wrong vertices."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the smallest angle in triangle ABC.",
+      "final_answer": "$41.4^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Recognize that the smallest angle is opposite the shortest side AB"
+        },
+        {
+          "code": "M1",
+          "desc": "Use cosine rule to find cos(BCA)"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle BCA to obtain approximately 41.4°"
+        }
+      ],
+      "solution": "The smallest angle in triangle ABC is opposite the shortest side.\n$\\therefore \\text{B}\\hat{\\text{C}}\\text{A}$ is the smallest angle.\nBy the cosine rule:\n$$\\cos\\text{B}\\hat{\\text{C}}\\text{A} = \\frac{12^2 + 10^2 - 8^2}{2 \\times 12 \\times 10}$$\n$$\\therefore \\cos\\text{B}\\hat{\\text{C}}\\text{A} = \\frac{180}{240} = \\frac{3}{4}$$\n$$\\therefore \\text{B}\\hat{\\text{C}}\\text{A} = \\cos^{-1}\\left(\\frac{3}{4}\\right) \\approx 41.4^{\\circ}$$",
+      "ai_explanation": {
+        "concept_rule": "In any triangle, the smallest angle is opposite the shortest side.",
+        "step_by_step": [
+          "Compare sides: $AB = 8$, $BC = 10$, $AC = 12$. The shortest side is $AB = 8\\text{ cm}$.",
+          "The angle opposite $AB$ is $\\text{B}\\hat{\\text{C}}\\text{A}$ (or $\\hat{C}$).",
+          "Apply the cosine rule: $\\cos C = \\frac{12^2 + 10^2 - 8^2}{2(12)(10)} = \\frac{144 + 100 - 64}{240} = \\frac{180}{240} = \\frac{3}{4}$.",
+          "Compute $C = \\cos^{-1}(0.75) \\approx 41.4^{\\circ}$."
+        ],
+        "common_pitfalls": "Calculating the angle opposite the longest side instead of the shortest."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the area of triangle ABC.",
+      "final_answer": "$39.7\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use area formula Area = 1/2 * a * b * sin C with angle BCA"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate area to obtain approximately 39.7 cm^2"
+        }
+      ],
+      "solution": "$$\\begin{aligned} \\text{Area} &= \\frac{1}{2}ab\\sin C \\\\ &\\approx \\frac{1}{2} \\times 10 \\times 12 \\times \\sin 41.4^{\\circ} \\\\ &\\approx 39.7\\text{ cm}^2 \\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area of a triangle given two sides and the included angle is $\\frac{1}{2}ab\\sin C$.",
+        "step_by_step": [
+          "Use the two sides adjacent to angle $C$: $a = 10\\text{ cm}$ and $b = 12\\text{ cm}$.",
+          "Use the calculated angle $C \\approx 41.4^{\\circ}$.",
+          "Calculate $\\text{Area} = \\frac{1}{2}(10)(12)\\sin(41.4^{\\circ}) = 60\\sin(41.4^{\\circ}) \\approx 39.7\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Using the side opposite the angle in the $\\frac{1}{2}ab\\sin C$ formula."
+      }
+    }
+  ]
+}

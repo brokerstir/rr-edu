@@ -1,0 +1,98 @@
+{
+  "id": "topic_5_q49",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 49,
+  "question_text": "The diagram alongside shows an open trough. The total outside surface area is $27\\text{ m}^2$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $x^2 + 2xy = 27$.",
+      "final_answer": "$x^2 + 2xy = 27$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Write expression for surface area as sum of triangles and rectangles"
+        },
+        {
+          "code": "A1",
+          "desc": "Equate the total surface area to 27 to obtain the relation"
+        }
+      ],
+      "solution": "$\\text{Surface area} = \\text{area of triangles} + \\text{area of rectangles}$\n$= 2\\left(\\frac{1}{2}x^2\\right) + 2(xy)$\n$= x^2 + 2xy$\n\n$\\therefore x^2 + 2xy = 27$",
+      "ai_explanation": {
+        "concept_rule": "The total surface area of an open prism is found by summing the individual areas of all its bounding faces.",
+        "step_by_step": [
+          "Calculate the area of the two right-angled isosceles triangular faces: $2 \\times (\\frac{1}{2}x^2) = x^2$.",
+          "Calculate the area of the two rectangular sides: $2 \\times (xy) = 2xy$.",
+          "Set the total area equal to the given surface area of $27\\text{ m}^2$."
+        ],
+        "common_pitfalls": "Including an unnecessary top face or missing one of the triangular ends."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find an expression for the volume $V$ of the trough in terms of $x$ only.",
+      "final_answer": "$V = \\frac{27x}{4} - \\frac{x^3}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearrange the surface area constraint for $y$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $y$ into the volume formula $V = \\frac{1}{2}x^2 y$"
+        },
+        {
+          "code": "A1",
+          "desc": "Expand and simplify to obtain the required form for $V$"
+        }
+      ],
+      "solution": "From a, $x^2 + 2xy = 27$\n$\\therefore 2xy = 27 - x^2$\n$\\therefore y = \\frac{27}{2x} - \\frac{x}{2}$\n\nNow $\\text{volume} = \\text{cross-sectional area} \\times \\text{depth}$\n$\\therefore V = \\frac{1}{2}x^2 y$\n$\\therefore V = \\frac{1}{2}x^2\\left(\\frac{27}{2x} - \\frac{x}{2}\\right)$\n$\\therefore V = \\frac{27x}{4} - \\frac{x^3}{4}$",
+      "ai_explanation": {
+        "concept_rule": "The volume of a prism is given by $\\text{Cross-sectional Area} \\times \\text{Length}$. Expressing length $y$ in terms of $x$ gives volume as a single-variable function.",
+        "step_by_step": [
+          "Express $y$ in terms of $x$ from the surface area equation: $y = \\frac{27 - x^2}{2x}$.",
+          "Write the volume formula: $V = \\frac{1}{2}x^2 y$.",
+          "Substitute $y$ into $V$ and expand the terms."
+        ],
+        "common_pitfalls": "Algebraic errors when distributing $\\frac{1}{2}x^2$ into the parentheses."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence show that the volume of the trough is maximised if $x = y = 3$.",
+      "final_answer": "$x = y = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find the derivative $\\frac{dV}{dx}$ and equate to zero"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for positive $x$"
+        },
+        {
+          "code": "R1",
+          "desc": "Justify maximum using a sign diagram"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $y$ and conclude $x=y=3$"
+        }
+      ],
+      "solution": "$\\frac{dV}{dx} = \\frac{27}{4} - \\frac{3}{4}x^2$\nNow $V$ is maximised when $\\frac{dV}{dx} = 0$:\n$\\therefore \\frac{27}{4} - \\frac{3}{4}x^2 = 0$\n$\\therefore 27 - 3x^2 = 0$\n$\\therefore 3x^2 = 27$\n$\\therefore x^2 = 9$\n$\\therefore x = 3 \\quad \\{x > 0\\}$\n\nThe sign diagram of $\\frac{dV}{dx}$ shows a change from positive to negative at $x=3$.\n$\\therefore V$ is maximised when $x = 3$.\nWhen $x = 3$, $y = \\frac{27}{2(3)} - \\frac{3}{2} = \\frac{9}{2} - \\frac{3}{2} = \\frac{6}{2} = 3$.\n\nSo, $V$ is maximised when $x = y = 3$.",
+      "ai_explanation": {
+        "concept_rule": "To find dimensions that maximize volume, differentiate $V(x)$, find stationary points, verify the local maximum, and compute the other variable.",
+        "step_by_step": [
+          "Differentiate $V(x)$ with respect to $x$: $\\frac{dV}{dx} = \\frac{27}{4} - \\frac{3}{4}x^2$.",
+          "Set the derivative equal to 0 and solve: $3x^2 = 27 \\implies x = 3$.",
+          "Confirm that $x=3$ yields a maximum using a sign diagram.",
+          "Substitute $x=3$ into the equation for $y$ to get $y = 3$."
+        ],
+        "common_pitfalls": "Forgetting to evaluate the value of $y$ after finding $x$."
+      }
+    }
+  ]
+}

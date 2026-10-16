@@ -1,0 +1,146 @@
+{
+  "id": "topic_4_q24",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 24,
+  "question_text": "A jeweller measured the volume and mass of some samples of silver. He suspects that one of the samples might be fake. The results are listed in the table: Sample: A, B, C, D, E, F, G, H, I, J, K, L; Volume ($x\\text{ cm}^3$): 3, 6, 4, 7, 16, 8, 5, 12, 9, 6, 10, 11; Mass ($y\\text{ g}$): 40, 95, 50, 160, 285, 130, 65, 210, 155, 90, 170, 190.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a scatter diagram for this data.",
+      "final_answer": "$Scatter plot plotted$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Accurate scatter plot of volume versus mass"
+        }
+      ],
+      "solution": "Plot the points $(x, y)$ on the axes: $(3, 40), (6, 95), (4, 50), (7, 160), (16, 285), (8, 130), (5, 65), (12, 210), (9, 155), (6, 90), (10, 170), (11, 190)$.",
+      "ai_explanation": {
+        "concept_rule": "A scatter plot plots independent variable $x$ (Volume) against dependent variable $y$ (Mass).",
+        "step_by_step": [
+          "Set up horizontal axis for Volume from 0 to 18 and vertical axis for Mass from 0 to 360.",
+          "Plot all 12 sample points."
+        ],
+        "common_pitfalls": "Incorrectly plotting point D $(7, 160)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate Pearson's product-moment correlation coefficient $r$.",
+      "final_answer": "$r \\approx 0.980$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using technology to find r"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of r rounded to 3 significant figures"
+        }
+      ],
+      "solution": "From linear regression calculation on all 12 points: $r \\approx 0.98019806$. So, $r \\approx 0.980$.",
+      "ai_explanation": {
+        "concept_rule": "Compute the correlation coefficient $r$ including all data points using linear regression.",
+        "step_by_step": [
+          "Input the 12 pairs of data into the calculator.",
+          "Calculate linear regression $y = ax + b$.",
+          "Read $r = 0.980198... \\approx 0.980$."
+        ],
+        "common_pitfalls": "Rounding errors or prematurely excluding the suspected outlier."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Describe the relationship which appears to exist between the volume and mass of the samples of silver.",
+      "final_answer": "$Strong, positive correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct interpretation of correlation"
+        }
+      ],
+      "solution": "There appears to be a strong, positive correlation between the volume of a sample of silver and its mass.",
+      "ai_explanation": {
+        "concept_rule": "Values of $r$ close to 1 indicate a strong positive linear relationship.",
+        "step_by_step": [
+          "Notice $r \\approx 0.980 > 0.8$.",
+          "Conclude strong and positive correlation."
+        ],
+        "common_pitfalls": "Omitting the word 'positive' or 'strong'."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Do you agree with the jeweller that there is a fake sample?",
+      "final_answer": "$Yes, sample D $(7, 160)$ is an outlier$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identifying outlier sample D and concluding agreement with the jeweller"
+        }
+      ],
+      "solution": "The data point $(7, 160)$ which corresponds to sample D appears to be an outlier. We therefore agree with the jeweller that there is a fake sample.",
+      "ai_explanation": {
+        "concept_rule": "An outlier is a data point that deviates significantly from the overall pattern of the rest of the data.",
+        "step_by_step": [
+          "Examine the scatter plot to find which point lies away from the trend line.",
+          "Identify $(7, 160)$ as lying substantially higher than expected for volume 7.",
+          "Conclude sample D is the fake sample."
+        ],
+        "common_pitfalls": "Identifying the wrong point or failing to state agreement with the jeweller."
+      }
+    },
+    {
+      "subpart": "e i",
+      "stem": "Remove the suspect value from the data and find the equation of the regression line for the remaining data.",
+      "final_answer": "$y \\approx 19.5x - 24.7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recalculating linear regression without outlier D"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct regression equation"
+        }
+      ],
+      "solution": "Using technology with sample D removed: $a \\approx 19.4604$, $b \\approx -24.6763$. The regression line is $y \\approx 19.5x - 24.7$.",
+      "ai_explanation": {
+        "concept_rule": "Removing an outlier provides a more accurate least-squares regression line for the genuine data.",
+        "step_by_step": [
+          "Remove sample D $(7, 160)$ from the dataset.",
+          "Compute the linear regression equation using the remaining 11 data points.",
+          "Round coefficients appropriately: $a \\approx 19.5$, $b \\approx -24.7$."
+        ],
+        "common_pitfalls": "Keeping the outlier in the data list while calculating part e."
+      }
+    },
+    {
+      "subpart": "e ii",
+      "stem": "Use your equation to find the expected mass of the sample of silver with the same volume as the suspect sample.",
+      "final_answer": "$112\\text{ g}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting x = 7 into the updated regression line"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expected mass"
+        }
+      ],
+      "solution": "When $x = 7$, $y \\approx 19.5(7) - 24.7 = 136.5 - 24.7 = 111.8 \\approx 112$. So, a sample of silver with volume $7\\text{ cm}^3$ would weigh approximately $112\\text{ g}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given value of $x$ into the regression model to estimate the corresponding $y$.",
+        "step_by_step": [
+          "Substitute $x = 7$ into $y = 19.5x - 24.7$.",
+          "Calculate $19.5 \\times 7 - 24.7 = 111.8$.",
+          "Round to an appropriate integer: $112\\text{ g}$."
+        ],
+        "common_pitfalls": "Using the original regression equation with the outlier included."
+      }
+    }
+  ]
+}

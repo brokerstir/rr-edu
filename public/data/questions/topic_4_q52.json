@@ -1,0 +1,44 @@
+{
+  "id": "topic_4_q52",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 52,
+  "question_text": "A hundred seeds are planted in ten rows of ten seeds per row. Assuming that each seed independently germinates with probability $\\frac{1}{2}$, find the probability that the row with the maximum number of germinations contains at least 8 seedlings.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "A hundred seeds are planted in ten rows of ten seeds per row. Assuming that each seed independently germinates with probability $\\frac{1}{2}$, find the probability that the row with the maximum number of germinations contains at least 8 seedlings.",
+      "final_answer": "$0.430$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Defining distribution $X \\sim \\text{B}(10, \\frac{1}{2})$ for germinations in a row"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $P(X \\ge 8) = \\frac{7}{128}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up $Y \\sim \\text{B}(10, \\frac{7}{128})$ and using complement $P(Y \\ge 1) = 1 - P(Y = 0)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining final probability $\\approx 0.430$"
+        }
+      ],
+      "solution": "Let $X$ be the number of germinations in one row.\n$n = 10$, so $X = 0, 1, 2, 3, \\dots, 10$, and $p = \\frac{1}{2}$\n$\\therefore X \\sim \\text{B}(10, \\frac{1}{2})$\n$$P(X \\ge 8) = P(X = 8) + P(X = 9) + P(X = 10)$$\n$$= \\binom{10}{8}\\left(\\frac{1}{2}\\right)^8\\left(\\frac{1}{2}\\right)^2 + \\binom{10}{9}\\left(\\frac{1}{2}\\right)^9\\left(\\frac{1}{2}\\right)^1 + \\binom{10}{10}\\left(\\frac{1}{2}\\right)^{10}\\left(\\frac{1}{2}\\right)^0$$\n$$= \\frac{45 + 10 + 1}{1024} = \\frac{56}{1024} = \\frac{7}{128}$$\nSo, the probability that at least 8 seeds germinate in one row is $\\frac{7}{128}$.\nLet $Y$ be the number of rows with at least 8 seeds germinating.\n$n = 10$, so $Y = 0, 1, 2, 3, \\dots, 10$, and $p = \\frac{7}{128}$\n$\\therefore Y \\sim \\text{B}(10, \\frac{7}{128})$\n$$P(Y \\ge 1) = 1 - P(Y = 0)$$\n$$= 1 - \\binom{10}{0}\\left(\\frac{7}{128}\\right)^0\\left(\\frac{121}{128}\\right)^{10} \\approx 0.430$$\nSo, the probability that the row with the maximum number of germinations contains at least 8 seedlings is about $0.430$.",
+      "ai_explanation": {
+        "concept_rule": "The condition 'the row with maximum germinations has at least 8' is equivalent to 'at least one row has at least 8 germinations', which can be evaluated using the complement rule.",
+        "step_by_step": [
+          "Calculate the probability of at least 8 germinating in a single row using $X \\sim \\text{B}(10, 0.5)$.",
+          "Find $P(X \\ge 8) = \\frac{7}{128}$.",
+          "Model the 10 independent rows as $Y \\sim \\text{B}(10, \\frac{7}{128})$.",
+          "Use the complement rule: $P(Y \\ge 1) = 1 - P(Y = 0) = 1 - (1 - \\frac{7}{128})^{10} \\approx 0.430$."
+        ],
+        "common_pitfalls": "Attempting to find the distribution of the maximum directly rather than realizing that $\\max(X_i) \\ge 8$ is equivalent to at least one $X_i \\ge 8$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "topic_4_q59",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 59,
+  "question_text": "The volume of drink dispensed by a coffee machine is normally distributed with mean 254 mL and standard deviation 2.3 mL.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the probability that a randomly selected drink from the machine will have volume less than 254 mL.",
+      "final_answer": "$0.5$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Deducing $P(X < 254) = 0.5$ by symmetry"
+        }
+      ],
+      "solution": "Let the volume of a randomly selected drink be $X\\text{ mL}$.\n$X \\sim \\text{N}(254, (2.3)^2)$.\nSince the normal distribution is symmetrical about the mean $\\mu = 254$:\n$$P(X < 254) = 0.5$$",
+      "ai_explanation": {
+        "concept_rule": "The normal curve is symmetric about its mean, so exactly half the probability lies below the mean.",
+        "step_by_step": [
+          "Note that the mean is $\\mu = 254$.",
+          "Observe that $X < 254$ represents the lower half of the distribution.",
+          "Conclude immediately by symmetry that $P(X < 254) = 0.5$."
+        ],
+        "common_pitfalls": "Performing unnecessary complicated numerical integration on GDC."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the percentage of drinks dispensed by the machine which have volume between 252 mL and 256 mL.",
+      "final_answer": "$0.615$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal cumulative distribution $P(252 \\le X \\le 256)$ with $\\mu = 254, \\sigma = 2.3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining probability $\\approx 0.615$ (or $61.5\\%$)"
+        }
+      ],
+      "solution": "Using technology:\nLower: $252$, Upper: $256$, $\\sigma = 2.3$, $\\mu = 254$\n$$P(252 \\le X \\le 256) \\approx 0.615$$\n$\\therefore$ about $61.5\\%$ of drinks dispensed by the machine have volume between $252\\text{ mL}$ and $256\\text{ mL}$.",
+      "ai_explanation": {
+        "concept_rule": "The probability that a normal variable lies in an interval $[a, b]$ is the area under the normal curve between $a$ and $b$.",
+        "step_by_step": [
+          "Set lower bound to 252 and upper bound to 256.",
+          "Use $\\mu = 254$ and $\\sigma = 2.3$.",
+          "Obtain $P(252 \\le X \\le 256) \\approx 0.61546 \\approx 0.615$."
+        ],
+        "common_pitfalls": "Inputting $\\sigma = 2.3^2 = 5.29$ instead of $\\sigma = 2.3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "A sample of 80 drinks is taken from the machine. Determine the number of drinks which will be expected to have volume at least two standard deviations above the mean.",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the probability $P(X \\ge \\mu + 2\\sigma) = P(X \\ge 258.6) \\approx 0.0228$"
+        },
+        {
+          "code": "M1",
+          "desc": "Multiplying the probability by total drinks $80$"
+        },
+        {
+          "code": "A1",
+          "desc": "Rounding to nearest whole number to get 2 drinks"
+        }
+      ],
+      "solution": "$$P(X \\ge 254 + 2 \\times 2.3) = P(X \\ge 258.6) \\approx 0.0228$$\n$$\\therefore \\text{we expect about } 0.0228 \\times 80 \\approx 2 \\text{ drinks to have volume at least two standard deviations above the mean.}$$",
+      "ai_explanation": {
+        "concept_rule": "Expected value of a count is given by $E(Y) = n \\times p$, where $p$ is the probability of the specified event.",
+        "step_by_step": [
+          "Find two standard deviations above the mean: $254 + 2(2.3) = 258.6$.",
+          "Compute $P(X \\ge 258.6) \\approx 0.02275 \\approx 0.0228$.",
+          "Multiply by $80$: $0.0228 \\times 80 = 1.824 \\approx 2$ drinks."
+        ],
+        "common_pitfalls": "Forgetting to multiply the probability by the sample size 80 to get the expected number."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "The machine operator guarantees that at least 95% of drinks will have volume at least 250 mL. Is the guarantee valid?",
+      "final_answer": "$Valid$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal distribution calculation for $P(X \\ge 250)$ with $\\mu = 254$ and $\\sigma = 2.3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $P(X \\ge 250) \\approx 0.959$"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that the operator's guarantee is valid as $0.959 \\ge 0.95$"
+        }
+      ],
+      "solution": "$P(X \\ge 250) \\approx 0.959$\n\n$\\therefore$ the operator's guarantee that at least $95\\%$ of drinks will have volume at least $250\\text{ mL}$ is valid.",
+      "ai_explanation": {
+        "concept_rule": "The normal cumulative distribution function is used to calculate the probability of a continuous random variable lying above a certain threshold.",
+        "step_by_step": [
+          "Identify parameters: mean $\\mu = 254$, standard deviation $\\sigma = 2.3$.",
+          "Calculate $P(X \\ge 250)$ using a normal CDF function with lower bound $250$ and upper bound $\\infty$.",
+          "Compare the resulting probability $0.959$ ($95.9\\%$) to the guaranteed threshold of $95\\%$, confirming validity."
+        ],
+        "common_pitfalls": "Using the variance instead of standard deviation in the calculator."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "A technician adjusts the machine so the standard deviation is now 2.5 mL. What effect does this have on the operator's guarantee?",
+      "final_answer": "$No longer valid$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal distribution calculation with new standard deviation $\\sigma = 2.5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $P(X \\ge 250) \\approx 0.945$"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that the guarantee is no longer valid as $94.5\\% < 95\\%$"
+        }
+      ],
+      "solution": "Suppose $X \\sim \\text{N}(254, (2.5)^2)$.\n\n$P(X \\ge 250) \\approx 0.945$\n\n$\\therefore$ about $94.5\\%$ of drinks will have volume at least $250\\text{ mL}$.\n\nSo, the operator's guarantee is no longer valid.",
+      "ai_explanation": {
+        "concept_rule": "Changes in standard deviation alter the spread of the distribution, affecting tail probabilities.",
+        "step_by_step": [
+          "Update standard deviation to $\\sigma = 2.5$.",
+          "Calculate $P(X \\ge 250) \\approx 0.9452$.",
+          "Observe that $94.5\\%$ is strictly less than the promised $95\\%$, hence the guarantee fails."
+        ],
+        "common_pitfalls": "Forgetting to draw the comparison conclusion explicitly."
+      }
+    }
+  ]
+}

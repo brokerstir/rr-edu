@@ -1,0 +1,112 @@
+{
+  "id": "topic_4_q63",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 63,
+  "question_text": "The length of a zucchini is normally distributed with mean $24.3\\text{ cm}$ and standard deviation $6.83\\text{ cm}$. A supermarket buying zucchinis in bulk finds that 15% of them are too small and 20% of them are too large for sale. The remainder, with lengths between $a\\text{ cm}$ and $b\\text{ cm}$, are able to be sold.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $a$ and $b$.",
+      "final_answer": "$a \\approx 17.2,\\; b \\approx 30.0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $P(X < a) = 0.15$ and using inverse normal to find $a$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $a \\approx 17.2$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up $P(X > b) = 0.2 \\implies P(X \\le b) = 0.8$ and using inverse normal"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $b \\approx 30.0$"
+        }
+      ],
+      "solution": "$15\\%$ of zucchinis are too small.\n$P(X < a) = 0.15$\n$\\therefore a \\approx 17.2$\n\n$20\\%$ of zucchinis are too large.\n$P(X > b) = 0.2$\n$\\therefore P(X \\le b) = 0.8$\n$\\therefore b \\approx 30.0$",
+      "ai_explanation": {
+        "concept_rule": "Using Inverse Normal distribution to determine cut-off boundaries for percentiles.",
+        "step_by_step": [
+          "For $a$: $P(X < a) = 0.15$ with $\\mu = 24.3, \\sigma = 6.83$. Using inverse normal (area = 0.15, tail = left) yields $a \\approx 17.22 \\approx 17.2$.",
+          "For $b$: $P(X > b) = 0.20$, so $P(X \\le b) = 0.80$. Using inverse normal (area = 0.80, tail = left) yields $b \\approx 30.048 \\approx 30.0$."
+        ],
+        "common_pitfalls": "Forgetting to take $1 - 0.2 = 0.8$ when using left-tailed inverse normal function for $b$."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "A zucchini is chosen at random. Find the probability that it is of saleable length.",
+      "final_answer": "$0.65$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the complement of too small and too large zucchinis: $1 - 0.2 - 0.15$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $0.65$"
+        }
+      ],
+      "solution": "$P(\\text{saleable length}) = 1 - 0.2 - 0.15 = 0.65$",
+      "ai_explanation": {
+        "concept_rule": "Total probability of mutually exclusive regions equals 1.",
+        "step_by_step": [
+          "Recognize that saleable zucchinis are neither too small nor too large.",
+          "Compute $1 - P(\\text{too small}) - P(\\text{too large}) = 1 - 0.15 - 0.20 = 0.65$."
+        ],
+        "common_pitfalls": "Recalculating with normal CDF using rounded $a$ and $b$ values rather than direct subtraction."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "A zucchini is chosen at random. Find the probability that its length lies between 20 cm and 26 cm.",
+      "final_answer": "$0.334$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal distribution calculation for $P(20 \\le X \\le 26)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $0.334$"
+        }
+      ],
+      "solution": "$P(20 \\le X \\le 26) \\approx 0.334$",
+      "ai_explanation": {
+        "concept_rule": "Standard Normal CDF evaluation for a specific interval $[20, 26]$.",
+        "step_by_step": [
+          "Enter lower limit $20$, upper limit $26$, $\\sigma = 6.83$, $\\mu = 24.3$.",
+          "Calculate $P(20 \\le X \\le 26) \\approx 0.3338$.",
+          "Round to 3 significant figures: $0.334$."
+        ],
+        "common_pitfalls": "Entering limits in reverse order."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "A zucchini is chosen at random. Find the probability that its length is less than 24.3 cm.",
+      "final_answer": "$0.5$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Recognizing that $24.3$ is the mean $\\mu$, so the probability is $0.5$"
+        }
+      ],
+      "solution": "$P(X < 24.3) = 0.5$",
+      "ai_explanation": {
+        "concept_rule": "Symmetry of the normal distribution about the mean $\\mu$.",
+        "step_by_step": [
+          "Observe that the given value $24.3$ is the mean $\\mu$.",
+          "By symmetry of the normal curve, half the area lies below the mean.",
+          "Hence $P(X < \\mu) = 0.5$."
+        ],
+        "common_pitfalls": "Attempting lengthy calculations rather than using the property of symmetry."
+      }
+    }
+  ]
+}

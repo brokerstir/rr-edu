@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q10",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 10,
+  "question_text": "Suppose $y = (x - 2)^2(2x - 1)$. For what values of $x$ does $\\frac{dy}{dx} = 36$?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Suppose $y = (x - 2)^2(2x - 1)$. For what values of $x$ does $\\frac{dy}{dx} = 36$?",
+      "final_answer": "$x = -1\\text{ or } 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $y$ using the product rule and factoring $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Equating $\\frac{dy}{dx} = 36$ to obtain a quadratic equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Factoring the quadratic equation $(x + 1)(x - 4) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding both values $x = -1$ and $x = 4$"
+        }
+      ],
+      "solution": "$y = (x - 2)^2(2x - 1)$\n$\\therefore \\frac{dy}{dx} = 2(x - 2)(2x - 1) + (x - 2)^2(2) \\quad \\{\\text{product rule}\\}\n= 2(x - 2)[(2x - 1) + (x - 2)]\n= 2(x - 2)(3x - 3)\n= 6(x - 2)(x - 1)$\n\nNow $\\frac{dy}{dx} = 36$ where $6(x - 2)(x - 1) = 36$\n$\\therefore (x - 2)(x - 1) = 6\n\\therefore x^2 - 3x + 2 = 6\n\\therefore x^2 - 3x - 4 = 0\n\\therefore (x + 1)(x - 4) = 0\n\\therefore x = -1 \\text{ or } 4$",
+      "ai_explanation": {
+        "concept_rule": "Differentiate using the product rule, simplify the expression by factoring out common terms, set equal to the given gradient, and solve the quadratic.",
+        "step_by_step": [
+          "Apply the product rule: $\\frac{dy}{dx} = 2(x - 2)(2x - 1) + 2(x - 2)^2$.",
+          "Factor out $2(x - 2)$: $2(x - 2)(2x - 1 + x - 2) = 2(x - 2)(3x - 3) = 6(x - 2)(x - 1)$.",
+          "Set equal to $36$: $6(x - 2)(x - 1) = 36 \\implies (x - 2)(x - 1) = 6$.",
+          "Expand and rearrange: $x^2 - 3x + 2 = 6 \\implies x^2 - 3x - 4 = 0$.",
+          "Factor: $(x + 1)(x - 4) = 0$, giving $x = -1$ or $x = 4$."
+        ],
+        "common_pitfalls": "Expanding fully before differentiating, which takes longer and increases algebraic mistakes."
+      }
+    }
+  ]
+}

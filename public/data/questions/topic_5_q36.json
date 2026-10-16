@@ -1,0 +1,97 @@
+{
+  "id": "topic_5_q36",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 36,
+  "question_text": "Consider $g(x) = 3 - 2\\cos 2x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $g'(x)$.",
+      "final_answer": "$g'(x) = 4\\sin 2x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating cosine using chain rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative g'(x) = 4 sin 2x"
+        }
+      ],
+      "solution": "$g(x) = 3 - 2\\cos 2x$\n$\\therefore g'(x) = -2(-2\\sin 2x) = 4\\sin 2x$",
+      "ai_explanation": {
+        "concept_rule": "The derivative of $\\cos(kx)$ is $-k\\sin(kx)$.",
+        "step_by_step": [
+          "Differentiate constant $3$ to get $0$.",
+          "Differentiate $-2\\cos 2x$: $\\frac{d}{dx}[\\cos 2x] = -2\\sin 2x$.",
+          "Multiply by $-2$: $(-2) \\times (-2\\sin 2x) = 4\\sin 2x$."
+        ],
+        "common_pitfalls": "Missing the double negative sign when differentiating $-\\cos(2x)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Sketch $y = g'(x)$ for $-\\pi \\leqslant x \\leqslant \\pi$.",
+      "final_answer": "$Graph of $y = 4\\sin 2x$ sketched for $-\\pi \\leqslant x \\leqslant \\pi$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct sine wave with amplitude 4 and period pi"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain from -pi to pi showing 5 x-intercepts"
+        },
+        {
+          "code": "A1",
+          "desc": "Stationary point/minimum M clearly indicated"
+        }
+      ],
+      "solution": "Graph of $y = g'(x) = 4\\sin 2x$:\n- Amplitude is $4$.\n- Period is $\\frac{2\\pi}{2} = \\pi$.\n- Range is $[-4, 4]$.\n- The curve passes through $(-\\pi, 0), \\left(-\\frac{3\\pi}{4}, 4\\right), \\left(-\\frac{\\pi}{2}, 0\\right), \\left(-\\frac{\\pi}{4}, -4\\right), (0, 0), \\left(\\frac{\\pi}{4}, 4\\right), \\left(\\frac{\\pi}{2}, 0\\right), \\left(\\frac{3\\pi}{4}, -4\\right), (\\pi, 0)$.\n- The point $M$ is marked at the minimum $\\left(-\\frac{\\pi}{4}, -4\\right)$.",
+      "ai_explanation": {
+        "concept_rule": "The function $A\\sin(Bx)$ has amplitude $|A|$ and period $\\frac{2\\pi}{B}$.",
+        "step_by_step": [
+          "Determine amplitude $|4| = 4$ and period $\\frac{2\\pi}{2} = \\pi$.",
+          "Plot standard key points over two full cycles (from $-\\pi$ to $\\pi$).",
+          "Mark the roots, peaks, and troughs, labeling point $M$."
+        ],
+        "common_pitfalls": "Using the wrong period ($2\\pi$ instead of $\\pi$) or drawing only the positive domain $[0, \\pi]$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the number of solutions to $g'(x) = 0$ for $-\\pi \\leqslant x \\leqslant \\pi$.",
+      "final_answer": "$5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Connecting solutions of g'(x) = 0 to x-intercepts of g'(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating 5 solutions"
+        }
+      ],
+      "solution": "From **b**, the graph of $y = g'(x)$ cuts the $x$-axis $5$ times.\n$\\therefore$ there are $5$ solutions to $g'(x) = 0$ for $-\\pi \\leqslant x \\leqslant \\pi$.",
+      "ai_explanation": {
+        "concept_rule": "The solutions to $g'(x) = 0$ correspond directly to the $x$-intercepts of the graph $y = g'(x)$.",
+        "step_by_step": [
+          "Count the intersections of $y = g'(x)$ with the $x$-axis on $[-\\pi, \\pi]$.",
+          "The intercepts occur at $x = -\\pi, -\\frac{\\pi}{2}, 0, \\frac{\\pi}{2}, \\pi$.",
+          "Count the total number of intercepts: 5."
+        ],
+        "common_pitfalls": "Excluding boundary endpoints $-\\pi$ and $\\pi$ when the interval is inclusive."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Mark a point M on the sketch in b where $g'(x) = 0$ and $g''(x) > 0$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

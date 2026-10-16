@@ -1,0 +1,39 @@
+{
+  "id": "topic_4_q40",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 40,
+  "question_text": "Suppose $P(A \\cap B) = 0.2$ and $P(A' \\cap B) = 0.3$. Given that $A'$ and $B$ are independent, find $P(A' \\cup B)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Suppose $P(A \\cap B) = 0.2$ and $P(A' \\cap B) = 0.3$. Given that $A'$ and $B$ are independent, find $P(A' \\cup B)$.",
+      "final_answer": "$0.8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find $P(B)$ from the Venn diagram"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply independence condition $P(A' \\cap B) = P(A') \\times P(B)$ to find $P(A')$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $P(A' \\cup B)$ correctly to obtain $0.8$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(B) &= P(B \\cap A) + P(B \\cap A') \\\\ &= 0.2 + 0.3 \\\\ &= 0.5 \\end{aligned}$\n\nand $P(A' \\cap B) = P(A') \\times P(B)$ since $A'$ and $B$ are independent.\n$\\therefore 0.3 = 0.5 \\times P(A')$\n$\\therefore P(A') = 0.6$\n\nNow, $\\begin{aligned} P(A' \\cup B) &= P(A') + P(B) - P(A' \\cap B) \\\\ &= 0.6 + 0.5 - 0.3 \\\\ &= 0.8 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "For independent events, the probability of their intersection is the product of their individual probabilities. The union of any two events satisfies $P(E \\cup F) = P(E) + P(F) - P(E \\cap F)$.",
+        "step_by_step": [
+          "From the Venn diagram, $P(B \\cap A) = 0.2$ and $P(B \\cap A') = 0.3$, so $P(B) = 0.2 + 0.3 = 0.5$.",
+          "Use the independence of $A'$ and $B$: $P(A' \\cap B) = P(A') \\times P(B) \\implies 0.3 = P(A') \\times 0.5 \\implies P(A') = 0.6$.",
+          "Apply the addition rule: $P(A' \\cup B) = P(A') + P(B) - P(A' \\cap B) = 0.6 + 0.5 - 0.3 = 0.8$."
+        ],
+        "common_pitfalls": "Forgetting to subtract the intersection when finding the union."
+      }
+    }
+  ]
+}

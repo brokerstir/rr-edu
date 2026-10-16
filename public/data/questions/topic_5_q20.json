@@ -1,0 +1,89 @@
+{
+  "id": "topic_5_q20",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 20,
+  "question_text": "Find $\\frac{d^2y}{dx^2}$ for:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = \\frac{3}{x^2}$",
+      "final_answer": "$\\frac{d^2y}{dx^2} = \\frac{18}{x^4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the first derivative using power rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding the second derivative"
+        }
+      ],
+      "solution": "$y = \\frac{3}{x^2} = 3x^{-2}$\n$\\therefore \\frac{dy}{dx} = -6x^{-3}$\n$\\therefore \\frac{d^2y}{dx^2} = 18x^{-4} = \\frac{18}{x^4}$",
+      "ai_explanation": {
+        "concept_rule": "Power rule for differentiation applied twice: $\\frac{d}{dx}(x^n) = nx^{n-1}$.",
+        "step_by_step": [
+          "Rewrite $y = 3x^{-2}$.",
+          "First derivative: $\\frac{dy}{dx} = 3(-2)x^{-3} = -6x^{-3}$.",
+          "Second derivative: $\\frac{d^2y}{dx^2} = -6(-3)x^{-4} = 18x^{-4} = \\frac{18}{x^4}$."
+        ],
+        "common_pitfalls": "Incorrectly changing signs when multiplying negative powers."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 2x^3 + 3x^2 + 2$",
+      "final_answer": "$\\frac{d^2y}{dx^2} = 12x + 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the first derivative $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Differentiating again to find $\\frac{d^2y}{dx^2}$"
+        }
+      ],
+      "solution": "$y = 2x^3 + 3x^2 + 2$\n$\\therefore \\frac{dy}{dx} = 6x^2 + 6x$\n$\\therefore \\frac{d^2y}{dx^2} = 12x + 6$",
+      "ai_explanation": {
+        "concept_rule": "Successive differentiation of polynomials using the power rule.",
+        "step_by_step": [
+          "Differentiate $y = 2x^3 + 3x^2 + 2$ to obtain $\\frac{dy}{dx} = 6x^2 + 6x$.",
+          "Differentiate $\\frac{dy}{dx}$ to obtain $\\frac{d^2y}{dx^2} = 12x + 6$."
+        ],
+        "common_pitfalls": "Differentiating the constant term 2 as 2 instead of 0."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = \\frac{x+3}{6-x}$",
+      "final_answer": "$\\frac{d^2y}{dx^2} = \\frac{18}{(6-x)^3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the quotient rule to obtain $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying $\\frac{dy}{dx} = 9(6-x)^{-2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Applying the chain rule to obtain $\\frac{d^2y}{dx^2}$"
+        }
+      ],
+      "solution": "$y = \\frac{x+3}{6-x}$\n$\\therefore \\frac{dy}{dx} = \\frac{(1)(6-x) - (-1)(x+3)}{(6-x)^2} \\quad \\{\\text{quotient rule}\\}$\n$= \\frac{6-x+x+3}{(6-x)^2}$\n$= \\frac{9}{(6-x)^2}$\n$= 9(6-x)^{-2}$\n$\\therefore \\frac{d^2y}{dx^2} = -18(6-x)^{-3} \\times (-1) \\quad \\{\\text{chain rule}\\}$\n$= \\frac{18}{(6-x)^3}$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule followed by chain rule for second derivative.",
+        "step_by_step": [
+          "Apply quotient rule: $\\frac{dy}{dx} = \\frac{1\\cdot(6-x) - (x+3)(-1)}{(6-x)^2}$.",
+          "Simplify numerator: $6-x+x+3 = 9$, so $\\frac{dy}{dx} = 9(6-x)^{-2}$.",
+          "Differentiate again using chain rule: $9(-2)(6-x)^{-3}(-1) = 18(6-x)^{-3}$.",
+          "Write as fraction: $\\frac{18}{(6-x)^3}$."
+        ],
+        "common_pitfalls": "Forgetting the derivative of $(6-x)$ with respect to $x$ is $-1$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "topic_4_q23",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 23,
+  "question_text": "This scatter diagram shows the age and annual income of 10 randomly chosen individuals. The mean age is 27 and the mean income is $40 000.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Describe the relationship between the age and annual income for these individuals.",
+      "final_answer": "$Strong, positive correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct description of the relationship"
+        }
+      ],
+      "solution": "There is a strong, positive correlation between the age of an individual and their annual income.",
+      "ai_explanation": {
+        "concept_rule": "Correlation direction is positive when both variables increase together; points closely clustered around a line indicate strong correlation.",
+        "step_by_step": [
+          "Observe that as age increases, income generally increases.",
+          "Identify that the points follow a clear upward linear trend with little spread."
+        ],
+        "common_pitfalls": "Omitting either the strength or direction of the correlation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Do you think there is a causal relationship between the variables? Explain your answer.",
+      "final_answer": "$No$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Correct justification regarding confounding factors"
+        }
+      ],
+      "solution": "No, the relationship is more likely dependent on the amount of professional experience or qualifications an individual has.",
+      "ai_explanation": {
+        "concept_rule": "A causal relationship requires that one variable directly causes change in the other without relying on a third variable.",
+        "step_by_step": [
+          "Determine if simply getting older causes a higher income.",
+          "Note that experience, promotions, and career progression are the true direct causes."
+        ],
+        "common_pitfalls": "Confusing correlation with causation."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Draw a line of best fit by eye on the graph.",
+      "final_answer": "$Mean point $(27, 40)$ plotted with line of best fit$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plotting the mean point (\\bar{x}, \\bar{y}) = (27, 40)"
+        },
+        {
+          "code": "A1",
+          "desc": "Drawing a straight line of best fit through the mean point"
+        }
+      ],
+      "solution": "Calculate or locate the mean point $(\\bar{x}, \\bar{y}) = (27, 40)$. Plot this point on the scatter plot and draw the line of best fit passing through it and following the trend of the data.",
+      "ai_explanation": {
+        "concept_rule": "The line of best fit by eye must pass through the mean point $(\\bar{x}, \\bar{y})$.",
+        "step_by_step": [
+          "Locate $\\bar{x} = 27$ and $\\bar{y} = 40$ on the axes.",
+          "Draw a straight line through this point that balances data points evenly on either side."
+        ],
+        "common_pitfalls": "Drawing a line of best fit that does not pass through the mean point."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Estimate the annual income for someone who is 30 years old. Comment on the reliability of your estimate.",
+      "final_answer": "$Approximately $\\$45\\,000$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Reading value from the line of best fit at x = 30"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct income value with units and statement of reliability"
+        }
+      ],
+      "solution": "When $x = 30$, read from the line of best fit: $y \\approx 45$. The annual income of someone who is 30 years old is approximately $\\$45\\,000$. This is an interpolation, so the estimate is reliable.",
+      "ai_explanation": {
+        "concept_rule": "Estimating values within the range of observed data is interpolation and is generally reliable.",
+        "step_by_step": [
+          "Find $x = 30$ on the horizontal axis.",
+          "Move vertically up to intersect the line of best fit.",
+          "Read the corresponding $y$-value ($y \\approx 45$).",
+          "Convert to dollars: $45 \\times \\$1000 = \\$45\\,000$.",
+          "State that since 30 lies within the data range (interpolation), it is reliable."
+        ],
+        "common_pitfalls": "Forgetting the axis scale multiplier ($\\times 1000$)."
+      }
+    }
+  ]
+}

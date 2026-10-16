@@ -1,0 +1,61 @@
+{
+  "id": "topic_5_q40",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 40,
+  "question_text": "For the function $y = f(x)$ with graph shown, sketch the graphs of:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = f'(x)$",
+      "final_answer": "$Graph of $y = f'(x)$ is a straight line with negative slope and $x$-intercept at $x = \\frac{3}{2}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find axis of symmetry / turning point from $x$-intercepts"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine intervals of increase/decrease and sketch linear $f'(x)$"
+        }
+      ],
+      "solution": "The turning point occurs at the average of the $x$-intercepts, which is $x = \\frac{5 + (-2)}{2} = \\frac{3}{2}$. $f(x)$ is increasing for $x \\le \\frac{3}{2}$, and decreasing for $x \\ge \\frac{3}{2}$. Because $f(x)$ is a downward-opening parabola (quadratic), its derivative $f'(x)$ is a decreasing linear function with $x$-intercept at $x = \\frac{3}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "The derivative of a quadratic function is linear. The vertex of the parabola corresponds to the $x$-intercept of its derivative.",
+        "step_by_step": [
+          "Average the $x$-intercepts: $\\frac{-2 + 5}{2} = 1.5$.",
+          "Identify that the vertex is at $x = 1.5$, where $f'(x) = 0$.",
+          "Since the parabola opens downward, $f'(x) > 0$ for $x < 1.5$ and $f'(x) < 0$ for $x > 1.5$.",
+          "Sketch a line with negative gradient passing through $(1.5, 0)$."
+        ],
+        "common_pitfalls": "Plotting a positive sloping line instead of recognizing that a concave down parabola has a decreasing derivative."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = f''(x)$",
+      "final_answer": "$Graph of $y = f''(x)$ is a horizontal line below the $x$-axis ($y = c$ where $c < 0$)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify that the second derivative of a quadratic is a negative constant"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch horizontal line below the $x$-axis"
+        }
+      ],
+      "solution": "$f'(x)$ has a constant negative gradient. So, the graph of $y = f''(x)$ is a horizontal line below the $x$-axis.",
+      "ai_explanation": {
+        "concept_rule": "The derivative of a linear function with negative slope is a negative constant value.",
+        "step_by_step": [
+          "Recall that $f'(x) = mx + c$ with $m < 0$.",
+          "Differentiating gives $f''(x) = m < 0$.",
+          "Draw a horizontal line $y = m$ below the $x$-axis."
+        ],
+        "common_pitfalls": "Confusing $f''(x)$ with a sloped line instead of a constant."
+      }
+    }
+  ]
+}

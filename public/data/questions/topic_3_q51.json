@@ -1,0 +1,42 @@
+{
+  "id": "topic_3_q51",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 51,
+  "question_text": "Suppose $f(x) = 2\\tan(3(x - 1)) + 4$, $-1 \\leqslant x \\leqslant 1$. Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the period of $y = f(x)$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "the equations of any asymptotes",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "the transformations that transform $y = \\tan x$ into $y = f(x)$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "d",
+      "stem": "the domain and range of $y = f(x)$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

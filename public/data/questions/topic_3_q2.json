@@ -1,0 +1,39 @@
+{
+  "id": "topic_3_q2",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 2,
+  "question_text": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+      "final_answer": "$14.9\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set sphere surface area formula equal to $2800$: $4\\pi r^2 = 2800$"
+        },
+        {
+          "code": "M1",
+          "desc": "Solve for $r^2 = \\frac{700}{\\pi}$ and take square root"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $r \\approx 14.9\\text{ cm}$"
+        }
+      ],
+      "solution": "Let the beach ball have radius $r\\text{ cm}$.\n$\\text{Surface area} = 2800\\text{ cm}^2$\n$\\therefore 4\\pi r^2 = 2800$\n$\\therefore r^2 = \\frac{700}{\\pi}$\n$\\therefore r = \\sqrt{\\frac{700}{\\pi}} \\quad \\{r > 0\\}$\n$\\therefore r \\approx 14.9$\n$\\therefore$ the radius of the beach ball is approximately $14.9\\text{ cm}$.",
+      "ai_explanation": {
+        "concept_rule": "The surface area of a sphere is given by $A = 4\\pi r^2$. Rearranging gives $r = \\sqrt{\\frac{A}{4\\pi}}$.",
+        "step_by_step": [
+          "Substitute $A = 2800$ into $4\\pi r^2 = 2800$.",
+          "Divide by $4\\pi$ to get $r^2 = \\frac{700}{\\pi}$.",
+          "Take the positive square root to obtain $r \\approx 14.9\\text{ cm}$."
+        ],
+        "common_pitfalls": "Forgetting the factor of $4$ in the surface area formula of a sphere and using $\\pi r^2$ or $2\\pi r^2$."
+      }
+    }
+  ]
+}

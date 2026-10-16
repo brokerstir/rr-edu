@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q82",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 82,
+  "question_text": "A parabola passes through the points $(-\\pi, 0)$, $(\\pi, 0)$, and $(0, \\alpha)$. The area between the parabola and the $x$-axis is $4\\text{ units}^2$. Calculate the possible values of $\\alpha$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "A parabola passes through the points $(-\\pi, 0)$, $(\\pi, 0)$, and $(0, \\alpha)$. The area between the parabola and the $x$-axis is $4\\text{ units}^2$. Calculate the possible values of $\\alpha$.",
+      "final_answer": "$\\alpha = \\frac{3}{\\pi}$ or $\\alpha = -\\frac{3}{\\pi}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing the parabola in intercept form using roots $-\\pi$ and $\\pi$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral $\\int_{-\\pi}^\\pi f(x)\\,dx = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrating and evaluating in terms of $\\alpha$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\alpha$ for both cases $\\alpha > 0$ and $\\alpha < 0$"
+        }
+      ],
+      "solution": "Suppose $\\alpha > 0$, then the parabola has equation $f(x) = -\\frac{\\alpha}{\\pi^2}(x-\\pi)(x+\\pi) = -\\frac{\\alpha}{\\pi^2}(x^2 - \\pi^2)$\nNow $\\text{area} = 4\\text{ units}^2$\n$\\therefore \\int_{-\\pi}^{\\pi} f(x)\\,dx = 4$\n$\\therefore \\int_{-\\pi}^{\\pi} -\\frac{\\alpha}{\\pi^2}(x^2 - \\pi^2)\\,dx = 4$\n$\\therefore -\\frac{\\alpha}{\\pi^2} \\int_{-\\pi}^{\\pi} (x^2 - \\pi^2)\\,dx = 4$\n$\\therefore \\int_{-\\pi}^{\\pi} (x^2 - \\pi^2)\\,dx = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore \\left[ \\frac{1}{3}x^3 - \\pi^2 x \\right]_{-\\pi}^{\\pi} = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore \\left(\\frac{1}{3}\\pi^3 - \\pi^2(\\pi)\\right) - \\left(\\frac{1}{3}(-\\pi)^3 - \\pi^2(-\\pi)\\right) = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore -\\frac{2}{3}\\pi^3 - \\left(-\\frac{\\pi^3}{3} + \\pi^3\\right) = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore -\\frac{2}{3}\\pi^3 - \\frac{2}{3}\\pi^3 = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore -\\frac{4\\pi^3}{3} = -\\frac{4\\pi^2}{\\alpha}$\n$\\therefore \\alpha = \\frac{3}{\\pi}$\n\nSimilarly, if $\\alpha < 0$, $\\alpha = -\\frac{3}{\\pi}$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic function with $x$-intercepts at $x = \\pm \\pi$ and vertex at $(0, \\alpha)$ has the equation $f(x) = -\\frac{\\alpha}{\\pi^2}(x^2 - \\pi^2)$. The enclosed area is $\\int_{-\\pi}^\\pi f(x)\\,dx$.",
+        "step_by_step": [
+          "Write the equation of the parabola with roots $\\pm \\pi$ passing through $(0, \\alpha)$.",
+          "Set up the area integral equal to $4$.",
+          "Integrate the quadratic polynomial across $[-\\pi, \\pi]$.",
+          "Solve the resulting linear equation for $\\alpha$.",
+          "Consider the case where $\\alpha < 0$ to get the symmetric result $\\alpha = -\\frac{3}{\\pi}$."
+        ],
+        "common_pitfalls": "Neglecting the case where $\\alpha < 0$ (parabola opening upwards) or algebra errors when integrating with $\\pi$ constants."
+      }
+    }
+  ]
+}

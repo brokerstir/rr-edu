@@ -1,0 +1,85 @@
+{
+  "id": "topic_4_q56",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 56,
+  "question_text": "Consider the distribution curve of $X \\sim \\mathrm{N}(3, 4^2)$ shown:\n\nCopy the above graph, and on the same set of axes sketch the distribution curve for:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\mathrm{N}(1, 4^2)$",
+      "final_answer": "$\\text{A horizontal translation of } \\text{N}(3, 4^2) \\text{ to the left by 2 units, centered at } x = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Indicating the curve has the same shape and spread as $\\text{N}(3, 4^2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly sketching the curve centered at $\\mu = 1$"
+        }
+      ],
+      "solution": "The distribution $\\text{N}(1, 4^2)$ has the same standard deviation $\\sigma = 4$ as $\\text{N}(3, 4^2)$, so the bell curve has the identical shape and height, but is shifted horizontally to be centered at mean $\\mu = 1$ rather than $\\mu = 3$.",
+      "ai_explanation": {
+        "concept_rule": "Changing the mean shifts the curve horizontally without altering its shape.",
+        "step_by_step": [
+          "Identify parameters: $\\mu = 1, \\sigma = 4$.",
+          "Draw the bell curve with peak centered at $x = 1$.",
+          "Ensure the height of the peak and width match $\\text{N}(3, 4^2)$."
+        ],
+        "common_pitfalls": "Changing the height or width of the curve despite standard deviation remaining the same."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\mathrm{N}(3, 2^2)$",
+      "final_answer": "$\\text{A narrower and taller bell curve centered at } x = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Indicating the curve is centered at the same mean $\\mu = 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly sketching a taller, narrower curve corresponding to $\\sigma = 2$"
+        }
+      ],
+      "solution": "The distribution $\\text{N}(3, 2^2)$ has the same mean $\\mu = 3$ as $\\text{N}(3, 4^2)$, but a smaller standard deviation $\\sigma = 2 < 4$. Therefore, the curve is centered at $x = 3$, but is narrower and has a significantly higher peak.",
+      "ai_explanation": {
+        "concept_rule": "Decreasing the standard deviation concentrates the area closer to the mean, increasing the peak height.",
+        "step_by_step": [
+          "Identify parameters: $\\mu = 3, \\sigma = 2$.",
+          "Center the curve at $x = 3$.",
+          "Draw a curve with a higher peak and narrower spread than $\\text{N}(3, 4^2)$."
+        ],
+        "common_pitfalls": "Drawing the curve wider when standard deviation decreases."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\mathrm{N}(2, 64)$",
+      "final_answer": "$\\text{A wider and flatter bell curve centered at } x = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Centering the curve at $\\mu = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly sketching a flatter, wider curve corresponding to standard deviation $\\sigma = 8$"
+        }
+      ],
+      "solution": "The distribution $\\text{N}(2, 64)$ has mean $\\mu = 2$ and standard deviation $\\sigma = \\sqrt{64} = 8$. Compared to $\\text{N}(3, 4^2)$, the curve is centered slightly to the left at $x = 2$, but is much wider and flatter because $\\sigma = 8 > 4$.",
+      "ai_explanation": {
+        "concept_rule": "A variance of $64$ gives $\\sigma = 8$, which doubles the spread compared to $\\sigma = 4$, lowering the peak height.",
+        "step_by_step": [
+          "Find standard deviation: $\\sigma = \\sqrt{64} = 8$.",
+          "Shift the center to $\\mu = 2$.",
+          "Draw a wider, flatter curve with approximately half the peak height of $\\text{N}(3, 4^2)$."
+        ],
+        "common_pitfalls": "Confusing variance $\\sigma^2 = 64$ with standard deviation $\\sigma$."
+      }
+    }
+  ]
+}

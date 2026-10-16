@@ -1,0 +1,98 @@
+{
+  "id": "topic_5_q92",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 92,
+  "question_text": "A particle moves on a straight line with acceleration given by $2 - 3t\\text{ ms}^{-2}$. Initially the particle has displacement $3\\text{ m}$. When $t = 1\\text{ s}$, the particle is momentarily at rest.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the velocity function of the particle.",
+      "final_answer": "$v(t) = 2t - \\frac{3}{2}t^2 - \\frac{1}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrating acceleration: $v(t) = \\int (2 - 3t)\\,dt = 2t - \\frac{3}{2}t^2 + c$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using initial condition $v(1) = 0$ to solve for $c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $c = -\\frac{1}{2}$ and writing expression for $v(t)$"
+        }
+      ],
+      "solution": "$$v(t) = \\int a(t)\\,dt = \\int (2 - 3t)\\,dt = 2t - \\frac{3}{2}t^2 + c$$\nNow $v(1) = 0$:\n$$2(1) - \\frac{3}{2}(1)^2 + c = 0$$\n$$2 - \\frac{3}{2} + c = 0$$\n$$\\frac{1}{2} + c = 0 \\implies c = -\\frac{1}{2}$$\n$$\\therefore v(t) = 2t - \\frac{3}{2}t^2 - \\frac{1}{2}$$",
+      "ai_explanation": {
+        "concept_rule": "Velocity is the indefinite integral of acceleration plus a constant of integration determined by initial conditions.",
+        "step_by_step": [
+          "Integrate $a(t) = 2 - 3t$ to find $v(t) = 2t - \\frac{3}{2}t^2 + c$.",
+          "Substitute $t = 1$ and $v = 0$ to solve for $c$.",
+          "Write the complete expression for $v(t)$."
+        ],
+        "common_pitfalls": "Omitting the constant of integration $c$ or setting $c = 0$ without using the condition $v(1) = 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "At what other time is the particle momentarily at rest?",
+      "final_answer": "$t = \\frac{1}{3}\\text{ s}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $v(t) = 0$"
+        },
+        {
+          "code": "M1",
+          "desc": "Rearranging and factoring the quadratic equation: $(t - 1)(3t - 1) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying the other time as $t = \\frac{1}{3}\\text{ s}$"
+        }
+      ],
+      "solution": "The particle is momentarily at rest when $v(t) = 0$:\n$$2t - \\frac{3}{2}t^2 - \\frac{1}{2} = 0$$\n$$4t - 3t^2 - 1 = 0$$\n$$3t^2 - 4t + 1 = 0$$\n$$3t^2 - 3t - t + 1 = 0$$\n$$3t(t - 1) - (t - 1) = 0$$\n$$(t - 1)(3t - 1) = 0$$\n$$\\therefore t = 1\\text{ or } \\frac{1}{3}$$\n\n$\\therefore$ the other time the particle is momentarily at rest is at $t = \\frac{1}{3}\\text{ s}$.",
+      "ai_explanation": {
+        "concept_rule": "Momentarily at rest occurs when velocity is zero ($v(t) = 0$).",
+        "step_by_step": [
+          "Set $2t - \\frac{3}{2}t^2 - \\frac{1}{2} = 0$.",
+          "Multiply by $-2$ to obtain the integer quadratic $3t^2 - 4t + 1 = 0$.",
+          "Factor into $(t - 1)(3t - 1) = 0$.",
+          "Discard $t = 1$ (given in problem) to identify $t = \\frac{1}{3}\\text{ s}$."
+        ],
+        "common_pitfalls": "Sign errors when multiplying the quadratic by a negative constant."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the displacement function of the particle.",
+      "final_answer": "$s(t) = t^2 - \\frac{1}{2}t^3 - \\frac{1}{2}t + 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrating velocity function: $s(t) = \\int \\left(2t - \\frac{3}{2}t^2 - \\frac{1}{2}\\right) dt$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using initial condition $s(0) = 3$ to find constant $c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing final position function $s(t) = t^2 - \\frac{1}{2}t^3 - \\frac{1}{2}t + 3$"
+        }
+      ],
+      "solution": "$$v(t) = 2t - \\frac{3}{2}t^2 - \\frac{1}{2}, \\quad s(0) = 3\\text{ m}$$\n$$s(t) = \\int v(t)\\,dt = \\int \\left(2t - \\frac{3}{2}t^2 - \\frac{1}{2}\\right) dt$$\n$$= t^2 - \\frac{1}{2}t^3 - \\frac{1}{2}t + c$$\nNow $s(0) = 3$:\n$$0^2 - \\frac{1}{2}(0)^3 - \\frac{1}{2}(0) + c = 3 \\implies c = 3$$\n$$\\therefore s(t) = t^2 - \\frac{1}{2}t^3 - \\frac{1}{2}t + 3$$",
+      "ai_explanation": {
+        "concept_rule": "Position is the antiderivative of velocity, determined up to a constant using the initial displacement.",
+        "step_by_step": [
+          "Integrate each term of $v(t)$: $\\int 2t\\,dt = t^2$, $\\int -\\frac{3}{2}t^2\\,dt = -\\frac{1}{2}t^3$, and $\\int -\\frac{1}{2}\\,dt = -\\frac{1}{2}t$.",
+          "Add the integration constant $c$.",
+          "Evaluate at $t = 0$ using $s(0) = 3$ to determine $c = 3$."
+        ],
+        "common_pitfalls": "Incorrect power integration rules, e.g., integrating $t^2$ to $\\frac{t^3}{2}$ instead of $\\frac{t^3}{3}$."
+      }
+    }
+  ]
+}

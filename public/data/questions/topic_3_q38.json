@@ -1,0 +1,62 @@
+{
+  "id": "topic_3_q38",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 38,
+  "question_text": "Find the possible exact values of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\cos\\theta$ if $\\sin\\theta = \\frac{4}{5}$",
+      "final_answer": "$\\cos\\theta = \\pm\\frac{3}{5}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $\\cos\\theta$ including $\\pm$"
+        }
+      ],
+      "solution": "$\\sin \\theta = \\frac{4}{5}$.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\cos^2 \\theta + \\left(\\frac{4}{5}\\right)^2 = 1$\\\\$\\therefore \\cos^2 \\theta + \\frac{16}{25} = 1$\\\\$\\therefore \\cos^2 \\theta = \\frac{9}{25}$ \\\\$\\therefore \\cos \\theta = \\pm\\frac{3}{5}$",
+      "ai_explanation": {
+        "concept_rule": "Use the fundamental identity $\\sin^2\\theta + \\cos^2\\theta = 1$. Since no quadrant constraint is given, both positive and negative roots are possible.",
+        "step_by_step": [
+          "Substitute $\\sin\\theta = \\frac{4}{5}$ into $\\cos^2\\theta + \\sin^2\\theta = 1$.",
+          "Calculate $\\left(\\frac{4}{5}\\right)^2 = \\frac{16}{25}$.",
+          "Subtract $\\frac{16}{25}$ from 1 to find $\\cos^2\\theta = \\frac{9}{25}$.",
+          "Take the square root of both sides to get $\\cos\\theta = \\pm\\frac{3}{5}$."
+        ],
+        "common_pitfalls": "Writing only the positive root $+\\frac{3}{5}$ without specifying the quadrant."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\sin\\theta$ if $\\cos\\theta = -\\frac{2}{7}$.",
+      "final_answer": "$\\sin\\theta = \\pm\\frac{\\sqrt{45}}{7}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply identity $\\cos^2\\theta + \\sin^2\\theta = 1$ with $\\cos\\theta = -\\frac{2}{7}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $\\sin\\theta = \\pm\\frac{\\sqrt{45}}{7}$"
+        }
+      ],
+      "solution": "$\\cos \\theta = -\\frac{2}{7}$.\\\\Now $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore \\left(-\\frac{2}{7}\\right)^2 + \\sin^2 \\theta = 1$\\\\$\\therefore \\frac{4}{49} + \\sin^2 \\theta = 1$\\\\$\\therefore \\sin^2 \\theta = \\frac{45}{49}$ \\\\$\\therefore \\sin \\theta = \\pm\\frac{\\sqrt{45}}{7}$",
+      "ai_explanation": {
+        "concept_rule": "Apply the Pythagorean trigonometric identity to find sine from cosine.",
+        "step_by_step": [
+          "Substitute $\\cos\\theta = -\\frac{2}{7}$ into $\\cos^2\\theta + \\sin^2\\theta = 1$.",
+          "Calculate $\\left(-\\frac{2}{7}\\right)^2 = \\frac{4}{49}$.",
+          "Subtract to get $\\sin^2\\theta = 1 - \\frac{4}{49} = \\frac{45}{49}$.",
+          "Take the square root: $\\sin\\theta = \\pm\\frac{\\sqrt{45}}{7}$."
+        ],
+        "common_pitfalls": "Squaring $-\\frac{2}{7}$ as a negative number."
+      }
+    }
+  ]
+}

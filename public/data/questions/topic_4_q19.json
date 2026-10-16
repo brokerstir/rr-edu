@@ -1,0 +1,82 @@
+{
+  "id": "topic_4_q19",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 19,
+  "question_text": "Anthony and Katherine are two musicians in an orchestra. They each recorded the number of hours they spent practising in the 10 days before a performance.\n\nAnthony: $1\\frac{1}{2}$, $2$, $2\\frac{1}{2}$, $4$, $4\\frac{1}{2}$, $3$, $3\\frac{1}{2}$, $5$, $6$, $6$\nKatherine: $3$, $3\\frac{1}{2}$, $4$, $3$, $3$, $3\\frac{3}{4}$, $4$, $4$, $4\\frac{1}{2}$, $4$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the mean and standard deviation of each data set.",
+      "final_answer": "$\\text{Anthony: } \\mu = 3.8\\text{ h}, \\sigma \\approx 1.50\\text{ h}; \\text{ Katherine: } \\mu = 3.65\\text{ h}, \\sigma \\approx 0.502\\text{ h}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating mean and population standard deviation for Anthony"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean ($3.8$) and standard deviation ($1.50$) for Anthony"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculating mean and population standard deviation for Katherine"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean ($3.65$) and standard deviation ($0.502$) for Katherine"
+        }
+      ],
+      "solution": "Using technology:\nAnthony's data: $1\\frac{1}{2}, 2, 2\\frac{1}{2}, 4, 4\\frac{1}{2}, 3, 3\\frac{1}{2}, 5, 6, 6$\n$$\\bar{x} = 3.8, \\quad \\sigma_x \\approx 1.5033$$\nThe mean $\\mu = 3.8\\text{ hours}$ and standard deviation $\\sigma \\approx 1.50\\text{ hours}$.\n\nKatherine's data: $3, 3\\frac{1}{2}, 4, 3, 3\\frac{1}{2}, 4, 4, 4\\frac{1}{2}, 4$\n$$\\bar{x} = 3.65, \\quad \\sigma_x \\approx 0.5025$$\nThe mean $\\mu = 3.65\\text{ hours}$ and standard deviation $\\sigma \\approx 0.502\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "Mean $\\mu = \\frac{\\sum x}{n}$ and standard deviation $\\sigma = \\sqrt{\\frac{\\sum (x-\\mu)^2}{n}}$.",
+        "step_by_step": [
+          "Input Anthony's 10 values into a statistical calculator to obtain $\\bar{x} = 3.8$ and $\\sigma_x \\approx 1.50$.",
+          "Input Katherine's 10 values to obtain $\\bar{x} = 3.65$ and $\\sigma_x \\approx 0.502$."
+        ],
+        "common_pitfalls": "Confusing sample standard deviation ($s_x$) with population standard deviation ($\\sigma_x$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Which person generally practised for longer?",
+      "final_answer": "$\\text{Anthony generally practised for longer because his mean is higher.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Comparing means to deduce who practised longer"
+        }
+      ],
+      "solution": "Anthony's mean ($3.8\\text{ h}$) is higher than Katherine's ($3.65\\text{ h}$), so Anthony generally practised for longer.",
+      "ai_explanation": {
+        "concept_rule": "The mean is a measure of central tendency; a higher mean indicates a greater average practice time.",
+        "step_by_step": [
+          "Compare the two means: $3.8 > 3.65$.",
+          "Conclude that Anthony generally practised longer."
+        ],
+        "common_pitfalls": "Comparing standard deviations instead of means to evaluate duration."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Which person practised more consistently?",
+      "final_answer": "$\\text{Katherine practised more consistently because her standard deviation is lower.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Comparing standard deviations to determine consistency"
+        }
+      ],
+      "solution": "Katherine's standard deviation ($0.502$) is lower than Anthony's ($1.50$), so there is less deviation from the mean for her data set. Katherine therefore practised more consistently than Anthony.",
+      "ai_explanation": {
+        "concept_rule": "Consistency is indicated by smaller spread or dispersion, measured here by standard deviation.",
+        "step_by_step": [
+          "Compare standard deviations: $0.502 < 1.50$.",
+          "Lower standard deviation implies values are clustered closer to the mean, indicating higher consistency."
+        ],
+        "common_pitfalls": "Assuming a higher mean implies higher consistency."
+      }
+    }
+  ]
+}

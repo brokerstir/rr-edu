@@ -1,0 +1,44 @@
+{
+  "id": "topic_3_q7",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 7,
+  "question_text": "The lampshade on the left is made from the sheet of metal on the right. Find $r$ and $\\theta$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The lampshade on the left is made from the sheet of metal on the right. Find $r$ and $\\theta$.",
+      "final_answer": "$25$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate arc lengths: shorter $= 20\\pi$, longer $= 32\\pi$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up simultaneous equations using arc length formula $s = r\\theta$: $20\\pi = \\theta r$ and $32\\pi = \\theta(r+15)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Solve for $\\theta = \\frac{4\\pi}{5}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute back to solve for $r = 25$"
+        }
+      ],
+      "solution": "The shorter arc length $= 2\\pi\\left(\\frac{20}{2}\\right) = 20\\pi\\text{ cm}$\nThe longer arc length $= 2\\pi\\left(\\frac{32}{2}\\right) = 32\\pi\\text{ cm}$\nNow, the shorter arc length $= \\theta r$\n$\\therefore 20\\pi = \\theta r \\quad \\dots (*)$\nand the longer arc length $= \\theta(r + 15)$\n$\\therefore 32\\pi = \\theta r + 15\\theta$\n$\\therefore 32\\pi = 20\\pi + 15\\theta \\quad \\{\\text{using } (*)\\}$\n$\\therefore 15\\theta = 12\\pi$\n$\\therefore \\theta = \\frac{4\\pi}{5}$\nSubstituting $\\theta = \\frac{4\\pi}{5}$ into $(*)$ gives $20\\pi = \\frac{4\\pi}{5}r$\n$\\therefore r = 25$",
+      "ai_explanation": {
+        "concept_rule": "The net of a cone frustum is part of an annular sector. Arc length is proportional to radius: $s = r\\theta$.",
+        "step_by_step": [
+          "Calculate circumference of top base ($2\\pi \\times 10 = 20\\pi$) and bottom base ($2\\pi \\times 16 = 32\\pi$).",
+          "Form two equations: $20\\pi = r\\theta$ and $32\\pi = (r + 15)\\theta$.",
+          "Subtract the equations: $12\\pi = 15\\theta \\implies \\theta = \\frac{4\\pi}{5}$.",
+          "Substitute $\\theta$ into the first equation: $20\\pi = \\frac{4\\pi}{5}r \\implies r = 25$."
+        ],
+        "common_pitfalls": "Using diameters directly in the circumference formula without dividing by 2 to get radii."
+      }
+    }
+  ]
+}

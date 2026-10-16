@@ -1,0 +1,90 @@
+{
+  "id": "topic_3_q34",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 34,
+  "question_text": "Given that $\\sin\\theta = -\\frac{1}{2}$ and $\\cos\\theta = -\\frac{\\sqrt{3}}{2}$ where $0^\\circ < \\theta < 360^\\circ$, find the exact value of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\theta$",
+      "final_answer": "$210^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying quadrant where both sine and cosine are negative"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating the angle $\\theta = 210^\\circ$"
+        }
+      ],
+      "solution": "$\\sin\\theta = -\\frac{1}{2}$ and $\\cos\\theta = -\\frac{\\sqrt{3}}{2} \\implies \\theta = 210^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "When both sine and cosine are negative, the angle lies in the third quadrant: $\\theta = 180^\\circ + \\theta_{\\text{ref}}$.",
+        "step_by_step": [
+          "Identify reference angle where $\\sin\\theta_{\\text{ref}} = 1/2$, which is $30^\\circ$.",
+          "Since both $\\sin\\theta < 0$ and $\\cos\\theta < 0$, $\\theta$ is in Quadrant III.",
+          "Calculate $\\theta = 180^\\circ + 30^\\circ = 210^\\circ$."
+        ],
+        "common_pitfalls": "Giving $330^\\circ$ (Quadrant IV) or $150^\\circ$ (Quadrant II) where only one of sine or cosine is negative."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\tan\\theta$",
+      "final_answer": "$\\frac{1}{\\sqrt{3}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use the tangent quotient identity $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$ and substitute values"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to obtain $\\frac{1}{\\sqrt{3}}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\tan \\theta &= \\frac{\\sin \\theta}{\\cos \\theta} \\\\ &= \\frac{-\\frac{1}{2}}{-\\frac{\\sqrt{3}}{2}} \\\\ &= \\frac{1}{\\sqrt{3}} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The tangent of an angle is defined as the ratio of sine to cosine: $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$.",
+        "step_by_step": [
+          "Substitute $\\sin\\theta = -\\frac{1}{2}$ and $\\cos\\theta = -\\frac{\\sqrt{3}}{2}$ into the identity $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$.",
+          "Divide the fractions: $\\frac{-\\frac{1}{2}}{-\\frac{\\sqrt{3}}{2}} = \\frac{1}{\\sqrt{3}}$."
+        ],
+        "common_pitfalls": "Sign errors when dividing two negative quantities."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\tan 2\\theta$",
+      "final_answer": "$\\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the double-angle formulas for sine and cosine"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute values of $\\sin\\theta$ and $\\cos\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to obtain $\\sqrt{3}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\tan 2\\theta &= \\frac{\\sin 2\\theta}{\\cos 2\\theta} \\\\ &= \\frac{2\\sin \\theta \\cos \\theta}{\\cos^2 \\theta - \\sin^2 \\theta} \\quad \\{\\text{double angle formulae}\\} \\\\ &= \\frac{2\\left(-\\frac{1}{2}\\right)\\left(-\\frac{\\sqrt{3}}{2}\\right)}{\\left(-\\frac{\\sqrt{3}}{2}\\right)^2 - \\left(-\\frac{1}{2}\\right)^2} \\\\ &= \\frac{\\frac{\\sqrt{3}}{2}}{\\frac{1}{2}} \\\\ &= \\sqrt{3} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The double angle identities are $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ and $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta$.",
+        "step_by_step": [
+          "Express $\\tan 2\\theta$ as $\\frac{\\sin 2\\theta}{\\cos 2\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{\\cos^2\\theta - \\sin^2\\theta}$.",
+          "Substitute $\\sin\\theta = -\\frac{1}{2}$ and $\\cos\\theta = -\\frac{\\sqrt{3}}{2}$.",
+          "Evaluate the numerator: $2\\left(-\\frac{1}{2}\\right)\\left(-\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\sqrt{3}}{2}$.",
+          "Evaluate the denominator: $\\left(-\\frac{\\sqrt{3}}{2}\\right)^2 - \\left(-\\frac{1}{2}\\right)^2 = \\frac{3}{4} - \\frac{1}{4} = \\frac{2}{4} = \\frac{1}{2}$.",
+          "Divide numerator by denominator to obtain $\\sqrt{3}$."
+        ],
+        "common_pitfalls": "Incorrectly squaring negative fractions in the denominator or mixing up the signs."
+      }
+    }
+  ]
+}

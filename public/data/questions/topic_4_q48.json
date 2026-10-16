@@ -1,0 +1,85 @@
+{
+  "id": "topic_4_q48",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 48,
+  "question_text": "A random variable $X$ has the probability mass function $P(x) = \\frac{x^2 + kx}{50}$ for $x = 1, 2, 3, 4$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $k$.",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum the probabilities for $x=1,2,3,4$ and equate to 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $k = 2$"
+        }
+      ],
+      "solution": "$P(x) = \\frac{x^2 + kx}{50}$, $x = 1, 2, 3, 4$\n$\\therefore P(1) = \\frac{k+1}{50},\\; P(2) = \\frac{2k+4}{50},\\; P(3) = \\frac{3k+9}{50},\\; P(4) = \\frac{4k+16}{50}$\n\nSince $P(x)$ is a probability mass function, $\\sum_{i=1}^n P(x_i) = 1$\n$\\begin{aligned} \\frac{k+1}{50} + \\frac{2k+4}{50} + \\frac{3k+9}{50} + \\frac{4k+16}{50} &= 1 \\\\ \\frac{10k + 30}{50} &= 1 \\\\ 10k + 30 &= 50 \\\\ 10k &= 20 \\\\ k &= 2 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The sum of all probabilities over the support of a probability mass function equals 1.",
+        "step_by_step": [
+          "Evaluate $P(x)$ for each $x$: $P(1) = \\frac{1+k}{50}$, $P(2) = \\frac{4+2k}{50}$, $P(3) = \\frac{9+3k}{50}$, $P(4) = \\frac{16+4k}{50}$.",
+          "Sum numerators: $(1+4+9+16) + (1+2+3+4)k = 30 + 10k$.",
+          "Set $\\frac{10k+30}{50} = 1 \\implies 10k + 30 = 50 \\implies k = 2$."
+        ],
+        "common_pitfalls": "Incorrectly substituting $x$ into the numerator expression."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the mean of the distribution of $X$.",
+      "final_answer": "$3.2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $k=2$ into probabilities and evaluate $E(X) = \\sum x_i p_i$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation to get $\\mu = 3.2$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\mu &= E(X) \\\\ &= \\sum_{i=1}^n x_i p_i \\\\ &= 1\\left(\\frac{3}{50}\\right) + 2\\left(\\frac{8}{50}\\right) + 3\\left(\\frac{15}{50}\\right) + 4\\left(\\frac{24}{50}\\right) \\\\ &= \\frac{3 + 16 + 45 + 96}{50} \\\\ &= \\frac{160}{50} \\\\ &= 3.2 \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Mean $\\mu = E(X) = \\sum x P(X=x)$.",
+        "step_by_step": [
+          "With $k=2$, find probabilities: $P(1) = \\frac{3}{50}$, $P(2) = \\frac{8}{50}$, $P(3) = \\frac{15}{50}$, $P(4) = \\frac{24}{50}$.",
+          "Multiply each by $x$: $1(3) + 2(8) + 3(15) + 4(24) = 3 + 16 + 45 + 96 = 160$.",
+          "Divide by 50: $\\frac{160}{50} = 3.2$."
+        ],
+        "common_pitfalls": "Multiplying by the index rather than the value of $x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $P(X \\geqslant 2)$.",
+      "final_answer": "$\\frac{47}{50}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use complement rule $P(X \\geqslant 2) = 1 - P(X = 1)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\frac{47}{50}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(X \\geqslant 2) &= 1 - P(X = 1) \\\\ &= 1 - \\frac{3}{50} \\\\ &= \\frac{47}{50} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The complement rule states $P(X \\ge 2) = 1 - P(X < 2) = 1 - P(X = 1)$ for support starting at 1.",
+        "step_by_step": [
+          "Identify $P(X \\ge 2) = 1 - P(X = 1)$.",
+          "Substitute $P(X = 1) = \\frac{3}{50}$.",
+          "Compute $1 - \\frac{3}{50} = \\frac{47}{50}$."
+        ],
+        "common_pitfalls": "Forgetting that $X \\ge 2$ includes 2, so the complement is just $X=1$."
+      }
+    }
+  ]
+}

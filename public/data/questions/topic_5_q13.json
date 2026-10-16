@@ -1,0 +1,96 @@
+{
+  "id": "topic_5_q13",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 13,
+  "question_text": "Find $f'(t)$ if:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(t) = 20te^{-0.1t}$",
+      "final_answer": "$20e^{-0.1t} - 2te^{-0.1t}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule to $20t$ and $e^{-0.1t}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative expression"
+        }
+      ],
+      "solution": "$f(t) = 20te^{-0.1t}$\n$\\therefore f'(t) = 20(1)e^{-0.1t} + 20t(-0.1e^{-0.1t}) \\quad \\{\\text{product rule}\\}\n= 20e^{-0.1t} - 2te^{-0.1t}$",
+      "ai_explanation": {
+        "concept_rule": "Product rule: $\\frac{d}{dt}[u v] = u'v + uv'$ combined with exponential derivative $\\frac{d}{dt}[e^{kt}] = k e^{kt}$.",
+        "step_by_step": [
+          "Let $u = 20t$ and $v = e^{-0.1t}$.",
+          "Differentiate $u$: $u' = 20$.",
+          "Differentiate $v$: $v' = -0.1e^{-0.1t}$.",
+          "Apply product rule: $20e^{-0.1t} + 20t(-0.1e^{-0.1t}) = 20e^{-0.1t} - 2te^{-0.1t}$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign in the exponent's derivative $-0.1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(t) = \\frac{100}{1 + 7e^{-\\frac{t}{4}}}$",
+      "final_answer": "$\\frac{175e^{-\\frac{t}{4}}}{\\left(1 + 7e^{-\\frac{t}{4}}\\right)^2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting as power $-1$ and applying chain rule"
+        },
+        {
+          "code": "M1",
+          "desc": "Differentiating inner exponential term correctly"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified derivative"
+        }
+      ],
+      "solution": "$f(t) = \\frac{100}{1 + 7e^{-\\frac{t}{4}}} = 100\\left(1 + 7e^{-\\frac{t}{4}}\\right)^{-1}$\n$\\therefore f'(t) = -100\\left(1 + 7e^{-\\frac{t}{4}}\\right)^{-2} \\times \\left(-\\frac{7}{4}e^{-\\frac{t}{4}}\\right) \\quad \\{\\text{chain rule}\\}\n= \\frac{175e^{-\\frac{t}{4}}}{\\left(1 + 7e^{-\\frac{t}{4}}\\right)^2}$",
+      "ai_explanation": {
+        "concept_rule": "Chain rule with negative powers: $\\frac{d}{dt}[u^{-1}] = -u^{-2} u'$.",
+        "step_by_step": [
+          "Rewrite $f(t) = 100(1 + 7e^{-t/4})^{-1}$.",
+          "Outer derivative: $-100(1 + 7e^{-t/4})^{-2}$.",
+          "Inner derivative: $\\frac{d}{dt}[1 + 7e^{-t/4}] = 7\\left(-\\frac{1}{4}\\right)e^{-t/4} = -\\frac{7}{4}e^{-t/4}$.",
+          "Multiply: $-100 \\times \\left(-\\frac{7}{4}\\right) = +175$, giving $\\frac{175e^{-t/4}}{(1 + 7e^{-t/4})^2}$."
+        ],
+        "common_pitfalls": "Sign error from multiplying two negative signs ($-100$ and $-\\frac{7}{4}$)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f(t) = \\frac{t + 9}{e^t}$",
+      "final_answer": "$\\frac{-t - 8}{e^t}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying quotient rule $\\frac{u'v - uv'}{v^2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Cancelling common factor of $e^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified derivative"
+        }
+      ],
+      "solution": "$f(t) = \\frac{t + 9}{e^t}$\n$\\therefore f'(t) = \\frac{(1)e^t - e^t(t + 9)}{(e^t)^2} \\quad \\{\\text{quotient rule}\\}\n= \\frac{1 - (t + 9)}{e^t}\n= \\frac{-t - 8}{e^t}$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule followed by factorisation and cancellation of common exponential terms.",
+        "step_by_step": [
+          "Let $u = t + 9$ and $v = e^t$, so $u' = 1$ and $v' = e^t$.",
+          "Apply quotient rule: $\\frac{1 \\cdot e^t - (t + 9)e^t}{(e^t)^2}$.",
+          "Factor out $e^t$ in numerator: $\\frac{e^t[1 - (t + 9)]}{(e^t)^2}$.",
+          "Cancel $e^t$: $\\frac{1 - t - 9}{e^t} = \\frac{-t - 8}{e^t}$."
+        ],
+        "common_pitfalls": "Forgetting brackets around $(t + 9)$ when subtracting: writing $1 - t + 9$ instead of $1 - t - 9$."
+      }
+    }
+  ]
+}

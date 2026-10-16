@@ -1,0 +1,50 @@
+{
+  "id": "topic_4_q1",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 1,
+  "question_text": "Gerard wants to estimate the average height of the 500 students at his school. He randomly selects a sample of 10 students, and uses a tape measure to find the height of each student.\n\nExplain why this approach may produce a:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "coverage error",
+      "final_answer": "$Coverage error$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify that the sample size of 10 from 500 is too small, potentially producing a coverage error"
+        }
+      ],
+      "solution": "The sample size of only 10 students from a total of 500 is far too small, so this approach may produce a coverage error.",
+      "ai_explanation": {
+        "concept_rule": "Coverage error occurs when a sample does not adequately represent the entire population due to under-coverage or inadequate sample size.",
+        "step_by_step": [
+          "Evaluate the ratio of the sample size to the population size (10 out of 500 is only 2%).",
+          "Conclude that such a small sample cannot adequately represent the population, leading to coverage error."
+        ],
+        "common_pitfalls": "Confusing coverage error with measurement error or response bias."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "measurement error.",
+      "final_answer": "$Measurement error$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify that estimating height with a tape measure on a small sample introduces measurement error"
+        }
+      ],
+      "solution": "The tape measure only allows Gerard to estimate the exact height of each student. With only 10 students being measured, any errors will significantly impact the results, so this approach may produce a measurement error.",
+      "ai_explanation": {
+        "concept_rule": "Measurement error occurs when there is an inaccuracy or imprecision in the measurement tool or technique used to collect data.",
+        "step_by_step": [
+          "Note that heights are only estimated using a tape measure rather than accurately measured.",
+          "Identify that imprecision in recording data values leads to measurement error."
+        ],
+        "common_pitfalls": "Attributing the error to sample selection rather than the measurement technique."
+      }
+    }
+  ]
+}

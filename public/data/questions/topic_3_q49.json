@@ -1,0 +1,99 @@
+{
+  "id": "topic_3_q49",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 49,
+  "question_text": "This graph shows $y = a\\cos(b(x - c)) + d$ for $1 \\leqslant x \\leqslant 5$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Use the graph to find the value of $a$.",
+      "final_answer": "$a = 5, b = \\frac{\\pi}{2}, c = 0, d = 2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude $a = 5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period parameter $b = \\frac{\\pi}{2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis $d = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Phase shift $c = 0$"
+        }
+      ],
+      "solution": "i The amplitude is 5, so $a = 5$.\nii The period is 4, so $\\frac{2\\pi}{b} = 4$ and $b = \\frac{\\pi}{2}$.\niii The principal axis is $y = \\frac{7 + (-3)}{2}$ which is $y = 2$, so $d = 2$.\niv The function would start its first period at $x = 4 - 4 = 0$. So, there is no horizontal translation and $c = 0$.",
+      "ai_explanation": {
+        "concept_rule": "For a cosine curve $y = a\\cos(b(x - c)) + d$, identify maximum, minimum, and cycle length from the given graph points.",
+        "step_by_step": [
+          "From the graph, maximum is $7$ and minimum is $-3$.",
+          "Amplitude: $a = \\frac{7 - (-3)}{2} = 5$.",
+          "A peak occurs at $x = 4$ and the period is $4$, so $b = \\frac{2\\pi}{4} = \\frac{\\pi}{2}$.",
+          "Principal axis: $d = \\frac{7 + (-3)}{2} = 2$.",
+          "Since a maximum also occurs at $x = 4 - 4 = 0$, there is no horizontal translation for cosine, hence $c = 0$."
+        ],
+        "common_pitfalls": "Choosing $c = 4$ instead of simplifying to $c = 0$ for the cosine function."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Use the graph to find the value of $b$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Use the graph to find the value of $d$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "a iv",
+      "stem": "Use the graph to find the value of $c$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "Write the function in a as a sine function.",
+      "final_answer": "$y = -5\\sin\\left(\\frac{\\pi}{2}(x - 1)\\right) + 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the co-function identity $\\cos\\theta = \\sin\\left(\\frac{\\pi}{2} - \\theta\\right)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Factoring and applying $\\sin(-\\theta) = -\\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation in terms of sine"
+        }
+      ],
+      "solution": "From a, $y = 5\\cos\\left(\\frac{\\pi}{2}x\\right) + 2$\n$\\therefore y = 5\\sin\\left(\\frac{\\pi}{2} - \\frac{\\pi}{2}x\\right) + 2 \\quad \\{\\cos\\theta = \\sin\\left(\\frac{\\pi}{2} - \\theta\\right)\\}$\n$\\therefore y = 5\\sin\\left(\\frac{\\pi}{2}(1 - x)\\right) + 2$\n$\\therefore y = 5\\sin\\left(-\\frac{\\pi}{2}(x - 1)\\right) + 2$\n$\\therefore y = -5\\sin\\left(\\frac{\\pi}{2}(x - 1)\\right) + 2 \\quad \\{\\sin(-\\theta) = -\\sin\\theta\\}$",
+      "ai_explanation": {
+        "concept_rule": "A cosine wave can be converted into a sine wave using the identity $\\cos\\theta = \\sin\\left(\\frac{\\pi}{2} - \\theta\\right)$ and odd symmetry $\\sin(-\\theta) = -\\sin\\theta$.",
+        "step_by_step": [
+          "Start with the cosine form: $y = 5\\cos\\left(\\frac{\\pi}{2}x\\right) + 2$.",
+          "Use identity $\\cos\\theta = \\sin\\left(\\frac{\\pi}{2} - \\theta\\right)$: $y = 5\\sin\\left(\\frac{\\pi}{2} - \\frac{\\pi}{2}x\\right) + 2$.",
+          "Factor $\\frac{\\pi}{2}$ from the argument: $\\frac{\\pi}{2}(1 - x) = -\\frac{\\pi}{2}(x - 1)$.",
+          "Apply the odd property of sine to factor the negative sign out: $y = -5\\sin\\left(\\frac{\\pi}{2}(x - 1)\\right) + 2$."
+        ],
+        "common_pitfalls": "Sign errors when factoring out $-1$ from $(1 - x)$."
+      }
+    }
+  ]
+}

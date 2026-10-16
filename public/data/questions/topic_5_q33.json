@@ -1,0 +1,109 @@
+{
+  "id": "topic_5_q33",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 33,
+  "question_text": "Find the greatest and least values of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = x^3 - 2x^2$ for $-1 \\leqslant x \\leqslant 1$",
+      "final_answer": "$Greatest value is $0$ (at $x = 0$); least value is $-3$ (at $x = -1$)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating f(x) and finding stationary points"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying local maximum at x = 0"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating function at interior critical points and domain endpoints"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating correct global maximum and minimum values"
+        }
+      ],
+      "solution": "$f(x) = x^3 - 2x^2, \\quad -1 \\leqslant x \\leqslant 1$\n$\\therefore f'(x) = 3x^2 - 4x = x(3x - 4)$\nwhich is $0$ when $x = 0$ or $\\frac{4}{3}$.\nThe sign diagram of $f'(x)$ shows that $f'(x)$ changes from positive to negative at $x=0$, and from negative to positive at $x=\\frac{4}{3}$.\n$\\therefore$ there is a local maximum at $x = 0$, and a local minimum at $x = \\frac{4}{3}$.\nSince $x = \\frac{4}{3} \\notin [-1, 1]$, we only consider $x = 0$ and the endpoints:\n- $x = -1$ (end point): $f(-1) = -3$\n- $x = 0$ (local maximum): $f(0) = 0$\n- $x = 1$ (end point): $f(1) = -1$\nThe greatest of these values is $0$ when $x = 0$.\nThe least of these values is $-3$ when $x = -1$.",
+      "ai_explanation": {
+        "concept_rule": "To find absolute extrema on a closed interval $[a, b]$, evaluate the function at all critical points within $(a, b)$ and at the endpoints $a$ and $b$.",
+        "step_by_step": [
+          "Differentiate $f(x)$ to find $f'(x) = 3x^2 - 4x$.",
+          "Find roots of $f'(x) = 0$: $x = 0$ and $x = \\frac{4}{3}$. Discard $x = \\frac{4}{3}$ as it lies outside $[-1, 1]$.",
+          "Evaluate $f(x)$ at endpoints $x = -1, 1$ and critical point $x = 0$.",
+          "Compare values: $f(-1) = -3$, $f(0) = 0$, $f(1) = -1$ to identify maximum and minimum."
+        ],
+        "common_pitfalls": "Evaluating critical points that lie outside the given restricted domain $[-1, 1]$ or failing to test the boundary endpoints."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = x^2 - \\frac{27}{x}$ for $-6 \\leqslant x \\leqslant -1$",
+      "final_answer": "$Greatest value is $40.5$ (at $x = -6$); least value is $\\approx 17.0$ (at $x = -\\frac{3}{\\sqrt[3]{2}}$)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding derivative f'(x) and solving f'(x) = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding critical point x = -3 / 2^(1/3)"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating function at endpoints and the critical point"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct absolute maximum and minimum values"
+        }
+      ],
+      "solution": "$f(x) = x^2 - \\frac{27}{x} = x^2 - 27x^{-1}, \\quad -6 \\leqslant x \\leqslant -1$\n$\\therefore f'(x) = 2x + 27x^{-2}$\nwhich is $0$ when $2x + 27x^{-2} = 0$\n$\\therefore 2x = -\\frac{27}{x^2}$\n$\\therefore x^3 = -\\frac{27}{2}$\n$\\therefore x = -\\frac{3}{\\sqrt[3]{2}}$\nThe sign diagram of $f'(x)$ indicates a local minimum at $x = -\\frac{3}{\\sqrt[3]{2}}$.\nCritical values and endpoints:\n- $x = -6$ (end point): $f(-6) = 40.5$\n- $x = -\\frac{3}{\\sqrt[3]{2}}$ (local minimum): $f\\left(-\\frac{3}{\\sqrt[3]{2}}\\right) \\approx 17.0$\n- $x = -1$ (end point): $f(-1) = 28$\nThe greatest of these values is $40.5$ when $x = -6$.\nThe least of these values is $\\approx 17.0$ when $x = -\\frac{3}{\\sqrt[3]{2}}$.",
+      "ai_explanation": {
+        "concept_rule": "The global extrema on a closed interval are found by testing endpoints and interior stationary points.",
+        "step_by_step": [
+          "Express the function as power terms: $f(x) = x^2 - 27x^{-1}$.",
+          "Differentiate to get $f'(x) = 2x + 27x^{-2}$.",
+          "Set $f'(x) = 0$ to solve for $x^3 = -\\frac{27}{2}$, giving $x = -\\frac{3}{\\sqrt[3]{2}} \\approx -2.38$, which lies in $[-6, -1]$.",
+          "Evaluate $f(x)$ at $x = -6$, $x = -\\frac{3}{\\sqrt[3]{2}}$, and $x = -1$.",
+          "Identify the largest and smallest values among them."
+        ],
+        "common_pitfalls": "Sign errors when applying the power rule to negative powers like $-27x^{-1}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f(x) = x^3 - 6x^2 + 12x - 10$ for $0 \\leqslant x \\leqslant 5$.",
+      "final_answer": "$Greatest value is $25$ (at $x = 5$); least value is $-10$ (at $x = 0$)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding derivative and solving f'(x) = 0"
+        },
+        {
+          "code": "R1",
+          "desc": "Identifying stationary inflection at x = 2 using sign diagram"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating endpoints to determine greatest and least values"
+        }
+      ],
+      "solution": "$f(x) = x^3 - 6x^2 + 12x - 10, \\quad 0 \\leqslant x \\leqslant 5$\n$\\therefore f'(x) = 3x^2 - 12x + 12$\nwhich is $0$ when $3x^2 - 12x + 12 = 0$\n$\\therefore x^2 - 4x + 4 = 0$\n$\\therefore (x - 2)^2 = 0$\n$\\therefore x - 2 = 0$\n$\\therefore x = 2$\nThe sign diagram of $f'(x)$ is positive on both sides of $x = 2$, so there is a stationary inflection at $x = 2$.\nCritical values and endpoints:\n- $x = 0$ (end point): $f(0) = -10$\n- $x = 5$ (end point): $f(5) = 25$\nThe greatest of these values is $25$ when $x = 5$.\nThe least of these values is $-10$ when $x = 0$.",
+      "ai_explanation": {
+        "concept_rule": "If the first derivative does not change sign across a zero, the point is a stationary point of inflection rather than a local extremum.",
+        "step_by_step": [
+          "Differentiate $f(x)$ to get $f'(x) = 3(x-2)^2$.",
+          "Set $f'(x) = 0$, giving $x = 2$.",
+          "Observe that $f'(x) \\ge 0$ everywhere, so $x = 2$ is an inflection point and the function is strictly increasing.",
+          "Hence, the minimum must occur at the left endpoint $x=0$ and the maximum at the right endpoint $x=5$."
+        ],
+        "common_pitfalls": "Assuming every point where $f'(x) = 0$ must be a local maximum or minimum."
+      }
+    }
+  ]
+}

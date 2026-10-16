@@ -1,0 +1,70 @@
+{
+  "id": "topic_5_q52",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 52,
+  "question_text": "Given $f(x) = \\sqrt{x}e^x$, find $f'(x)$. Hence find $\\int \\frac{2e^x(1+x)}{\\sqrt{x}}\\,dx$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Given $f(x) = \\sqrt{x}e^x$, find $f'(x)$.",
+      "final_answer": "$\\frac{e^{\\frac{x}{2}}(1 + x)}{2\\sqrt{x}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the chain rule to $(xe^x)^{1/2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply the product rule to differentiate $xe^x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to the required form"
+        }
+      ],
+      "solution": "$f(x) = \\sqrt{xe^x} = (xe^x)^{\\frac{1}{2}}$\n$\\therefore f'(x) = \\frac{1}{2}(xe^x)^{-\\frac{1}{2}} \\times \\frac{d}{dx}(xe^x) \\quad \\{\\text{chain rule}\\}$\n$= \\frac{1}{2\\sqrt{xe^x}} \\times ((1)e^x + xe^x) \\quad \\{\\text{product rule}\\}$\n$= \\frac{e^x + xe^x}{2\\sqrt{xe^x}}$\n$= \\frac{e^x(1 + x)}{2e^{\\frac{x}{2}}\\sqrt{x}}$\n$= \\frac{e^{\\frac{x}{2}}(1 + x)}{2\\sqrt{x}}$",
+      "ai_explanation": {
+        "concept_rule": "To differentiate the square root of a product, use the chain rule followed by the product rule, then simplify exponents using $\\frac{e^x}{e^{x/2}} = e^{x/2}$.",
+        "step_by_step": [
+          "Rewrite $f(x)$ in power form: $(xe^x)^{1/2}$.",
+          "Differentiate outer power using chain rule: $\\frac{1}{2}(xe^x)^{-1/2}$.",
+          "Differentiate inside using product rule: $\\frac{d}{dx}(xe^x) = e^x + xe^x = e^x(1+x)$.",
+          "Simplify $\\frac{e^x}{e^{x/2}}$ to $e^{x/2}$ and factor."
+        ],
+        "common_pitfalls": "Failing to apply product rule to the inner function $x e^x$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $\\int \\frac{2e^x(1+x)}{\\sqrt{x}}\\,dx$.",
+      "final_answer": "$4\\sqrt{xe^x} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognize the integrand as a multiple of $f'(x)$ from part a"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply integration by recognition: $\\int 4f'(x)\\,dx = 4f(x) + c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $f(x) = \\sqrt{xe^x}$"
+        }
+      ],
+      "solution": "$\\int \\frac{2e^{\\frac{x}{2}}(1 + x)}{\\sqrt{x}}\\,dx = \\int 4\\left(\\frac{e^{\\frac{x}{2}}(1 + x)}{2\\sqrt{x}}\\right)dx$\n$= \\int 4f'(x)\\,dx \\quad \\{\\text{using a}\\}$\n$= 4\\int f'(x)\\,dx$\n$= 4f(x) + c$\n$= 4\\sqrt{xe^x} + c$",
+      "ai_explanation": {
+        "concept_rule": "Using the Fundamental Theorem of Calculus, $\\int f'(x)\\,dx = f(x) + c$. Multiply and divide by appropriate constants to match the known derivative.",
+        "step_by_step": [
+          "Factor out $4$ from the integrand so the remaining factor matches $f'(x)$.",
+          "Replace the expression with $4f'(x)$.",
+          "Integrate directly to get $4f(x) + c$.",
+          "Substitute $f(x) = \\sqrt{xe^x}$."
+        ],
+        "common_pitfalls": "Trying to integrate using integration by parts from scratch instead of using part (a)."
+      }
+    }
+  ]
+}

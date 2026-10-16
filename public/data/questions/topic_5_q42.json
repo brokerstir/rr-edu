@@ -1,0 +1,139 @@
+{
+  "id": "topic_5_q42",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 42,
+  "question_text": "The volume of water in a tank is given by $V(t) = 10t^2 - \\frac{1}{3}t^3$ litres, where $t$ is the time in minutes and $0 \\leqslant t \\leqslant 30$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $V(5)$ and explain what this represents.",
+      "final_answer": "$208\\frac{1}{3}\\text{ litres}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 5$ into the volume function $V(t)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate the value and interpret the result with correct units"
+        }
+      ],
+      "solution": "$V(5) = 10(5)^2 - \\frac{1}{3}(5)^3 = 250 - \\frac{1}{3}(125) = 208\\frac{1}{3}\\text{ litres}$.\\nThis represents the volume of water in the tank after 5 minutes.",
+      "ai_explanation": {
+        "concept_rule": "Direct substitution of a specific time value into a volume function yields the total accumulated volume at that instant.",
+        "step_by_step": [
+          "Substitute $t = 5$ into $V(t) = 10t^2 - \\frac{1}{3}t^3$.",
+          "Evaluate $10(25) - \\frac{125}{3} = 250 - 41\\frac{2}{3} = 208\\frac{1}{3}$.",
+          "State the contextual meaning: the volume of water in the tank after 5 minutes."
+        ],
+        "common_pitfalls": "Forgetting the units (litres) or failing to explain the physical meaning of the calculated value in words."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $V'(t)$ in fully factorised form. Do not forget to include units.",
+      "final_answer": "$V'(t) = 20t - t^2\\text{ litres per minute}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the power rule to differentiate $V(t)$ with respect to $t$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the differentiated expression $20t - t^2$ or in factored form $t(20-t)$"
+        }
+      ],
+      "solution": "$V'(t) = 20t - t^2 = t(20 - t)\\text{ litres per minute}$",
+      "ai_explanation": {
+        "concept_rule": "The derivative of a volume function with respect to time represents the instantaneous rate of change of volume (flow rate).",
+        "step_by_step": [
+          "Differentiate $10t^2$ to get $20t$.",
+          "Differentiate $-\\frac{1}{3}t^3$ to get $-t^2$.",
+          "Combine and optionally factor: $V'(t) = t(20 - t)$."
+        ],
+        "common_pitfalls": "Errors in applying the power rule to fractional coefficients, such as differentiating $\\frac{1}{3}t^3$ incorrectly."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $t$ when $V'(t) = 0$.",
+      "final_answer": "$t = 0\\text{ or } 20$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set the derivative $V'(t)$ equal to 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve the quadratic equation for $t$"
+        }
+      ],
+      "solution": "$V'(t) = 0 \\implies t(20 - t) = 0 \\implies t = 0\\text{ or } 20$",
+      "ai_explanation": {
+        "concept_rule": "Stationary points or times where the rate of change is zero occur where the first derivative equals zero.",
+        "step_by_step": [
+          "Set $V'(t) = 0$, giving $t(20 - t) = 0$.",
+          "Solve for the roots: $t = 0$ or $t = 20$."
+        ],
+        "common_pitfalls": "Dividing both sides by $t$ and losing the solution $t = 0$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find $V'(5)$ and $V'(25)$.",
+      "final_answer": "$V'(5) = 75\\text{ litres per minute},\\; V'(25) = -125\\text{ litres per minute}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 5$ and $t = 25$ into $V'(t)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $V'(5) = 75\\text{ litres per minute}$ and $V'(25) = -125\\text{ litres per minute}$"
+        }
+      ],
+      "solution": "$V'(5) = 5(20 - 5) = 5(15) = 75\\text{ litres per minute}$\\n$V'(25) = 25(20 - 25) = 25(-5) = -125\\text{ litres per minute}$",
+      "ai_explanation": {
+        "concept_rule": "Substituting time into the derivative function gives the instantaneous rate of flow at that time. A positive sign indicates volume is increasing, while a negative sign indicates it is decreasing.",
+        "step_by_step": [
+          "Substitute $t = 5$ into $V'(t) = t(20-t)$ to get $5(15) = 75$.",
+          "Substitute $t = 25$ into $V'(t) = t(20-t)$ to get $25(-5) = -125$.",
+          "State units for both as litres per minute."
+        ],
+        "common_pitfalls": "Confusing $V(t)$ with $V'(t)$ and substituting into the original volume function instead of the rate of change."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Determine the time(s) at which the volume is increasing by $75$ litres per minute.",
+      "final_answer": "$t = 5\\text{ or } 15\\text{ minutes}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $V'(t) = 75$ and rearrange into a standard quadratic equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Factorise the quadratic expression"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude with both correct times in context"
+        }
+      ],
+      "solution": "$V'(t) = 75\\implies t(20 - t) = 75\\implies 20t - t^2 = 75\\implies t^2 - 20t + 75 = 0\\implies (t - 15)(t - 5) = 0\\implies t = 5\\text{ or } 15$\\nSo, the volume is increasing by $75\\text{ litres per minute}$ after $5\\text{ minutes}$ and $15\\text{ minutes}$.",
+      "ai_explanation": {
+        "concept_rule": "To find when a rate reaches a specified value, set the derivative equal to that value and solve the resulting equation.",
+        "step_by_step": [
+          "Set $V'(t) = 75$.",
+          "Expand and rearrange: $t^2 - 20t + 75 = 0$.",
+          "Factorise into $(t - 15)(t - 5) = 0$.",
+          "State the solution values: $t = 5$ and $t = 15$."
+        ],
+        "common_pitfalls": "Failing to rearrange into standard form $at^2+bt+c=0$ before attempting to solve."
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "topic_4_q35",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 35,
+  "question_text": "Events $A$ and $B$ are independent. Given that $P(A \\cup B) = 0.63$ and $P(B) = 0.36$, find $P(A)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Events $A$ and $B$ are independent. Given that $P(A \\cup B) = 0.63$ and $P(B) = 0.36$, find $P(A)$.",
+      "final_answer": "$\\approx 0.422$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using independence condition $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up equation $0.63 = \\text{P}(A) + 0.36 - 0.36\\text{P}(A)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $\\text{P}(A) = \\frac{0.27}{0.64} \\approx 0.422$"
+        }
+      ],
+      "solution": "$$\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$$\n$$\\therefore 0.63 = \\text{P}(A) + 0.36 - \\text{P}(A)\\text{P}(B) \\quad \\{A \\text{ and } B \\text{ are independent}\\}$$\n$$\\therefore 0.27 = \\text{P}(A) - 0.36 \\times \\text{P}(A)$$\n$$\\therefore 0.27 = 0.64 \\times \\text{P}(A)$$\n$$\\therefore \\text{P}(A) = \\frac{0.27}{0.64} \\approx 0.422$$",
+      "ai_explanation": {
+        "concept_rule": "If two events $A$ and $B$ are independent, $\\text{P}(A \\cap B) = \\text{P}(A) \\times \\text{P}(B)$.",
+        "step_by_step": [
+          "Substitute $\\text{P}(A \\cap B) = \\text{P}(A) \\times 0.36$ into the addition rule.",
+          "$0.63 = \\text{P}(A) + 0.36 - 0.36\\text{P}(A)$.",
+          "Subtract $0.36$ from both sides: $0.27 = 0.64\\text{P}(A)$.",
+          "Divide by $0.64$: $\\text{P}(A) = \\frac{0.27}{0.64} = \\frac{27}{64} \\approx 0.422$."
+        ],
+        "common_pitfalls": "Confusing independence with mutually exclusive events (assuming $\\text{P}(A \\cap B) = 0$)."
+      }
+    }
+  ]
+}

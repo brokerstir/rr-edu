@@ -1,0 +1,107 @@
+{
+  "id": "topic_3_q21",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 21,
+  "question_text": "ABC is an equilateral triangle with sides $10\\text{ cm}$ long. P is a point within the triangle. P is $7\\text{ cm}$ from A and $4\\text{ cm}$ from B.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a diagram clearly showing all of the information provided.",
+      "final_answer": "$[Diagram]$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly drawn and labeled triangle showing sides 10 cm, 7 cm, and segment 4 cm with point P"
+        }
+      ],
+      "solution": "[Diagram of equilateral triangle ABC with point P on BC such that BP = 4 cm, AP = 7 cm, AB = AC = 10 cm]",
+      "ai_explanation": {
+        "concept_rule": "Drawing a clear diagram with all given lengths labeled is essential for solving geometric problems.",
+        "step_by_step": [
+          "Draw triangle ABC.",
+          "Place point P on side BC.",
+          "Label lengths: $AB = 10\\text{ cm}$, $AP = 7\\text{ cm}$, $BP = 4\\text{ cm}$, and side of equilateral triangle $AC = 10\\text{ cm}$."
+        ],
+        "common_pitfalls": "Misplacing point P on the wrong triangle side."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Calculate: $\\mathrm{B\\widehat{A}P}$",
+      "final_answer": "$18.2^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use cosine rule in triangle ABP to find cos(BAP)"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle BAP to obtain approximately 18.2°"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta \\text{BAP}$:\n$$\\cos\\text{B}\\hat{\\text{A}}\\text{P} = \\frac{10^2 + 7^2 - 4^2}{2 \\times 7 \\times 10}$$\n$$\\therefore \\cos\\text{B}\\hat{\\text{A}}\\text{P} = \\frac{133}{140}$$\n$$\\therefore \\text{B}\\hat{\\text{A}}\\text{P} = \\cos^{-1}\\left(\\frac{133}{140}\\right) \\approx 18.2^{\\circ}$$",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule for an angle is $\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$.",
+        "step_by_step": [
+          "In triangle ABP, side lengths are $AB = 10$, $AP = 7$, and $BP = 4$.",
+          "Substitute into cosine rule: $\\cos(\\text{B}\\hat{\\text{A}}\\text{P}) = \\frac{10^2 + 7^2 - 4^2}{2(10)(7)} = \\frac{100 + 49 - 16}{140} = \\frac{133}{140}$.",
+          "Evaluate $\\cos^{-1}\\left(\\frac{133}{140}\\right) \\approx 18.2^{\\circ}$."
+        ],
+        "common_pitfalls": "Subtracting the wrong side squared in the numerator."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Calculate: $\\mathrm{C\\widehat{A}P}$",
+      "final_answer": "$41.8^{\\circ}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtract angle BAP from 60°"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain angle CAP = 41.8°"
+        }
+      ],
+      "solution": "$$\\text{B}\\hat{\\text{A}}\\text{C} = 60^{\\circ} \\quad \\{\\text{angles in an equilateral triangle}\\}$$\n$$\\begin{aligned} \\therefore \\text{C}\\hat{\\text{A}}\\text{P} &= 60^{\\circ} - \\text{B}\\hat{\\text{A}}\\text{P} \\\\ &\\approx 60^{\\circ} - 18.2^{\\circ} \\\\ &\\approx 41.8^{\\circ} \\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "Each internal angle of an equilateral triangle is $60^{\\circ}$.",
+        "step_by_step": [
+          "State that angle $\\text{B}\\hat{\\text{A}}\\text{C} = 60^{\\circ}$.",
+          "Subtract $\\text{B}\\hat{\\text{A}}\\text{P}$ from $\\text{B}\\hat{\\text{A}}\\text{C}$ to find $\\text{C}\\hat{\\text{A}}\\text{P}$.",
+          "Compute $60^{\\circ} - 18.2^{\\circ} = 41.8^{\\circ}$."
+        ],
+        "common_pitfalls": "Using the rounded value rather than unrounded intermediate value, potentially causing minor precision differences."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence find the length of [CP].",
+      "final_answer": "$6.68\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply cosine rule in triangle APC to find CP^2"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate square root to obtain CP approximately 6.68 cm"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta \\text{APC}$:\n$$\\text{CP}^2 \\approx 10^2 + 7^2 - 2(10)(7)\\cos 41.8^{\\circ}$$\n$$\\therefore \\text{CP} \\approx \\sqrt{10^2 + 7^2 - 2(10)(7)\\cos 41.8^{\\circ}}$$\n$$\\therefore \\text{CP} \\approx 6.68\\text{ cm}$$",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule states $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+        "step_by_step": [
+          "In triangle APC, sides $AC = 10$, $AP = 7$, and the included angle is $\\text{C}\\hat{\\text{A}}\\text{P} \\approx 41.8^{\\circ}$.",
+          "Write cosine rule: $\\text{CP}^2 = 10^2 + 7^2 - 2(10)(7)\\cos(41.8^{\\circ})$.",
+          "Evaluate: $\\text{CP}^2 \\approx 149 - 140\\cos(41.8^{\\circ}) \\approx 44.68$.",
+          "Take the square root: $\\text{CP} \\approx 6.68\\text{ cm}$."
+        ],
+        "common_pitfalls": "Forgetting to take the square root at the end."
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "topic_5_q2",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 2,
+  "question_text": "This graph shows the height of an elevator above ground level.\nUse the tangents drawn to find the elevator's instantaneous speed after:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "3 seconds",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "8 seconds.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

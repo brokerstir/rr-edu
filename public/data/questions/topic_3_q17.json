@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q17",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 17,
+  "question_text": "A helicopter lands $5\\text{ km}$ east and $7\\text{ km}$ south of its starting point.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the helicopter's distance from its starting point.",
+      "final_answer": "$8.60\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply Pythagoras' theorem $x^2 = 7^2 + 5^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $x = \\sqrt{74} \\approx 8.60\\text{ km}$"
+        }
+      ],
+      "solution": "Suppose the helicopter starts at S and lands at F.\n$x^2 = 7^2 + 5^2$ {Pythagoras}\n$= 74$\n$x = \\sqrt{74}$ $\\{x > 0\\}$\n$\\approx 8.60$\n\n$\\therefore$ the helicopter is about $8.60\\text{ km}$ from its starting point.",
+      "ai_explanation": {
+        "concept_rule": "Displacements along cardinal directions form a right-angled triangle whose hypotenuse is the straight-line distance, calculated via Pythagoras' theorem.",
+        "step_by_step": [
+          "Identify the East displacement ($5\\text{ km}$) and South displacement ($7\\text{ km}$).",
+          "Set up Pythagoras' theorem: $x^2 = 7^2 + 5^2 = 49 + 25 = 74$.",
+          "Take the square root: $x = \\sqrt{74} \\approx 8.60\\text{ km}$."
+        ],
+        "common_pitfalls": "Adding the distances directly ($5 + 7 = 12$) instead of using the Pythagorean theorem."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the helicopter's bearing from its starting point.",
+      "final_answer": "$144.5^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find angle $\\theta = \\tan^{-1}\\left(\\frac{7}{5}\\right) \\approx 54.5^\\circ$"
+        },
+        {
+          "code": "A1",
+          "desc": "Add $90^\\circ$ to find the three-figure bearing: $144.5^\\circ$"
+        }
+      ],
+      "solution": "$\\tan\\theta = \\frac{7}{5}$\n$\\theta = \\tan^{-1}\\left(\\frac{7}{5}\\right) \\approx 54.5^\\circ$\n\nSo, the bearing $\\approx 90^\\circ + 54.5^\\circ \\approx 144.5^\\circ$",
+      "ai_explanation": {
+        "concept_rule": "A bearing is an angle measured clockwise from true North ($000^\\circ$). If the direction is south of east, add the angle from East to $90^\\circ$, or subtract from $180^\\circ$.",
+        "step_by_step": [
+          "In the right triangle, find angle $\\theta$ below East: $\\tan\\theta = \\frac{\\text{South}}{\\text{East}} = \\frac{7}{5}$.",
+          "Calculate $\\theta = \\tan^{-1}(1.4) \\approx 54.5^\\circ$.",
+          "Because East is at a bearing of $090^\\circ$, the bearing from the starting point is $90^\\circ + 54.5^\\circ = 144.5^\\circ$."
+        ],
+        "common_pitfalls": "Giving $\\theta = 54.5^\\circ$ as the final bearing without referencing true North."
+      }
+    }
+  ]
+}

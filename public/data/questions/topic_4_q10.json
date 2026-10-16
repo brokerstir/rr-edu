@@ -1,0 +1,120 @@
+{
+  "id": "topic_4_q10",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 10,
+  "question_text": "Miguel uses an application on his phone to find the amount of sleep he gets each night. The duration of his sleep, in hours, for the past 30 nights are:\n7.5  6.8  7.8  6.3  8.6  9.1  7.1  5.8  7.7  7.3  7.7  7.4  11.5  7.1  7.4\n8.0  7.6  7.1  9.1  8.0  7.5  7.4  7.5  8.1  8.6  8.7  6.8   7.4  7.7  8.5",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the mean and the median of the data.",
+      "final_answer": "$\\text{mean} = 7.77\\text{ hours}, \\text{median} = 7.55\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum the 30 data values and divide by 30 for the mean"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain mean $= 7.77\\text{ hours}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find the average of 15th and 16th ordered values for the median"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain median $= 7.55\\text{ hours}$"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{30} = \\frac{233.1}{30} = 7.77\\text{ hours}$. As $n = 30$, $\\frac{n+1}{2} = 15.5$. So the median is the average of the 15th and 16th data values. The ordered data set gives the 15th value as $7.5$ and 16th value as $7.6$. $\\therefore \\text{median} = \\frac{7.5 + 7.6}{2} = 7.55\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "The mean is $\\frac{\\sum x}{n}$ and the median of 30 values is the midpoint between the 15th and 16th ordered values.",
+        "step_by_step": [
+          "Sum of 30 values $= 233.1$. Mean $= \\frac{233.1}{30} = 7.77$.",
+          "Order data from lowest to highest.",
+          "15th value $= 7.5$, 16th value $= 7.6$.",
+          "Median $= \\frac{7.5 + 7.6}{2} = 7.55$."
+        ],
+        "common_pitfalls": "Incorrect ordering of values leading to the wrong 15th and 16th positions."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Identify the outlier in this data set.",
+      "final_answer": "$11.5\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify 11.5 as the outlier"
+        }
+      ],
+      "solution": "The outlier is 11.5 hours.",
+      "ai_explanation": {
+        "concept_rule": "An outlier is an extreme data point noticeably separated from the remainder of the data set.",
+        "step_by_step": [
+          "Inspect the ordered list: most values are between 5.8 and 9.1.",
+          "11.5 is significantly larger than 9.1.",
+          "Conclude the outlier is 11.5."
+        ],
+        "common_pitfalls": "Confusing the minimum (5.8) with an outlier when only the maximum is anomalous."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "The outlier was the result of a recording error. Calculate the mean and the median of the data with the outlier removed.",
+      "final_answer": "$\\text{mean} \\approx 7.64\\text{ hours}, \\text{median} = 7.5\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate new mean with outlier removed: $\\frac{221.6}{29}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain mean $\\approx 7.64\\text{ hours}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Find the 15th value of 29 ordered values for the median"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain median $= 7.5\\text{ hours}$"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{29} = \\frac{221.6}{29} \\approx 7.64\\text{ hours}$. As $n = 29$ with the outlier removed, $\\frac{n+1}{2} = 15$. The ordered data set shows the 15th value is $7.5$. $\\therefore \\text{median} = 7.5\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "Removing an outlier reduces $n$ by 1 and changes both total sum and median position.",
+        "step_by_step": [
+          "New sum $= 233.1 - 11.5 = 221.6$.",
+          "New mean $= \\frac{221.6}{29} \\approx 7.641... \\approx 7.64$.",
+          "New $n = 29$, so median position is $\\frac{29+1}{2} = 15$.",
+          "The 15th value in the ordered list is 7.5."
+        ],
+        "common_pitfalls": "Still dividing by 30 instead of 29."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Which measure of centre is most affected if the outlier is removed?",
+      "final_answer": "$The mean$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that the mean is the measure of centre most affected by extreme values"
+        }
+      ],
+      "solution": "The measure of centre which is most affected by extreme values is the mean. So, the mean is most affected if the outlier is removed.",
+      "ai_explanation": {
+        "concept_rule": "The mean incorporates every value directly into its calculation, making it sensitive to outliers, while the median is resistant.",
+        "step_by_step": [
+          "Compare how the mean shifts significantly (from 7.77 to 7.64, a difference of 0.13).",
+          "Compare with median (shifts from 7.55 to 7.5, a difference of 0.05).",
+          "State that the mean is more affected by extreme values."
+        ],
+        "common_pitfalls": "Claiming the median is most affected."
+      }
+    }
+  ]
+}

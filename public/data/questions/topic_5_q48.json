@@ -1,0 +1,70 @@
+{
+  "id": "topic_5_q48",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 48,
+  "question_text": "A comet travels in an orbit which can be described by the equation $y = x^2$ as shown in the diagram.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that the distance of the comet at $C(x, y)$ from an observer at the point $P(0, 2)$ is given by $s(x) = \\sqrt{x^4 - 3x^2 + 4}$.",
+      "final_answer": "$\\sqrt{x^4 - 3x^2 + 4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the distance formula between point $P(0,2)$ and curve point $C(x, x^2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Expand and simplify expression under the square root"
+        }
+      ],
+      "solution": "$C$ has coordinates $(x, x^2)$.\nNow $s(x) = CP$\n$= \\sqrt{(x - 0)^2 + (x^2 - 2)^2}$\n$= \\sqrt{x^2 + x^4 - 4x^2 + 4}$\n$= \\sqrt{x^4 - 3x^2 + 4}$",
+      "ai_explanation": {
+        "concept_rule": "The distance formula between two points $(x_1, y_1)$ and $(x_2, y_2)$ is $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+        "step_by_step": [
+          "Identify coordinates: $P(0, 2)$ and $C(x, x^2)$.",
+          "Substitute into the distance formula: $s(x) = \\sqrt{(x - 0)^2 + (x^2 - 2)^2}$.",
+          "Expand the binomial $(x^2 - 2)^2 = x^4 - 4x^2 + 4$.",
+          "Combine like terms to obtain $\\sqrt{x^4 - 3x^2 + 4}$."
+        ],
+        "common_pitfalls": "Incorrect expansion of $(x^2 - 2)^2$ (e.g. omitting the cross term $-4x^2$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the shortest and the greatest distance between the comet and the observer for $-2 \\leqslant x \\leqslant 2$.",
+      "final_answer": "$Greatest distance $\\approx 2.83$ units when $x = \\pm 2$; shortest distance $\\approx 1.32$ units when $x = \\pm\\sqrt{\\frac{3}{2}}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $s(x)$ using the chain rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Find critical points where $s'(x) = 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Construct a sign diagram or evaluate critical points and boundary points"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine the greatest and shortest distances with correct values"
+        }
+      ],
+      "solution": "$s'(x) = \\frac{1}{2}(x^4 - 3x^2 + 4)^{-\\frac{1}{2}}(4x^3 - 6x) \\quad \\{\\text{chain rule}\\}$\n$= \\frac{2x^3 - 3x}{\\sqrt{x^4 - 3x^2 + 4}}$\n\nwhich is $0$ when $2x^3 - 3x = 0$:\n$\\therefore x(2x^2 - 3) = 0$\n$\\therefore x = 0$ or $2x^2 - 3 = 0$\n$\\therefore x^2 = \\frac{3}{2}$\n$\\therefore x = \\pm\\sqrt{\\frac{3}{2}}$\n\nThe sign diagram of $s'(x)$ indicates:\n$\\therefore$ there is a local maximum at $x = 0$, and local minima at $x = -\\sqrt{\\frac{3}{2}}$ and $x = \\sqrt{\\frac{3}{2}}$.\n\nEvaluating critical and end points:\n- End point $x = -2$: $s(-2) \\approx 2.83$\n- Local minimum $x = -\\sqrt{\\frac{3}{2}}$: $s\\left(-\\sqrt{\\frac{3}{2}}\\right) \\approx 1.32$\n- Local maximum $x = 0$: $s(0) = 2$\n- Local minimum $x = \\sqrt{\\frac{3}{2}}$: $s\\left(\\sqrt{\\frac{3}{2}}\\right) \\approx 1.32$\n- End point $x = 2$: $s(2) \\approx 2.83$\n\nThe greatest distance between the comet and the observer is $\\approx 2.83$ units when $x = \\pm 2$.\nThe shortest distance between the comet and the observer is $\\approx 1.32$ units when $x = \\pm\\sqrt{\\frac{3}{2}}$.",
+      "ai_explanation": {
+        "concept_rule": "Extrema on a closed interval occur either at critical points where the first derivative is zero or undefined, or at the domain endpoints.",
+        "step_by_step": [
+          "Differentiate the distance function using the chain rule.",
+          "Set the numerator equal to 0 to find critical values: $x = 0, \\pm\\sqrt{3/2}$.",
+          "Evaluate $s(x)$ at each critical value and the boundary points $x = \\pm 2$.",
+          "Compare the values to identify the absolute maximum and absolute minimum."
+        ],
+        "common_pitfalls": "Forgetting to consider the endpoints of the domain when determining the absolute maximum."
+      }
+    }
+  ]
+}

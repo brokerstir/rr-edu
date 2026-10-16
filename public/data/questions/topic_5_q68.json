@@ -1,0 +1,45 @@
+{
+  "id": "topic_5_q68",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 68,
+  "question_text": "Find $a$ given that $\\int_a^{2a} \\sqrt{x}\\,dx = 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Find $a$ given that $\\int_a^{2a} \\sqrt{x}\\,dx = 2$.",
+      "final_answer": "$\\left(\\frac{3}{2^{\\frac{3}{2}} - 1}\\right)^{\\frac{2}{3}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrating $x^{\\frac{1}{2}}$ with respect to $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $\\frac{2}{3}x^{\\frac{3}{2}}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting limits $2a$ and $a$ and equating to $2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Factoring out $a^{\\frac{3}{2}}$ and solving for $a$"
+        }
+      ],
+      "solution": "$\\int_a^{2a} \\sqrt{x}\\,dx = 2 \\implies \\int_a^{2a} x^{\\frac{1}{2}}\\,dx = 2 \\implies \\left[\\frac{2}{3}x^{\\frac{3}{2}}\\right]_a^{2a} = 2 \\implies \\frac{2}{3}(2a)^{\\frac{3}{2}} - \\frac{2}{3}a^{\\frac{3}{2}} = 2 \\implies 2^{\\frac{3}{2}}a^{\\frac{3}{2}} - a^{\\frac{3}{2}} = 3 \\implies a^{\\frac{3}{2}}(2^{\\frac{3}{2}} - 1) = 3 \\implies a^{\\frac{3}{2}} = \\frac{3}{2^{\\frac{3}{2}} - 1} \\implies a = \\left(\\frac{3}{2^{\\frac{3}{2}} - 1}\\right)^{\\frac{2}{3}}$",
+      "ai_explanation": {
+        "concept_rule": "Definite integration using the power rule $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$ to solve for an unknown limit of integration.",
+        "step_by_step": [
+          "Rewrite $\\sqrt{x}$ as $x^{1/2}$ and integrate to obtain $\\frac{2}{3}x^{3/2}$.",
+          "Substitute the upper limit $2a$ and lower limit $a$.",
+          "Multiply the entire equation by $\\frac{3}{2}$ to clear the coefficient.",
+          "Factor out $a^{3/2}$ to get $a^{3/2}(2^{3/2} - 1) = 3$.",
+          "Isolate $a$ by raising both sides to the power of $\\frac{2}{3}$."
+        ],
+        "common_pitfalls": "Incorrectly expanding $(2a)^{3/2}$ as $2a^{3/2}$ instead of $2^{3/2}a^{3/2}$."
+      }
+    }
+  ]
+}

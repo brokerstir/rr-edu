@@ -1,0 +1,85 @@
+{
+  "id": "topic_5_q75",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 75,
+  "question_text": "Evaluate using technology:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int_{0}^{1} \\sqrt{x}e^{x^2}\\,dx$",
+      "final_answer": "$20.7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up numerical integration on GDC"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer to 3 significant figures: $20.7$"
+        }
+      ],
+      "solution": "$\\int_0^2 \\sqrt{x} e^{x^2}\\,dx \\approx 20.7$",
+      "ai_explanation": {
+        "concept_rule": "Numerical integration using a Graphic Display Calculator (GDC).",
+        "step_by_step": [
+          "Enter the function $\\sqrt{x} e^{x^2}$ into the numerical integration tool on the calculator.",
+          "Set the lower limit to $0$ and upper limit to $2$.",
+          "Read the output $\\approx 20.7380$ and round to 3 significant figures."
+        ],
+        "common_pitfalls": "Incorrect rounding or inputting $e^{x^2}$ incorrectly."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int_{1}^{3} e^x \\sin(x^2)\\,dx$",
+      "final_answer": "$3.77$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up numerical integration in radian mode"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer to 3 significant figures: $3.77$"
+        }
+      ],
+      "solution": "$\\int_1^3 e^x \\sin(x^2)\\,dx \\approx 3.77$",
+      "ai_explanation": {
+        "concept_rule": "Numerical integration of a non-elementary antiderivative using GDC.",
+        "step_by_step": [
+          "Ensure the calculator angle mode is set to radians.",
+          "Input $\\int_1^3 e^x \\sin(x^2)\\,dx$.",
+          "Obtain $3.76578\\dots$ and round to 3 significant figures."
+        ],
+        "common_pitfalls": "Evaluating trigonometric functions in degree mode rather than radian mode."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\int_{0}^{1} \\sqrt{x^2+\\cos x}\\,dx$",
+      "final_answer": "$2.16$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up numerical integration in radian mode"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct answer to 3 significant figures: $2.16$"
+        }
+      ],
+      "solution": "$\\int_{-1}^1 \\sqrt{x^2+\\cos x}\\,dx \\approx 2.16$",
+      "ai_explanation": {
+        "concept_rule": "Numerical integration of radical and trigonometric expression using GDC.",
+        "step_by_step": [
+          "Verify the calculator is in radian mode.",
+          "Input the definite integral $\\int_{-1}^1 \\sqrt{x^2+\\cos x}\\,dx$.",
+          "Read calculator output $2.16295\\dots$ and round to 3 significant figures."
+        ],
+        "common_pitfalls": "Degree mode instead of radian mode."
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "topic_5_q38",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 38,
+  "question_text": "Let $f(x) = xe^{1 - 2x^2}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $f'(x)$ and $f''(x)$.",
+      "final_answer": "$f'(x) = e^{1-2x^2}(1 - 4x^2), \\quad f''(x) = -4x e^{1-2x^2}(3 - 4x^2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use product rule to compute $f'(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify $f'(x)$ to factored form"
+        },
+        {
+          "code": "M1",
+          "desc": "Use product rule to compute $f''(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify $f''(x)$ to factored form"
+        }
+      ],
+      "solution": "$f(x) = x e^{1-2x^2}$. Using the product rule: $f'(x) = (1)e^{1-2x^2} + x(-4x e^{1-2x^2}) = e^{1-2x^2} - 4x^2 e^{1-2x^2} = e^{1-2x^2}(1 - 4x^2)$. Then, using the product rule again: $f''(x) = -4x e^{1-2x^2}(1 - 4x^2) + e^{1-2x^2}(-8x) = -4x e^{1-2x^2}(1 - 4x^2 + 2) = -4x e^{1-2x^2}(3 - 4x^2)$.",
+      "ai_explanation": {
+        "concept_rule": "Use the product rule $\\frac{d}{dx}[uv] = u'v + uv'$ combined with the chain rule $\\frac{d}{dx}[e^{g(x)}] = g'(x)e^{g(x)}$.",
+        "step_by_step": [
+          "Differentiate $f(x) = x \\cdot e^{1-2x^2}$ using $u = x, v = e^{1-2x^2}$.",
+          "Factor out $e^{1-2x^2}$ to write $f'(x) = e^{1-2x^2}(1 - 4x^2)$.",
+          "Differentiate $f'(x)$ by taking $u = e^{1-2x^2}$ and $v = 1-4x^2$.",
+          "Factor out $-4x e^{1-2x^2}$ to obtain $-4x e^{1-2x^2}(3 - 4x^2)$."
+        ],
+        "common_pitfalls": "Errors in combining like terms after applying the product rule on the second derivative."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the exact coordinates of the stationary points of the function and determine their nature.",
+      "final_answer": "$\\left(-\\frac{1}{2}, -\\frac{\\sqrt{e}}{2}\\right) \\text{ is a local minimum, } \\left(\\frac{1}{2}, \\frac{\\sqrt{e}}{2}\\right) \\text{ is a local maximum}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $f'(x) = 0$ and solve for $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate corresponding $y$-coordinates"
+        },
+        {
+          "code": "R1",
+          "desc": "Classify stationary points using first derivative sign test"
+        }
+      ],
+      "solution": "Stationary points occur where $f'(x) = 0 \\implies e^{1-2x^2}(1 - 4x^2) = 0$. Since $e^{1-2x^2} > 0$ for all $x$, $1 - 4x^2 = 0 \\implies x^2 = \\frac{1}{4} \\implies x = \\pm \\frac{1}{2}$. The sign diagram of $f'(x)$ is negative for $x < -\\frac{1}{2}$, positive for $-\\frac{1}{2} < x < \\frac{1}{2}$, and negative for $x > \\frac{1}{2}$. Evaluating $f(x)$: $f\\left(-\\frac{1}{2}\\right) = \\left(-\\frac{1}{2}\\right)e^{1 - 2(1/4)} = -\\frac{1}{2}e^{1/2} = -\\frac{\\sqrt{e}}{2}$, and $f\\left(\\frac{1}{2}\\right) = \\left(\\frac{1}{2}\\right)e^{1 - 2(1/4)} = \\frac{1}{2}e^{1/2} = \\frac{\\sqrt{e}}{2}$. So $\\left(-\\frac{1}{2}, -\\frac{\\sqrt{e}}{2}\\right)$ is a local minimum and $\\left(\\frac{1}{2}, \\frac{\\sqrt{e}}{2}\\right)$ is a local maximum.",
+      "ai_explanation": {
+        "concept_rule": "Stationary points satisfy $f'(x) = 0$. A change from negative to positive derivative indicates a local minimum, while positive to negative indicates a local maximum.",
+        "step_by_step": [
+          "Solve $1 - 4x^2 = 0$ to get $x = -\\frac{1}{2}$ and $x = \\frac{1}{2}$.",
+          "Evaluate $f(-1/2)$ and $f(1/2)$ by substituting into $x e^{1-2x^2}$.",
+          "Analyze the sign change of $f'(x)$ around each stationary value to classify them."
+        ],
+        "common_pitfalls": "Failing to compute the exact $y$-coordinates or leaving them in terms of decimals instead of exact values."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the exact $x$-coordinates of the inflection points of the function.",
+      "final_answer": "$x = 0, -\\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{3}}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $f''(x) = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find all three $x$-coordinates of inflection points"
+        }
+      ],
+      "solution": "Inflection points occur where $f''(x) = 0 \\implies -4x e^{1-2x^2}(3 - 4x^2) = 0$. Since $e^{1-2x^2} > 0$ for all $x$, $x(3 - 4x^2) = 0 \\implies x = 0 \\text{ or } x^2 = \\frac{3}{4} \\implies x = \\pm \\frac{\\sqrt{3}}{2}$. So, the $x$-coordinates of the inflection points are $0, -\\frac{\\sqrt{3}}{2}, \\text{ and } \\frac{\\sqrt{3}}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "Inflection points can occur where $f''(x) = 0$ and the concavity changes sign.",
+        "step_by_step": [
+          "Set $-4x e^{1-2x^2}(3 - 4x^2) = 0$.",
+          "Identify roots: $-4x = 0 \\implies x = 0$, and $3 - 4x^2 = 0 \\implies x^2 = \\frac{3}{4}$.",
+          "Solve for $x = \\pm \\frac{\\sqrt{3}}{2}$.",
+          "Verify that $f''(x)$ changes sign across each of these roots."
+        ],
+        "common_pitfalls": "Overlooking the factor of $x = 0$ when dividing through by $x$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Use technology to help sketch the function, showing the information you have found.",
+      "final_answer": "$Graph of $f(x) = x e^{1-2x^2}$ showing local min at $\\left(-\\frac{1}{2}, -\\frac{\\sqrt{e}}{2}\\right)$, local max at $\\left(\\frac{1}{2}, \\frac{\\sqrt{e}}{2}\\right)$, and inflection points at $x = -\\frac{\\sqrt{3}}{2}, 0, \\frac{\\sqrt{3}}{2}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch odd function passing through the origin with horizontal asymptote $y=0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly place and label local extremum points and inflection points"
+        }
+      ],
+      "solution": "The graph of $f(x) = x e^{1-2x^2}$ is an odd function ($f(-x) = -f(x)$) passing through $(0,0)$. It has a local minimum at $\\left(-\\frac{1}{2}, -\\frac{\\sqrt{e}}{2}\\right)$, a local maximum at $\\left(\\frac{1}{2}, \\frac{\\sqrt{e}}{2}\\right)$, and points of inflection at $x = -\\frac{\\sqrt{3}}{2}$, $x = 0$, and $x = \\frac{\\sqrt{3}}{2}$. As $x \\to \\pm \\infty$, $f(x) \\to 0$, giving the $x$-axis as a horizontal asymptote.",
+      "ai_explanation": {
+        "concept_rule": "A complete sketch reflects critical points, points of inflection, symmetry, and end behavior (asymptotes).",
+        "step_by_step": [
+          "Plot the origin $(0,0)$, local max $\\left(\\frac{1}{2}, \\frac{\\sqrt{e}}{2}\\right)$, and local min $\\left(-\\frac{1}{2}, -\\frac{\\sqrt{e}}{2}\\right)$.",
+          "Mark the points of inflection where concavity switches at $x = -\\frac{\\sqrt{3}}{2}, 0, \\frac{\\sqrt{3}}{2}$.",
+          "Draw the curve approaching the horizontal asymptote $y = 0$ as $x \\to \\pm \\infty$."
+        ],
+        "common_pitfalls": "Drawing the curve unbounded as $x \\to \\pm\\infty$ rather than approaching the horizontal asymptote $y = 0$."
+      }
+    }
+  ]
+}

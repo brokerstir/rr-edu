@@ -1,0 +1,207 @@
+{
+  "id": "topic_5_q44",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 44,
+  "question_text": "The number of bacteria found in a sample of human tissue $t$ hours after infection occurred, is modelled by the function $N = (8 - t)e^{t-6}$ million, $0 \\leqslant t \\leqslant 8$.\nThe graph of this function is shown alongside.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $\\frac{dN}{dt} = (7 - t)e^{t-6}$.",
+      "final_answer": "$\\frac{dN}{dt} = (7-t)e^{t-6}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the product rule to differentiate $N = (8-t)e^{t-6}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Factorise and simplify to obtain $(7-t)e^{t-6}$"
+        }
+      ],
+      "solution": "$N = (8 - t)e^{t-6}, \\; 0 \\leqslant t \\leqslant 8$\\n$\\frac{dN}{dt} = (-1)e^{t-6} + (8 - t)e^{t-6}$ {product rule}\\n$= e^{t-6}(-1 + 8 - t) = (7 - t)e^{t-6}$",
+      "ai_explanation": {
+        "concept_rule": "The product rule states that $\\frac{d}{dt}[u \\cdot v] = u'v + uv'$. Here $u = 8-t$ and $v = e^{t-6}$.",
+        "step_by_step": [
+          "Differentiate $u = 8 - t$ to obtain $u' = -1$.",
+          "Differentiate $v = e^{t-6}$ to obtain $v' = e^{t-6}$.",
+          "Sum the terms: $(-1)e^{t-6} + (8-t)e^{t-6}$.",
+          "Factor out common factor $e^{t-6}$ to simplify: $e^{t-6}(-1 + 8 - t) = (7 - t)e^{t-6}$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign from the derivative of $(8-t)$."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find the coordinates of the: turning point",
+      "final_answer": "$(7, e)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $\\frac{dN}{dt} = 0$ and state $e^{t-6} > 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find $t = 7$ and compute $N(7) = e$"
+        }
+      ],
+      "solution": "The turning point occurs when $\\frac{dN}{dt} = 0$\\n$\\therefore (7 - t)e^{t-6} = 0$\\n$\\therefore 7 - t = 0$ {$e^{t-6} > 0$ for all $t$}\\n$\\therefore t = 7$\\nWhen $t = 7, \\; N = (8 - 7)e^{7-6} = (1)e^1 = e$\\n$\\therefore$ the turning point has coordinates $(7, e)$.",
+      "ai_explanation": {
+        "concept_rule": "Turning points occur where the first derivative is zero. Since exponential terms are strictly positive, solutions come from linear factors.",
+        "step_by_step": [
+          "Set $(7 - t)e^{t-6} = 0$.",
+          "Since $e^{t-6} > 0$, deduce $7 - t = 0 \\implies t = 7$.",
+          "Substitute $t = 7$ into the original function $N(t)$ to find $N = (8-7)e^1 = e$.",
+          "Write the coordinates as $(7, e)$."
+        ],
+        "common_pitfalls": "Trying to solve $e^{t-6} = 0$, which has no real solutions."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the coordinates of the: point of inflection",
+      "final_answer": "$(6, 2)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $\\frac{dN}{dt}$ to find $\\frac{d^2N}{dt^2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $\\frac{d^2N}{dt^2} = 0$ and solve for $t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find $N(6) = 2$ and state coordinates $(6, 2)$"
+        }
+      ],
+      "solution": "$\\frac{d^2N}{dt^2} = (-1)e^{t-6} + (7 - t)e^{t-6}$ {product rule}\\n$= e^{t-6}(-1 + 7 - t) = (6 - t)e^{t-6}$\\nThe point of inflection occurs when $\\frac{d^2N}{dt^2} = 0$\\n$\\therefore (6 - t)e^{t-6} = 0\\implies 6 - t = 0$ {$e^{t-6} > 0$ for all $t$}\\n$\\therefore t = 6$\\nWhen $t = 6, \\; N = (8 - 6)e^{6-6} = 2e^0 = 2$\\n$\\therefore$ the point of inflection has coordinates $(6, 2)$.",
+      "ai_explanation": {
+        "concept_rule": "A point of inflection occurs where the concavity changes, typically where the second derivative is zero and changes sign.",
+        "step_by_step": [
+          "Apply the product rule to $(7-t)e^{t-6}$ to obtain $\\frac{d^2N}{dt^2} = (6-t)e^{t-6}$.",
+          "Set $\\frac{d^2N}{dt^2} = 0$ to get $t = 6$.",
+          "Substitute $t = 6$ into $N(t)$ to get $N = (8-6)e^0 = 2$.",
+          "State coordinates $(6, 2)$."
+        ],
+        "common_pitfalls": "Substituting $t = 6$ into the derivative instead of the original function $N$ to find the $y$-value."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Find the coordinates of the: $t$-intercept.",
+      "final_answer": "$(8, 0)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $N = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $t$ and write the coordinate pair"
+        }
+      ],
+      "solution": "$N = 0\\implies (8 - t)e^{t-6} = 0\\implies 8 - t = 0$ {$e^{t-6} > 0$ for all $t$}\\n$\\therefore t = 8$\\n$\\therefore$ the $t$-intercept has coordinates $(8, 0)$.",
+      "ai_explanation": {
+        "concept_rule": "The $t$-intercept is found by setting the dependent variable $N$ to 0 and solving for $t$.",
+        "step_by_step": [
+          "Set $(8-t)e^{t-6} = 0$.",
+          "Since $e^{t-6} \\neq 0$, $8 - t = 0 \\implies t = 8$.",
+          "State the intercept as $(8, 0)$."
+        ],
+        "common_pitfalls": "Incorrectly setting $t=0$ instead of $N=0$."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Use these coordinates to state: the time when all the bacteria are dead",
+      "final_answer": "$t = 8\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Interpret the $t$-intercept as the time when all bacteria are dead"
+        }
+      ],
+      "solution": "Using the $t$-intercept, the time when all the bacteria are dead is $t = 8\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "The population becomes zero at the $t$-intercept where $N(t) = 0$.",
+        "step_by_step": [
+          "Identify that 'bacteria are dead' corresponds to $N = 0$.",
+          "From part b iii, the $t$-intercept is $t = 8$.",
+          "State $t = 8\\text{ hours}$."
+        ],
+        "common_pitfalls": "Omitting the units (hours)."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Use these coordinates to state: the maximum number of bacteria reached in the sample",
+      "final_answer": "$N = e \\approx 2.71\\text{ million bacteria}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify maximum population from turning point with units"
+        }
+      ],
+      "solution": "Using the turning point, the maximum number of bacteria reached in the sample was $N = e \\approx 2.71\\text{ million bacteria}$.",
+      "ai_explanation": {
+        "concept_rule": "The peak population corresponds to the maximum turning point of the population curve.",
+        "step_by_step": [
+          "From part b i, the turning point is at $(7, e)$.",
+          "The $N$-value at this maximum is $e \\approx 2.71$.",
+          "Express answer with appropriate context: $2.71$ million bacteria."
+        ],
+        "common_pitfalls": "Giving the time $t=7$ instead of the bacteria population $N=e$."
+      }
+    },
+    {
+      "subpart": "c iii",
+      "stem": "Use these coordinates to state: the time at which the rate of increase of the bacteria is a maximum.",
+      "final_answer": "$t = 6\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify maximum rate of increase from the point of inflection"
+        }
+      ],
+      "solution": "Using the point of inflection, the time at which the rate of increase of the bacteria is a maximum is $t = 6\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "The maximum rate of increase corresponds to the maximum of the derivative $\\frac{dN}{dt}$, which occurs at the inflection point where $\\frac{d^2N}{dt^2} = 0$.",
+        "step_by_step": [
+          "Identify that rate of increase is $\\frac{dN}{dt}$.",
+          "The maximum of the first derivative occurs at the point of inflection.",
+          "From part b ii, this occurs at $t = 6\\text{ hours}$."
+        ],
+        "common_pitfalls": "Confusing the time of maximum population ($t = 7$) with the time of maximum rate of increase ($t = 6$)."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Copy the graph and indicate clearly which points on the graph represent your answers to c.",
+      "final_answer": "$Graph of $N(t)$ plotted with key points $(6, 2)$, $(7, e)$, and $(8, 0)$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch curve showing an inflection point, local maximum, and intercept on the horizontal axis"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly label points corresponding to c i $(8, 0)$, c ii $(7, e)$, and c iii $(6, 2)$"
+        }
+      ],
+      "solution": "A sketch of the function $N$ against $t$ on the domain $0 \\leqslant t \\leqslant 8$, featuring:\\n- The point of inflection labelled c iii at $(6, 2)$\\n- The maximum turning point labelled c ii at $(7, e)$\\n- The $t$-intercept labelled c i at $(8, 0)$",
+      "ai_explanation": {
+        "concept_rule": "A complete graph sketch requires correctly representing concavity changes (inflection points), local extrema, axis intercepts, and domain bounds.",
+        "step_by_step": [
+          "Set up axes: $N$ on vertical axis, $t$ on horizontal axis.",
+          "Draw the curve starting from $(0, 8e^{-6}) \\approx (0, 0.02)$, increasing concavely up to the inflection point at $(6, 2)$.",
+          "Transition to concave down past $(6, 2)$, reaching a peak at $(7, e)$.",
+          "Decrease downward from the peak to cross the $t$-axis at $(8, 0)$.",
+          "Label the points corresponding to c i, c ii, and c iii."
+        ],
+        "common_pitfalls": "Failing to clearly show the change in concavity around $t = 6$."
+      }
+    }
+  ]
+}

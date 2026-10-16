@@ -1,0 +1,72 @@
+{
+  "id": "topic_3_q40",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 40,
+  "question_text": "Find exact values for $\\cos \\theta$ and $\\sin \\theta$ given that:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\tan \\theta = -\\frac{1}{3}$ and $\\frac{\\pi}{2} < \\theta < \\pi$",
+      "final_answer": "$\\cos\\theta = -\\frac{3}{\\sqrt{10}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express $\\cos\\theta$ in terms of $\\sin\\theta$ using $\\tan\\theta = -\\frac{1}{3}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute into $\\cos^2\\theta + \\sin^2\\theta = 1$ to solve for $\\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\cos\\theta = -\\frac{3}{\\sqrt{10}}$"
+        }
+      ],
+      "solution": "$\\tan \\theta = -\\frac{1}{3}$ and $\\frac{\\pi}{2} < \\theta < \\pi$.\\\\$\\theta$ is in quadrant 2, so $\\sin \\theta > 0$ and $\\cos \\theta < 0$.\\\\Now $\\tan \\theta = -\\frac{1}{3}$\\\\$\\therefore \\frac{\\sin \\theta}{\\cos \\theta} = -\\frac{1}{3}$\\\\$\\therefore \\cos \\theta = -3\\sin \\theta \\quad (*)$\\\\So, $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore 9\\sin^2 \\theta + \\sin^2 \\theta = 1 \\quad \\{\\text{using } (*)\\}$\\\\$\\therefore 10\\sin^2 \\theta = 1$\\\\$\\therefore \\sin^2 \\theta = \\frac{1}{10}$\\\\$\\therefore \\sin \\theta = \\frac{1}{\\sqrt{10}} \\quad \\{\\sin \\theta > 0\\}$\\\\$\\therefore \\cos \\theta = -\\frac{3}{\\sqrt{10}}$",
+      "ai_explanation": {
+        "concept_rule": "Express cosine in terms of sine using the definition of tangent, substitute into the Pythagorean identity, and apply quadrant sign conventions.",
+        "step_by_step": [
+          "State signs for Quadrant II: $\\sin\\theta > 0$, $\\cos\\theta < 0$.",
+          "Rearrange $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = -\\frac{1}{3}$ to get $\\cos\\theta = -3\\sin\\theta$.",
+          "Substitute into $\\cos^2\\theta + \\sin^2\\theta = 1$ to get $9\\sin^2\\theta + \\sin^2\\theta = 10\\sin^2\\theta = 1$.",
+          "Find $\\sin\\theta = \\frac{1}{\\sqrt{10}}$ (positive since in Quadrant II).",
+          "Calculate $\\cos\\theta = -3\\left(\\frac{1}{\\sqrt{10}}\\right) = -\\frac{3}{\\sqrt{10}}$."
+        ],
+        "common_pitfalls": "Squaring $-3\\sin\\theta$ as $-9\\sin^2\\theta$ instead of $+9\\sin^2\\theta$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\tan \\theta = \\frac{1}{\\sqrt{2}}$ and $\\pi < \\theta < \\frac{3\\pi}{2}$.",
+      "final_answer": "$\\cos\\theta = -\\frac{\\sqrt{2}}{\\sqrt{3}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express $\\cos\\theta$ in terms of $\\sin\\theta$ using $\\tan\\theta = \\frac{1}{\\sqrt{2}}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute into $\\cos^2\\theta + \\sin^2\\theta = 1$ to solve for $\\sin\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\cos\\theta = -\\frac{\\sqrt{2}}{\\sqrt{3}}$"
+        }
+      ],
+      "solution": "$\\tan \\theta = \\frac{1}{\\sqrt{2}}$ and $\\pi < \\theta < \\frac{3\\pi}{2}$.\\\\$\\theta$ is in quadrant 3, so $\\sin \\theta < 0$ and $\\cos \\theta < 0$.\\\\Now $\\tan \\theta = \\frac{1}{\\sqrt{2}}$\\\\$\\therefore \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{1}{\\sqrt{2}}$\\\\$\\therefore \\cos \\theta = \\sqrt{2}\\sin \\theta \\quad (*)$\\\\So, $\\cos^2 \\theta + \\sin^2 \\theta = 1$\\\\$\\therefore 2\\sin^2 \\theta + \\sin^2 \\theta = 1 \\quad \\{\\text{using } (*)\\}$\\\\$\\therefore 3\\sin^2 \\theta = 1$\\\\$\\therefore \\sin^2 \\theta = \\frac{1}{3}$\\\\$\\therefore \\sin \\theta = -\\frac{1}{\\sqrt{3}} \\quad \\{\\sin \\theta < 0\\}$\\\\$\\therefore \\cos \\theta = -\\frac{\\sqrt{2}}{\\sqrt{3}}$",
+      "ai_explanation": {
+        "concept_rule": "In Quadrant III, both sine and cosine are negative.",
+        "step_by_step": [
+          "State signs for Quadrant III: $\\sin\\theta < 0$, $\\cos\\theta < 0$.",
+          "From $\\frac{\\sin\\theta}{\\cos\\theta} = \\frac{1}{\\sqrt{2}}$, obtain $\\cos\\theta = \\sqrt{2}\\sin\\theta$.",
+          "Substitute into $\\cos^2\\theta + \\sin^2\\theta = 1$: $2\\sin^2\\theta + \\sin^2\\theta = 3\\sin^2\\theta = 1$.",
+          "Find $\\sin\\theta = -\\frac{1}{\\sqrt{3}}$ since $\\sin\\theta < 0$.",
+          "Calculate $\\cos\\theta = \\sqrt{2}\\left(-\\frac{1}{\\sqrt{3}}\\right) = -\\frac{\\sqrt{2}}{\\sqrt{3}}$."
+        ],
+        "common_pitfalls": "Selecting positive values for sine or cosine despite being in Quadrant III."
+      }
+    }
+  ]
+}

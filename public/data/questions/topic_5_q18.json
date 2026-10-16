@@ -1,0 +1,87 @@
+{
+  "id": "topic_5_q18",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 18,
+  "question_text": "Find $f'(x)$ for:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\sqrt{\\sin(2x+1)}$",
+      "final_answer": "$f'(x) = \\frac{\\cos(2x+1)}{\\sqrt{\\sin(2x+1)}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewriting root as power $1/2$ and applying the chain rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative in radical form"
+        }
+      ],
+      "solution": "$f(x) = \\sqrt{\\sin(2x+1)} = (\\sin(2x+1))^{\\frac{1}{2}}$\n$\\therefore f'(x) = \\frac{1}{2}(\\sin(2x+1))^{-\\frac{1}{2}}(2\\cos(2x+1)) \\quad \\{\\text{chain rule}\\}$\n$= \\frac{\\cos(2x+1)}{\\sqrt{\\sin(2x+1)}}$",
+      "ai_explanation": {
+        "concept_rule": "Chain rule for composite powers: $\\frac{d}{dx}[g(x)]^{1/2} = \\frac{1}{2}[g(x)]^{-1/2}g'(x)$.",
+        "step_by_step": [
+          "Write as $(\\sin(2x+1))^{1/2}$.",
+          "Differentiate with respect to the outer function: $\\frac{1}{2}(\\sin(2x+1))^{-1/2}$.",
+          "Multiply by derivative of $\\sin(2x+1)$, which is $2\\cos(2x+1)$.",
+          "Cancel the factor of $2$ with $\\frac{1}{2}$ to obtain $\\frac{\\cos(2x+1)}{\\sqrt{\\sin(2x+1)}}$."
+        ],
+        "common_pitfalls": "Forgetting the innermost factor of 2 from differentiating $2x+1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = \\cos\\frac{x}{2}\\sin\\frac{x}{3}$",
+      "final_answer": "$f'(x) = -\\frac{1}{2}\\sin\\frac{x}{2}\\sin\\frac{x}{3} + \\frac{1}{3}\\cos\\frac{x}{2}\\cos\\frac{x}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly applying chain rule to each trigonometric component"
+        }
+      ],
+      "solution": "$f(x) = \\cos\\frac{x}{2}\\sin\\frac{x}{3}$\n$\\therefore f'(x) = \\left(-\\frac{1}{2}\\sin\\frac{x}{2}\\right)\\sin\\frac{x}{3} + \\cos\\frac{x}{2}\\left(\\frac{1}{3}\\cos\\frac{x}{3}\\right) \\quad \\{\\text{product rule}\\}$\n$= -\\frac{1}{2}\\sin\\frac{x}{2}\\sin\\frac{x}{3} + \\frac{1}{3}\\cos\\frac{x}{2}\\cos\\frac{x}{3}$",
+      "ai_explanation": {
+        "concept_rule": "Product rule: $(uv)' = u'v + uv'$ combined with basic angle derivatives.",
+        "step_by_step": [
+          "Let $u = \\cos(x/2)$ and $v = \\sin(x/3)$.",
+          "Find $u' = -\\frac{1}{2}\\sin(x/2)$ and $v' = \\frac{1}{3}\\cos(x/3)$.",
+          "Form $u'v + uv' = -\\frac{1}{2}\\sin\\frac{x}{2}\\sin\\frac{x}{3} + \\frac{1}{3}\\cos\\frac{x}{2}\\cos\\frac{x}{3}$."
+        ],
+        "common_pitfalls": "Mixing up the arguments $x/2$ and $x/3$ when applying derivatives."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f(x) = \\ln\\left(\\frac{\\sin x}{x}\\right)$",
+      "final_answer": "$f'(x) = \\frac{1}{\\tan x} - \\frac{1}{x}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Splitting the logarithm using $\\ln(a/b) = \\ln a - \\ln b$"
+        },
+        {
+          "code": "A1",
+          "desc": "Differentiating both terms and expressing $\\frac{\\cos x}{\\sin x}$ as $\\frac{1}{\\tan x}$ or $\\cot x$"
+        }
+      ],
+      "solution": "$f(x) = \\ln\\left(\\frac{\\sin x}{x}\\right) = \\ln(\\sin x) - \\ln x$\n$\\therefore f'(x) = \\frac{\\cos x}{\\sin x} - \\frac{1}{x}$\n$= \\frac{1}{\\tan x} - \\frac{1}{x}$",
+      "ai_explanation": {
+        "concept_rule": "Using log quotient property prior to differentiation.",
+        "step_by_step": [
+          "Rewrite $\\ln\\left(\\frac{\\sin x}{x}\\right)$ as $\\ln(\\sin x) - \\ln x$.",
+          "Differentiate $\\ln(\\sin x)$ to get $\\frac{\\cos x}{\\sin x}$.",
+          "Differentiate $-\\ln x$ to get $-\\frac{1}{x}$.",
+          "Write $\\frac{\\cos x}{\\sin x}$ as $\\frac{1}{\\tan x}$ (or $\\cot x$)."
+        ],
+        "common_pitfalls": "Applying the quotient rule unnecessarily inside the logarithm, which makes differentiation harder."
+      }
+    }
+  ]
+}

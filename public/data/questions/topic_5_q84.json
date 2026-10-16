@@ -1,0 +1,123 @@
+{
+  "id": "topic_5_q84",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 84,
+  "question_text": "Find the area of the region enclosed by:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 3x$ and $y = x$",
+      "final_answer": "$10\\frac{2}{3}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the intersection points of the curve and the line"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the integral of the top function minus bottom function: $\\int_0^4 (x - (x^2 - 3x))\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrating to obtain $\\left[-\\frac{x^3}{3} + 2x^2\\right]_0^4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating to obtain $\\frac{32}{3} = 10\\frac{2}{3}\\text{ units}^2$"
+        }
+      ],
+      "solution": "$y = x^2 - 3x$ meets $y = x$ where $x^2 - 3x = x$\n$\\therefore x^2 - 4x = 0$\n$\\therefore x(x - 4) = 0$\n$\\therefore x = 0\\text{ or } 4$\n\nSince $x \\ge x^2 - 3x$ on the interval $0 \\le x \\le 4$,\n$\\text{area} = \\int_{0}^{4} [(x) - (x^2 - 3x)]\\,dx$\n$= \\int_{0}^{4} (-x^2 + 4x)\\,dx$\n$= \\left[ -\\frac{x^3}{3} + 2x^2 \\right]_0^4$\n$= \\left( -\\frac{4^3}{3} + 2(4)^2 \\right) - 0$\n$= -\\frac{64}{3} + 32$\n$= \\frac{32}{3}$\n$= 10\\frac{2}{3}\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area between two curves $y = f(x)$ and $y = g(x)$ from $x = a$ to $x = b$, where $f(x) \\ge g(x)$, is given by $\\int_a^b (f(x) - g(x))\\,dx$.",
+        "step_by_step": [
+          "Equate the two functions $x^2 - 3x = x$ to find intersection points $x = 0$ and $x = 4$.",
+          "Identify the upper function $y = x$ and the lower function $y = x^2 - 3x$.",
+          "Set up the integral $\\int_0^4 (4x - x^2)\\,dx$.",
+          "Integrate to get $\\left[2x^2 - \\frac{x^3}{3}\\right]_0^4$.",
+          "Substitute limits: $32 - \\frac{64}{3} = \\frac{32}{3} = 10\\frac{2}{3}$."
+        ],
+        "common_pitfalls": "Subtracting in the wrong order ($g(x) - f(x)$), leading to a negative area."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 4 - x^2$ and $y = -2x - 4$",
+      "final_answer": "$36\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating expressions for y to find the points of intersection"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct x-coordinates of intersection, x = -2 and x = 4"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral for the enclosed area"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final evaluated area of 36 units squared"
+        }
+      ],
+      "solution": "$y = 4 - x^2$ meets $y = -2x - 4$ where $4 - x^2 = -2x - 4$\n$\\therefore -x^2 + 2x + 8 = 0$\n$\\therefore x^2 - 2x - 8 = 0$\n$\\therefore (x - 4)(x + 2) = 0$\n$\\therefore x = -2 \\text{ or } 4$\n\nSince $4 - x^2 \\ge -2x - 4$ on the interval $-2 \\le x \\le 4$,\n$$\\begin{aligned}\n\\text{area} &= \\int_{-2}^4 \\left[(4 - x^2) - (-2x - 4)\\right] dx \\\\\n&= \\int_{-2}^4 (-x^2 + 2x + 8) dx \\\\\n&= \\left[ -\\frac{x^3}{3} + x^2 + 8x \\right]_{-2}^4 \\\\\n&= \\left( -\\frac{4^3}{3} + 4^2 + 8(4) \\right) - \\left( -\\frac{(-2)^3}{3} + (-2)^2 + 8(-2) \\right) \\\\\n&= \\left( -\\frac{64}{3} + 16 + 32 \\right) - \\left( \\frac{8}{3} + 4 - 16 \\right) \\\\\n&= -\\frac{72}{3} + 60 \\\\\n&= 36 \\text{ units}^2\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area between two curves $y = f(x)$ and $y = g(x)$ where $f(x) \\ge g(x)$ on $[a, b]$ is given by $\\int_a^b [f(x) - g(x)] dx$.",
+        "step_by_step": [
+          "Equate the two functions $4 - x^2 = -2x - 4$ and solve the resulting quadratic equation to obtain the limits of integration $x = -2$ and $x = 4$.",
+          "Determine which curve is upper: $4 - x^2 \\ge -2x - 4$ on $[-2, 4]$.",
+          "Set up the integral $\\int_{-2}^4 (-x^2 + 2x + 8) dx$.",
+          "Integrate term-by-term to get $[-\\frac{x^3}{3} + x^2 + 8x]_{-2}^4$.",
+          "Substitute the upper and lower limits and simplify to find the final area of $36$."
+        ],
+        "common_pitfalls": "Sign errors when subtracting $(-2x - 4)$ or when evaluating powers of negative numbers like $(-2)^3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = x^2 + 2x - 3$ and $y = x - 1$",
+      "final_answer": "$4\\frac{1}{2}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating curves to find points of intersection"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct intersection points x = -2 and x = 1"
+        },
+        {
+          "code": "M1",
+          "desc": "Forming the area integral [top curve - bottom curve]"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluated area of 9/2 or 4 1/2 units squared"
+        }
+      ],
+      "solution": "$y = x^2 + 2x - 3$ meets $y = x - 1$ where $x^2 + 2x - 3 = x - 1$\n$\\therefore x^2 + x - 2 = 0$\n$\\therefore (x + 2)(x - 1) = 0$\n$\\therefore x = -2 \\text{ or } 1$\n\nSince $x - 1 \\ge x^2 + 2x - 3$ on the interval $-2 \\le x \\le 1$,\n$$\\begin{aligned}\n\\text{area} &= \\int_{-2}^1 \\left[(x - 1) - (x^2 + 2x - 3)\\right] dx \\\\\n&= \\int_{-2}^1 (-x^2 - x + 2) dx \\\\\n&= \\left[ -\\frac{x^3}{3} - \\frac{x^2}{2} + 2x \\right]_{-2}^1 \\\\\n&= \\left( -\\frac{1^3}{3} - \\frac{1^2}{2} + 2(1) \\right) - \\left( -\\frac{(-2)^3}{3} - \\frac{(-2)^2}{2} + 2(-2) \\right) \\\\\n&= \\left( -\\frac{1}{3} - \\frac{1}{2} + 2 \\right) - \\left( \\frac{8}{3} - 2 - 4 \\right) \\\\\n&= \\frac{7}{6} - \\left(-\\frac{10}{3}\\right) \\\\\n&= \\frac{9}{2} \\\\\n&= 4\\frac{1}{2} \\text{ units}^2\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area between two functions is found by integrating the difference (upper curve minus lower curve) between their intersection points.",
+        "step_by_step": [
+          "Set $x^2 + 2x - 3 = x - 1$ to find the intersection points $x = -2$ and $x = 1$.",
+          "Identify the line $y = x - 1$ as the upper boundary on this interval.",
+          "Integrate $(-x^2 - x + 2)$ from $-2$ to $1$.",
+          "Substitute limits $1$ and $-2$ into the antiderivative $[-\\frac{x^3}{3} - \\frac{x^2}{2} + 2x]$.",
+          "Calculate $\\frac{7}{6} - (-\\frac{10}{3}) = \\frac{9}{2} = 4\\frac{1}{2}$."
+        ],
+        "common_pitfalls": "Subtracting curves in reverse order, which leads to a negative area if absolute value is not maintained."
+      }
+    }
+  ]
+}

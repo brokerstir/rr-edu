@@ -1,0 +1,70 @@
+{
+  "id": "topic_3_q44",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 44,
+  "question_text": "Find the amplitude, principal axis, and period of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\sin 4x$",
+      "final_answer": "$\\text{amplitude} = 1, \\text{principal axis: } y = 0, \\text{period} = \\frac{\\pi}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $\\frac{\\pi}{2}$"
+        }
+      ],
+      "solution": "For the function $f(x) = \\sin 4x$:\n$\\bullet$ the amplitude is $|a| = 1$\n$\\bullet$ the principal axis is $y = 0$\n$\\bullet$ the period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{4} = \\frac{\\pi}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "For $f(x) = a\\sin(bx) + d$, the amplitude is $|a|$, the principal axis is $y = d$, and the period is $\\frac{2\\pi}{b}$.",
+        "step_by_step": [
+          "Identify parameters: $a = 1$, $b = 4$, $d = 0$.",
+          "Calculate amplitude: $|1| = 1$.",
+          "Identify principal axis: $y = 0$.",
+          "Calculate period: $\\frac{2\\pi}{4} = \\frac{\\pi}{2}$."
+        ],
+        "common_pitfalls": "Multiplying the period by $4$ instead of dividing by $4$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = -2\\sin\\frac{x}{3} - 1$.",
+      "final_answer": "$\\text{amplitude} = 2, \\text{principal axis: } y = -1, \\text{period} = 4\\pi$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude is $2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = -1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period is $4\\pi$"
+        }
+      ],
+      "solution": "For the function $f(x) = -2\\sin\\frac{x}{2} - 1$:\n$\\bullet$ the amplitude is $|a| = |-2| = 2$\n$\\bullet$ the principal axis is $y = -1$\n$\\bullet$ the period is $\\frac{2\\pi}{b} = \\frac{2\\pi}{\\frac{1}{2}} = 4\\pi$.",
+      "ai_explanation": {
+        "concept_rule": "Amplitude is always positive: $|a|$. The vertical shift gives the principal axis $y = d$, and the period is $\\frac{2\\pi}{b}$.",
+        "step_by_step": [
+          "Identify parameters: $a = -2$, $b = \\frac{1}{2}$, $d = -1$.",
+          "Amplitude: $|-2| = 2$.",
+          "Principal axis: $y = -1$.",
+          "Period: $\\frac{2\\pi}{1/2} = 4\\pi$."
+        ],
+        "common_pitfalls": "Writing the amplitude as a negative value ($-2$)."
+      }
+    }
+  ]
+}

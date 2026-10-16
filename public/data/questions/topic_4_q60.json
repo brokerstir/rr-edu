@@ -1,0 +1,60 @@
+{
+  "id": "topic_4_q60",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 60,
+  "question_text": "A machine fills bottles with tomato sauce. Each bottle is filled independently of all other bottles. The volume of sauce in each bottle is normally distributed with mean $500\\text{ mL}$ and standard deviation $2.5\\text{ mL}$. Bottles are deemed to require extra sauce if the machine delivers less than $495\\text{ mL}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the probability that a randomly selected bottle requires extra sauce.",
+      "final_answer": "$0.0228$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Defining random variable $X \\sim \\text{N}(500, (2.5)^2)$ and writing probability expression $P(X < 495)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining correct probability $0.0228$"
+        }
+      ],
+      "solution": "Let the volume of sauce in a randomly selected bottle be $X\\text{ mL}$.\n\n$X \\sim \\text{N}(500, (2.5)^2)$\n\n$\\therefore P(X < 495) \\approx 0.022750 \\approx 0.0228$",
+      "ai_explanation": {
+        "concept_rule": "Cumulative distribution function for a normal variable $X \\sim \\text{N}(\\mu, \\sigma^2)$.",
+        "step_by_step": [
+          "State distribution: $X \\sim \\text{N}(500, 2.5^2)$.",
+          "Calculate lower-tail probability $P(X < 495)$ using Normal CDF with lower bound $-\\infty$ and upper bound $495$.",
+          "Round to 3 or 4 significant figures: $0.0228$."
+        ],
+        "common_pitfalls": "Confusing standard deviation $2.5$ with variance $(2.5)^2$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "From a sample of 200 bottles, calculate the probability that at least 8 bottles require extra sauce.",
+      "final_answer": "$0.0884$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying binomial distribution $Y \\sim \\text{B}(200, 0.02275)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $P(Y \\ge 8) \\approx 0.0884$"
+        }
+      ],
+      "solution": "Let $Y$ be the number of bottles which require extra sauce.\n\n$Y \\sim \\text{B}(200, 0.022750)$ {from a}\n\n$\\therefore P(Y \\ge 8) \\approx 0.0884$",
+      "ai_explanation": {
+        "concept_rule": "Binomial distribution model where each trial is independent with a constant probability of success found from part a.",
+        "step_by_step": [
+          "Define $Y \\sim \\text{B}(n, p)$ with $n = 200$ and $p \\approx 0.022750$.",
+          "Calculate cumulative binomial probability $P(Y \\ge 8) = 1 - P(Y \\le 7)$.",
+          "Obtain $0.0884$ using Binomial CD."
+        ],
+        "common_pitfalls": "Using rounded probability from part a prematurely, leading to rounding inaccuracies."
+      }
+    }
+  ]
+}

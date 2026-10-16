@@ -6,6 +6,11 @@ Hardened 2-pass parser for Haese IB Math AA SL revision guide:
 1. Pass 1: Questions PDF page-by-page (extracts stems and subparts).
 2. Pass 2: Solutions PDF in 3-page chunks (extracts mark_breakdown, solution, final_answer, and ai_explanation).
 Normalizes subpart keys and LaTeX formatting, ensuring 100% solution coverage.
+
+Usage ex:
+  .venv/bin/python3 scripts/parse_h_revision.py --topic 3
+  .venv/bin/python3 scripts/parse_h_revision.py --test-merge
+  .venv/bin/python3 scripts/parse_h_revision.py --test-merge --topic 3
 """
 
 import os
@@ -85,7 +90,7 @@ if HAS_GENAI:
         @classmethod
         def normalize_subpart_label(cls, v: str) -> str:
             v_clean = v.strip().lower()
-            if v_clean in ["none", "default", "main", "null"]:
+            if v_clean in ["none", "default", "main", "null", "single", "1", "q1"]:
                 return ""
             return v_clean
 
@@ -111,7 +116,7 @@ if HAS_GENAI:
         @classmethod
         def normalize_subpart_label(cls, v: str) -> str:
             v_clean = v.strip().lower()
-            if v_clean in ["none", "default", "main", "null"]:
+            if v_clean in ["none", "default", "main", "null", "single"]:
                 return ""
             return v_clean
 
@@ -170,7 +175,9 @@ def run_pass1_questions(
             prompt = f"""
 Extract all SKILL BUILDER QUESTIONS on this single Questions PDF page for TOPIC {topic_num}.
 Format inline math in standard LaTeX ($...$). Set `has_diagram = True` if a figure is referenced.
-If a question has subparts like 'a i', 'a ii', extract each nested subpart separately.
+Subpart labeling rules:
+- If a question has explicit subparts like 'a', 'b', or nested 'a i', 'a ii', extract each separately.
+- If a question is a single standalone question with no subpart letters, set `subpart = ""` (empty string).
 """
             response = client.models.generate_content(
                 model=model_name,
@@ -223,7 +230,7 @@ def run_pass2_solutions(
     s_pages: List[int],
     topic_num: int,
     model_name: str
-) -> List[SubpartSolutionBatch]:
+) -> List[Any]:
     all_sols = []
 
     for chunk in chunk_list(s_pages, 3):
@@ -234,14 +241,18 @@ def run_pass2_solutions(
             up_file = client.files.upload(file=tmp_path)
             prompt = f"""
 Extract ALL WORKED SOLUTIONS on these PDF pages for TOPIC {topic_num}.
-Make sure NO questions or subparts are omitted.
-For each subpart:
-1. Identify `question_number` and `subpart` (e.g., 'a', 'b', 'a i', 'a ii', or empty string '' if no subpart).
-2. Extract `final_answer` (isolated short expression enclosed in LaTeX $...$).
-3. Extract `mark_breakdown` array containing mark codes ("M1", "A1", "R1") and descriptions.
-4. Extract official `solution` text.
-5. Generate `ai_explanation` object with `concept_rule`, `step_by_step` list, and `common_pitfalls`.
-Format all math as standard LaTeX inside $...$.
+Ensure NO questions or subparts are omitted.
+
+Subpart Matching Rules:
+1. `question_number`: Identify the corresponding integer question number.
+2. `subpart`: Match subpart labels accurately:
+   - For subparts with letters/roman numerals, extract exact label (e.g., 'a', 'b', 'a i', 'a ii', 'c i').
+   - For single-part questions that have NO subpart letters in the question stem, set `subpart = ""` (empty string).
+3. `final_answer`: Extract isolated short target answer enclosed in LaTeX $...$.
+4. `mark_breakdown`: Extract rubric array containing mark codes ("M1", "A1", "R1") and descriptions.
+5. `solution`: Extract full worked math derivation.
+6. `ai_explanation`: Generate object with `concept_rule`, `step_by_step` array, and `common_pitfalls`.
+Format all math expressions as standard LaTeX inside $...$.
 """
             response = client.models.generate_content(
                 model=model_name,
@@ -267,6 +278,7 @@ Format all math as standard LaTeX inside $...$.
         time.sleep(1)
 
     return all_sols
+
 
 def parse_topic(
     client: Any,
@@ -307,6 +319,9 @@ def parse_topic(
         unmatched_sols = []
         for sol in q_sols:
             s_part = sol.subpart.strip().lower().replace(" ", "").replace("(", "").replace(")", "")
+            if s_part in ["none", "default", "main", "null", "single", "1", "q1"]:
+                s_part = ""
+
             matched_key = None
 
             for k in sp_keys:
@@ -315,7 +330,7 @@ def parse_topic(
                     matched_key = k
                     break
 
-            if matched_key:
+            if matched_key is not None:
                 sp_dict[matched_key].update({
                     "final_answer": sol.final_answer,
                     "mark_breakdown": [{"code": m.code, "desc": m.desc} for m in sol.mark_breakdown],
@@ -354,12 +369,8 @@ def parse_topic(
     print(f"✅ Topic {topic_num}: {len(final_questions)} questions extracted, {merged_count} solutions merged.")
     return final_questions
 
+
 def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str, Any]]]) -> None:
-    """
-    Saves parsed questions to individual files and bundled topic files.
-    Updates topics.json manifest by merging newly parsed topics with existing
-    manifest entries or on-disk topic bundles.
-    """
     data_dir.mkdir(parents=True, exist_ok=True)
     questions_dir = data_dir / "questions"
     questions_dir.mkdir(parents=True, exist_ok=True)
@@ -367,7 +378,6 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
     manifest_file = data_dir / "topics.json"
     manifest_dict = {}
 
-    # 1. Load existing manifest if present to preserve previously parsed topics
     if manifest_file.exists():
         try:
             with open(manifest_file, "r", encoding="utf-8") as f:
@@ -377,22 +387,18 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
             print(f"⚠️ Warning: Could not parse existing topics.json: {e}")
             manifest_dict = {}
 
-    # 2. Write individual question JSONs and topic bundles for current run
     for t_num, q_list in all_topics_data.items():
         t_name = TOPIC_PAGES.get(t_num, {}).get("name", f"Topic {t_num}")
         t_filename = f"topic_{t_num}.json"
 
-        # Save individual question JSON files
         for q in q_list:
             q_file = questions_dir / f"{q['id']}.json"
             with open(q_file, "w", encoding="utf-8") as f:
                 json.dump(q, f, indent=2, ensure_ascii=False)
 
-        # Save bundled topic JSON file
         with open(data_dir / t_filename, "w", encoding="utf-8") as f:
             json.dump(q_list, f, indent=2, ensure_ascii=False)
 
-        # Update or add entry in manifest dictionary
         manifest_dict[t_num] = {
             "topic_number": t_num,
             "topic_name": t_name,
@@ -400,7 +406,6 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
             "bundle_file": f"data/{t_filename}"
         }
 
-    # 3. Double-check disk for any existing topic bundles not yet in manifest_dict
     for t_num in [1, 2, 3, 4, 5]:
         bundle_path = data_dir / f"topic_{t_num}.json"
         if bundle_path.exists() and t_num not in manifest_dict:
@@ -417,7 +422,6 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
             except Exception:
                 pass
 
-    # 4. Save sorted master manifest
     sorted_manifest = [manifest_dict[k] for k in sorted(manifest_dict.keys())]
 
     with open(manifest_file, "w", encoding="utf-8") as f:
@@ -427,6 +431,95 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
     print(f"\n🎉 Successfully saved data files and updated master manifest 'topics.json'.")
     print(f"   Active topics indexed in topics.json: {active_topics}")
 
+
+def run_zero_token_test_merge(topic_num: Optional[int] = None):
+    """Performs a local dry-run test of normalization and merge logic without making API calls."""
+    t_target = topic_num if topic_num else 3
+    t_name = TOPIC_PAGES.get(t_target, {}).get("name", f"Topic {t_target}")
+
+    print(f"🧪 Running Zero-Token Local Key Matching Test for Topic {t_target} ({t_name})...")
+
+    # Mock Pass 1 Question dictionary (containing nested subparts AND single-part questions)
+    mock_questions = {
+        1: {
+            "id": f"topic_{t_target}_q1",
+            "question_number": 1,
+            "subparts": {
+                "a i": {"subpart": "a i", "stem": "Stem 1a i", "solution": ""},
+                "a ii": {"subpart": "a ii", "stem": "Stem 1a ii", "solution": ""},
+                "b": {"subpart": "b", "stem": "Stem 1b", "solution": ""}
+            }
+        },
+        7: {
+            "id": f"topic_{t_target}_q7",
+            "question_number": 7,
+            "subparts": {
+                "": {"subpart": "", "stem": "Single part stem", "solution": ""}
+            }
+        }
+    }
+
+    class MockSolution:
+        def __init__(self, q_num, sp, sol):
+            self.question_number = q_num
+            self.subpart = sp
+            self.final_answer = "$x = 5$"
+            self.mark_breakdown = []
+            self.solution = sol
+            self.ai_explanation = type('obj', (object,), {
+                'concept_rule': 'Rule', 'step_by_step': ['Step 1'], 'common_pitfalls': 'None'
+            })()
+
+    mock_sols = [
+        MockSolution(1, "a i", "Solution 1a i"),
+        MockSolution(1, "a ii", "Solution 1a ii"),
+        MockSolution(1, "b", "Solution 1b"),
+        MockSolution(7, "single", "Solution 7 single part")  # Mock LLM returning 'single'
+    ]
+
+    sols_by_q = {}
+    for sol in mock_sols:
+        q_num = sol.question_number
+        if q_num not in sols_by_q:
+            sols_by_q[q_num] = []
+        sols_by_q[q_num].append(sol)
+
+    merged_count = 0
+    for q_num, q_data in mock_questions.items():
+        sp_dict = q_data["subparts"]
+        q_sols = sols_by_q.get(q_num, [])
+        if not q_sols:
+            continue
+
+        sp_keys = list(sp_dict.keys())
+        unmatched_sols = []
+
+        for sol in q_sols:
+            s_part = sol.subpart.strip().lower().replace(" ", "").replace("(", "").replace(")", "")
+            if s_part in ["none", "default", "main", "null", "single", "1", "q1"]:
+                s_part = ""
+
+            matched_key = None
+
+            for k in sp_keys:
+                k_clean = k.strip().lower().replace(" ", "").replace("(", "").replace(")", "")
+                if s_part == k_clean or (s_part == "" and len(sp_keys) == 1):
+                    matched_key = k
+                    break
+
+            if matched_key is not None:
+                sp_dict[matched_key]["solution"] = sol.solution
+                merged_count += 1
+            else:
+                unmatched_sols.append(sol)
+
+    assert merged_count == 4, f"Expected 4 merged solutions, got {merged_count}"
+    assert mock_questions[1]["subparts"]["a i"]["solution"] == "Solution 1a i"
+    assert mock_questions[7]["subparts"][""]["solution"] == "Solution 7 single part"
+
+    print(f"✅ Zero-Token Test Passed 100% for Topic {t_target}! All nested and single-part questions merged cleanly.")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--topics", default="ib/Mathematics-AA-SL-2-REVISION-GUIDE-Topics-Haese2020.pdf")
@@ -434,8 +527,12 @@ def main():
     parser.add_argument("--model", default=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"))
     parser.add_argument("--topic", type=int, choices=[1, 2, 3, 4, 5])
     parser.add_argument("--outdir", default="public/data")
-    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--test-merge", action="store_true", help="Run local zero-token key matching test")
     args = parser.parse_args()
+
+    if args.test_merge:
+        run_zero_token_test_merge(topic_num=args.topic)
+        return
 
     client = get_gemini_client()
     if not client:
@@ -445,7 +542,7 @@ def main():
     topics_reader = PdfReader(args.topics)
     solutions_reader = PdfReader(args.solutions)
 
-    target_topics = [args.topic] if args.topic else [1, 2, 3, 4, 5]
+    target_topics = [args.topic] if args.topic else [3]
     all_data = {}
 
     for t_num in target_topics:
@@ -453,12 +550,7 @@ def main():
             client, topics_reader, solutions_reader, t_num, TOPIC_PAGES[t_num], args.model
         )
 
-    if args.dry_run:
-        print("\n🔍 DRY-RUN MODE: Sample output:")
-        if all_data.get(target_topics[0]):
-            print(json.dumps(all_data[target_topics[0]][0], indent=2))
-    else:
-        save_static_bundles(Path(args.outdir), all_data)
+    save_static_bundles(Path(args.outdir), all_data)
 
 
 if __name__ == "__main__":

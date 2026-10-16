@@ -1,0 +1,110 @@
+{
+  "id": "topic_5_q89",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 89,
+  "question_text": "The rate at which a tree grows $t$ years after planting is given by $G(t) = \\frac{2.5}{t + 1}\\text{ metres per year}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why the tree is always growing taller.",
+      "final_answer": "$The tree is always growing taller because $G(t) > 0$ for all $t \\ge 0$.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating $G(t) > 0$ for all $t \\ge 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding that the rate of growth is positive so the tree is always growing taller"
+        }
+      ],
+      "solution": "$G(t) > 0$ for all $t \\ge 0$.\n$\\therefore$ the rate at which the tree grows is always positive.\n$\\therefore$ the tree is always growing taller.",
+      "ai_explanation": {
+        "concept_rule": "If the rate of change of a quantity is strictly positive, the quantity is strictly increasing.",
+        "step_by_step": [
+          "Examine the sign of $G(t) = \\frac{2.5}{t+1}$ for $t \\ge 0$.",
+          "Since numerator $>0$ and denominator $>0$, $G(t) > 0$.",
+          "Conclude that growth rate is strictly positive, meaning the tree is always growing."
+        ],
+        "common_pitfalls": "Confusing the rate of growth being positive with the rate being increasing or decreasing."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Evaluate the following integrals, and interpret their meaning: $\\int_0^5 G(t)\\,\\text{d}t$",
+      "final_answer": "$\\approx 4.48\\text{ metres}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrating $\\frac{2.5}{t+1}$ to get $2.5\\ln|t+1|$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substituting limits 0 to 5 to obtain $2.5\\ln 6 \\approx 4.48\\text{ metres}$"
+        }
+      ],
+      "solution": "$$\\int_0^5 G(t)\\,dt = \\int_0^5 \\frac{2.5}{t+1}\\,dt$$\n$$= [2.5\\ln|t+1|]_0^5$$\n$$= 2.5\\ln 6 - 2.5\\ln 1$$\n$$= 2.5\\ln 6 \\approx 4.48\\text{ metres}$$\n\nThe tree grew about $4.48\\text{ metres}$ in the first 5 years of its lifetime.",
+      "ai_explanation": {
+        "concept_rule": "The total change in height is the integral of the rate of growth with respect to time: $\\Delta h = \\int_{t_1}^{t_2} G(t)\\,dt$.",
+        "step_by_step": [
+          "Integrate $\\frac{2.5}{t+1}$ with respect to $t$.",
+          "Evaluate at $t = 5$ and $t = 0$.",
+          "Use $\\ln 1 = 0$ to simplify to $2.5\\ln 6$ and calculate the numerical value."
+        ],
+        "common_pitfalls": "Forgetting that $\\ln(1) = 0$ or forgetting the factor of $2.5$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Evaluate the following integrals, and interpret their meaning: $\\int_5^{10} G(t)\\,\\text{d}t$",
+      "final_answer": "$\\approx 1.52\\text{ metres}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral from 5 to 10"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $2.5\\ln 11 - 2.5\\ln 6 = 2.5\\ln\\left(\\frac{11}{6}\\right) \\approx 1.52\\text{ metres}$"
+        }
+      ],
+      "solution": "$$\\int_5^{10} G(t)\\,dt = \\int_5^{10} \\frac{2.5}{t+1}\\,dt$$\n$$= [2.5\\ln|t+1|]_5^{10}$$\n$$= 2.5\\ln 11 - 2.5\\ln 6$$\n$$= 2.5\\ln\\left(\\frac{11}{6}\\right) \\approx 1.52\\text{ metres}$$\n\nThe tree grew about $1.52\\text{ metres}$ between the 5th and 10th years of its lifetime.",
+      "ai_explanation": {
+        "concept_rule": "The net growth between two time periods $t=a$ and $t=b$ is given by $\\int_a^b G(t)\\,dt$.",
+        "step_by_step": [
+          "Set up the integral $\\int_5^{10} \\frac{2.5}{t+1}\\,dt$.",
+          "Apply the antiderivative $[2.5\\ln|t+1|]_5^{10}$.",
+          "Compute $2.5(\\ln 11 - \\ln 6)$ and evaluate numerically."
+        ],
+        "common_pitfalls": "Using limits 0 to 10 instead of 5 to 10."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "After 15 years, the tree is struck by lightning and is cut down. How much did the tree grow over its lifetime?",
+      "final_answer": "$\\approx 6.93\\text{ metres}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral $\\int_0^{15} \\frac{2.5}{t+1}\\,dt$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $2.5\\ln 16 \\approx 6.93\\text{ metres}$"
+        }
+      ],
+      "solution": "$$\\int_0^{15} G(t)\\,dt = \\int_0^{15} \\frac{2.5}{t+1}\\,dt$$\n$$= [2.5\\ln|t+1|]_0^{15}$$\n$$= 2.5\\ln 16 - 2.5\\ln 1$$\n$$= 2.5\\ln 16 \\approx 6.93\\text{ metres}$$\n\nThe tree grew about $6.93\\text{ metres}$ over its entire lifetime.",
+      "ai_explanation": {
+        "concept_rule": "The total lifetime growth is the definite integral of the growth rate over the entire lifetime interval $[0, 15]$.",
+        "step_by_step": [
+          "Set limits of integration from 0 to 15.",
+          "Evaluate $2.5\\ln(16) - 2.5\\ln(1)$.",
+          "Calculate $2.5\\ln(16) \\approx 6.93$."
+        ],
+        "common_pitfalls": "Plugging in incorrect upper or lower limits."
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "topic_5_q62",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 62,
+  "question_text": "Find $f(x)$ given $f'(x) = \\frac{4}{5-x}$ and $f(4) = 6$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Find $f(x)$ given $f'(x) = \\frac{4}{5-x}$ and $f(4) = 6$.",
+      "final_answer": "$f(x) = -4\\ln|5-x| + 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrate $f'(x)$ using $\\int \\frac{1}{a-x} dx = -\\ln|a-x|$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $f(4) = 6$ to find $c$"
+        },
+        {
+          "code": "A1",
+          "desc": "State $f(x)$"
+        }
+      ],
+      "solution": "$f'(x) = \\frac{4}{5-x}$, $f(4) = 6$. $\\therefore f(x) = \\int \\frac{4}{5-x}\\,dx = -4\\ln|5-x| + c$. Now $f(4) = 6 \\implies -4\\ln|5-4| + c = 6 \\implies -4\\ln 1 + c = 6 \\implies c = 6$. $\\therefore f(x) = -4\\ln|5-x| + 6$.",
+      "ai_explanation": {
+        "concept_rule": "Integrate a rational function with a linear denominator using the natural logarithm, noting the negative sign from the derivative of $-x$.",
+        "step_by_step": [
+          "Integrate $f'(x) = \\frac{4}{5-x}$ to get $f(x) = -4\\ln|5-x| + c$.",
+          "Substitute $x = 4$ and set $f(4) = 6$.",
+          "Since $\\ln 1 = 0$, obtain $c = 6$.",
+          "Write the final function $f(x) = -4\\ln|5-x| + 6$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign from the chain rule for $\\frac{1}{5-x}$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "topic_5_q8",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 8,
+  "question_text": "The gradient function of $f(x) = (ax + b)^c$ is $f'(x) = 81x^2 + 108x + 36$. Find the constants $a$, $b$, and $c$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The gradient function of $f(x) = (ax + b)^c$ is $f'(x) = 81x^2 + 108x + 36$. Find the constants $a$, $b$, and $c$.",
+      "final_answer": "$a = 3,\\; b = 2,\\; c = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating $f(x)$ using the chain rule and equating degrees to find $c = 3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Expanding $3a(ax + b)^2$ and equating coefficients with $81x^2 + 108x + 36$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $a = 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $b = 2$ and verifying"
+        }
+      ],
+      "solution": "$f(x) = (ax + b)^c$\n$\\therefore f'(x) = c(ax + b)^{c-1}(a) \\quad \\{\\text{chain rule}\\}\n= ac(ax + b)^{c-1}$\n\nNow $f'(x) = 81x^2 + 108x + 36$ is a polynomial of degree 2, so we must have\n$c - 1 = 2 \\implies c = 3$\n\n$\\therefore 3a(ax + b)^2 = 81x^2 + 108x + 36$\n$\\therefore 3a(a^2x^2 + 2abx + b^2) = 81x^2 + 108x + 36$\n$\\therefore 3a^3x^2 + 6a^2bx + 3ab^2 = 81x^2 + 108x + 36$\n\nEquating coefficients gives:\n$3a^3 = 81 \\quad \\dots (1)$\n$6a^2b = 108 \\quad \\dots (2)$\n$3ab^2 = 36 \\quad \\dots (3)$\n\nFrom (1), $3a^3 = 81 \\implies a^3 = 27 \\implies a = 3$\nSubstituting $a = 3$ into (2) gives:\n$6(3)^2b = 108 \\implies 54b = 108 \\implies b = 2$\n\nCheck: $3ab^2 = 3(3)(2)^2 = 36$ \\checkmark",
+      "ai_explanation": {
+        "concept_rule": "Equating polynomial degrees and corresponding coefficients of equal polynomials.",
+        "step_by_step": [
+          "Differentiate $f(x) = (ax+b)^c$ to get $ac(ax+b)^{c-1}$.",
+          "Since $f'(x)$ is a quadratic (degree 2), the power $c - 1$ must be $2$, so $c = 3$.",
+          "Expand $3a(ax + b)^2 = 3a^3x^2 + 6a^2bx + 3ab^2$.",
+          "Equate coefficients of $x^2$: $3a^3 = 81 \\implies a = 3$.",
+          "Equate coefficients of $x$: $6(3)^2 b = 108 \\implies b = 2$.",
+          "Verify with constant term: $3(3)(2)^2 = 36$, which matches."
+        ],
+        "common_pitfalls": "Forgetting the inner derivative factor $a$ in the chain rule."
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "topic_4_q47",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 47,
+  "question_text": "The table alongside shows the probability distribution for $X$.\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline P(X = x) & 0.3 & 0.2 & m & n \\\\\\hline\\end{array}$$\n\nIf $E(X) = 1.55$, find $m$ and $n$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The table alongside shows the probability distribution for $X$.\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline P(X = x) & 0.3 & 0.2 & m & n \\\\\\hline\\end{array}$$\n\nIf $E(X) = 1.55$, find $m$ and $n$.",
+      "final_answer": "$m = 0.15,\\; n = 0.35$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use $\\sum P(x_i) = 1$ to write equation relating $m$ and $n$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use $E(X) = 1.55$ to write second equation in $m$ and $n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve simultaneously to find $m = 0.15$ and $n = 0.35$"
+        }
+      ],
+      "solution": "Since this is a probability distribution, $\\sum_{i=1}^n P(x_i) = 1$\n$\\therefore 0.3 + 0.2 + m + n = 1$\n$\\therefore n = 0.5 - m \\quad \\dots (*)$\n\nNow if $E(X) = 1.55$, then $1.55 = \\sum_{i=1}^n x_i p_i$\n$\\therefore 1.55 = 0(0.3) + 1(0.2) + 2m + 3n$\n$\\therefore 1.35 = 2m + 3(0.5 - m) \\quad \\{\\text{using } (*)\\}$\n$\\therefore 1.35 = 2m + 1.5 - 3m$\n$\\therefore -0.15 = -m$\n$\\therefore m = 0.15$\n\nSubstituting into $(*)$, $n = 0.5 - 0.15 = 0.35$.",
+      "ai_explanation": {
+        "concept_rule": "Form two linear equations in two unknowns using $\\sum P(X=x) = 1$ and $E(X) = \\sum x P(X=x)$, then solve simultaneously.",
+        "step_by_step": [
+          "Total probability equation: $0.3 + 0.2 + m + n = 1 \\implies m + n = 0.5$, so $n = 0.5 - m$.",
+          "Expected value equation: $0(0.3) + 1(0.2) + 2m + 3n = 1.55 \\implies 2m + 3n = 1.35$.",
+          "Substitute $n = 0.5 - m$: $2m + 3(0.5 - m) = 1.35 \\implies 1.5 - m = 1.35 \\implies m = 0.15$.",
+          "Find $n$: $n = 0.5 - 0.15 = 0.35$."
+        ],
+        "common_pitfalls": "Sign errors when expanding $3(0.5 - m)$."
+      }
+    }
+  ]
+}

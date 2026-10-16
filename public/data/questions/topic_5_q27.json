@@ -1,0 +1,68 @@
+{
+  "id": "topic_5_q27",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 27,
+  "question_text": "Consider the curve $y = \\frac{a}{x} - x^2 + 1$ where $a \\in \\mathbb{R}$. The gradient of the tangent to the curve is $-5$ when $x = 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $a$.",
+      "final_answer": "$a = 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $y = ax^{-1} - x^2 + 1$ to obtain $\\frac{dy}{dx}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 2$ and equate derivative to the given gradient $-5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve the linear equation for $a$"
+        }
+      ],
+      "solution": "$y = \\frac{a}{x} - x^2 + 1 = ax^{-1} - x^2 + 1$\n$\\therefore \\frac{dy}{dx} = -ax^{-2} - 2x = \\frac{-a}{x^2} - 2x$\nNow the gradient of the tangent at $x = 2$ is $-5$.\n$\\therefore \\frac{-a}{2^2} - 2(2) = -5$\n$\\therefore \\frac{-a}{4} - 4 = -5$\n$\\therefore \\frac{-a}{4} = -1$\n$\\therefore a = 4$",
+      "ai_explanation": {
+        "concept_rule": "The gradient of the tangent to a curve at $x = x_0$ is given by evaluating $\\frac{dy}{dx}$ at $x = x_0$.",
+        "step_by_step": [
+          "Rewrite $\\frac{a}{x}$ as $ax^{-1}$ and differentiate using power rule to get $\\frac{dy}{dx} = -\\frac{a}{x^2} - 2x$.",
+          "Substitute $x = 2$: $\\frac{dy}{dx} = -\\frac{a}{4} - 4$.",
+          "Set this equal to $-5$ and solve for $a$: $-\\frac{a}{4} = -1 \\implies a = 4$."
+        ],
+        "common_pitfalls": "Incorrectly differentiating $\\frac{a}{x}$ as positive or treating $a$ as a variable rather than a constant."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Determine the equation of the tangent to the curve at $x = 2$.",
+      "final_answer": "$y = -5x + 9$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find the $y$-coordinate at $x = 2$ using $a = 4$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use tangent line formula with gradient $-5$ and point $(2, -1)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $y = -5x + 9$"
+        }
+      ],
+      "solution": "$y = \\frac{a}{x} - x^2 + 1 = \\frac{4}{x} - x^2 + 1$ {from a}\nWhen $x = 2$, $y = \\frac{4}{2} - 2^2 + 1 = 2 - 4 + 1 = -1$\nSo, the point of contact is $(2, -1)$.\nThe equation of tangent is $y = -5(x - 2) + (-1)$\n$\\therefore y = -5x + 10 - 1$\n$\\therefore y = -5x + 9$",
+      "ai_explanation": {
+        "concept_rule": "The tangent line equation is $y - y_1 = m(x - x_1)$, where $(x_1, y_1)$ is the point on the curve.",
+        "step_by_step": [
+          "Substitute $a = 4$ and $x = 2$ into the original function to get $y = -1$.",
+          "Write the equation with gradient $m = -5$ at point $(2, -1)$: $y - (-1) = -5(x - 2)$.",
+          "Expand and simplify: $y = -5x + 10 - 1 = -5x + 9$."
+        ],
+        "common_pitfalls": "Confusing the gradient of the tangent with that of the normal."
+      }
+    }
+  ]
+}

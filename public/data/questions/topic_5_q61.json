@@ -1,0 +1,95 @@
+{
+  "id": "topic_5_q61",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 61,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int (2\\sin^2 x - 1)\\,dx$",
+      "final_answer": "$-\\frac{1}{2}\\sin 2x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use double angle formula $\\cos 2x = 1 - 2\\sin^2 x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate $-\\cos 2x$ correctly"
+        }
+      ],
+      "solution": "$\\int (2\\sin^2 x - 1)\\,dx = \\int (-(1 - 2\\sin^2 x))\\,dx = \\int (-\\cos 2x)\\,dx\\quad \\{\\text{double angle formula}\\} = -\\frac{1}{2}\\sin 2x + c$",
+      "ai_explanation": {
+        "concept_rule": "Double angle identity: $\\cos 2x = 1 - 2\\sin^2 x$, which implies $2\\sin^2 x - 1 = -\\cos 2x$.",
+        "step_by_step": [
+          "Recognise that $2\\sin^2 x - 1 = -\\cos 2x$.",
+          "Substitute into the integral: $\\int -\\cos 2x\\,dx$.",
+          "Integrate to obtain $-\\frac{1}{2}\\sin 2x + c$."
+        ],
+        "common_pitfalls": "Sign error when rearranging $1 - 2\\sin^2 x$ to $2\\sin^2 x - 1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int (\\sin 2x - \\cos 2x)^2\\,dx$",
+      "final_answer": "$x + \\frac{1}{4}\\cos 4x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand the square and apply $\\sin^2\\theta + \\cos^2\\theta = 1$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use double angle formula $2\\sin\\theta\\cos\\theta = \\sin 2\\theta$"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate each term correctly"
+        }
+      ],
+      "solution": "$\\int (\\sin 2x - \\cos 2x)^2\\,dx = \\int (\\sin^2 2x - 2\\sin 2x\\cos 2x + \\cos^2 2x)\\,dx = \\int (1 - 2\\sin 2x\\cos 2x)\\,dx = \\int (1 - \\sin 4x)\\,dx\\quad \\{\\text{double angle formula}\\} = x + \\frac{1}{4}\\cos 4x + c$",
+      "ai_explanation": {
+        "concept_rule": "Expand the squared binomial, simplify using the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$, and replace $2\\sin\\theta\\cos\\theta$ with $\\sin 2\\theta$.",
+        "step_by_step": [
+          "Expand: $(\\sin 2x - \\cos 2x)^2 = \\sin^2 2x - 2\\sin 2x\\cos 2x + \\cos^2 2x$.",
+          "Use $\\sin^2 2x + \\cos^2 2x = 1$ to simplify to $1 - 2\\sin 2x\\cos 2x$.",
+          "Use $2\\sin 2x\\cos 2x = \\sin 4x$ to rewrite the integrand as $1 - \\sin 4x$.",
+          "Integrate term by term: $\\int 1\\,dx = x$ and $\\int -\\sin 4x\\,dx = \\frac{1}{4}\\cos 4x$."
+        ],
+        "common_pitfalls": "Sign error when integrating $-\\sin 4x$, since the integral of $-\\sin(kx)$ is $+\\frac{1}{k}\\cos(kx)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\int (\\cos x + 2)^2\\,dx$",
+      "final_answer": "$\\frac{1}{4}\\sin 2x + 4\\sin x + \\frac{9}{2}x + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expand bracket and use double angle identity for $\\cos^2 x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Collect like constant terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Integrate each term correctly"
+        }
+      ],
+      "solution": "$\\int (\\cos x + 2)^2\\,dx = \\int (\\cos^2 x + 4\\cos x + 4)\\,dx = \\int \\left(\\frac{1}{2}\\cos 2x + \\frac{1}{2} + 4\\cos x + 4\\right)dx\\quad \\{\\text{double angle formula}\\} = \\int \\left(\\frac{1}{2}\\cos 2x + 4\\cos x + \\frac{9}{2}\\right)dx = \\frac{1}{4}\\sin 2x + 4\\sin x + \\frac{9}{2}x + c$",
+      "ai_explanation": {
+        "concept_rule": "To integrate powers of cosine, use the identity $\\cos^2 x = \\frac{1}{2}(1 + \\cos 2x)$.",
+        "step_by_step": [
+          "Expand $(\\cos x + 2)^2 = \\cos^2 x + 4\\cos x + 4$.",
+          "Substitute $\\cos^2 x = \\frac{1}{2}\\cos 2x + \\frac{1}{2}$.",
+          "Combine constant terms: $\\frac{1}{2} + 4 = \\frac{9}{2}$.",
+          "Integrate each term: $\\int \\frac{1}{2}\\cos 2x\\,dx = \\frac{1}{4}\\sin 2x$, $\\int 4\\cos x\\,dx = 4\\sin x$, $\\int \\frac{9}{2}\\,dx = \\frac{9}{2}x$."
+        ],
+        "common_pitfalls": "Forgetting to expand $\\cos^2 x$ into its double angle form before integrating."
+      }
+    }
+  ]
+}

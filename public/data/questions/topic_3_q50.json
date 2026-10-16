@@ -1,0 +1,58 @@
+{
+  "id": "topic_3_q50",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 50,
+  "question_text": "The data in the table below shows the mean daily petrol price in a city for the past 28 days.\n\n| Day ($t$) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Price ($P$ cents per L) | 135 | 135 | 138 | 144 | 147 | 149 | 151 | 150 | 149 | 143 | 140 | 135 | 134 | 130 |\n\n| Day ($t$) | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Price ($P$ cents per L) | 129 | 128 | 131 | 135 | 136 | 143 | 144 | 148 | 148 | 150 | 151 | 145 | 142 | 137 |\n\nWe want to model the data with a trigonometric function of the form $P = a\\sin(b(t - c)) + d$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a scatter diagram of the data.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b i",
+      "stem": "Without using technology, estimate: $b$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Without using technology, estimate: $a$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Without using technology, estimate: $d$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b iv",
+      "stem": "Without using technology, estimate: $c$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "Check your answers to b using technology.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

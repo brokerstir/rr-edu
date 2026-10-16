@@ -1,0 +1,60 @@
+{
+  "id": "topic_5_q22",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 22,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the equation of the tangent to the curve $y = x^3 - 5$ at the point $(1, -4)$.",
+      "final_answer": "$y = 3x - 7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the derivative $\\frac{dy}{dx}$ and evaluating at $x = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Forming the equation of the tangent line"
+        }
+      ],
+      "solution": "$y = x^3 - 5$\nNow $\\frac{dy}{dx} = 3x^2$, so at $x = 1$,\n$\\frac{dy}{dx} = 3(1)^2 = 3$\nThe tangent at $(1, -4)$ has equation $y = 3(x-1) - 4$\n$\\therefore y = 3x - 7$",
+      "ai_explanation": {
+        "concept_rule": "Equation of tangent line: $y - y_1 = m(x - x_1)$, where $m = f'(x_1)$.",
+        "step_by_step": [
+          "Differentiate $y = x^3 - 5$ to get $\\frac{dy}{dx} = 3x^2$.",
+          "Evaluate gradient at $x = 1$: $m = 3(1)^2 = 3$.",
+          "Use the point $(1, -4)$: $y - (-4) = 3(x - 1)$.",
+          "Simplify: $y + 4 = 3x - 3 \\implies y = 3x - 7$."
+        ],
+        "common_pitfalls": "Sign error when moving the $y_1$ term to the other side."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Where does this tangent cut the $x$-axis?",
+      "final_answer": "$x = \\frac{7}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $y = 0$ in the tangent equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $x$"
+        }
+      ],
+      "solution": "The tangent cuts the $x$-axis where $y = 0$\n$\\therefore 3x - 7 = 0$\n$\\therefore x = \\frac{7}{3}$",
+      "ai_explanation": {
+        "concept_rule": "An $x$-intercept occurs where $y = 0$.",
+        "step_by_step": [
+          "Substitute $y = 0$ into $y = 3x - 7$.",
+          "Solve $3x - 7 = 0 \\implies 3x = 7 \\implies x = 7/3$."
+        ],
+        "common_pitfalls": "Confusing the $x$-intercept ($y=0$) with the $y$-intercept ($x=0$)."
+      }
+    }
+  ]
+}

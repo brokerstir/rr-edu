@@ -1,0 +1,18 @@
+{
+  "id": "topic_3_q62",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 62,
+  "question_text": "Solve for $0 \\leqslant x \\leqslant 2\\pi$: $\\sin^2 x - \\cos^2 x = 0$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Solve for $0 \\leqslant x \\leqslant 2\\pi$: $\\sin^2 x - \\cos^2 x = 0$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

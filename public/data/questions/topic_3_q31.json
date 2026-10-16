@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q31",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 31,
+  "question_text": "Monument X is observed from two points B and C which are $330\\text{ m}$ apart. $\\text{X}\\widehat{\\text{B}}\\text{C}$ is $63^\\circ$ and $\\text{B}\\widehat{\\text{C}}\\text{X}$ is $75^\\circ$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a neat, labelled diagram to illustrate this information.",
+      "final_answer": "$\\text{[Diagram]}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly labeled triangle diagram with sides and angles"
+        }
+      ],
+      "solution": "Triangle diagram showing vertices $X$, $B$, and $C$, with side $XB = x\\text{ m}$, side $BC = 330\\text{ m}$, angle at $B = 63^\\circ$, and angle at $C = 75^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Geometric representation of a word problem using a labeled sketch.",
+        "step_by_step": [
+          "Draw a triangle with vertices $X$, $B$, and $C$.",
+          "Label angle $B = 63^\\circ$, angle $C = 75^\\circ$.",
+          "Label side $BC = 330\\text{ m}$ and side $XB = x\\text{ m}$."
+        ],
+        "common_pitfalls": "Incorrect placement of given angles or side lengths on the triangle vertices."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the distance between the monument and B.",
+      "final_answer": "$476\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating angle $C\\widehat{X}B$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying the sine rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $x$"
+        }
+      ],
+      "solution": "Let $XB$ be $x\\text{ m}$. $\\text{C}\\widehat{\\text{X}}\\text{B} = 180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ$ {angles in a triangle}. By the sine rule: $\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ} \\implies x = \\frac{330\\sin 75^\\circ}{\\sin 42^\\circ} \\approx 476$. The distance between the monument and $B$ is about $476\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "Calculate the unknown third angle to use with the opposite known side in the sine rule.",
+        "step_by_step": [
+          "Determine $\\angle X = 180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ$.",
+          "Set up the sine rule: $\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ}$.",
+          "Calculate $x$."
+        ],
+        "common_pitfalls": "Using $\\sin 63^\\circ$ instead of $\\sin 42^\\circ$ in the denominator."
+      }
+    }
+  ]
+}

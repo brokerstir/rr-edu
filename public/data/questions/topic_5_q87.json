@@ -1,0 +1,215 @@
+{
+  "id": "topic_5_q87",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 87,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Write down the derivative with respect to $x$ of: $f(x) = \\ln x$",
+      "final_answer": "$\\frac{1}{x}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct derivative of ln(x)"
+        }
+      ],
+      "solution": "$$f(x) = \\ln x$$\n$$\\therefore f'(x) = \\frac{1}{x}$$",
+      "ai_explanation": {
+        "concept_rule": "The derivative of the natural logarithm function $\\ln x$ with respect to $x$ is $\\frac{1}{x}$.",
+        "step_by_step": [
+          "Differentiate $\\ln x$ directly to get $\\frac{1}{x}$."
+        ],
+        "common_pitfalls": "Confusing derivative of $\\ln x$ with antiderivative."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Write down the derivative with respect to $x$ of: $F(x) = x \\ln x - x$.",
+      "final_answer": "$\\ln x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule to differentiate x*ln(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to obtain F'(x) = ln(x)"
+        }
+      ],
+      "solution": "$$F(x) = x\\ln x - x$$\n$$\\begin{aligned}\n\\therefore F'(x) &= \\left[(1)\\ln x + x\\left(\\frac{1}{x}\\right)\\right] - 1 \\quad \\{\\text{product rule}\\} \\\\\n&= \\ln x + 1 - 1 \\\\\n&= \\ln x\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "Differentiate $x \\ln x$ using the product rule $(uv)' = u'v + uv'$, then subtract the derivative of $x$.",
+        "step_by_step": [
+          "Let $u = x$ and $v = \\ln x$. Then $u' = 1$ and $v' = \\frac{1}{x}$.",
+          "$(x \\ln x)' = 1 \\cdot \\ln x + x \\cdot \\frac{1}{x} = \\ln x + 1$.",
+          "Differentiate $-x$ to get $-1$.",
+          "Combine: $\\ln x + 1 - 1 = \\ln x$."
+        ],
+        "common_pitfalls": "Forgetting to differentiate the $-x$ term at the end."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "What is the relationship between $f(x)$ and $F(x)$?",
+      "final_answer": "$F(x)$ is the antiderivative of $f(x)$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating that F'(x) = f(x) implies F(x) is the antiderivative of f(x)"
+        }
+      ],
+      "solution": "$F'(x) = f(x)$, that is, $F(x)$ is the antiderivative of $f(x)$.",
+      "ai_explanation": {
+        "concept_rule": "By definition, if $F'(x) = f(x)$, then $F(x)$ is an antiderivative of $f(x)$.",
+        "step_by_step": [
+          "Observe that from part a ii, $F'(x) = \\ln x$.",
+          "Since $f(x) = \\ln x$, $F'(x) = f(x)$.",
+          "Conclude that $F(x)$ is the antiderivative of $f(x)$."
+        ],
+        "common_pitfalls": "Confusing the function with its derivative."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Sketch the graph of $y = f(x)$.",
+      "final_answer": "$Graph of $f(x) = \\ln x$ showing x-intercept at $(1, 0)$ and vertical asymptote $x = 0$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct sketch of logarithmic curve passing through (1, 0) with vertical asymptote x = 0"
+        }
+      ],
+      "solution": "Sketch of $f(x) = \\ln x$ with a vertical asymptote along the $y$-axis ($x = 0$) and an $x$-intercept at $(1, 0)$.",
+      "ai_explanation": {
+        "concept_rule": "The graph of $y = \\ln x$ is defined for $x > 0$, has vertical asymptote $x = 0$, and passes through $(1, 0)$.",
+        "step_by_step": [
+          "Draw the coordinate axes.",
+          "Mark the $x$-intercept at $(1, 0)$.",
+          "Draw an increasing concave-down curve with vertical asymptote at $x = 0$ as $x \\to 0^+$."
+        ],
+        "common_pitfalls": "Drawing the curve into the negative $x$-domain."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "Let $\\text{O}$ be the origin, and let $\\text{P}$ be the point on $y = f(x)$ with $x$-coordinate $t$, $1 < t \\leqslant \\text{e}$. Show that the area bounded by $[\\text{OP}]$, $y = f(x)$, and the $x$-axis, is $\\left(t - \\frac{1}{2}t \\ln t - 1\\right)\\text{ units}^2$.",
+      "final_answer": "$\\left(t - \\frac{1}{2}t\\ln t - 1\\right)\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expressing Area A as area of triangle minus area B"
+        },
+        {
+          "code": "A1",
+          "desc": "Area of triangle = 1/2 * t * ln(t)"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating Area B using the antiderivative from part a ii"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expression for Area A in terms of t"
+        }
+      ],
+      "solution": "For $O(0, 0)$ and $P(t, \\ln t)$, where $1 < t \\le e$:\n$$\\begin{aligned}\n\\text{Area A} &= \\text{area of triangle} - \\text{area B} \\\\\n&= \\frac{1}{2}t\\ln t - \\int_1^t \\ln x\\, dx \\\\\n&= \\frac{1}{2}t\\ln t - [x\\ln x - x]_1^t \\quad \\{\\text{using a ii}\\} \\\\\n&= \\frac{1}{2}t\\ln t - [(t\\ln t - t) - (1\\ln 1 - 1)] \\\\\n&= \\frac{1}{2}t\\ln t - (t\\ln t - t - 0 + 1) \\\\\n&= \\left(t - \\frac{1}{2}t\\ln t - 1\\right) \\text{ units}^2\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area between the secant line from the origin to $P(t, \\ln t)$ and the curve $y = \\ln x$ on $[1, t]$ is found by subtracting the area under the curve from the right triangle formed by $(0,0)$, $(t,0)$, and $(t, \\ln t)$ minus the non-overlapping segment, or by directly subtracting the integral from the triangle's area.",
+        "step_by_step": [
+          "The triangle has base $t$ and height $\\ln t$, so its area is $\\frac{1}{2} t \\ln t$.",
+          "Area B is the integral of $\\ln x$ from $1$ to $t$.",
+          "Using part a ii, $\\int_1^t \\ln x\\, dx = [x \\ln x - x]_1^t = (t \\ln t - t) - (-1) = t \\ln t - t + 1$.",
+          "Subtract: $\\text{Area A} = \\frac{1}{2} t \\ln t - (t \\ln t - t + 1) = t - \\frac{1}{2} t \\ln t - 1$."
+        ],
+        "common_pitfalls": "Forgetting that $\\ln 1 = 0$, so evaluating the lower limit gives $1 \\ln 1 - 1 = -1$."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "For what value of $t$ will this area be maximised?",
+      "final_answer": "$t = e$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiating A with respect to t using the product rule"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct derivative dA/dt = 1/2 - 1/2*ln(t)"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting dA/dt = 0 to solve for critical value"
+        },
+        {
+          "code": "R1",
+          "desc": "Using sign diagram to verify A is maximised at t = e"
+        }
+      ],
+      "solution": "The area $A = t - \\frac{1}{2}t\\ln t - 1$\n$$\\begin{aligned}\n\\therefore \\frac{dA}{dt} &= 1 - \\frac{1}{2}(\\ln t + 1) \\quad \\{\\text{product rule}\\} \\\\\n&= \\frac{1}{2} - \\frac{1}{2}\\ln t\n\\end{aligned}$$\n\nNow $A$ is maximised when $\\frac{dA}{dt} = 0$\n$$\\begin{aligned}\n\\therefore \\frac{1}{2} - \\frac{1}{2}\\ln t &= 0 \\\\\n\\therefore \\frac{1}{2}\\ln t &= \\frac{1}{2} \\\\\n\\therefore \\ln t &= 1 \\\\\n\\therefore t &= e\n\\end{aligned}$$\n\nFrom the sign diagram of $\\frac{dA}{dt}$, the sign changes from positive to negative at $t = e$.\n\n$\\therefore A$ is maximised when $t = e$.",
+      "ai_explanation": {
+        "concept_rule": "To maximize an area function, differentiate with respect to the variable, set the derivative equal to zero, and verify that it corresponds to a local maximum using a sign diagram or second derivative test.",
+        "step_by_step": [
+          "Differentiate $A(t) = t - \\frac{1}{2}t \\ln t - 1$ using the product rule on $t \\ln t$.",
+          "Simplify $\\frac{dA}{dt} = 1 - \\frac{1}{2}\\ln t - \\frac{1}{2} = \\frac{1}{2} - \\frac{1}{2}\\ln t$.",
+          "Set $\\frac{dA}{dt} = 0 \\implies \\ln t = 1 \\implies t = e$.",
+          "Verify with a sign diagram that $\\frac{dA}{dt} > 0$ for $t < e$ and $\\frac{dA}{dt} < 0$ for $t > e$, confirming a maximum."
+        ],
+        "common_pitfalls": "Forgetting the product rule when differentiating $t \\ln t$."
+      }
+    },
+    {
+      "subpart": "e i",
+      "stem": "Write down the equation of the tangent to $y = f(x)$ at the point $\\text{P}(t, \\ln t)$.",
+      "final_answer": "$y = \\frac{x}{t} - 1 + \\ln t$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the point-slope formula with f'(t) and (t, f(t))"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation of the tangent line"
+        }
+      ],
+      "solution": "The tangent has equation\n$$\\begin{aligned}\ny &= f'(t)(x - t) + f(t) \\\\\n\\therefore y &= \\frac{1}{t}(x - t) + \\ln t \\\\\n\\therefore y &= \\frac{x}{t} - 1 + \\ln t\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The equation of the tangent to $y = f(x)$ at $x = t$ is given by $y - f(t) = f'(t)(x - t)$.",
+        "step_by_step": [
+          "Find $f(t) = \\ln t$ and $f'(t) = \\frac{1}{t}$.",
+          "Substitute into the point-slope equation: $y - \\ln t = \\frac{1}{t}(x - t)$.",
+          "Expand and rearrange: $y = \\frac{x}{t} - 1 + \\ln t$."
+        ],
+        "common_pitfalls": "Distributing $\\frac{1}{t}$ incorrectly to obtain $\\frac{t}{t} = 1$."
+      }
+    },
+    {
+      "subpart": "e ii",
+      "stem": "Find $t$ such that this tangent passes through the origin.",
+      "final_answer": "$t = e$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting (0, 0) into the tangent equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving -1 + ln(t) = 0 to get t = e"
+        }
+      ],
+      "solution": "The tangent passes through the origin when\n$$\\begin{aligned}\n-1 + \\ln t &= 0 \\\\\n\\therefore \\ln t &= 1 \\\\\n\\therefore t &= e\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "A line passes through the origin $(0, 0)$ if its $y$-intercept is zero.",
+        "step_by_step": [
+          "Set $x = 0$ and $y = 0$ in the tangent equation $y = \\frac{x}{t} - 1 + \\ln t$.",
+          "This gives $0 = 0 - 1 + \\ln t$, which simplifies to $-1 + \\ln t = 0$.",
+          "Solve for $t$: $\\ln t = 1 \\implies t = e$."
+        ],
+        "common_pitfalls": "Confusing the $y$-intercept with the value of $y$ at $x = 1$ instead of $x = 0$."
+      }
+    }
+  ]
+}

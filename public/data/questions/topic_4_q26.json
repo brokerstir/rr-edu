@@ -1,0 +1,109 @@
+{
+  "id": "topic_4_q26",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 26,
+  "question_text": "The average height $h$ (in mm) of grass $t$ days after being mowed, is shown in the table below: Time ($t\\text{ days}$): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9; Height ($h\\text{ mm}$): 5, 5.7, 5.7, 6.2, 6.8, 7.1, 8, 8.3, 9, 9.3.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate Pearson's product-moment correlation coefficient $r$.",
+      "final_answer": "$r \\approx 0.993$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculation of linear correlation coefficient r"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct r rounded to 3 significant figures"
+        }
+      ],
+      "solution": "Using linear regression: $a \\approx 0.48787878$, $b \\approx 4.91454545$, $r \\approx 0.99265002$. So, $r \\approx 0.993$.",
+      "ai_explanation": {
+        "concept_rule": "Use linear regression tools to compute the correlation coefficient $r$.",
+        "step_by_step": [
+          "Input data pairs into statistical calculator lists.",
+          "Perform linear regression calculation.",
+          "Round $r = 0.99265...$ to $0.993$."
+        ],
+        "common_pitfalls": "Rounding to the incorrect number of decimal places."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Explain the significance of the size and sign of $r$.",
+      "final_answer": "$Very strong, positive correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Interpreting magnitude of r close to 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Interpreting sign of r as positive"
+        }
+      ],
+      "solution": "$r$ is very close to 1 which indicates a very strong correlation between the variables. The sign of $r$ is positive which indicates that the variables are positively correlated. An increase in one variable results in an increase in the other.",
+      "ai_explanation": {
+        "concept_rule": "The magnitude of $r$ describes strength ($|r| \\approx 1$ is very strong), and the sign describes direction (positive means both increase together).",
+        "step_by_step": [
+          "State that $|r| = 0.993$ is close to 1, indicating a very strong relationship.",
+          "State that $r > 0$, meaning the correlation is positive."
+        ],
+        "common_pitfalls": "Describing only the strength and omitting the direction, or vice versa."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "The regression line for $h$ against $t$ is $h \\approx 0.4879t + 4.9145$. Use this equation to estimate the height of the grass after 14 days.",
+      "final_answer": "$11.7\\text{ mm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting t = 14 into the regression equation h = 0.4879t + 4.9145"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct height value with units"
+        }
+      ],
+      "solution": "Using $h \\approx 0.4879t + 4.9145$: When $t = 14$, $h \\approx 0.4879(14) + 4.9145 \\approx 11.7$. After 14 days, the grass is about $11.7\\text{ mm}$ high.",
+      "ai_explanation": {
+        "concept_rule": "To predict the dependent variable, evaluate the linear model at the given value of the independent variable.",
+        "step_by_step": [
+          "Write the regression formula $h = 0.4879t + 4.9145$.",
+          "Substitute $t = 14$.",
+          "Calculate $h = 6.8306 + 4.9145 = 11.7451 \\approx 11.7\\text{ mm}$."
+        ],
+        "common_pitfalls": "Rounding prematurely during intermediate steps."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "The regression line for $h$ against $t$ is $h \\approx 0.4879t + 4.9145$. Use this equation to estimate the time required for the grass height to reach 20 mm.",
+      "final_answer": "$30.9\\text{ days}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting h = 20 and solving for t"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct time in days"
+        }
+      ],
+      "solution": "When $h = 20$, $20 \\approx 0.4879t + 4.9145 \\implies 15.0855 \\approx 0.4879t \\implies t \\approx 30.9$. The grass reaches a height of $20\\text{ mm}$ after about $30.9\\text{ days}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given value for $h$ into the equation and solve for $t$.",
+        "step_by_step": [
+          "Substitute $h = 20$ into $h = 0.4879t + 4.9145$.",
+          "Subtract $4.9145$ from $20$ to obtain $15.0855$.",
+          "Divide by $0.4879$ to find $t \\approx 30.9$."
+        ],
+        "common_pitfalls": "Plugging $20$ in place of $t$ rather than $h$."
+      }
+    }
+  ]
+}

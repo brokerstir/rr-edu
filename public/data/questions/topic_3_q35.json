@@ -1,0 +1,85 @@
+{
+  "id": "topic_3_q35",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 35,
+  "question_text": "Find the exact value of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin\\frac{5\\pi}{3}$",
+      "final_answer": "$-\\frac{\\sqrt{3}}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Locate the angle $\\frac{5\\pi}{3}$ on the unit circle or find reference angle $\\frac{\\pi}{3}$ in quadrant 4"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $\\sin\\frac{5\\pi}{3} = -\\frac{\\sqrt{3}}{2}$"
+        }
+      ],
+      "solution": "$\\sin \\frac{5\\pi}{3} = -\\frac{\\sqrt{3}}{2}$",
+      "ai_explanation": {
+        "concept_rule": "The angle $\\frac{5\\pi}{3}$ is in the fourth quadrant where sine is negative, with a reference angle of $2\\pi - \\frac{5\\pi}{3} = \\frac{\\pi}{3}$.",
+        "step_by_step": [
+          "Identify the quadrant for $\\frac{5\\pi}{3}$, which lies in Quadrant IV.",
+          "Find the reference angle: $\\theta' = 2\\pi - \\frac{5\\pi}{3} = \\frac{\\pi}{3}$.",
+          "Since sine is negative in Quadrant IV, $\\sin\\frac{5\\pi}{3} = -\\sin\\frac{\\pi}{3} = -\\frac{\\sqrt{3}}{2}$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign in Quadrant IV."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\cos\\frac{3\\pi}{4}$",
+      "final_answer": "$-\\frac{1}{\\sqrt{2}}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Locate angle $\\frac{3\\pi}{4}$ in quadrant 2 with reference angle $\\frac{\\pi}{4}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State $\\cos\\frac{3\\pi}{4} = -\\frac{1}{\\sqrt{2}}$"
+        }
+      ],
+      "solution": "$\\cos \\frac{3\\pi}{4} = -\\frac{1}{\\sqrt{2}}$",
+      "ai_explanation": {
+        "concept_rule": "Cosine is negative in the second quadrant: $\\cos(\\pi - \\theta) = -\\cos\\theta$.",
+        "step_by_step": [
+          "The angle $\\frac{3\\pi}{4}$ lies in Quadrant II.",
+          "The reference angle is $\\pi - \\frac{3\\pi}{4} = \\frac{\\pi}{4}$.",
+          "Cosine is negative in Quadrant II, so $\\cos\\frac{3\\pi}{4} = -\\cos\\frac{\\pi}{4} = -\\frac{1}{\\sqrt{2}}$."
+        ],
+        "common_pitfalls": "Thinking cosine is positive in Quadrant II."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\tan\\left(-\\frac{\\pi}{3}\\right)$",
+      "final_answer": "$-\\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express tangent as $\\frac{\\sin(-\\pi/3)}{\\cos(-\\pi/3)}$ or evaluate directly"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $-\\sqrt{3}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} \\tan\\left(-\\frac{\\pi}{3}\\right) &= \\frac{\\sin\\left(-\\frac{\\pi}{3}\\right)}{\\cos\\left(-\\frac{\\pi}{3}\\right)} \\\\ &= \\frac{-\\frac{\\sqrt{3}}{2}}{\\frac{1}{2}} \\\\ &= -\\sqrt{3} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Negative angle identity: $\\tan(-\\theta) = -\\tan\\theta$, or using ratio of sine and cosine.",
+        "step_by_step": [
+          "Evaluate $\\sin(-\\frac{\\pi}{3}) = -\\frac{\\sqrt{3}}{2}$.",
+          "Evaluate $\\cos(-\\frac{\\pi}{3}) = \\frac{1}{2}$.",
+          "Compute the ratio: $\\frac{-\\frac{\\sqrt{3}}{2}}{\\frac{1}{2}} = -\\sqrt{3}$."
+        ],
+        "common_pitfalls": "Using the wrong sign for $\\cos(-\\frac{\\pi}{3})$."
+      }
+    }
+  ]
+}

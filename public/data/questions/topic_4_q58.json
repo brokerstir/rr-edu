@@ -1,0 +1,85 @@
+{
+  "id": "topic_4_q58",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 58,
+  "question_text": "Containers of a particular brand of ice cream have a capacity of 1050 mL. They are advertised as containing 1 litre of ice cream. The quantity of ice cream added to each container is normally distributed with mean 1020 mL and standard deviation 17 mL.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the probability that the container has less than the advertised capacity.",
+      "final_answer": "$0.120$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal distribution calculation $P(X \\le 1000)$ with $\\mu = 1020, \\sigma = 17$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability of approximately $0.120$"
+        }
+      ],
+      "solution": "Let the capacity of a randomly selected container be $X\\text{ mL}$.\n$X \\sim \\text{N}(1020, 17^2)$.\nUsing technology:\nLower: $-9 \\times 10^{99}$, Upper: $1000$, $\\sigma = 17$, $\\mu = 1020$\n$$P(X \\le 1000) \\approx 0.120$$",
+      "ai_explanation": {
+        "concept_rule": "Standard normal cumulative calculation computes the area under the normal curve to the left of 1000.",
+        "step_by_step": [
+          "Identify $X \\sim \\text{N}(1020, 17^2)$.",
+          "Set up the lower bound as $-\\infty$ (or $-9 \\times 10^{99}$) and upper bound as $1000$.",
+          "Compute the probability using GDC: $P(X \\le 1000) \\approx 0.1197 \\approx 0.120$."
+        ],
+        "common_pitfalls": "Entering variance $17^2 = 289$ instead of standard deviation $17$ into the calculator."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the percentage of containers that overflow.",
+      "final_answer": "$0.0388$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal distribution calculation $P(X \\ge 1050)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability of approximately $0.0388$ (or $3.88\\%$)"
+        }
+      ],
+      "solution": "Using technology:\nLower: $1050$, Upper: $9 \\times 10^{99}$, $\\sigma = 17$, $\\mu = 1020$\n$$P(X \\ge 1050) \\approx 0.0388$$\n$\\therefore$ about $3.88\\%$ of containers overflow.",
+      "ai_explanation": {
+        "concept_rule": "The probability of an overflow corresponds to $P(X \\ge 1050)$.",
+        "step_by_step": [
+          "Set lower bound to $1050$ and upper bound to $\\infty$.",
+          "Compute probability: $P(X \\ge 1050) \\approx 0.0388$.",
+          "Interpret in context as $3.88\\%$."
+        ],
+        "common_pitfalls": "Calculating $P(X \\le 1050)$ instead of the upper tail."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "A sample of 75 containers are taken. Find the probability that at most three of the containers overflow.",
+      "final_answer": "$0.668$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up binomial distribution $Y \\sim \\text{B}(75, 0.0388)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating $P(Y \\le 3) \\approx 0.668$"
+        }
+      ],
+      "solution": "Let $Y$ be the number of containers which overflow.\n$n = 75$, so $Y = 0, 1, 2, 3, \\dots, 75$ and $p \\approx 0.0388$ {from b}\n$\\therefore Y \\sim \\text{B}(75, 0.0388)$\nUsing technology:\n$$\\text{BinomialCD}(0, 3, 75, 0.0388) \\approx 0.667819$$\n$$P(Y \\le 3) \\approx 0.668$$",
+      "ai_explanation": {
+        "concept_rule": "The number of overflowing containers in a sample of size $n$ follows a binomial distribution with success probability $p$ from part b.",
+        "step_by_step": [
+          "State the model $Y \\sim \\text{B}(75, 0.0388)$.",
+          "Determine the probability of at most 3 overflowing: $P(Y \\le 3)$.",
+          "Evaluate using binomial cumulative distribution on a GDC to get $0.668$."
+        ],
+        "common_pitfalls": "Using normal approximation without checking conditions, or setting the upper bound to 2 instead of 3."
+      }
+    }
+  ]
+}

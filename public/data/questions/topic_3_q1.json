@@ -1,0 +1,96 @@
+{
+  "id": "topic_3_q1",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 1,
+  "question_text": "Find the surface area of each solid:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$512\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use Pythagoras' theorem to find slant height of the triangular face: $h = \\sqrt{20^2 + 5^2} = 5\\sqrt{17}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate total surface area: area of square base $+ 4 \\times$ area of triangular face"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $100 + 100\\sqrt{17} \\approx 512\\text{ cm}^2$"
+        }
+      ],
+      "solution": "Let the height of the triangles be $h\\text{ cm}$.\nNow $h^2 = 20^2 + 5^2$\n$\\therefore h = \\sqrt{20^2 + 5^2} = 5\\sqrt{17}$\nSurface area $= \\text{area of square} + 4 \\times \\text{area of triangle}$\n$= 10^2 + 4\\left(\\frac{1}{2} \\times 10 \\times 5\\sqrt{17}\\right)$\n$= 100 + 4(25\\sqrt{17})$\n$= 100 + 100\\sqrt{17}\\text{ cm}^2$\n$\\approx 512\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The total surface area of a square-based pyramid is the sum of the base area ($b^2$) and the areas of the four triangular lateral faces ($4 \\times \\frac{1}{2} b h$), where $h$ is the slant height of each triangle.",
+        "step_by_step": [
+          "Determine the slant height of the triangular faces using Pythagoras' theorem with the vertical height ($20\\text{ cm}$) and half the base length ($5\\text{ cm}$): $h = \\sqrt{20^2 + 5^2} = 5\\sqrt{17}$.",
+          "Compute the area of the square base: $10 \\times 10 = 100\\text{ cm}^2$.",
+          "Compute the total area of the 4 triangular faces: $4 \\times (\\frac{1}{2} \\times 10 \\times 5\\sqrt{17}) = 100\\sqrt{17}$.",
+          "Sum base and lateral areas: $100 + 100\\sqrt{17} \\approx 512\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Using the vertical height ($20\\text{ cm}$) instead of the slant height ($5\\sqrt{17}\\text{ cm}$) to calculate the triangle's area."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$281\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate the curved arc length: $l = 2\\pi(5) \\times \\frac{230}{360} = \\frac{115\\pi}{18}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Sum the areas of the two sector ends, curved surface, and two rectangular faces"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $\\approx 281\\text{ cm}^2$"
+        }
+      ],
+      "solution": "$l = 2\\pi r \\times \\frac{230}{360} = 2\\pi(5) \\times \\frac{23}{36} = \\frac{115\\pi}{18}$\n$\\text{Surface area} = 2 \\times \\text{area of sector} + \\text{area of curved surface} + 2 \\times \\text{area of rectangle}$\n$= 2 \\times \\frac{230}{360} \\times \\pi(5)^2 + \\frac{115\\pi}{18} \\times 6 + 2 \\times 6 \\times 5$\n$= \\frac{575\\pi}{18} + \\frac{115\\pi}{3} + 60$\n$\\approx 281\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The total surface area of a prism with a sector cross-section equals two end sector areas plus the lateral faces (curved face + two rectangular flat faces).",
+        "step_by_step": [
+          "Calculate the arc length of the cross-section sector: $l = \\frac{230}{360} \\times 2\\pi(5) = \\frac{115\\pi}{18}\\text{ cm}$.",
+          "Calculate the area of the two end sectors: $2 \\times (\\frac{230}{360} \\times \\pi \\times 5^2) = \\frac{575\\pi}{18}$.",
+          "Calculate the area of the curved surface: $l \\times 6 = \\frac{115\\pi}{18} \\times 6 = \\frac{115\\pi}{3}$.",
+          "Calculate the area of the two flat rectangular faces: $2 \\times (6 \\times 5) = 60$.",
+          "Add all parts together to find total surface area $\\approx 281\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Forgetting to include the two flat rectangular faces of dimensions $6\\text{ cm} \\times 5\\text{ cm}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$188\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify formula for combined surface area: curved hemisphere $+$ curved cone surface $\\frac{1}{2}(4\\pi r^2) + \\pi r s$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute $r=4$ and $s=7$ to obtain $60\\pi\\text{ cm}^2 \\approx 188\\text{ cm}^2$"
+        }
+      ],
+      "solution": "$\\text{Surface area} = \\frac{1}{2}4\\pi r^2 + \\pi r s$\n$= \\frac{1}{2} \\times 4\\pi(4)^2 + \\pi(4)(7)$\n$= 32\\pi + 28\\pi$\n$= 60\\pi\\text{ cm}^2$\n$\\approx 188\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "For a composite solid made of a cone and a hemisphere joined at their circular base, the total exposed surface area is the curved surface area of the hemisphere ($2\\pi r^2$) plus the lateral surface area of the cone ($\\pi r s$).",
+        "step_by_step": [
+          "Hemisphere curved surface area $= 2\\pi r^2 = 2\\pi(4^2) = 32\\pi$.",
+          "Cone curved surface area $= \\pi r s = \\pi(4)(7) = 28\\pi$.",
+          "Total surface area $= 32\\pi + 28\\pi = 60\\pi \\approx 188\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Accidentally including the flat circular interface $\\pi r^2$, which is inside the solid and not exposed."
+      }
+    }
+  ]
+}

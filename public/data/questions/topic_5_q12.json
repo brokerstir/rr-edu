@@ -1,0 +1,120 @@
+{
+  "id": "topic_5_q12",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 12,
+  "question_text": "Consider the function $f(x) = \\frac{\\sqrt{x}}{x - 3}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the domain of $f(x)$.",
+      "final_answer": "$\\{x \\mid x \\ge 0,\\; x \\ne 3\\}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating condition for square root: $x \\ge 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Stating condition for non-zero denominator: $x \\ne 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain in set notation"
+        }
+      ],
+      "solution": "$f(x)$ is defined when $x \\ge 0$ and $x \\ne 3$.\n$\\therefore$ the domain is $\\{x \\mid x \\ge 0,\\; x \\ne 3\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of a real-valued function requires the radicand of an even root to be non-negative and denominators to be non-zero.",
+        "step_by_step": [
+          "For $\\sqrt{x}$ to be real, $x \\ge 0$.",
+          "For the denominator not to be zero, $x - 3 \\ne 0 \\implies x \\ne 3$.",
+          "Intersect both conditions: $\\{x \\mid x \\ge 0, x \\ne 3\\}$."
+        ],
+        "common_pitfalls": "Forgetting that $x = 0$ is allowed in the numerator."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $f'(x)$.",
+      "final_answer": "$\\frac{-3 - x}{2\\sqrt{x}(x - 3)^2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the quotient rule to $\\frac{x^{\\frac{1}{2}}}{x - 3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression for $f'(x)$"
+        }
+      ],
+      "solution": "$f(x) = \\frac{\\sqrt{x}}{x - 3} = \\frac{x^{\\frac{1}{2}}}{x - 3}$\n$\\therefore f'(x) = \\frac{\\frac{1}{2}x^{-\\frac{1}{2}}(x - 3) - (1)x^{\\frac{1}{2}}}{(x - 3)^2} \\quad \\{\\text{quotient rule}\\}\n= \\frac{x - 3 - 2x}{2\\sqrt{x}(x - 3)^2}\n= \\frac{-3 - x}{2\\sqrt{x}(x - 3)^2}$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule: $\\frac{d}{dx}\\left[\\frac{u}{v}\\right] = \\frac{u'v - uv'}{v^2}$.",
+        "step_by_step": [
+          "Let $u = x^{1/2}$ and $v = x - 3$. Then $u' = \\frac{1}{2}x^{-1/2}$ and $v' = 1$.",
+          "Substitute into quotient rule: $\\frac{\\frac{1}{2\\sqrt{x}}(x - 3) - \\sqrt{x}}{(x - 3)^2}$.",
+          "Multiply numerator and denominator by $2\\sqrt{x}$ to get $\\frac{(x - 3) - 2x}{2\\sqrt{x}(x - 3)^2}$.",
+          "Simplify numerator: $x - 3 - 2x = -3 - x$."
+        ],
+        "common_pitfalls": "Algebraic error when combining $\\frac{x-3}{2\\sqrt{x}} - \\sqrt{x}$ into a single numerator."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "For what value(s) of $x$ is $f'(x)$ zero?",
+      "final_answer": "$f'(x)$ is never zero",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting numerator of $f'(x)$ to zero to solve $-3 - x = 0$"
+        },
+        {
+          "code": "R1",
+          "desc": "Noting that $x = -3$ is outside the domain of $f'(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding that $f'(x)$ is never zero"
+        }
+      ],
+      "solution": "$f'(x) = 0\n\\therefore -3 - x = 0\n\\therefore -x = 3\n\\therefore x = -3$\n\nBut $f'(-3)$ is undefined, so $f'(x)$ is never zero.",
+      "ai_explanation": {
+        "concept_rule": "A fraction equals zero only when its numerator is zero and the denominator is non-zero (within the domain).",
+        "step_by_step": [
+          "Set the numerator equal to zero: $-3 - x = 0 \\implies x = -3$.",
+          "Check the domain from part (a): $x \\ge 0$ and $x \\ne 3$.",
+          "Since $x = -3$ is outside the domain, $\\sqrt{-3}$ is not real, meaning $f'(-3)$ does not exist.",
+          "Hence, $f'(x) = 0$ has no valid solutions."
+        ],
+        "common_pitfalls": "Accepting $x = -3$ as a valid solution without checking the domain of the function."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "For what value(s) of $x$ is $f'(x)$ undefined?",
+      "final_answer": "$x \\le 0\\text{ or } x = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying conditions where denominator is zero or square root is non-real"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating $x \\le 0$ or $x = 3$"
+        }
+      ],
+      "solution": "$f'(x)$ is undefined when $x \\le 0$, and when\n$2\\sqrt{x}(x - 3)^2 = 0$\n$\\therefore \\sqrt{x} = 0 \\text{ or } (x - 3)^2 = 0\n\\therefore x = 0 \\text{ or } x = 3$\n\nThat is, when $x \\le 0$ or $x = 3$.",
+      "ai_explanation": {
+        "concept_rule": "A derivative is undefined where the expression is not real ($x < 0$) or where the denominator equals zero ($x = 0$ or $x = 3$).",
+        "step_by_step": [
+          "For the square root in $\\sqrt{x}$ to be defined in real numbers, we must have $x \\ge 0$. Thus it is undefined for $x < 0$.",
+          "The denominator is zero when $2\\sqrt{x}(x - 3)^2 = 0$, giving $x = 0$ or $x = 3$.",
+          "Combining both conditions, $f'(x)$ is undefined for $x \\le 0$ or $x = 3$."
+        ],
+        "common_pitfalls": "Forgetting that $x = 0$ makes the denominator of $f'(x)$ zero, even though $x = 0$ is in the domain of $f(x)$."
+      }
+    }
+  ]
+}

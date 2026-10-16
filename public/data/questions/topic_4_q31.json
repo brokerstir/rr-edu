@@ -1,0 +1,56 @@
+{
+  "id": "topic_4_q31",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 31,
+  "question_text": "Suppose $P(A) = 0.37$, $P(B) = 0.41$, and $P(A \\cup B) = 0.78$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $P(A \\cap B)$.",
+      "final_answer": "$0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the addition rule $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $\\text{P}(A \\cap B) = 0$"
+        }
+      ],
+      "solution": "$$\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$$\n$$\\therefore 0.78 = 0.37 + 0.41 - \\text{P}(A \\cap B)$$\n$$\\therefore \\text{P}(A \\cap B) = 0$$",
+      "ai_explanation": {
+        "concept_rule": "The addition law of probability states $\\text{P}(A \\cup B) = \\text{P}(A) + \\text{P}(B) - \\text{P}(A \\cap B)$.",
+        "step_by_step": [
+          "Substitute known values: $0.78 = 0.37 + 0.41 - \\text{P}(A \\cap B)$.",
+          "Calculate $0.37 + 0.41 = 0.78$.",
+          "Solve for $\\text{P}(A \\cap B) = 0.78 - 0.78 = 0$."
+        ],
+        "common_pitfalls": "Sign errors when rearranging the equation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "What can you say about $A$ and $B$?",
+      "final_answer": "$A \\text{ and } B \\text{ are mutually exclusive events.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Conclude that $A$ and $B$ are mutually exclusive because $\\text{P}(A \\cap B) = 0$"
+        }
+      ],
+      "solution": "Since $\\text{P}(A \\cap B) = 0$, $A$ and $B$ are mutually exclusive events.",
+      "ai_explanation": {
+        "concept_rule": "Two events $A$ and $B$ are mutually exclusive (or disjoint) if and only if $\\text{P}(A \\cap B) = 0$.",
+        "step_by_step": [
+          "Recall the definition of mutually exclusive events: they cannot occur at the same time, meaning $\\text{P}(A \\cap B) = 0$.",
+          "From part a, $\\text{P}(A \\cap B) = 0$.",
+          "Hence, $A$ and $B$ are mutually exclusive."
+        ],
+        "common_pitfalls": "Confusing mutually exclusive with independent (independent means $\\text{P}(A \\cap B) = \\text{P}(A)\\text{P}(B)$)."
+      }
+    }
+  ]
+}

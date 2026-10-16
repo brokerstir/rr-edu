@@ -1,0 +1,92 @@
+{
+  "id": "topic_5_q24",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 24,
+  "question_text": "Let $f(x) = -x^2 + 4x$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $f'(x)$.",
+      "final_answer": "$f'(x) = -2x + 4$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct derivative of $f(x) = -x^2 + 4x$"
+        }
+      ],
+      "solution": "$f(x) = -x^2 + 4x$\n$\\therefore f'(x) = -2x + 4$",
+      "ai_explanation": {
+        "concept_rule": "Power rule for polynomials: $\\frac{d}{dx}(-x^2 + 4x) = -2x + 4$.",
+        "step_by_step": [
+          "Differentiate $-x^2$ to get $-2x$.",
+          "Differentiate $4x$ to get $4$."
+        ],
+        "common_pitfalls": "Incorrect sign on $-2x$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the equation of the tangent to $y = f(x)$ at the point where $x = k$.",
+      "final_answer": "$y = (-2k+4)x + k^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying the point of contact and slope in terms of $k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Expanding and simplifying the equation of the tangent"
+        }
+      ],
+      "solution": "Since $f(k) = -k^2 + 4k$, the point of contact is $(k, -k^2 + 4k)$.\nNow $f'(k) = -2k + 4$.\nThe tangent has equation $y = f'(k)(x - k) + f(k)$\n$\\therefore y = (-2k+4)(x - k) - k^2 + 4k$\n$\\therefore y = (-2k+4)x + 2k^2 - 4k - k^2 + 4k$\n$\\therefore y = (-2k+4)x + k^2$",
+      "ai_explanation": {
+        "concept_rule": "Equation of tangent in parametric form at $x = k$: $y - f(k) = f'(k)(x - k)$.",
+        "step_by_step": [
+          "Point of contact is $(k, -k^2 + 4k)$ and slope is $f'(k) = -2k+4$.",
+          "Set up the line equation: $y = (-2k+4)(x - k) + (-k^2 + 4k)$.",
+          "Expand the constant terms: $(-2k+4)(-k) - k^2 + 4k = 2k^2 - 4k - k^2 + 4k = k^2$.",
+          "Combine into slope-intercept form: $y = (-2k+4)x + k^2$."
+        ],
+        "common_pitfalls": "Sign error when expanding $(-2k+4)(-k)$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Suppose this tangent has positive gradient and passes through $(4, 9)$. Find the value of $k$.",
+      "final_answer": "$k = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting point $(4, 9)$ into the tangent equation"
+        },
+        {
+          "code": "M1",
+          "desc": "Solving quadratic equation in $k$"
+        },
+        {
+          "code": "R1",
+          "desc": "Checking the gradient condition $-2k+4 > 0$ to eliminate $k=7$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding $k = 1$"
+        }
+      ],
+      "solution": "The tangent passes through $(4, 9)$, so $(-2k+4)(4) + k^2 = 9$\n$\\therefore -8k + 16 + k^2 = 9$\n$\\therefore k^2 - 8k + 7 = 0$\n$\\therefore (k-7)(k-1) = 0$\n$\\therefore k = 1 \\text{ or } 7$\nThe gradient of the tangent is positive, so $-2k+4 > 0$.\nNow if $k = 1$, $-2k+4 = -2+4 = 2$ ✓\nif $k = 7$, $-2k+4 = -14+4 = -10$ ✗\nSo $k = 1$.",
+      "ai_explanation": {
+        "concept_rule": "Substituting a known point lying on a line into its equation yields values for unknown parameters; extraneous solutions must be filtered using given constraints.",
+        "step_by_step": [
+          "Substitute $x = 4, y = 9$ into $y = (-2k+4)x + k^2$: $9 = 4(-2k+4) + k^2$.",
+          "Expand and rearrange: $k^2 - 8k + 16 - 9 = 0 \\implies k^2 - 8k + 7 = 0$.",
+          "Factorise: $(k-1)(k-7) = 0 \\implies k = 1$ or $k = 7$.",
+          "Use the condition that the gradient is positive: $-2k + 4 > 0$.",
+          "Test $k = 1$: gradient is $2 > 0$ (valid). Test $k = 7$: gradient is $-10 < 0$ (invalid).",
+          "Conclude $k = 1$."
+        ],
+        "common_pitfalls": "Forgetting to reject $k = 7$ based on the requirement that the gradient must be positive."
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "topic_5_q72",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 72,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $\\int 8xe^{x^2+1}\\,dx$ using an appropriate substitution.",
+      "final_answer": "$4e^{x^2+1} + c$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $u = x^2+1$ with $\\frac{du}{dx} = 2x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Transforming into $\\int 4e^u\\,du$ and integrating"
+        },
+        {
+          "code": "A1",
+          "desc": "Expressing answer in terms of $x$ with $+c$"
+        }
+      ],
+      "solution": "$\\int 8xe^{x^2+1}\\,dx = \\int e^u \\left(4\\frac{du}{dx}\\right)\\,dx \\quad \\{u = x^2+1 \\implies \\frac{du}{dx} = 2x\\} = \\int 4e^u\\,du = 4e^u + c = 4e^{x^2+1} + c$",
+      "ai_explanation": {
+        "concept_rule": "Integration by substitution for exponential functions: $\\int f'(x)e^{f(x)}\\,dx = e^{f(x)} + c$.",
+        "step_by_step": [
+          "Let $u = x^2+1$, which gives $du = 2x\\,dx$.",
+          "Rewrite $8x\\,dx$ as $4(2x\\,dx) = 4\\,du$.",
+          "Integrate $4e^u$ to get $4e^u + c$.",
+          "Replace $u$ with $x^2+1$."
+        ],
+        "common_pitfalls": "Incorrect constant factor when substituting $8x\\,dx$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $\\int_{-2}^{2} 8xe^{x^2+1}\\,dx$.",
+      "final_answer": "$0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $[4e^{x^2+1}]_{-2}^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Showing $4e^5 - 4e^5 = 0$"
+        }
+      ],
+      "solution": "$\\int_{-2}^2 8xe^{x^2+1}\\,dx = \\left[4e^{x^2+1}\\right]_{-2}^2 = 4e^{2^2+1} - 4e^{(-2)^2+1} = 4e^5 - 4e^5 = 0$",
+      "ai_explanation": {
+        "concept_rule": "Definite integration of an odd function over symmetric limits $[-a, a]$ evaluates to $0$.",
+        "step_by_step": [
+          "Use the antiderivative $4e^{x^2+1}$ from part a.",
+          "Evaluate at $x = 2$: $4e^{4+1} = 4e^5$.",
+          "Evaluate at $x = -2$: $4e^{(-2)^2+1} = 4e^5$.",
+          "Compute $4e^5 - 4e^5 = 0$."
+        ],
+        "common_pitfalls": "Incorrectly calculating $(-2)^2$ as $-4$ instead of $+4$."
+      }
+    }
+  ]
+}

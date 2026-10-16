@@ -1,0 +1,65 @@
+{
+  "id": "topic_4_q13",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 13,
+  "question_text": "This table shows the weekly rent for a sample of studio apartments in Italy.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Estimate the mean weekly rent.",
+      "final_answer": "$£139$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculation of midpoints and products $\\sum xf$"
+        },
+        {
+          "code": "M1",
+          "desc": "Dividing total $\\sum xf$ by $\\sum f$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean of approximately £139"
+        }
+      ],
+      "solution": "Using the midpoints ($x$) of each rent interval:\n$$\\bar{x} = \\frac{\\sum xf}{\\sum f} = \\frac{12370}{89} \\approx 139$$\nTherefore, the mean weekly rent was about £139.",
+      "ai_explanation": {
+        "concept_rule": "The estimated mean for grouped data is found using $\\bar{x} = \\frac{\\sum xf}{\\sum f}$, where $x$ represents class midpoints and $f$ is class frequency.",
+        "step_by_step": [
+          "Determine the midpoint $x$ for each class interval.",
+          "Multiply each midpoint by its corresponding frequency to obtain $xf$.",
+          "Calculate $\\sum f = 89$ and $\\sum xf = 12370$.",
+          "Divide $\\sum xf$ by $\\sum f$ to estimate the mean: $12370 / 89 \\approx 139$."
+        ],
+        "common_pitfalls": "Using class limits or upper bounds instead of class midpoints."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the probability that the weekly rent for a randomly chosen studio apartment will be €140 or greater.",
+      "final_answer": "$0.506$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Summing frequencies for weekly rent $r \\ge 140$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct probability"
+        }
+      ],
+      "solution": "$$\\text{P}(r \\ge 140) = \\frac{30 + 14 + 1}{89} = \\frac{45}{89} \\approx 0.506$$",
+      "ai_explanation": {
+        "concept_rule": "The experimental probability of an event is given by the frequency of favorable outcomes divided by the total frequency.",
+        "step_by_step": [
+          "Identify the intervals with rent $r \\ge 140$: $140 \\le r < 160$, $160 \\le r < 180$, and $180 \\le r < 200$.",
+          "Add their frequencies: $30 + 14 + 1 = 45$.",
+          "Divide by the total frequency $89$ to get $\\frac{45}{89} \\approx 0.506$."
+        ],
+        "common_pitfalls": "Omitting the highest category or dividing by an incorrect total."
+      }
+    }
+  ]
+}

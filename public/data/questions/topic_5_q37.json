@@ -1,0 +1,80 @@
+{
+  "id": "topic_5_q37",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 37,
+  "question_text": "For each of the following functions, determine the intervals on which the function is: i increasing, ii decreasing, iii concave upwards, iv concave downwards.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = x^2 + 3x + 5$",
+      "final_answer": "$x \\geqslant -\\frac{3}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding derivative and solving f'(x) = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Determining interval where f'(x) >= 0"
+        }
+      ],
+      "solution": "$f(x) = x^2 + 3x + 5$\n$\\therefore f'(x) = 2x + 3$\n$\\therefore f''(x) = 2$\n$f'(x) = 0$ when $x = -\\frac{3}{2}$\nThe sign diagram of $f'(x)$ is negative for $x < -\\frac{3}{2}$ and positive for $x > -\\frac{3}{2}$.\nSo, $f(x)$ is increasing for $x \\geqslant -\\frac{3}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "A function $f(x)$ is increasing on intervals where $f'(x) \\geqslant 0$.",
+        "step_by_step": [
+          "Differentiate $f(x)$ to obtain $f'(x) = 2x + 3$.",
+          "Solve the inequality $2x + 3 \\geqslant 0$.",
+          "Obtain $x \\geqslant -\\frac{3}{2}$."
+        ],
+        "common_pitfalls": "Writing strict inequality $x > -\\frac{3}{2}$ instead of closed inequality $x \\geqslant -\\frac{3}{2}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = e^{-x^2}$",
+      "final_answer": "$x \\leqslant -\\frac{3}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating interval where f'(x) <= 0"
+        }
+      ],
+      "solution": "Using **i**, $f(x)$ is decreasing for $x \\leqslant -\\frac{3}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "A function is decreasing on intervals where $f'(x) \\leqslant 0$.",
+        "step_by_step": [
+          "Set $f'(x) \\leqslant 0$: $2x + 3 \\leqslant 0$.",
+          "Solve for $x$: $x \\leqslant -\\frac{3}{2}$."
+        ],
+        "common_pitfalls": "Strict inequality confusion."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f(x) = x\\ln(x^2)$",
+      "final_answer": "$Concave upwards for all $x \\in \\mathbb{R}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating second derivative"
+        },
+        {
+          "code": "R1",
+          "desc": "Concluding concave upwards since f''(x) > 0 everywhere"
+        }
+      ],
+      "solution": "$f''(x) = 2 > 0$ for all $x \\in \\mathbb{R}$.\nSo, $f(x)$ is concave upwards for all $x \\in \\mathbb{R}$.",
+      "ai_explanation": {
+        "concept_rule": "A function is concave upwards on intervals where $f''(x) > 0$.",
+        "step_by_step": [
+          "Compute the second derivative: $f''(x) = \\frac{d}{dx}(2x + 3) = 2$.",
+          "Observe that $2 > 0$ for all $x \\in \\mathbb{R}$.",
+          "Conclude that $f(x)$ is concave upwards for all real numbers $x$."
+        ],
+        "common_pitfalls": "Confusing the condition for concave upwards ($f'' > 0$) with the condition for increasing ($f' > 0$)."
+      }
+    }
+  ]
+}

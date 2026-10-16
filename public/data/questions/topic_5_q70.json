@@ -1,0 +1,137 @@
+{
+  "id": "topic_5_q70",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 70,
+  "question_text": "Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\int_1^5 \\frac{2x^3+1}{x^2}\\,dx$",
+      "final_answer": "$\\frac{124}{5}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Splitting the fraction into separate power terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $x^2 - \\frac{1}{x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating limits correctly to get $\\frac{124}{5}$"
+        }
+      ],
+      "solution": "$\\int_1^5 \\frac{2x^3+1}{x^2}\\,dx = \\int_1^5 (2x + x^{-2})\\,dx = \\left[x^2 - \\frac{1}{x}\\right]_1^5 = \\left(25 - \\frac{1}{5}\\right) - (1 - 1) = \\frac{124}{5}$",
+      "ai_explanation": {
+        "concept_rule": "Divide algebraic terms by the denominator before integrating using the power rule.",
+        "step_by_step": [
+          "Rewrite $\\frac{2x^3+1}{x^2}$ as $2x + x^{-2}$.",
+          "Integrate term-by-term to obtain $x^2 - x^{-1}$.",
+          "Substitute limits $5$ and $1$: $(25 - 0.2) - (1 - 1) = 24.8 = \\frac{124}{5}$."
+        ],
+        "common_pitfalls": "Integrating numerator and denominator separately instead of splitting the fraction."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\int_0^1 e^x(2-3e^{-x})^2\\,dx$",
+      "final_answer": "$13\\left(e - \\frac{1}{e}\\right) - 24$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding the squared term and distributing $e^x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct integrand $4e^x - 12 + 9e^{-x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Antiderivative $4e^x - 12x - 9e^{-x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly evaluating limits and simplifying"
+        }
+      ],
+      "solution": "$\\int_{-1}^1 e^x(2 - 3e^{-x})^2\\,dx = \\int_{-1}^1 e^x(4 - 12e^{-x} + 9e^{-2x})\\,dx = \\int_{-1}^1 (4e^x - 12 + 9e^{-x})\\,dx = \\left[4e^x - 12x - 9e^{-x}\\right]_{-1}^1 = (4e^1 - 12 - 9e^{-1}) - (4e^{-1} + 12 - 9e^1) = 13e - 24 - 13e^{-1} = 13\\left(e - \\frac{1}{e}\\right) - 24$",
+      "ai_explanation": {
+        "concept_rule": "Expand the binomial before distributing the exponential term, then integrate term-by-term.",
+        "step_by_step": [
+          "Expand $(2 - 3e^{-x})^2 = 4 - 12e^{-x} + 9e^{-2x}$.",
+          "Multiply through by $e^x$ to obtain $4e^x - 12 + 9e^{-x}$.",
+          "Integrate each term: $\\int 4e^x\\,dx = 4e^x$, $\\int -12\\,dx = -12x$, and $\\int 9e^{-x}\\,dx = -9e^{-x}$.",
+          "Substitute $x = 1$ and $x = -1$, then simplify like terms."
+        ],
+        "common_pitfalls": "Sign error when integrating $9e^{-x}$, which yields $-9e^{-x}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\int_0^2 \\frac{3}{5-2x}\\,dx$",
+      "final_answer": "$\\frac{3}{2}\\ln 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Integrating $\\frac{1}{ax+b}$ form"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $-\\frac{3}{2}\\ln|5-2x|$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating limits to obtain $\\frac{3}{2}\\ln 5$"
+        }
+      ],
+      "solution": "$\\int_0^2 \\frac{3}{5-2x}\\,dx = \\left[-\\frac{3}{2}\\ln|5-2x|\\right]_0^2 = -\\frac{3}{2}\\ln|5-4| + \\frac{3}{2}\\ln|5-0| = -\\frac{3}{2}\\ln 1 + \\frac{3}{2}\\ln 5 = \\frac{3}{2}\\ln 5$",
+      "ai_explanation": {
+        "concept_rule": "Integration leading to natural logarithm: $\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\ln|ax+b|$.",
+        "step_by_step": [
+          "Recognize linear denominator: the derivative of $5-2x$ is $-2$.",
+          "Antiderivative is $3 \\cdot \\left(-\\frac{1}{2}\\right) \\ln|5-2x| = -\\frac{3}{2}\\ln|5-2x|$.",
+          "Substitute upper limit $x = 2$: $-\\frac{3}{2}\\ln 1 = 0$.",
+          "Substitute lower limit $x = 0$: $-\\left(-\\frac{3}{2}\\ln 5\\right) = \\frac{3}{2}\\ln 5$."
+        ],
+        "common_pitfalls": "Forgetting the negative reciprocal $-\\frac{1}{2}$ from the coefficient of $x$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$\\int_{-2}^{\\frac{\\pi}{4}-2} \\sin^2(x+2)\\,dx$",
+      "final_answer": "$\\frac{\\pi}{8} - \\frac{1}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the half-angle identity $\\sin^2\\theta = \\frac{1}{2}(1 - \\cos 2\\theta)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $\\frac{1}{2}x - \\frac{1}{4}\\sin(2x+4)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting upper and lower limits"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to exact answer $\\frac{\\pi}{8} - \\frac{1}{4}$"
+        }
+      ],
+      "solution": "$\\int_{-2}^{\\frac{\\pi}{4}-2} \\sin^2(x+2)\\,dx = \\int_{-2}^{\\frac{\\pi}{4}-2} \\left(\\frac{1}{2} - \\frac{1}{2}\\cos(2(x+2))\\right)\\,dx = \\int_{-2}^{\\frac{\\pi}{4}-2} \\left(\\frac{1}{2} - \\frac{1}{2}\\cos(2x+4)\\right)\\,dx = \\left[\\frac{1}{2}x - \\frac{1}{4}\\sin(2x+4)\\right]_{-2}^{\\frac{\\pi}{4}-2} = \\left(\\frac{1}{2}\\left(\\frac{\\pi}{4}-2\\right) - \\frac{1}{4}\\sin\\left(2\\left(\\frac{\\pi}{4}-2\\right)+4\\right)\\right) - \\left(-\\frac{2}{2} - \\frac{1}{4}\\sin(-4+4)\\right) = \\frac{\\pi}{8} - 1 - \\frac{1}{4}\\sin\\left(\\frac{\\pi}{2}\\right) + 1 + \\frac{1}{4}\\sin 0 = \\frac{\\pi}{8} - \\frac{1}{4}(1) = \\frac{\\pi}{8} - \\frac{1}{4}$",
+      "ai_explanation": {
+        "concept_rule": "Use the double angle identity $\\sin^2 u = \\frac{1-\\cos 2u}{2}$ to integrate squared sine functions.",
+        "step_by_step": [
+          "Apply the identity with $u = x+2$ so $\\sin^2(x+2) = \\frac{1}{2} - \\frac{1}{2}\\cos(2x+4)$.",
+          "Integrate term-by-term: $\\frac{1}{2}x - \\frac{1}{4}\\sin(2x+4)$.",
+          "Substitute $x = \\frac{\\pi}{4}-2$ and $x = -2$.",
+          "Simplify trigonometric values: $\\sin(\\pi/2) = 1$ and $\\sin(0) = 0$."
+        ],
+        "common_pitfalls": "Integrating $\\sin^2(x+2)$ as $\\frac{\\sin^3(x+2)}{3}$ which violates the chain rule."
+      }
+    }
+  ]
+}

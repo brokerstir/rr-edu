@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q29",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 29,
+  "question_text": "Quadrilateral PQRS has the measurements shown.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the length of [PR].",
+      "final_answer": "$\\text{PR} \\approx 13.0\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the cosine rule in triangle $PQR$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\text{PR}$ correctly"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta\\text{PQR}$: $\\text{PR}^2 = 3^2 + 12^2 - 2(3)(12)\\cos 102^\\circ \\implies \\text{PR} = \\sqrt{3^2 + 12^2 - 2(3)(12)\\cos 102^\\circ} \\implies \\text{PR} \\approx 12.96\\text{ cm} \\approx 13.0\\text{ cm}$.",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule finds an opposite side given two sides and an included angle: $c = \\sqrt{a^2 + b^2 - 2ab\\cos C}$.",
+        "step_by_step": [
+          "Substitute side lengths $3$, $12$ and included angle $102^\\circ$ into the cosine rule.",
+          "Compute the right-hand side carefully, noting $\\cos 102^\\circ < 0$.",
+          "Take the square root to get $\\text{PR}$."
+        ],
+        "common_pitfalls": "Mistakenly treating $\\cos 102^\\circ$ as positive or prematurely rounding intermediate values."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Determine the measure of the angle marked $\\theta$.",
+      "final_answer": "$\\theta \\approx 35.3^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the sine rule in triangle $PRS$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\theta$"
+        }
+      ],
+      "solution": "By the sine rule in $\\Delta\\text{PRS}$: $\\frac{\\sin\\theta}{\\text{PR}} = \\frac{\\sin 42^\\circ}{15} \\implies \\sin\\theta = \\frac{\\text{PR}\\sin 42^\\circ}{15} \\implies \\sin\\theta \\approx \\frac{12.96\\sin 42^\\circ}{15} \\implies \\theta \\approx \\sin^{-1}\\left(\\frac{12.96\\sin 42^\\circ}{15}\\right) \\approx 35.3^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Apply the sine rule $\\frac{\\sin\\theta}{c} = \\frac{\\sin C}{s}$ using the calculated value from the previous subpart.",
+        "step_by_step": [
+          "Set up the sine rule linking $\\theta$ and $\\text{PR}$, and $42^\\circ$ with side $15$.",
+          "Substitute the unrounded or more accurate value of $\\text{PR} \\approx 12.96$.",
+          "Solve for $\\theta$ by taking the inverse sine."
+        ],
+        "common_pitfalls": "Using the rounded value $13.0$ instead of $12.96$, potentially causing rounding error in the final angle."
+      }
+    }
+  ]
+}

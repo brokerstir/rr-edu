@@ -1,0 +1,74 @@
+{
+  "id": "topic_5_q85",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 85,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Sketch the graph of $f(x) = \\sin\\left(x + \\frac{\\pi}{6}\\right)$ for $-2\\pi \\leqslant x \\leqslant 2\\pi$.",
+      "final_answer": "$Graph of $y = \\sin(x + \\frac{\\pi}{6})$ and $y = \\frac{1}{2}$ on $-2\\pi \\le x \\le 2\\pi$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct sketch of sine function shifted left by pi/6 with amplitude 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct horizontal line y = 1/2 showing intersections"
+        }
+      ],
+      "solution": "Sketch of $y = \\sin\\left(x + \\frac{\\pi}{6}\\right)$ and the horizontal line $y = \\frac{1}{2}$ over the domain $-2\\pi \\le x \\le 2\\pi$, illustrating the periodic intersections at $x = -2\\pi, -\\frac{4\\pi}{3}, 0, \\frac{2\\pi}{3}, 2\\pi$.",
+      "ai_explanation": {
+        "concept_rule": "A sinusoidal graph $y = \\sin(x + \\phi)$ is a horizontal shift of $y = \\sin x$ by $\\phi$ units to the left.",
+        "step_by_step": [
+          "Plot the sine curve with period $2\\pi$, shifted left by $\\frac{\\pi}{6}$.",
+          "Plot the line $y = \\frac{1}{2}$.",
+          "Indicate the intersection points within the domain $[-2\\pi, 2\\pi]$."
+        ],
+        "common_pitfalls": "Shifting the graph to the right instead of to the left."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the area that lies above the line $y = \\frac{1}{2}$ and below the graph of $y = f(x)$ for $-2\\pi \\leqslant x \\leqslant 2\\pi$.",
+      "final_answer": "$\\left(2\\sqrt{3} - \\frac{2\\pi}{3}\\right)\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Solving sin(x + pi/6) = 1/2 over the interval [-2pi, 2pi]"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct intersection values: x = -2pi, -4pi/3, 0, 2pi/3, 2pi"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the sum of integrals where the curve is above the line"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative [-cos(x + pi/6) - x/2]"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final area in exact form: 2*sqrt(3) - 2*pi/3"
+        }
+      ],
+      "solution": "$y = \\sin\\left(x + \\frac{\\pi}{6}\\right)$ meets $y = \\frac{1}{2}$ where $\\sin\\left(x + \\frac{\\pi}{6}\\right) = \\frac{1}{2}, \\quad -2\\pi \\le x \\le 2\\pi$\n$$\\begin{aligned}\n\\therefore x + \\frac{\\pi}{6} &= -\\frac{11\\pi}{6}, -\\frac{7\\pi}{6}, \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{13\\pi}{6} \\\\\n\\therefore x &= -2\\pi, -\\frac{4\\pi}{3}, 0, \\frac{2\\pi}{3}, 2\\pi\n\\end{aligned}$$\n\nSince $\\sin\\left(x + \\frac{\\pi}{6}\\right) \\ge \\frac{1}{2}$ on the intervals $-2\\pi \\le x \\le -\\frac{4\\pi}{3}$ and $0 \\le x \\le \\frac{2\\pi}{3}$,\n$$\\begin{aligned}\n\\text{area} &= \\int_{-2\\pi}^{-\\frac{4\\pi}{3}} \\left( \\sin\\left(x + \\frac{\\pi}{6}\\right) - \\frac{1}{2} \\right) dx + \\int_0^{\\frac{2\\pi}{3}} \\left( \\sin\\left(x + \\frac{\\pi}{6}\\right) - \\frac{1}{2} \\right) dx \\\\\n&= \\left[ -\\cos\\left(x + \\frac{\\pi}{6}\\right) - \\frac{1}{2}x \\right]_{-2\\pi}^{-\\frac{4\\pi}{3}} + \\left[ -\\cos\\left(x + \\frac{\\pi}{6}\\right) - \\frac{1}{2}x \\right]_0^{\\frac{2\\pi}{3}} \\\\\n&= \\left(-\\cos\\left(-\\frac{4\\pi}{3} + \\frac{\\pi}{6}\\right) - \\left(-\\frac{2\\pi}{3}\\right)\\right) - \\left(-\\cos\\left(-2\\pi + \\frac{\\pi}{6}\\right) - (-\\pi)\\right) \\\\\n&\\quad + \\left(-\\cos\\left(\\frac{2\\pi}{3} + \\frac{\\pi}{6}\\right) - \\left(\\frac{\\pi}{3}\\right)\\right) - \\left(-\\cos\\frac{\\pi}{6} - 0\\right) \\\\\n&= -\\cos\\left(-\\frac{7\\pi}{6}\\right) + \\frac{2\\pi}{3} + \\cos\\left(-\\frac{11\\pi}{6}\\right) - \\pi - \\cos\\frac{5\\pi}{6} - \\frac{\\pi}{3} + \\cos\\frac{\\pi}{6} \\\\\n&= -\\left(-\\frac{\\sqrt{3}}{2}\\right) + \\frac{2\\pi}{3} + \\frac{\\sqrt{3}}{2} - \\pi - \\left(-\\frac{\\sqrt{3}}{2}\\right) - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{2} \\\\\n&= \\left(2\\sqrt{3} - \\frac{2\\pi}{3}\\right) \\text{ units}^2\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "The area enclosed between curves where one curve is above the other over multiple intervals requires splitting the integration across each valid interval.",
+        "step_by_step": [
+          "Solve $\\sin(x + \\frac{\\pi}{6}) = \\frac{1}{2}$ for $x \\in [-2\\pi, 2\\pi]$ to find intersection points.",
+          "Identify intervals where $\\sin(x + \\frac{\\pi}{6}) \\ge \\frac{1}{2}$: $[-2\\pi, -\\frac{4\\pi}{3}]$ and $[0, \\frac{2\\pi}{3}]$.",
+          "Write the total area as the sum of two definite integrals of $(\\sin(x + \\frac{\\pi}{6}) - \\frac{1}{2})$.",
+          "Compute the antiderivative $-\\cos(x + \\frac{\\pi}{6}) - \\frac{1}{2}x$.",
+          "Evaluate at the limits using exact trigonometric values and combine like terms to obtain $2\\sqrt{3} - \\frac{2\\pi}{3}$."
+        ],
+        "common_pitfalls": "Forgetting the negative sign when integrating $\\sin(u)$ to $-\\cos(u)$, or errors evaluating cosine at negative angles."
+      }
+    }
+  ]
+}

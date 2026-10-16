@@ -1,0 +1,115 @@
+{
+  "id": "topic_4_q64",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 64,
+  "question_text": "The lengths of adult fish of a certain species are normally distributed with mean $40\\text{ cm}$ and standard deviation $5\\text{ cm}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the probability that a randomly chosen adult fish of this species is longer than 45 cm.",
+      "final_answer": "$0.159$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal CDF calculation with $X \\sim \\text{N}(40, 5^2)$ for $P(X > 45)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $0.159$"
+        }
+      ],
+      "solution": "Let the length of a randomly selected adult fish be $X\\text{ cm}$.\n\nSo, $X \\sim \\text{N}(40, 5^2)$.\n\n$P(X > 45) \\approx 0.159$",
+      "ai_explanation": {
+        "concept_rule": "Calculating upper-tail probability for a normally distributed random variable.",
+        "step_by_step": [
+          "Identify parameters: $\\mu = 40, \\sigma = 5$.",
+          "Calculate $P(X > 45)$ using normal CDF with lower bound $45$.",
+          "Obtain $0.158655... \\approx 0.159$."
+        ],
+        "common_pitfalls": "Using variance $25$ instead of standard deviation $5$."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the probability that a randomly chosen adult fish of this species is between 35 cm and 50 cm long.",
+      "final_answer": "$0.819$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up normal CDF calculation for $P(35 \\le X \\le 50)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $0.819$"
+        }
+      ],
+      "solution": "$P(35 \\le X \\le 50) \\approx 0.819$",
+      "ai_explanation": {
+        "concept_rule": "Calculating interval probability on a normal distribution.",
+        "step_by_step": [
+          "Enter lower bound $35$ and upper bound $50$.",
+          "Use Normal CD with $\\mu = 40, \\sigma = 5$.",
+          "Obtain $0.81859... \\approx 0.819$."
+        ],
+        "common_pitfalls": "Rounding errors from premature rounding of $z$-scores."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Determine the minimum length of the longest 10% of this species of fish.",
+      "final_answer": "$46.4\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Formulating $P(X > l) = 0.1 \\iff P(X \\le l) = 0.9$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $l \\approx 46.4\\text{ cm}$"
+        }
+      ],
+      "solution": "$P(X > l) = 0.1$\n\n$\\therefore P(X \\le l) = 0.9$\n\n$\\therefore l = 46.4$\n\n$\\therefore$ the minimum length of the longest $10\\%$ of fish is about $46.4\\text{ cm}$.",
+      "ai_explanation": {
+        "concept_rule": "Using the inverse normal distribution to find a boundary value corresponding to an upper tail area.",
+        "step_by_step": [
+          "The longest $10\\%$ corresponds to an upper tail of $0.1$, so cumulative area to the left is $1 - 0.1 = 0.9$.",
+          "Use Inverse Normal with area $= 0.9$, $\\mu = 40$, $\\sigma = 5$.",
+          "Obtain $l \\approx 46.4077... \\approx 46.4\\text{ cm}$."
+        ],
+        "common_pitfalls": "Using area $= 0.1$ for a left-tail function directly without adjusting to $0.9$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "A randomly selected fish is shorter than 48 cm. Find the probability that it is between 40 cm and 44 cm long.",
+      "final_answer": "$0.305$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using conditional probability formula: $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $P(40 \\le X \\le 44) \\approx 0.2881$ and $P(X < 48) \\approx 0.9452$"
+        },
+        {
+          "code": "A1",
+          "desc": "Computing final quotient $\\frac{0.288}{0.945} \\approx 0.305$"
+        }
+      ],
+      "solution": "$P(40 \\le X \\le 44 \\mid X < 48) = \\frac{P((40 \\le X \\le 44) \\cap (X < 48))}{P(X < 48)}\n= \\frac{P(40 \\le X \\le 44)}{P(X < 48)}\n\\approx \\frac{0.288}{0.945}\n\\approx 0.305$",
+      "ai_explanation": {
+        "concept_rule": "Conditional probability definition: $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$.",
+        "step_by_step": [
+          "Identify the intersection of $(40 \\le X \\le 44)$ and $(X < 48)$, which is simply $(40 \\le X \\le 44)$.",
+          "Calculate numerator $P(40 \\le X \\le 44) \\approx 0.28814$.",
+          "Calculate denominator $P(X < 48) \\approx 0.94520$.",
+          "Divide numerator by denominator: $\\frac{0.28814}{0.94520} \\approx 0.3048 \\approx 0.305$."
+        ],
+        "common_pitfalls": "Incorrectly taking the intersection as extending to 48 instead of 44."
+      }
+    }
+  ]
+}

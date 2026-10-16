@@ -1,0 +1,42 @@
+{
+  "id": "topic_3_q52",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 52,
+  "question_text": "Solve for $x$ if $0 \\leqslant x \\leqslant 2\\pi$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin x = 0.785$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$2\\cos x = 5\\sin x$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "\\tan 3x = 0.9",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "d",
+      "stem": "$4\\sin^2 x = \\cos^2 x$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

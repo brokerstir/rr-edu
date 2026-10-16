@@ -1,0 +1,70 @@
+{
+  "id": "topic_4_q5",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 5,
+  "question_text": "Classify each variable as categorical, discrete, or continuous:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "The number of houses on a particular street.",
+      "final_answer": "$Discrete variable$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the variable as discrete"
+        }
+      ],
+      "solution": "The number of houses on a particular street can be counted, so it is a discrete variable.",
+      "ai_explanation": {
+        "concept_rule": "A discrete variable takes on distinct, separate countable values (usually integers).",
+        "step_by_step": [
+          "Identify that houses can only be counted in whole numbers.",
+          "Conclude the data is discrete numerical."
+        ],
+        "common_pitfalls": "Classifying discrete numerical data as continuous."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "The number of hours spent travelling on an airplane.",
+      "final_answer": "$Continuous variable$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the variable as continuous"
+        }
+      ],
+      "solution": "The number of hours spent travelling on an airplane can be measured and can take any value between certain limits, so it is a continuous variable.",
+      "ai_explanation": {
+        "concept_rule": "A continuous variable can take any real value within a given interval and is measured rather than counted.",
+        "step_by_step": [
+          "Determine whether time is measured or counted: it is measured.",
+          "Recognize that time can take fractional/decimal values, making it continuous."
+        ],
+        "common_pitfalls": "Thinking time is discrete because it is rounded to whole hours."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "The brand of laptop someone uses.",
+      "final_answer": "$Categorical variable$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the variable as categorical"
+        }
+      ],
+      "solution": "The brand of laptop someone uses is a categorical variable.",
+      "ai_explanation": {
+        "concept_rule": "Categorical variables describe qualities or characteristics and consist of labels or names.",
+        "step_by_step": [
+          "Identify that laptop brands are names (e.g., Apple, Dell, Lenovo).",
+          "Conclude the data is categorical (nominal)."
+        ],
+        "common_pitfalls": "Confusing categorical data with discrete numerical data."
+      }
+    }
+  ]
+}

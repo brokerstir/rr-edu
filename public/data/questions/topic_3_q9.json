@@ -1,0 +1,41 @@
+{
+  "id": "topic_3_q9",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 9,
+  "question_text": "The distance from $P(k, 6, -5)$ to $Q(2, -1, -8)$ is $9$ units. Find the possible values of $k$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The distance from $P(k, 6, -5)$ to $Q(2, -1, -8)$ is $9$ units. Find the possible values of $k$.",
+      "final_answer": "$k = 2 - \\sqrt{23} \\text{ or } 2 + \\sqrt{23}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express distance $PQ$ in terms of $k$: $\\sqrt{(2-k)^2 + (-1-6)^2 + (-8 - (-5))^2} = \\sqrt{k^2 - 4k + 62}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set equal to $9$ and square both sides to obtain quadratic equation: $k^2 - 4k - 19 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Use quadratic formula to obtain $k = 2 \\pm \\sqrt{23}$"
+        }
+      ],
+      "solution": "$P(k, 6, -5)$ and $Q(2, -1, -8)$\n$PQ = \\sqrt{(2-k)^2 + (-1-6)^2 + (-8 - (-5))^2}$\n$= \\sqrt{(2-k)^2 + (-7)^2 + (-3)^2}$\n$= \\sqrt{4 - 4k + k^2 + 49 + 9}$\n$= \\sqrt{k^2 - 4k + 62}$\nNow $PQ = 9\\text{ units}$\n$\\therefore \\sqrt{k^2 - 4k + 62} = 9$\n$\\therefore k^2 - 4k + 62 = 81$\n$\\therefore k^2 - 4k - 19 = 0$\n$\\therefore k = \\frac{4 \\pm \\sqrt{16 - 4(1)(-19)}}{2}$\n$= \\frac{4 \\pm \\sqrt{92}}{2}$\n$= \\frac{4 \\pm 2\\sqrt{23}}{2}$\n$= 2 \\pm \\sqrt{23}$\n$\\therefore k = 2 - \\sqrt{23} \\text{ or } 2 + \\sqrt{23}$",
+      "ai_explanation": {
+        "concept_rule": "The 3D distance between two points involving an unknown coordinate yields a quadratic equation when equated to a given distance and squared.",
+        "step_by_step": [
+          "Write the distance expression: $PQ = \\sqrt{(2-k)^2 + (-7)^2 + (-3)^2} = \\sqrt{k^2 - 4k + 62}$.",
+          "Set $PQ = 9$ and square both sides: $k^2 - 4k + 62 = 81$.",
+          "Rearrange into standard quadratic form: $k^2 - 4k - 19 = 0$.",
+          "Apply the quadratic formula $k = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ with $a=1, b=-4, c=-19$.",
+          "Simplify $\\sqrt{92} = 2\\sqrt{23}$ to find $k = 2 \\pm \\sqrt{23}$."
+        ],
+        "common_pitfalls": "Squaring $(2 - k)$ incorrectly as $4 - k^2$ instead of $4 - 4k + k^2$, or making sign errors with $c = -19$ under the square root."
+      }
+    }
+  ]
+}

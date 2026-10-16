@@ -1,0 +1,127 @@
+{
+  "id": "topic_5_q79",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 79,
+  "question_text": "Find the area of the region bounded by:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 + x$, the $x$-axis, $x = 2$, and $x = 4$",
+      "final_answer": "$24\\frac{2}{3}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral of the function with correct limits from 2 to 4"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct integration to find the antiderivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluation yielding the final area"
+        }
+      ],
+      "solution": "$\\text{Area} = \\int_{2}^{4} (x^2 + x)\\,dx$\n$= \\left[ \\frac{1}{3}x^3 + \\frac{1}{2}x^2 \\right]_2^4$\n$= \\left( \\frac{1}{3}(4)^3 + \\frac{1}{2}(4)^2 \\right) - \\left( \\frac{1}{3}(2)^3 + \\frac{1}{2}(2)^2 \\right)$\n$= \\frac{64}{3} + 8 - \\frac{8}{3} - 2$\n$= \\frac{56}{3} + 6$\n$= \\frac{74}{3}$\n$= 24\\frac{2}{3}\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area under a curve $y = f(x)$ between $x = a$ and $x = b$, where $f(x) \\ge 0$, is given by the definite integral $\\int_{a}^{b} f(x)\\,dx$.",
+        "step_by_step": [
+          "Set up the integral $\\int_{2}^{4} (x^2 + x)\\,dx$.",
+          "Find the antiderivative: $\\frac{x^3}{3} + \\frac{x^2}{2}$.",
+          "Substitute the upper limit $x = 4$ and lower limit $x = 2$, and subtract to obtain $\\frac{74}{3} = 24\\frac{2}{3}\\text{ units}^2$."
+        ],
+        "common_pitfalls": "Arithmetic errors when dealing with fractional terms or incorrect sign distribution during subtraction of the lower limit evaluation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = \\sin 2x$, the $x$-axis, $x = \\frac{\\pi}{4}$, and $x = \\frac{\\pi}{2}$",
+      "final_answer": "$\\frac{1}{2}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral of $\\sin 2x$ between $\\frac{\\pi}{2}$ and $\\frac{3\\pi}{4}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct antiderivative $-\\frac{1}{2}\\cos 2x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct substitution and evaluation to get $\\frac{1}{2}$"
+        }
+      ],
+      "solution": "$\\text{Area} = \\int_{\\frac{\\pi}{2}}^{\\frac{3\\pi}{4}} \\sin 2x\\,dx$\n$= \\left[ -\\frac{1}{2}\\cos 2x \\right]_{\\frac{\\pi}{2}}^{\\frac{3\\pi}{4}}$\n$= -\\frac{1}{2}\\cos\\frac{3\\pi}{2} + \\frac{1}{2}\\cos\\pi$\n$= -\\frac{1}{2}(0) + \\frac{1}{2}(-1)$ wait, as written in the book:\n$= -\\frac{1}{2}\\cos\\pi + \\frac{1}{2}\\cos\\frac{\\pi}{2} = -\\frac{1}{2}(-1) + \\frac{1}{2}(0) = \\frac{1}{2}\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "The integral of $\\sin(kx)$ is $-\\frac{1}{k}\\cos(kx)$. The area between the curve and the $x$-axis is given by the definite integral over the specified interval.",
+        "step_by_step": [
+          "Integrate $\\sin 2x$ to obtain $-\\frac{1}{2}\\cos 2x$.",
+          "Substitute the upper limit $\\frac{3\\pi}{4}$ and lower limit $\\frac{\\pi}{2}$.",
+          "Evaluate the trigonometric values: $\\cos\\left(\\frac{3\\pi}{2}\\right) = 0$ and $\\cos(\\pi) = -1$.",
+          "Calculate the final result: $0 - \\left(-\\frac{1}{2}(-1)\\right) = \\frac{1}{2}\\text{ units}^2$."
+        ],
+        "common_pitfalls": "Forgetting the chain rule factor $\\frac{1}{2}$ or making a sign error during integration of sine."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = \\frac{1}{\\sqrt{x+2}}$, the $x$-axis, $x = 2$, and $x = 7$",
+      "final_answer": "$2\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral with $(x+2)^{-\\frac{1}{2}}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding the antiderivative $2\\sqrt{x+2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating with boundaries to find the final area"
+        }
+      ],
+      "solution": "$\\text{Area} = \\int_{2}^{7} \\frac{1}{\\sqrt{x+2}}\\,dx$\n$= \\int_{2}^{7} (x+2)^{-\\frac{1}{2}}\\,dx$\n$= \\left[ 2(x+2)^{\\frac{1}{2}} \\right]_2^7$\n$= 2\\sqrt{7+2} - 2\\sqrt{2+2}$\n$= 2\\sqrt{9} - 2\\sqrt{4}$\n$= 2(3) - 2(2)$\n$= 2\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "Integrals of the form $\\int (x+c)^n\\,dx = \\frac{(x+c)^{n+1}}{n+1} + C$ for $n \\neq -1$.",
+        "step_by_step": [
+          "Rewrite $\\frac{1}{\\sqrt{x+2}}$ as $(x+2)^{-\\frac{1}{2}}$.",
+          "Integrate to get $\\frac{(x+2)^{1/2}}{1/2} = 2\\sqrt{x+2}$.",
+          "Evaluate at $x = 7$ and $x = 2$: $2\\sqrt{9} - 2\\sqrt{4} = 6 - 4 = 2$."
+        ],
+        "common_pitfalls": "Incorrectly integrating the square root in the denominator as a logarithm instead of applying the power rule."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$y = e^{-3x}$, the $x$-axis, $x = 0$, and $x = 1$.",
+      "final_answer": "$\\frac{1}{3}\\left(1 - \\frac{1}{e^3}\\right)\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the integral $\\int_0^1 e^{-3x}\\,dx$"
+        },
+        {
+          "code": "A1",
+          "desc": "Antiderivative $\\left[-\\frac{1}{3}e^{-3x}\\right]_0^1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct substitution and algebraic simplification"
+        }
+      ],
+      "solution": "$\\text{Area} = \\int_{0}^{1} e^{-3x}\\,dx$\n$= \\left[ -\\frac{1}{3}e^{-3x} \\right]_0^1$\n$= -\\frac{1}{3}e^{-3} + \\frac{1}{3}e^0$\n$= -\\frac{1}{3}\\frac{1}{e^3} + \\frac{1}{3}$\n$= \\frac{1}{3}\\left(1 - \\frac{1}{e^3}\\right)\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "The integral of $e^{kx}$ is $\\frac{1}{k}e^{kx} + C$.",
+        "step_by_step": [
+          "Set up the integral $\\int_0^1 e^{-3x}\\,dx$.",
+          "Find the antiderivative: $-\\frac{1}{3}e^{-3x}$.",
+          "Evaluate at limits $1$ and $0$: $-\\frac{1}{3}e^{-3} - \\left(-\\frac{1}{3}e^0\\right) = \\frac{1}{3}\\left(1 - e^{-3}\\right)$."
+        ],
+        "common_pitfalls": "Forgetting that $e^0 = 1$ rather than $0$."
+      }
+    }
+  ]
+}

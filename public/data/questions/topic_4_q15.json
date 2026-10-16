@@ -1,0 +1,108 @@
+{
+  "id": "topic_4_q15",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 15,
+  "question_text": "Consider this data set: 16, 20, 10, 16, 4, 12, 23, 18, 17, 9, 18, 16, 31, 26, 18, 14, 12, 14, 15",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write the data set in order, and construct a five-number summary.",
+      "final_answer": "$\\text{minimum} = 4, Q_1 = 12, \\text{median} = 16, Q_3 = 18, \\text{maximum} = 31$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying median and quartiles from the 19 ordered values"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct five-number summary"
+        }
+      ],
+      "solution": "The ordered data set has 19 values:\n4, 9, 10, 12, 12, 14, 14, 15, 16, **16**, 16, 17, 18, 18, 18, 20, 23, 26, 31\n$$\\text{median} = 16 \\quad (\\text{the 10th value})$$\nLower half (first 9 values): 4, 9, 10, 12, **12**, 14, 14, 15, 16 $\\Rightarrow Q_1 = 12$\nUpper half (last 9 values): 16, 17, 18, 18, **18**, 20, 23, 26, 31 $\\Rightarrow Q_3 = 18$\n\nFive-number summary:\n$$\\text{minimum} = 4, \\quad Q_1 = 12, \\quad \\text{median} = 16, \\quad Q_3 = 18, \\quad \\text{maximum} = 31$$",
+      "ai_explanation": {
+        "concept_rule": "The five-number summary consists of the minimum, lower quartile ($Q_1$), median, upper quartile ($Q_3$), and maximum.",
+        "step_by_step": [
+          "For $n=19$, the median is the $\\frac{19+1}{2} = 10$th value, which is 16.",
+          "The lower half contains 9 values; its median ($Q_1$) is the 5th value, which is 12.",
+          "The upper half contains 9 values; its median ($Q_3$) is the 15th value, which is 18.",
+          "Identify min = 4 and max = 31."
+        ],
+        "common_pitfalls": "Including the median in the lower and upper halves when $n$ is odd."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate the interquartile range.",
+      "final_answer": "$6$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct value of IQR"
+        }
+      ],
+      "solution": "$$\\text{IQR} = Q_3 - Q_1 = 18 - 12 = 6$$",
+      "ai_explanation": {
+        "concept_rule": "Interquartile range is computed as $\\text{IQR} = Q_3 - Q_1$.",
+        "step_by_step": [
+          "Subtract $Q_1$ from $Q_3$: $18 - 12 = 6$."
+        ],
+        "common_pitfalls": "Using range (max - min) instead of IQR."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Calculate the upper and lower boundaries, and hence identify any outliers in the data set.",
+      "final_answer": "$31 \\text{ is an outlier}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculation of upper and lower outlier boundaries using $1.5 \\times \\text{IQR}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly identifying 31 as an outlier"
+        }
+      ],
+      "solution": "$$\\text{upper boundary} = \\text{upper quartile} + 1.5 \\times \\text{IQR} = 18 + 1.5 \\times 6 = 27$$\n$$\\text{lower boundary} = \\text{lower quartile} - 1.5 \\times \\text{IQR} = 12 - 1.5 \\times 6 = 3$$\nSince 31 is above the upper boundary of 27, 31 is an outlier.",
+      "ai_explanation": {
+        "concept_rule": "Outlier fences are given by $[Q_1 - 1.5\\times\\text{IQR}, Q_3 + 1.5\\times\\text{IQR}]$. Any datum outside this interval is an outlier.",
+        "step_by_step": [
+          "Compute $1.5 \\times \\text{IQR} = 1.5 \\times 6 = 9$.",
+          "Upper fence: $18 + 9 = 27$.",
+          "Lower fence: $12 - 9 = 3$.",
+          "Compare data values to fences: 31 is greater than 27, so it is an outlier."
+        ],
+        "common_pitfalls": "Using the mean and standard deviation formula instead of quartile fences, or adding $1.5\\times\\text{IQR}$ to the median."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Draw a box plot to represent the data.",
+      "final_answer": "$\\text{Box-and-whisker plot with outlier marked at } 31$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Drawing box from $Q_1=12$ to $Q_3=18$ with vertical line at median 16"
+        },
+        {
+          "code": "A1",
+          "desc": "Whiskers extending to minimum (4) and largest non-outlier value (26), with outlier 31 plotted as an isolated point"
+        }
+      ],
+      "solution": "Draw a number line from 0 to 35.\n- Lower whisker extends to the minimum value: 4.\n- Box begins at $Q_1 = 12$, has median marked at 16, and ends at $Q_3 = 18$.\n- Upper whisker extends to the largest non-outlier value: 26.\n- The outlier at 31 is plotted as an individual point/asterisk.",
+      "ai_explanation": {
+        "concept_rule": "In a modified boxplot, whiskers extend to the smallest and largest values that are not outliers, while outliers are plotted as individual points.",
+        "step_by_step": [
+          "Plot the box with boundaries at $Q_1=12$ and $Q_3=18$.",
+          "Mark the median at 16 with a vertical line.",
+          "Draw the left whisker from 12 to 4.",
+          "Draw the right whisker from 18 to 26 (the largest value $\\le 27$).",
+          "Mark the outlier at 31 with an asterisk or dot."
+        ],
+        "common_pitfalls": "Extending the whisker all the way to 31 instead of stopping at 26."
+      }
+    }
+  ]
+}

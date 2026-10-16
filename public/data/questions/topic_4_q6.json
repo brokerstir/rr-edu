@@ -1,0 +1,99 @@
+{
+  "id": "topic_4_q6",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 6,
+  "question_text": "A random sample of people were asked \"How many devices have you used to browse the internet in the last month?\". The results are displayed in the column graph.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "How many people were surveyed?",
+      "final_answer": "$57\\text{ people}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum all column heights/frequencies from the graph"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain 57"
+        }
+      ],
+      "solution": "$2 + 14 + 22 + 12 + 3 + 3 + 1 = 57$ people were surveyed.",
+      "ai_explanation": {
+        "concept_rule": "The total number of surveyed subjects is the sum of frequencies across all categories.",
+        "step_by_step": [
+          "Read frequencies from the bar graph: 0 devices: 2; 1: 14; 2: 22; 3: 12; 4: 3; 5: 3; 6: 1.",
+          "Sum values: $2 + 14 + 22 + 12 + 3 + 3 + 1 = 57$."
+        ],
+        "common_pitfalls": "Misreading the bar heights from the vertical axis."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the mode of the data.",
+      "final_answer": "$2\\text{ devices}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify the mode as 2 devices"
+        }
+      ],
+      "solution": "The mode of the data is 2 devices.",
+      "ai_explanation": {
+        "concept_rule": "The mode is the value with the highest frequency.",
+        "step_by_step": [
+          "Look for the tallest bar on the chart.",
+          "The tallest bar corresponds to 2 devices with a frequency of 22."
+        ],
+        "common_pitfalls": "Giving the frequency (22) instead of the data value (2)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "What percentage of people browsed the internet using 1 or 2 devices?",
+      "final_answer": "$63.2\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum frequencies for 1 and 2 devices and divide by total 57"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate percentage: $\\frac{36}{57} \\times 100\\% \\approx 63.2\\%$"
+        }
+      ],
+      "solution": "$\\frac{14 + 22}{57} \\times 100\\% \\approx 63.2\\%$ of people browsed the internet using 1 or 2 devices.",
+      "ai_explanation": {
+        "concept_rule": "Percentage $= \\frac{\\text{Subgroup Frequency}}{\\text{Total Frequency}} \\times 100\\%$.",
+        "step_by_step": [
+          "Add frequencies for 1 device and 2 devices: $14 + 22 = 36$.",
+          "Divide by the total 57: $\\frac{36}{57}$.",
+          "Multiply by 100: $63.157...\\% \\approx 63.2\\%$."
+        ],
+        "common_pitfalls": "Including 0 devices or forgetting to divide by 57."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Describe the distribution of the data.",
+      "final_answer": "$Positively skewed with no outliers$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State positive skewness and absence of outliers"
+        }
+      ],
+      "solution": "The data is positively skewed with no outliers.",
+      "ai_explanation": {
+        "concept_rule": "A distribution is positively skewed (skewed right) if the tail on the right side of the peak is longer or fatter than the left side.",
+        "step_by_step": [
+          "Observe the shape: peak is at 2, with a longer tail trailing to the right (up to 6).",
+          "Note there are no isolated points far from the rest of the distribution."
+        ],
+        "common_pitfalls": "Confusing positive skew (tail on the right) with negative skew (tail on the left)."
+      }
+    }
+  ]
+}

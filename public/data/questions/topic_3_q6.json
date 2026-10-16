@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q6",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 6,
+  "question_text": "Find:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\theta$",
+      "final_answer": "$60^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up arc length formula: $\\pi = \\frac{\\theta}{360} \\times 2\\pi(3)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $\\theta = 60^\\circ$"
+        }
+      ],
+      "solution": "$\\text{Arc length} = \\frac{\\theta}{360} \\times 2\\pi r$\n$\\therefore \\pi = \\frac{\\theta}{360} \\times 2\\pi(3)$\n$\\therefore \\pi = \\frac{\\pi\\theta}{60}$\n$\\therefore \\theta = 60^\\circ$",
+      "ai_explanation": {
+        "concept_rule": "Arc length of a circle of radius $r$ subtending an angle $\\theta$ degrees at the center is $s = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+        "step_by_step": [
+          "Substitute $s = \\pi$ and $r = 3$ into the arc length formula.",
+          "Simplify: $\\pi = \\frac{6\\pi\\theta}{360} = \\frac{\\pi\\theta}{60}$.",
+          "Divide by $\\pi$ and multiply by 60 to obtain $\\theta = 60^\\circ$."
+        ],
+        "common_pitfalls": "Confusing the arc length formula with the sector area formula."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the shaded area.",
+      "final_answer": "$23.6\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find the major sector angle: $360^\\circ - 60^\\circ = 300^\\circ$ and set up area expression $\\frac{300}{360} \\times \\pi(3)^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\frac{15}{2}\\pi \\approx 23.6\\text{ cm}^2$"
+        }
+      ],
+      "solution": "$\\text{Shaded area} = \\frac{360 - 60}{360} \\times \\pi(3)^2$\n$= \\frac{300}{360} \\times 9\\pi$\n$= \\frac{15}{2}\\pi \\approx 23.6\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of the major sector is calculated using the reflex central angle $360^\\circ - \\theta$.",
+        "step_by_step": [
+          "Determine the angle of the shaded region: $360^\\circ - 60^\\circ = 300^\\circ$.",
+          "Apply the sector area formula: $\\frac{300}{360} \\times \\pi \\times 3^2$.",
+          "Simplify to $\\frac{5}{6} \\times 9\\pi = \\frac{15}{2}\\pi \\approx 23.6\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Calculating the area of the unshaded minor sector ($60^\\circ$) instead of the shaded major sector."
+      }
+    }
+  ]
+}

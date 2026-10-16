@@ -1,0 +1,75 @@
+{
+  "id": "topic_5_q19",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 19,
+  "question_text": "Find the gradient of the tangent to:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\cos^4 x$ at the point where $x = \\frac{3\\pi}{4}$.",
+      "final_answer": "$1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the chain rule to differentiate $\\cos^4 x$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substituting $x = \\frac{3\\pi}{4}$ into the derivative"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining gradient $= 1$"
+        }
+      ],
+      "solution": "$f(x) = \\cos^4 x$\n$\\therefore f'(x) = 4\\cos^3 x(-\\sin x) \\quad \\{\\text{chain rule}\\}$\n$= -4\\cos^3 x\\sin x$\n$f'\\left(\\frac{3\\pi}{4}\\right) = -4\\cos^3\\left(\\frac{3\\pi}{4}\\right)\\sin\\left(\\frac{3\\pi}{4}\\right)$\n$= -4\\left(-\\frac{1}{\\sqrt{2}}\\right)^3\\left(\\frac{1}{\\sqrt{2}}\\right)$\n$= 1$\nSo, the gradient of the tangent is 1.",
+      "ai_explanation": {
+        "concept_rule": "The gradient of the tangent at $x = x_0$ is given by $f'(x_0)$.",
+        "step_by_step": [
+          "Differentiate $f(x) = (\\cos x)^4$ using the chain rule: $f'(x) = 4(\\cos x)^3(-\\sin x)$.",
+          "Evaluate at $x = \\frac{3\\pi}{4}$: $\\cos(3\\pi/4) = -\\frac{1}{\\sqrt{2}}$ and $\\sin(3\\pi/4) = \\frac{1}{\\sqrt{2}}$.",
+          "Calculate: $-4 \\left(-\\frac{1}{2\\sqrt{2}}\\right) \\left(\\frac{1}{\\sqrt{2}}\\right) = -4 \\left(-\\frac{1}{4}\\right) = 1$."
+        ],
+        "common_pitfalls": "Sign error when calculating $(-\\frac{1}{\\sqrt{2}})^3 = -\\frac{1}{2\\sqrt{2}}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = \\frac{3\\sin^2 x}{\\cos 2x}$ at the point where $x = -\\frac{\\pi}{3}$.",
+      "final_answer": "$-6\\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying quotient rule to $f(x)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using double angle identities to simplify $f'(x)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating $f'\\left(-\\frac{\\pi}{3}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final gradient"
+        }
+      ],
+      "solution": "$f(x) = \\frac{3\\sin^2 x}{\\cos 2x}$\n$\\therefore f'(x) = \\frac{3(2\\sin x\\cos x)\\cos 2x - (-2\\sin 2x)(3\\sin^2 x)}{\\cos^2 2x}$\n$= \\frac{3\\sin 2x\\cos 2x + 6\\sin 2x\\sin^2 x}{\\cos^2 2x}$\n$= \\frac{3\\sin 2x(\\cos 2x + 2\\sin^2 x)}{\\cos^2 2x}$\n$= \\frac{3\\sin 2x(1 - 2\\sin^2 x + 2\\sin^2 x)}{\\cos^2 2x} \\quad \\{\\text{double angle formula}\\}$\n$= \\frac{3\\sin 2x}{\\cos^2 2x}$\n$\\therefore f'\\left(-\\frac{\\pi}{3}\\right) = \\frac{3\\sin\\left(-\\frac{2\\pi}{3}\\right)}{\\cos^2\\left(-\\frac{2\\pi}{3}\\right)} = \\frac{3\\left(-\\frac{\\sqrt{3}}{2}\\right)}{\\left(-\\frac{1}{2}\\right)^2} = -6\\sqrt{3}$\nSo, the gradient of the tangent is $-6\\sqrt{3}$.",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule: $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$ and trigonometric identities: $\\sin 2x = 2\\sin x\\cos x$ and $\\cos 2x = 1 - 2\\sin^2 x$.",
+        "step_by_step": [
+          "Apply the quotient rule with $u = 3\\sin^2 x$ and $v = \\cos 2x$.",
+          "Rewrite $2\\sin x\\cos x$ as $\\sin 2x$ in the numerator.",
+          "Factor out $3\\sin 2x$ to get $\\cos 2x + 2\\sin^2 x$.",
+          "Recognize $\\cos 2x + 2\\sin^2 x = 1$, reducing $f'(x)$ to $\\frac{3\\sin 2x}{\\cos^2 2x}$.",
+          "Evaluate at $x = -\\pi/3$: $\\sin(-2\\pi/3) = -\\frac{\\sqrt{3}}{2}$ and $\\cos(-2\\pi/3) = -\\frac{1}{2}$.",
+          "Compute $\\frac{3(-\\sqrt{3}/2)}{1/4} = -6\\sqrt{3}$."
+        ],
+        "common_pitfalls": "Failing to simplify using trigonometric identities before substituting, resulting in cumbersome arithmetic."
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "topic_3_q24",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 24,
+  "question_text": "",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $\\cos\\theta$ but not $\\theta$.",
+      "final_answer": "$\\frac{5}{8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply cosine rule in triangle ABD"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to find cos theta = 5/8"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta \\text{ABD}$:\n$$\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2 \\times 60 \\times 20}$$\n$$\\therefore \\cos\\theta = \\frac{1500}{2400}$$\n$$\\therefore \\cos\\theta = \\frac{5}{8}$$",
+      "ai_explanation": {
+        "concept_rule": "Use the cosine rule $\\cos\\theta = \\frac{b^2 + c^2 - a^2}{2bc}$ for triangle ABD.",
+        "step_by_step": [
+          "Identify side lengths in $\\Delta \\text{ABD}$: adjacent sides are $AB = 60\\text{ m}$, $AD = 20\\text{ m}$, and opposite side is $BD = 50\\text{ m}$.",
+          "Substitute: $\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2(60)(20)} = \\frac{3600 + 400 - 2500}{2400}$.",
+          "Simplify numerator: $1500$.",
+          "Simplify fraction: $\\frac{1500}{2400} = \\frac{5}{8}$."
+        ],
+        "common_pitfalls": "Inverting numerator terms or dividing by wrong factors."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find the value of $x$.",
+      "final_answer": "$62.6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply cosine rule in triangle ABC with AC = 20 + x and cos theta = 5/8"
+        },
+        {
+          "code": "M1",
+          "desc": "Expand and form quadratic equation x^2 - 35x - 1725 = 0"
+        },
+        {
+          "code": "M1",
+          "desc": "Use quadratic formula to solve for x"
+        },
+        {
+          "code": "A1",
+          "desc": "Select positive root and obtain x approximately 62.6"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta \\text{ABC}$:\n$$65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\cos\\theta$$\n$$65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\left(\\frac{5}{8}\\right) \\quad \\{\\text{using a}\\}$$\n$$4225 = 3600 + 400 + 40x + x^2 - 1500 - 75x$$\n$$\\therefore x^2 - 35x - 1725 = 0$$\n$$\\therefore x = \\frac{35 \\pm \\sqrt{1225 - 4(1)(-1725)}}{2(1)} \\quad \\{\\text{quadratic formula}\\}$$\n$$x = \\frac{35 \\pm \\sqrt{8125}}{2}$$\n$$x = \\frac{35 \\pm 25\\sqrt{13}}{2}$$\n$$\\therefore x = \\frac{35 + 25\\sqrt{13}}{2} \\quad \\{x > 0\\}$$\n$$\\therefore x \\approx 62.6$$",
+      "ai_explanation": {
+        "concept_rule": "Apply the cosine rule to the large triangle using the exact value of $\\cos\\theta$ obtained in part (a), resulting in a quadratic equation.",
+        "step_by_step": [
+          "Express side $AC$ as $20 + x$.",
+          "Write cosine rule in $\\Delta \\text{ABC}$: $BC^2 = AB^2 + AC^2 - 2(AB)(AC)\\cos\\theta$.",
+          "Substitute known values: $65^2 = 60^2 + (20+x)^2 - 2(60)(20+x)\\left(\\frac{5}{8}\\right)$.",
+          "Expand and rearrange: $4225 = 3600 + 400 + 40x + x^2 - 75(20 + x) \\implies x^2 - 35x - 1725 = 0$.",
+          "Apply quadratic formula: $x = \\frac{35 \\pm \\sqrt{(-35)^2 - 4(1)(-1725)}}{2} = \\frac{35 \\pm \\sqrt{8125}}{2}$.",
+          "Since length must be positive, $x = \\frac{35 + 25\\sqrt{13}}{2} \\approx 62.6\\text{ m}$."
+        ],
+        "common_pitfalls": "Algebraic errors in expanding $-2(60)(20+x)\\left(\\frac{5}{8}\\right) = -75(20+x) = -1500 - 75x$."
+      }
+    }
+  ]
+}

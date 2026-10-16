@@ -1,0 +1,34 @@
+{
+  "id": "topic_3_q66",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 66,
+  "question_text": "Solve for $x$ where $-\\pi \\leqslant x \\leqslant \\pi$:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\sin 2x = \\sin x$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$-3\\cos 2x - 14\\sin x + 11 = 0$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\sin x + \\cos x = 1$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

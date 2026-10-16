@@ -1,0 +1,26 @@
+{
+  "id": "topic_3_q63",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 63,
+  "question_text": "Suppose $\\alpha$ is an obtuse angle and $\\sin\\alpha = \\frac{2}{3}$. Find the value of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\cos\\alpha$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\cos 2\\alpha$",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

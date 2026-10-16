@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
+import SessionLengthModal from './components/SessionLengthModal';
+import { generatePracticeSession } from './utils/quizUtils';
 
 export default function App() {
   const [topics, setTopics] = useState([]);
-  const [selectedTopic, setSelectedTopic] = useState(null);
-  const [questions, setQuestions] = useState([]);
+  const [activeTopic, setActiveTopic] = useState(null); // Selected topic object for modal
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const [sessionQuestions, setSessionQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -15,19 +19,39 @@ export default function App() {
       .catch(err => console.error("Error loading topics.json:", err));
   }, []);
 
-  const loadTopic = async (topicNumber) => {
+  // Modal Open Handler
+  const handleTopicClick = (topic) => {
+    setActiveTopic(topic);
+    setModalOpen(true);
+  };
+
+  // Start Session Handler
+  const handleStartSession = async (questionCount) => {
+    if (!activeTopic) return;
     try {
-      const res = await fetch(`./data/topic_${topicNumber}.json`);
-      const data = await res.json();
-      setQuestions(data);
-      setSelectedTopic(topicNumber);
+      const res = await fetch(`./data/topic_${activeTopic.topic_number}.json`);
+      const fullTopicData = await res.json();
+
+      // Shuffle & Slice based on user choice
+      const randomizedSet = generatePracticeSession(fullTopicData, questionCount);
+
+      setSessionQuestions(randomizedSet);
       setCurrentIndex(0);
+      setModalOpen(false);
     } catch (err) {
-      console.error("Error loading topic data:", err);
+      console.error("Error loading practice bundle:", err);
     }
   };
 
-  if (!selectedTopic) {
+  // Exit Practice Mode
+  const handleExitPractice = () => {
+    setActiveTopic(null);
+    setSessionQuestions([]);
+    setCurrentIndex(0);
+  };
+
+  // 1. Topic List View
+  if (sessionQuestions.length === 0) {
     return (
       <div className="max-w-5xl mx-auto px-4 py-12">
         <header className="text-center mb-10">
@@ -53,31 +77,43 @@ export default function App() {
                 <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
               </div>
               <button
-                onClick={() => loadTopic(t.topic_number)}
+                onClick={() => handleTopicClick(t)}
                 className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
               >
-                Start Practice →
+                Select Practice Set →
               </button>
             </div>
           ))}
         </div>
+
+        {/* Session Length Modal */}
+        {modalOpen && (
+          <SessionLengthModal
+            topic={activeTopic}
+            onClose={() => setModalOpen(false)}
+            onStartSession={handleStartSession}
+          />
+        )}
       </div>
     );
   }
 
-  const currentQ = questions[currentIndex];
+  // 2. Practice Mode View
+  const currentQ = sessionQuestions[currentIndex];
 
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <button onClick={() => setSelectedTopic(null)} className="text-slate-400 hover:text-white text-sm font-semibold">
+          <button onClick={handleExitPractice} className="text-slate-400 hover:text-white text-sm font-semibold">
             ← Topics
           </button>
           <div className="border-l border-slate-800 pl-3">
-            <div className="text-xs text-slate-400 font-semibold uppercase">Topic {selectedTopic}</div>
-            <div className="text-sm font-bold text-white">Question {currentIndex + 1} of {questions.length}</div>
+            <div className="text-xs text-slate-400 font-semibold uppercase">Topic {activeTopic?.topic_number}</div>
+            <div className="text-sm font-bold text-white">
+              Question {currentIndex + 1} of {sessionQuestions.length}
+            </div>
           </div>
         </div>
       </header>
@@ -87,7 +123,7 @@ export default function App() {
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6 shadow-2xl">
           <div className="flex items-center justify-between">
             <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md">
-              Question {currentQ?.question_number}
+              Question {currentIndex + 1}
             </span>
             {currentQ?.has_diagram && (
               <span className="text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded-full">
@@ -121,7 +157,7 @@ export default function App() {
             ← Previous Question
           </button>
           <button
-            disabled={currentIndex === questions.length - 1}
+            disabled={currentIndex === sessionQuestions.length - 1}
             onClick={() => { setCurrentIndex(i => i + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             className="flex-1 py-3 px-4 bg-indigo-600 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg"
           >

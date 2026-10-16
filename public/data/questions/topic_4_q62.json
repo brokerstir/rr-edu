@@ -1,0 +1,85 @@
+{
+  "id": "topic_4_q62",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 62,
+  "question_text": "The mean birth weight of babies in a population is normally distributed with mean $3.4\\text{ kg}$ and standard deviation $300\\text{ grams}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "What proportion of babies in this population have birth weights in excess of 4 kg?",
+      "final_answer": "$2.28\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Formulating $P(X > 4)$ for $X \\sim \\text{N}(3.4, (0.3)^2)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $0.0228$ and converting to percentage $2.28\\%$"
+        }
+      ],
+      "solution": "Let the birth weight of a randomly selected baby be $X\\text{ kg}$.\n\nSo, $X \\sim \\text{N}(3.4, (0.3)^2)$.\n\n$P(X > 4) \\approx 0.0228$\n\n$\\therefore$ about $2.28\\%$ of babies have birth weights in excess of $4\\text{ kg}$.",
+      "ai_explanation": {
+        "concept_rule": "Upper tail probability of a normal distribution converted to a percentage.",
+        "step_by_step": [
+          "Specify distribution parameters: $\\mu = 3.4$, $\\sigma = 0.3$.",
+          "Compute $P(X > 4)$ using Normal CD with lower bound 4.",
+          "Multiply by $100\\%$ to give $2.28\\%$."
+        ],
+        "common_pitfalls": "Forgetting to write the final answer as a percentage."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "What proportion of babies in this population have birth weights between 3 kg and 4 kg?",
+      "final_answer": "$88.6\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Formulating $P(3 \\le X \\le 4)$ with lower $= 3$ and upper $= 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating probability $0.886$ and converting to percentage $88.6\\%$"
+        }
+      ],
+      "solution": "$P(3 \\le X \\le 4) \\approx 0.886$\n\n$\\therefore$ about $88.6\\%$ of babies have birth weights between $3\\text{ kg}$ and $4\\text{ kg}$.",
+      "ai_explanation": {
+        "concept_rule": "Interval probability in normal distribution.",
+        "step_by_step": [
+          "Set lower bound to $3$ and upper bound to $4$.",
+          "Use Normal CD to evaluate $P(3 \\le X \\le 4) \\approx 0.8860$.",
+          "Express answer as a percentage: $88.6\\%$."
+        ],
+        "common_pitfalls": "Incorrectly rounding or writing standard deviation as $0.3^2$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "A low birth weight corresponds to any newborn weighing in the lowest 10% of birth weights. State the weight below which a baby is classified as having a low birth weight.",
+      "final_answer": "$3.02\\text{ kg}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up inverse normal equation $P(X \\le w) = 0.1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $w \\approx 3.02\\text{ kg}$"
+        }
+      ],
+      "solution": "$P(X \\le w) = 0.1$\n\n$\\therefore w \\approx 3.02$\n\n$\\therefore$ the weight below which a baby is classified as having low birth weight is about $3.02\\text{ kg}$.",
+      "ai_explanation": {
+        "concept_rule": "Inverse normal calculation to find the quantile corresponding to a given percentile.",
+        "step_by_step": [
+          "Identify the condition: lower 10th percentile, so area $= 0.1$, left-tailed.",
+          "Apply inverse normal with $\\text{area} = 0.1$, $\\mu = 3.4$, $\\sigma = 0.3$.",
+          "Obtain $w \\approx 3.0155 \\approx 3.02\\text{ kg}$."
+        ],
+        "common_pitfalls": "Using an area of $0.9$ instead of $0.1$."
+      }
+    }
+  ]
+}

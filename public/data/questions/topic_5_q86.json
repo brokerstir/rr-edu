@@ -1,0 +1,157 @@
+{
+  "id": "topic_5_q86",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 86,
+  "question_text": "Consider the function $f(x) = \\left(2 - \\frac{1}{x}\\right)\\text{e}^{-x},\\ x > 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the zero of $f(x)$.",
+      "final_answer": "$\\frac{1}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting f(x) = 0 and using the property that e^(-x) > 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining the correct zero x = 1/2"
+        }
+      ],
+      "solution": "$f(x) = 0$ when $\\left(2 - \\frac{1}{x}\\right)e^{-x} = 0$\n$$\\begin{aligned}\n\\therefore 2 - \\frac{1}{x} &= 0 \\quad \\{e^{-x} > 0 \\text{ for all } x\\} \\\\\n\\therefore \\frac{1}{x} &= 2 \\\\\n\\therefore x &= \\frac{1}{2}\n\\end{aligned}$$\n$\\therefore$ the zero of $f(x)$ is $\\frac{1}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "The zeros of a function are the values of $x$ for which $f(x) = 0$. Since an exponential term $e^{-x}$ is never zero, only the factor $(2 - \\frac{1}{x})$ can equal zero.",
+        "step_by_step": [
+          "Set $(2 - \\frac{1}{x})e^{-x} = 0$.",
+          "Since $e^{-x} \\neq 0$, set $2 - \\frac{1}{x} = 0$.",
+          "Solve for $x$: $\\frac{1}{x} = 2 \\implies x = \\frac{1}{2}$."
+        ],
+        "common_pitfalls": "Trying to solve $e^{-x} = 0$, which has no real solutions."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Discuss the behaviour of $f(x)$ near $x = 0$ and as $x \\to \\infty$.",
+      "final_answer": "$As $x \\to 0^+$, $f(x) \\to -\\infty$; as $x \\to \\infty$, $f(x) \\to 0^+$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct limit as x -> 0^+ is -infinity"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct limit as x -> infinity is 0^+"
+        }
+      ],
+      "solution": "As $x \\to 0^+$, $\\frac{1}{x} \\to \\infty$\n$$\\therefore -\\frac{1}{x} \\to -\\infty$$\n$$\\therefore 2 - \\frac{1}{x} \\to -\\infty$$\n$$\\therefore \\left(2 - \\frac{1}{x}\\right)e^{-x} \\to -\\infty \\quad \\{e^{-x} \\approx 1 \\text{ near } x = 0\\}$$\n$$\\therefore f(x) \\to -\\infty$$\n\nAs $x \\to \\infty$, $\\frac{1}{x} \\to 0^+$\n$$\\therefore -\\frac{1}{x} \\to 0^-$$\n$$\\therefore 2 - \\frac{1}{x} \\to 2^-$$\n$$\\therefore \\left(2 - \\frac{1}{x}\\right)e^{-x} \\to 0^+$$\n$$\\therefore f(x) \\to 0^+$$",
+      "ai_explanation": {
+        "concept_rule": "Analyze asymptotic behavior by examining the behavior of each factor as $x$ approaches the domain boundaries.",
+        "step_by_step": [
+          "As $x \\to 0^+$, $-\\frac{1}{x} \\to -\\infty$ while $e^{-x} \\to 1$, so the product tends to $-\\infty$.",
+          "As $x \\to \\infty$, $2 - \\frac{1}{x} \\to 2$ while $e^{-x} \\to 0^+$, so the product tends to $0^+$."
+        ],
+        "common_pitfalls": "Confusing the dominant behavior: as $x \\to \\infty$, the decaying exponential dominates, driving the function to $0$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the position and nature of the stationary point.",
+      "final_answer": "$\\left(1, \\frac{1}{e}\\right)$ is a local maximum",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the product rule to find f'(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression for f'(x)"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting f'(x) = 0 and solving the resulting quadratic equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Rejecting negative root x = -1/2 (since x > 0), obtaining x = 1"
+        },
+        {
+          "code": "R1",
+          "desc": "Using sign diagram to verify local maximum at (1, 1/e)"
+        }
+      ],
+      "solution": "$$f(x) = \\left(2 - \\frac{1}{x}\\right)e^{-x}$$\n$$\\begin{aligned}\n\\therefore f'(x) &= \\left(\\frac{1}{x^2}\\right)e^{-x} - e^{-x}\\left(2 - \\frac{1}{x}\\right) \\quad \\{\\text{product rule}\\} \\\\\n&= e^{-x}\\left(\\frac{1}{x^2} - 2 + \\frac{1}{x}\\right)\n\\end{aligned}$$\n\nStationary point(s) occur where $f'(x) = 0$\n$$\\begin{aligned}\n\\therefore e^{-x}\\left(\\frac{1}{x^2} - 2 + \\frac{1}{x}\\right) &= 0 \\\\\n\\therefore \\frac{1}{x^2} - 2 + \\frac{1}{x} &= 0 \\quad \\{e^{-x} > 0 \\text{ for all } x\\} \\\\\n\\therefore 1 - 2x^2 + x &= 0 \\\\\n\\therefore 2x^2 - x - 1 &= 0 \\\\\n\\therefore 2x^2 - 2x + x - 1 &= 0 \\\\\n\\therefore 2x(x - 1) + (x - 1) &= 0 \\\\\n\\therefore (x - 1)(2x + 1) &= 0 \\\\\n\\therefore x = 1 \\text{ or } -\\frac{1}{2} \\\\\n\\therefore x &= 1 \\quad \\{x > 0\\}\n\\end{aligned}$$\n\nThe sign diagram of $f'(x)$ shows that $f'(x) > 0$ for $0 < x < 1$ and $f'(x) < 0$ for $x > 1$.\n\nNow $f(1) = (2 - 1)e^{-1} = \\frac{1}{e}$.\n\n$\\therefore \\left(1, \\frac{1}{e}\\right)$ is a local maximum.",
+      "ai_explanation": {
+        "concept_rule": "Stationary points occur where $f'(x) = 0$. The nature of a stationary point can be determined using a sign diagram of the first derivative.",
+        "step_by_step": [
+          "Differentiate $f(x)$ using the product rule: $u = 2 - \\frac{1}{x}$, $v = e^{-x}$.",
+          "Factor out $e^{-x}$ to obtain $f'(x) = e^{-x}(\\frac{1}{x^2} + \\frac{1}{x} - 2)$.",
+          "Set $f'(x) = 0$, clear the denominator by multiplying by $x^2$ to get $2x^2 - x - 1 = 0$.",
+          "Factorize to find $x = 1$ and $x = -\\frac{1}{2}$; reject $-\\frac{1}{2}$ since $x > 0$.",
+          "Evaluate $f(1) = \\frac{1}{e}$ and use the sign test ($+ \\to -$) to confirm it is a local maximum."
+        ],
+        "common_pitfalls": "Forgetting that the domain is $x > 0$ and keeping the negative root $x = -\\frac{1}{2}$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Sketch the graph of $y = f(x)$, showing all the above information.",
+      "final_answer": "$Graph of $f(x) = (2 - \\frac{1}{x})e^{-x}$ showing vertical asymptote $x = 0$, x-intercept $(1/2, 0)$, local maximum $(1, 1/e)$, and horizontal asymptote $y = 0$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct shape showing vertical asymptote at x = 0 going to -infinity"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct local maximum at (1, 1/e), x-intercept at (1/2, 0), and horizontal asymptote y = 0"
+        }
+      ],
+      "solution": "Sketch of $f(x) = \\left(2 - \\frac{1}{x}\\right)e^{-x}$ for $x > 0$:\n- As $x \\to 0^+$, $f(x) \\to -\\infty$ (vertical asymptote $x = 0$).\n- $x$-intercept at $\\left(\\frac{1}{2}, 0\\right)$.\n- Local maximum at $\\left(1, \\frac{1}{e}\\right)$.\n- Horizontal asymptote $y = 0$ as $x \\to \\infty$ (approaching from above).",
+      "ai_explanation": {
+        "concept_rule": "A complete sketch of a rational-exponential function incorporates zeros, asymptotes, and stationary points.",
+        "step_by_step": [
+          "Draw axes for $x > 0$.",
+          "Plot the zero at $(\\frac{1}{2}, 0)$.",
+          "Plot the local maximum at $(1, \\frac{1}{e})$.",
+          "Sketch the curve rising from $-\\infty$ as $x \\to 0^+$, crossing the axis at $x = \\frac{1}{2}$, reaching the peak at $(1, \\frac{1}{e})$, and decaying towards the horizontal asymptote $y = 0$ as $x \\to \\infty$."
+        ],
+        "common_pitfalls": "Plotting values for $x \\le 0$ when the domain is restricted to $x > 0$."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Find, correct to 3 decimal places, the area enclosed by $y = f(x)$ and the line $y = x - 1$.",
+      "final_answer": "$\\approx 0.373$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using technology to find the intersection points of the two curves"
+        },
+        {
+          "code": "A1",
+          "desc": "Intersection points x approx 0.342 and x approx 1.33"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up the definite integral for the enclosed area"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluated area of approx 0.373"
+        }
+      ],
+      "solution": "$y = \\left(2 - \\frac{1}{x}\\right)e^{-x}$ meets $y = x - 1$ where $\\left(2 - \\frac{1}{x}\\right)e^{-x} = x - 1$\n$$\\therefore x \\approx 0.342 \\text{ or } 1.33 \\quad \\{\\text{using technology}\\}$$\n\nSince $\\left(2 - \\frac{1}{x}\\right)e^{-x} \\ge x - 1$ on the interval $0.342 \\le x \\le 1.33$,\n$$\\begin{aligned}\n\\text{area} &\\approx \\int_{0.342}^{1.33} \\left[ \\left(2 - \\frac{1}{x}\\right)e^{-x} - (x - 1) \\right] dx \\\\\n&\\approx 0.373 \\quad \\{3\\text{ d.p.}\\}\n\\end{aligned}$$",
+      "ai_explanation": {
+        "concept_rule": "When equations cannot be solved analytically, numerical methods or GDC are used to find intersection points, followed by numerical integration of $[f(x) - g(x)]$.",
+        "step_by_step": [
+          "Graph both equations on a GDC and find the intersection points $x \\approx 0.342$ and $x \\approx 1.33$.",
+          "Confirm that $f(x) \\ge x - 1$ between these two values.",
+          "Evaluate $\\int_{0.342}^{1.33} [f(x) - (x - 1)] dx$ numerically to find the area $0.373$."
+        ],
+        "common_pitfalls": "Rounding intermediate intersection values too early, which can affect the accuracy of the 3 decimal places."
+      }
+    }
+  ]
+}

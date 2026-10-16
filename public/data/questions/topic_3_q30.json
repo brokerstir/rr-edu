@@ -1,0 +1,64 @@
+{
+  "id": "topic_3_q30",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 30,
+  "question_text": "The diagram shows a vertical pole [PQ], which is supported by two wires fixed to the horizontal ground at A and B. $\\text{P}\\widehat{\\text{B}}\\text{Q} = 36^\\circ$, $\\text{B}\\widehat{\\text{A}}\\text{Q} = 70^\\circ$, $\\text{A}\\widehat{\\text{B}}\\text{Q} = 30^\\circ$, and the distance BQ is $40\\text{ m}$.\nFind:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the height of the pole",
+      "final_answer": "$29.1\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the tangent ratio in right-angled triangle $PQB$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating the height $h$"
+        }
+      ],
+      "solution": "Let $PQ$ be $h\\text{ m}$. $\\tan 36^\\circ = \\frac{h}{40} \\implies h = 40\\tan 36^\\circ \\approx 29.1$. The height of the pole is about $29.1\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "In a right-angled triangle, $\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$.",
+        "step_by_step": [
+          "Identify opposite side $h$ and adjacent side $40\\text{ m}$ with angle $36^\\circ$.",
+          "Write $\\tan 36^\\circ = \\frac{h}{40}$.",
+          "Multiply $40$ by $\\tan 36^\\circ$."
+        ],
+        "common_pitfalls": "Using sine or cosine instead of tangent when the hypotenuse is unknown."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the distance between A and B.",
+      "final_answer": "$41.9\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding angle $A\\widehat{Q}B$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying the sine rule to find $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $x$"
+        }
+      ],
+      "solution": "Let $AB$ be $x\\text{ m}$. $\\text{A}\\widehat{\\text{Q}}\\text{B} = 180^\\circ - 70^\\circ - 30^\\circ = 80^\\circ$ {angles in a triangle}. By the sine rule: $\\frac{x}{\\sin 80^\\circ} = \\frac{40}{\\sin 70^\\circ} \\implies x = \\frac{40\\sin 80^\\circ}{\\sin 70^\\circ} \\approx 41.9$. The distance between $A$ and $B$ is about $41.9\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "Find missing angles using triangle angle sum, then apply the sine rule.",
+        "step_by_step": [
+          "Calculate $\\angle AQB = 180^\\circ - 70^\\circ - 30^\\circ = 80^\\circ$.",
+          "Set up the sine rule ratio: $\\frac{x}{\\sin 80^\\circ} = \\frac{40}{\\sin 70^\\circ}$.",
+          "Solve for $x$ and round to 3 significant figures."
+        ],
+        "common_pitfalls": "Setting up the ratio using $30^\\circ$ instead of $70^\\circ$ opposite the $40\\text{ m}$ side."
+      }
+    }
+  ]
+}

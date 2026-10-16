@@ -1,0 +1,92 @@
+{
+  "id": "topic_4_q8",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 8,
+  "question_text": "An art gallery has added two new exhibits alongside their permanent collection. The number of tickets sold for each exhibit was counted every day for a month:\n\n**Exhibit A**\n$$\\begin{matrix} 42 & 49 & 55 & 48 & 62 & 81 & 91 & 50 & 60 & 59 \\\\ 47 & 73 & 84 & 89 & 55 & 59 & 35 & 42 & 51 & 83 \\\\ 75 & 28 & 30 & 19 & 39 & 45 & 69 & 65 & 27 & 32 \\end{matrix}$$\n\n**Exhibit B**\n$$\\begin{matrix} 59 & 51 & 60 & 44 & 57 & 90 & 98 & 50 & 62 & 55 \\\\ 44 & 62 & 75 & 99 & 57 & 49 & 53 & & 71 & 70 \\\\ 68 & 32 & 33 & 24 & 47 & 43 & 61 & 42 & 52 & 46 \\end{matrix}$$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the mean number of visitors for each exhibit.",
+      "final_answer": "$Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum values and divide by 30 for Exhibit A"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain 54.8 for Exhibit A"
+        },
+        {
+          "code": "M1",
+          "desc": "Sum values and divide by 30 for Exhibit B"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain 57.0 for Exhibit B"
+        }
+      ],
+      "solution": "mean number of visitors for exhibit A $= \\frac{42 + 49 + 55 + 48 + \\dots + 32}{30} = \\frac{1644}{30} = 54.8\\text{ visitors}$. mean number of visitors for exhibit B $= \\frac{59 + 51 + 60 + 44 + \\dots + 46}{30} = \\frac{1711}{30} \\approx 57.0\\text{ visitors}$.",
+      "ai_explanation": {
+        "concept_rule": "The sample mean is $\\bar{x} = \\frac{\\sum x}{n}$.",
+        "step_by_step": [
+          "For Exhibit A: sum $= 1644$, $n = 30$, mean $= \\frac{1644}{30} = 54.8$.",
+          "For Exhibit B: sum $= 1711$, $n = 30$, mean $= \\frac{1711}{30} \\approx 57.033... \\approx 57.0$."
+        ],
+        "common_pitfalls": "Rounding to 57 without specifying the decimal place if one decimal place is required."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the median number of visitors for each exhibit.",
+      "final_answer": "$Exhibit A: $53\\text{ visitors}$, Exhibit B: $56\\text{ visitors}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine median position as average of 15th and 16th values"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate median for Exhibit A: $\\frac{51+55}{2} = 53$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate median for Exhibit B: $\\frac{55+57}{2} = 56$"
+        }
+      ],
+      "solution": "As $n = 30$, and $\\frac{n+1}{2} = 15.5$, for both data sets, the median is the average of the 15th and 16th ordered data values. For exhibit A, ordered data shows 15th value is 51 and 16th value is 55. $\\therefore \\text{median} = \\frac{51 + 55}{2} = 53\\text{ visitors}$. For exhibit B, ordered data shows 15th value is 55 and 16th value is 57. $\\therefore \\text{median} = \\frac{55 + 57}{2} = 56\\text{ visitors}$.",
+      "ai_explanation": {
+        "concept_rule": "For an even sample size $n$, the median is the arithmetic mean of the $\\frac{n}{2}$-th and $(\\frac{n}{2} + 1)$-th ordered values.",
+        "step_by_step": [
+          "For $n=30$, take the average of the 15th and 16th ordered values.",
+          "Exhibit A: 15th is 51, 16th is 55, $\\frac{51+55}{2} = 53$.",
+          "Exhibit B: 15th is 55, 16th is 57, $\\frac{55+57}{2} = 56$."
+        ],
+        "common_pitfalls": "Choosing only the 15th value instead of averaging the 15th and 16th values."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Which exhibit was more popular? Explain your answer.",
+      "final_answer": "$Exhibit B$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that Exhibit B was more popular because both its mean and median are higher"
+        }
+      ],
+      "solution": "Exhibit B was more popular as the mean and median are both higher for exhibit B than for exhibit A.",
+      "ai_explanation": {
+        "concept_rule": "Comparing data distributions involves comparing both measures of center (mean and median).",
+        "step_by_step": [
+          "Exhibit B mean (57.0) > Exhibit A mean (54.8).",
+          "Exhibit B median (56) > Exhibit A median (53).",
+          "Since both central measures are higher, Exhibit B was more popular."
+        ],
+        "common_pitfalls": "Comparing only the mean or only the median without considering both."
+      }
+    }
+  ]
+}

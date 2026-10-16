@@ -1,0 +1,84 @@
+{
+  "id": "topic_4_q44",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 44,
+  "question_text": "A discrete random variable $X$ has probability mass function $P(x) = \\frac{a}{(x - 3)^2}$ for $x = 0, 1, 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $a$.",
+      "final_answer": "$\\frac{36}{49}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set sum of probabilities equal to 1"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly solve for $a = \\frac{36}{49}$"
+        }
+      ],
+      "solution": "$P(x) = \\frac{a}{(x-3)^2}$, $x = 0, 1, 2$\n$\\therefore P(0) = \\frac{a}{9},\\; P(1) = \\frac{a}{4},\\; P(2) = a$\n\nSince $P(x)$ is a probability mass function, $\\sum_{i=1}^n P(x_i) = 1$\n$\\therefore \\frac{a}{9} + \\frac{a}{4} + a = 1$\n$\\therefore \\frac{49}{36}a = 1$\n$\\therefore a = \\frac{36}{49}$",
+      "ai_explanation": {
+        "concept_rule": "The sum of all probabilities in a discrete probability distribution must equal 1.",
+        "step_by_step": [
+          "Compute $P(0) = \\frac{a}{(-3)^2} = \\frac{a}{9}$, $P(1) = \\frac{a}{(-2)^2} = \\frac{a}{4}$, $P(2) = \\frac{a}{(-1)^2} = a$.",
+          "Sum the probabilities: $a\\left(\\frac{1}{9} + \\frac{1}{4} + 1\\right) = a\\left(\\frac{4 + 9 + 36}{36}\\right) = \\frac{49}{36}a$.",
+          "Solve for $a$: $\\frac{49}{36}a = 1 \\implies a = \\frac{36}{49}$."
+        ],
+        "common_pitfalls": "Squaring negative numbers incorrectly."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $P(X = 2)$.",
+      "final_answer": "$\\frac{36}{49}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Evaluate $P(X=2) = a = \\frac{36}{49}$"
+        }
+      ],
+      "solution": "$\\begin{aligned} P(X = 2) &= P(2) \\\\ &= a \\\\ &= \\frac{36}{49} \\quad \\{\\text{from a}\\} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "Read or evaluate the probability directly using the formula with $x = 2$.",
+        "step_by_step": [
+          "Substitute $x = 2$ into $P(x) = \\frac{a}{(2-3)^2} = a$.",
+          "From part (a), $a = \\frac{36}{49}$."
+        ],
+        "common_pitfalls": "Recalculating instead of using the previously found value of $a$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the mode and median of the distribution.",
+      "final_answer": "$\\text{mode} = 2,\\; \\text{median} = 2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify mode as 2 by comparing probabilities"
+        },
+        {
+          "code": "M1",
+          "desc": "Compute cumulative probabilities to find median"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine median as 2"
+        }
+      ],
+      "solution": "Since $P(X = 2) = \\frac{36}{49}$ is the greatest probability, the mode of the distribution is 2.\n\n$p_1 = \\frac{a}{9} = \\frac{\\frac{36}{49}}{9} = \\frac{4}{49} \\approx 0.0816$\n$p_1 + p_2 = \\frac{4}{49} + \\frac{\\frac{36}{49}}{4} = \\frac{4}{49} + \\frac{9}{49} = \\frac{13}{49} \\approx 0.265$\n\nSince $p_1 + p_2 + p_3 = 1 \\geqslant 0.5$, the median is 2.",
+      "ai_explanation": {
+        "concept_rule": "The mode is the value of $X$ with the highest probability. The median is the smallest value of $X$ where the cumulative probability reaches or exceeds $0.5$.",
+        "step_by_step": [
+          "Compare probabilities: $P(0) = \\frac{4}{49}$, $P(1) = \\frac{9}{49}$, $P(2) = \\frac{36}{49}$. Since $P(2)$ is largest, mode is 2.",
+          "Calculate cumulative probabilities: $P(X \\le 0) = \\frac{4}{49} < 0.5$, $P(X \\le 1) = \\frac{13}{49} < 0.5$, $P(X \\le 2) = 1 \\ge 0.5$.",
+          "Thus, the median is 2."
+        ],
+        "common_pitfalls": "Stating the probability instead of the outcome value for the mode/median."
+      }
+    }
+  ]
+}

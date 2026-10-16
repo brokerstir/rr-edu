@@ -1,0 +1,50 @@
+{
+  "id": "topic_5_q46",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 46,
+  "question_text": "An ornamental pond of area $A$ is to be built with straight sides and semi-circular ends as shown. The cost of tiling per unit length is 25% greater along the rounded ends than along the straight walls. Show that the total cost of tiling the walls is minimised when the shaded area is $\\frac{2}{3}A$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "An ornamental pond of area $A$ is to be built with straight sides and semi-circular ends as shown. The cost of tiling per unit length is 25% greater along the rounded ends than along the straight walls. Show that the total cost of tiling the walls is minimised when the shaded area is $\\frac{2}{3}A$.",
+      "final_answer": "$\\frac{2}{3}A$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express the total area $A$ in terms of $x$ and $r$, and express $x$ in terms of $A$ and $r$"
+        },
+        {
+          "code": "M1",
+          "desc": "Form the cost function $C(r)$ using the straight side cost $c$ and curved edge cost $1.25c$"
+        },
+        {
+          "code": "M1",
+          "desc": "Differentiate $C(r)$ and set $\\frac{dC}{dr} = 0$ to find the optimal radius $r$"
+        },
+        {
+          "code": "R1",
+          "desc": "Verify the minimum using a sign diagram of $\\frac{dC}{dr}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate the shaded area when $r = \\sqrt{\\frac{2A}{3\\pi}}$ as $\\frac{2}{3}A$"
+        }
+      ],
+      "solution": "Let the length of the straight sides be $x$ units and the radius of the semi-circular ends be $r$ units.\\n$\\therefore A = 2xr + \\pi r^2\\implies 2xr = A - \\pi r^2\\implies x = \\frac{A}{2r} - \\frac{\\pi r}{2} \\quad (*)$\\nLet $c$ be the cost of tiling the straight sides per unit length.\\n$\\therefore$ the total tiling cost:\\n$C = 2cx + 2\\pi r \\times 1.25c$\\n$= 2cx + \\frac{5c}{2}\\pi r$\\n$= 2c\\left(\\frac{A}{2r} - \\frac{\\pi r}{2}\\right) + \\frac{5c}{2}\\pi r$ {using (*)}\\n$= \\frac{Ac}{r} - c\\pi r + \\frac{5c}{2}\\pi r = \\frac{Ac}{r} + \\frac{3c}{2}\\pi r$\\nNow $\\frac{dC}{dr} = -\\frac{Ac}{r^2} + \\frac{3c}{2}\\pi$, which is $0$ when $-\\frac{Ac}{r^2} + \\frac{3c}{2}\\pi = 0$\\n$\\implies \\frac{Ac}{r^2} = \\frac{3c}{2}\\pi \\implies r^2 = \\frac{2A}{3\\pi} \\implies r = \\sqrt{\\frac{2A}{3\\pi}} \\quad \\{r > 0\\}$\\nThe sign diagram of $\\frac{dC}{dr}$ changes from negative to positive at $r = \\sqrt{\\frac{2A}{3\\pi}}$, confirming $C$ is minimised.\\nNow when $r = \\sqrt{\\frac{2A}{3\\pi}}$, the shaded area is:\\n$\\text{shaded area} = \\pi r^2 = \\pi\\left(\\sqrt{\\frac{2A}{3\\pi}}\\right)^2 = \\pi\\left(\\frac{2A}{3\\pi}\\right) = \\frac{2}{3}A$",
+      "ai_explanation": {
+        "concept_rule": "In geometric optimization problems with constraints, eliminate one variable using the constraint equation, differentiate the cost function, find the stationary point, and verify it provides the absolute minimum.",
+        "step_by_step": [
+          "Express total area: $A = 2xr + \\pi r^2$, giving $x = \\frac{A}{2r} - \\frac{\\pi r}{2}$.",
+          "Express cost $C$: straight sides have length $2x$ at rate $c$, curved ends form a circle of circumference $2\\pi r$ at rate $1.25c = \\frac{5}{4}c$.",
+          "Substitute $x$ into $C$ to get $C(r) = \\frac{Ac}{r} + \\frac{3c\\pi}{2}r$.",
+          "Differentiate with respect to $r$: $\\frac{dC}{dr} = -\\frac{Ac}{r^2} + \\frac{3c\\pi}{2}$.",
+          "Set derivative to 0: $r^2 = \\frac{2A}{3\\pi} \\implies r = \\sqrt{\\frac{2A}{3\\pi}}$.",
+          "Calculate shaded area $\\pi r^2 = \\pi\\left(\\frac{2A}{3\\pi}\\right) = \\frac{2}{3}A$."
+        ],
+        "common_pitfalls": "Misinterpreting the perimeter of the semi-circular ends or forgetting to square the radius when calculating shaded area."
+      }
+    }
+  ]
+}

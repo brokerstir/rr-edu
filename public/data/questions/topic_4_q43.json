@@ -1,0 +1,66 @@
+{
+  "id": "topic_4_q43",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 43,
+  "question_text": "Find $k$ for the following probability mass functions:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$P(x) = k(x + 3)$ for $x = 0, 1, 2, 3, 4$",
+      "final_answer": "$\\frac{1}{25}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set sum of probabilities equal to 1: $\\sum P(x_i) = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $k = \\frac{1}{25}$"
+        }
+      ],
+      "solution": "$P(x) = k(x+3)$, $x = 0, 1, 2, 3, 4$\n$\\therefore P(0) = 3k,\\; P(1) = 4k,\\; P(2) = 5k,\\; P(3) = 6k,\\; P(4) = 7k$\n\nSince $P(x)$ is a probability mass function,\n$\\sum_{i=1}^n P(x_i) = 1$\n$\\therefore 3k + 4k + 5k + 6k + 7k = 1$\n$\\therefore 25k = 1$\n$\\therefore k = \\frac{1}{25}$",
+      "ai_explanation": {
+        "concept_rule": "For a valid discrete probability distribution, the sum of all probabilities must equal 1.",
+        "step_by_step": [
+          "Evaluate $P(x)$ for each $x \\in \\{0, 1, 2, 3, 4\\}$.",
+          "Sum all values: $3k + 4k + 5k + 6k + 7k = 25k$.",
+          "Equate the sum to 1: $25k = 1 \\implies k = \\frac{1}{25}$."
+        ],
+        "common_pitfalls": "Forgetting to evaluate at $x = 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$P(x) = \\frac{kx - 3}{x - 1}$ for $x = 3, 4, 5$",
+      "final_answer": "$\\frac{-2 + \\sqrt{22}}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express probabilities in terms of $k$ and set sum to 1"
+        },
+        {
+          "code": "M1",
+          "desc": "Form and solve quadratic equation in $k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Select positive root $k = \\frac{-2 + \\sqrt{22}}{3}$"
+        }
+      ],
+      "solution": "$P(x) = \\frac{k^{x-3}}{(x-1)!}$, $x = 3, 4, 5$\n$\\therefore P(3) = \\frac{k^0}{3-1} = \\frac{1}{2},\\; P(4) = \\frac{k^1}{4-1} = \\frac{k}{3},\\; P(5) = \\frac{k^2}{5-1} = \\frac{k^2}{4}$\n\nSince $P(x)$ is a probability mass function,\n$\\sum_{i=1}^n P(x_i) = 1$\n$\\therefore \\frac{1}{2} + \\frac{k}{3} + \\frac{k^2}{4} = 1$\n$\\therefore \\frac{k^2}{4} + \\frac{k}{3} - \\frac{1}{2} = 0$\n$\\therefore 3k^2 + 4k - 6 = 0$\n$\\begin{aligned} \\therefore k &= \\frac{-4 \\pm \\sqrt{16 + 72}}{2 \\times 3} \\\\ &= \\frac{-4 \\pm \\sqrt{88}}{6} \\\\ &= \\frac{-2 + \\sqrt{22}}{3} \\quad \\{k > 0\\} \\end{aligned}$",
+      "ai_explanation": {
+        "concept_rule": "The sum of all probabilities in a probability distribution equals 1. Also, probabilities must be non-negative, meaning $k > 0$.",
+        "step_by_step": [
+          "Find each probability: $P(3) = \\frac{1}{2}$, $P(4) = \\frac{k}{3}$, $P(5) = \\frac{k^2}{4}$.",
+          "Set the sum to 1: $\\frac{1}{2} + \\frac{k}{3} + \\frac{k^2}{4} = 1$.",
+          "Multiply by 12 to clear fractions: $3k^2 + 4k - 6 = 0$.",
+          "Use quadratic formula to find $k = \\frac{-4 \\pm 2\\sqrt{22}}{6} = \\frac{-2 \\pm \\sqrt{22}}{3}$.",
+          "Since probabilities must be positive, choose $k = \\frac{-2 + \\sqrt{22}}{3}$."
+        ],
+        "common_pitfalls": "Failing to discard the negative root."
+      }
+    }
+  ]
+}

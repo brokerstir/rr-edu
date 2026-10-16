@@ -1,0 +1,111 @@
+{
+  "id": "topic_4_q18",
+  "topic_number": 4,
+  "topic_name": "Statistics and Probability",
+  "question_number": 18,
+  "question_text": "The heights of a random sample of trees in an apple orchard are summarised in the table alongside.\n\n| Height ($h\\text{ m}$) | Frequency |\n| :--- | :--- |\n| $7 \\leqslant h < 8$ | 8 |\n| $8 \\leqslant h < 9$ | 59 |\n| $9 \\leqslant h < 10$ | 74 |\n| $10 \\leqslant h < 11$ | 22 |\n| $11 \\leqslant h < 12$ | 1 |",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Construct a cumulative frequency graph for the data.",
+      "final_answer": "$\\text{Cumulative frequency table and curve}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Completing the cumulative frequency column: 8, 67, 141, 163, 164"
+        },
+        {
+          "code": "A1",
+          "desc": "Plotting points at upper class boundaries and drawing an S-shaped cumulative frequency curve"
+        }
+      ],
+      "solution": "Cumulative frequency column values:\n- $7 < h \\le 8$: $8$\n- $8 < h \\le 9$: $8 + 59 = 67$\n- $9 < h \\le 10$: $67 + 74 = 141$\n- $10 < h \\le 11$: $141 + 22 = 163$\n- $11 < h \\le 12$: $163 + 1 = 164$\nPlot the cumulative frequency at the upper class boundary of each interval: $(7, 0)$, $(8, 8)$, $(9, 67)$, $(10, 141)$, $(11, 163)$, $(12, 164)$ and join with a smooth curve.",
+      "ai_explanation": {
+        "concept_rule": "Cumulative frequency is plotted against the upper class boundary of each group, starting from zero at the lower boundary of the first group.",
+        "step_by_step": [
+          "Sum the frequencies progressively to get cumulative totals: 8, 67, 141, 163, 164.",
+          "Plot points $(h, \\text{cf})$ at the upper boundaries: $(8, 8), (9, 67), (10, 141), (11, 163), (12, 164)$ starting from $(7,0)$.",
+          "Draw a smooth ogive connecting these points."
+        ],
+        "common_pitfalls": "Plotting cumulative frequencies at midpoints instead of upper class boundaries."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Estimate the median height.",
+      "final_answer": "$9.1\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding 50% of 164 = 82"
+        },
+        {
+          "code": "A1",
+          "desc": "Reading median height from the cumulative frequency curve"
+        }
+      ],
+      "solution": "The median is the 50th percentile.\n$$50\\% \\text{ of } 164 = 82$$\nFind 82 on the cumulative frequency axis and read across to the curve and down to the horizontal axis:\n$$\\text{median} \\approx 9.1\\text{ m}$$",
+      "ai_explanation": {
+        "concept_rule": "The median corresponds to $0.50 \\times N$ on the vertical cumulative frequency axis.",
+        "step_by_step": [
+          "Calculate $0.5 \\times 164 = 82$.",
+          "Locate 82 on the vertical axis.",
+          "Move horizontally to intersect the curve, then read vertically down to the height axis to find $\\approx 9.1\\text{ m}$."
+        ],
+        "common_pitfalls": "Reading from the midpoint of the height axis rather than the cumulative frequency axis."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Estimate the interquartile range.",
+      "final_answer": "$0.9\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding $Q_1$ (at $\\text{cf} = 41$) and $Q_3$ (at $\\text{cf} = 123$)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct IQR: $Q_3 - Q_1 \\approx 0.9\\text{ m}$"
+        }
+      ],
+      "solution": "$Q_1$ is the 25th percentile. $25\\% \\text{ of } 164 = 41$.\nFrom the graph, $Q_1 \\approx 8.7\\text{ m}$.\n$Q_3$ is the 75th percentile. $75\\% \\text{ of } 164 = 123$.\nFrom the graph, $Q_3 \\approx 9.6\\text{ m}$.\n$$\\text{IQR} = Q_3 - Q_1 \\approx 9.6 - 8.7 = 0.9\\text{ m}$$",
+      "ai_explanation": {
+        "concept_rule": "The interquartile range is $Q_3 - Q_1$, obtained by finding the heights corresponding to $0.25N$ and $0.75N$ on the cumulative frequency curve.",
+        "step_by_step": [
+          "Find cumulative frequency for $Q_1$: $0.25 \\times 164 = 41$, giving height $\\approx 8.7\\text{ m}$.",
+          "Find cumulative frequency for $Q_3$: $0.75 \\times 164 = 123$, giving height $\\approx 9.6\\text{ m}$.",
+          "Subtract: $9.6 - 8.7 = 0.9\\text{ m}$."
+        ],
+        "common_pitfalls": "Misreading the graph values or calculating $123 - 41$ instead of heights."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Estimate the 90th percentile. Interpret your answer.",
+      "final_answer": "$10.2\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating 90% of 164 = 147.6"
+        },
+        {
+          "code": "A1",
+          "desc": "Reading corresponding height of approximately 10.2 m and providing interpretation"
+        }
+      ],
+      "solution": "$$90\\% \\text{ of } 164 = 147.6$$\nLocate cumulative frequency 147.6 on the vertical axis and find the corresponding height.\nThe 90th percentile is $\\approx 10.2\\text{ m}$, which means that $90\\%$ of trees are shorter than about $10.2\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "The $k$th percentile is the value below which $k\\%$ of the observations fall.",
+        "step_by_step": [
+          "Compute $0.90 \\times 164 = 147.6$.",
+          "Locate 147.6 on the cumulative frequency axis.",
+          "Trace across to the curve and read down to obtain $\\approx 10.2\\text{ m}$.",
+          "Interpret: 90% of trees have a height of 10.2 m or less."
+        ],
+        "common_pitfalls": "Reading from height = 9.0 instead of calculating 90% of the total frequency."
+      }
+    }
+  ]
+}

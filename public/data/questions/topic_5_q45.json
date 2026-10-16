@@ -1,0 +1,140 @@
+{
+  "id": "topic_5_q45",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 45,
+  "question_text": "The weight of a radioactive substance after $t$ days is given by the function $W(t) = 100e^{-\\frac{t}{50}}$ grams, $t \\geqslant 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the initial amount of radioactive substance present.",
+      "final_answer": "$100\\text{ grams}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $W(0)$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the initial mass with units"
+        }
+      ],
+      "solution": "$W(0) = 100e^0 = 100$\\n$\\therefore$ the initial amount of radioactive substance present is $100\\text{ grams}$.",
+      "ai_explanation": {
+        "concept_rule": "The initial amount is found by setting time $t = 0$ in the mass function.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $W(t) = 100e^{-\\frac{t}{20}}$.",
+          "Evaluate $100e^0 = 100 \\times 1 = 100$.",
+          "Include units: $100\\text{ grams}$."
+        ],
+        "common_pitfalls": "Assuming $e^0 = 0$ rather than $1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the time necessary for half of the mass to decay.",
+      "final_answer": "$t = 20\\ln 2 \\approx 13.9\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $W(t) = 50$ and isolate the exponential term"
+        },
+        {
+          "code": "M1",
+          "desc": "Take natural logarithm of both sides"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $t = 20\\ln 2 \\approx 13.9\\text{ hours}$"
+        }
+      ],
+      "solution": "$W(t) = \\frac{100}{2} = 50\\implies 100e^{-\\frac{t}{20}} = 50\\implies e^{-\\frac{t}{20}} = \\frac{50}{100} = \\frac{1}{2}$\\n$\\therefore -\\frac{t}{20} = \\ln\\left(\\frac{1}{2}\\right) = -\\ln 2\\implies t = 20\\ln 2 \\approx 13.9$\\n$\\therefore$ it will take about $13.9\\text{ hours}$ for half of the mass to decay.",
+      "ai_explanation": {
+        "concept_rule": "Half-life is the time required for half the quantity to decay, found by solving $W(t) = \\frac{W_0}{2}$.",
+        "step_by_step": [
+          "Set $100e^{-\\frac{t}{20}} = 50$.",
+          "Divide by $100$: $e^{-\\frac{t}{20}} = 0.5$.",
+          "Take natural logs: $-\\frac{t}{20} = \\ln(0.5) = -\\ln 2$.",
+          "Multiply by $-20$: $t = 20\\ln 2 \\approx 13.9\\text{ hours}$."
+        ],
+        "common_pitfalls": "Sign error when simplifying $\\ln(1/2) = -\\ln 2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $W'(t)$, and interpret its sign.",
+      "final_answer": "$W'(t) < 0\\text{ for all } t \\geqslant 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $W(t)$ using the chain rule"
+        },
+        {
+          "code": "R1",
+          "desc": "Reason that $e^{-\\frac{t}{20}} > 0$ and conclude that $W'(t) < 0$"
+        }
+      ],
+      "solution": "$W'(t) = 100\\left(-\\frac{1}{20}e^{-\\frac{t}{20}}\\right) = -5e^{-\\frac{t}{20}}$\\nSince $e^{-\\frac{t}{20}} > 0$ for all $t$, $W'(t) < 0$ for all $t$.\\nSo, the weight of the radioactive substance is decreasing for all $t \\geqslant 0$.",
+      "ai_explanation": {
+        "concept_rule": "A function is strictly decreasing on an interval if its first derivative is negative for all values in that interval.",
+        "step_by_step": [
+          "Differentiate $W(t) = 100e^{-\\frac{t}{20}}$ with respect to $t$ to get $-5e^{-\\frac{t}{20}}$.",
+          "Note that the exponential function is strictly positive for all real exponents ($e^{-\\frac{t}{20}} > 0$).",
+          "Multiplying by $-5$ guarantees $W'(t) < 0$ for all $t \\ge 0$, proving it is decreasing."
+        ],
+        "common_pitfalls": "Asserting the function is decreasing based on calculating values at a few points rather than using the derivative."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find $W'(3)$, and interpret your answer.",
+      "final_answer": "$Decreasing at about $4.30\\text{ grams per day after 3 days}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 3$ into $W'(t)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to $\\approx -4.30$ and interpret as rate of decrease"
+        }
+      ],
+      "solution": "$W'(3) = -5e^{-\\frac{3}{20}} \\approx -4.30$\\nThe weight of the radioactive substance is decreasing at about $4.30\\text{ grams per day after 3 days}$.",
+      "ai_explanation": {
+        "concept_rule": "The derivative evaluated at a specific time gives the instantaneous rate of change at that time.",
+        "step_by_step": [
+          "Substitute $t = 3$ into $W'(t) = -5e^{-\\frac{t}{20}}$.",
+          "Compute $-5e^{-0.15} \\approx -4.3035... \\approx -4.30$.",
+          "State in context: decreasing at $4.30$ grams per day."
+        ],
+        "common_pitfalls": "Stating that the rate of decrease is $-4.30$ (double negative: 'decreasing at a rate of $-4.30$' can be seen as increasing)."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Discuss $W$ as $t$ increases.",
+      "final_answer": "$W(t) \\to 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Consider the limit of $e^{-\\frac{t}{20}}$ as $t \\to \\infty$"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude that $W(t) \\to 0$"
+        }
+      ],
+      "solution": "As $t \\to \\infty, \\; e^{-\\frac{t}{20}} \\to 0$\\n$\\therefore W(t) \\to 0$",
+      "ai_explanation": {
+        "concept_rule": "As $t \\to \\infty$, a decaying exponential $e^{-kt}$ with $k > 0$ approaches 0.",
+        "step_by_step": [
+          "Analyze the exponent: as $t \\to \\infty$, $-\\frac{t}{20} \\to -\\infty$.",
+          "Evaluate the limit: $\\lim_{x \\to -\\infty} e^x = 0$.",
+          "Hence, $W(t) = 100e^{-\\frac{t}{20}} \\to 0$."
+        ],
+        "common_pitfalls": "Stating that $W(t)$ reaches 0 at a finite time."
+      }
+    }
+  ]
+}

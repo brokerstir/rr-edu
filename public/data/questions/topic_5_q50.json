@@ -1,0 +1,94 @@
+{
+  "id": "topic_5_q50",
+  "topic_number": 5,
+  "topic_name": "Calculus",
+  "question_number": 50,
+  "question_text": "A $40\\text{ cm}$ piece of wire is bent to form a sector of a circle with radius $x\\text{ cm}$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write $\\theta$ in terms of $x$.",
+      "final_answer": "$\\theta = \\frac{40}{x} - 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equation for perimeter of a sector: $P = 2x + s = 2x + \\theta x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Equate to 40 and rearrange to express $\\theta$ in terms of $x$"
+        }
+      ],
+      "solution": "$\\text{Perimeter} = 2x + s$\n$= 2x + \\theta x$\n$\\therefore 2x + \\theta x = 40$\n$\\therefore \\theta x = 40 - 2x$\n$\\therefore \\theta = \\frac{40}{x} - 2$",
+      "ai_explanation": {
+        "concept_rule": "The perimeter of a sector with radius $x$ and angle $\\theta$ (in radians) is given by $P = 2x + x\\theta$.",
+        "step_by_step": [
+          "Use the arc length formula $s = r\\theta = x\\theta$.",
+          "Write the total perimeter: $2x + x\\theta = 40$.",
+          "Isolate $\\theta$: $\\theta = \\frac{40 - 2x}{x} = \\frac{40}{x} - 2$."
+        ],
+        "common_pitfalls": "Omitting the two straight edge radii from the perimeter formula, using only the arc length."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Show that the area of the sector is given by $A = 20x - x^2\\text{ cm}^2$.",
+      "final_answer": "$A = 20x - x^2\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "State area of a sector formula $A = \\frac{1}{2}\\theta x^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Substitute expression for $\\theta$ from part a and simplify"
+        }
+      ],
+      "solution": "$\\text{Area } A = \\frac{1}{2}\\theta x^2$\n$= \\frac{1}{2}\\left(\\frac{40}{x} - 2\\right)x^2 \\quad \\{\\text{using a}\\}$\n$= 20x - x^2\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of a sector of a circle is given by $A = \\frac{1}{2}r^2\\theta$.",
+        "step_by_step": [
+          "Substitute radius $r = x$ into the sector area formula: $A = \\frac{1}{2}\\theta x^2$.",
+          "Substitute $\\theta = \\frac{40}{x} - 2$.",
+          "Distribute $\\frac{1}{2}x^2$ to obtain $A = 20x - x^2$."
+        ],
+        "common_pitfalls": "Using degree formula $\\frac{\\theta}{360}\\pi r^2$ instead of radian formula."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find $x$ and $\\theta$ for which $A$ is a maximum.",
+      "final_answer": "$x = 10\\text{ and } \\theta = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Differentiate $A$ with respect to $x$ and set equal to 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $x$"
+        },
+        {
+          "code": "R1",
+          "desc": "Confirm maximum using sign diagram"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\theta$ and state final answer"
+        }
+      ],
+      "solution": "$\\frac{dA}{dx} = 20 - 2x$ which is $0$ when $x = 10$.\n\nThe sign diagram of $\\frac{dA}{dx}$ shows a change from positive to negative at $x = 10$.\n\nWhen $x = 10$, $\\theta = \\frac{40}{10} - 2 = 4 - 2 = 2$.\n\n$\\therefore A$ is a maximum when $x = 10$ and $\\theta = 2$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic function or differentiable function has a maximum where its derivative is zero and changes sign from positive to negative.",
+        "step_by_step": [
+          "Differentiate $A = 20x - x^2$ to obtain $\\frac{dA}{dx} = 20 - 2x$.",
+          "Set $\\frac{dA}{dx} = 0$ to get $x = 10$.",
+          "Verify that this is a maximum using the sign diagram of $\\frac{dA}{dx}$.",
+          "Compute $\\theta$ using $\\theta = \\frac{40}{10} - 2 = 2$."
+        ],
+        "common_pitfalls": "Forgetting to calculate the corresponding angle $\\theta$."
+      }
+    }
+  ]
+}

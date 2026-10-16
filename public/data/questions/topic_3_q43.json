@@ -1,0 +1,64 @@
+{
+  "id": "topic_3_q43",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 43,
+  "question_text": "Find, in radians, the measure of $\\theta$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\theta \\approx 0.359$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $\\tan\\theta = \\text{gradient}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $\\theta$ in radians"
+        }
+      ],
+      "solution": "The line has gradient $\\frac{3}{8}$, so $\\tan\\theta = \\frac{3}{8}$.\nUsing technology, $\\tan^{-1}\\left(\\frac{3}{8}\\right) \\approx 0.359$.\n$\\therefore \\theta \\approx 0.359$.",
+      "ai_explanation": {
+        "concept_rule": "The relationship between the gradient of a line $m$ and the angle $\\theta$ it makes with the positive $x$-axis is $\\tan\\theta = m$.",
+        "step_by_step": [
+          "Identify the slope of the line $y = \\frac{3}{8}x$, which is $m = \\frac{3}{8}$.",
+          "Set up the equation $\\tan\\theta = \\frac{3}{8}$.",
+          "Compute $\\theta = \\arctan\\left(\\frac{3}{8}\\right) \\approx 0.359$ radians."
+        ],
+        "common_pitfalls": "Leaving the calculator in degree mode instead of radian mode."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$\\theta \\approx 1.85$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $\\tan\\theta = -\\frac{7}{2}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Adjusting the angle to lie in the interval $0 < \\theta < \\pi$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $\\theta$"
+        }
+      ],
+      "solution": "The line has gradient $-\\frac{7}{2}$, so $\\tan\\theta = -\\frac{7}{2}$.\nUsing technology, $\\tan^{-1}\\left(-\\frac{7}{2}\\right) \\approx -1.29$.\nBut $0 < \\theta < \\pi$, so $\\theta \\approx \\pi - 1.29 \\approx 1.85$.",
+      "ai_explanation": {
+        "concept_rule": "Angles of inclination with the positive $x$-axis lie in the interval $[0, \\pi)$. For negative gradients, the principal value of $\\arctan(m)$ is negative, so $\\pi$ must be added.",
+        "step_by_step": [
+          "Identify the gradient $m = -\\frac{7}{2}$.",
+          "Compute $\\tan^{-1}\\left(-\\frac{7}{2}\\right) \\approx -1.29$ radians.",
+          "Add $\\pi$ to obtain the angle in $(0, \\pi)$: $\\theta = \\pi - 1.29 \\approx 1.85$."
+        ],
+        "common_pitfalls": "Reporting a negative angle for inclination rather than the angle in the second quadrant."
+      }
+    }
+  ]
+}
