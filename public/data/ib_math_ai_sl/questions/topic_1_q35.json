@@ -1,0 +1,183 @@
+{
+  "id": "topic_1_q35",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 35,
+  "question_text": "Emma takes out a home loan of $\\$120\\,000$ at $7.2\\%$ p.a. interest compounded monthly. The loan is to be repaid over 20 years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the monthly repayment.",
+      "final_answer": "$\\$944.82$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up TVM parameters: $N = 240, I\\% = 7.2, PV = 120000, FV = 0, P/Y = 12, C/Y = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $\\text{PMT} \\approx -944.82$ and stating the repayment as $\\$944.82$"
+        }
+      ],
+      "solution": "$N = 20 \\times 12 = 240$, $I\\% = 7.2$, $PV = 120\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -944.82$\nThe monthly repayment is $\\$944.82$.",
+      "ai_explanation": {
+        "concept_rule": "Loan repayments are modeled using TVM solver or amortization formulas where $PV > 0$, $FV = 0$, and regular payments PMT are outflows (negative).",
+        "step_by_step": [
+          "Calculate total number of monthly payments: $N = 20 \\times 12 = 240$.",
+          "Input interest rate $I\\% = 7.2$, $PV = 120000$, $FV = 0$, $P/Y = C/Y = 12$.",
+          "Solve for PMT: $\\text{PMT} = -944.82$, so repayment is $\\$944.82$."
+        ],
+        "common_pitfalls": "Entering $N$ in years rather than total number of payment periods ($20$ instead of $240$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate the amount of money still owing on the loan after one year.",
+      "final_answer": "$\\$117\\,211.33$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $N = 12$ with $\\text{PMT} = -944.82$ to find the future value"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating outstanding balance after 1 year as $\\$117211.33$"
+        }
+      ],
+      "solution": "$N = 12$, $I\\% = 7.2$, $PV = 120\\,000$, $\\text{PMT} = -944.82$, $P/Y = 12$, $C/Y = 12$\n$\\therefore FV \\approx 117\\,211.33$\nAfter 1 year, $\\$117\\,211.33$ is still owing on the loan.",
+      "ai_explanation": {
+        "concept_rule": "The balance of a loan after a certain period is the future value $FV$ after that number of payment periods.",
+        "step_by_step": [
+          "Set $N = 12$ months.",
+          "Keep the same interest rate $I\\% = 7.2$, initial loan amount $PV = 120000$, and repayment $\\text{PMT} = -944.82$.",
+          "Compute $FV = -117211.33$, meaning the remaining balance owed is $\\$117\\,211.33$."
+        ],
+        "common_pitfalls": "Confusing signs: PMT must have opposite sign to PV."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Calculate the amount paid in the first year of the loan.",
+      "final_answer": "$\\$11\\,337.84$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Multiplying monthly repayment by 12"
+        },
+        {
+          "code": "A1",
+          "desc": "Total amount paid = $\\$11337.84$"
+        }
+      ],
+      "solution": "$\\text{Amount paid} = \\$944.82 \\times 12 = \\$11\\,337.84$",
+      "ai_explanation": {
+        "concept_rule": "Total payments over a period equals the periodic payment multiplied by the number of periods.",
+        "step_by_step": [
+          "Multiply monthly payment $\\$944.82$ by 12 months.",
+          "Obtain total amount paid of $\\$11\\,337.84$."
+        ],
+        "common_pitfalls": "Using rounded values from an intermediate step leading to a slight discrepancy."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "By how much has the principal been reduced at the end of the first year?",
+      "final_answer": "$\\$2788.67$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtracting remaining balance from initial principal"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal reduction = $\\$2788.67$"
+        }
+      ],
+      "solution": "$\\$120\\,000 - \\$117\\,211.33 = \\$2788.67$",
+      "ai_explanation": {
+        "concept_rule": "Principal reduction is the difference between the initial loan amount and the remaining balance.",
+        "step_by_step": [
+          "Take initial balance: $\\$120\\,000$.",
+          "Subtract remaining balance: $\\$117\\,211.33$.",
+          "Calculate difference: $\\$2788.67$."
+        ],
+        "common_pitfalls": "Subtracting principal reduction from payments to answer a different question."
+      }
+    },
+    {
+      "subpart": "c iii",
+      "stem": "Explain why the loan does not reduce by the full amount of your first year's repayment.",
+      "final_answer": "$The loan does not decrease by the full amount of the monthly repayment as the payment is used to pay interest as well as to reduce the principal.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Explanation mentioning interest component of repayments"
+        }
+      ],
+      "solution": "The loan does not decrease by the full amount of the monthly repayment as the payment is used to pay interest as well as to reduce the principal.",
+      "ai_explanation": {
+        "concept_rule": "Each loan repayment covers accrued interest first, with only the remainder reducing the principal balance.",
+        "step_by_step": [
+          "Identify that repayments consist of two parts: interest and principal repayment.",
+          "State clearly that accrued interest consumes part of each payment, so the principal decreases by less than the total payment."
+        ],
+        "common_pitfalls": "Stating that fees or extra costs reduce the payment without mentioning interest."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "Suppose that after 1 year, the interest rate falls to $6.95\\%$ p.a. Calculate the new monthly repayment.",
+      "final_answer": "$\\$927.42$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up TVM parameters with remaining term $N = 228$, new interest rate $I\\% = 6.95$, and new principal $PV = 117211.33$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding new monthly repayment of $\\$927.42$"
+        }
+      ],
+      "solution": "$N = 19 \\times 12 = 228$, $I\\% = 6.95$, $PV = 117\\,211.33$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -927.42$\nThe new monthly repayment is $\\$927.42$.",
+      "ai_explanation": {
+        "concept_rule": "When refinancing or when interest rates change, the remaining balance becomes the new $PV$, and the remaining time becomes the new $N$.",
+        "step_by_step": [
+          "Remaining time is $20 - 1 = 19$ years, so $N = 19 \\times 12 = 228$.",
+          "Input new interest rate $I\\% = 6.95$, current balance $PV = 117211.33$, $FV = 0$.",
+          "Solve for PMT: $\\text{PMT} \\approx -927.42$."
+        ],
+        "common_pitfalls": "Using original term $N = 240$ or original loan amount $PV = 120000$ instead of updated values."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "Suppose that after 1 year, the interest rate falls to $6.95\\%$ p.a. If Emma is able to keep paying the original repayments, how much earlier will the loan be paid off?",
+      "final_answer": "$8 months earlier$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Solving for $N$ with original payment $\\text{PMT} = -944.82$ and new rate $I\\% = 6.95$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $N \\approx 219.5 \\implies 220$ months"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating time saved: $228 - 220 = 8$ months earlier"
+        }
+      ],
+      "solution": "$I\\% = 6.95$, $PV = 117\\,211.33$, $\\text{PMT} = -944.82$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore N \\approx 219.5$\nIt will take 220 months to pay off the rest of the loan with the original repayments.\n$\\therefore$ the loan will be paid off 8 months earlier.",
+      "ai_explanation": {
+        "concept_rule": "To find how much earlier a loan is paid off, determine the number of payments required at the higher repayment rate, round up to the next whole period, and subtract from the scheduled number of remaining periods.",
+        "step_by_step": [
+          "Enter $PV = 117211.33$, $\\text{PMT} = -944.82$, $FV = 0$, $I\\% = 6.95$.",
+          "Solve for $N \\approx 219.500586$, which requires 220 full/partial payments.",
+          "Compare with scheduled remaining payments: $228 - 220 = 8$ months earlier."
+        ],
+        "common_pitfalls": "Rounding $N$ down to 219 instead of up to 220 (a partial 220th payment is still required)."
+      }
+    }
+  ]
+}

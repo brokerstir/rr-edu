@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q22",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 22,
+  "question_text": "An endangered species of bird has population $217$. However, with a successful breeding program it is expected to increase by $42\\%$ each year.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the expected population size after: $5$ years",
+      "final_answer": "$1250\\text{ birds}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $n = 5$ into $u_n = 217 \\times (1.42)^n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating value and rounding appropriately: approximately 1250 birds"
+        }
+      ],
+      "solution": "$$u_5 = 217 \\times (1.42)^5 \\approx 1252.86$$\n$$\\text{The expected population size after 5 years is approximately } 1250 \\text{ birds.}$$",
+      "ai_explanation": {
+        "concept_rule": "Geometric growth with initial population $u_0$ and growth multiplier $r = 1 + \\text{rate}$ is modeled by $u_n = u_0 r^n$.",
+        "step_by_step": [
+          "Identify $u_0 = 217$ and $r = 1.42$.",
+          "Evaluate $u_5 = 217 \\times (1.42)^5 \\approx 1252.86$.",
+          "Round to an appropriate degree of accuracy (e.g., 3 significant figures: 1250)."
+        ],
+        "common_pitfalls": "Using $n - 1$ in the exponent when $u_0$ represents the initial population."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the expected population size after: $10$ years.",
+      "final_answer": "$7230\\text{ birds}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $n = 10$ into $u_n = 217 \\times (1.42)^n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating value and rounding appropriately: approximately 7230 birds"
+        }
+      ],
+      "solution": "$$u_{10} = 217 \\times (1.42)^{10} \\approx 7233.41$$\n$$\\text{The expected population size after 10 years is approximately } 7230 \\text{ birds.}$$",
+      "ai_explanation": {
+        "concept_rule": "Calculate the population at $n = 10$ using the geometric model $u_n = u_0 r^n$.",
+        "step_by_step": [
+          "Substitute $n = 10$: $u_{10} = 217 \\times (1.42)^{10}$.",
+          "Calculate $u_{10} \\approx 7233.41$.",
+          "Round to 3 significant figures: 7230 birds."
+        ],
+        "common_pitfalls": "Premature rounding of the intermediate powers."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How long will it take for the population to reach $30\\,000$?",
+      "final_answer": "$14.1\\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the equation $217 \\times (1.42)^n = 30000$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $n \\approx 14.1$"
+        }
+      ],
+      "solution": "$$\\text{We need to find when } 217 \\times (1.42)^n = 30\\,000.$$\n$$\\text{Using technology, } n \\approx 14.1, \\text{ so it will take approximately } 14.1 \\text{ years for the population to reach } 30\\,000.$$",
+      "ai_explanation": {
+        "concept_rule": "Solve an exponential equation $a \\cdot b^n = c$ using logarithms or a numerical equation solver on a GDC.",
+        "step_by_step": [
+          "Set up the equation $217 \\times (1.42)^n = 30000$.",
+          "Solve for $n$: $n = \\frac{\\ln(30000 / 217)}{\\ln(1.42)}$.",
+          "Compute $n \\approx 14.0566... \\approx 14.1\\text{ years}$."
+        ],
+        "common_pitfalls": "Forgetting to divide by 217 before applying logarithms."
+      }
+    }
+  ]
+}

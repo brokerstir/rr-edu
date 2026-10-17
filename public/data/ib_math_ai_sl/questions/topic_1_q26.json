@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q26",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 26,
+  "question_text": "A television was purchased for £$2000$, and depreciates at $30\\%$ p.a. for $3$ years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of the television at the end of this period.",
+      "final_answer": "$£$686$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using depreciation formula $u_3 = 2000 \\times (1 - 0.3)^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Computing final value £$686$"
+        }
+      ],
+      "solution": "$$u_3 = u_0 \\times (1 - d)^3$$\n$$= 2000 \\times (0.7)^3 \\quad \\{30\\% = 0.3\\}$$\n$$= 686$$\n$$\\text{So, after 3 years the value of the television is } \\text{£}686.$$",
+      "ai_explanation": {
+        "concept_rule": "Annual depreciation reduces the item's value by multiplying by $(1 - d)$ each year: $u_n = u_0(1 - d)^n$.",
+        "step_by_step": [
+          "Identify depreciation factor: $1 - 0.30 = 0.70$.",
+          "Compute value after 3 years: $u_3 = 2000 \\times (0.7)^3$.",
+          "Calculate $2000 \\times 0.343 = 686$."
+        ],
+        "common_pitfalls": "Using simple depreciation $2000 - 3 \\times (0.3 \\times 2000)$ instead of reducing balance depreciation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "By how much has the television depreciated?",
+      "final_answer": "$£$1314$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtracting remaining value from initial purchase price"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating depreciation as £$1314$"
+        }
+      ],
+      "solution": "$$\\text{Depreciation} = \\text{£}2000 - \\text{£}686$$\n$$= \\text{£}1314$$",
+      "ai_explanation": {
+        "concept_rule": "Total depreciation is the difference between initial value and current value: $\\text{Depreciation} = u_0 - u_n$.",
+        "step_by_step": [
+          "Identify original value: £2000.",
+          "Identify value after 3 years: £686.",
+          "Subtract: $2000 - 686 = 1314$."
+        ],
+        "common_pitfalls": "Confusing the total depreciation amount with the remaining value."
+      }
+    }
+  ]
+}

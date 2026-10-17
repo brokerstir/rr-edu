@@ -9,9 +9,18 @@ const COURSES = [
     title: 'IB Mathematics AA SL',
     category: 'Mathematics',
     description: 'Analysis and Approaches Standard Level. Complete question bank covering Analysis, Calculus, and Functions.',
-    questionCount: 180,
+    questionCount: 346,
     status: 'available', // 'available' | 'locked'
     badge: 'Popular'
+  },
+  {
+    id: 'ib_math_ai_sl',
+    title: 'IB Mathematics AI SL',
+    category: 'Mathematics',
+    description: 'Applications and Interpretation Standard Level with heavy focus on Modeling and Statistics.',
+    questionCount: 160,
+    status: 'locked',
+    badge: 'Coming Soon'
   },
   {
     id: 'ib_math_aa_hl',
@@ -23,11 +32,11 @@ const COURSES = [
     badge: 'Coming Soon'
   },
   {
-    id: 'ib_math_ai_sl',
-    title: 'IB Mathematics AI SL',
+    id: 'ib_math_ai_hl',
+    title: 'IB Mathematics AI HL',
     category: 'Mathematics',
-    description: 'Applications and Interpretation Standard Level with heavy focus on Modeling and Statistics.',
-    questionCount: 160,
+    description: 'Applications and Interpretation Higher Level with advanced modeling, matrices, graph theory, and statistics.',
+    questionCount: 220,
     status: 'locked',
     badge: 'Coming Soon'
   }

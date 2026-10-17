@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q16",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 16,
+  "question_text": "A triangle is defined by the lines with equations $y = x + 2$, $x + y = 9$, and $x = 4$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the coordinates of the triangle's vertices.",
+      "final_answer": "$(4, 6), (4, 5), \\text{ and } (3\\frac{1}{2}, 5\\frac{1}{2})$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding intersections of the bounding lines"
+        },
+        {
+          "code": "A1",
+          "desc": "Listing all three triangle vertices correctly"
+        }
+      ],
+      "solution": "The vertices of the triangle are $(4, 6)$, $(4, 5)$, and $(3\\frac{1}{2}, 5\\frac{1}{2})$.",
+      "ai_explanation": {
+        "concept_rule": "The vertices of a bounded triangular region are found at the pairwise intersections of the boundary lines: $x = 4$, $y = -x + 9$ (or $x + y = 9$), and $y = x + 2$.",
+        "step_by_step": [
+          "Intersection of $x = 4$ and $x + y = 9$: $4 + y = 9 \\implies y = 5$, giving vertex $(4, 5)$.",
+          "Intersection of $x = 4$ and $y = x + 2$: $y = 4 + 2 = 6$, giving vertex $(4, 6)$.",
+          "Intersection of $y = x + 2$ and $x + y = 9$: substitute $y = x + 2$ into $x + (x + 2) = 9 \\implies 2x = 7 \\implies x = 3.5$, and $y = 5.5$, giving vertex $(3.5, 5.5)$ or $(3\\frac{1}{2}, 5\\frac{1}{2})$."
+        ],
+        "common_pitfalls": "Misreading coordinates from the graphical representation instead of solving algebraically."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the area of the triangle.",
+      "final_answer": "$\\frac{1}{4}\\text{ units}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using vertical base between $(4, 6)$ and $(4, 5)$ and horizontal height"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct area calculation"
+        }
+      ],
+      "solution": "$\\text{Area of triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 1 \\times \\frac{1}{2} = \\frac{1}{4}\\text{ units}^2$",
+      "ai_explanation": {
+        "concept_rule": "Area of a triangle is $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$. Choosing a vertical or horizontal side simplifies the computation of base and height.",
+        "step_by_step": [
+          "The vertical side lies along $x = 4$ between $y = 5$ and $y = 6$, giving $\\text{base} = 6 - 5 = 1$.",
+          "The third vertex is at $x = 3.5$. The perpendicular horizontal height from this vertex to $x = 4$ is $4 - 3.5 = 0.5 = \\frac{1}{2}$.",
+          "Calculate area: $\\frac{1}{2} \\times 1 \\times \\frac{1}{2} = \\frac{1}{4}\\text{ units}^2$."
+        ],
+        "common_pitfalls": "Trying to use the slant sides as the base, which complicates the calculation of the height."
+      }
+    }
+  ]
+}

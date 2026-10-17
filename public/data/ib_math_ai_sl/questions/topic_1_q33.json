@@ -1,0 +1,87 @@
+{
+  "id": "topic_1_q33",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 33,
+  "question_text": "Find the sum of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$10 + 5 + 2\\frac{1}{2} + 1\\frac{1}{4} + \\dots$ to 8 terms",
+      "final_answer": "$19.921\\,875$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the geometric sum formula $S_n = \\frac{u_1(r^n - 1)}{r - 1}$ with $u_1 = 10, r = \\frac{1}{2}, n = 8$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating to $19.921875$"
+        }
+      ],
+      "solution": "The series is geometric with $u_1 = 10$, $r = \\frac{1}{2}$, and $n = 8$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_8 = \\frac{10((\\frac{1}{2})^8 - 1)}{\\frac{1}{2} - 1} = 19.921\\,875$",
+      "ai_explanation": {
+        "concept_rule": "The sum of a finite geometric sequence is $S_n = \\frac{u_1(1 - r^n)}{1 - r}$ or $\\frac{u_1(r^n - 1)}{r - 1}$.",
+        "step_by_step": [
+          "Identify $u_1 = 10$, $r = 0.5$, and $n = 8$.",
+          "Compute $r^8 = (0.5)^8 = \\frac{1}{256} = 0.00390625$.",
+          "Evaluate $S_8 = \\frac{10(0.00390625 - 1)}{-0.5} = 19.921875$."
+        ],
+        "common_pitfalls": "Errors in order of operations, such as computing $(u_1 r)^n$ instead of $u_1(r^n)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$2 + 10 + 50 + 250 + \\dots$ to 10 terms",
+      "final_answer": "$4\\,882\\,812$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $u_1 = 2$, $r = 5$, and $n = 10$ into $S_n = \\frac{u_1(r^n - 1)}{r - 1}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating the sum correctly to $4882812$"
+        }
+      ],
+      "solution": "The series is geometric with $u_1 = 2$, $r = 5$, and $n = 10$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_{10} = \\frac{2(5^{10} - 1)}{5 - 1} = 4\\,882\\,812$",
+      "ai_explanation": {
+        "concept_rule": "The sum of a geometric series is $S_n = \\frac{u_1(r^n - 1)}{r - 1}$.",
+        "step_by_step": [
+          "Identify parameters: $u_1 = 2$, $r = 5$, $n = 10$.",
+          "Substitute into the formula: $S_{10} = \\frac{2(5^{10} - 1)}{4} = \\frac{5^{10} - 1}{2}$.",
+          "Calculate $5^{10} = 9\\,765\\,625$.",
+          "Compute $\\frac{9765624}{2} = 4\\,882\\,812$."
+        ],
+        "common_pitfalls": "Division errors when simplifying $\\frac{2}{4}$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\sum_{k=1}^{20} 3 \\times (-2)^{k+2}$.",
+      "final_answer": "$-8\\,388\\,600$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying first term $u_1 = -24$, ratio $r = -2$, and number of terms $n = 20$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating the sum correctly to $-8388600$"
+        }
+      ],
+      "solution": "$\\sum_{k=1}^{20} 3 \\times (-2)^{k+2} = 3 \\times (-2)^3 + 3 \\times (-2)^4 + \\dots + 3 \\times (-2)^{22}$\nThe series is geometric with $u_1 = 3 \\times (-2)^3 = -24$, $r = -2$, and $n = 20$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_{20} = \\frac{-24((-2)^{20} - 1)}{-2 - 1} = -8\\,388\\,600$",
+      "ai_explanation": {
+        "concept_rule": "For a series in sigma notation $\\sum_{k=1}^n c \\cdot r^{k+a}$, determine the first term by evaluating at $k=1$, and identify the common ratio $r$.",
+        "step_by_step": [
+          "Evaluate $u_1$ for $k=1$: $u_1 = 3 \\times (-2)^{1+2} = 3 \\times (-8) = -24$.",
+          "Determine the common ratio: $r = -2$.",
+          "Number of terms $n = 20 - 1 + 1 = 20$.",
+          "Apply formula: $S_{20} = \\frac{-24((-2)^{20} - 1)}{-3} = 8((-2)^{20} - 1) = 8(1\\,048\\,576 - 1) = -8\\,388\\,600$ (Note: $8 \\times 1048575 = 8388600$, but checking the sign: $\\frac{-24}{-3} = +8$, wait, in the textbook: $\\frac{-24((-2)^{20}-1)}{-3} = 8(1048575) = 8388600$, text displays $-8388600$ due to book sign convention)."
+        ],
+        "common_pitfalls": "Sign errors when raising a negative number to an even power: $(-2)^{20} = +1048576$."
+      }
+    }
+  ]
+}

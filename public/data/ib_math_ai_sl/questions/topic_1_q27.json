@@ -1,0 +1,65 @@
+{
+  "id": "topic_1_q27",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 27,
+  "question_text": "Lauren deposits $\\$10\\,000$ in an account that compounds interest monthly. $4.5$ years later, the account has balance $\\$12\\,000$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "What annual rate of interest did the account pay?",
+      "final_answer": "$4.06\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up TVM parameters: $N = 54$, $PV = -10000$, $PMT = 0$, $FV = 12000$, $P/Y = 12$, $C/Y = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for interest rate $I\\% \\approx 4.06\\%$"
+        }
+      ],
+      "solution": "$$N = 4.5 \\times 12 = 54, \\quad PV = -10\\,000, \\quad PMT = 0, \\quad FV = 12\\,000, \\quad P/Y = 12, \\quad C/Y = 12$$\n$$\\therefore I\\% \\approx 4.06$$\n$$\\text{The account paid about } 4.06\\% \\text{ interest per annum.}$$",
+      "ai_explanation": {
+        "concept_rule": "Use the GDC TVM Solver to calculate the annual nominal interest rate $I\\%$ from compound interest parameters.",
+        "step_by_step": [
+          "Calculate total compounding periods: $N = 4.5 \\times 12 = 54$.",
+          "Input known values: $PV = -10000$ (cash outflow), $FV = 12000$ (cash inflow), $P/Y = C/Y = 12$.",
+          "Solve for $I\\%$: gives $4.0584...\\% \\approx 4.06\\%$."
+        ],
+        "common_pitfalls": "Giving both $PV$ and $FV$ the same sign in the financial calculator, which results in an error."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How long will it take Lauren to double her deposit?",
+      "final_answer": "$206\\text{ months (or 17 years and 2 months)}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up TVM parameters with doubled investment: $FV = 20000$, $PV = -10000$, $I\\% = 4.06$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $N \\approx 205.2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Rounding up to next whole compounding period: 206 months or 17 years and 2 months"
+        }
+      ],
+      "solution": "$$I\\% = 4.06, \\quad PV = -10\\,000, \\quad PMT = 0, \\quad FV = 20\\,000, \\quad P/Y = 12, \\quad C/Y = 12$$\n$$\\therefore N \\approx 205.2$$\n$$\\text{It will take } 206 \\text{ months or } 17 \\text{ years and } 2 \\text{ months for Lauren to double her deposit.}$$",
+      "ai_explanation": {
+        "concept_rule": "When compounding occurs at discrete intervals, the number of compounding periods must be rounded up to ensure the target is reached.",
+        "step_by_step": [
+          "Set $FV = 20000$, $PV = -10000$, $I\\% = 4.06$, $P/Y = C/Y = 12$ on TVM solver.",
+          "Solve for $N$: $N \\approx 205.22$ months.",
+          "Since interest is credited monthly, round up to $206$ full months.",
+          "Convert months to years: $206 = 17 \\times 12 + 2$, giving 17 years and 2 months."
+        ],
+        "common_pitfalls": "Rounding down to 205 months, at which point the deposit has not yet doubled."
+      }
+    }
+  ]
+}

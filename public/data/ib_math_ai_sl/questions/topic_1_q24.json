@@ -1,0 +1,43 @@
+{
+  "id": "topic_1_q24",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 24,
+  "question_text": "Stan invests £$3500$ for $33$ months at $8\\%$ p.a. interest compounded quarterly. Find its maturing value.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Stan invests £$3500$ for $33$ months at $8\\%$ p.a. interest compounded quarterly. Find its maturing value.",
+      "final_answer": "$£$4351.81$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating number of compounding periods $n = \\frac{33}{3} = 11$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculating quarterly interest rate $i = \\frac{8\\%}{4} = 2\\% = 0.02$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying compounding formula $u_{11} = 3500 \\times (1.02)^{11}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining maturing value £$4351.81$"
+        }
+      ],
+      "solution": "$$\\text{There is 1 time period every 3 months, so } n = \\frac{33}{3} = 11 \\text{ time periods.}$$\n$$\\text{Each time period the investment increases by } i = \\frac{8\\%}{4} = 2\\%.$$\n$$\\therefore \\text{the amount after 33 months is } u_{11} = u_0 \\times (1 + i)^{11}$$\n$$= 3500 \\times (1.02)^{11} \\quad \\{2\\% = 0.02\\}$$\n$$\\approx 4351.81$$\n$$\\text{The maturing value of the account is } \\text{£}4351.81.$$",
+      "ai_explanation": {
+        "concept_rule": "For compounding every 3 months (quarterly), divide annual interest rate by 4, and calculate periods by total months divided by 3.",
+        "step_by_step": [
+          "Determine number of 3-month periods in 33 months: $n = \\frac{33}{3} = 11$.",
+          "Find rate per period: $i = \\frac{8\\%}{4} = 2\\% = 0.02$.",
+          "Calculate final value: $3500 \\times (1 + 0.02)^{11} \\approx 4351.81$."
+        ],
+        "common_pitfalls": "Dividing the annual rate by 12 instead of 4, or miscounting the number of quarters."
+      }
+    }
+  ]
+}

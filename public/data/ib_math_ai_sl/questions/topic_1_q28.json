@@ -1,0 +1,80 @@
+{
+  "id": "topic_1_q28",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 28,
+  "question_text": "The first four terms of an arithmetic sequence are $51, 45, 39, 33$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the common difference $d$.",
+      "final_answer": "$d = -6$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identifying the common difference $d = -6$"
+        }
+      ],
+      "solution": "$$\\text{The common difference } d = -6.$$",
+      "ai_explanation": {
+        "concept_rule": "The common difference $d$ in an arithmetic sequence is $u_2 - u_1$.",
+        "step_by_step": [
+          "Observe the decrease between consecutive terms.",
+          "State $d = -6$."
+        ],
+        "common_pitfalls": "Writing $+6$ instead of $-6$ for a decreasing sequence."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the 20th term $u_{20}$.",
+      "final_answer": "$-63$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using $u_{20} = u_1 + 19d$ with $u_1 = 51$ and $d = -6$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating to $-63$"
+        }
+      ],
+      "solution": "$$u_n = u_1 + (n - 1)d$$\n$$\\therefore u_{20} = u_1 + 19d$$\n$$= 51 + 19 \\times -6$$\n$$= 51 - 114$$\n$$= -63$$",
+      "ai_explanation": {
+        "concept_rule": "The $n$th term of an arithmetic sequence is given by $u_n = u_1 + (n - 1)d$.",
+        "step_by_step": [
+          "Substitute $u_1 = 51$, $n = 20$, and $d = -6$ into the formula: $u_{20} = 51 + (20 - 1)(-6)$.",
+          "Calculate $19 \\times (-6) = -114$.",
+          "Compute $51 - 114 = -63$."
+        ],
+        "common_pitfalls": "Using $n$ instead of $n - 1$ in the formula."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the sum of the first $20$ terms.",
+      "final_answer": "$-120$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using sum formula $S_n = \\frac{n}{2}(u_1 + u_n)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating $S_{20} = \\frac{20}{2}(51 - 63) = -120$"
+        }
+      ],
+      "solution": "$$S_n = \\frac{n}{2}(u_1 + u_n)$$\n$$\\therefore S_{20} = \\frac{20}{2}(51 - 63)$$\n$$= 10 \\times -12$$\n$$= -120$$",
+      "ai_explanation": {
+        "concept_rule": "The sum of the first $n$ terms of an arithmetic sequence is $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+        "step_by_step": [
+          "Use the formula with $n = 20$, $u_1 = 51$, and $u_{20} = -63$.",
+          "Add first and last terms: $51 + (-63) = -12$.",
+          "Multiply by $\\frac{20}{2} = 10$: $10 \\times (-12) = -120$."
+        ],
+        "common_pitfalls": "Arithmetic errors when dealing with negative values inside the brackets."
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "topic_1_q17",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 17,
+  "question_text": "Consider the sequence $8, 13, 18, 23, 28, \\dots$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that the sequence is arithmetic.",
+      "final_answer": "$u_1 = 8, d = 5$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Checking successive differences"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding sequence is arithmetic and stating $u_1$ and $d$"
+        }
+      ],
+      "solution": "$13 - 8 = 5$\n$18 - 13 = 5$\n$23 - 18 = 5$\n$28 - 23 = 5$\nThe difference between successive terms is constant.\n$\\therefore$ the sequence is arithmetic with $u_1 = 8$ and $d = 5$.",
+      "ai_explanation": {
+        "concept_rule": "A sequence is arithmetic if the difference between any consecutive terms is a constant $d = u_{n} - u_{n-1}$.",
+        "step_by_step": [
+          "Calculate differences between adjacent terms: $13 - 8 = 5$, $18 - 13 = 5$, $23 - 18 = 5$, $28 - 23 = 5$.",
+          "Since the differences are identical, it is an arithmetic sequence.",
+          "Identify first term $u_1 = 8$ and common difference $d = 5$."
+        ],
+        "common_pitfalls": "Checking only the first two terms rather than multiple successive pairs."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the formula for its general term.",
+      "final_answer": "$u_n = 3 + 5n$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the general formula $u_n = u_1 + (n-1)d$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression for $u_n$"
+        }
+      ],
+      "solution": "$u_n = u_1 + (n - 1)d$\n$\\therefore u_n = 8 + 5(n - 1)$\n$\\therefore u_n = 3 + 5n$",
+      "ai_explanation": {
+        "concept_rule": "The $n$-th term of an arithmetic sequence is given by $u_n = u_1 + (n - 1)d$.",
+        "step_by_step": [
+          "Substitute $u_1 = 8$ and $d = 5$ into $u_n = u_1 + (n - 1)d$.",
+          "Expand: $u_n = 8 + 5n - 5$.",
+          "Simplify: $u_n = 3 + 5n$."
+        ],
+        "common_pitfalls": "Forgetting to distribute $d$ over $(n - 1)$, writing $8 + 5n - 1$ instead."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the 42nd term.",
+      "final_answer": "$213$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $n = 42$ into the general term formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct 42nd term"
+        }
+      ],
+      "solution": "$u_{42} = 3 + 5(42) = 213$",
+      "ai_explanation": {
+        "concept_rule": "Evaluate $u_n$ by replacing $n$ with 42.",
+        "step_by_step": [
+          "Use the formula $u_n = 3 + 5n$.",
+          "Substitute $n = 42$: $u_{42} = 3 + 5 \\times 42$.",
+          "Compute: $5 \\times 42 = 210$, then $3 + 210 = 213$."
+        ],
+        "common_pitfalls": "Adding 3 and 5 first before multiplying by 42 (order of operations error)."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "Determine whether each number is a member of the sequence: $153$",
+      "final_answer": "$153\\text{ is the 30th term}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $u_n = 153$ and solving for $n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding that 153 is the 30th term"
+        }
+      ],
+      "solution": "Let $u_n = 153$\n$\\therefore 3 + 5n = 153$\n$\\therefore 5n = 150$\n$\\therefore n = 30$\n$\\therefore 153$ is a member of the sequence, and in fact is the 30th term.",
+      "ai_explanation": {
+        "concept_rule": "A number is a term of the sequence if and only if solving $u_n = \\text{number}$ produces a positive integer $n \\in \\mathbb{Z}^+$.",
+        "step_by_step": [
+          "Set $3 + 5n = 153$.",
+          "Subtract 3: $5n = 150$.",
+          "Divide by 5: $n = 30$.",
+          "Since 30 is an integer, 153 is a member, specifically the 30th term."
+        ],
+        "common_pitfalls": "Stating only that it is a member without giving the term number $n$."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "Determine whether each number is a member of the sequence: $4067$",
+      "final_answer": "$4067\\text{ is not a member of the sequence}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $u_n = 4067$ and solving for $n$"
+        },
+        {
+          "code": "R1",
+          "desc": "Recognizing that $n$ is not an integer and concluding"
+        }
+      ],
+      "solution": "Let $u_n = 4067$\n$\\therefore 3 + 5n = 4067$\n$\\therefore 5n = 4064$\n$\\therefore n = 812\\frac{4}{5}$\nBut $n$ must be an integer, so 4067 is not a member of the sequence.",
+      "ai_explanation": {
+        "concept_rule": "Term indices $n$ in a sequence must be positive integers ($n \\in \\mathbb{Z}^+$).",
+        "step_by_step": [
+          "Set $3 + 5n = 4067$.",
+          "Subtract 3: $5n = 4064$.",
+          "Divide by 5: $n = \\frac{4064}{5} = 812.8 = 812\\frac{4}{5}$.",
+          "Since $n$ is not an integer, $4067$ cannot be a member of the sequence."
+        ],
+        "common_pitfalls": "Rounding $n$ to the nearest integer instead of realizing the non-integer result proves non-membership."
+      }
+    }
+  ]
+}

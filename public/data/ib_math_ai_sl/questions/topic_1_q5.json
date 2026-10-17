@@ -1,0 +1,87 @@
+{
+  "id": "topic_1_q5",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 5,
+  "question_text": "Terry measures the dimensions of a box as $15\\text{ cm}$ by $12\\text{ cm}$ by $8\\text{ cm}$, rounded to the nearest centimetre.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use Terry's measurements to estimate the volume of the box.",
+      "final_answer": "$1440\\text{ cm}^3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Estimating dimensions to the nearest cm and multiplying"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct estimated volume"
+        }
+      ],
+      "solution": "$\\text{Volume} \\approx 15\\text{ cm} \\times 12\\text{ cm} \\times 8\\text{ cm} \\approx 1440\\text{ cm}^3$",
+      "ai_explanation": {
+        "concept_rule": "Estimated volume of a cuboid is found by multiplying estimated dimensions.",
+        "step_by_step": [
+          "Round each dimension to the nearest integer: $15.3 \\to 15$, $11.8 \\to 12$, $8.4 \\to 8$.",
+          "Compute product: $15 \\times 12 \\times 8 = 1440\\text{ cm}^3$."
+        ],
+        "common_pitfalls": "Rounding the exact calculated volume instead of rounding the dimensions before calculating."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "The actual dimensions of the box are $15.3\\text{ cm}$ by $11.8\\text{ cm}$ by $8.4\\text{ cm}$. Find the actual volume of the box.",
+      "final_answer": "$1516.536\\text{ cm}^3$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct product of actual dimensions"
+        }
+      ],
+      "solution": "$\\text{Actual volume} = 15.3\\text{ cm} \\times 11.8\\text{ cm} \\times 8.4\\text{ cm} = 1516.536\\text{ cm}^3$",
+      "ai_explanation": {
+        "concept_rule": "Volume of a rectangular prism is $V = l \\times w \\times h$.",
+        "step_by_step": [
+          "Multiply given exact dimensions: $15.3 \\times 11.8 \\times 8.4$.",
+          "Obtain $1516.536\\text{ cm}^3$."
+        ],
+        "common_pitfalls": "Rounding the result when the question asks for the exact/actual volume."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the absolute and percentage error in Terry's estimate.",
+      "final_answer": "$\\text{Absolute error} = 76.536\\text{ cm}^3, \\text{ Percentage error} \\approx 5.05\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Applying the absolute error formula $|V_A - V_E|$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct absolute error"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying the percentage error formula $\\frac{|V_A - V_E|}{V_E} \\times 100\\%$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct percentage error"
+        }
+      ],
+      "solution": "$\\text{Absolute error} = |V_A - V_E| = |1440 - 1516.536|\\text{ cm}^3 = |-76.536|\\text{ cm}^3 \\approx 76.536\\text{ cm}^3$\n$\\text{Percentage error} = \\frac{|V_A - V_E|}{V_E} \\times 100\\% = \\frac{76.536}{1516.536} \\times 100\\% \\approx 5.05\\%$",
+      "ai_explanation": {
+        "concept_rule": "Absolute error is $|V_A - V_E|$ where $V_A$ is the approximated value and $V_E$ is the exact value. Percentage error is $\\frac{|V_A - V_E|}{V_E} \\times 100\\%$.",
+        "step_by_step": [
+          "Calculate absolute difference: $|1440 - 1516.536| = 76.536\\text{ cm}^3$.",
+          "Divide by the exact value $1516.536$: $\\frac{76.536}{1516.536} \\approx 0.0504676$.",
+          "Multiply by $100\\%$ to get $\\approx 5.05\\%$."
+        ],
+        "common_pitfalls": "Dividing by the approximated value $V_A$ instead of the exact value $V_E$."
+      }
+    }
+  ]
+}

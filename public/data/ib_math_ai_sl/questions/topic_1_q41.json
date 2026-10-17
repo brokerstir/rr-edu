@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q41",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 41,
+  "question_text": "Anne places her retirement savings of £400 000 into an annuity fund which returns 4.9% p.a. interest compounded quarterly. She plans to make monthly withdrawals of £3000 from the fund.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "How long will her money last?",
+      "final_answer": "$193\\text{ months}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up TVM solver with quarterly compounding $C/Y = 4$ and monthly payments $P/Y = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine $N \\approx 192.5$ and interpret as 193 months (or 16 years and 1 month)"
+        }
+      ],
+      "solution": "$I\\% = 4.9$, $PV = -400\\,000$, $PMT = 3000$, $FV = 0$, $P/Y = 12$, $C/Y = 4$. $\\therefore N \\approx 192.5$. Anne's money will last for $193$ months, or $16$ years and $1$ month.",
+      "ai_explanation": {
+        "concept_rule": "Finding the number of payment periods in an annuity with different compounding and payment frequencies.",
+        "step_by_step": [
+          "Input $PV = -400000$, $PMT = 3000$, $FV = 0$, $I\\% = 4.9$, $P/Y = 12$, $C/Y = 4$.",
+          "Solve for $N \\approx 192.5$.",
+          "Round up to the nearest month for the funds to be fully depleted (193 months)."
+        ],
+        "common_pitfalls": "Confusing $P/Y$ and $C/Y$ when compounding frequency differs from payment frequency."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How much should she withdraw each month if she wants the money to last for 20 years?",
+      "final_answer": "$\\$2613.40$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Input $N = 240$, $PV = -400\\,000$, $FV = 0$, $I\\% = 4.9$, $P/Y = 12$, $C/Y = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for payment $PMT \\approx 2613.40$"
+        }
+      ],
+      "solution": "$N = 20 \\times 12 = 240$, $I\\% = 4.9$, $PV = -400\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 4$. $\\therefore PMT \\approx 2613.40$. Anne should withdraw $\\$2613.40$ each month.",
+      "ai_explanation": {
+        "concept_rule": "Computing regular withdrawal amount to deplete a capital over 20 years.",
+        "step_by_step": [
+          "Calculate total periods $N = 20 \\times 12 = 240$.",
+          "Enter parameters into financial calculator with $C/Y = 4$ and $P/Y = 12$.",
+          "Solve for $PMT$ to get $\\$2613.40$."
+        ],
+        "common_pitfalls": "Setting $C/Y = 12$ instead of the specified $C/Y = 4$."
+      }
+    }
+  ]
+}

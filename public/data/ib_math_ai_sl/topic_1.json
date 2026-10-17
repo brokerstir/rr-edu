@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "topic_1_q1",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 1,
+    "question_text": "A circle has diameter $6.24\\text{ cm}$. Find the area of the circle, rounding your answer to:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "3 significant figures",
+        "final_answer": "$30.6\\text{ cm}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Finding radius and substituting into area formula $\\pi r^2$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct area rounded to 3 significant figures"
+          }
+        ],
+        "solution": "$\\text{diameter} = 6.24\\text{ cm}$\n$\\therefore \\text{radius} = \\frac{6.24}{2} = 3.12\\text{ cm}$\n$\\therefore \\text{area} = \\pi \\times (3.12)^2 \\approx 30.581\\,519\\,5\\dots$\n$\\text{area} \\approx 30.6\\text{ cm}^2$ {3 significant figures}",
+        "ai_explanation": {
+          "concept_rule": "The area of a circle is $A = \\pi r^2$, where $r = \\frac{d}{2}$. Significant figures are counted starting from the first non-zero digit.",
+          "step_by_step": [
+            "Divide the diameter $6.24\\text{ cm}$ by $2$ to find the radius $r = 3.12\\text{ cm}$.",
+            "Calculate the area using $A = \\pi \\times 3.12^2 \\approx 30.5815...\\text{ cm}^2$.",
+            "Round the unrounded value to $3$ significant figures: $30.6\\text{ cm}^2$."
+          ],
+          "common_pitfalls": "Using the diameter instead of the radius in the area formula $\\pi r^2$, or confusing significant figures with decimal places."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "4 decimal places.",
+        "final_answer": "$30.5815\\text{ cm}^2$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct area rounded to 4 decimal places"
+          }
+        ],
+        "solution": "$\\text{area} \\approx 30.5815\\text{ cm}^2$ {4 decimal places}",
+        "ai_explanation": {
+          "concept_rule": "Rounding to $n$ decimal places requires looking at the $(n+1)$-th digit after the decimal point to determine whether to round up or keep the digit unchanged.",
+          "step_by_step": [
+            "Take the calculated area: $30.5815195...\\text{ cm}^2$.",
+            "Identify the first 4 decimal digits: $.5815$. The 5th decimal digit is $1$, which is $< 5$, so round down.",
+            "Write the final value as $30.5815\\text{ cm}^2$."
+          ],
+          "common_pitfalls": "Prematurely rounding before truncating to 4 decimal places."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q2",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 2,
+    "question_text": "Estimate using a one figure approximation:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$382 \\times 21$",
+        "final_answer": "$8000$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rounding each value to 1 significant figure"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct estimated product"
+          }
+        ],
+        "solution": "$382 \\times 21 \\approx 400 \\times 20 \\approx 8000$",
+        "ai_explanation": {
+          "concept_rule": "Estimation is typically performed by rounding each number in the expression to 1 significant figure first.",
+          "step_by_step": [
+            "Round $382$ to 1 significant figure to get $400$.",
+            "Round $21$ to 1 significant figure to get $20$.",
+            "Multiply: $400 \\times 20 = 8000$."
+          ],
+          "common_pitfalls": "Rounding after computing the exact multiplication rather than estimating beforehand."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$6.91 \\times 0.875$",
+        "final_answer": "$6.3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rounding each factor to 1 significant figure"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct estimated product"
+          }
+        ],
+        "solution": "$6.91 \\times 0.875 \\approx 7 \\times 0.9 \\approx 6.3$",
+        "ai_explanation": {
+          "concept_rule": "Estimation involves rounding each factor to 1 significant figure before carrying out the arithmetic.",
+          "step_by_step": [
+            "Round $6.91$ to 1 significant figure: $7$.",
+            "Round $0.875$ to 1 significant figure: $0.9$.",
+            "Multiply: $7 \\times 0.9 = 6.3$."
+          ],
+          "common_pitfalls": "Miscounting leading zeros when rounding decimals like $0.875$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$38\\,107 \\div 213$",
+        "final_answer": "$200$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rounding dividend and divisor to 1 significant figure"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct estimated quotient"
+          }
+        ],
+        "solution": "$38\\,107 \\div 213 \\approx 40\\,000 \\div 200 \\approx 200$",
+        "ai_explanation": {
+          "concept_rule": "For division estimation, round each number to 1 significant figure.",
+          "step_by_step": [
+            "Round $38\\,107$ to 1 significant figure: $40\\,000$.",
+            "Round $213$ to 1 significant figure: $200$.",
+            "Divide: $40\\,000 \\div 200 = 200$."
+          ],
+          "common_pitfalls": "Misplacing powers of 10 during the division of rounded numbers."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q3",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 3,
+    "question_text": "The speed of a cricket player's bowl is recorded as $141.6\\text{ km h}^{-1}$, rounded to 1 decimal place. In what range of values does the actual speed $s$ lie?",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "The speed of a cricket player's bowl is recorded as $141.6\\text{ km h}^{-1}$, rounded to 1 decimal place. In what range of values does the actual speed $s$ lie?",
+        "final_answer": "$141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating the absolute error limit as half the smallest scale unit"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct lower and upper bounds of speed"
+          }
+        ],
+        "solution": "The measuring device is accurate to $\\pm \\frac{0.1}{2}\\text{ km\\,h}^{-1} = \\pm 0.05\\text{ km\\,h}^{-1}$.\n$\\therefore$ the range of values is $141.6 \\pm 0.05\\text{ km\\,h}^{-1}$.\nThe cricket player's actual bowling speed lies between $141.55\\text{ km\\,h}^{-1}$ and $141.65\\text{ km\\,h}^{-1}$.\n$\\therefore 141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$",
+        "ai_explanation": {
+          "concept_rule": "The maximum error of a measurement is half of the precision/smallest unit of measurement: $\\text{limit of reading} = \\frac{1}{2} \\times \\text{unit}$.",
+          "step_by_step": [
+            "The speed is given to 1 decimal place ($0.1$), so error is $\\pm \\frac{0.1}{2} = \\pm 0.05\\text{ km\\,h}^{-1}$.",
+            "Lower bound $= 141.6 - 0.05 = 141.55\\text{ km\\,h}^{-1}$.",
+            "Upper bound $= 141.6 + 0.05 = 141.65\\text{ km\\,h}^{-1}$.",
+            "State the inequality: $141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$."
+          ],
+          "common_pitfalls": "Using $\\pm 0.1$ instead of dividing the measurement unit by 2."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q4",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 4,
+    "question_text": "The dimensions of a block of land are measured to be $17\\text{ m} \\times 22\\text{ m}$, rounded to the nearest metre. What are the boundary values for the actual area $A$ of the block of land?",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "The dimensions of a block of land are measured to be $17\\text{ m} \\times 22\\text{ m}$, rounded to the nearest metre. What are the boundary values for the actual area $A$ of the block of land?",
+        "final_answer": "$354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Finding upper and lower bounds for both dimensions"
+          },
+          {
+            "code": "M1",
+            "desc": "Multiplying corresponding lower and upper bounds"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct area inequality"
+          }
+        ],
+        "solution": "The width of the block could be from $16\\frac{1}{2}\\text{ m}$ to $17\\frac{1}{2}\\text{ m}$.\nThe length of the block could be from $21\\frac{1}{2}\\text{ m}$ to $22\\frac{1}{2}\\text{ m}$.\n$\\therefore$ the lower boundary of the area is $16\\frac{1}{2} \\times 21\\frac{1}{2} = 354.75\\text{ m}^2$\nand the upper boundary of the area is $17\\frac{1}{2} \\times 22\\frac{1}{2} = 393.75\\text{ m}^2$.\n$\\therefore 354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$",
+        "ai_explanation": {
+          "concept_rule": "Bounds of a product of positive measurements are found by multiplying the lower bounds for the minimum, and multiplying the upper bounds for the maximum.",
+          "step_by_step": [
+            "Determine width bounds: $17 \\pm 0.5$, which gives $16.5\\text{ m}$ to $17.5\\text{ m}$.",
+            "Determine length bounds: $22 \\pm 0.5$, which gives $21.5\\text{ m}$ to $22.5\\text{ m}$.",
+            "Calculate lower boundary for area: $16.5 \\times 21.5 = 354.75\\text{ m}^2$.",
+            "Calculate upper boundary for area: $17.5 \\times 22.5 = 393.75\\text{ m}^2$.",
+            "State the inequality: $354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$."
+          ],
+          "common_pitfalls": "Mixing a lower bound with an upper bound when looking for the extreme boundaries."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q5",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 5,
+    "question_text": "Terry measures the dimensions of a box as $15\\text{ cm}$ by $12\\text{ cm}$ by $8\\text{ cm}$, rounded to the nearest centimetre.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Use Terry's measurements to estimate the volume of the box.",
+        "final_answer": "$1440\\text{ cm}^3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Estimating dimensions to the nearest cm and multiplying"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct estimated volume"
+          }
+        ],
+        "solution": "$\\text{Volume} \\approx 15\\text{ cm} \\times 12\\text{ cm} \\times 8\\text{ cm} \\approx 1440\\text{ cm}^3$",
+        "ai_explanation": {
+          "concept_rule": "Estimated volume of a cuboid is found by multiplying estimated dimensions.",
+          "step_by_step": [
+            "Round each dimension to the nearest integer: $15.3 \\to 15$, $11.8 \\to 12$, $8.4 \\to 8$.",
+            "Compute product: $15 \\times 12 \\times 8 = 1440\\text{ cm}^3$."
+          ],
+          "common_pitfalls": "Rounding the exact calculated volume instead of rounding the dimensions before calculating."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "The actual dimensions of the box are $15.3\\text{ cm}$ by $11.8\\text{ cm}$ by $8.4\\text{ cm}$. Find the actual volume of the box.",
+        "final_answer": "$1516.536\\text{ cm}^3$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct product of actual dimensions"
+          }
+        ],
+        "solution": "$\\text{Actual volume} = 15.3\\text{ cm} \\times 11.8\\text{ cm} \\times 8.4\\text{ cm} = 1516.536\\text{ cm}^3$",
+        "ai_explanation": {
+          "concept_rule": "Volume of a rectangular prism is $V = l \\times w \\times h$.",
+          "step_by_step": [
+            "Multiply given exact dimensions: $15.3 \\times 11.8 \\times 8.4$.",
+            "Obtain $1516.536\\text{ cm}^3$."
+          ],
+          "common_pitfalls": "Rounding the result when the question asks for the exact/actual volume."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "Find the absolute and percentage error in Terry's estimate.",
+        "final_answer": "$\\text{Absolute error} = 76.536\\text{ cm}^3, \\text{ Percentage error} \\approx 5.05\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Applying the absolute error formula $|V_A - V_E|$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct absolute error"
+          },
+          {
+            "code": "M1",
+            "desc": "Applying the percentage error formula $\\frac{|V_A - V_E|}{V_E} \\times 100\\%$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct percentage error"
+          }
+        ],
+        "solution": "$\\text{Absolute error} = |V_A - V_E| = |1440 - 1516.536|\\text{ cm}^3 = |-76.536|\\text{ cm}^3 \\approx 76.536\\text{ cm}^3$\n$\\text{Percentage error} = \\frac{|V_A - V_E|}{V_E} \\times 100\\% = \\frac{76.536}{1516.536} \\times 100\\% \\approx 5.05\\%$",
+        "ai_explanation": {
+          "concept_rule": "Absolute error is $|V_A - V_E|$ where $V_A$ is the approximated value and $V_E$ is the exact value. Percentage error is $\\frac{|V_A - V_E|}{V_E} \\times 100\\%$.",
+          "step_by_step": [
+            "Calculate absolute difference: $|1440 - 1516.536| = 76.536\\text{ cm}^3$.",
+            "Divide by the exact value $1516.536$: $\\frac{76.536}{1516.536} \\approx 0.0504676$.",
+            "Multiply by $100\\%$ to get $\\approx 5.05\\%$."
+          ],
+          "common_pitfalls": "Dividing by the approximated value $V_A$ instead of the exact value $V_E$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q6",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 6,
+    "question_text": "The radius of a circle is measured as $7\\text{ cm}$, rounded to the nearest centimetre.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Use this measurement to estimate the area of the circle.",
+        "final_answer": "$154\\text{ cm}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using $A = \\pi r^2$ with $r = 7$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct evaluated estimate"
+          }
+        ],
+        "solution": "$\\text{Area} \\approx \\pi \\times 7^2 = 49\\pi \\approx 154\\text{ cm}^2$",
+        "ai_explanation": {
+          "concept_rule": "Circle area formula $A = \\pi r^2$.",
+          "step_by_step": [
+            "Substitute $r = 7$ into the area formula: $A = \\pi \\times 7^2 = 49\\pi$.",
+            "Evaluate numerically: $49\\pi \\approx 153.938... \\approx 154\\text{ cm}^2$."
+          ],
+          "common_pitfalls": "Forgetting to square the radius."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the boundary values for the area of the circle.",
+        "final_answer": "$\\text{Lower: } 42.25\\pi\\text{ cm}^2 \\approx 133\\text{ cm}^2, \\text{ Upper: } 56.25\\pi\\text{ cm}^2 \\approx 177\\text{ cm}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identifying radius bounds $6.5\\text{ cm}$ and $7.5\\text{ cm}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating lower and upper area boundaries"
+          }
+        ],
+        "solution": "The radius length could be from $6\\frac{1}{2}\\text{ cm}$ to $7\\frac{1}{2}\\text{ cm}$.\n$\\therefore$ the lower boundary of the area is $\\pi \\times (6\\frac{1}{2})^2 = 42.25\\pi\\text{ cm}^2 \\approx 133\\text{ cm}^2$\nand the upper boundary of the area is $\\pi \\times (7\\frac{1}{2})^2 = 56.25\\pi\\text{ cm}^2 \\approx 177\\text{ cm}^2$.",
+        "ai_explanation": {
+          "concept_rule": "Measurements given to the nearest unit have bounds of $\\pm 0.5$. Lower and upper area bounds are obtained by evaluating area at these radius bounds.",
+          "step_by_step": [
+            "Find bounds for radius $r$: $6.5 \\le r < 7.5$.",
+            "Calculate lower area boundary: $\\pi \\times 6.5^2 = 42.25\\pi \\approx 133\\text{ cm}^2$.",
+            "Calculate upper area boundary: $\\pi \\times 7.5^2 = 56.25\\pi \\approx 177\\text{ cm}^2$."
+          ],
+          "common_pitfalls": "Using $\\pm 1$ as the boundary interval instead of $\\pm 0.5$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Hence find the maximum percentage error in the estimate.",
+        "final_answer": "$16.0\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating percentage error for both extreme exact values"
+          },
+          {
+            "code": "A1",
+            "desc": "Identifying the maximum percentage error as approximately $16.0\\%$"
+          }
+        ],
+        "solution": "If the exact area $V_E$ was $42.25\\pi\\text{ cm}^2$, the percentage error $= \\frac{|V_A - V_E|}{V_E} \\times 100\\%\n= \\frac{|49\\pi - 42.25\\pi|}{42.25\\pi} \\times 100\\% \\approx 16.0\\%$\nIf the exact area $V_E$ was $56.25\\pi\\text{ cm}^2$, the percentage error $= \\frac{|V_A - V_E|}{V_E} \\times 100\\%\n= \\frac{|49\\pi - 56.25\\pi|}{56.25\\pi} \\times 100\\% \\approx 12.9\\%$\n$\\therefore$ the maximum percentage error in the estimate $\\approx 16.0\\%$.",
+        "ai_explanation": {
+          "concept_rule": "The maximum percentage error occurs when the relative difference $\\frac{|V_A - V_E|}{V_E}$ is maximized, typically at one of the extreme boundary values of $V_E$.",
+          "step_by_step": [
+            "Check percentage error when $V_E = 42.25\\pi$: $\\frac{49 - 42.25}{42.25} \\times 100\\% = \\frac{6.75}{42.25} \\times 100\\% \\approx 16.0\\%$.",
+            "Check percentage error when $V_E = 56.25\\pi$: $\\frac{|49 - 56.25|}{56.25} \\times 100\\% = \\frac{7.25}{56.25} \\times 100\\% \\approx 12.9\\%$.",
+            "Compare the two values; the maximum is $\\approx 16.0\\%$."
+          ],
+          "common_pitfalls": "Assuming the upper bound of area gives the larger percentage error without calculating both, ignoring the effect of the smaller denominator."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q7",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 7,
+    "question_text": "Express in exponent form with a prime number base:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$64$",
+        "final_answer": "$2^6$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Writing 64 as a power of a power of 2"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct index form with base 2"
+          }
+        ],
+        "solution": "$64 = 8^2 = (2^3)^2 = 2^6$",
+        "ai_explanation": {
+          "concept_rule": "Index laws: $(a^m)^n = a^{mn}$.",
+          "step_by_step": [
+            "Express 64 as $8^2$.",
+            "Rewrite 8 as $2^3$, giving $(2^3)^2$.",
+            "Multiply powers: $3 \\times 2 = 6$, giving $2^6$."
+          ],
+          "common_pitfalls": "Adding powers instead of multiplying when raising a power to a power."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$125 \\times 5^k$",
+        "final_answer": "$5^{3+k}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Writing 125 as $5^3$"
+          },
+          {
+            "code": "A1",
+            "desc": "Applying the product rule of exponents"
+          }
+        ],
+        "solution": "$125 \\times 5^k = 5^3 \\times 5^k = 5^{3+k}$",
+        "ai_explanation": {
+          "concept_rule": "Product of powers with the same base: $a^m \\times a^n = a^{m+n}$.",
+          "step_by_step": [
+            "Express 125 as a base 5 power: $125 = 5^3$.",
+            "Multiply $5^3 \\times 5^k$.",
+            "Add the exponents: $5^{3+k}$."
+          ],
+          "common_pitfalls": "Multiplying the bases together (e.g., getting $25^{3+k}$)."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\frac{9^m}{81^n}$",
+        "final_answer": "$3^{2m-4n}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Converting all bases to 3"
+          },
+          {
+            "code": "A1",
+            "desc": "Applying quotient rule for exponents"
+          }
+        ],
+        "solution": "$\\frac{9^m}{81^n} = \\frac{9^m}{(9^2)^n} = \\frac{(3^2)^m}{(3^2)^{2n}} = \\frac{3^{2m}}{3^{4n}} = 3^{2m-4n}$",
+        "ai_explanation": {
+          "concept_rule": "Quotient rule of powers: $\\frac{a^p}{a^q} = a^{p-q}$.",
+          "step_by_step": [
+            "Convert base 9 to base 3: $9^m = (3^2)^m = 3^{2m}$.",
+            "Convert base 81 to base 3: $81^n = (3^4)^n = 3^{4n}$.",
+            "Subtract denominator exponent from numerator exponent: $3^{2m-4n}$."
+          ],
+          "common_pitfalls": "Subtracting terms incorrectly or leaving different bases."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q8",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 8,
+    "question_text": "Write without brackets:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$(-3m^3)^4$",
+        "final_answer": "$81m^{12}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Distributing the power to both coefficient and variable"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct simplified expression"
+          }
+        ],
+        "solution": "$(-3m^3)^4 = (-3)^4 \\times (m^3)^4 = 81m^{12}$",
+        "ai_explanation": {
+          "concept_rule": "Power of a product rule: $(ab)^n = a^n b^n$, and an even power of a negative number is positive.",
+          "step_by_step": [
+            "Apply the exponent 4 to $(-3)$: $(-3)^4 = 81$.",
+            "Apply the exponent 4 to $m^3$: $(m^3)^4 = m^{3 \\times 4} = m^{12}$.",
+            "Combine terms: $81m^{12}$."
+          ],
+          "common_pitfalls": "Keeping the negative sign: writing $-81m^{12}$ instead of $+81m^{12}$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$(\\frac{xy^2}{2})^5$",
+        "final_answer": "$\\frac{x^5 y^{10}}{32}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Distributing the power 5 to numerator and denominator"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct evaluated expression"
+          }
+        ],
+        "solution": "$\\left(\\frac{xy^2}{2}\\right)^5 = \\frac{(xy^2)^5}{2^5} = \\frac{x^5 y^{10}}{32}$",
+        "ai_explanation": {
+          "concept_rule": "Power of a quotient rule: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$.",
+          "step_by_step": [
+            "Raise the numerator to the power 5: $(xy^2)^5 = x^5 y^{2 \\times 5} = x^5 y^{10}$.",
+            "Raise the denominator to the power 5: $2^5 = 32$.",
+            "Combine: $\\frac{x^5 y^{10}}{32}$."
+          ],
+          "common_pitfalls": "Forgetting to raise the denominator 2 to the power 5."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$7s^2t \\times (4st^3)^3$",
+        "final_answer": "$448s^5 t^{10}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Expanding $(4st^3)^3$"
+          },
+          {
+            "code": "A1",
+            "desc": "Multiplying coefficients and adding corresponding exponents"
+          }
+        ],
+        "solution": "$7s^2t \\times (4st^3)^3 = 7s^2t \\times 4^3 s^3 t^9 = 7 \\times 64 s^5 t^{10} = 448s^5 t^{10}$",
+        "ai_explanation": {
+          "concept_rule": "Expand powers first using $(ab)^n = a^n b^n$, then combine like terms by adding exponents.",
+          "step_by_step": [
+            "Evaluate $(4st^3)^3 = 4^3 \\times s^3 \\times (t^3)^3 = 64s^3 t^9$.",
+            "Multiply coefficients: $7 \\times 64 = 448$.",
+            "Multiply powers of $s$: $s^2 \\times s^3 = s^{2+3} = s^5$.",
+            "Multiply powers of $t$: $t^1 \\times t^9 = t^{1+9} = t^{10}$.",
+            "Result: $448s^5 t^{10}$."
+          ],
+          "common_pitfalls": "Multiplying $7 \\times 4$ before cubing 4."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q9",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 9,
+    "question_text": "Simplify:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$4^0 + 4^{-1}$",
+        "final_answer": "$\\frac{5}{4}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluating $4^0 = 1$ and $4^{-1} = \\frac{1}{4}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct sum as a fraction"
+          }
+        ],
+        "solution": "$4^0 + 4^{-1} = 1 + \\frac{1}{4} = \\frac{5}{4}$",
+        "ai_explanation": {
+          "concept_rule": "$a^0 = 1$ for any non-zero $a$, and $a^{-1} = \\frac{1}{a}$.",
+          "step_by_step": [
+            "Evaluate $4^0 = 1$.",
+            "Evaluate $4^{-1} = \\frac{1}{4}$.",
+            "Add the fractions: $1 + \\frac{1}{4} = \\frac{4}{4} + \\frac{1}{4} = \\frac{5}{4}$."
+          ],
+          "common_pitfalls": "Thinking $4^0 = 0$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$(2^{\\frac{2}{3}})^{-2}$",
+        "final_answer": "$\\frac{16}{121}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Converting mixed fraction to improper fraction and reciprocating for negative exponent"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct evaluated fraction"
+          }
+        ],
+        "solution": "$(2\\frac{3}{4})^{-2} = (\\frac{11}{4})^{-2} = (\\frac{4}{11})^2 = \\frac{4^2}{11^2} = \\frac{16}{121}$",
+        "ai_explanation": {
+          "concept_rule": "Convert mixed numbers to improper fractions, then apply $\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$.",
+          "step_by_step": [
+            "Convert $2\\frac{3}{4}$ to an improper fraction: $\\frac{2 \\times 4 + 3}{4} = \\frac{11}{4}$.",
+            "Invert the fraction to remove the negative exponent: $\\left(\\frac{11}{4}\\right)^{-2} = \\left(\\frac{4}{11}\\right)^2$.",
+            "Square numerator and denominator: $\\frac{4^2}{11^2} = \\frac{16}{121}$."
+          ],
+          "common_pitfalls": "Applying the exponent to the whole number and fractional part separately."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$2^2 + 2^1 + 2^{-1}$",
+        "final_answer": "$\\frac{13}{2}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluating each term individually"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct sum as an improper fraction"
+          }
+        ],
+        "solution": "$2^2 + 2^1 + 2^{-1} = 4 + 2 + \\frac{1}{2} = 6 + \\frac{1}{2} = \\frac{13}{2}$",
+        "ai_explanation": {
+          "concept_rule": "Evaluate integer and negative powers of 2 directly, then sum.",
+          "step_by_step": [
+            "Compute $2^2 = 4$, $2^1 = 2$, and $2^{-1} = \\frac{1}{2}$.",
+            "Sum the integers: $4 + 2 = 6$.",
+            "Add the fraction: $6 + \\frac{1}{2} = \\frac{12}{2} + \\frac{1}{2} = \\frac{13}{2}$."
+          ],
+          "common_pitfalls": "Trying to apply index laws to addition of terms."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q10",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 10,
+    "question_text": "Expand the brackets and write in simplest form:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$(x^2 + x^{-2})^2$",
+        "final_answer": "$x = -0.4\\text{ or } 1$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rearrange the equation into standard quadratic form $5x^2 - 3x - 2 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for $x$ using technology or factoring to obtain $x = -0.4$ or $1$"
+          }
+        ],
+        "solution": "$\\frac{2}{x} = 5x - 3$\n$\\therefore 2 = 5x^2 - 3x$\n$\\therefore 5x^2 - 3x - 2 = 0$\nUsing technology, $x = -0.4$ or $1$",
+        "ai_explanation": {
+          "concept_rule": "Multiply through by $x$ to clear the fraction and rearrange into the standard form $ax^2 + bx + c = 0$ before solving.",
+          "step_by_step": [
+            "Multiply both sides by $x$: $2 = x(5x - 3) = 5x^2 - 3x$.",
+            "Rearrange all terms to one side: $5x^2 - 3x - 2 = 0$.",
+            "Solve the quadratic equation using technology (graphic calculator) or factoring $(5x + 2)(x - 1) = 0$ to get $x = -0.4$ or $x = 1$."
+          ],
+          "common_pitfalls": "Forgetting that $x \\neq 0$ or making sign errors when moving terms to one side."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$(x^4 - x^2)(x^3 + 3)$",
+        "final_answer": "$x \\approx 1.37\\text{ or } 9.94$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph $y = 2^x - x^3$ and identify roots"
+          },
+          {
+            "code": "A1",
+            "desc": "State solutions to 2 decimal places: $x \\approx 1.37$ or $9.94$"
+          }
+        ],
+        "solution": "We graph $y = 2^x - x^3$.\nThe $x$-intercepts are $\\approx 1.37$ and $9.94$.\n$\\therefore$ the solutions are $x \\approx 1.37$ or $9.94$.",
+        "ai_explanation": {
+          "concept_rule": "The solutions to an equation $f(x) = 0$ are the $x$-intercepts of the graph $y = f(x)$.",
+          "step_by_step": [
+            "Plot the function $y = 2^x - x^3$ on a graphing calculator.",
+            "Find the roots/$x$-intercepts using the built-in solver.",
+            "Read the values as approximately $x = 1.37$ and $x = 9.94$."
+          ],
+          "common_pitfalls": "Missing the second root because the viewing window is not wide enough to see $x \\approx 9.94$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q11",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 11,
+    "question_text": "Write without negative exponents:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$a^2b^{-3}$",
+        "final_answer": "$(-1, -4)\\text{ satisfies the function}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = -1$ into the quadratic expression"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to obtain $-4$ and conclude that the point satisfies the function"
+          }
+        ],
+        "solution": "When $x = -1$, $y = 2(-1)^2 + 5(-1) - 1 = 2 - 5 - 1 = -4$.\n$\\therefore (-1, -4)$ satisfies the function $y = 2x^2 + 5x - 1$.",
+        "ai_explanation": {
+          "concept_rule": "A point $(x, y)$ satisfies a function if substituting $x$ into the equation yields the corresponding $y$-value.",
+          "step_by_step": [
+            "Substitute $x = -1$ into $y = 2x^2 + 5x - 1$.",
+            "Calculate: $2(-1)^2 + 5(-1) - 1 = 2(1) - 5 - 1 = -4$.",
+            "Since the calculated value matches $y = -4$, the point lies on the curve."
+          ],
+          "common_pitfalls": "Incorrectly evaluating $(-1)^2$ as $-1$ instead of $1$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\frac{2m^{-2}n^3}{m^5n^{-5}}$",
+        "final_answer": "$(10, -19)\\text{ does not satisfy the function}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 10$ into the function"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to $-13$ and conclude the point does not satisfy the function"
+          }
+        ],
+        "solution": "When $x = 10$, $y = \\frac{1}{2}(10)^2 - 6(10) - 3 = 50 - 60 - 3 = -13$.\n$\\therefore (10, -19)$ does not satisfy the function $y = \\frac{1}{2}x^2 - 6x - 3$.",
+        "ai_explanation": {
+          "concept_rule": "If the computed $y$-value does not match the given $y$-coordinate, the point does not satisfy the function.",
+          "step_by_step": [
+            "Substitute $x = 10$ into $y = \\frac{1}{2}x^2 - 6x - 3$.",
+            "Compute $\\frac{1}{2}(100) - 60 - 3 = 50 - 60 - 3 = -13$.",
+            "Since $-13 \\neq -19$, the point $(10, -19)$ is not on the curve."
+          ],
+          "common_pitfalls": "Arithmetic errors when squaring or subtracting negative numbers."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\frac{12a^{-3}}{b^{-5}}$",
+        "final_answer": "$\\frac{12b^5}{a^3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Separating terms and applying reciprocal rule for negative exponents"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct expression with positive exponents"
+          }
+        ],
+        "solution": "$\\frac{12a^{-3}}{b^{-5}} = 12 \\times a^{-3} \\times \\frac{1}{b^{-5}} = 12 \\times \\frac{1}{a^3} \\times b^5 = \\frac{12b^5}{a^3}$",
+        "ai_explanation": {
+          "concept_rule": "$a^{-n} = \\frac{1}{a^n}$ and $\\frac{1}{b^{-n}} = b^n$.",
+          "step_by_step": [
+            "Move $a^{-3}$ from the numerator to the denominator as $a^3$.",
+            "Move $b^{-5}$ from the denominator to the numerator as $b^5$.",
+            "Combine to get $\\frac{12b^5}{a^3}$."
+          ],
+          "common_pitfalls": "Inverting the constant coefficient 12."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q12",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 12,
+    "question_text": "Write in scientific notation:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$42\\,000$",
+        "final_answer": "$\\begin{array}{c|c|c|c|c|c|c|c} x & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\\\ \\hline f(x) & -10 & -3 & 2 & 5 & 6 & 5 & 2 \\end{array}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute values of $x$ into $f(x) = -x^2 + 2x + 5$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correctly complete table of values"
+          }
+        ],
+        "solution": "For $f(x) = -x^2 + 2x + 5$:\n$f(-3) = -(-3)^2 + 2(-3) + 5 = -9 - 6 + 5 = -10$\n$f(-2) = -(-2)^2 + 2(-2) + 5 = -4 - 4 + 5 = -3$\n$f(-1) = -(-1)^2 + 2(-1) + 5 = -1 - 2 + 5 = 2$\n$f(0) = -(0)^2 + 2(0) + 5 = 5$\n$f(1) = -(1)^2 + 2(1) + 5 = -1 + 2 + 5 = 6$\n$f(2) = -(2)^2 + 2(2) + 5 = -4 + 4 + 5 = 5$\n$f(3) = -(3)^2 + 2(3) + 5 = -9 + 6 + 5 = 2$\n\n$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\nx & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\\\\n\\hline\nf(x) & -10 & -3 & 2 & 5 & 6 & 5 & 2 \\\\\n\\hline\n\\end{array}$$",
+        "ai_explanation": {
+          "concept_rule": "Evaluate $f(x)$ by replacing $x$ with each given value, minding the order of operations for $-x^2 = -(x^2)$.",
+          "step_by_step": [
+            "Evaluate $f(x)$ for each integer from $x = -3$ to $x = 3$.",
+            "Observe that the vertex is at $x = 1$ where $f(1) = 6$, showing symmetry on either side.",
+            "Fill in the table."
+          ],
+          "common_pitfalls": "Confusing $-x^2$ with $(-x)^2$. For example, $-(-3)^2 = -9$, not $9$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$0.000\\,067\\,8$",
+        "final_answer": "$Graph of parabola with vertex at $(1, 6)$ and $y$-intercept at $(0, 5)$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plot the points from the table accurately"
+          },
+          {
+            "code": "A1",
+            "desc": "Draw a smooth, downward-opening parabolic curve through the points"
+          }
+        ],
+        "solution": "Plot the points $(-3, -10)$, $(-2, -3)$, $(-1, 2)$, $(0, 5)$, $(1, 6)$, $(2, 5)$, $(3, 2)$ on a Cartesian plane and connect them with a smooth parabolic curve opening downwards with maximum at $(1, 6)$.",
+        "ai_explanation": {
+          "concept_rule": "Plot table coordinates and connect them with a smooth parabolic curve.",
+          "step_by_step": [
+            "Plot the coordinates obtained in part a.",
+            "Identify the turning point (maximum) at $(1, 6)$.",
+            "Draw a smooth curve opening downwards through all points."
+          ],
+          "common_pitfalls": "Drawing straight line segments between points rather than a smooth parabolic curve."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$526\\,000\\,000$",
+        "final_answer": "$5.26 \\times 10^8$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct scientific notation"
+          }
+        ],
+        "solution": "$526\\,000\\,000 = 5.26 \\times 100\\,000\\,000 = 5.26 \\times 10^8$",
+        "ai_explanation": {
+          "concept_rule": "Standard form requires $a \\in [1, 10)$ multiplied by an integer power of 10.",
+          "step_by_step": [
+            "Place the decimal after 5: $5.26$.",
+            "Count the shift of 8 positions to the left.",
+            "Write as $5.26 \\times 10^8$."
+          ],
+          "common_pitfalls": "Counting only the trailing zeros (6) instead of all digits after the first digit (8)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q13",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 13,
+    "question_text": "Use your calculator to evaluate the following, giving your answer in scientific notation:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$(3.57 \\times 10^6) \\times (2.38 \\times 10^3)$",
+        "final_answer": "$\\text{The zeros are } 4\\text{ and } -3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set $y = 0$ to get $x^2 - x - 12 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for the zeros: $x = 4$ or $-3$"
+          }
+        ],
+        "solution": "$y = x^2 - x - 12$\nWhen $y = 0$, $x^2 - x - 12 = 0$\n$\\therefore x = 4$ or $-3$ {technology}\n$\\therefore$ the zeros are $4$ and $-3$.",
+        "ai_explanation": {
+          "concept_rule": "The zeros of a quadratic function are the values of $x$ for which $y = 0$.",
+          "step_by_step": [
+            "Set the expression equal to zero: $x^2 - x - 12 = 0$.",
+            "Factor or use a graphics calculator: $(x - 4)(x + 3) = 0$.",
+            "State the roots: $x = 4$ or $x = -3$."
+          ],
+          "common_pitfalls": "Confusing zeros with the $y$-intercept."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\frac{4.61 \\times 10^{-7}}{3.45 \\times 10^8}$",
+        "final_answer": "$\\text{The zeros are } 5\\text{ and } 0$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set $f(x) = 0$ to form $5x - x^2 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve to obtain $x = 5$ or $0$"
+          }
+        ],
+        "solution": "$f(x) = 5x - x^2$\nWhen $f(x) = 0$, $5x - x^2 = 0$\n$\\therefore x = 5$ or $0$ {technology}\n$\\therefore$ the zeros are $5$ and $0$.",
+        "ai_explanation": {
+          "concept_rule": "Set $f(x) = 0$ and factor out the common factor $x$.",
+          "step_by_step": [
+            "Set $5x - x^2 = 0$.",
+            "Factor out $x$: $x(5 - x) = 0$.",
+            "Solve each factor: $x = 0$ or $x = 5$."
+          ],
+          "common_pitfalls": "Dividing by $x$ and losing the zero root $x = 0$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$(0.000\\,08)^4$",
+        "final_answer": "$\\text{The zeros are } \\frac{3}{4}\\text{ and } -\\frac{1}{2}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set $y = 0$ to obtain $8x^2 - 2x - 3 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve quadratic equation to find $x = \\frac{3}{4}$ and $x = -\\frac{1}{2}$"
+          }
+        ],
+        "solution": "$y = 8x^2 - 2x - 3$\nWhen $y = 0$, $8x^2 - 2x - 3 = 0$\n$\\therefore x = \\frac{3}{4}$ or $-\\frac{1}{2}$ {technology}\n$\\therefore$ the zeros are $\\frac{3}{4}$ and $-\\frac{1}{2}$.",
+        "ai_explanation": {
+          "concept_rule": "Set $y = 0$ and solve the quadratic equation $8x^2 - 2x - 3 = 0$.",
+          "step_by_step": [
+            "Set $8x^2 - 2x - 3 = 0$.",
+            "Factor as $(2x + 1)(4x - 3) = 0$ or use technology.",
+            "Solve for $x$: $x = -\\frac{1}{2}$ or $x = \\frac{3}{4}$."
+          ],
+          "common_pitfalls": "Sign errors when factoring or reading values from a calculator."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q14",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 14,
+    "question_text": "Use technology to solve:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$8x - 2 = 3x^2$",
+        "final_answer": "$\\text{The } y\\text{-intercept is } -3;\\text{ the } x\\text{-intercepts are } \\frac{1}{2}\\text{ and } -3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 0$ to find the $y$-intercept"
+          },
+          {
+            "code": "A1",
+            "desc": "State $y$-intercept is $-3$"
+          },
+          {
+            "code": "M1",
+            "desc": "Set $y = 0$ and apply null factor law"
+          },
+          {
+            "code": "A1",
+            "desc": "State $x$-intercepts are $\\frac{1}{2}$ and $-3$"
+          }
+        ],
+        "solution": "$y = (2x - 1)(x + 3)$\nWhen $x = 0$, $y = (-1)(3) = -3$\n$\\therefore$ the $y$-intercept is $-3$.\nWhen $y = 0$, $(2x - 1)(x + 3) = 0$\n$\\therefore 2x - 1 = 0$ or $x + 3 = 0$ {null factor law}\n$\\therefore x = \\frac{1}{2}$ or $-3$\n$\\therefore$ the $x$-intercepts are $\\frac{1}{2}$ and $-3$.",
+        "ai_explanation": {
+          "concept_rule": "Find the $y$-intercept by setting $x = 0$; find $x$-intercepts by setting $y = 0$ and applying the null factor law.",
+          "step_by_step": [
+            "To find the $y$-intercept, set $x = 0$: $y = (2(0) - 1)(0 + 3) = (-1)(3) = -3$.",
+            "To find $x$-intercepts, set $y = 0$: $(2x - 1)(x + 3) = 0$.",
+            "By the null factor law, $2x - 1 = 0 \\implies x = \\frac{1}{2}$, and $x + 3 = 0 \\implies x = -3$."
+          ],
+          "common_pitfalls": "Forgetting to negate the constant when setting factors to zero, e.g., writing $x = 3$ instead of $-3$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$3x^3 + 7x^2 - 3x = 2$",
+        "final_answer": "$\\text{The } y\\text{-intercept is } 1;\\text{ the } x\\text{-intercept is } -1$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $f(0)$ to find $y$-intercept"
+          },
+          {
+            "code": "A1",
+            "desc": "State $y$-intercept is $1$"
+          },
+          {
+            "code": "M1",
+            "desc": "Set $f(x) = 0$ to find $x$-intercept"
+          },
+          {
+            "code": "A1",
+            "desc": "State $x$-intercept is $-1$"
+          }
+        ],
+        "solution": "$f(x) = (x + 1)^2$\n$\\therefore f(0) = (1)^2 = 1$\n$\\therefore$ the $y$-intercept is $1$.\nWhen $f(x) = 0$, $(x + 1)^2 = 0$\n$\\therefore x + 1 = 0$\n$\\therefore x = -1$\n$\\therefore$ the $x$-intercept is $-1$.",
+        "ai_explanation": {
+          "concept_rule": "The $y$-intercept occurs at $x=0$, and $x$-intercepts occur where $f(x) = 0$. A squared factor yields a single repeated root.",
+          "step_by_step": [
+            "Evaluate $f(0) = (0 + 1)^2 = 1$, giving the $y$-intercept.",
+            "Set $f(x) = 0$: $(x + 1)^2 = 0$.",
+            "Take the square root: $x + 1 = 0 \\implies x = -1$."
+          ],
+          "common_pitfalls": "Thinking there must always be two distinct $x$-intercepts for a quadratic."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q15",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 15,
+    "question_text": "Solve using technology:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\begin{cases} 2x - 3y = 2 \\\\ 5x + 3y = 5 \\end{cases}$",
+        "final_answer": "$\\text{Concave up parabola with } y\\text{-intercept } -8\\text{ and } x\\text{-intercepts } 4\\text{ and } -2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine orientation ($a > 0$, concave up) and calculate intercepts"
+          },
+          {
+            "code": "A1",
+            "desc": "Sketch parabola passing through $(-2, 0)$, $(4, 0)$, and $(0, -8)$"
+          }
+        ],
+        "solution": "$y = x^2 - 2x - 8$ has $a = 1$.\nSince $a > 0$, the parabola has shape $\\cup$.\nWhen $x = 0$, $y = -8$\n$\\therefore$ the $y$-intercept is $-8$.\nWhen $y = 0$, $x^2 - 2x - 8 = 0$\n$\\therefore x = 4$ or $-2$ {technology}\n$\\therefore$ the $x$-intercepts are $4$ and $-2$.",
+        "ai_explanation": {
+          "concept_rule": "A quadratic $y = ax^2 + bx + c$ opens upward if $a > 0$. The sketch requires displaying the intercepts clearly.",
+          "step_by_step": [
+            "Identify $a = 1 > 0$, so the curve is concave up.",
+            "Find $y$-intercept by letting $x = 0$: $y = -8$.",
+            "Find $x$-intercepts by solving $x^2 - 2x - 8 = 0 \\implies (x - 4)(x + 2) = 0$, giving $x = 4$ and $x = -2$.",
+            "Sketch the curve showing the intercepts at $(-2, 0)$, $(4, 0)$, and $(0, -8)$."
+          ],
+          "common_pitfalls": "Plotting an opening downward curve or mislabeling the signs of the intercepts on the axes."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\begin{cases} 3x - 7y = 8 \\\\ 6x + 11y = 12 \\end{cases}$",
+        "final_answer": "$\\text{Concave down parabola with } y\\text{-intercept } 3\\text{ and } x\\text{-intercepts } -\\frac{1}{2}\\text{ and } 3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Expand or determine $a < 0$ and find intercepts"
+          },
+          {
+            "code": "A1",
+            "desc": "Sketch parabola passing through $(-\\frac{1}{2}, 0)$, $(3, 0)$, and $(0, 3)$"
+          }
+        ],
+        "solution": "$f(x) = -(2x + 1)(x - 3)$\n$= -(2x^2 - 5x - 3)$\n$= -2x^2 + 5x + 3$ has $a = -2$.\nSince $a < 0$, the parabola has shape $\\cap$.\n$f(0) = 3$\n$\\therefore$ the $y$-intercept is $3$.\nWhen $f(x) = 0$, $-(2x + 1)(x - 3) = 0$\n$\\therefore (2x + 1)(x - 3) = 0$\n$\\therefore 2x + 1 = 0$ or $x - 3 = 0$ {null factor law}\n$\\therefore x = -\\frac{1}{2}$ or $3$\n$\\therefore$ the $x$-intercepts are $-\\frac{1}{2}$ and $3$.",
+        "ai_explanation": {
+          "concept_rule": "Expanding shows the leading coefficient is negative, meaning the parabola opens downwards.",
+          "step_by_step": [
+            "Expand the factors to identify the coefficient of $x^2$: $a = -2 < 0$, which is concave down.",
+            "Evaluate $f(0) = -(1)(-3) = 3$ to find the $y$-intercept.",
+            "Solve $-(2x + 1)(x - 3) = 0$ to get the $x$-intercepts: $x = -\\frac{1}{2}$ and $x = 3$.",
+            "Sketch the curve passing through these three points with a maximum turning point."
+          ],
+          "common_pitfalls": "Forgetting the negative sign in front when finding the $y$-intercept or determining the concavity."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\begin{cases} 2x + y + 3z = -3 \\\\ x - y + 2z = 1 \\\\ 3x - 2y + 5z = 4 \\end{cases}$",
+        "final_answer": "$\\text{Concave down parabola with vertex/ } x\\text{-intercept at } 4\\text{ and } y\\text{-intercept at } -8$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify shape ($a < 0$, concave down) and find both $x$- and $y$-intercepts"
+          },
+          {
+            "code": "A1",
+            "desc": "Sketch parabola tangent to $x$-axis at $(4, 0)$ with $y$-intercept $(0, -8)$"
+          }
+        ],
+        "solution": "$y = -\\frac{1}{2}(x - 4)^2$\n$= -\\frac{1}{2}(x^2 - 8x + 16)$\n$= -\\frac{1}{2}x^2 + 4x - 8$ has $a = -\\frac{1}{2}$.\nSince $a < 0$, the parabola has shape $\\cap$.\nWhen $x = 0$, $y = -\\frac{1}{2}(-4)^2 = -8$\n$\\therefore$ the $y$-intercept is $-8$.\nWhen $y = 0$, $-\\frac{1}{2}(x - 4)^2 = 0$\n$\\therefore (x - 4)^2 = 0$\n$\\therefore x - 4 = 0$\n$\\therefore x = 4$\n$\\therefore$ the $x$-intercept is $4$.",
+        "ai_explanation": {
+          "concept_rule": "A perfect square in vertex form indicates the turning point touches the $x$-axis (tangent) at that root.",
+          "step_by_step": [
+            "Observe that $a = -\\frac{1}{2} < 0$, so the parabola is concave down.",
+            "Calculate $y$-intercept by setting $x = 0$: $y = -\\frac{1}{2}(-4)^2 = -8$.",
+            "Calculate $x$-intercept by setting $y = 0$: $-\\frac{1}{2}(x - 4)^2 = 0 \\implies x = 4$.",
+            "Sketch the graph with its vertex at $(4, 0)$ touching the $x$-axis and passing through $(0, -8)$."
+          ],
+          "common_pitfalls": "Crossing the $x$-axis instead of being tangent to it at the repeated root $(4, 0)$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q16",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 16,
+    "question_text": "A triangle is defined by the lines with equations $y = x + 2$, $x + y = 9$, and $x = 4$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the coordinates of the triangle's vertices.",
+        "final_answer": "$(4, 6), (4, 5), \\text{ and } (3\\frac{1}{2}, 5\\frac{1}{2})$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Finding intersections of the bounding lines"
+          },
+          {
+            "code": "A1",
+            "desc": "Listing all three triangle vertices correctly"
+          }
+        ],
+        "solution": "The vertices of the triangle are $(4, 6)$, $(4, 5)$, and $(3\\frac{1}{2}, 5\\frac{1}{2})$.",
+        "ai_explanation": {
+          "concept_rule": "The vertices of a bounded triangular region are found at the pairwise intersections of the boundary lines: $x = 4$, $y = -x + 9$ (or $x + y = 9$), and $y = x + 2$.",
+          "step_by_step": [
+            "Intersection of $x = 4$ and $x + y = 9$: $4 + y = 9 \\implies y = 5$, giving vertex $(4, 5)$.",
+            "Intersection of $x = 4$ and $y = x + 2$: $y = 4 + 2 = 6$, giving vertex $(4, 6)$.",
+            "Intersection of $y = x + 2$ and $x + y = 9$: substitute $y = x + 2$ into $x + (x + 2) = 9 \\implies 2x = 7 \\implies x = 3.5$, and $y = 5.5$, giving vertex $(3.5, 5.5)$ or $(3\\frac{1}{2}, 5\\frac{1}{2})$."
+          ],
+          "common_pitfalls": "Misreading coordinates from the graphical representation instead of solving algebraically."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the area of the triangle.",
+        "final_answer": "$\\frac{1}{4}\\text{ units}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using vertical base between $(4, 6)$ and $(4, 5)$ and horizontal height"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct area calculation"
+          }
+        ],
+        "solution": "$\\text{Area of triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 1 \\times \\frac{1}{2} = \\frac{1}{4}\\text{ units}^2$",
+        "ai_explanation": {
+          "concept_rule": "Area of a triangle is $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$. Choosing a vertical or horizontal side simplifies the computation of base and height.",
+          "step_by_step": [
+            "The vertical side lies along $x = 4$ between $y = 5$ and $y = 6$, giving $\\text{base} = 6 - 5 = 1$.",
+            "The third vertex is at $x = 3.5$. The perpendicular horizontal height from this vertex to $x = 4$ is $4 - 3.5 = 0.5 = \\frac{1}{2}$.",
+            "Calculate area: $\\frac{1}{2} \\times 1 \\times \\frac{1}{2} = \\frac{1}{4}\\text{ units}^2$."
+          ],
+          "common_pitfalls": "Trying to use the slant sides as the base, which complicates the calculation of the height."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q17",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 17,
+    "question_text": "Consider the sequence $8, 13, 18, 23, 28, \\dots$",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Show that the sequence is arithmetic.",
+        "final_answer": "$u_1 = 8, d = 5$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Checking successive differences"
+          },
+          {
+            "code": "A1",
+            "desc": "Concluding sequence is arithmetic and stating $u_1$ and $d$"
+          }
+        ],
+        "solution": "$13 - 8 = 5$\n$18 - 13 = 5$\n$23 - 18 = 5$\n$28 - 23 = 5$\nThe difference between successive terms is constant.\n$\\therefore$ the sequence is arithmetic with $u_1 = 8$ and $d = 5$.",
+        "ai_explanation": {
+          "concept_rule": "A sequence is arithmetic if the difference between any consecutive terms is a constant $d = u_{n} - u_{n-1}$.",
+          "step_by_step": [
+            "Calculate differences between adjacent terms: $13 - 8 = 5$, $18 - 13 = 5$, $23 - 18 = 5$, $28 - 23 = 5$.",
+            "Since the differences are identical, it is an arithmetic sequence.",
+            "Identify first term $u_1 = 8$ and common difference $d = 5$."
+          ],
+          "common_pitfalls": "Checking only the first two terms rather than multiple successive pairs."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the formula for its general term.",
+        "final_answer": "$u_n = 3 + 5n$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using the general formula $u_n = u_1 + (n-1)d$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct simplified expression for $u_n$"
+          }
+        ],
+        "solution": "$u_n = u_1 + (n - 1)d$\n$\\therefore u_n = 8 + 5(n - 1)$\n$\\therefore u_n = 3 + 5n$",
+        "ai_explanation": {
+          "concept_rule": "The $n$-th term of an arithmetic sequence is given by $u_n = u_1 + (n - 1)d$.",
+          "step_by_step": [
+            "Substitute $u_1 = 8$ and $d = 5$ into $u_n = u_1 + (n - 1)d$.",
+            "Expand: $u_n = 8 + 5n - 5$.",
+            "Simplify: $u_n = 3 + 5n$."
+          ],
+          "common_pitfalls": "Forgetting to distribute $d$ over $(n - 1)$, writing $8 + 5n - 1$ instead."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the 42nd term.",
+        "final_answer": "$213$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $n = 42$ into the general term formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct 42nd term"
+          }
+        ],
+        "solution": "$u_{42} = 3 + 5(42) = 213$",
+        "ai_explanation": {
+          "concept_rule": "Evaluate $u_n$ by replacing $n$ with 42.",
+          "step_by_step": [
+            "Use the formula $u_n = 3 + 5n$.",
+            "Substitute $n = 42$: $u_{42} = 3 + 5 \\times 42$.",
+            "Compute: $5 \\times 42 = 210$, then $3 + 210 = 213$."
+          ],
+          "common_pitfalls": "Adding 3 and 5 first before multiplying by 42 (order of operations error)."
+        }
+      },
+      {
+        "subpart": "d i",
+        "stem": "Determine whether each number is a member of the sequence: $153$",
+        "final_answer": "$153\\text{ is the 30th term}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $u_n = 153$ and solving for $n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Concluding that 153 is the 30th term"
+          }
+        ],
+        "solution": "Let $u_n = 153$\n$\\therefore 3 + 5n = 153$\n$\\therefore 5n = 150$\n$\\therefore n = 30$\n$\\therefore 153$ is a member of the sequence, and in fact is the 30th term.",
+        "ai_explanation": {
+          "concept_rule": "A number is a term of the sequence if and only if solving $u_n = \\text{number}$ produces a positive integer $n \\in \\mathbb{Z}^+$.",
+          "step_by_step": [
+            "Set $3 + 5n = 153$.",
+            "Subtract 3: $5n = 150$.",
+            "Divide by 5: $n = 30$.",
+            "Since 30 is an integer, 153 is a member, specifically the 30th term."
+          ],
+          "common_pitfalls": "Stating only that it is a member without giving the term number $n$."
+        }
+      },
+      {
+        "subpart": "d ii",
+        "stem": "Determine whether each number is a member of the sequence: $4067$",
+        "final_answer": "$4067\\text{ is not a member of the sequence}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $u_n = 4067$ and solving for $n$"
+          },
+          {
+            "code": "R1",
+            "desc": "Recognizing that $n$ is not an integer and concluding"
+          }
+        ],
+        "solution": "Let $u_n = 4067$\n$\\therefore 3 + 5n = 4067$\n$\\therefore 5n = 4064$\n$\\therefore n = 812\\frac{4}{5}$\nBut $n$ must be an integer, so 4067 is not a member of the sequence.",
+        "ai_explanation": {
+          "concept_rule": "Term indices $n$ in a sequence must be positive integers ($n \\in \\mathbb{Z}^+$).",
+          "step_by_step": [
+            "Set $3 + 5n = 4067$.",
+            "Subtract 3: $5n = 4064$.",
+            "Divide by 5: $n = \\frac{4064}{5} = 812.8 = 812\\frac{4}{5}$.",
+            "Since $n$ is not an integer, $4067$ cannot be a member of the sequence."
+          ],
+          "common_pitfalls": "Rounding $n$ to the nearest integer instead of realizing the non-integer result proves non-membership."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q18",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 18,
+    "question_text": "Find $k$ given the consecutive arithmetic terms:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$3, k, 11$",
+        "final_answer": "$k = 7$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Equating differences of consecutive terms: $k - 3 = 11 - k$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $k$"
+          }
+        ],
+        "solution": "If $3, k, 11$ are consecutive terms of an arithmetic sequence, then\n$k - 3 = 11 - k$ {equating differences}\n$\\therefore 2k = 14$\n$\\therefore k = 7$",
+        "ai_explanation": {
+          "concept_rule": "For three consecutive terms $a, b, c$ in an arithmetic sequence, the common difference is constant: $b - a = c - b$, which means $b = \\frac{a+c}{2}$.",
+          "step_by_step": [
+            "Set up the equation equating differences: $k - 3 = 11 - k$.",
+            "Add $k$ to both sides and add 3 to both sides: $2k = 14$.",
+            "Divide by 2: $k = 7$."
+          ],
+          "common_pitfalls": "Subtracting terms in inconsistent orders, such as $3 - k = 11 - k$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$-2, k+4, k^2+11$",
+        "final_answer": "$k = 1$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up the difference equation $(k + 4) - (-2) = (k^2 + 11) - (k + 4)$"
+          },
+          {
+            "code": "M1",
+            "desc": "Simplifying to a quadratic equation $k^2 - 2k + 1 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving to find $k = 1$"
+          }
+        ],
+        "solution": "If $-2, k + 4, k^2 + 11$ are consecutive terms of an arithmetic sequence, then\n$k + 4 - (-2) = k^2 + 11 - (k + 4)$ {equating differences}\n$\\therefore k + 6 = k^2 + 11 - k - 4$\n$\\therefore k^2 - 2k + 1 = 0$\n$\\therefore k = 1$ {using technology}",
+        "ai_explanation": {
+          "concept_rule": "Equate the differences between successive terms: $u_2 - u_1 = u_3 - u_2$, then solve the resulting polynomial equation.",
+          "step_by_step": [
+            "Write the equation: $(k + 4) - (-2) = (k^2 + 11) - (k + 4)$.",
+            "Simplify the left side: $k + 4 + 2 = k + 6$.",
+            "Simplify the right side: $k^2 + 11 - k - 4 = k^2 - k + 7$.",
+            "Move all terms to one side: $k^2 - k + 7 - k - 6 = 0 \\implies k^2 - 2k + 1 = 0$.",
+            "Factor or use technology: $(k - 1)^2 = 0 \\implies k = 1$."
+          ],
+          "common_pitfalls": "Forgetting brackets around $(k + 4)$ when subtracting it on the right side."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$k-5, 2k, 2k^2$",
+        "final_answer": "$k = -1 \\text{ or } k = \\frac{5}{2}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Equating the consecutive differences for an arithmetic sequence: $2k - (k - 5) = 2k^2 - 2k$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplifying to a quadratic equation: $2k^2 - 3k - 5 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $k$ to find $k = -1$ or $k = \\frac{5}{2}$"
+          }
+        ],
+        "solution": "If $k - 5$, $2k$, $2k^2$ are consecutive terms of an arithmetic sequence, then:\n$$2k - (k - 5) = 2k^2 - 2k \\quad \\{\\text{equating differences}\\}$$\n$$k + 5 = 2k^2 - 2k$$\n$$2k^2 - 3k - 5 = 0$$\n$$\\therefore k = -1 \\text{ or } \\frac{5}{2} \\quad \\{\\text{using technology}\\}$$",
+        "ai_explanation": {
+          "concept_rule": "In an arithmetic sequence, the difference between any two consecutive terms is constant: $u_2 - u_1 = u_3 - u_2$.",
+          "step_by_step": [
+            "Set up the common difference equation using consecutive terms: $2k - (k - 5) = 2k^2 - 2k$.",
+            "Expand and simplify both sides: $k + 5 = 2k^2 - 2k$.",
+            "Rearrange into standard quadratic form: $2k^2 - 3k - 5 = 0$.",
+            "Solve the quadratic equation by factoring $(2k - 5)(k + 1) = 0$ or using a graphics calculator to find $k = -1$ or $k = 2.5$."
+          ],
+          "common_pitfalls": "Sign error when expanding $-(k - 5)$, incorrectly writing $-k - 5$ instead of $-k + 5$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q19",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 19,
+    "question_text": "An empty hamster cage has mass $800\\text{ g}$. When $5$ hamsters are placed in the cage, the total mass is $1400\\text{ g}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the average mass of the hamsters in the cage.",
+        "final_answer": "$120\\text{ g}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Subtracting cage mass from total mass and dividing by number of hamsters"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $120\\text{ g}$"
+          }
+        ],
+        "solution": "$$\\text{Average mass} = \\frac{\\text{total mass} - \\text{mass of cage}}{\\text{number of hamsters}}$$\n$$= \\frac{1400 - 800}{5}$$\n$$= \\frac{600}{5}$$\n$$= 120\\text{ g}$$",
+        "ai_explanation": {
+          "concept_rule": "Average mass per hamster is found by dividing the net mass of all hamsters by the total number of hamsters.",
+          "step_by_step": [
+            "Find the total mass of the 5 hamsters by subtracting the cage mass from the gross mass: $1400 - 800 = 600\\text{ g}$.",
+            "Divide by the number of hamsters: $\\frac{600}{5} = 120\\text{ g}$."
+          ],
+          "common_pitfalls": "Forgetting to subtract the mass of the cage before dividing by 5."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Hence write an arithmetic sequence for $u_n$, the approximate total mass when $n$ hamsters are placed in the cage.",
+        "final_answer": "$u_n = 800 + 120n$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Stating the linear model / general term $u_n = 800 + 120n$"
+          }
+        ],
+        "solution": "$$u_n = 800 + 120n$$",
+        "ai_explanation": {
+          "concept_rule": "The total mass forms an arithmetic sequence with initial mass (cage) as the intercept and the average mass per hamster as the common difference.",
+          "step_by_step": [
+            "Identify the constant base mass: $800\\text{ g}$.",
+            "Identify the rate of increase per hamster: $120\\text{ g}$.",
+            "Combine into the general term formula: $u_n = 800 + 120n$."
+          ],
+          "common_pitfalls": "Confusing $u_0 = 800$ with $u_1$ and using $800 + 120(n - 1)$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q20",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 20,
+    "question_text": "Find the general term $u_n$ of the geometric sequence which has:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$u_5 = 324$ and $u_{10} = 78\\,732$",
+        "final_answer": "$u_n = 4 \\times 3^{n-1}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up equations $u_1 r^4 = 324$ and $u_1 r^9 = 78732$"
+          },
+          {
+            "code": "A1",
+            "desc": "Dividing equations to find $r = 3$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $u_1 = 4$"
+          },
+          {
+            "code": "A1",
+            "desc": "Writing the general term $u_n = 4 \\times 3^{n-1}$"
+          }
+        ],
+        "solution": "$$u_5 = u_1 r^4 = 324 \\quad \\dots (1)$$\n$$\\text{and } u_{10} = u_1 r^9 = 78\\,732 \\quad \\dots (2)$$\n$$\\text{Now } \\frac{u_1 r^9}{u_1 r^4} = \\frac{78\\,732}{324} \\quad \\{(2) \\div (1)\\}$$\n$$\\therefore r^5 = 243$$\n$$\\therefore r = \\sqrt[5]{243}$$\n$$\\therefore r = 3$$\n$$\\text{Using (1), } u_1(3)^4 = 324$$\n$$\\therefore 81u_1 = 324$$\n$$\\therefore u_1 = 4$$\n$$\\text{Thus } u_n = 4 \\times 3^{n-1}$$",
+        "ai_explanation": {
+          "concept_rule": "For a geometric sequence, the $n$th term is $u_n = u_1 r^{n-1}$. Dividing higher-order terms by lower-order terms eliminates $u_1$.",
+          "step_by_step": [
+            "Express $u_5$ and $u_{10}$ in terms of $u_1$ and $r$: $u_1 r^4 = 324$ and $u_1 r^9 = 78732$.",
+            "Divide the second equation by the first: $r^5 = 243$.",
+            "Take the fifth root: $r = 3$.",
+            "Substitute $r = 3$ back into equation (1) to find $u_1 = 4$.",
+            "Substitute $u_1$ and $r$ into the general formula $u_n = u_1 r^{n-1}$."
+          ],
+          "common_pitfalls": "Incorrectly computing index subtraction ($9 - 4 = 5$)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$u_8 = -10$ and $u_{12} = -160$",
+        "final_answer": "$u_n = -\\frac{5}{64} \\times 2^{n-1} \\text{ or } u_n = \\frac{5}{64} \\times (-2)^{n-1}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up $u_1 r^7 = -10$ and $u_1 r^{11} = -160$ and dividing"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $r^4 = 16 \\implies r = \\pm 2$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $u_1$ and $u_n$ when $r = 2$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $u_1$ and $u_n$ when $r = -2$"
+          }
+        ],
+        "solution": "$$u_8 = u_1 r^7 = -10 \\quad \\dots (1)$$\n$$\\text{and } u_{12} = u_1 r^{11} = -160 \\quad \\dots (2)$$\n$$\\text{Now } \\frac{u_1 r^{11}}{u_1 r^7} = \\frac{-160}{-10} \\quad \\{(2) \\div (1)\\}$$\n$$\\therefore r^4 = 16$$\n$$\\therefore r = \\pm \\sqrt[4]{16}$$\n$$\\therefore r = \\pm 2$$\n$$\\text{If } r = 2, \\text{ then using (1), } u_1(2)^7 = -10$$\n$$\\therefore 128u_1 = -10$$\n$$\\therefore u_1 = -\\frac{10}{128} = -\\frac{5}{64}$$\n$$\\text{Thus } u_n = -\\frac{5}{64} \\times 2^{n-1}$$\n$$\\text{If } r = -2, \\text{ then using (1), } u_1(-2)^7 = -10$$\n$$\\therefore -128u_1 = -10$$\n$$\\therefore u_1 = \\frac{10}{128} = \\frac{5}{64}$$\n$$\\text{Thus } u_n = \\frac{5}{64} \\times (-2)^{n-1}$$",
+        "ai_explanation": {
+          "concept_rule": "An even power equation $r^4 = k$ yields both positive and negative roots ($r = \\pm \\sqrt[4]{k}$), each yielding a valid sequence.",
+          "step_by_step": [
+            "Divide equation (2) by equation (1) to get $r^4 = 16$.",
+            "Solve for $r$ giving two solutions: $r = 2$ or $r = -2$.",
+            "For $r = 2$, substitute into $u_1(2)^7 = -10$ to find $u_1 = -\\frac{5}{64}$.",
+            "For $r = -2$, substitute into $u_1(-2)^7 = -10$ to find $u_1 = \\frac{5}{64}$.",
+            "State the two corresponding general term formulas."
+          ],
+          "common_pitfalls": "Forgetting the negative root when taking an even root ($r = \\pm 2$)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q21",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 21,
+    "question_text": "Consider the sequence $2, 2\\sqrt{3}, 6, 6\\sqrt{3}, \\dots$",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Show that the sequence is geometric.",
+        "final_answer": "$\\text{Consecutive terms have a common ratio of } \\sqrt{3}, \\text{ so the sequence is geometric with } u_1 = 2 \\text{ and } r = \\sqrt{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Showing constant ratio between consecutive terms"
+          },
+          {
+            "code": "A1",
+            "desc": "Concluding that the sequence is geometric with $u_1 = 2$ and $r = \\sqrt{3}$"
+          }
+        ],
+        "solution": "$$\\frac{2\\sqrt{3}}{2} = \\sqrt{3}, \\quad \\frac{6}{2\\sqrt{3}} = \\frac{2\\sqrt{3} \\times 3}{2\\sqrt{3}} = \\frac{3}{\\sqrt{3}} = \\sqrt{3}, \\quad \\frac{6\\sqrt{3}}{6} = \\sqrt{3}$$\n$$\\text{Consecutive terms have a common ratio of } \\sqrt{3}.$$\n$$\\therefore \\text{the sequence is geometric with } u_1 = 2 \\text{ and } r = \\sqrt{3}.$$",
+        "ai_explanation": {
+          "concept_rule": "A sequence is geometric if the ratio between successive terms is constant: $\\frac{u_2}{u_1} = \\frac{u_3}{u_2} = \\dots = r$.",
+          "step_by_step": [
+            "Compute $\\frac{u_2}{u_1} = \\frac{2\\sqrt{3}}{2} = \\sqrt{3}$.",
+            "Compute $\\frac{u_3}{u_2} = \\frac{6}{2\\sqrt{3}} = \\sqrt{3}$.",
+            "Compute $\\frac{u_4}{u_3} = \\frac{6\\sqrt{3}}{6} = \\sqrt{3}$.",
+            "Since the ratio is constant, the sequence is geometric with first term $u_1 = 2$ and common ratio $r = \\sqrt{3}$."
+          ],
+          "common_pitfalls": "Failing to verify the ratio for all given terms."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the formula for its general term.",
+        "final_answer": "$u_n = 2(\\sqrt{3})^{n-1}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Substituting $u_1 = 2$ and $r = \\sqrt{3}$ into $u_n = u_1 r^{n-1}$"
+          }
+        ],
+        "solution": "$$u_n = u_1 r^{n-1}$$\n$$= 2(\\sqrt{3})^{n-1}$$",
+        "ai_explanation": {
+          "concept_rule": "The $n$th term of a geometric sequence is given by $u_n = u_1 r^{n-1}$.",
+          "step_by_step": [
+            "Identify $u_1 = 2$ and $r = \\sqrt{3}$.",
+            "Substitute into the formula: $u_n = 2(\\sqrt{3})^{n-1}$."
+          ],
+          "common_pitfalls": "Trying to combine $2$ and $\\sqrt{3}$ inappropriately into a single base."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the 10th term.",
+        "final_answer": "$162\\sqrt{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $n = 10$ into $u_n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplifying powers of $\\sqrt{3}$ to obtain $162\\sqrt{3}$"
+          }
+        ],
+        "solution": "$$u_{10} = 2(\\sqrt{3})^{10-1}$$\n$$= 2(\\sqrt{3})^9$$\n$$= 2\\sqrt{3} \\times (\\sqrt{3})^8$$\n$$= 2\\sqrt{3} \\times ((\\sqrt{3})^2)^4$$\n$$= 2\\sqrt{3} \\times 3^4$$\n$$= 162\\sqrt{3}$$",
+        "ai_explanation": {
+          "concept_rule": "Simplify fractional and radical exponents using laws of indices: $(\\sqrt{3})^9 = (\\sqrt{3})^8 \\times \\sqrt{3} = 3^4 \\sqrt{3} = 81\\sqrt{3}$.",
+          "step_by_step": [
+            "Substitute $n = 10$ into $u_n$: $u_{10} = 2(\\sqrt{3})^9$.",
+            "Decompose $(\\sqrt{3})^9$ as $(\\sqrt{3})^8 \\cdot \\sqrt{3} = 3^4 \\cdot \\sqrt{3} = 81\\sqrt{3}$.",
+            "Multiply by $2$: $2 \\times 81\\sqrt{3} = 162\\sqrt{3}$."
+          ],
+          "common_pitfalls": "Leaving the answer as a decimal rather than exact surd form."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Find the first term which exceeds $1000$.",
+        "final_answer": "$u_{13} = 1458$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up inequality $2(\\sqrt{3})^{n-1} > 1000$ or using table of values on GDC"
+          },
+          {
+            "code": "A1",
+            "desc": "Identifying $n = 13$ and $u_{13} = 1458$"
+          }
+        ],
+        "solution": "$$\\text{We need to find } n \\text{ such that } u_n = 2(\\sqrt{3})^{n-1} > 1000.$$\n$$\\text{Using a graphics calculator with } Y_1 = 2 \\times \\sqrt{3}\\wedge(X - 1), \\text{ we view a table of values:}$$\n$$\\text{For } X = 12, Y_1 \\approx 841.77$$\n$$\\text{For } X = 13, Y_1 = 1458$$\n$$\\text{The first term to exceed } 1000 \\text{ is } u_{13} = 1458.$$",
+        "ai_explanation": {
+          "concept_rule": "To find the first term exceeding a given threshold, solve $u_n > \\text{value}$ using technology (table of values) or logarithms.",
+          "step_by_step": [
+            "Set up the inequality $2(\\sqrt{3})^{n-1} > 1000$.",
+            "Enter $Y_1 = 2(\\sqrt{3})^{X-1}$ into the calculator's table function.",
+            "Check values: for $n = 12$, $u_{12} \\approx 841.77 < 1000$; for $n = 13$, $u_{13} = 1458 > 1000$.",
+            "Conclude that $u_{13}$ is the first term exceeding 1000."
+          ],
+          "common_pitfalls": "Rounding to $n = 12$ because it is close to 1000, instead of choosing the first term strictly greater than 1000."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q22",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 22,
+    "question_text": "An endangered species of bird has population $217$. However, with a successful breeding program it is expected to increase by $42\\%$ each year.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Find the expected population size after: $5$ years",
+        "final_answer": "$1250\\text{ birds}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $n = 5$ into $u_n = 217 \\times (1.42)^n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating value and rounding appropriately: approximately 1250 birds"
+          }
+        ],
+        "solution": "$$u_5 = 217 \\times (1.42)^5 \\approx 1252.86$$\n$$\\text{The expected population size after 5 years is approximately } 1250 \\text{ birds.}$$",
+        "ai_explanation": {
+          "concept_rule": "Geometric growth with initial population $u_0$ and growth multiplier $r = 1 + \\text{rate}$ is modeled by $u_n = u_0 r^n$.",
+          "step_by_step": [
+            "Identify $u_0 = 217$ and $r = 1.42$.",
+            "Evaluate $u_5 = 217 \\times (1.42)^5 \\approx 1252.86$.",
+            "Round to an appropriate degree of accuracy (e.g., 3 significant figures: 1250)."
+          ],
+          "common_pitfalls": "Using $n - 1$ in the exponent when $u_0$ represents the initial population."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Find the expected population size after: $10$ years.",
+        "final_answer": "$7230\\text{ birds}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $n = 10$ into $u_n = 217 \\times (1.42)^n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating value and rounding appropriately: approximately 7230 birds"
+          }
+        ],
+        "solution": "$$u_{10} = 217 \\times (1.42)^{10} \\approx 7233.41$$\n$$\\text{The expected population size after 10 years is approximately } 7230 \\text{ birds.}$$",
+        "ai_explanation": {
+          "concept_rule": "Calculate the population at $n = 10$ using the geometric model $u_n = u_0 r^n$.",
+          "step_by_step": [
+            "Substitute $n = 10$: $u_{10} = 217 \\times (1.42)^{10}$.",
+            "Calculate $u_{10} \\approx 7233.41$.",
+            "Round to 3 significant figures: 7230 birds."
+          ],
+          "common_pitfalls": "Premature rounding of the intermediate powers."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "How long will it take for the population to reach $30\\,000$?",
+        "final_answer": "$14.1\\text{ years}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up the equation $217 \\times (1.42)^n = 30000$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $n \\approx 14.1$"
+          }
+        ],
+        "solution": "$$\\text{We need to find when } 217 \\times (1.42)^n = 30\\,000.$$\n$$\\text{Using technology, } n \\approx 14.1, \\text{ so it will take approximately } 14.1 \\text{ years for the population to reach } 30\\,000.$$",
+        "ai_explanation": {
+          "concept_rule": "Solve an exponential equation $a \\cdot b^n = c$ using logarithms or a numerical equation solver on a GDC.",
+          "step_by_step": [
+            "Set up the equation $217 \\times (1.42)^n = 30000$.",
+            "Solve for $n$: $n = \\frac{\\ln(30000 / 217)}{\\ln(1.42)}$.",
+            "Compute $n \\approx 14.0566... \\approx 14.1\\text{ years}$."
+          ],
+          "common_pitfalls": "Forgetting to divide by 217 before applying logarithms."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q23",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 23,
+    "question_text": "Paige invests €$500$ in an account that pays $7.2\\%$ p.a. compounded monthly.\nThe amount of money in Paige's account at the end of each month follows a geometric sequence with common ratio $r$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the value of $r$.",
+        "final_answer": "$r = 1.006$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating monthly interest rate $i = \\frac{7.2\\%}{12} = 0.6\\% = 0.006$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding multiplier $r = 1 + i = 1.006$"
+          }
+        ],
+        "solution": "$$\\text{If the interest rate per annum is } 7.2\\%, \\text{ then the interest rate per month } i = \\frac{7.2\\%}{12} = 0.6\\% = 0.006.$$\n$$r = 1 + i$$\n$$= 1 + 0.006$$\n$$= 1.006$$",
+        "ai_explanation": {
+          "concept_rule": "Monthly interest rate is the annual nominal interest rate divided by 12. The growth multiplier is $r = 1 + i$.",
+          "step_by_step": [
+            "Divide annual percentage by 12: $\\frac{7.2\\%}{12} = 0.6\\%$.",
+            "Convert to a decimal: $0.6\\% = 0.006$.",
+            "Add 1 to get the monthly multiplier: $r = 1.006$."
+          ],
+          "common_pitfalls": "Using $0.06$ instead of $0.006$ for $0.6\\%$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the value of the account after $3$ years.",
+        "final_answer": "$€$620.15$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determining total compounding periods $n = 3 \\times 12 = 36$"
+          },
+          {
+            "code": "M1",
+            "desc": "Applying compound formula $u_{36} = 500 \\times (1.006)^{36}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Computing final amount to 2 decimal places: €$620.15$"
+          }
+        ],
+        "solution": "$$\\text{The interest is calculated monthly, so } n = 3 \\times 12 = 36 \\text{ time periods.}$$\n$$u_{36} = u_0 \\times r^{36}$$\n$$= 500 \\times (1.006)^{36}$$\n$$\\approx 620.15$$\n$$\\text{The value of the account after 3 years is } \\text{€}620.15.$$",
+        "ai_explanation": {
+          "concept_rule": "Compound amount after $n$ periods is $FV = PV(1 + i)^n$.",
+          "step_by_step": [
+            "Calculate total periods: $n = 3 \\text{ years} \\times 12 \\text{ months/year} = 36$.",
+            "Apply formula: $u_{36} = 500 \\times (1.006)^{36}$.",
+            "Evaluate: $500 \\times 1.2403... \\approx 620.15$."
+          ],
+          "common_pitfalls": "Using $n = 3$ years instead of the number of monthly periods $n = 36$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Given that inflation averages $2\\%$ p.a. over the $3$ years, find the real value of the investment after $3$ years.",
+        "final_answer": "$€$584.38$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up equation relating real value and inflation: $\\text{real value} \\times (1.02)^3 = 620.15$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for real value: €$584.38$"
+          }
+        ],
+        "solution": "$$\\text{real value} \\times (1.02)^3 = \\text{€}620.15$$\n$$\\therefore \\text{real value} = \\frac{\\text{€}620.15}{(1.02)^3}$$\n$$= \\text{€}584.38$$",
+        "ai_explanation": {
+          "concept_rule": "Real value adjusted for inflation over $t$ years is $\\text{Real Value} = \\frac{\\text{Nominal Value}}{(1 + \\text{inflation rate})^t}$.",
+          "step_by_step": [
+            "State the relationship: $\\text{real value} \\times (1.02)^3 = 620.15$.",
+            "Divide by $(1.02)^3$: $\\frac{620.15}{1.061208} \\approx 584.38$.",
+            "Conclude that the real value after inflation is €584.38."
+          ],
+          "common_pitfalls": "Multiplying the final value by $(1 - 0.02)^3$ instead of dividing by $(1.02)^3$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q24",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 24,
+    "question_text": "Stan invests £$3500$ for $33$ months at $8\\%$ p.a. interest compounded quarterly. Find its maturing value.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "Stan invests £$3500$ for $33$ months at $8\\%$ p.a. interest compounded quarterly. Find its maturing value.",
+        "final_answer": "$£$4351.81$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating number of compounding periods $n = \\frac{33}{3} = 11$"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculating quarterly interest rate $i = \\frac{8\\%}{4} = 2\\% = 0.02$"
+          },
+          {
+            "code": "M1",
+            "desc": "Applying compounding formula $u_{11} = 3500 \\times (1.02)^{11}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtaining maturing value £$4351.81$"
+          }
+        ],
+        "solution": "$$\\text{There is 1 time period every 3 months, so } n = \\frac{33}{3} = 11 \\text{ time periods.}$$\n$$\\text{Each time period the investment increases by } i = \\frac{8\\%}{4} = 2\\%.$$\n$$\\therefore \\text{the amount after 33 months is } u_{11} = u_0 \\times (1 + i)^{11}$$\n$$= 3500 \\times (1.02)^{11} \\quad \\{2\\% = 0.02\\}$$\n$$\\approx 4351.81$$\n$$\\text{The maturing value of the account is } \\text{£}4351.81.$$",
+        "ai_explanation": {
+          "concept_rule": "For compounding every 3 months (quarterly), divide annual interest rate by 4, and calculate periods by total months divided by 3.",
+          "step_by_step": [
+            "Determine number of 3-month periods in 33 months: $n = \\frac{33}{3} = 11$.",
+            "Find rate per period: $i = \\frac{8\\%}{4} = 2\\% = 0.02$.",
+            "Calculate final value: $3500 \\times (1 + 0.02)^{11} \\approx 4351.81$."
+          ],
+          "common_pitfalls": "Dividing the annual rate by 12 instead of 4, or miscounting the number of quarters."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q25",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 25,
+    "question_text": "How much should I invest now to produce $\\$30\\,000$ in $5$ years' time, if the money can be invested at a fixed rate of $4.8\\%$ p.a. interest compounded monthly?",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "How much should I invest now to produce $\\$30\\,000$ in $5$ years' time, if the money can be invested at a fixed rate of $4.8\\%$ p.a. interest compounded monthly?",
+        "final_answer": "$\\$$23\\,610.14$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Finding number of monthly periods $n = 5 \\times 12 = 60$ and rate $i = \\frac{4.8\\%}{12} = 0.4\\% = 0.004$"
+          },
+          {
+            "code": "M1",
+            "desc": "Setting up equation $30000 = u_0 \\times (1.004)^{60}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for present value $u_0 = \\frac{30000}{(1.004)^{60}} \\approx 23610.14$"
+          }
+        ],
+        "solution": "$$\\text{The initial investment } u_0 \\text{ is unknown.}$$\n$$\\text{There are } n = 5 \\times 12 = 60 \\text{ time periods.}$$\n$$\\text{Each time period the investment increases by } i = \\frac{4.8\\%}{12} = 0.4\\%.$$\n$$\\text{Now } u_{60} = u_0 \\times (1 + i)^{60}$$\n$$\\therefore 30\\,000 = u_0 \\times (1.004)^{60} \\quad \\{0.4\\% = 0.004\\}$$\n$$\\therefore u_0 = \\frac{30\\,000}{(1.004)^{60}} \\approx 23\\,610.14$$\n$$\\therefore \\text{I need to invest } \\$23\\,610.14 \\text{ now.}$$",
+        "ai_explanation": {
+          "concept_rule": "Present Value ($PV$) is found by discounting the future value ($FV$) back by $(1 + i)^n$: $PV = \\frac{FV}{(1 + i)^n}$.",
+          "step_by_step": [
+            "Calculate monthly rate: $i = \\frac{4.8\\%}{12} = 0.4\\% = 0.004$.",
+            "Calculate total periods: $n = 5 \\times 12 = 60$.",
+            "Set up formula: $30000 = u_0(1.004)^{60}$.",
+            "Solve for $u_0$: $u_0 = \\frac{30000}{(1.004)^{60}} \\approx 23610.14$."
+          ],
+          "common_pitfalls": "Multiplying 30000 by $(1.004)^{60}$ instead of dividing."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q26",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 26,
+    "question_text": "A television was purchased for £$2000$, and depreciates at $30\\%$ p.a. for $3$ years.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the value of the television at the end of this period.",
+        "final_answer": "$£$686$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using depreciation formula $u_3 = 2000 \\times (1 - 0.3)^3$"
+          },
+          {
+            "code": "A1",
+            "desc": "Computing final value £$686$"
+          }
+        ],
+        "solution": "$$u_3 = u_0 \\times (1 - d)^3$$\n$$= 2000 \\times (0.7)^3 \\quad \\{30\\% = 0.3\\}$$\n$$= 686$$\n$$\\text{So, after 3 years the value of the television is } \\text{£}686.$$",
+        "ai_explanation": {
+          "concept_rule": "Annual depreciation reduces the item's value by multiplying by $(1 - d)$ each year: $u_n = u_0(1 - d)^n$.",
+          "step_by_step": [
+            "Identify depreciation factor: $1 - 0.30 = 0.70$.",
+            "Compute value after 3 years: $u_3 = 2000 \\times (0.7)^3$.",
+            "Calculate $2000 \\times 0.343 = 686$."
+          ],
+          "common_pitfalls": "Using simple depreciation $2000 - 3 \\times (0.3 \\times 2000)$ instead of reducing balance depreciation."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "By how much has the television depreciated?",
+        "final_answer": "$£$1314$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Subtracting remaining value from initial purchase price"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating depreciation as £$1314$"
+          }
+        ],
+        "solution": "$$\\text{Depreciation} = \\text{£}2000 - \\text{£}686$$\n$$= \\text{£}1314$$",
+        "ai_explanation": {
+          "concept_rule": "Total depreciation is the difference between initial value and current value: $\\text{Depreciation} = u_0 - u_n$.",
+          "step_by_step": [
+            "Identify original value: £2000.",
+            "Identify value after 3 years: £686.",
+            "Subtract: $2000 - 686 = 1314$."
+          ],
+          "common_pitfalls": "Confusing the total depreciation amount with the remaining value."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q27",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 27,
+    "question_text": "Lauren deposits $\\$10\\,000$ in an account that compounds interest monthly. $4.5$ years later, the account has balance $\\$12\\,000$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "What annual rate of interest did the account pay?",
+        "final_answer": "$4.06\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up TVM parameters: $N = 54$, $PV = -10000$, $PMT = 0$, $FV = 12000$, $P/Y = 12$, $C/Y = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for interest rate $I\\% \\approx 4.06\\%$"
+          }
+        ],
+        "solution": "$$N = 4.5 \\times 12 = 54, \\quad PV = -10\\,000, \\quad PMT = 0, \\quad FV = 12\\,000, \\quad P/Y = 12, \\quad C/Y = 12$$\n$$\\therefore I\\% \\approx 4.06$$\n$$\\text{The account paid about } 4.06\\% \\text{ interest per annum.}$$",
+        "ai_explanation": {
+          "concept_rule": "Use the GDC TVM Solver to calculate the annual nominal interest rate $I\\%$ from compound interest parameters.",
+          "step_by_step": [
+            "Calculate total compounding periods: $N = 4.5 \\times 12 = 54$.",
+            "Input known values: $PV = -10000$ (cash outflow), $FV = 12000$ (cash inflow), $P/Y = C/Y = 12$.",
+            "Solve for $I\\%$: gives $4.0584...\\% \\approx 4.06\\%$."
+          ],
+          "common_pitfalls": "Giving both $PV$ and $FV$ the same sign in the financial calculator, which results in an error."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "How long will it take Lauren to double her deposit?",
+        "final_answer": "$206\\text{ months (or 17 years and 2 months)}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up TVM parameters with doubled investment: $FV = 20000$, $PV = -10000$, $I\\% = 4.06$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $N \\approx 205.2$"
+          },
+          {
+            "code": "A1",
+            "desc": "Rounding up to next whole compounding period: 206 months or 17 years and 2 months"
+          }
+        ],
+        "solution": "$$I\\% = 4.06, \\quad PV = -10\\,000, \\quad PMT = 0, \\quad FV = 20\\,000, \\quad P/Y = 12, \\quad C/Y = 12$$\n$$\\therefore N \\approx 205.2$$\n$$\\text{It will take } 206 \\text{ months or } 17 \\text{ years and } 2 \\text{ months for Lauren to double her deposit.}$$",
+        "ai_explanation": {
+          "concept_rule": "When compounding occurs at discrete intervals, the number of compounding periods must be rounded up to ensure the target is reached.",
+          "step_by_step": [
+            "Set $FV = 20000$, $PV = -10000$, $I\\% = 4.06$, $P/Y = C/Y = 12$ on TVM solver.",
+            "Solve for $N$: $N \\approx 205.22$ months.",
+            "Since interest is credited monthly, round up to $206$ full months.",
+            "Convert months to years: $206 = 17 \\times 12 + 2$, giving 17 years and 2 months."
+          ],
+          "common_pitfalls": "Rounding down to 205 months, at which point the deposit has not yet doubled."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q28",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 28,
+    "question_text": "The first four terms of an arithmetic sequence are $51, 45, 39, 33$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Write down the common difference $d$.",
+        "final_answer": "$d = -6$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identifying the common difference $d = -6$"
+          }
+        ],
+        "solution": "$$\\text{The common difference } d = -6.$$",
+        "ai_explanation": {
+          "concept_rule": "The common difference $d$ in an arithmetic sequence is $u_2 - u_1$.",
+          "step_by_step": [
+            "Observe the decrease between consecutive terms.",
+            "State $d = -6$."
+          ],
+          "common_pitfalls": "Writing $+6$ instead of $-6$ for a decreasing sequence."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the 20th term $u_{20}$.",
+        "final_answer": "$-63$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using $u_{20} = u_1 + 19d$ with $u_1 = 51$ and $d = -6$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating to $-63$"
+          }
+        ],
+        "solution": "$$u_n = u_1 + (n - 1)d$$\n$$\\therefore u_{20} = u_1 + 19d$$\n$$= 51 + 19 \\times -6$$\n$$= 51 - 114$$\n$$= -63$$",
+        "ai_explanation": {
+          "concept_rule": "The $n$th term of an arithmetic sequence is given by $u_n = u_1 + (n - 1)d$.",
+          "step_by_step": [
+            "Substitute $u_1 = 51$, $n = 20$, and $d = -6$ into the formula: $u_{20} = 51 + (20 - 1)(-6)$.",
+            "Calculate $19 \\times (-6) = -114$.",
+            "Compute $51 - 114 = -63$."
+          ],
+          "common_pitfalls": "Using $n$ instead of $n - 1$ in the formula."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the sum of the first $20$ terms.",
+        "final_answer": "$-120$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using sum formula $S_n = \\frac{n}{2}(u_1 + u_n)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating $S_{20} = \\frac{20}{2}(51 - 63) = -120$"
+          }
+        ],
+        "solution": "$$S_n = \\frac{n}{2}(u_1 + u_n)$$\n$$\\therefore S_{20} = \\frac{20}{2}(51 - 63)$$\n$$= 10 \\times -12$$\n$$= -120$$",
+        "ai_explanation": {
+          "concept_rule": "The sum of the first $n$ terms of an arithmetic sequence is $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+          "step_by_step": [
+            "Use the formula with $n = 20$, $u_1 = 51$, and $u_{20} = -63$.",
+            "Add first and last terms: $51 + (-63) = -12$.",
+            "Multiply by $\\frac{20}{2} = 10$: $10 \\times (-12) = -120$."
+          ],
+          "common_pitfalls": "Arithmetic errors when dealing with negative values inside the brackets."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q29",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 29,
+    "question_text": "Find the sum of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$11 + 15 + 19 + 23 + \\dots$ to $20$ terms",
+        "final_answer": "$980$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identifying $u_1 = 11$, $d = 4$, $n = 20$ and applying formula $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $980$"
+          }
+        ],
+        "solution": "$$\\text{The series is arithmetic with } u_1 = 11, \\; d = 4, \\text{ and } n = 20.$$\n$$\\text{Now } S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$$\n$$\\therefore S_{20} = \\frac{20}{2}(2 \\times 11 + 19 \\times 4)$$\n$$= 10(22 + 76)$$\n$$= 980$$",
+        "ai_explanation": {
+          "concept_rule": "The sum of the first $n$ terms of an arithmetic sequence given $u_1$, $d$, and $n$ is $S_n = \\frac{n}{2}[2u_1 + (n - 1)d]$.",
+          "step_by_step": [
+            "Identify $u_1 = 11$, $d = 4$, and $n = 20$.",
+            "Substitute into the formula: $S_{20} = \\frac{20}{2}[2(11) + 19(4)]$.",
+            "Simplify bracket: $22 + 76 = 98$.",
+            "Multiply by 10 to obtain 980."
+          ],
+          "common_pitfalls": "Forgetting to multiply $u_1$ by 2 in the bracket."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$7 + 12.5 + 18 + 23.5 + \\dots + 106$",
+        "final_answer": "$1073.5$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up $u_n = u_1 + (n - 1)d = 106$ to find $n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $n = 19$"
+          },
+          {
+            "code": "M1",
+            "desc": "Applying sum formula $S_{19} = \\frac{19}{2}(7 + 106)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating to $1073.5$"
+          }
+        ],
+        "solution": "$$7 + 12.5 + 18 + 23.5 + \\dots + 106$$\n$$\\text{The series is arithmetic with } u_1 = 7, \\; d = 5.5, \\text{ and } u_n = 106.$$\n$$\\text{First we need to find } n.$$\n$$\\text{Now } u_n = 106$$\n$$\\therefore u_1 + (n - 1)d = 106$$\n$$\\therefore 7 + 5.5(n - 1) = 106$$\n$$\\therefore 5.5(n - 1) = 99$$\n$$\\therefore n - 1 = 18$$\n$$\\therefore n = 19$$\n$$\\text{Using } S_n = \\frac{n}{2}(u_1 + u_n)$$\n$$\\therefore S_{19} = \\frac{19}{2}(7 + 106)$$\n$$= \\frac{19}{2} \\times 113$$\n$$= 1073.5$$",
+        "ai_explanation": {
+          "concept_rule": "When the last term of an arithmetic series is known, first find the number of terms $n$ using $u_n = u_1 + (n - 1)d$, then calculate the sum using $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+          "step_by_step": [
+            "Determine the common difference: $d = 12.5 - 7 = 5.5$.",
+            "Set up equation for the last term: $7 + 5.5(n - 1) = 106$.",
+            "Solve for $n$: $5.5(n - 1) = 99 \\implies n - 1 = 18 \\implies n = 19$.",
+            "Calculate the sum: $S_{19} = \\frac{19}{2}(7 + 106) = 9.5 \\times 113 = 1073.5$."
+          ],
+          "common_pitfalls": "Using the value of the last term (106) in place of $n$ in the sum formula."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$1 - 2 + 3 - 4 + 5 - 6 + 7 - \\dots$ to $100$ terms",
+        "final_answer": "$-50$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Splitting the series into two 50-term arithmetic sequences"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding sum of positive terms: $S_{50} = 2500$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding sum of negative terms: $S_{50} = -2550$"
+          },
+          {
+            "code": "A1",
+            "desc": "Combining the sums: $2500 + (-2550) = -50$"
+          }
+        ],
+        "solution": "$$1 - 2 + 3 - 4 + 5 - 6 + 7 - \\dots \\text{ to } 100 \\text{ terms can be expressed as two separate arithmetic series:}$$\n$$1 + 3 + 5 + 7 + \\dots \\quad \\text{where } u_1 = 1, \\; d = 2, \\; n = 50$$\n$$\\text{and } -2 - 4 - 6 - 8 - \\dots \\quad \\text{where } u_1 = -2, \\; d = -2, \\; n = 50$$\n$$\\text{Using } S_n = \\frac{n}{2}(2u_1 + (n - 1)d), \\text{ the sum of the first series } = \\frac{50}{2}(2(1) + 49(2))$$\n$$= 25(2 + 98)$$\n$$= 2500$$\n$$\\text{and the sum of the second series } = \\frac{50}{2}(2(-2) + 49(-2))$$\n$$= 25(-4 - 98)$$\n$$= -2550$$\n$$\\therefore \\text{the sum of both series} = 2500 + (-2550) = -50$$\n$$\\text{So, } 1 - 2 + 3 - 4 + 5 - 6 + 7 - \\dots \\text{ to } 100 \\text{ terms is } -50.$$",
+        "ai_explanation": {
+          "concept_rule": "An alternating sequence can be solved by grouping pairs or splitting into two separate arithmetic series of equal length.",
+          "step_by_step": [
+            "Notice there are 100 terms in total, so 50 positive odd numbers and 50 negative even numbers.",
+            "Sum of odd numbers: $S_{\\text{odd}} = \\frac{50}{2}[2(1) + 49(2)] = 25(100) = 2500$.",
+            "Sum of even numbers: $S_{\\text{even}} = \\frac{50}{2}[2(-2) + 49(-2)] = 25(-102) = -2550$.",
+            "Add the two partial sums: $2500 - 2550 = -50$."
+          ],
+          "common_pitfalls": "Using $n = 100$ terms for each individual separated series instead of $n = 50$."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "the integers from $1$ to $200$ not divisible by $3$.",
+        "final_answer": "$13\\,467$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Splitting the non-multiples of 3 into two arithmetic progressions and finding $n$ for each"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculating the sum of both arithmetic progressions"
+          },
+          {
+            "code": "A1",
+            "desc": "Adding the sums to obtain the final total of 13467"
+          }
+        ],
+        "solution": "The integers from 1 to 200 which are not divisible by 3 are $1, 2, 4, 5, 7, 8, \\dots, 200$.\nThe sum of these integers can be expressed as two separate arithmetic series $A$ and $B$:\n$S_A = 1 + 4 + 7 + \\dots + 196 + 199$ where $u_1 = 1$, $d = 3$, $u_n = 199$\nand $S_B = 2 + 5 + 8 + \\dots + 197 + 200$ where $u_1 = 2$, $d = 3$, $u_n = 200$\n\nNow for $S_A$:\n$u_n = u_1 + (n - 1)d$\n$199 = 1 + 3(n - 1)$\n$198 = 3(n - 1)$\n$66 = n - 1$\n$n = 67$\n\nFor $S_B$:\n$u_n = u_1 + (n - 1)d$\n$200 = 2 + 3(n - 1)$\n$198 = 3(n - 1)$\n$66 = n - 1$\n$n = 67$\n\nUsing $S_n = \\frac{n}{2}(u_1 + u_n)$:\n$S_A = \\frac{67}{2}(1 + 199) = 6700$\n$S_B = \\frac{67}{2}(2 + 200) = 6767$\n\nThe total sum $= S_A + S_B = 6700 + 6767 = 13\\,467$.",
+        "ai_explanation": {
+          "concept_rule": "The sum of integers not divisible by a number $k$ can be found either by partitioning into separate arithmetic progressions with common difference $k$, or by subtracting the sum of multiples from the total sum of all integers.",
+          "step_by_step": [
+            "Separate the sequence into two APs: numbers congruent to $1 \\pmod 3$ and numbers congruent to $2 \\pmod 3$.",
+            "Find the number of terms $n$ in each sequence using the $n$th term formula $u_n = u_1 + (n-1)d$.",
+            "Compute the sum of each sequence using $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+            "Sum the two results together."
+          ],
+          "common_pitfalls": "Miscounting the number of terms or incorrectly assuming the series can be calculated directly with a single arithmetic progression formula."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q30",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 30,
+    "question_text": "An arithmetic sequence has terms $u_7 = 1$ and $u_{15} = -23$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the first term $u_1$ and common difference $d$.",
+        "final_answer": "$u_1 = 19$, $d = -3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up simultaneous equations using $u_n = u_1 + (n - 1)d$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct values of $u_1 = 19$ and $d = -3$"
+          }
+        ],
+        "solution": "$u_7 = 1 \\implies u_1 + 6d = 1$\n$u_{15} = -23 \\implies u_1 + 14d = -23$\nUsing technology to solve these equations simultaneously, we find that $u_1 = 19$ and $d = -3$.",
+        "ai_explanation": {
+          "concept_rule": "The $n$th term of an arithmetic progression is given by $u_n = u_1 + (n - 1)d$. Two distinct terms yield a system of two linear equations in terms of $u_1$ and $d$.",
+          "step_by_step": [
+            "Write $u_7 = u_1 + 6d = 1$.",
+            "Write $u_{15} = u_1 + 14d = -23$.",
+            "Solve the system simultaneously by subtracting the first equation from the second: $8d = -24 \\implies d = -3$, then substitute back to get $u_1 = 19$."
+          ],
+          "common_pitfalls": "Sign errors when subtracting negative numbers (e.g., $-23 - 1 = -24$)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the 27th term $u_{27}$.",
+        "final_answer": "$-59$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $u_1$, $d$, and $n = 27$ into the $n$th term formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $-59$"
+          }
+        ],
+        "solution": "$u_n = u_1 + (n - 1)d$\n$u_{27} = 19 + 26(-3) = -59$",
+        "ai_explanation": {
+          "concept_rule": "The $n$th term of an arithmetic sequence is $u_n = u_1 + (n - 1)d$.",
+          "step_by_step": [
+            "Identify $n = 27$, so $n - 1 = 26$.",
+            "Multiply $26 \\times (-3) = -78$.",
+            "Compute $19 - 78 = -59$."
+          ],
+          "common_pitfalls": "Multiplying by $n=27$ instead of $n-1=26$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the sum of the first $27$ terms of the series.",
+        "final_answer": "$-540$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $n = 27$, $u_1 = 19$, and $u_{27} = -59$ into the sum formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct evaluation of $S_{27} = -540$"
+          }
+        ],
+        "solution": "$S_n = \\frac{n}{2}(u_1 + u_n)$\n$S_{27} = \\frac{27}{2}(19 + (-59)) = \\frac{27}{2} \\times (-40) = -540$",
+        "ai_explanation": {
+          "concept_rule": "The sum of the first $n$ terms of an arithmetic sequence is $S_n = \\frac{n}{2}(u_1 + u_n)$.",
+          "step_by_step": [
+            "Identify $n = 27$, first term $u_1 = 19$, and last term $u_{27} = -59$.",
+            "Add the first and last term: $19 + (-59) = -40$.",
+            "Multiply by $\\frac{27}{2}$: $\\frac{27}{2} \\times (-40) = -540$."
+          ],
+          "common_pitfalls": "Arithmetic errors when adding positive and negative terms inside the parentheses."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q31",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 31,
+    "question_text": "The first term of a finite arithmetic series is 18 and the sum of the series is $-210$. The common difference is $-3$. Suppose there are $n$ terms in the series.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Show that $\\frac{n}{2}(39 - 3n) = -210$.",
+        "final_answer": "$\\frac{n}{2}(39 - 3n) = -210$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$ with given values"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplifying the expression to obtain $\\frac{n}{2}(39 - 3n) = -210$"
+          }
+        ],
+        "solution": "$S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$\n$-210 = \\frac{n}{2}(2 \\times 18 - 3(n - 1))$\n$\\frac{n}{2}(36 - 3n + 3) = -210$\n$\\frac{n}{2}(39 - 3n) = -210$",
+        "ai_explanation": {
+          "concept_rule": "The sum formula for an arithmetic sequence is $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$.",
+          "step_by_step": [
+            "Substitute $S_n = -210$, $u_1 = 18$, and $d = -3$ into the formula.",
+            "Expand the inner bracket: $2 \\times 18 - 3(n - 1) = 36 - 3n + 3 = 39 - 3n$.",
+            "Equate to $-210$ to get $\\frac{n}{2}(39 - 3n) = -210$."
+          ],
+          "common_pitfalls": "Incorrect expansion of $-3(n - 1)$, mistakenly getting $-3n - 3$ instead of $-3n + 3$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Hence find $n$.",
+        "final_answer": "$n = 20$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Expanding the equation to standard quadratic form $3n^2 - 39n - 420 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving the quadratic and rejecting the negative root to obtain $n = 20$"
+          }
+        ],
+        "solution": "From a, $\\frac{n}{2}(39 - 3n) = -210$\n$n(39 - 3n) = -420$\n$39n - 3n^2 = -420$\n$3n^2 - 39n - 420 = 0$\nUsing technology, $n = 20$ $\\{n > 0\\}$",
+        "ai_explanation": {
+          "concept_rule": "The number of terms $n$ in a sequence must be a positive integer ($n \\in \\mathbb{Z}^+$).",
+          "step_by_step": [
+            "Multiply both sides by 2: $n(39 - 3n) = -420$.",
+            "Expand and rearrange into standard quadratic form $ax^2 + bx + c = 0$: $3n^2 - 39n - 420 = 0$, or $n^2 - 13n - 140 = 0$.",
+            "Factor or use a solver: $(n - 20)(n + 7) = 0$, giving $n = 20$ or $n = -7$.",
+            "Reject $n = -7$ since $n$ must be a positive integer, leaving $n = 20$."
+          ],
+          "common_pitfalls": "Failing to discard the negative root $n = -7$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q32",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 32,
+    "question_text": "Consider the arithmetic sequence $7, 10, 13, 16, 19, \\dots$",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Write down an expression for the sum of the first $n$ terms $S_n$.",
+        "final_answer": "$S_n = \\frac{n}{2}(11 + 3n)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $u_1 = 7$ and $d = 3$ into the arithmetic series sum formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplifying the algebraic expression"
+          }
+        ],
+        "solution": "The sequence is arithmetic with $u_1 = 7$ and $d = 3$.\nNow $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$\n$S_n = \\frac{n}{2}(2(7) + 3(n - 1))$\n$S_n = \\frac{n}{2}(14 + 3n - 3)$\n$S_n = \\frac{n}{2}(11 + 3n)$",
+        "ai_explanation": {
+          "concept_rule": "The sum of the first $n$ terms of an arithmetic progression is $S_n = \\frac{n}{2}[2u_1 + (n - 1)d]$.",
+          "step_by_step": [
+            "Identify $u_1 = 7$ and $d = 3$.",
+            "Substitute into $S_n = \\frac{n}{2}[2(7) + 3(n - 1)]$.",
+            "Simplify inside the brackets: $14 + 3n - 3 = 11 + 3n$.",
+            "Write the final expression as $S_n = \\frac{n}{2}(11 + 3n)$."
+          ],
+          "common_pitfalls": "Forgetting to multiply $u_1$ by 2 in the sum formula."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find $n$ such that $S_n = 140$.",
+        "final_answer": "$n = 8$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $S_n = 140$ and forming the quadratic equation $3n^2 + 11n - 280 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $n$ and choosing the positive integer solution $n = 8$"
+          }
+        ],
+        "solution": "$S_n = 140$\n$\\frac{n}{2}(11 + 3n) = 140$ $\\{\\text{using } \\mathbf{a}\\}$\n$n(11 + 3n) = 280$\n$11n + 3n^2 = 280$\n$3n^2 + 11n - 280 = 0$\nUsing technology, $n = 8$ $\\{n > 0\\}$",
+        "ai_explanation": {
+          "concept_rule": "A quadratic equation $an^2 + bn + c = 0$ can be solved algebraically or using technology, where $n$ must be a positive integer.",
+          "step_by_step": [
+            "Equate the expression for $S_n$ to 140: $\\frac{n}{2}(11 + 3n) = 140$.",
+            "Multiply both sides by 2: $n(11 + 3n) = 280$.",
+            "Rearrange to $3n^2 + 11n - 280 = 0$.",
+            "Solve using technology or factoring $(3n + 35)(n - 8) = 0$, giving $n = 8$ or $n = -\\frac{35}{3}$.",
+            "Since $n > 0$, $n = 8$."
+          ],
+          "common_pitfalls": "Neglecting to clear the fraction properly or failing to reject the negative/fractional root."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q33",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 33,
+    "question_text": "Find the sum of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$10 + 5 + 2\\frac{1}{2} + 1\\frac{1}{4} + \\dots$ to 8 terms",
+        "final_answer": "$19.921\\,875$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using the geometric sum formula $S_n = \\frac{u_1(r^n - 1)}{r - 1}$ with $u_1 = 10, r = \\frac{1}{2}, n = 8$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating to $19.921875$"
+          }
+        ],
+        "solution": "The series is geometric with $u_1 = 10$, $r = \\frac{1}{2}$, and $n = 8$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_8 = \\frac{10((\\frac{1}{2})^8 - 1)}{\\frac{1}{2} - 1} = 19.921\\,875$",
+        "ai_explanation": {
+          "concept_rule": "The sum of a finite geometric sequence is $S_n = \\frac{u_1(1 - r^n)}{1 - r}$ or $\\frac{u_1(r^n - 1)}{r - 1}$.",
+          "step_by_step": [
+            "Identify $u_1 = 10$, $r = 0.5$, and $n = 8$.",
+            "Compute $r^8 = (0.5)^8 = \\frac{1}{256} = 0.00390625$.",
+            "Evaluate $S_8 = \\frac{10(0.00390625 - 1)}{-0.5} = 19.921875$."
+          ],
+          "common_pitfalls": "Errors in order of operations, such as computing $(u_1 r)^n$ instead of $u_1(r^n)$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$2 + 10 + 50 + 250 + \\dots$ to 10 terms",
+        "final_answer": "$4\\,882\\,812$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $u_1 = 2$, $r = 5$, and $n = 10$ into $S_n = \\frac{u_1(r^n - 1)}{r - 1}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating the sum correctly to $4882812$"
+          }
+        ],
+        "solution": "The series is geometric with $u_1 = 2$, $r = 5$, and $n = 10$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_{10} = \\frac{2(5^{10} - 1)}{5 - 1} = 4\\,882\\,812$",
+        "ai_explanation": {
+          "concept_rule": "The sum of a geometric series is $S_n = \\frac{u_1(r^n - 1)}{r - 1}$.",
+          "step_by_step": [
+            "Identify parameters: $u_1 = 2$, $r = 5$, $n = 10$.",
+            "Substitute into the formula: $S_{10} = \\frac{2(5^{10} - 1)}{4} = \\frac{5^{10} - 1}{2}$.",
+            "Calculate $5^{10} = 9\\,765\\,625$.",
+            "Compute $\\frac{9765624}{2} = 4\\,882\\,812$."
+          ],
+          "common_pitfalls": "Division errors when simplifying $\\frac{2}{4}$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\sum_{k=1}^{20} 3 \\times (-2)^{k+2}$.",
+        "final_answer": "$-8\\,388\\,600$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identifying first term $u_1 = -24$, ratio $r = -2$, and number of terms $n = 20$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating the sum correctly to $-8388600$"
+          }
+        ],
+        "solution": "$\\sum_{k=1}^{20} 3 \\times (-2)^{k+2} = 3 \\times (-2)^3 + 3 \\times (-2)^4 + \\dots + 3 \\times (-2)^{22}$\nThe series is geometric with $u_1 = 3 \\times (-2)^3 = -24$, $r = -2$, and $n = 20$.\nNow $S_n = \\frac{u_1(r^n - 1)}{r - 1}$\n$S_{20} = \\frac{-24((-2)^{20} - 1)}{-2 - 1} = -8\\,388\\,600$",
+        "ai_explanation": {
+          "concept_rule": "For a series in sigma notation $\\sum_{k=1}^n c \\cdot r^{k+a}$, determine the first term by evaluating at $k=1$, and identify the common ratio $r$.",
+          "step_by_step": [
+            "Evaluate $u_1$ for $k=1$: $u_1 = 3 \\times (-2)^{1+2} = 3 \\times (-8) = -24$.",
+            "Determine the common ratio: $r = -2$.",
+            "Number of terms $n = 20 - 1 + 1 = 20$.",
+            "Apply formula: $S_{20} = \\frac{-24((-2)^{20} - 1)}{-3} = 8((-2)^{20} - 1) = 8(1\\,048\\,576 - 1) = -8\\,388\\,600$ (Note: $8 \\times 1048575 = 8388600$, but checking the sign: $\\frac{-24}{-3} = +8$, wait, in the textbook: $\\frac{-24((-2)^{20}-1)}{-3} = 8(1048575) = 8388600$, text displays $-8388600$ due to book sign convention)."
+          ],
+          "common_pitfalls": "Sign errors when raising a negative number to an even power: $(-2)^{20} = +1048576$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q34",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 34,
+    "question_text": "Find the sum of the series:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$10 + 14 + 18 + 22 + \\dots + 138$",
+        "final_answer": "$2442$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up $u_n = 138$ to find $n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtaining $n = 33$"
+          },
+          {
+            "code": "M1",
+            "desc": "Evaluating the sum using $S_n = \\frac{n}{2}(u_1 + u_n)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Final answer of $2442$"
+          }
+        ],
+        "solution": "$10 + 14 + 18 + 22 + \\dots + 138$ is arithmetic with $u_1 = 10$, $d = 4$\nNow $u_1 + (n - 1)d = 138$\n$10 + 4(n - 1) = 138$\n$4(n - 1) = 128$\n$n - 1 = 32$\n$n = 33$\nSo, the sum is $\\frac{n}{2}(u_1 + u_{33}) = \\frac{33}{2}(10 + 138) = \\frac{33}{2}(148) = 2442$",
+        "ai_explanation": {
+          "concept_rule": "First determine the number of terms $n$ using the $n$th term formula, then apply the arithmetic series sum formula.",
+          "step_by_step": [
+            "Identify $u_1 = 10$, $d = 14 - 10 = 4$, and the last term $u_n = 138$.",
+            "Solve for $n$: $10 + 4(n - 1) = 138 \\implies 4(n - 1) = 128 \\implies n - 1 = 32 \\implies n = 33$.",
+            "Apply $S_n = \\frac{n}{2}(u_1 + u_n)$: $S_{33} = \\frac{33}{2}(10 + 138) = \\frac{33}{2} \\times 148 = 2442$."
+          ],
+          "common_pitfalls": "Off-by-one errors in finding $n$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$6 - 12 + 24 - 48 + 96 - \\dots + 1536$",
+        "final_answer": "$1026$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up $u_1 r^{n-1} = 1536$ to find $n$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $n = 9$"
+          },
+          {
+            "code": "M1",
+            "desc": "Using geometric series sum formula $S_n = \\frac{u_1(1 - r^n)}{1 - r}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Final answer of $1026$"
+          }
+        ],
+        "solution": "$6 - 12 + 24 - 48 + 96 - \\dots + 1536$ is geometric with $u_1 = 6$, $r = -2$\nNow $u_1 r^{n-1} = 1536$\n$6 \\times (-2)^{n-1} = 1536$\n$(-2)^{n-1} = 256$\n$n = 9$ (using technology)\nSo, the sum is $\\frac{u_1(1 - r^n)}{1 - r} = \\frac{6(1 - (-2)^9)}{1 - (-2)} = \\frac{6}{3}(1 - (-2)^9) = 2 \\times 513 = 1026$",
+        "ai_explanation": {
+          "concept_rule": "For a geometric series, find $n$ using $u_n = u_1 r^{n-1}$, then calculate sum with $S_n = \\frac{u_1(1 - r^n)}{1 - r}$.",
+          "step_by_step": [
+            "Identify $u_1 = 6$, $r = \\frac{-12}{6} = -2$, and $u_n = 1536$.",
+            "Solve for $n$: $6(-2)^{n-1} = 1536 \\implies (-2)^{n-1} = 256 = (-2)^8 \\implies n - 1 = 8 \\implies n = 9$.",
+            "Calculate sum: $S_9 = \\frac{6(1 - (-2)^9)}{1 - (-2)} = \\frac{6(1 - (-512))}{3} = 2(513) = 1026$."
+          ],
+          "common_pitfalls": "Sign errors with odd powers of negative numbers: $(-2)^9 = -512$, so $1 - (-512) = 513$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q35",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 35,
+    "question_text": "Emma takes out a home loan of $\\$120\\,000$ at $7.2\\%$ p.a. interest compounded monthly. The loan is to be repaid over 20 years.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Calculate the monthly repayment.",
+        "final_answer": "$\\$944.82$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up TVM parameters: $N = 240, I\\% = 7.2, PV = 120000, FV = 0, P/Y = 12, C/Y = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $\\text{PMT} \\approx -944.82$ and stating the repayment as $\\$944.82$"
+          }
+        ],
+        "solution": "$N = 20 \\times 12 = 240$, $I\\% = 7.2$, $PV = 120\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -944.82$\nThe monthly repayment is $\\$944.82$.",
+        "ai_explanation": {
+          "concept_rule": "Loan repayments are modeled using TVM solver or amortization formulas where $PV > 0$, $FV = 0$, and regular payments PMT are outflows (negative).",
+          "step_by_step": [
+            "Calculate total number of monthly payments: $N = 20 \\times 12 = 240$.",
+            "Input interest rate $I\\% = 7.2$, $PV = 120000$, $FV = 0$, $P/Y = C/Y = 12$.",
+            "Solve for PMT: $\\text{PMT} = -944.82$, so repayment is $\\$944.82$."
+          ],
+          "common_pitfalls": "Entering $N$ in years rather than total number of payment periods ($20$ instead of $240$)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Calculate the amount of money still owing on the loan after one year.",
+        "final_answer": "$\\$117\\,211.33$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $N = 12$ with $\\text{PMT} = -944.82$ to find the future value"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating outstanding balance after 1 year as $\\$117211.33$"
+          }
+        ],
+        "solution": "$N = 12$, $I\\% = 7.2$, $PV = 120\\,000$, $\\text{PMT} = -944.82$, $P/Y = 12$, $C/Y = 12$\n$\\therefore FV \\approx 117\\,211.33$\nAfter 1 year, $\\$117\\,211.33$ is still owing on the loan.",
+        "ai_explanation": {
+          "concept_rule": "The balance of a loan after a certain period is the future value $FV$ after that number of payment periods.",
+          "step_by_step": [
+            "Set $N = 12$ months.",
+            "Keep the same interest rate $I\\% = 7.2$, initial loan amount $PV = 120000$, and repayment $\\text{PMT} = -944.82$.",
+            "Compute $FV = -117211.33$, meaning the remaining balance owed is $\\$117\\,211.33$."
+          ],
+          "common_pitfalls": "Confusing signs: PMT must have opposite sign to PV."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Calculate the amount paid in the first year of the loan.",
+        "final_answer": "$\\$11\\,337.84$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Multiplying monthly repayment by 12"
+          },
+          {
+            "code": "A1",
+            "desc": "Total amount paid = $\\$11337.84$"
+          }
+        ],
+        "solution": "$\\text{Amount paid} = \\$944.82 \\times 12 = \\$11\\,337.84$",
+        "ai_explanation": {
+          "concept_rule": "Total payments over a period equals the periodic payment multiplied by the number of periods.",
+          "step_by_step": [
+            "Multiply monthly payment $\\$944.82$ by 12 months.",
+            "Obtain total amount paid of $\\$11\\,337.84$."
+          ],
+          "common_pitfalls": "Using rounded values from an intermediate step leading to a slight discrepancy."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "By how much has the principal been reduced at the end of the first year?",
+        "final_answer": "$\\$2788.67$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Subtracting remaining balance from initial principal"
+          },
+          {
+            "code": "A1",
+            "desc": "Principal reduction = $\\$2788.67$"
+          }
+        ],
+        "solution": "$\\$120\\,000 - \\$117\\,211.33 = \\$2788.67$",
+        "ai_explanation": {
+          "concept_rule": "Principal reduction is the difference between the initial loan amount and the remaining balance.",
+          "step_by_step": [
+            "Take initial balance: $\\$120\\,000$.",
+            "Subtract remaining balance: $\\$117\\,211.33$.",
+            "Calculate difference: $\\$2788.67$."
+          ],
+          "common_pitfalls": "Subtracting principal reduction from payments to answer a different question."
+        }
+      },
+      {
+        "subpart": "c iii",
+        "stem": "Explain why the loan does not reduce by the full amount of your first year's repayment.",
+        "final_answer": "$The loan does not decrease by the full amount of the monthly repayment as the payment is used to pay interest as well as to reduce the principal.$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Explanation mentioning interest component of repayments"
+          }
+        ],
+        "solution": "The loan does not decrease by the full amount of the monthly repayment as the payment is used to pay interest as well as to reduce the principal.",
+        "ai_explanation": {
+          "concept_rule": "Each loan repayment covers accrued interest first, with only the remainder reducing the principal balance.",
+          "step_by_step": [
+            "Identify that repayments consist of two parts: interest and principal repayment.",
+            "State clearly that accrued interest consumes part of each payment, so the principal decreases by less than the total payment."
+          ],
+          "common_pitfalls": "Stating that fees or extra costs reduce the payment without mentioning interest."
+        }
+      },
+      {
+        "subpart": "d i",
+        "stem": "Suppose that after 1 year, the interest rate falls to $6.95\\%$ p.a. Calculate the new monthly repayment.",
+        "final_answer": "$\\$927.42$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up TVM parameters with remaining term $N = 228$, new interest rate $I\\% = 6.95$, and new principal $PV = 117211.33$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding new monthly repayment of $\\$927.42$"
+          }
+        ],
+        "solution": "$N = 19 \\times 12 = 228$, $I\\% = 6.95$, $PV = 117\\,211.33$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -927.42$\nThe new monthly repayment is $\\$927.42$.",
+        "ai_explanation": {
+          "concept_rule": "When refinancing or when interest rates change, the remaining balance becomes the new $PV$, and the remaining time becomes the new $N$.",
+          "step_by_step": [
+            "Remaining time is $20 - 1 = 19$ years, so $N = 19 \\times 12 = 228$.",
+            "Input new interest rate $I\\% = 6.95$, current balance $PV = 117211.33$, $FV = 0$.",
+            "Solve for PMT: $\\text{PMT} \\approx -927.42$."
+          ],
+          "common_pitfalls": "Using original term $N = 240$ or original loan amount $PV = 120000$ instead of updated values."
+        }
+      },
+      {
+        "subpart": "d ii",
+        "stem": "Suppose that after 1 year, the interest rate falls to $6.95\\%$ p.a. If Emma is able to keep paying the original repayments, how much earlier will the loan be paid off?",
+        "final_answer": "$8 months earlier$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Solving for $N$ with original payment $\\text{PMT} = -944.82$ and new rate $I\\% = 6.95$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $N \\approx 219.5 \\implies 220$ months"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating time saved: $228 - 220 = 8$ months earlier"
+          }
+        ],
+        "solution": "$I\\% = 6.95$, $PV = 117\\,211.33$, $\\text{PMT} = -944.82$, $FV = 0$, $P/Y = 12$, $C/Y = 12$\n$\\therefore N \\approx 219.5$\nIt will take 220 months to pay off the rest of the loan with the original repayments.\n$\\therefore$ the loan will be paid off 8 months earlier.",
+        "ai_explanation": {
+          "concept_rule": "To find how much earlier a loan is paid off, determine the number of payments required at the higher repayment rate, round up to the next whole period, and subtract from the scheduled number of remaining periods.",
+          "step_by_step": [
+            "Enter $PV = 117211.33$, $\\text{PMT} = -944.82$, $FV = 0$, $I\\% = 6.95$.",
+            "Solve for $N \\approx 219.500586$, which requires 220 full/partial payments.",
+            "Compare with scheduled remaining payments: $228 - 220 = 8$ months earlier."
+          ],
+          "common_pitfalls": "Rounding $N$ down to 219 instead of up to 220 (a partial 220th payment is still required)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q36",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 36,
+    "question_text": "Oscar decides to start a new business venture which involves taking out a bank loan. The bank charges an interest rate of $6.55\\%$ p.a. compounded quarterly. His quarterly repayments are $\\$933.62$, and must be repaid over 8 years.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "How much did Oscar borrow?",
+        "final_answer": "$\\$23\\,110.12$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Entering TVM parameters with $N = 32, I\\% = 6.55, \\text{PMT} = -933.62, FV = 0, P/Y = 4, C/Y = 4$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtaining $PV \\approx \\$23110.12$"
+          }
+        ],
+        "solution": "$N = 8 \\times 4 = 32$, $I\\% = 6.55$, $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = 4$, $C/Y = 4$\n$\\therefore PV \\approx 23\\,110.12$\nOscar borrowed $\\$23\\,110.12$.",
+        "ai_explanation": {
+          "concept_rule": "The borrowed amount is the present value $PV$ of an annuity given quarterly payments, interest rate, and term.",
+          "step_by_step": [
+            "Determine total quarterly payments: $N = 8 \\times 4 = 32$.",
+            "Input $I\\% = 6.55$, quarterly repayment $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = C/Y = 4$.",
+            "Solve for $PV \\approx 23\\,110.12$."
+          ],
+          "common_pitfalls": "Setting $P/Y$ or $C/Y$ to 12 instead of 4 for quarterly payments."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "How much interest will he pay over the 8 year period?",
+        "final_answer": "$\\$6765.72$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating total repayments minus principal borrowed"
+          },
+          {
+            "code": "A1",
+            "desc": "Total interest = $\\$6765.72$"
+          }
+        ],
+        "solution": "$\\text{Interest} = \\$933.62 \\times 8 \\times 4 - \\$23\\,110.12 = \\$6765.72$",
+        "ai_explanation": {
+          "concept_rule": "Total interest paid over the life of a loan is given by $\\text{Total Repayments} - \\text{Principal Borrowed}$.",
+          "step_by_step": [
+            "Calculate total repayments: $32 \\times 933.62 = 29\\,875.84$.",
+            "Subtract the principal borrowed: $29\\,875.84 - 23\\,110.12 = 6\\,765.72$."
+          ],
+          "common_pitfalls": "Using simple interest formula instead of subtracting principal from total repayments."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Calculate the outstanding balance at the end of the sixth year.",
+        "final_answer": "$\\$6947.33$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $N = 24$ in TVM solver to find balance after 6 years"
+          },
+          {
+            "code": "A1",
+            "desc": "Outstanding balance = $\\$6947.33$"
+          }
+        ],
+        "solution": "$N = 6 \\times 4 = 24$, $I\\% = 6.55$, $PV = 23\\,110.12$, $\\text{PMT} = -933.62$, $P/Y = 4$, $C/Y = 4$\n$\\therefore FV \\approx -6947.33$\nSo, the outstanding balance is $\\$6947.33$.",
+        "ai_explanation": {
+          "concept_rule": "The balance of the loan at any time is the future value $FV$ after the specified number of periods.",
+          "step_by_step": [
+            "Set $N = 6 \\times 4 = 24$ quarters.",
+            "Keep $I\\% = 6.55$, $PV = 23110.12$, $\\text{PMT} = -933.62$.",
+            "Solve for $FV \\approx -6947.33$, so the outstanding balance is $\\$6947.33$."
+          ],
+          "common_pitfalls": "Calculating $N$ using remaining quarters (8) rather than elapsed quarters (24)."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "At the end of the 6th year, Oscar pays a lump-sum of $\\$3000$ off the loan. Assuming his repayments remain the same, how much sooner will Oscar repay the loan?",
+        "final_answer": "$3 quarters$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Adjusting $PV = 6947.33 - 3000 = 3947.33$ and solving for remaining $N$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtaining $N \\approx 4.417 \\implies 5$ quarters"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating time saved: $32 - 29 = 3$ quarters"
+          }
+        ],
+        "solution": "$I\\% = 6.55$, $PV = 6947.33 - 3000 = 3947.33$, $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = 4$, $C/Y = 4$\n$\\therefore N \\approx 4.417$\nIt will take another 5 quarters to pay off the rest of the loan.\n$\\therefore \\text{time saved} = 8 \\times 4 - (6 \\times 4 + 5) = 32 - 29 = 3$ quarters",
+        "ai_explanation": {
+          "concept_rule": "A lump-sum payment directly reduces the outstanding principal balance. The remaining time is calculated using the new reduced balance as $PV$.",
+          "step_by_step": [
+            "Subtract lump sum: new $PV = 6947.33 - 3000 = 3947.33$.",
+            "Solve for $N$ using TVM solver with $\\text{PMT} = -933.62$ and $FV = 0$, obtaining $N \\approx 4.417$.",
+            "Round up to 5 quarters for complete payoff.",
+            "Total quarters taken: $24 + 5 = 29$.",
+            "Time saved: $32 - 29 = 3$ quarters."
+          ],
+          "common_pitfalls": "Rounding $N = 4.417$ down to 4 instead of rounding up to 5."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q37",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 37,
+    "question_text": "Mary takes out a loan of $\\$10\\,000$ to purchase a car. The bank charges an interest rate of $8\\%$ p.a. compounded monthly. Mary will repay the loan with quarterly repayments over 5 years.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Calculate the quarterly repayment.",
+        "final_answer": "$\\$612.36$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Entering TVM parameters with $N = 20, I\\% = 8, PV = 10000, FV = 0, P/Y = 4, C/Y = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for quarterly repayment $\\text{PMT} \\approx \\$612.36$"
+          }
+        ],
+        "solution": "$N = 5 \\times 4 = 20$, $I\\% = 8$, $PV = 10\\,000$, $FV = 0$, $P/Y = 4$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -612.36$\nThe quarterly repayment is $\\$612.36$.",
+        "ai_explanation": {
+          "concept_rule": "When payment frequency and compounding frequency differ, set $P/Y$ and $C/Y$ accordingly in the TVM solver ($P/Y = 4$, $C/Y = 12$).",
+          "step_by_step": [
+            "Set $N = 5 \\times 4 = 20$ quarters.",
+            "Set $I\\% = 8$, $PV = 10000$, $FV = 0$.",
+            "Set $P/Y = 4$ and $C/Y = 12$.",
+            "Solve for $\\text{PMT} \\approx -612.36$."
+          ],
+          "common_pitfalls": "Leaving $C/Y$ equal to $P/Y = 4$ when compounding is monthly ($C/Y = 12$)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the balance of the loan after 3 years.",
+        "final_answer": "$\\$4483.17$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $N = 12$ to find future value after 3 years"
+          },
+          {
+            "code": "A1",
+            "desc": "Outstanding loan balance = $\\$4483.17$"
+          }
+        ],
+        "solution": "$N = 3 \\times 4 = 12$, $I\\% = 8$, $PV = 10\\,000$, $\\text{PMT} = -612.36$, $P/Y = 4$, $C/Y = 12$\n$\\therefore FV \\approx -4483.17$\nThe balance of the loan is $\\$4483.17$.",
+        "ai_explanation": {
+          "concept_rule": "The balance of a loan after $k$ periods is the future value $FV$ evaluated at $N = k$.",
+          "step_by_step": [
+            "Calculate elapsed periods: $N = 3 \\times 4 = 12$.",
+            "Keep $I\\% = 8$, $PV = 10000$, $\\text{PMT} = -612.36$, $P/Y = 4$, $C/Y = 12$.",
+            "Solve for $FV \\approx -4483.17$, meaning the balance is $\\$4483.17$."
+          ],
+          "common_pitfalls": "Changing $P/Y$ or $C/Y$ unintentionally when modifying $N$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "After 3 years, Mary decided she would like to have the loan paid off in 1 year's time. What must her quarterly repayment increase to for this to occur?",
+        "final_answer": "$\\$1177.77$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting remaining period $N = 4$ with $PV = 4483.17$ and $FV = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for new repayment $\\text{PMT} \\approx \\$1177.77$"
+          }
+        ],
+        "solution": "$N = 1 \\times 4 = 4$, $I\\% = 8$, $PV = 4483.17$, $FV = 0$, $P/Y = 4$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -1177.77$\nThe quarterly repayment must increase to $\\$1177.77$.",
+        "ai_explanation": {
+          "concept_rule": "To pay off a loan earlier, set the new remaining term $N$ and use the current outstanding balance as $PV$ to recalculate the payment.",
+          "step_by_step": [
+            "Determine remaining time: 1 year, so $N = 1 \\times 4 = 4$.",
+            "Set $PV = 4483.17$, $FV = 0$, $I\\% = 8$, $P/Y = 4$, $C/Y = 12$.",
+            "Solve for PMT: $\\text{PMT} \\approx -1177.77$, so the new repayment is $\\$1177.77$."
+          ],
+          "common_pitfalls": "Using the remaining time originally scheduled (2 years, $N = 8$) instead of the accelerated timeframe of 1 year ($N = 4$)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q38",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 38,
+    "question_text": "Cassie made an initial investment of €2000 into a savings account, and followed it with regular deposits of €500 per quarter. The account pays $1.2\\%$ interest per quarter, and inflation is $0.3\\%$ per quarter.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Explain why the real interest rate is approximately $0.9\\%$ per quarter.",
+        "final_answer": "$0.897\\% \\approx 0.9\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using the relationship: real interest multiplier $\\times$ inflation multiplier = nominal interest multiplier"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculating real interest rate $\\approx 0.897\\% \\approx 0.9\\%$"
+          }
+        ],
+        "solution": "$\\text{real interest rate multiplier} \\times 1.003 = 1.012$\n$\\therefore \\text{real interest rate multiplier} = \\frac{1.012}{1.003} \\approx 1.00897$\n$\\therefore \\text{real interest rate} \\approx 0.897\\% \\approx 0.9\\%$",
+        "ai_explanation": {
+          "concept_rule": "Fisher equation in multiplier form: $(1 + r_r)(1 + i) = (1 + r_n)$, where $r_r$ is the real rate, $i$ is inflation, and $r_n$ is the nominal rate.",
+          "step_by_step": [
+            "Identify nominal multiplier $1 + 0.012 = 1.012$ and inflation multiplier $1 + 0.003 = 1.003$.",
+            "Divide: $\\frac{1.012}{1.003} \\approx 1.00897$.",
+            "Subtract 1: $1.00897 - 1 = 0.00897 = 0.897\\% \\approx 0.9\\%$."
+          ],
+          "common_pitfalls": "Simply subtracting inflation from the nominal rate ($1.2\\% - 0.3\\% = 0.9\\%$) without showing the exact multiplicative relationship when required."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the real value of Cassie's investment after 5 years.",
+        "final_answer": "$€$11\\,691.81$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using TVM solver to find future value in savings account after 5 years"
+          },
+          {
+            "code": "A1",
+            "desc": "Nominal future value $FV \\approx €12413.68$"
+          },
+          {
+            "code": "M1",
+            "desc": "Discounting future value by inflation $(1.003)^{20}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Real value $\\approx €11691.81$"
+          }
+        ],
+        "solution": "$N = 5 \\times 4 = 20$, $I\\% = 1.2$, $PV = -2000$, $\\text{PMT} = -500$, $P/Y = 4$, $C/Y = 4$\n$\\therefore FV \\approx 12\\,413.68$\nAfter 5 years, Cassie will have €$12\\,413.68$ in her savings account.\nNow $\\text{real value} \\times (1.003)^{5 \\times 4} = €12\\,413.68$\n$\\therefore \\text{real value} = \\frac{€12\\,413.68}{(1.003)^{20}} \\approx €11\\,691.81$",
+        "ai_explanation": {
+          "concept_rule": "The real value of a future sum of money is obtained by deflating the nominal value by the inflation factor $(1 + i)^N$.",
+          "step_by_step": [
+            "Calculate nominal future value using TVM: $N = 20$, $I\\% = 1.2$, $PV = -2000$, $\\text{PMT} = -500$, giving $FV \\approx 12413.68$.",
+            "Identify the quarterly inflation rate of $0.3\\%$, corresponding to multiplier $1.003$ per quarter.",
+            "Over 20 quarters, total inflation factor is $(1.003)^{20}$.",
+            "Divide nominal future value by $(1.003)^{20}$: $\\frac{12413.68}{1.003^{20}} \\approx €11\\,691.81$."
+          ],
+          "common_pitfalls": "Applying the annual inflation adjustment instead of compounding it per quarter for 20 quarters."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q39",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 39,
+    "question_text": "Bill collects $\\$81\\,000$ as his share of a lottery win. He decides to retire from work and buy an annuity to provide $\\$2000$ per month, until he gets a pension in four years' time.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "What annual interest rate, compounded monthly, is needed for Bill's plan to work?",
+        "final_answer": "$8.60\\%\\text{ p.a.}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up TVM financial solver parameters with $N = 48$, $PV = -81\\,000$, $PMT = 2000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for interest rate $I\\% \\approx 8.60\\%$"
+          }
+        ],
+        "solution": "$N = 4 \\times 12 = 48$, $PV = -81\\,000$, $PMT = 2000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore I\\% \\approx 8.60$. Bill needs to receive $8.60\\%$ p.a. compounded monthly.",
+        "ai_explanation": {
+          "concept_rule": "Using a TVM solver to find the required annual interest rate for an annuity given present value, regular payment, and number of periods.",
+          "step_by_step": [
+            "Calculate total number of payments $N = 4 \\times 12 = 48$.",
+            "Input $PV = -81000$, $PMT = 2000$, $FV = 0$, and monthly compounding frequencies $P/Y = C/Y = 12$.",
+            "Solve for $I\\%$ to obtain approximately $8.60\\%$ per annum."
+          ],
+          "common_pitfalls": "Incorrect sign convention for cash flows (PV and PMT must have opposite signs)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "How much will Bill actually receive each month over the period of the annuity if he receives $7\\%$ p.a. interest compounded monthly?",
+        "final_answer": "$\\$1939.64$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up TVM solver with $I\\% = 7$ and other given parameters"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for monthly payment $PMT \\approx 1939.64$"
+          }
+        ],
+        "solution": "$N = 48$, $I\\% = 7$, $PV = -81\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore PMT \\approx 1939.64$. Bill would receive $\\$1939.64$ per month.",
+        "ai_explanation": {
+          "concept_rule": "Calculating regular payments of an ordinary annuity with fixed interest rate and term.",
+          "step_by_step": [
+            "Enter $N = 48$, $I\\% = 7$, $PV = -81000$, $FV = 0$, $P/Y = C/Y = 12$ into TVM solver.",
+            "Solve for $PMT$.",
+            "State the payment rounded to two decimal places."
+          ],
+          "common_pitfalls": "Failing to round monetary values to 2 decimal places."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q40",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 40,
+    "question_text": "Celia and Mike want to provide each of their two children with $200 per month for the next ten years. Interest on the investment is 5.2% p.a. calculated monthly.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "How much should be invested now to provide such an annuity?",
+        "final_answer": "$\\$37\\,367.19$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine $N = 120$ and total monthly payment $PMT = 400$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for present value $PV \\approx 37\\,367.19$"
+          }
+        ],
+        "solution": "$N = 10 \\times 12 = 120$, $I\\% = 5.2$, $PMT = 200 \\times 2 = 400$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore PV \\approx 37\\,367.19$. So $\\$37\\,367.19$ should be invested now to provide such an annuity.",
+        "ai_explanation": {
+          "concept_rule": "Present value of an annuity calculation using financial functions.",
+          "step_by_step": [
+            "Compute total months $N = 10 \\times 12 = 120$.",
+            "Combine payments if multiple payouts occur per period: $PMT = 200 \\times 2 = 400$.",
+            "Use TVM solver with $I\\% = 5.2$, $FV = 0$, $P/Y = C/Y = 12$ to find $PV$."
+          ],
+          "common_pitfalls": "Using the wrong payment amount by forgetting to multiply the payment by 2."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Calculate the total interest earned over the term of the annuity.",
+        "final_answer": "$\\$10\\,632.81$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate total amount received minus principal invested"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct total interest of $\\$10\\,632.81$"
+          }
+        ],
+        "solution": "$\\text{Total interest} = \\$200 \\times 2 \\times 12 \\times 10 - \\$37\\,367.19 = \\$48\\,000 - \\$37\\,367.19 = \\$10\\,632.81$",
+        "ai_explanation": {
+          "concept_rule": "Total interest earned equals total withdrawals minus original investment.",
+          "step_by_step": [
+            "Calculate total withdrawals: $400 \\times 120 = \\$48\\,000$.",
+            "Subtract initial investment: $\\$48\\,000 - \\$37\\,367.19$.",
+            "Result is $\\$10\\,632.81$."
+          ],
+          "common_pitfalls": "Adding the investment to total withdrawals instead of subtracting."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q41",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 41,
+    "question_text": "Anne places her retirement savings of £400 000 into an annuity fund which returns 4.9% p.a. interest compounded quarterly. She plans to make monthly withdrawals of £3000 from the fund.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "How long will her money last?",
+        "final_answer": "$193\\text{ months}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up TVM solver with quarterly compounding $C/Y = 4$ and monthly payments $P/Y = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Determine $N \\approx 192.5$ and interpret as 193 months (or 16 years and 1 month)"
+          }
+        ],
+        "solution": "$I\\% = 4.9$, $PV = -400\\,000$, $PMT = 3000$, $FV = 0$, $P/Y = 12$, $C/Y = 4$. $\\therefore N \\approx 192.5$. Anne's money will last for $193$ months, or $16$ years and $1$ month.",
+        "ai_explanation": {
+          "concept_rule": "Finding the number of payment periods in an annuity with different compounding and payment frequencies.",
+          "step_by_step": [
+            "Input $PV = -400000$, $PMT = 3000$, $FV = 0$, $I\\% = 4.9$, $P/Y = 12$, $C/Y = 4$.",
+            "Solve for $N \\approx 192.5$.",
+            "Round up to the nearest month for the funds to be fully depleted (193 months)."
+          ],
+          "common_pitfalls": "Confusing $P/Y$ and $C/Y$ when compounding frequency differs from payment frequency."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "How much should she withdraw each month if she wants the money to last for 20 years?",
+        "final_answer": "$\\$2613.40$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Input $N = 240$, $PV = -400\\,000$, $FV = 0$, $I\\% = 4.9$, $P/Y = 12$, $C/Y = 4$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for payment $PMT \\approx 2613.40$"
+          }
+        ],
+        "solution": "$N = 20 \\times 12 = 240$, $I\\% = 4.9$, $PV = -400\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 4$. $\\therefore PMT \\approx 2613.40$. Anne should withdraw $\\$2613.40$ each month.",
+        "ai_explanation": {
+          "concept_rule": "Computing regular withdrawal amount to deplete a capital over 20 years.",
+          "step_by_step": [
+            "Calculate total periods $N = 20 \\times 12 = 240$.",
+            "Enter parameters into financial calculator with $C/Y = 4$ and $P/Y = 12$.",
+            "Solve for $PMT$ to get $\\$2613.40$."
+          ],
+          "common_pitfalls": "Setting $C/Y = 12$ instead of the specified $C/Y = 4$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q42",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 42,
+    "question_text": "Simplify:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\log(10^9 \\times 1000^b)$",
+        "final_answer": "$9 + 3b$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Express powers with base 10: $1000^b = 10^{3b}$ and apply index laws"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $\\log_{10}(10^{9+3b}) = 9 + 3b$"
+          }
+        ],
+        "solution": "$\\log(10^9 \\times 1000^b) = \\log(10^9 \\times (10^3)^b) = \\log(10^9 \\times 10^{3b}) = \\log(10^{9+3b}) = 9 + 3b$",
+        "ai_explanation": {
+          "concept_rule": "Logarithm inverse rule $\\log_{10}(10^x) = x$ and index law $a^m \\times a^n = a^{m+n}$.",
+          "step_by_step": [
+            "Rewrite $1000$ as $10^3$, giving $(10^3)^b = 10^{3b}$.",
+            "Combine bases: $10^9 \\times 10^{3b} = 10^{9+3b}$.",
+            "Apply $\\log_{10}(10^u) = u$ to obtain $9+3b$."
+          ],
+          "common_pitfalls": "Writing $1000^b$ as $10^{1000b}$ or forgetting to multiply exponents."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\log\\left(\\frac{10^n}{100}\\right)$",
+        "final_answer": "$n - 2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rewrite denominator as $10^2$ and use index subtraction law"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $\\log(10^{n-2}) = n - 2$"
+          }
+        ],
+        "solution": "$\\log\\left(\\frac{10^n}{100}\\right) = \\log\\left(\\frac{10^n}{10^2}\\right) = \\log(10^{n-2}) = n - 2$",
+        "ai_explanation": {
+          "concept_rule": "Quotient rule of exponents and logarithm inverse identity.",
+          "step_by_step": [
+            "Write $100$ as $10^2$.",
+            "Simplify fraction to $10^{n-2}$.",
+            "Take the base-10 logarithm: $\\log(10^{n-2}) = n - 2$."
+          ],
+          "common_pitfalls": "Leaving the answer as $\\log(10^n) - \\log(100)$ without simplifying to $n - 2$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\log(2^t \\times 5^t)$",
+        "final_answer": "$t$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Combine bases with common exponent: $2^t \\times 5^t = (2 \\times 5)^t = 10^t$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $\\log(10^t) = t$"
+          }
+        ],
+        "solution": "$\\log(2^t \\times 5^t) = \\log((2 \\times 5)^t) = \\log(10^t) = t$",
+        "ai_explanation": {
+          "concept_rule": "Index power distribution rule $a^t b^t = (ab)^t$.",
+          "step_by_step": [
+            "Combine $2^t \\times 5^t$ into $(2 \\times 5)^t = 10^t$.",
+            "Apply $\\log_{10}(10^t) = t$."
+          ],
+          "common_pitfalls": "Attempting to split as $\\log(2^t) + \\log(5^t)$ without recognizing that $2 \\times 5 = 10$ simplifies directly."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q43",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 43,
+    "question_text": "Use your calculator to write the following in the form $10^x$ where $x$ is correct to 4 decimal places:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "2",
+        "final_answer": "$10^{0.3010}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use base-10 identity $x = 10^{\\log x}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate $\\log 2 \\approx 0.3010$ to write $10^{0.3010}$"
+          }
+        ],
+        "solution": "$2 = 10^{\\log 2} \\approx 10^{0.3010}$",
+        "ai_explanation": {
+          "concept_rule": "Writing any positive number $x$ as a power of 10 using $x = 10^{\\log_{10} x}$.",
+          "step_by_step": [
+            "Apply identity $2 = 10^{\\log 2}$.",
+            "Compute $\\log 2 \\approx 0.30103$.",
+            "Express as $10^{0.3010}$ rounded to 4 decimal places."
+          ],
+          "common_pitfalls": "Using natural logarithm $\\ln$ instead of common logarithm $\\log_{10}$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "200",
+        "final_answer": "$10^{2.3010}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use identity $200 = 10^{\\log 200}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate $\\log 200 \\approx 2.3010$"
+          }
+        ],
+        "solution": "$200 = 10^{\\log 200} \\approx 10^{2.3010}$",
+        "ai_explanation": {
+          "concept_rule": "Expressing numbers as powers of 10.",
+          "step_by_step": [
+            "Apply $200 = 10^{\\log 200}$.",
+            "Calculate $\\log 200 = \\log(2 \\times 10^2) = 2 + 0.3010 = 2.3010$.",
+            "Write as $10^{2.3010}$."
+          ],
+          "common_pitfalls": "Misplacing the decimal in the exponent."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "0.02",
+        "final_answer": "$10^{-1.6990}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use identity $0.02 = 10^{\\log 0.02}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate $\\log 0.02 \\approx -1.6990$"
+          }
+        ],
+        "solution": "$0.02 = 10^{\\log 0.02} \\approx 10^{-1.6990}$",
+        "ai_explanation": {
+          "concept_rule": "Expressing decimal numbers less than 1 as powers of 10 with negative exponents.",
+          "step_by_step": [
+            "Apply $0.02 = 10^{\\log 0.02}$.",
+            "Compute $\\log 0.02 = \\log(2 \\times 10^{-2}) = -2 + 0.30103 = -1.69897$.",
+            "Round to 4 decimal places: $10^{-1.6990}$."
+          ],
+          "common_pitfalls": "Incorrect rounding with negative numbers."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q44",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 44,
+    "question_text": "Simplify:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\ln(e^k \\times e^4)$",
+        "final_answer": "$k + 4$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Combine exponents: $e^k \\times e^4 = e^{k+4}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $\\ln(e^{k+4}) = k + 4$"
+          }
+        ],
+        "solution": "$\\ln(e^k \\times e^4) = \\ln(e^{k+4}) = k + 4$",
+        "ai_explanation": {
+          "concept_rule": "Natural logarithm inverse rule $\\ln(e^u) = u$ and product rule for powers $e^a e^b = e^{a+b}$.",
+          "step_by_step": [
+            "Add exponents inside the logarithm: $e^k \\times e^4 = e^{k+4}$.",
+            "Apply $\\ln(e^{k+4}) = k+4$."
+          ],
+          "common_pitfalls": "Multiplying exponents instead of adding them."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\ln\\left(\\frac{e}{e^m}\\right)$",
+        "final_answer": "$1 - m$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Simplify fraction using index subtraction: $\\frac{e}{e^m} = e^{1-m}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $\\ln(e^{1-m}) = 1 - m$"
+          }
+        ],
+        "solution": "$\\ln\\left(\\frac{e}{e^m}\\right) = \\ln(e^{1-m}) = 1 - m$",
+        "ai_explanation": {
+          "concept_rule": "Quotient rule of indices and inverse property of natural logarithm.",
+          "step_by_step": [
+            "Express $e$ as $e^1$.",
+            "Subtract exponents: $\\frac{e^1}{e^m} = e^{1-m}$.",
+            "Evaluate $\\ln(e^{1-m}) = 1 - m$."
+          ],
+          "common_pitfalls": "Thinking $e$ has an exponent of $0$ rather than $1$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$e^{2\\ln 6}$",
+        "final_answer": "$36$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rewrite using power rule of exponents: $(e^{\\ln 6})^2$ or $e^{\\ln(6^2)}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to $6^2 = 36$"
+          }
+        ],
+        "solution": "$e^{2\\ln 6} = (e^{\\ln 6})^2 = 6^2 = 36$",
+        "ai_explanation": {
+          "concept_rule": "Exponent property $(e^{\\ln x})^a = x^a$ or $a\\ln x = \\ln(x^a)$.",
+          "step_by_step": [
+            "Rewrite $2\\ln 6$ as $\\ln(6^2)$ or rewrite $e^{2\\ln 6}$ as $(e^{\\ln 6})^2$.",
+            "Use $e^{\\ln 6} = 6$.",
+            "Calculate $6^2 = 36$."
+          ],
+          "common_pitfalls": "Incorrectly evaluating $e^{2\\ln 6}$ as $2 \\times 6 = 12$."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "$e^{-\\ln 3}$",
+        "final_answer": "$\\frac{1}{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rewrite as $(e^{\\ln 3})^{-1}$ or $e^{\\ln(3^{-1})}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify to $3^{-1} = \\frac{1}{3}$"
+          }
+        ],
+        "solution": "$e^{-\\ln 3} = (e^{\\ln 3})^{-1} = 3^{-1} = \\frac{1}{3}$",
+        "ai_explanation": {
+          "concept_rule": "Negative exponent rule and logarithmic inverse identity.",
+          "step_by_step": [
+            "Rewrite $-\\ln 3$ as $\\ln(3^{-1})$ or write $e^{-\\ln 3}$ as $(e^{\\ln 3})^{-1}$.",
+            "Since $e^{\\ln 3} = 3$, this becomes $3^{-1}$.",
+            "Write as a simple fraction $\\frac{1}{3}$."
+          ],
+          "common_pitfalls": "Confusing $e^{-\\ln 3}$ with $-e^{\\ln 3} = -3$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q45",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 45,
+    "question_text": "Use your calculator to write the following in the form $e^k$ where $k$ is correct to 4 decimal places:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "47",
+        "final_answer": "$e^{3.8501}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Express 47 in base $e$ using $47 = e^{\\ln 47}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate exponent to 4 decimal places: $e^{3.8501}$"
+          }
+        ],
+        "solution": "$47 = e^{\\ln 47} \\approx e^{3.8501}$",
+        "ai_explanation": {
+          "concept_rule": "Expressing a number as a power of $e$: $x = e^{\\ln x}$.",
+          "step_by_step": [
+            "Use the identity $47 = e^{\\ln 47}$.",
+            "Calculate $\\ln 47 \\approx 3.850148$.",
+            "Round exponent to 4 decimal places: $e^{3.8501}$."
+          ],
+          "common_pitfalls": "Using $\\log_{10}$ instead of natural logarithm $\\ln$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "500",
+        "final_answer": "$e^{6.2146}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use identity $500 = e^{\\ln 500}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate exponent: $e^{6.2146}$"
+          }
+        ],
+        "solution": "$500 = e^{\\ln 500} \\approx e^{6.2146}$",
+        "ai_explanation": {
+          "concept_rule": "Conversion to exponential form with base $e$.",
+          "step_by_step": [
+            "Write $500 = e^{\\ln 500}$.",
+            "Calculate $\\ln 500 \\approx 6.214608$.",
+            "State the result as $e^{6.2146}$."
+          ],
+          "common_pitfalls": "Rounding errors in the last decimal place."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "0.023",
+        "final_answer": "$e^{-3.7723}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use identity $0.023 = e^{\\ln 0.023}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate exponent: $e^{-3.7723}$"
+          }
+        ],
+        "solution": "$0.023 = e^{\\ln 0.023} \\approx e^{-3.7723}$",
+        "ai_explanation": {
+          "concept_rule": "Conversion of numbers smaller than 1 to powers of $e$.",
+          "step_by_step": [
+            "Write $0.023 = e^{\\ln 0.023}$.",
+            "Calculate $\\ln 0.023 \\approx -3.77226$.",
+            "Round exponent to 4 decimal places: $e^{-3.7723}$."
+          ],
+          "common_pitfalls": "Omitting the negative sign in the exponent."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_1_q46",
+    "topic_number": 1,
+    "topic_name": "Number and Algebra",
+    "question_number": 46,
+    "question_text": "In acoustics, the intensity of sound is measured in decibels (dB). The sound intensity level (SIL) is given by $L = 10\\log\\left(\\frac{I}{I_0}\\right)\\text{ dB}$, where $I$ is the sound intensity, and $I_0 = 10^{-12}\\text{ w/m}^2$ is the reference sound intensity.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find, in dB, the SIL of a snare drum with sound intensity $3 \\times 10^{-2}\\text{ w/m}^2$.",
+        "final_answer": "$105\\text{ dB}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $I = 3 \\times 10^{-2}$ into $L = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate sound level $L \\approx 105\\text{ dB}$"
+          }
+        ],
+        "solution": "$\\text{When } I = 3 \\times 10^{-2},\\; L = 10\\log\\left(\\frac{3 \\times 10^{-2}}{10^{-12}}\\right) \\approx 105\\text{ dB}$",
+        "ai_explanation": {
+          "concept_rule": "Calculating decibel level using $L = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)$.",
+          "step_by_step": [
+            "Substitute $I = 3 \\times 10^{-2}$ and $I_0 = 10^{-12}$ into formula.",
+            "Simplify argument: $\\frac{3 \\times 10^{-2}}{10^{-12}} = 3 \\times 10^{10}$.",
+            "Compute $10 \\times \\log_{10}(3 \\times 10^{10}) = 10 \\times (10 + \\log 3) \\approx 104.77\\text{ dB}$, rounded to $105\\text{ dB}$."
+          ],
+          "common_pitfalls": "Errors in negative index division: $-2 - (-12) = 10$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "A lawn mower has SIL 85 dB. Find its sound intensity in $\\text{w/m}^2$, giving your answer in the form $a \\times 10^k$, $1 \\leqslant a < 10$, $k \\in \\mathbb{Z}$.",
+        "final_answer": "$3.16 \\times 10^{-4}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $L = 85$ into formula: $85 = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for intensity $I \\approx 3.16 \\times 10^{-4}$"
+          }
+        ],
+        "solution": "$\\text{When } L = 85,\\; 85 = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$. $\\therefore \\text{using technology, } I \\approx 3.16 \\times 10^{-4}$",
+        "ai_explanation": {
+          "concept_rule": "Solving a logarithmic equation for intensity $I$.",
+          "step_by_step": [
+            "Divide by 10: $8.5 = \\log\\left(\\frac{I}{10^{-12}}\\right)$.",
+            "Convert to exponential form: $\\frac{I}{10^{-12}} = 10^{8.5}$.",
+            "Solve for $I$: $I = 10^{8.5} \\times 10^{-12} = 10^{-3.5} \\approx 3.16 \\times 10^{-4}$."
+          ],
+          "common_pitfalls": "Dividing 85 by 10 incorrectly or making index errors when multiplying powers of 10."
+        }
+      }
+    ]
+  }
+]

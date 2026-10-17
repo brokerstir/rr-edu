@@ -1,0 +1,41 @@
+{
+  "id": "topic_1_q4",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 4,
+  "question_text": "The dimensions of a block of land are measured to be $17\\text{ m} \\times 22\\text{ m}$, rounded to the nearest metre. What are the boundary values for the actual area $A$ of the block of land?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The dimensions of a block of land are measured to be $17\\text{ m} \\times 22\\text{ m}$, rounded to the nearest metre. What are the boundary values for the actual area $A$ of the block of land?",
+      "final_answer": "$354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding upper and lower bounds for both dimensions"
+        },
+        {
+          "code": "M1",
+          "desc": "Multiplying corresponding lower and upper bounds"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct area inequality"
+        }
+      ],
+      "solution": "The width of the block could be from $16\\frac{1}{2}\\text{ m}$ to $17\\frac{1}{2}\\text{ m}$.\nThe length of the block could be from $21\\frac{1}{2}\\text{ m}$ to $22\\frac{1}{2}\\text{ m}$.\n$\\therefore$ the lower boundary of the area is $16\\frac{1}{2} \\times 21\\frac{1}{2} = 354.75\\text{ m}^2$\nand the upper boundary of the area is $17\\frac{1}{2} \\times 22\\frac{1}{2} = 393.75\\text{ m}^2$.\n$\\therefore 354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$",
+      "ai_explanation": {
+        "concept_rule": "Bounds of a product of positive measurements are found by multiplying the lower bounds for the minimum, and multiplying the upper bounds for the maximum.",
+        "step_by_step": [
+          "Determine width bounds: $17 \\pm 0.5$, which gives $16.5\\text{ m}$ to $17.5\\text{ m}$.",
+          "Determine length bounds: $22 \\pm 0.5$, which gives $21.5\\text{ m}$ to $22.5\\text{ m}$.",
+          "Calculate lower boundary for area: $16.5 \\times 21.5 = 354.75\\text{ m}^2$.",
+          "Calculate upper boundary for area: $17.5 \\times 22.5 = 393.75\\text{ m}^2$.",
+          "State the inequality: $354.75\\text{ m}^2 < A < 393.75\\text{ m}^2$."
+        ],
+        "common_pitfalls": "Mixing a lower bound with an upper bound when looking for the extreme boundaries."
+      }
+    }
+  ]
+}

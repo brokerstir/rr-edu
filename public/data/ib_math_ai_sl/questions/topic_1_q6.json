@@ -1,0 +1,84 @@
+{
+  "id": "topic_1_q6",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 6,
+  "question_text": "The radius of a circle is measured as $7\\text{ cm}$, rounded to the nearest centimetre.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use this measurement to estimate the area of the circle.",
+      "final_answer": "$154\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using $A = \\pi r^2$ with $r = 7$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluated estimate"
+        }
+      ],
+      "solution": "$\\text{Area} \\approx \\pi \\times 7^2 = 49\\pi \\approx 154\\text{ cm}^2$",
+      "ai_explanation": {
+        "concept_rule": "Circle area formula $A = \\pi r^2$.",
+        "step_by_step": [
+          "Substitute $r = 7$ into the area formula: $A = \\pi \\times 7^2 = 49\\pi$.",
+          "Evaluate numerically: $49\\pi \\approx 153.938... \\approx 154\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Forgetting to square the radius."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the boundary values for the area of the circle.",
+      "final_answer": "$\\text{Lower: } 42.25\\pi\\text{ cm}^2 \\approx 133\\text{ cm}^2, \\text{ Upper: } 56.25\\pi\\text{ cm}^2 \\approx 177\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying radius bounds $6.5\\text{ cm}$ and $7.5\\text{ cm}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating lower and upper area boundaries"
+        }
+      ],
+      "solution": "The radius length could be from $6\\frac{1}{2}\\text{ cm}$ to $7\\frac{1}{2}\\text{ cm}$.\n$\\therefore$ the lower boundary of the area is $\\pi \\times (6\\frac{1}{2})^2 = 42.25\\pi\\text{ cm}^2 \\approx 133\\text{ cm}^2$\nand the upper boundary of the area is $\\pi \\times (7\\frac{1}{2})^2 = 56.25\\pi\\text{ cm}^2 \\approx 177\\text{ cm}^2$.",
+      "ai_explanation": {
+        "concept_rule": "Measurements given to the nearest unit have bounds of $\\pm 0.5$. Lower and upper area bounds are obtained by evaluating area at these radius bounds.",
+        "step_by_step": [
+          "Find bounds for radius $r$: $6.5 \\le r < 7.5$.",
+          "Calculate lower area boundary: $\\pi \\times 6.5^2 = 42.25\\pi \\approx 133\\text{ cm}^2$.",
+          "Calculate upper area boundary: $\\pi \\times 7.5^2 = 56.25\\pi \\approx 177\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Using $\\pm 1$ as the boundary interval instead of $\\pm 0.5$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence find the maximum percentage error in the estimate.",
+      "final_answer": "$16.0\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating percentage error for both extreme exact values"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying the maximum percentage error as approximately $16.0\\%$"
+        }
+      ],
+      "solution": "If the exact area $V_E$ was $42.25\\pi\\text{ cm}^2$, the percentage error $= \\frac{|V_A - V_E|}{V_E} \\times 100\\%\n= \\frac{|49\\pi - 42.25\\pi|}{42.25\\pi} \\times 100\\% \\approx 16.0\\%$\nIf the exact area $V_E$ was $56.25\\pi\\text{ cm}^2$, the percentage error $= \\frac{|V_A - V_E|}{V_E} \\times 100\\%\n= \\frac{|49\\pi - 56.25\\pi|}{56.25\\pi} \\times 100\\% \\approx 12.9\\%$\n$\\therefore$ the maximum percentage error in the estimate $\\approx 16.0\\%$.",
+      "ai_explanation": {
+        "concept_rule": "The maximum percentage error occurs when the relative difference $\\frac{|V_A - V_E|}{V_E}$ is maximized, typically at one of the extreme boundary values of $V_E$.",
+        "step_by_step": [
+          "Check percentage error when $V_E = 42.25\\pi$: $\\frac{49 - 42.25}{42.25} \\times 100\\% = \\frac{6.75}{42.25} \\times 100\\% \\approx 16.0\\%$.",
+          "Check percentage error when $V_E = 56.25\\pi$: $\\frac{|49 - 56.25|}{56.25} \\times 100\\% = \\frac{7.25}{56.25} \\times 100\\% \\approx 12.9\\%$.",
+          "Compare the two values; the maximum is $\\approx 16.0\\%$."
+        ],
+        "common_pitfalls": "Assuming the upper bound of area gives the larger percentage error without calculating both, ignoring the effect of the smaller denominator."
+      }
+    }
+  ]
+}

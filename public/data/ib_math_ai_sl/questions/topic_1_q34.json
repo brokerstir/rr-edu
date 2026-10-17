@@ -1,0 +1,76 @@
+{
+  "id": "topic_1_q34",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 34,
+  "question_text": "Find the sum of the series:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$10 + 14 + 18 + 22 + \\dots + 138$",
+      "final_answer": "$2442$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $u_n = 138$ to find $n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $n = 33$"
+        },
+        {
+          "code": "M1",
+          "desc": "Evaluating the sum using $S_n = \\frac{n}{2}(u_1 + u_n)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Final answer of $2442$"
+        }
+      ],
+      "solution": "$10 + 14 + 18 + 22 + \\dots + 138$ is arithmetic with $u_1 = 10$, $d = 4$\nNow $u_1 + (n - 1)d = 138$\n$10 + 4(n - 1) = 138$\n$4(n - 1) = 128$\n$n - 1 = 32$\n$n = 33$\nSo, the sum is $\\frac{n}{2}(u_1 + u_{33}) = \\frac{33}{2}(10 + 138) = \\frac{33}{2}(148) = 2442$",
+      "ai_explanation": {
+        "concept_rule": "First determine the number of terms $n$ using the $n$th term formula, then apply the arithmetic series sum formula.",
+        "step_by_step": [
+          "Identify $u_1 = 10$, $d = 14 - 10 = 4$, and the last term $u_n = 138$.",
+          "Solve for $n$: $10 + 4(n - 1) = 138 \\implies 4(n - 1) = 128 \\implies n - 1 = 32 \\implies n = 33$.",
+          "Apply $S_n = \\frac{n}{2}(u_1 + u_n)$: $S_{33} = \\frac{33}{2}(10 + 138) = \\frac{33}{2} \\times 148 = 2442$."
+        ],
+        "common_pitfalls": "Off-by-one errors in finding $n$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$6 - 12 + 24 - 48 + 96 - \\dots + 1536$",
+      "final_answer": "$1026$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $u_1 r^{n-1} = 1536$ to find $n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $n = 9$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using geometric series sum formula $S_n = \\frac{u_1(1 - r^n)}{1 - r}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Final answer of $1026$"
+        }
+      ],
+      "solution": "$6 - 12 + 24 - 48 + 96 - \\dots + 1536$ is geometric with $u_1 = 6$, $r = -2$\nNow $u_1 r^{n-1} = 1536$\n$6 \\times (-2)^{n-1} = 1536$\n$(-2)^{n-1} = 256$\n$n = 9$ (using technology)\nSo, the sum is $\\frac{u_1(1 - r^n)}{1 - r} = \\frac{6(1 - (-2)^9)}{1 - (-2)} = \\frac{6}{3}(1 - (-2)^9) = 2 \\times 513 = 1026$",
+      "ai_explanation": {
+        "concept_rule": "For a geometric series, find $n$ using $u_n = u_1 r^{n-1}$, then calculate sum with $S_n = \\frac{u_1(1 - r^n)}{1 - r}$.",
+        "step_by_step": [
+          "Identify $u_1 = 6$, $r = \\frac{-12}{6} = -2$, and $u_n = 1536$.",
+          "Solve for $n$: $6(-2)^{n-1} = 1536 \\implies (-2)^{n-1} = 256 = (-2)^8 \\implies n - 1 = 8 \\implies n = 9$.",
+          "Calculate sum: $S_9 = \\frac{6(1 - (-2)^9)}{1 - (-2)} = \\frac{6(1 - (-512))}{3} = 2(513) = 1026$."
+        ],
+        "common_pitfalls": "Sign errors with odd powers of negative numbers: $(-2)^9 = -512$, so $1 - (-512) = 513$."
+      }
+    }
+  ]
+}

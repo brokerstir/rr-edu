@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q10",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 10,
+  "question_text": "Expand the brackets and write in simplest form:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(x^2 + x^{-2})^2$",
+      "final_answer": "$x = -0.4\\text{ or } 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearrange the equation into standard quadratic form $5x^2 - 3x - 2 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $x$ using technology or factoring to obtain $x = -0.4$ or $1$"
+        }
+      ],
+      "solution": "$\\frac{2}{x} = 5x - 3$\n$\\therefore 2 = 5x^2 - 3x$\n$\\therefore 5x^2 - 3x - 2 = 0$\nUsing technology, $x = -0.4$ or $1$",
+      "ai_explanation": {
+        "concept_rule": "Multiply through by $x$ to clear the fraction and rearrange into the standard form $ax^2 + bx + c = 0$ before solving.",
+        "step_by_step": [
+          "Multiply both sides by $x$: $2 = x(5x - 3) = 5x^2 - 3x$.",
+          "Rearrange all terms to one side: $5x^2 - 3x - 2 = 0$.",
+          "Solve the quadratic equation using technology (graphic calculator) or factoring $(5x + 2)(x - 1) = 0$ to get $x = -0.4$ or $x = 1$."
+        ],
+        "common_pitfalls": "Forgetting that $x \\neq 0$ or making sign errors when moving terms to one side."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(x^4 - x^2)(x^3 + 3)$",
+      "final_answer": "$x \\approx 1.37\\text{ or } 9.94$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph $y = 2^x - x^3$ and identify roots"
+        },
+        {
+          "code": "A1",
+          "desc": "State solutions to 2 decimal places: $x \\approx 1.37$ or $9.94$"
+        }
+      ],
+      "solution": "We graph $y = 2^x - x^3$.\nThe $x$-intercepts are $\\approx 1.37$ and $9.94$.\n$\\therefore$ the solutions are $x \\approx 1.37$ or $9.94$.",
+      "ai_explanation": {
+        "concept_rule": "The solutions to an equation $f(x) = 0$ are the $x$-intercepts of the graph $y = f(x)$.",
+        "step_by_step": [
+          "Plot the function $y = 2^x - x^3$ on a graphing calculator.",
+          "Find the roots/$x$-intercepts using the built-in solver.",
+          "Read the values as approximately $x = 1.37$ and $x = 9.94$."
+        ],
+        "common_pitfalls": "Missing the second root because the viewing window is not wide enough to see $x \\approx 9.94$."
+      }
+    }
+  ]
+}

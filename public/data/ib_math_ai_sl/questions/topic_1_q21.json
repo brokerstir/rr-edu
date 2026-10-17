@@ -1,0 +1,107 @@
+{
+  "id": "topic_1_q21",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 21,
+  "question_text": "Consider the sequence $2, 2\\sqrt{3}, 6, 6\\sqrt{3}, \\dots$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that the sequence is geometric.",
+      "final_answer": "$\\text{Consecutive terms have a common ratio of } \\sqrt{3}, \\text{ so the sequence is geometric with } u_1 = 2 \\text{ and } r = \\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Showing constant ratio between consecutive terms"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding that the sequence is geometric with $u_1 = 2$ and $r = \\sqrt{3}$"
+        }
+      ],
+      "solution": "$$\\frac{2\\sqrt{3}}{2} = \\sqrt{3}, \\quad \\frac{6}{2\\sqrt{3}} = \\frac{2\\sqrt{3} \\times 3}{2\\sqrt{3}} = \\frac{3}{\\sqrt{3}} = \\sqrt{3}, \\quad \\frac{6\\sqrt{3}}{6} = \\sqrt{3}$$\n$$\\text{Consecutive terms have a common ratio of } \\sqrt{3}.$$\n$$\\therefore \\text{the sequence is geometric with } u_1 = 2 \\text{ and } r = \\sqrt{3}.$$",
+      "ai_explanation": {
+        "concept_rule": "A sequence is geometric if the ratio between successive terms is constant: $\\frac{u_2}{u_1} = \\frac{u_3}{u_2} = \\dots = r$.",
+        "step_by_step": [
+          "Compute $\\frac{u_2}{u_1} = \\frac{2\\sqrt{3}}{2} = \\sqrt{3}$.",
+          "Compute $\\frac{u_3}{u_2} = \\frac{6}{2\\sqrt{3}} = \\sqrt{3}$.",
+          "Compute $\\frac{u_4}{u_3} = \\frac{6\\sqrt{3}}{6} = \\sqrt{3}$.",
+          "Since the ratio is constant, the sequence is geometric with first term $u_1 = 2$ and common ratio $r = \\sqrt{3}$."
+        ],
+        "common_pitfalls": "Failing to verify the ratio for all given terms."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the formula for its general term.",
+      "final_answer": "$u_n = 2(\\sqrt{3})^{n-1}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Substituting $u_1 = 2$ and $r = \\sqrt{3}$ into $u_n = u_1 r^{n-1}$"
+        }
+      ],
+      "solution": "$$u_n = u_1 r^{n-1}$$\n$$= 2(\\sqrt{3})^{n-1}$$",
+      "ai_explanation": {
+        "concept_rule": "The $n$th term of a geometric sequence is given by $u_n = u_1 r^{n-1}$.",
+        "step_by_step": [
+          "Identify $u_1 = 2$ and $r = \\sqrt{3}$.",
+          "Substitute into the formula: $u_n = 2(\\sqrt{3})^{n-1}$."
+        ],
+        "common_pitfalls": "Trying to combine $2$ and $\\sqrt{3}$ inappropriately into a single base."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the 10th term.",
+      "final_answer": "$162\\sqrt{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $n = 10$ into $u_n$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying powers of $\\sqrt{3}$ to obtain $162\\sqrt{3}$"
+        }
+      ],
+      "solution": "$$u_{10} = 2(\\sqrt{3})^{10-1}$$\n$$= 2(\\sqrt{3})^9$$\n$$= 2\\sqrt{3} \\times (\\sqrt{3})^8$$\n$$= 2\\sqrt{3} \\times ((\\sqrt{3})^2)^4$$\n$$= 2\\sqrt{3} \\times 3^4$$\n$$= 162\\sqrt{3}$$",
+      "ai_explanation": {
+        "concept_rule": "Simplify fractional and radical exponents using laws of indices: $(\\sqrt{3})^9 = (\\sqrt{3})^8 \\times \\sqrt{3} = 3^4 \\sqrt{3} = 81\\sqrt{3}$.",
+        "step_by_step": [
+          "Substitute $n = 10$ into $u_n$: $u_{10} = 2(\\sqrt{3})^9$.",
+          "Decompose $(\\sqrt{3})^9$ as $(\\sqrt{3})^8 \\cdot \\sqrt{3} = 3^4 \\cdot \\sqrt{3} = 81\\sqrt{3}$.",
+          "Multiply by $2$: $2 \\times 81\\sqrt{3} = 162\\sqrt{3}$."
+        ],
+        "common_pitfalls": "Leaving the answer as a decimal rather than exact surd form."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the first term which exceeds $1000$.",
+      "final_answer": "$u_{13} = 1458$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up inequality $2(\\sqrt{3})^{n-1} > 1000$ or using table of values on GDC"
+        },
+        {
+          "code": "A1",
+          "desc": "Identifying $n = 13$ and $u_{13} = 1458$"
+        }
+      ],
+      "solution": "$$\\text{We need to find } n \\text{ such that } u_n = 2(\\sqrt{3})^{n-1} > 1000.$$\n$$\\text{Using a graphics calculator with } Y_1 = 2 \\times \\sqrt{3}\\wedge(X - 1), \\text{ we view a table of values:}$$\n$$\\text{For } X = 12, Y_1 \\approx 841.77$$\n$$\\text{For } X = 13, Y_1 = 1458$$\n$$\\text{The first term to exceed } 1000 \\text{ is } u_{13} = 1458.$$",
+      "ai_explanation": {
+        "concept_rule": "To find the first term exceeding a given threshold, solve $u_n > \\text{value}$ using technology (table of values) or logarithms.",
+        "step_by_step": [
+          "Set up the inequality $2(\\sqrt{3})^{n-1} > 1000$.",
+          "Enter $Y_1 = 2(\\sqrt{3})^{X-1}$ into the calculator's table function.",
+          "Check values: for $n = 12$, $u_{12} \\approx 841.77 < 1000$; for $n = 13$, $u_{13} = 1458 > 1000$.",
+          "Conclude that $u_{13}$ is the first term exceeding 1000."
+        ],
+        "common_pitfalls": "Rounding to $n = 12$ because it is close to 1000, instead of choosing the first term strictly greater than 1000."
+      }
+    }
+  ]
+}

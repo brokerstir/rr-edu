@@ -1,0 +1,40 @@
+{
+  "id": "topic_1_q25",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 25,
+  "question_text": "How much should I invest now to produce $\\$30\\,000$ in $5$ years' time, if the money can be invested at a fixed rate of $4.8\\%$ p.a. interest compounded monthly?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "How much should I invest now to produce $\\$30\\,000$ in $5$ years' time, if the money can be invested at a fixed rate of $4.8\\%$ p.a. interest compounded monthly?",
+      "final_answer": "$\\$$23\\,610.14$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding number of monthly periods $n = 5 \\times 12 = 60$ and rate $i = \\frac{4.8\\%}{12} = 0.4\\% = 0.004$"
+        },
+        {
+          "code": "M1",
+          "desc": "Setting up equation $30000 = u_0 \\times (1.004)^{60}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for present value $u_0 = \\frac{30000}{(1.004)^{60}} \\approx 23610.14$"
+        }
+      ],
+      "solution": "$$\\text{The initial investment } u_0 \\text{ is unknown.}$$\n$$\\text{There are } n = 5 \\times 12 = 60 \\text{ time periods.}$$\n$$\\text{Each time period the investment increases by } i = \\frac{4.8\\%}{12} = 0.4\\%.$$\n$$\\text{Now } u_{60} = u_0 \\times (1 + i)^{60}$$\n$$\\therefore 30\\,000 = u_0 \\times (1.004)^{60} \\quad \\{0.4\\% = 0.004\\}$$\n$$\\therefore u_0 = \\frac{30\\,000}{(1.004)^{60}} \\approx 23\\,610.14$$\n$$\\therefore \\text{I need to invest } \\$23\\,610.14 \\text{ now.}$$",
+      "ai_explanation": {
+        "concept_rule": "Present Value ($PV$) is found by discounting the future value ($FV$) back by $(1 + i)^n$: $PV = \\frac{FV}{(1 + i)^n}$.",
+        "step_by_step": [
+          "Calculate monthly rate: $i = \\frac{4.8\\%}{12} = 0.4\\% = 0.004$.",
+          "Calculate total periods: $n = 5 \\times 12 = 60$.",
+          "Set up formula: $30000 = u_0(1.004)^{60}$.",
+          "Solve for $u_0$: $u_0 = \\frac{30000}{(1.004)^{60}} \\approx 23610.14$."
+        ],
+        "common_pitfalls": "Multiplying 30000 by $(1.004)^{60}$ instead of dividing."
+      }
+    }
+  ]
+}

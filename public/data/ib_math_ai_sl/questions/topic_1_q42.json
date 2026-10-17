@@ -1,0 +1,84 @@
+{
+  "id": "topic_1_q42",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 42,
+  "question_text": "Simplify:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\log(10^9 \\times 1000^b)$",
+      "final_answer": "$9 + 3b$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express powers with base 10: $1000^b = 10^{3b}$ and apply index laws"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $\\log_{10}(10^{9+3b}) = 9 + 3b$"
+        }
+      ],
+      "solution": "$\\log(10^9 \\times 1000^b) = \\log(10^9 \\times (10^3)^b) = \\log(10^9 \\times 10^{3b}) = \\log(10^{9+3b}) = 9 + 3b$",
+      "ai_explanation": {
+        "concept_rule": "Logarithm inverse rule $\\log_{10}(10^x) = x$ and index law $a^m \\times a^n = a^{m+n}$.",
+        "step_by_step": [
+          "Rewrite $1000$ as $10^3$, giving $(10^3)^b = 10^{3b}$.",
+          "Combine bases: $10^9 \\times 10^{3b} = 10^{9+3b}$.",
+          "Apply $\\log_{10}(10^u) = u$ to obtain $9+3b$."
+        ],
+        "common_pitfalls": "Writing $1000^b$ as $10^{1000b}$ or forgetting to multiply exponents."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\log\\left(\\frac{10^n}{100}\\right)$",
+      "final_answer": "$n - 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rewrite denominator as $10^2$ and use index subtraction law"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $\\log(10^{n-2}) = n - 2$"
+        }
+      ],
+      "solution": "$\\log\\left(\\frac{10^n}{100}\\right) = \\log\\left(\\frac{10^n}{10^2}\\right) = \\log(10^{n-2}) = n - 2$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule of exponents and logarithm inverse identity.",
+        "step_by_step": [
+          "Write $100$ as $10^2$.",
+          "Simplify fraction to $10^{n-2}$.",
+          "Take the base-10 logarithm: $\\log(10^{n-2}) = n - 2$."
+        ],
+        "common_pitfalls": "Leaving the answer as $\\log(10^n) - \\log(100)$ without simplifying to $n - 2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\log(2^t \\times 5^t)$",
+      "final_answer": "$t$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Combine bases with common exponent: $2^t \\times 5^t = (2 \\times 5)^t = 10^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $\\log(10^t) = t$"
+        }
+      ],
+      "solution": "$\\log(2^t \\times 5^t) = \\log((2 \\times 5)^t) = \\log(10^t) = t$",
+      "ai_explanation": {
+        "concept_rule": "Index power distribution rule $a^t b^t = (ab)^t$.",
+        "step_by_step": [
+          "Combine $2^t \\times 5^t$ into $(2 \\times 5)^t = 10^t$.",
+          "Apply $\\log_{10}(10^t) = t$."
+        ],
+        "common_pitfalls": "Attempting to split as $\\log(2^t) + \\log(5^t)$ without recognizing that $2 \\times 5 = 10$ simplifies directly."
+      }
+    }
+  ]
+}

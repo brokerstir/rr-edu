@@ -1,0 +1,96 @@
+{
+  "id": "topic_1_q18",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 18,
+  "question_text": "Find $k$ given the consecutive arithmetic terms:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$3, k, 11$",
+      "final_answer": "$k = 7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating differences of consecutive terms: $k - 3 = 11 - k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $k$"
+        }
+      ],
+      "solution": "If $3, k, 11$ are consecutive terms of an arithmetic sequence, then\n$k - 3 = 11 - k$ {equating differences}\n$\\therefore 2k = 14$\n$\\therefore k = 7$",
+      "ai_explanation": {
+        "concept_rule": "For three consecutive terms $a, b, c$ in an arithmetic sequence, the common difference is constant: $b - a = c - b$, which means $b = \\frac{a+c}{2}$.",
+        "step_by_step": [
+          "Set up the equation equating differences: $k - 3 = 11 - k$.",
+          "Add $k$ to both sides and add 3 to both sides: $2k = 14$.",
+          "Divide by 2: $k = 7$."
+        ],
+        "common_pitfalls": "Subtracting terms in inconsistent orders, such as $3 - k = 11 - k$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$-2, k+4, k^2+11$",
+      "final_answer": "$k = 1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the difference equation $(k + 4) - (-2) = (k^2 + 11) - (k + 4)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Simplifying to a quadratic equation $k^2 - 2k + 1 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving to find $k = 1$"
+        }
+      ],
+      "solution": "If $-2, k + 4, k^2 + 11$ are consecutive terms of an arithmetic sequence, then\n$k + 4 - (-2) = k^2 + 11 - (k + 4)$ {equating differences}\n$\\therefore k + 6 = k^2 + 11 - k - 4$\n$\\therefore k^2 - 2k + 1 = 0$\n$\\therefore k = 1$ {using technology}",
+      "ai_explanation": {
+        "concept_rule": "Equate the differences between successive terms: $u_2 - u_1 = u_3 - u_2$, then solve the resulting polynomial equation.",
+        "step_by_step": [
+          "Write the equation: $(k + 4) - (-2) = (k^2 + 11) - (k + 4)$.",
+          "Simplify the left side: $k + 4 + 2 = k + 6$.",
+          "Simplify the right side: $k^2 + 11 - k - 4 = k^2 - k + 7$.",
+          "Move all terms to one side: $k^2 - k + 7 - k - 6 = 0 \\implies k^2 - 2k + 1 = 0$.",
+          "Factor or use technology: $(k - 1)^2 = 0 \\implies k = 1$."
+        ],
+        "common_pitfalls": "Forgetting brackets around $(k + 4)$ when subtracting it on the right side."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$k-5, 2k, 2k^2$",
+      "final_answer": "$k = -1 \\text{ or } k = \\frac{5}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Equating the consecutive differences for an arithmetic sequence: $2k - (k - 5) = 2k^2 - 2k$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying to a quadratic equation: $2k^2 - 3k - 5 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $k$ to find $k = -1$ or $k = \\frac{5}{2}$"
+        }
+      ],
+      "solution": "If $k - 5$, $2k$, $2k^2$ are consecutive terms of an arithmetic sequence, then:\n$$2k - (k - 5) = 2k^2 - 2k \\quad \\{\\text{equating differences}\\}$$\n$$k + 5 = 2k^2 - 2k$$\n$$2k^2 - 3k - 5 = 0$$\n$$\\therefore k = -1 \\text{ or } \\frac{5}{2} \\quad \\{\\text{using technology}\\}$$",
+      "ai_explanation": {
+        "concept_rule": "In an arithmetic sequence, the difference between any two consecutive terms is constant: $u_2 - u_1 = u_3 - u_2$.",
+        "step_by_step": [
+          "Set up the common difference equation using consecutive terms: $2k - (k - 5) = 2k^2 - 2k$.",
+          "Expand and simplify both sides: $k + 5 = 2k^2 - 2k$.",
+          "Rearrange into standard quadratic form: $2k^2 - 3k - 5 = 0$.",
+          "Solve the quadratic equation by factoring $(2k - 5)(k + 1) = 0$ or using a graphics calculator to find $k = -1$ or $k = 2.5$."
+        ],
+        "common_pitfalls": "Sign error when expanding $-(k - 5)$, incorrectly writing $-k - 5$ instead of $-k + 5$."
+      }
+    }
+  ]
+}

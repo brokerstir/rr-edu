@@ -1,0 +1,55 @@
+{
+  "id": "topic_1_q19",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 19,
+  "question_text": "An empty hamster cage has mass $800\\text{ g}$. When $5$ hamsters are placed in the cage, the total mass is $1400\\text{ g}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the average mass of the hamsters in the cage.",
+      "final_answer": "$120\\text{ g}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Subtracting cage mass from total mass and dividing by number of hamsters"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $120\\text{ g}$"
+        }
+      ],
+      "solution": "$$\\text{Average mass} = \\frac{\\text{total mass} - \\text{mass of cage}}{\\text{number of hamsters}}$$\n$$= \\frac{1400 - 800}{5}$$\n$$= \\frac{600}{5}$$\n$$= 120\\text{ g}$$",
+      "ai_explanation": {
+        "concept_rule": "Average mass per hamster is found by dividing the net mass of all hamsters by the total number of hamsters.",
+        "step_by_step": [
+          "Find the total mass of the 5 hamsters by subtracting the cage mass from the gross mass: $1400 - 800 = 600\\text{ g}$.",
+          "Divide by the number of hamsters: $\\frac{600}{5} = 120\\text{ g}$."
+        ],
+        "common_pitfalls": "Forgetting to subtract the mass of the cage before dividing by 5."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence write an arithmetic sequence for $u_n$, the approximate total mass when $n$ hamsters are placed in the cage.",
+      "final_answer": "$u_n = 800 + 120n$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating the linear model / general term $u_n = 800 + 120n$"
+        }
+      ],
+      "solution": "$$u_n = 800 + 120n$$",
+      "ai_explanation": {
+        "concept_rule": "The total mass forms an arithmetic sequence with initial mass (cage) as the intercept and the average mass per hamster as the common difference.",
+        "step_by_step": [
+          "Identify the constant base mass: $800\\text{ g}$.",
+          "Identify the rate of increase per hamster: $120\\text{ g}$.",
+          "Combine into the general term formula: $u_n = 800 + 120n$."
+        ],
+        "common_pitfalls": "Confusing $u_0 = 800$ with $u_1$ and using $800 + 120(n - 1)$."
+      }
+    }
+  ]
+}

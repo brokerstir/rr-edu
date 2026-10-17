@@ -1,0 +1,87 @@
+{
+  "id": "topic_1_q8",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 8,
+  "question_text": "Write without brackets:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(-3m^3)^4$",
+      "final_answer": "$81m^{12}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Distributing the power to both coefficient and variable"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct simplified expression"
+        }
+      ],
+      "solution": "$(-3m^3)^4 = (-3)^4 \\times (m^3)^4 = 81m^{12}$",
+      "ai_explanation": {
+        "concept_rule": "Power of a product rule: $(ab)^n = a^n b^n$, and an even power of a negative number is positive.",
+        "step_by_step": [
+          "Apply the exponent 4 to $(-3)$: $(-3)^4 = 81$.",
+          "Apply the exponent 4 to $m^3$: $(m^3)^4 = m^{3 \\times 4} = m^{12}$.",
+          "Combine terms: $81m^{12}$."
+        ],
+        "common_pitfalls": "Keeping the negative sign: writing $-81m^{12}$ instead of $+81m^{12}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(\\frac{xy^2}{2})^5$",
+      "final_answer": "$\\frac{x^5 y^{10}}{32}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Distributing the power 5 to numerator and denominator"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct evaluated expression"
+        }
+      ],
+      "solution": "$\\left(\\frac{xy^2}{2}\\right)^5 = \\frac{(xy^2)^5}{2^5} = \\frac{x^5 y^{10}}{32}$",
+      "ai_explanation": {
+        "concept_rule": "Power of a quotient rule: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$.",
+        "step_by_step": [
+          "Raise the numerator to the power 5: $(xy^2)^5 = x^5 y^{2 \\times 5} = x^5 y^{10}$.",
+          "Raise the denominator to the power 5: $2^5 = 32$.",
+          "Combine: $\\frac{x^5 y^{10}}{32}$."
+        ],
+        "common_pitfalls": "Forgetting to raise the denominator 2 to the power 5."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$7s^2t \\times (4st^3)^3$",
+      "final_answer": "$448s^5 t^{10}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding $(4st^3)^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Multiplying coefficients and adding corresponding exponents"
+        }
+      ],
+      "solution": "$7s^2t \\times (4st^3)^3 = 7s^2t \\times 4^3 s^3 t^9 = 7 \\times 64 s^5 t^{10} = 448s^5 t^{10}$",
+      "ai_explanation": {
+        "concept_rule": "Expand powers first using $(ab)^n = a^n b^n$, then combine like terms by adding exponents.",
+        "step_by_step": [
+          "Evaluate $(4st^3)^3 = 4^3 \\times s^3 \\times (t^3)^3 = 64s^3 t^9$.",
+          "Multiply coefficients: $7 \\times 64 = 448$.",
+          "Multiply powers of $s$: $s^2 \\times s^3 = s^{2+3} = s^5$.",
+          "Multiply powers of $t$: $t^1 \\times t^9 = t^{1+9} = t^{10}$.",
+          "Result: $448s^5 t^{10}$."
+        ],
+        "common_pitfalls": "Multiplying $7 \\times 4$ before cubing 4."
+      }
+    }
+  ]
+}

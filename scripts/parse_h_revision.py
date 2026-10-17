@@ -11,6 +11,8 @@ Usage ex:
   .venv/bin/python3 scripts/parse_h_revision.py --topic 3
   .venv/bin/python3 scripts/parse_h_revision.py --test-merge
   .venv/bin/python3 scripts/parse_h_revision.py --test-merge --topic 3
+  .venv/bin/python3 scripts/parse_h_revision.py --course-id ib_math_ai_sl --topic 1
+  .venv/bin/python3 scripts/parse_h_revision.py --course-id ib_math_ai_sl --topic 1 --test-merge
 """
 
 import os
@@ -370,12 +372,23 @@ def parse_topic(
     return final_questions
 
 
-def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str, Any]]]) -> None:
-    data_dir.mkdir(parents=True, exist_ok=True)
-    questions_dir = data_dir / "questions"
-    questions_dir.mkdir(parents=True, exist_ok=True)
+def ensure_questions_dir(outdir: Path, course_id: str) -> Path:
+    """Ensures public/data/<course_id>/questions/ exists before saving parsed question diagrams."""
+    course_dir = outdir if outdir.name == course_id else outdir / course_id
+    questions_dir = course_dir / "questions"
+    os.makedirs(questions_dir, exist_ok=True)
+    return questions_dir
 
-    manifest_file = data_dir / "topics.json"
+
+def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str, Any]]], course_id: str = "ib_math_aa_sl") -> None:
+    # Resolve target course directory under data_dir / course_id
+    course_dir = data_dir if data_dir.name == course_id else data_dir / course_id
+    os.makedirs(course_dir, exist_ok=True)
+
+    # Programmatically ensure questions directory exists before saving parsed question diagrams
+    questions_dir = ensure_questions_dir(data_dir, course_id)
+
+    manifest_file = course_dir / "topics.json"
     manifest_dict = {}
 
     if manifest_file.exists():
@@ -396,18 +409,18 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
             with open(q_file, "w", encoding="utf-8") as f:
                 json.dump(q, f, indent=2, ensure_ascii=False)
 
-        with open(data_dir / t_filename, "w", encoding="utf-8") as f:
+        with open(course_dir / t_filename, "w", encoding="utf-8") as f:
             json.dump(q_list, f, indent=2, ensure_ascii=False)
 
         manifest_dict[t_num] = {
             "topic_number": t_num,
             "topic_name": t_name,
             "question_count": len(q_list),
-            "bundle_file": f"data/{t_filename}"
+            "bundle_file": f"data/{course_id}/{t_filename}"
         }
 
     for t_num in [1, 2, 3, 4, 5]:
-        bundle_path = data_dir / f"topic_{t_num}.json"
+        bundle_path = course_dir / f"topic_{t_num}.json"
         if bundle_path.exists() and t_num not in manifest_dict:
             try:
                 with open(bundle_path, "r", encoding="utf-8") as f:
@@ -417,7 +430,7 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
                     "topic_number": t_num,
                     "topic_name": t_name,
                     "question_count": len(b_data),
-                    "bundle_file": f"data/topic_{t_num}.json"
+                    "bundle_file": f"data/{course_id}/topic_{t_num}.json"
                 }
             except Exception:
                 pass
@@ -428,16 +441,18 @@ def save_static_bundles(data_dir: Path, all_topics_data: Dict[int, List[Dict[str
         json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
 
     active_topics = [m["topic_number"] for m in sorted_manifest]
-    print(f"\n🎉 Successfully saved data files and updated master manifest 'topics.json'.")
+    print(f"\n🎉 Successfully saved data files and updated master manifest 'topics.json' for '{course_id}'.")
     print(f"   Active topics indexed in topics.json: {active_topics}")
 
 
-def run_zero_token_test_merge(topic_num: Optional[int] = None):
+def run_zero_token_test_merge(topic_num: Optional[int] = None, course_id: str = "ib_math_ai_sl"):
     """Performs a local dry-run test of normalization and merge logic without making API calls."""
     t_target = topic_num if topic_num else 3
     t_name = TOPIC_PAGES.get(t_target, {}).get("name", f"Topic {t_target}")
 
-    print(f"🧪 Running Zero-Token Local Key Matching Test for Topic {t_target} ({t_name})...")
+    q_dir = ensure_questions_dir(Path("public/data"), course_id)
+    print(f"📁 Ensured output directory: {q_dir}")
+    print(f"🧪 Running Zero-Token Local Key Matching Test for Topic {t_target} ({t_name}) [Course: {course_id}]...")
 
     # Mock Pass 1 Question dictionary (containing nested subparts AND single-part questions)
     mock_questions = {
@@ -522,6 +537,8 @@ def run_zero_token_test_merge(topic_num: Optional[int] = None):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--course-id", "--course_id", dest="course_id", default="ib_math_ai_sl",
+                        help="Course identifier folder (e.g. ib_math_ai_sl, ib_math_aa_sl, ib_math_aa_hl, ib_math_ai_hl)")
     parser.add_argument("--topics", default="ib/Mathematics-AI-SL-2-REVISION-GUIDE-Topics-Haese-2020.pdf")
     parser.add_argument("--solutions", default="ib/Mathematics-AI-SL-2-REVISION-GUIDE-Skill-Solutions-Haese-2020.pdf")
     parser.add_argument("--model", default=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"))
@@ -531,7 +548,7 @@ def main():
     args = parser.parse_args()
 
     if args.test_merge:
-        run_zero_token_test_merge(topic_num=args.topic)
+        run_zero_token_test_merge(topic_num=args.topic, course_id=args.course_id)
         return
 
     client = get_gemini_client()
@@ -542,6 +559,9 @@ def main():
     topics_reader = PdfReader(args.topics)
     solutions_reader = PdfReader(args.solutions)
 
+    # Programmatically ensure output directory public/data/<course_id>/questions/ exists before saving
+    ensure_questions_dir(Path(args.outdir), args.course_id)
+
     target_topics = [args.topic] if args.topic else [3]
     all_data = {}
 
@@ -550,7 +570,7 @@ def main():
             client, topics_reader, solutions_reader, t_num, TOPIC_PAGES[t_num], args.model
         )
 
-    save_static_bundles(Path(args.outdir), all_data)
+    save_static_bundles(Path(args.outdir), all_data, course_id=args.course_id)
 
 
 if __name__ == "__main__":

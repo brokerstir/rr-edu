@@ -1,0 +1,63 @@
+{
+  "id": "topic_1_q32",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 32,
+  "question_text": "Consider the arithmetic sequence $7, 10, 13, 16, 19, \\dots$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down an expression for the sum of the first $n$ terms $S_n$.",
+      "final_answer": "$S_n = \\frac{n}{2}(11 + 3n)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $u_1 = 7$ and $d = 3$ into the arithmetic series sum formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying the algebraic expression"
+        }
+      ],
+      "solution": "The sequence is arithmetic with $u_1 = 7$ and $d = 3$.\nNow $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$\n$S_n = \\frac{n}{2}(2(7) + 3(n - 1))$\n$S_n = \\frac{n}{2}(14 + 3n - 3)$\n$S_n = \\frac{n}{2}(11 + 3n)$",
+      "ai_explanation": {
+        "concept_rule": "The sum of the first $n$ terms of an arithmetic progression is $S_n = \\frac{n}{2}[2u_1 + (n - 1)d]$.",
+        "step_by_step": [
+          "Identify $u_1 = 7$ and $d = 3$.",
+          "Substitute into $S_n = \\frac{n}{2}[2(7) + 3(n - 1)]$.",
+          "Simplify inside the brackets: $14 + 3n - 3 = 11 + 3n$.",
+          "Write the final expression as $S_n = \\frac{n}{2}(11 + 3n)$."
+        ],
+        "common_pitfalls": "Forgetting to multiply $u_1$ by 2 in the sum formula."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $n$ such that $S_n = 140$.",
+      "final_answer": "$n = 8$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $S_n = 140$ and forming the quadratic equation $3n^2 + 11n - 280 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $n$ and choosing the positive integer solution $n = 8$"
+        }
+      ],
+      "solution": "$S_n = 140$\n$\\frac{n}{2}(11 + 3n) = 140$ $\\{\\text{using } \\mathbf{a}\\}$\n$n(11 + 3n) = 280$\n$11n + 3n^2 = 280$\n$3n^2 + 11n - 280 = 0$\nUsing technology, $n = 8$ $\\{n > 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "A quadratic equation $an^2 + bn + c = 0$ can be solved algebraically or using technology, where $n$ must be a positive integer.",
+        "step_by_step": [
+          "Equate the expression for $S_n$ to 140: $\\frac{n}{2}(11 + 3n) = 140$.",
+          "Multiply both sides by 2: $n(11 + 3n) = 280$.",
+          "Rearrange to $3n^2 + 11n - 280 = 0$.",
+          "Solve using technology or factoring $(3n + 35)(n - 8) = 0$, giving $n = 8$ or $n = -\\frac{35}{3}$.",
+          "Since $n > 0$, $n = 8$."
+        ],
+        "common_pitfalls": "Neglecting to clear the fraction properly or failing to reject the negative/fractional root."
+      }
+    }
+  ]
+}

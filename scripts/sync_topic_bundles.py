@@ -24,8 +24,8 @@ TOPIC_NAMES = {
     5: "Calculus"
 }
 
-def sync_bundles(selected_topic: int = None):
-    data_dir = Path("public/data")
+def sync_bundles(selected_topic: int = None, course_id: str = "ib_math_aa_sl"):
+    data_dir = Path("public/data") / course_id
     questions_dir = data_dir / "questions"
 
     if not questions_dir.exists():
@@ -109,7 +109,7 @@ def sync_bundles(selected_topic: int = None):
                     "topic_number": t_num,
                     "topic_name": TOPIC_NAMES.get(t_num, f"Topic {t_num}"),
                     "question_count": q_count,
-                    "bundle_file": f"data/topic_{t_num}.json"
+                    "bundle_file": f"data/{course_id}/topic_{t_num}.json"
                 }
             except Exception as e:
                 print(f"⚠️ Error reading bundle {t_file.name}: {e}")
@@ -120,14 +120,15 @@ def sync_bundles(selected_topic: int = None):
         json.dump(sorted_manifest, f, indent=2, ensure_ascii=False)
 
     active_topics = [t["topic_number"] for t in sorted_manifest]
-    print(f"\n🎉 Manifest 'public/data/topics.json' updated. Active topics in app: {active_topics}")
+    print(f"\n🎉 Manifest '{manifest_file}' updated. Active topics in app: {active_topics}")
 
 def main():
     parser = argparse.ArgumentParser(description="Sync question files into topic bundle JSONs.")
+    parser.add_argument("--course-id", "--course_id", dest="course_id", default="ib_math_aa_sl", help="Course directory id")
     parser.add_argument("--topic", "-t", type=int, choices=[1, 2, 3, 4, 5], help="Specify a single topic number to sync")
     args = parser.parse_args()
 
-    sync_bundles(selected_topic=args.topic)
+    sync_bundles(selected_topic=args.topic, course_id=args.course_id)
 
 if __name__ == "__main__":
     main()

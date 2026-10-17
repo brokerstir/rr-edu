@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q43",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 43,
+  "question_text": "Use your calculator to write the following in the form $10^x$ where $x$ is correct to 4 decimal places:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "2",
+      "final_answer": "$10^{0.3010}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use base-10 identity $x = 10^{\\log x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\log 2 \\approx 0.3010$ to write $10^{0.3010}$"
+        }
+      ],
+      "solution": "$2 = 10^{\\log 2} \\approx 10^{0.3010}$",
+      "ai_explanation": {
+        "concept_rule": "Writing any positive number $x$ as a power of 10 using $x = 10^{\\log_{10} x}$.",
+        "step_by_step": [
+          "Apply identity $2 = 10^{\\log 2}$.",
+          "Compute $\\log 2 \\approx 0.30103$.",
+          "Express as $10^{0.3010}$ rounded to 4 decimal places."
+        ],
+        "common_pitfalls": "Using natural logarithm $\\ln$ instead of common logarithm $\\log_{10}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "200",
+      "final_answer": "$10^{2.3010}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $200 = 10^{\\log 200}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\log 200 \\approx 2.3010$"
+        }
+      ],
+      "solution": "$200 = 10^{\\log 200} \\approx 10^{2.3010}$",
+      "ai_explanation": {
+        "concept_rule": "Expressing numbers as powers of 10.",
+        "step_by_step": [
+          "Apply $200 = 10^{\\log 200}$.",
+          "Calculate $\\log 200 = \\log(2 \\times 10^2) = 2 + 0.3010 = 2.3010$.",
+          "Write as $10^{2.3010}$."
+        ],
+        "common_pitfalls": "Misplacing the decimal in the exponent."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "0.02",
+      "final_answer": "$10^{-1.6990}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $0.02 = 10^{\\log 0.02}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate $\\log 0.02 \\approx -1.6990$"
+        }
+      ],
+      "solution": "$0.02 = 10^{\\log 0.02} \\approx 10^{-1.6990}$",
+      "ai_explanation": {
+        "concept_rule": "Expressing decimal numbers less than 1 as powers of 10 with negative exponents.",
+        "step_by_step": [
+          "Apply $0.02 = 10^{\\log 0.02}$.",
+          "Compute $\\log 0.02 = \\log(2 \\times 10^{-2}) = -2 + 0.30103 = -1.69897$.",
+          "Round to 4 decimal places: $10^{-1.6990}$."
+        ],
+        "common_pitfalls": "Incorrect rounding with negative numbers."
+      }
+    }
+  ]
+}

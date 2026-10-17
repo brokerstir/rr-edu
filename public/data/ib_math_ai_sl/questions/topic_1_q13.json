@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q13",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 13,
+  "question_text": "Use your calculator to evaluate the following, giving your answer in scientific notation:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(3.57 \\times 10^6) \\times (2.38 \\times 10^3)$",
+      "final_answer": "$\\text{The zeros are } 4\\text{ and } -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $y = 0$ to get $x^2 - x - 12 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for the zeros: $x = 4$ or $-3$"
+        }
+      ],
+      "solution": "$y = x^2 - x - 12$\nWhen $y = 0$, $x^2 - x - 12 = 0$\n$\\therefore x = 4$ or $-3$ {technology}\n$\\therefore$ the zeros are $4$ and $-3$.",
+      "ai_explanation": {
+        "concept_rule": "The zeros of a quadratic function are the values of $x$ for which $y = 0$.",
+        "step_by_step": [
+          "Set the expression equal to zero: $x^2 - x - 12 = 0$.",
+          "Factor or use a graphics calculator: $(x - 4)(x + 3) = 0$.",
+          "State the roots: $x = 4$ or $x = -3$."
+        ],
+        "common_pitfalls": "Confusing zeros with the $y$-intercept."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{4.61 \\times 10^{-7}}{3.45 \\times 10^8}$",
+      "final_answer": "$\\text{The zeros are } 5\\text{ and } 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $f(x) = 0$ to form $5x - x^2 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve to obtain $x = 5$ or $0$"
+        }
+      ],
+      "solution": "$f(x) = 5x - x^2$\nWhen $f(x) = 0$, $5x - x^2 = 0$\n$\\therefore x = 5$ or $0$ {technology}\n$\\therefore$ the zeros are $5$ and $0$.",
+      "ai_explanation": {
+        "concept_rule": "Set $f(x) = 0$ and factor out the common factor $x$.",
+        "step_by_step": [
+          "Set $5x - x^2 = 0$.",
+          "Factor out $x$: $x(5 - x) = 0$.",
+          "Solve each factor: $x = 0$ or $x = 5$."
+        ],
+        "common_pitfalls": "Dividing by $x$ and losing the zero root $x = 0$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$(0.000\\,08)^4$",
+      "final_answer": "$\\text{The zeros are } \\frac{3}{4}\\text{ and } -\\frac{1}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set $y = 0$ to obtain $8x^2 - 2x - 3 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve quadratic equation to find $x = \\frac{3}{4}$ and $x = -\\frac{1}{2}$"
+        }
+      ],
+      "solution": "$y = 8x^2 - 2x - 3$\nWhen $y = 0$, $8x^2 - 2x - 3 = 0$\n$\\therefore x = \\frac{3}{4}$ or $-\\frac{1}{2}$ {technology}\n$\\therefore$ the zeros are $\\frac{3}{4}$ and $-\\frac{1}{2}$.",
+      "ai_explanation": {
+        "concept_rule": "Set $y = 0$ and solve the quadratic equation $8x^2 - 2x - 3 = 0$.",
+        "step_by_step": [
+          "Set $8x^2 - 2x - 3 = 0$.",
+          "Factor as $(2x + 1)(4x - 3) = 0$ or use technology.",
+          "Solve for $x$: $x = -\\frac{1}{2}$ or $x = \\frac{3}{4}$."
+        ],
+        "common_pitfalls": "Sign errors when factoring or reading values from a calculator."
+      }
+    }
+  ]
+}

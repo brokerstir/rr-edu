@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q7",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 7,
+  "question_text": "Express in exponent form with a prime number base:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$64$",
+      "final_answer": "$2^6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Writing 64 as a power of a power of 2"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct index form with base 2"
+        }
+      ],
+      "solution": "$64 = 8^2 = (2^3)^2 = 2^6$",
+      "ai_explanation": {
+        "concept_rule": "Index laws: $(a^m)^n = a^{mn}$.",
+        "step_by_step": [
+          "Express 64 as $8^2$.",
+          "Rewrite 8 as $2^3$, giving $(2^3)^2$.",
+          "Multiply powers: $3 \\times 2 = 6$, giving $2^6$."
+        ],
+        "common_pitfalls": "Adding powers instead of multiplying when raising a power to a power."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$125 \\times 5^k$",
+      "final_answer": "$5^{3+k}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Writing 125 as $5^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Applying the product rule of exponents"
+        }
+      ],
+      "solution": "$125 \\times 5^k = 5^3 \\times 5^k = 5^{3+k}$",
+      "ai_explanation": {
+        "concept_rule": "Product of powers with the same base: $a^m \\times a^n = a^{m+n}$.",
+        "step_by_step": [
+          "Express 125 as a base 5 power: $125 = 5^3$.",
+          "Multiply $5^3 \\times 5^k$.",
+          "Add the exponents: $5^{3+k}$."
+        ],
+        "common_pitfalls": "Multiplying the bases together (e.g., getting $25^{3+k}$)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{9^m}{81^n}$",
+      "final_answer": "$3^{2m-4n}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Converting all bases to 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Applying quotient rule for exponents"
+        }
+      ],
+      "solution": "$\\frac{9^m}{81^n} = \\frac{9^m}{(9^2)^n} = \\frac{(3^2)^m}{(3^2)^{2n}} = \\frac{3^{2m}}{3^{4n}} = 3^{2m-4n}$",
+      "ai_explanation": {
+        "concept_rule": "Quotient rule of powers: $\\frac{a^p}{a^q} = a^{p-q}$.",
+        "step_by_step": [
+          "Convert base 9 to base 3: $9^m = (3^2)^m = 3^{2m}$.",
+          "Convert base 81 to base 3: $81^n = (3^4)^n = 3^{4n}$.",
+          "Subtract denominator exponent from numerator exponent: $3^{2m-4n}$."
+        ],
+        "common_pitfalls": "Subtracting terms incorrectly or leaving different bases."
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "topic_1_q37",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 37,
+  "question_text": "Mary takes out a loan of $\\$10\\,000$ to purchase a car. The bank charges an interest rate of $8\\%$ p.a. compounded monthly. Mary will repay the loan with quarterly repayments over 5 years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the quarterly repayment.",
+      "final_answer": "$\\$612.36$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Entering TVM parameters with $N = 20, I\\% = 8, PV = 10000, FV = 0, P/Y = 4, C/Y = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for quarterly repayment $\\text{PMT} \\approx \\$612.36$"
+        }
+      ],
+      "solution": "$N = 5 \\times 4 = 20$, $I\\% = 8$, $PV = 10\\,000$, $FV = 0$, $P/Y = 4$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -612.36$\nThe quarterly repayment is $\\$612.36$.",
+      "ai_explanation": {
+        "concept_rule": "When payment frequency and compounding frequency differ, set $P/Y$ and $C/Y$ accordingly in the TVM solver ($P/Y = 4$, $C/Y = 12$).",
+        "step_by_step": [
+          "Set $N = 5 \\times 4 = 20$ quarters.",
+          "Set $I\\% = 8$, $PV = 10000$, $FV = 0$.",
+          "Set $P/Y = 4$ and $C/Y = 12$.",
+          "Solve for $\\text{PMT} \\approx -612.36$."
+        ],
+        "common_pitfalls": "Leaving $C/Y$ equal to $P/Y = 4$ when compounding is monthly ($C/Y = 12$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the balance of the loan after 3 years.",
+      "final_answer": "$\\$4483.17$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $N = 12$ to find future value after 3 years"
+        },
+        {
+          "code": "A1",
+          "desc": "Outstanding loan balance = $\\$4483.17$"
+        }
+      ],
+      "solution": "$N = 3 \\times 4 = 12$, $I\\% = 8$, $PV = 10\\,000$, $\\text{PMT} = -612.36$, $P/Y = 4$, $C/Y = 12$\n$\\therefore FV \\approx -4483.17$\nThe balance of the loan is $\\$4483.17$.",
+      "ai_explanation": {
+        "concept_rule": "The balance of a loan after $k$ periods is the future value $FV$ evaluated at $N = k$.",
+        "step_by_step": [
+          "Calculate elapsed periods: $N = 3 \\times 4 = 12$.",
+          "Keep $I\\% = 8$, $PV = 10000$, $\\text{PMT} = -612.36$, $P/Y = 4$, $C/Y = 12$.",
+          "Solve for $FV \\approx -4483.17$, meaning the balance is $\\$4483.17$."
+        ],
+        "common_pitfalls": "Changing $P/Y$ or $C/Y$ unintentionally when modifying $N$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "After 3 years, Mary decided she would like to have the loan paid off in 1 year's time. What must her quarterly repayment increase to for this to occur?",
+      "final_answer": "$\\$1177.77$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting remaining period $N = 4$ with $PV = 4483.17$ and $FV = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for new repayment $\\text{PMT} \\approx \\$1177.77$"
+        }
+      ],
+      "solution": "$N = 1 \\times 4 = 4$, $I\\% = 8$, $PV = 4483.17$, $FV = 0$, $P/Y = 4$, $C/Y = 12$\n$\\therefore \\text{PMT} \\approx -1177.77$\nThe quarterly repayment must increase to $\\$1177.77$.",
+      "ai_explanation": {
+        "concept_rule": "To pay off a loan earlier, set the new remaining term $N$ and use the current outstanding balance as $PV$ to recalculate the payment.",
+        "step_by_step": [
+          "Determine remaining time: 1 year, so $N = 1 \\times 4 = 4$.",
+          "Set $PV = 4483.17$, $FV = 0$, $I\\% = 8$, $P/Y = 4$, $C/Y = 12$.",
+          "Solve for PMT: $\\text{PMT} \\approx -1177.77$, so the new repayment is $\\$1177.77$."
+        ],
+        "common_pitfalls": "Using the remaining time originally scheduled (2 years, $N = 8$) instead of the accelerated timeframe of 1 year ($N = 4$)."
+      }
+    }
+  ]
+}

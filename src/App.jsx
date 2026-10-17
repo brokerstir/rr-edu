@@ -31,12 +31,39 @@ function MainApp() {
     }
   }, [user]);
 
+  // Dynamic topic list fetching routed by the selected course ID
   useEffect(() => {
-    fetch('./data/topics.json')
-      .then(res => res.json())
-      .then(data => setTopics(data))
-      .catch(err => console.error("Error loading topics.json:", err));
-  }, []);
+    let ignore = false;
+    if (!selectedCourse?.id) return;
+
+    fetch(`./data/${selectedCourse.id}/topics.json`)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(data => {
+        if (!ignore) setTopics(data);
+      })
+      .catch(err => {
+        console.error(`Error loading topics.json for ${selectedCourse.id}:`, err);
+        if (!ignore) setTopics([]);
+      });
+
+    return () => {
+      ignore = true;
+    };
+  }, [selectedCourse]);
+
+  // Diagram & image URL resolution to ./data/<course_id>/questions/<image_file>
+  const resolveDiagramUrl = (imageFile) => {
+    if (!imageFile) return '';
+    if (imageFile.startsWith('http://') || imageFile.startsWith('https://')) {
+      return imageFile;
+    }
+    const filename = imageFile.split('/').pop();
+    const courseId = selectedCourse?.id || 'ib_math_aa_sl';
+    return `./data/${courseId}/questions/${filename}`;
+  };
 
   // Auto-redirect authenticated users from landing page to catalog; redirect unauthenticated users to landing
   useEffect(() => {
@@ -53,9 +80,9 @@ function MainApp() {
   };
 
   const handleStartSession = async (questionCount) => {
-    if (!activeTopic) return;
+    if (!activeTopic || !selectedCourse) return;
     try {
-      const res = await fetch(`./data/topic_${activeTopic.topic_number}.json`);
+      const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
       const fullTopicData = await res.json();
       const randomizedSet = generatePracticeSession(fullTopicData, questionCount);
 
@@ -133,7 +160,7 @@ function MainApp() {
           <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <button
-                onClick={() => setSelectedCourse(null)}
+                onClick={() => { setSelectedCourse(null); setTopics([]); }}
                 className="text-xs font-semibold text-slate-400 hover:text-white"
               >
                 ← All Courses
@@ -143,25 +170,32 @@ function MainApp() {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {topics.map(t => (
-                <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
-                  <div>
-                    <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
-                      Topic {t.topic_number}
-                    </span>
-                    <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
-                    <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
+            {topics.length === 0 ? (
+              <div className="text-center py-16 bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-2">
+                <p className="text-white font-semibold text-base">Course Content Under Preparation</p>
+                <p className="text-slate-400 text-xs">No topics are currently available for {selectedCourse.title}. Check back soon!</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {topics.map(t => (
+                  <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                    <div>
+                      <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
+                        Topic {t.topic_number}
+                      </span>
+                      <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
+                      <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
+                    </div>
+                    <button
+                      onClick={() => handleTopicClick(t)}
+                      className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
+                    >
+                      Select Practice Set →
+                    </button>
                   </div>
-                  <button
-                    onClick={() => handleTopicClick(t)}
-                    className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
-                  >
-                    Select Practice Set →
-                  </button>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
@@ -229,10 +263,20 @@ function MainApp() {
             <MathText text={currentQ?.question_text} />
           </div>
 
+          {(currentQ?.diagram_url || currentQ?.diagram || currentQ?.image || currentQ?.diagram_file) && (
+            <div className="my-4 flex justify-center p-3 bg-slate-950/60 rounded-xl border border-slate-800">
+              <img
+                src={resolveDiagramUrl(currentQ.diagram_url || currentQ.diagram || currentQ.image || currentQ.diagram_file)}
+                alt={`Diagram for Question ${currentIndex + 1}`}
+                className="max-h-80 max-w-full rounded-lg object-contain"
+              />
+            </div>
+          )}
+
           <div className="space-y-6 pt-2">
             {currentQ?.subparts.map((sp, idx) => {
               const subKey = `${currentQ.id}_sp_${idx}`;
-              return <SubpartCard key={subKey} sp={sp} subKey={subKey} />;
+              return <SubpartCard key={subKey} sp={sp} subKey={subKey} resolveDiagramUrl={resolveDiagramUrl} />;
             })}
           </div>
         </div>

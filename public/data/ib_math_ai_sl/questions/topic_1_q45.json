@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q45",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 45,
+  "question_text": "Use your calculator to write the following in the form $e^k$ where $k$ is correct to 4 decimal places:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "47",
+      "final_answer": "$e^{3.8501}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Express 47 in base $e$ using $47 = e^{\\ln 47}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate exponent to 4 decimal places: $e^{3.8501}$"
+        }
+      ],
+      "solution": "$47 = e^{\\ln 47} \\approx e^{3.8501}$",
+      "ai_explanation": {
+        "concept_rule": "Expressing a number as a power of $e$: $x = e^{\\ln x}$.",
+        "step_by_step": [
+          "Use the identity $47 = e^{\\ln 47}$.",
+          "Calculate $\\ln 47 \\approx 3.850148$.",
+          "Round exponent to 4 decimal places: $e^{3.8501}$."
+        ],
+        "common_pitfalls": "Using $\\log_{10}$ instead of natural logarithm $\\ln$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "500",
+      "final_answer": "$e^{6.2146}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $500 = e^{\\ln 500}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate exponent: $e^{6.2146}$"
+        }
+      ],
+      "solution": "$500 = e^{\\ln 500} \\approx e^{6.2146}$",
+      "ai_explanation": {
+        "concept_rule": "Conversion to exponential form with base $e$.",
+        "step_by_step": [
+          "Write $500 = e^{\\ln 500}$.",
+          "Calculate $\\ln 500 \\approx 6.214608$.",
+          "State the result as $e^{6.2146}$."
+        ],
+        "common_pitfalls": "Rounding errors in the last decimal place."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "0.023",
+      "final_answer": "$e^{-3.7723}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use identity $0.023 = e^{\\ln 0.023}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate exponent: $e^{-3.7723}$"
+        }
+      ],
+      "solution": "$0.023 = e^{\\ln 0.023} \\approx e^{-3.7723}$",
+      "ai_explanation": {
+        "concept_rule": "Conversion of numbers smaller than 1 to powers of $e$.",
+        "step_by_step": [
+          "Write $0.023 = e^{\\ln 0.023}$.",
+          "Calculate $\\ln 0.023 \\approx -3.77226$.",
+          "Round exponent to 4 decimal places: $e^{-3.7723}$."
+        ],
+        "common_pitfalls": "Omitting the negative sign in the exponent."
+      }
+    }
+  ]
+}

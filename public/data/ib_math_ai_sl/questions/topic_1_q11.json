@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q11",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 11,
+  "question_text": "Write without negative exponents:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$a^2b^{-3}$",
+      "final_answer": "$(-1, -4)\\text{ satisfies the function}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = -1$ into the quadratic expression"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to obtain $-4$ and conclude that the point satisfies the function"
+        }
+      ],
+      "solution": "When $x = -1$, $y = 2(-1)^2 + 5(-1) - 1 = 2 - 5 - 1 = -4$.\n$\\therefore (-1, -4)$ satisfies the function $y = 2x^2 + 5x - 1$.",
+      "ai_explanation": {
+        "concept_rule": "A point $(x, y)$ satisfies a function if substituting $x$ into the equation yields the corresponding $y$-value.",
+        "step_by_step": [
+          "Substitute $x = -1$ into $y = 2x^2 + 5x - 1$.",
+          "Calculate: $2(-1)^2 + 5(-1) - 1 = 2(1) - 5 - 1 = -4$.",
+          "Since the calculated value matches $y = -4$, the point lies on the curve."
+        ],
+        "common_pitfalls": "Incorrectly evaluating $(-1)^2$ as $-1$ instead of $1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\frac{2m^{-2}n^3}{m^5n^{-5}}$",
+      "final_answer": "$(10, -19)\\text{ does not satisfy the function}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 10$ into the function"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to $-13$ and conclude the point does not satisfy the function"
+        }
+      ],
+      "solution": "When $x = 10$, $y = \\frac{1}{2}(10)^2 - 6(10) - 3 = 50 - 60 - 3 = -13$.\n$\\therefore (10, -19)$ does not satisfy the function $y = \\frac{1}{2}x^2 - 6x - 3$.",
+      "ai_explanation": {
+        "concept_rule": "If the computed $y$-value does not match the given $y$-coordinate, the point does not satisfy the function.",
+        "step_by_step": [
+          "Substitute $x = 10$ into $y = \\frac{1}{2}x^2 - 6x - 3$.",
+          "Compute $\\frac{1}{2}(100) - 60 - 3 = 50 - 60 - 3 = -13$.",
+          "Since $-13 \\neq -19$, the point $(10, -19)$ is not on the curve."
+        ],
+        "common_pitfalls": "Arithmetic errors when squaring or subtracting negative numbers."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\frac{12a^{-3}}{b^{-5}}$",
+      "final_answer": "$\\frac{12b^5}{a^3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Separating terms and applying reciprocal rule for negative exponents"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct expression with positive exponents"
+        }
+      ],
+      "solution": "$\\frac{12a^{-3}}{b^{-5}} = 12 \\times a^{-3} \\times \\frac{1}{b^{-5}} = 12 \\times \\frac{1}{a^3} \\times b^5 = \\frac{12b^5}{a^3}$",
+      "ai_explanation": {
+        "concept_rule": "$a^{-n} = \\frac{1}{a^n}$ and $\\frac{1}{b^{-n}} = b^n$.",
+        "step_by_step": [
+          "Move $a^{-3}$ from the numerator to the denominator as $a^3$.",
+          "Move $b^{-5}$ from the denominator to the numerator as $b^5$.",
+          "Combine to get $\\frac{12b^5}{a^3}$."
+        ],
+        "common_pitfalls": "Inverting the constant coefficient 12."
+      }
+    }
+  ]
+}

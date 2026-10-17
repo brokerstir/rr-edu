@@ -1,0 +1,80 @@
+{
+  "id": "topic_1_q20",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 20,
+  "question_text": "Find the general term $u_n$ of the geometric sequence which has:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$u_5 = 324$ and $u_{10} = 78\\,732$",
+      "final_answer": "$u_n = 4 \\times 3^{n-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equations $u_1 r^4 = 324$ and $u_1 r^9 = 78732$"
+        },
+        {
+          "code": "A1",
+          "desc": "Dividing equations to find $r = 3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $u_1 = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Writing the general term $u_n = 4 \\times 3^{n-1}$"
+        }
+      ],
+      "solution": "$$u_5 = u_1 r^4 = 324 \\quad \\dots (1)$$\n$$\\text{and } u_{10} = u_1 r^9 = 78\\,732 \\quad \\dots (2)$$\n$$\\text{Now } \\frac{u_1 r^9}{u_1 r^4} = \\frac{78\\,732}{324} \\quad \\{(2) \\div (1)\\}$$\n$$\\therefore r^5 = 243$$\n$$\\therefore r = \\sqrt[5]{243}$$\n$$\\therefore r = 3$$\n$$\\text{Using (1), } u_1(3)^4 = 324$$\n$$\\therefore 81u_1 = 324$$\n$$\\therefore u_1 = 4$$\n$$\\text{Thus } u_n = 4 \\times 3^{n-1}$$",
+      "ai_explanation": {
+        "concept_rule": "For a geometric sequence, the $n$th term is $u_n = u_1 r^{n-1}$. Dividing higher-order terms by lower-order terms eliminates $u_1$.",
+        "step_by_step": [
+          "Express $u_5$ and $u_{10}$ in terms of $u_1$ and $r$: $u_1 r^4 = 324$ and $u_1 r^9 = 78732$.",
+          "Divide the second equation by the first: $r^5 = 243$.",
+          "Take the fifth root: $r = 3$.",
+          "Substitute $r = 3$ back into equation (1) to find $u_1 = 4$.",
+          "Substitute $u_1$ and $r$ into the general formula $u_n = u_1 r^{n-1}$."
+        ],
+        "common_pitfalls": "Incorrectly computing index subtraction ($9 - 4 = 5$)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$u_8 = -10$ and $u_{12} = -160$",
+      "final_answer": "$u_n = -\\frac{5}{64} \\times 2^{n-1} \\text{ or } u_n = \\frac{5}{64} \\times (-2)^{n-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up $u_1 r^7 = -10$ and $u_1 r^{11} = -160$ and dividing"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $r^4 = 16 \\implies r = \\pm 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $u_1$ and $u_n$ when $r = 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $u_1$ and $u_n$ when $r = -2$"
+        }
+      ],
+      "solution": "$$u_8 = u_1 r^7 = -10 \\quad \\dots (1)$$\n$$\\text{and } u_{12} = u_1 r^{11} = -160 \\quad \\dots (2)$$\n$$\\text{Now } \\frac{u_1 r^{11}}{u_1 r^7} = \\frac{-160}{-10} \\quad \\{(2) \\div (1)\\}$$\n$$\\therefore r^4 = 16$$\n$$\\therefore r = \\pm \\sqrt[4]{16}$$\n$$\\therefore r = \\pm 2$$\n$$\\text{If } r = 2, \\text{ then using (1), } u_1(2)^7 = -10$$\n$$\\therefore 128u_1 = -10$$\n$$\\therefore u_1 = -\\frac{10}{128} = -\\frac{5}{64}$$\n$$\\text{Thus } u_n = -\\frac{5}{64} \\times 2^{n-1}$$\n$$\\text{If } r = -2, \\text{ then using (1), } u_1(-2)^7 = -10$$\n$$\\therefore -128u_1 = -10$$\n$$\\therefore u_1 = \\frac{10}{128} = \\frac{5}{64}$$\n$$\\text{Thus } u_n = \\frac{5}{64} \\times (-2)^{n-1}$$",
+      "ai_explanation": {
+        "concept_rule": "An even power equation $r^4 = k$ yields both positive and negative roots ($r = \\pm \\sqrt[4]{k}$), each yielding a valid sequence.",
+        "step_by_step": [
+          "Divide equation (2) by equation (1) to get $r^4 = 16$.",
+          "Solve for $r$ giving two solutions: $r = 2$ or $r = -2$.",
+          "For $r = 2$, substitute into $u_1(2)^7 = -10$ to find $u_1 = -\\frac{5}{64}$.",
+          "For $r = -2$, substitute into $u_1(-2)^7 = -10$ to find $u_1 = \\frac{5}{64}$.",
+          "State the two corresponding general term formulas."
+        ],
+        "common_pitfalls": "Forgetting the negative root when taking an even root ($r = \\pm 2$)."
+      }
+    }
+  ]
+}

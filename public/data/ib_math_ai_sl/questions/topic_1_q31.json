@@ -1,0 +1,61 @@
+{
+  "id": "topic_1_q31",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 31,
+  "question_text": "The first term of a finite arithmetic series is 18 and the sum of the series is $-210$. The common difference is $-3$. Suppose there are $n$ terms in the series.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that $\\frac{n}{2}(39 - 3n) = -210$.",
+      "final_answer": "$\\frac{n}{2}(39 - 3n) = -210$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$ with given values"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplifying the expression to obtain $\\frac{n}{2}(39 - 3n) = -210$"
+        }
+      ],
+      "solution": "$S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$\n$-210 = \\frac{n}{2}(2 \\times 18 - 3(n - 1))$\n$\\frac{n}{2}(36 - 3n + 3) = -210$\n$\\frac{n}{2}(39 - 3n) = -210$",
+      "ai_explanation": {
+        "concept_rule": "The sum formula for an arithmetic sequence is $S_n = \\frac{n}{2}(2u_1 + (n - 1)d)$.",
+        "step_by_step": [
+          "Substitute $S_n = -210$, $u_1 = 18$, and $d = -3$ into the formula.",
+          "Expand the inner bracket: $2 \\times 18 - 3(n - 1) = 36 - 3n + 3 = 39 - 3n$.",
+          "Equate to $-210$ to get $\\frac{n}{2}(39 - 3n) = -210$."
+        ],
+        "common_pitfalls": "Incorrect expansion of $-3(n - 1)$, mistakenly getting $-3n - 3$ instead of $-3n + 3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find $n$.",
+      "final_answer": "$n = 20$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Expanding the equation to standard quadratic form $3n^2 - 39n - 420 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving the quadratic and rejecting the negative root to obtain $n = 20$"
+        }
+      ],
+      "solution": "From a, $\\frac{n}{2}(39 - 3n) = -210$\n$n(39 - 3n) = -420$\n$39n - 3n^2 = -420$\n$3n^2 - 39n - 420 = 0$\nUsing technology, $n = 20$ $\\{n > 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "The number of terms $n$ in a sequence must be a positive integer ($n \\in \\mathbb{Z}^+$).",
+        "step_by_step": [
+          "Multiply both sides by 2: $n(39 - 3n) = -420$.",
+          "Expand and rearrange into standard quadratic form $ax^2 + bx + c = 0$: $3n^2 - 39n - 420 = 0$, or $n^2 - 13n - 140 = 0$.",
+          "Factor or use a solver: $(n - 20)(n + 7) = 0$, giving $n = 20$ or $n = -7$.",
+          "Reject $n = -7$ since $n$ must be a positive integer, leaving $n = 20$."
+        ],
+        "common_pitfalls": "Failing to discard the negative root $n = -7$."
+      }
+    }
+  ]
+}

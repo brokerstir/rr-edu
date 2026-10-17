@@ -1,0 +1,76 @@
+{
+  "id": "topic_1_q14",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 14,
+  "question_text": "Use technology to solve:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$8x - 2 = 3x^2$",
+      "final_answer": "$\\text{The } y\\text{-intercept is } -3;\\text{ the } x\\text{-intercepts are } \\frac{1}{2}\\text{ and } -3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 0$ to find the $y$-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "State $y$-intercept is $-3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $y = 0$ and apply null factor law"
+        },
+        {
+          "code": "A1",
+          "desc": "State $x$-intercepts are $\\frac{1}{2}$ and $-3$"
+        }
+      ],
+      "solution": "$y = (2x - 1)(x + 3)$\nWhen $x = 0$, $y = (-1)(3) = -3$\n$\\therefore$ the $y$-intercept is $-3$.\nWhen $y = 0$, $(2x - 1)(x + 3) = 0$\n$\\therefore 2x - 1 = 0$ or $x + 3 = 0$ {null factor law}\n$\\therefore x = \\frac{1}{2}$ or $-3$\n$\\therefore$ the $x$-intercepts are $\\frac{1}{2}$ and $-3$.",
+      "ai_explanation": {
+        "concept_rule": "Find the $y$-intercept by setting $x = 0$; find $x$-intercepts by setting $y = 0$ and applying the null factor law.",
+        "step_by_step": [
+          "To find the $y$-intercept, set $x = 0$: $y = (2(0) - 1)(0 + 3) = (-1)(3) = -3$.",
+          "To find $x$-intercepts, set $y = 0$: $(2x - 1)(x + 3) = 0$.",
+          "By the null factor law, $2x - 1 = 0 \\implies x = \\frac{1}{2}$, and $x + 3 = 0 \\implies x = -3$."
+        ],
+        "common_pitfalls": "Forgetting to negate the constant when setting factors to zero, e.g., writing $x = 3$ instead of $-3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$3x^3 + 7x^2 - 3x = 2$",
+      "final_answer": "$\\text{The } y\\text{-intercept is } 1;\\text{ the } x\\text{-intercept is } -1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $f(0)$ to find $y$-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "State $y$-intercept is $1$"
+        },
+        {
+          "code": "M1",
+          "desc": "Set $f(x) = 0$ to find $x$-intercept"
+        },
+        {
+          "code": "A1",
+          "desc": "State $x$-intercept is $-1$"
+        }
+      ],
+      "solution": "$f(x) = (x + 1)^2$\n$\\therefore f(0) = (1)^2 = 1$\n$\\therefore$ the $y$-intercept is $1$.\nWhen $f(x) = 0$, $(x + 1)^2 = 0$\n$\\therefore x + 1 = 0$\n$\\therefore x = -1$\n$\\therefore$ the $x$-intercept is $-1$.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept occurs at $x=0$, and $x$-intercepts occur where $f(x) = 0$. A squared factor yields a single repeated root.",
+        "step_by_step": [
+          "Evaluate $f(0) = (0 + 1)^2 = 1$, giving the $y$-intercept.",
+          "Set $f(x) = 0$: $(x + 1)^2 = 0$.",
+          "Take the square root: $x + 1 = 0 \\implies x = -1$."
+        ],
+        "common_pitfalls": "Thinking there must always be two distinct $x$-intercepts for a quadratic."
+      }
+    }
+  ]
+}

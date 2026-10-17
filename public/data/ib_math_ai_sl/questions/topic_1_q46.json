@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q46",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 46,
+  "question_text": "In acoustics, the intensity of sound is measured in decibels (dB). The sound intensity level (SIL) is given by $L = 10\\log\\left(\\frac{I}{I_0}\\right)\\text{ dB}$, where $I$ is the sound intensity, and $I_0 = 10^{-12}\\text{ w/m}^2$ is the reference sound intensity.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find, in dB, the SIL of a snare drum with sound intensity $3 \\times 10^{-2}\\text{ w/m}^2$.",
+      "final_answer": "$105\\text{ dB}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $I = 3 \\times 10^{-2}$ into $L = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate sound level $L \\approx 105\\text{ dB}$"
+        }
+      ],
+      "solution": "$\\text{When } I = 3 \\times 10^{-2},\\; L = 10\\log\\left(\\frac{3 \\times 10^{-2}}{10^{-12}}\\right) \\approx 105\\text{ dB}$",
+      "ai_explanation": {
+        "concept_rule": "Calculating decibel level using $L = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)$.",
+        "step_by_step": [
+          "Substitute $I = 3 \\times 10^{-2}$ and $I_0 = 10^{-12}$ into formula.",
+          "Simplify argument: $\\frac{3 \\times 10^{-2}}{10^{-12}} = 3 \\times 10^{10}$.",
+          "Compute $10 \\times \\log_{10}(3 \\times 10^{10}) = 10 \\times (10 + \\log 3) \\approx 104.77\\text{ dB}$, rounded to $105\\text{ dB}$."
+        ],
+        "common_pitfalls": "Errors in negative index division: $-2 - (-12) = 10$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "A lawn mower has SIL 85 dB. Find its sound intensity in $\\text{w/m}^2$, giving your answer in the form $a \\times 10^k$, $1 \\leqslant a < 10$, $k \\in \\mathbb{Z}$.",
+      "final_answer": "$3.16 \\times 10^{-4}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $L = 85$ into formula: $85 = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for intensity $I \\approx 3.16 \\times 10^{-4}$"
+        }
+      ],
+      "solution": "$\\text{When } L = 85,\\; 85 = 10\\log\\left(\\frac{I}{10^{-12}}\\right)$. $\\therefore \\text{using technology, } I \\approx 3.16 \\times 10^{-4}$",
+      "ai_explanation": {
+        "concept_rule": "Solving a logarithmic equation for intensity $I$.",
+        "step_by_step": [
+          "Divide by 10: $8.5 = \\log\\left(\\frac{I}{10^{-12}}\\right)$.",
+          "Convert to exponential form: $\\frac{I}{10^{-12}} = 10^{8.5}$.",
+          "Solve for $I$: $I = 10^{8.5} \\times 10^{-12} = 10^{-3.5} \\approx 3.16 \\times 10^{-4}$."
+        ],
+        "common_pitfalls": "Dividing 85 by 10 incorrectly or making index errors when multiplying powers of 10."
+      }
+    }
+  ]
+}

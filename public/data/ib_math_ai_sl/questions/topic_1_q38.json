@@ -1,0 +1,69 @@
+{
+  "id": "topic_1_q38",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 38,
+  "question_text": "Cassie made an initial investment of €2000 into a savings account, and followed it with regular deposits of €500 per quarter. The account pays $1.2\\%$ interest per quarter, and inflation is $0.3\\%$ per quarter.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Explain why the real interest rate is approximately $0.9\\%$ per quarter.",
+      "final_answer": "$0.897\\% \\approx 0.9\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the relationship: real interest multiplier $\\times$ inflation multiplier = nominal interest multiplier"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating real interest rate $\\approx 0.897\\% \\approx 0.9\\%$"
+        }
+      ],
+      "solution": "$\\text{real interest rate multiplier} \\times 1.003 = 1.012$\n$\\therefore \\text{real interest rate multiplier} = \\frac{1.012}{1.003} \\approx 1.00897$\n$\\therefore \\text{real interest rate} \\approx 0.897\\% \\approx 0.9\\%$",
+      "ai_explanation": {
+        "concept_rule": "Fisher equation in multiplier form: $(1 + r_r)(1 + i) = (1 + r_n)$, where $r_r$ is the real rate, $i$ is inflation, and $r_n$ is the nominal rate.",
+        "step_by_step": [
+          "Identify nominal multiplier $1 + 0.012 = 1.012$ and inflation multiplier $1 + 0.003 = 1.003$.",
+          "Divide: $\\frac{1.012}{1.003} \\approx 1.00897$.",
+          "Subtract 1: $1.00897 - 1 = 0.00897 = 0.897\\% \\approx 0.9\\%$."
+        ],
+        "common_pitfalls": "Simply subtracting inflation from the nominal rate ($1.2\\% - 0.3\\% = 0.9\\%$) without showing the exact multiplicative relationship when required."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the real value of Cassie's investment after 5 years.",
+      "final_answer": "$€$11\\,691.81$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using TVM solver to find future value in savings account after 5 years"
+        },
+        {
+          "code": "A1",
+          "desc": "Nominal future value $FV \\approx €12413.68$"
+        },
+        {
+          "code": "M1",
+          "desc": "Discounting future value by inflation $(1.003)^{20}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Real value $\\approx €11691.81$"
+        }
+      ],
+      "solution": "$N = 5 \\times 4 = 20$, $I\\% = 1.2$, $PV = -2000$, $\\text{PMT} = -500$, $P/Y = 4$, $C/Y = 4$\n$\\therefore FV \\approx 12\\,413.68$\nAfter 5 years, Cassie will have €$12\\,413.68$ in her savings account.\nNow $\\text{real value} \\times (1.003)^{5 \\times 4} = €12\\,413.68$\n$\\therefore \\text{real value} = \\frac{€12\\,413.68}{(1.003)^{20}} \\approx €11\\,691.81$",
+      "ai_explanation": {
+        "concept_rule": "The real value of a future sum of money is obtained by deflating the nominal value by the inflation factor $(1 + i)^N$.",
+        "step_by_step": [
+          "Calculate nominal future value using TVM: $N = 20$, $I\\% = 1.2$, $PV = -2000$, $\\text{PMT} = -500$, giving $FV \\approx 12413.68$.",
+          "Identify the quarterly inflation rate of $0.3\\%$, corresponding to multiplier $1.003$ per quarter.",
+          "Over 20 quarters, total inflation factor is $(1.003)^{20}$.",
+          "Divide nominal future value by $(1.003)^{20}$: $\\frac{12413.68}{1.003^{20}} \\approx €11\\,691.81$."
+        ],
+        "common_pitfalls": "Applying the annual inflation adjustment instead of compounding it per quarter for 20 quarters."
+      }
+    }
+  ]
+}

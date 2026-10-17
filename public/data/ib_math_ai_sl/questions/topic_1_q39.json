@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q39",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 39,
+  "question_text": "Bill collects $\\$81\\,000$ as his share of a lottery win. He decides to retire from work and buy an annuity to provide $\\$2000$ per month, until he gets a pension in four years' time.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "What annual interest rate, compounded monthly, is needed for Bill's plan to work?",
+      "final_answer": "$8.60\\%\\text{ p.a.}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up TVM financial solver parameters with $N = 48$, $PV = -81\\,000$, $PMT = 2000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for interest rate $I\\% \\approx 8.60\\%$"
+        }
+      ],
+      "solution": "$N = 4 \\times 12 = 48$, $PV = -81\\,000$, $PMT = 2000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore I\\% \\approx 8.60$. Bill needs to receive $8.60\\%$ p.a. compounded monthly.",
+      "ai_explanation": {
+        "concept_rule": "Using a TVM solver to find the required annual interest rate for an annuity given present value, regular payment, and number of periods.",
+        "step_by_step": [
+          "Calculate total number of payments $N = 4 \\times 12 = 48$.",
+          "Input $PV = -81000$, $PMT = 2000$, $FV = 0$, and monthly compounding frequencies $P/Y = C/Y = 12$.",
+          "Solve for $I\\%$ to obtain approximately $8.60\\%$ per annum."
+        ],
+        "common_pitfalls": "Incorrect sign convention for cash flows (PV and PMT must have opposite signs)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How much will Bill actually receive each month over the period of the annuity if he receives $7\\%$ p.a. interest compounded monthly?",
+      "final_answer": "$\\$1939.64$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up TVM solver with $I\\% = 7$ and other given parameters"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for monthly payment $PMT \\approx 1939.64$"
+        }
+      ],
+      "solution": "$N = 48$, $I\\% = 7$, $PV = -81\\,000$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore PMT \\approx 1939.64$. Bill would receive $\\$1939.64$ per month.",
+      "ai_explanation": {
+        "concept_rule": "Calculating regular payments of an ordinary annuity with fixed interest rate and term.",
+        "step_by_step": [
+          "Enter $N = 48$, $I\\% = 7$, $PV = -81000$, $FV = 0$, $P/Y = C/Y = 12$ into TVM solver.",
+          "Solve for $PMT$.",
+          "State the payment rounded to two decimal places."
+        ],
+        "common_pitfalls": "Failing to round monetary values to 2 decimal places."
+      }
+    }
+  ]
+}

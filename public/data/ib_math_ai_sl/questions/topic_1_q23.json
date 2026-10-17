@@ -1,0 +1,89 @@
+{
+  "id": "topic_1_q23",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 23,
+  "question_text": "Paige invests €$500$ in an account that pays $7.2\\%$ p.a. compounded monthly.\nThe amount of money in Paige's account at the end of each month follows a geometric sequence with common ratio $r$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the value of $r$.",
+      "final_answer": "$r = 1.006$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating monthly interest rate $i = \\frac{7.2\\%}{12} = 0.6\\% = 0.006$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding multiplier $r = 1 + i = 1.006$"
+        }
+      ],
+      "solution": "$$\\text{If the interest rate per annum is } 7.2\\%, \\text{ then the interest rate per month } i = \\frac{7.2\\%}{12} = 0.6\\% = 0.006.$$\n$$r = 1 + i$$\n$$= 1 + 0.006$$\n$$= 1.006$$",
+      "ai_explanation": {
+        "concept_rule": "Monthly interest rate is the annual nominal interest rate divided by 12. The growth multiplier is $r = 1 + i$.",
+        "step_by_step": [
+          "Divide annual percentage by 12: $\\frac{7.2\\%}{12} = 0.6\\%$.",
+          "Convert to a decimal: $0.6\\% = 0.006$.",
+          "Add 1 to get the monthly multiplier: $r = 1.006$."
+        ],
+        "common_pitfalls": "Using $0.06$ instead of $0.006$ for $0.6\\%$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the value of the account after $3$ years.",
+      "final_answer": "$€$620.15$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determining total compounding periods $n = 3 \\times 12 = 36$"
+        },
+        {
+          "code": "M1",
+          "desc": "Applying compound formula $u_{36} = 500 \\times (1.006)^{36}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Computing final amount to 2 decimal places: €$620.15$"
+        }
+      ],
+      "solution": "$$\\text{The interest is calculated monthly, so } n = 3 \\times 12 = 36 \\text{ time periods.}$$\n$$u_{36} = u_0 \\times r^{36}$$\n$$= 500 \\times (1.006)^{36}$$\n$$\\approx 620.15$$\n$$\\text{The value of the account after 3 years is } \\text{€}620.15.$$",
+      "ai_explanation": {
+        "concept_rule": "Compound amount after $n$ periods is $FV = PV(1 + i)^n$.",
+        "step_by_step": [
+          "Calculate total periods: $n = 3 \\text{ years} \\times 12 \\text{ months/year} = 36$.",
+          "Apply formula: $u_{36} = 500 \\times (1.006)^{36}$.",
+          "Evaluate: $500 \\times 1.2403... \\approx 620.15$."
+        ],
+        "common_pitfalls": "Using $n = 3$ years instead of the number of monthly periods $n = 36$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Given that inflation averages $2\\%$ p.a. over the $3$ years, find the real value of the investment after $3$ years.",
+      "final_answer": "$€$584.38$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equation relating real value and inflation: $\\text{real value} \\times (1.02)^3 = 620.15$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for real value: €$584.38$"
+        }
+      ],
+      "solution": "$$\\text{real value} \\times (1.02)^3 = \\text{€}620.15$$\n$$\\therefore \\text{real value} = \\frac{\\text{€}620.15}{(1.02)^3}$$\n$$= \\text{€}584.38$$",
+      "ai_explanation": {
+        "concept_rule": "Real value adjusted for inflation over $t$ years is $\\text{Real Value} = \\frac{\\text{Nominal Value}}{(1 + \\text{inflation rate})^t}$.",
+        "step_by_step": [
+          "State the relationship: $\\text{real value} \\times (1.02)^3 = 620.15$.",
+          "Divide by $(1.02)^3$: $\\frac{620.15}{1.061208} \\approx 584.38$.",
+          "Conclude that the real value after inflation is €584.38."
+        ],
+        "common_pitfalls": "Multiplying the final value by $(1 - 0.02)^3$ instead of dividing by $(1.02)^3$."
+      }
+    }
+  ]
+}

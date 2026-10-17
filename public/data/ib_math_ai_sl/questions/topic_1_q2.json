@@ -1,0 +1,85 @@
+{
+  "id": "topic_1_q2",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 2,
+  "question_text": "Estimate using a one figure approximation:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$382 \\times 21$",
+      "final_answer": "$8000$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rounding each value to 1 significant figure"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct estimated product"
+        }
+      ],
+      "solution": "$382 \\times 21 \\approx 400 \\times 20 \\approx 8000$",
+      "ai_explanation": {
+        "concept_rule": "Estimation is typically performed by rounding each number in the expression to 1 significant figure first.",
+        "step_by_step": [
+          "Round $382$ to 1 significant figure to get $400$.",
+          "Round $21$ to 1 significant figure to get $20$.",
+          "Multiply: $400 \\times 20 = 8000$."
+        ],
+        "common_pitfalls": "Rounding after computing the exact multiplication rather than estimating beforehand."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$6.91 \\times 0.875$",
+      "final_answer": "$6.3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rounding each factor to 1 significant figure"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct estimated product"
+        }
+      ],
+      "solution": "$6.91 \\times 0.875 \\approx 7 \\times 0.9 \\approx 6.3$",
+      "ai_explanation": {
+        "concept_rule": "Estimation involves rounding each factor to 1 significant figure before carrying out the arithmetic.",
+        "step_by_step": [
+          "Round $6.91$ to 1 significant figure: $7$.",
+          "Round $0.875$ to 1 significant figure: $0.9$.",
+          "Multiply: $7 \\times 0.9 = 6.3$."
+        ],
+        "common_pitfalls": "Miscounting leading zeros when rounding decimals like $0.875$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$38\\,107 \\div 213$",
+      "final_answer": "$200$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rounding dividend and divisor to 1 significant figure"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct estimated quotient"
+        }
+      ],
+      "solution": "$38\\,107 \\div 213 \\approx 40\\,000 \\div 200 \\approx 200$",
+      "ai_explanation": {
+        "concept_rule": "For division estimation, round each number to 1 significant figure.",
+        "step_by_step": [
+          "Round $38\\,107$ to 1 significant figure: $40\\,000$.",
+          "Round $213$ to 1 significant figure: $200$.",
+          "Divide: $40\\,000 \\div 200 = 200$."
+        ],
+        "common_pitfalls": "Misplacing powers of 10 during the division of rounded numbers."
+      }
+    }
+  ]
+}

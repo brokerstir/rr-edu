@@ -1,0 +1,60 @@
+{
+  "id": "topic_1_q40",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 40,
+  "question_text": "Celia and Mike want to provide each of their two children with $200 per month for the next ten years. Interest on the investment is 5.2% p.a. calculated monthly.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "How much should be invested now to provide such an annuity?",
+      "final_answer": "$\\$37\\,367.19$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine $N = 120$ and total monthly payment $PMT = 400$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for present value $PV \\approx 37\\,367.19$"
+        }
+      ],
+      "solution": "$N = 10 \\times 12 = 120$, $I\\% = 5.2$, $PMT = 200 \\times 2 = 400$, $FV = 0$, $P/Y = 12$, $C/Y = 12$. $\\therefore PV \\approx 37\\,367.19$. So $\\$37\\,367.19$ should be invested now to provide such an annuity.",
+      "ai_explanation": {
+        "concept_rule": "Present value of an annuity calculation using financial functions.",
+        "step_by_step": [
+          "Compute total months $N = 10 \\times 12 = 120$.",
+          "Combine payments if multiple payouts occur per period: $PMT = 200 \\times 2 = 400$.",
+          "Use TVM solver with $I\\% = 5.2$, $FV = 0$, $P/Y = C/Y = 12$ to find $PV$."
+        ],
+        "common_pitfalls": "Using the wrong payment amount by forgetting to multiply the payment by 2."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate the total interest earned over the term of the annuity.",
+      "final_answer": "$\\$10\\,632.81$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate total amount received minus principal invested"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct total interest of $\\$10\\,632.81$"
+        }
+      ],
+      "solution": "$\\text{Total interest} = \\$200 \\times 2 \\times 12 \\times 10 - \\$37\\,367.19 = \\$48\\,000 - \\$37\\,367.19 = \\$10\\,632.81$",
+      "ai_explanation": {
+        "concept_rule": "Total interest earned equals total withdrawals minus original investment.",
+        "step_by_step": [
+          "Calculate total withdrawals: $400 \\times 120 = \\$48\\,000$.",
+          "Subtract initial investment: $\\$48\\,000 - \\$37\\,367.19$.",
+          "Result is $\\$10\\,632.81$."
+        ],
+        "common_pitfalls": "Adding the investment to total withdrawals instead of subtracting."
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "topic_1_q36",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 36,
+  "question_text": "Oscar decides to start a new business venture which involves taking out a bank loan. The bank charges an interest rate of $6.55\\%$ p.a. compounded quarterly. His quarterly repayments are $\\$933.62$, and must be repaid over 8 years.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "How much did Oscar borrow?",
+      "final_answer": "$\\$23\\,110.12$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Entering TVM parameters with $N = 32, I\\% = 6.55, \\text{PMT} = -933.62, FV = 0, P/Y = 4, C/Y = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $PV \\approx \\$23110.12$"
+        }
+      ],
+      "solution": "$N = 8 \\times 4 = 32$, $I\\% = 6.55$, $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = 4$, $C/Y = 4$\n$\\therefore PV \\approx 23\\,110.12$\nOscar borrowed $\\$23\\,110.12$.",
+      "ai_explanation": {
+        "concept_rule": "The borrowed amount is the present value $PV$ of an annuity given quarterly payments, interest rate, and term.",
+        "step_by_step": [
+          "Determine total quarterly payments: $N = 8 \\times 4 = 32$.",
+          "Input $I\\% = 6.55$, quarterly repayment $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = C/Y = 4$.",
+          "Solve for $PV \\approx 23\\,110.12$."
+        ],
+        "common_pitfalls": "Setting $P/Y$ or $C/Y$ to 12 instead of 4 for quarterly payments."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "How much interest will he pay over the 8 year period?",
+      "final_answer": "$\\$6765.72$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating total repayments minus principal borrowed"
+        },
+        {
+          "code": "A1",
+          "desc": "Total interest = $\\$6765.72$"
+        }
+      ],
+      "solution": "$\\text{Interest} = \\$933.62 \\times 8 \\times 4 - \\$23\\,110.12 = \\$6765.72$",
+      "ai_explanation": {
+        "concept_rule": "Total interest paid over the life of a loan is given by $\\text{Total Repayments} - \\text{Principal Borrowed}$.",
+        "step_by_step": [
+          "Calculate total repayments: $32 \\times 933.62 = 29\\,875.84$.",
+          "Subtract the principal borrowed: $29\\,875.84 - 23\\,110.12 = 6\\,765.72$."
+        ],
+        "common_pitfalls": "Using simple interest formula instead of subtracting principal from total repayments."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Calculate the outstanding balance at the end of the sixth year.",
+      "final_answer": "$\\$6947.33$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $N = 24$ in TVM solver to find balance after 6 years"
+        },
+        {
+          "code": "A1",
+          "desc": "Outstanding balance = $\\$6947.33$"
+        }
+      ],
+      "solution": "$N = 6 \\times 4 = 24$, $I\\% = 6.55$, $PV = 23\\,110.12$, $\\text{PMT} = -933.62$, $P/Y = 4$, $C/Y = 4$\n$\\therefore FV \\approx -6947.33$\nSo, the outstanding balance is $\\$6947.33$.",
+      "ai_explanation": {
+        "concept_rule": "The balance of the loan at any time is the future value $FV$ after the specified number of periods.",
+        "step_by_step": [
+          "Set $N = 6 \\times 4 = 24$ quarters.",
+          "Keep $I\\% = 6.55$, $PV = 23110.12$, $\\text{PMT} = -933.62$.",
+          "Solve for $FV \\approx -6947.33$, so the outstanding balance is $\\$6947.33$."
+        ],
+        "common_pitfalls": "Calculating $N$ using remaining quarters (8) rather than elapsed quarters (24)."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "At the end of the 6th year, Oscar pays a lump-sum of $\\$3000$ off the loan. Assuming his repayments remain the same, how much sooner will Oscar repay the loan?",
+      "final_answer": "$3 quarters$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Adjusting $PV = 6947.33 - 3000 = 3947.33$ and solving for remaining $N$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtaining $N \\approx 4.417 \\implies 5$ quarters"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculating time saved: $32 - 29 = 3$ quarters"
+        }
+      ],
+      "solution": "$I\\% = 6.55$, $PV = 6947.33 - 3000 = 3947.33$, $\\text{PMT} = -933.62$, $FV = 0$, $P/Y = 4$, $C/Y = 4$\n$\\therefore N \\approx 4.417$\nIt will take another 5 quarters to pay off the rest of the loan.\n$\\therefore \\text{time saved} = 8 \\times 4 - (6 \\times 4 + 5) = 32 - 29 = 3$ quarters",
+      "ai_explanation": {
+        "concept_rule": "A lump-sum payment directly reduces the outstanding principal balance. The remaining time is calculated using the new reduced balance as $PV$.",
+        "step_by_step": [
+          "Subtract lump sum: new $PV = 6947.33 - 3000 = 3947.33$.",
+          "Solve for $N$ using TVM solver with $\\text{PMT} = -933.62$ and $FV = 0$, obtaining $N \\approx 4.417$.",
+          "Round up to 5 quarters for complete payoff.",
+          "Total quarters taken: $24 + 5 = 29$.",
+          "Time saved: $32 - 29 = 3$ quarters."
+        ],
+        "common_pitfalls": "Rounding $N = 4.417$ down to 4 instead of rounding up to 5."
+      }
+    }
+  ]
+}

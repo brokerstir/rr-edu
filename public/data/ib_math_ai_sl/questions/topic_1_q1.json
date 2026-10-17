@@ -1,0 +1,56 @@
+{
+  "id": "topic_1_q1",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 1,
+  "question_text": "A circle has diameter $6.24\\text{ cm}$. Find the area of the circle, rounding your answer to:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "3 significant figures",
+      "final_answer": "$30.6\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding radius and substituting into area formula $\\pi r^2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct area rounded to 3 significant figures"
+        }
+      ],
+      "solution": "$\\text{diameter} = 6.24\\text{ cm}$\n$\\therefore \\text{radius} = \\frac{6.24}{2} = 3.12\\text{ cm}$\n$\\therefore \\text{area} = \\pi \\times (3.12)^2 \\approx 30.581\\,519\\,5\\dots$\n$\\text{area} \\approx 30.6\\text{ cm}^2$ {3 significant figures}",
+      "ai_explanation": {
+        "concept_rule": "The area of a circle is $A = \\pi r^2$, where $r = \\frac{d}{2}$. Significant figures are counted starting from the first non-zero digit.",
+        "step_by_step": [
+          "Divide the diameter $6.24\\text{ cm}$ by $2$ to find the radius $r = 3.12\\text{ cm}$.",
+          "Calculate the area using $A = \\pi \\times 3.12^2 \\approx 30.5815...\\text{ cm}^2$.",
+          "Round the unrounded value to $3$ significant figures: $30.6\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Using the diameter instead of the radius in the area formula $\\pi r^2$, or confusing significant figures with decimal places."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "4 decimal places.",
+      "final_answer": "$30.5815\\text{ cm}^2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct area rounded to 4 decimal places"
+        }
+      ],
+      "solution": "$\\text{area} \\approx 30.5815\\text{ cm}^2$ {4 decimal places}",
+      "ai_explanation": {
+        "concept_rule": "Rounding to $n$ decimal places requires looking at the $(n+1)$-th digit after the decimal point to determine whether to round up or keep the digit unchanged.",
+        "step_by_step": [
+          "Take the calculated area: $30.5815195...\\text{ cm}^2$.",
+          "Identify the first 4 decimal digits: $.5815$. The 5th decimal digit is $1$, which is $< 5$, so round down.",
+          "Write the final value as $30.5815\\text{ cm}^2$."
+        ],
+        "common_pitfalls": "Prematurely rounding before truncating to 4 decimal places."
+      }
+    }
+  ]
+}

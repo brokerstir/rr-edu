@@ -1,0 +1,36 @@
+{
+  "id": "topic_1_q3",
+  "topic_number": 1,
+  "topic_name": "Number and Algebra",
+  "question_number": 3,
+  "question_text": "The speed of a cricket player's bowl is recorded as $141.6\\text{ km h}^{-1}$, rounded to 1 decimal place. In what range of values does the actual speed $s$ lie?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The speed of a cricket player's bowl is recorded as $141.6\\text{ km h}^{-1}$, rounded to 1 decimal place. In what range of values does the actual speed $s$ lie?",
+      "final_answer": "$141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating the absolute error limit as half the smallest scale unit"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct lower and upper bounds of speed"
+        }
+      ],
+      "solution": "The measuring device is accurate to $\\pm \\frac{0.1}{2}\\text{ km\\,h}^{-1} = \\pm 0.05\\text{ km\\,h}^{-1}$.\n$\\therefore$ the range of values is $141.6 \\pm 0.05\\text{ km\\,h}^{-1}$.\nThe cricket player's actual bowling speed lies between $141.55\\text{ km\\,h}^{-1}$ and $141.65\\text{ km\\,h}^{-1}$.\n$\\therefore 141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$",
+      "ai_explanation": {
+        "concept_rule": "The maximum error of a measurement is half of the precision/smallest unit of measurement: $\\text{limit of reading} = \\frac{1}{2} \\times \\text{unit}$.",
+        "step_by_step": [
+          "The speed is given to 1 decimal place ($0.1$), so error is $\\pm \\frac{0.1}{2} = \\pm 0.05\\text{ km\\,h}^{-1}$.",
+          "Lower bound $= 141.6 - 0.05 = 141.55\\text{ km\\,h}^{-1}$.",
+          "Upper bound $= 141.6 + 0.05 = 141.65\\text{ km\\,h}^{-1}$.",
+          "State the inequality: $141.55\\text{ km\\,h}^{-1} < s < 141.65\\text{ km\\,h}^{-1}$."
+        ],
+        "common_pitfalls": "Using $\\pm 0.1$ instead of dividing the measurement unit by 2."
+      }
+    }
+  ]
+}

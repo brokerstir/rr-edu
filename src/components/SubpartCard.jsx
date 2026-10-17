@@ -3,10 +3,12 @@ import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
 
-export default function SubpartCard({ sp, subKey }) {
+export default function SubpartCard({ sp, resolveDiagramUrl }) {
   const [userInput, setUserInput] = useState('');
   const [isRevealed, setIsRevealed] = useState(false);
   const [gradeStatus, setGradeStatus] = useState(null); // 'correct' | 'incorrect' | null
+
+  const subpartImage = sp.diagram_url || sp.diagram || sp.image || sp.diagram_file;
 
   return (
     <div className="bg-slate-950/60 border border-slate-800 rounded-xl p-5 space-y-4">
@@ -17,6 +19,17 @@ export default function SubpartCard({ sp, subKey }) {
           <MathText text={sp.stem} />
         </div>
       </div>
+
+      {/* Subpart Diagram */}
+      {subpartImage && (
+        <div className="my-3 flex justify-center p-2 bg-slate-900 rounded-lg border border-slate-800">
+          <img
+            src={resolveDiagramUrl ? resolveDiagramUrl(subpartImage) : subpartImage}
+            alt={`Diagram for subpart ${sp.subpart || ''}`}
+            className="max-h-72 max-w-full rounded-md object-contain"
+          />
+        </div>
+      )}
 
       {/* Optional Work Input */}
       {!isRevealed && (
