@@ -11,7 +11,7 @@ const COURSES = [
     description: 'Analysis and Approaches Standard Level. Complete question bank covering Analysis, Calculus, and Functions.',
     questionCount: 346,
     status: 'available', // 'available' | 'locked'
-    badge: 'Popular'
+    badge: 'Open'
   },
   {
     id: 'ib_math_ai_sl',
@@ -19,8 +19,8 @@ const COURSES = [
     category: 'Mathematics',
     description: 'Applications and Interpretation Standard Level with heavy focus on Modeling and Statistics.',
     questionCount: 160,
-    status: 'locked',
-    badge: 'Coming Soon'
+    status: 'available',
+    badge: 'Open'
   },
   {
     id: 'ib_math_aa_hl',
