@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
 import SessionLengthModal from './components/SessionLengthModal';
@@ -67,12 +67,13 @@ function MainApp() {
 
   // Auto-redirect authenticated users from landing page to catalog; redirect unauthenticated users to landing
   useEffect(() => {
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (user && view === 'landing') {
       setView('catalog');
     } else if (!user && view !== 'landing') {
       setView('landing');
     }
-  }, [user]);
+  }, [user, view]);
 
   const handleTopicClick = (topic) => {
     setActiveTopic(topic);

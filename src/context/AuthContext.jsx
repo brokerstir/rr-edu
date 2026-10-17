@@ -1,13 +1,14 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { 
-  signIn, 
-  signUp, 
-  confirmSignUp, 
-  signOut, 
-  getCurrentUser, 
-  fetchUserAttributes 
-} from '@aws-amplify/auth';
+/* eslint-disable react-refresh/only-export-components */
+import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { Hub } from 'aws-amplify/utils';
+import {
+  sendOtpChallenge,
+  submitOtpCode,
+  resendOtpCode,
+  getCurrentAuthUser,
+  signOutUser,
+  formatAuthError
+} from '../services/auth';
 
 const AuthContext = createContext(null);
 
@@ -15,27 +16,38 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const checkUser = async () => {
+  const checkUser = useCallback(async () => {
     try {
-      const currentUser = await getCurrentUser();
-      const attributes = await fetchUserAttributes();
-      const userData = { ...currentUser, attributes };
+      const userData = await getCurrentAuthUser();
       setUser(userData);
       return userData;
-    } catch (err) {
+    } catch {
       setUser(null);
       return null;
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
-    checkUser();
+    let ignore = false;
+    getCurrentAuthUser()
+      .then((userData) => {
+        if (!ignore) {
+          setUser(userData);
+          setLoading(false);
+        }
+      })
+      .catch(() => {
+        if (!ignore) {
+          setUser(null);
+          setLoading(false);
+        }
+      });
 
-    // Listen for auth state changes (sign in, sign out)
+    // Listen for auth state events from Amplify Hub
     const unsubscribe = Hub.listen('auth', ({ payload }) => {
-      switch (payload.event) {
+      switch (payload?.event) {
         case 'signedIn':
         case 'autoSignIn':
           checkUser();
@@ -48,86 +60,60 @@ export function AuthProvider({ children }) {
       }
     });
 
-    return () => unsubscribe();
-  }, []);
+    return () => {
+      ignore = true;
+      unsubscribe();
+    };
+  }, [checkUser]);
 
-  const handleSignIn = async (credentials, maybePassword) => {
-    // Support either structured object { username, password } or positional arguments
-    const signInParams = (typeof credentials === 'object' && credentials !== null)
-      ? credentials
-      : { username: credentials, password: maybePassword };
-
-    // If user state is already present in React state, return success
-    if (user) {
-      await checkUser();
-      return { isSignedIn: true };
-    }
-
-    try {
-      // Check if an active session already exists in Amplify storage
-      const existingUser = await checkUser();
-      if (existingUser) {
-        return { isSignedIn: true };
-      }
-
-      const result = await signIn({
-        username: signInParams.username,
-        password: signInParams.password
-      });
-
-      if (result.isSignedIn) {
-        await checkUser();
-      }
-      return result;
-    } catch (err) {
-      if (
-        err.name === 'UserAlreadyAuthenticatedException' ||
-        err.message?.includes('already a signed in user') ||
-        err.message?.includes('UserAlreadyAuthenticatedException')
-      ) {
-        await checkUser();
-        return { isSignedIn: true };
-      }
-      throw err;
-    }
+  // Step 1: Send OTP code to email
+  const handleSendOtp = async (email) => {
+    return await sendOtpChallenge(email);
   };
 
-  const handleSignUp = async (params, maybePassword) => {
-    const signUpParams = (typeof params === 'object' && params !== null)
-      ? params
-      : {
-          username: params,
-          password: maybePassword,
-          options: {
-            userAttributes: { email: params }
-          }
-        };
-
-    return await signUp({
-      username: signUpParams.username,
-      password: signUpParams.password,
-      options: signUpParams.options || {
-        userAttributes: { email: signUpParams.username }
-      }
-    });
+  // Step 2: Verify 6-digit OTP code and launch authenticated session
+  const handleVerifyOtp = async (code, email) => {
+    const verifiedUser = await submitOtpCode(code, email);
+    if (verifiedUser) {
+      setUser(verifiedUser);
+    }
+    return verifiedUser;
   };
 
+  // Resend OTP code
+  const handleResendOtp = async (email) => {
+    return await resendOtpCode(email);
+  };
+
+  // Backward-compatible signIn interface (now passwordless email OTP)
+  const handleSignIn = async (credentials) => {
+    const email = (typeof credentials === 'object' && credentials !== null)
+      ? (credentials.username || credentials.email)
+      : credentials;
+    return await sendOtpChallenge(email);
+  };
+
+  // Backward-compatible signUp interface
+  const handleSignUp = async (params) => {
+    const email = (typeof params === 'object' && params !== null)
+      ? (params.username || params.email)
+      : params;
+    return await sendOtpChallenge(email);
+  };
+
+  // Backward-compatible confirmSignUp interface
   const handleConfirmSignUp = async (params, maybeCode) => {
-    const confirmParams = (typeof params === 'object' && params !== null)
-      ? params
-      : {
-          username: params,
-          confirmationCode: maybeCode
-        };
-
-    return await confirmSignUp({
-      username: confirmParams.username,
-      confirmationCode: confirmParams.confirmationCode
-    });
+    const code = (typeof params === 'object' && params !== null)
+      ? params.confirmationCode
+      : maybeCode;
+    const email = (typeof params === 'object' && params !== null)
+      ? params.username
+      : params;
+    return await handleVerifyOtp(code, email);
   };
 
   const handleSignOut = async () => {
-    await signOut();
+    await signOutUser();
     setUser(null);
   };
 
@@ -136,11 +122,15 @@ export function AuthProvider({ children }) {
       value={{
         user,
         loading,
+        sendOtp: handleSendOtp,
+        verifyOtp: handleVerifyOtp,
+        resendOtp: handleResendOtp,
         signIn: handleSignIn,
         signUp: handleSignUp,
         confirmSignUp: handleConfirmSignUp,
         signOut: handleSignOut,
-        refreshUser: checkUser
+        refreshUser: checkUser,
+        formatAuthError
       }}
     >
       {children}

@@ -1,6 +1,7 @@
 /**
  * AWS Amplify Configuration for dev.robertrisk.com
  * Generated from Terraform outputs
+ * Configured for Passwordless Email OTP / Custom Auth Challenge flow
  */
 const awsConfig = {
   Auth: {
@@ -18,6 +19,10 @@ const awsConfig = {
           redirectSignOut: ['https://dev.robertrisk.com', 'http://localhost:5173'],
           responseType: 'code'
         }
+      },
+      passwordless: {
+        emailOtpEnabled: true,
+        preferredChallenge: 'EMAIL_OTP'
       }
     }
   }
