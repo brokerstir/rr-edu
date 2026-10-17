@@ -522,8 +522,8 @@ def run_zero_token_test_merge(topic_num: Optional[int] = None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--topics", default="ib/Mathematics-AA-SL-2-REVISION-GUIDE-Topics-Haese2020.pdf")
-    parser.add_argument("--solutions", default="ib/Mathematics-AA-SL-2-REVISION-GUIDE-Skill-Solutions-Haese-2020.pdf")
+    parser.add_argument("--topics", default="ib/Mathematics-AI-SL-2-REVISION-GUIDE-Topics-Haese-2020.pdf")
+    parser.add_argument("--solutions", default="ib/Mathematics-AI-SL-2-REVISION-GUIDE-Skill-Solutions-Haese-2020.pdf")
     parser.add_argument("--model", default=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"))
     parser.add_argument("--topic", type=int, choices=[1, 2, 3, 4, 5])
     parser.add_argument("--outdir", default="public/data")
