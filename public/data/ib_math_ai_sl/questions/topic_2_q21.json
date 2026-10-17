@@ -1,0 +1,60 @@
+{
+  "id": "topic_2_q21",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 21,
+  "question_text": "Find, to 3 significant figures, the coordinates of the points of intersection of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 2$ and $y = -x^2 + x + 6$",
+      "final_answer": "$(-1.77, 1.12)\\text{ and }(2.27, 3.13)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph both quadratics using technology"
+        },
+        {
+          "code": "A1",
+          "desc": "State intersection points rounded to 2 decimal places"
+        }
+      ],
+      "solution": "We graph $Y_1 = X^2 - 2$ and $Y_2 = -X^2 + X + 6$ on the same set of axes.\nUsing technology to find the intersection points:\nThe graphs intersect at $(-1.77, 1.12)$ and $(2.27, 3.13)$.",
+      "ai_explanation": {
+        "concept_rule": "Use graphic calculator technology to locate the intersection points of two non-factorable quadratic functions.",
+        "step_by_step": [
+          "Enter $Y_1 = X^2 - 2$ and $Y_2 = -X^2 + X + 6$ into the graphing tool.",
+          "Use the intersection command to find the left point: $X \\approx -1.7656, Y \\approx 1.1172 \\implies (-1.77, 1.12)$.",
+          "Find the right point: $X \\approx 2.2656, Y \\approx 3.1328 \\implies (2.27, 3.13)$."
+        ],
+        "common_pitfalls": "Rounding prematurely or rounding to the wrong number of decimal places."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 5x^2 - x$ and $y = x^2 - 4x + 4$",
+      "final_answer": "$(-1.44, 11.9)\\text{ and }(0.693, 1.71)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph both quadratics using technology"
+        },
+        {
+          "code": "A1",
+          "desc": "State intersection points rounded appropriately"
+        }
+      ],
+      "solution": "We graph $Y_1 = 5X^2 - X$ and $Y_2 = X^2 - 4X + 4$ on the same set of axes.\nUsing technology to find the intersection points:\nThe graphs intersect at $(-1.44, 11.9)$ and $(0.693, 1.71)$.",
+      "ai_explanation": {
+        "concept_rule": "Technology-assisted solution of quadratic systems $5x^2 - x = x^2 - 4x + 4 \\implies 4x^2 + 3x - 4 = 0$.",
+        "step_by_step": [
+          "Plot $Y_1 = 5X^2 - X$ and $Y_2 = X^2 - 4X + 4$.",
+          "Use the intersection solver to locate the first intersection: $X \\approx -1.443, Y \\approx 11.864 \\implies (-1.44, 11.9)$.",
+          "Locate the second intersection: $X \\approx 0.6930, Y \\approx 1.708 \\implies (0.693, 1.71)$."
+        ],
+        "common_pitfalls": "Reading off only the $X$-coordinate from the calculator screen."
+      }
+    }
+  ]
+}

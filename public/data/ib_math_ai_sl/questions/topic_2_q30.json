@@ -1,0 +1,139 @@
+{
+  "id": "topic_2_q30",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 30,
+  "question_text": "The moon is approximately $3.84 \\times 10^5\\text{ km}$ from the Earth, and completes one full orbit in about $28\\text{ days}$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find a model for the distance $D\\text{ km}$ travelled by the moon in $t\\text{ days}$.",
+      "final_answer": "$D = \\frac{192\\,000\\pi}{7}t$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate fraction of orbit completed in t days and corresponding angle"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply arc length formula D = (theta / 360) * 2 * pi * r"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to get D = (192000*pi/7)*t"
+        }
+      ],
+      "solution": "The moon completes one full orbit in about $28$ days.\n$\\therefore$ it completes $\\frac{t}{28}$ of an orbit after $t$ days.\nSo, after $t$ days the moon has travelled through $\\frac{t}{28} \\times 360^\\circ = \\left(\\frac{90t}{7}\\right)^\\circ$.\n$\\therefore$ the distance $D\\text{ km}$ travelled by the moon in $t$ days is given by\n$D = \\frac{\\frac{90t}{7}}{360} \\times 2\\pi \\times (3.84 \\times 10^5)$\n$= \\frac{192\\,000\\pi}{7}t$",
+      "ai_explanation": {
+        "concept_rule": "Arc length of a circle of radius $r$ through an angle $\\theta$ is $s = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+        "step_by_step": [
+          "The proportion of orbit in $t$ days is $\\frac{t}{28}$.",
+          "Multiply the full circumference $2\\pi (3.84 \\times 10^5)$ by $\\frac{t}{28}$.",
+          "Simplify $\\frac{2 \\times 3.84 \\times 10^5}{28} = \\frac{768\\,000}{28} = \\frac{192\\,000}{7}$.",
+          "Result: $D = \\frac{192\\,000\\pi}{7}t$."
+        ],
+        "common_pitfalls": "Forgetting to include $\\pi$ or making an arithmetic error when simplifying fractions."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "List any assumptions you have made in a.",
+      "final_answer": "$Assumptions: the moon has a circular orbit; the moon moves at a constant speed along its orbit.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that the orbit is assumed to be circular"
+        },
+        {
+          "code": "R1",
+          "desc": "State that the speed is assumed to be constant"
+        }
+      ],
+      "solution": "We have assumed that:\n- the moon has a circular orbit\n- the moon moves at a constant speed along its orbit.",
+      "ai_explanation": {
+        "concept_rule": "Mathematical models require simplifying assumptions to apply standard geometric formulas.",
+        "step_by_step": [
+          "The model uses the formula for circumference of a circle, which assumes a circular orbit.",
+          "The model assumes proportional travel per day, which assumes constant speed."
+        ],
+        "common_pitfalls": "Stating real-world facts rather than the mathematical assumptions of the model."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Use your model in a to estimate the distance travelled by the moon:\nin one full orbit",
+      "final_answer": "$\\approx 2.41 \\times 10^6\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute t = 28 into distance formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate distance to 3 s.f."
+        }
+      ],
+      "solution": "One full orbit is about $28$ days.\nWhen $t = 28$, $D = \\frac{192\\,000\\pi}{7} \\times 28 \\approx 2.41 \\times 10^6$.\n$\\therefore$ the moon travels about $2.41 \\times 10^6\\text{ km}$ in one full orbit.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the time for one orbit into the linear distance function.",
+        "step_by_step": [
+          "Set $t = 28$.",
+          "Evaluate $D = \\frac{192\\,000\\pi}{7} \\times 28 = 768\\,000\\pi$.",
+          "Compute $768\\,000\\pi \\approx 2.4127 \\times 10^6 \\approx 2.41 \\times 10^6\\text{ km}$."
+        ],
+        "common_pitfalls": "Rounding to the wrong number of significant figures."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Use your model in a to estimate the distance travelled by the moon:\nin 7 days.",
+      "final_answer": "$\\approx 6.03 \\times 10^5\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute t = 7 into distance formula"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate distance to 3 s.f."
+        }
+      ],
+      "solution": "When $t = 7$, $D = \\frac{192\\,000\\pi}{7} \\times 7 \\approx 6.03 \\times 10^5$.\n$\\therefore$ the moon travels about $6.03 \\times 10^5\\text{ km}$ in $7$ days.",
+      "ai_explanation": {
+        "concept_rule": "Substitute $t = 7$ into the distance formula.",
+        "step_by_step": [
+          "Set $t = 7$.",
+          "Evaluate $D = \\frac{192\\,000\\pi}{7} \\times 7 = 192\\,000\\pi$.",
+          "Compute $192\\,000\\pi \\approx 6.03185 \\times 10^5 \\approx 6.03 \\times 10^5\\text{ km}$."
+        ],
+        "common_pitfalls": "Miscalculating powers of ten in scientific notation."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "The moon actually completes an orbit of the Earth in 27 days, 7 hours, and 43 minutes. Discuss whether your answers in c are overestimates or underestimates.",
+      "final_answer": "$Underestimates$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Explain that overestimating orbit time underestimates the fraction per day"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude that distance answers in (c) are underestimates"
+        }
+      ],
+      "solution": "In our model, the time it takes for the moon to complete one full orbit is an overestimate.\n$\\therefore$ the fraction of an orbit it has travelled after $t$ days is an underestimate.\n$\\therefore$ our model is an underestimate of the actual distance travelled by the moon in $t$ days.\nSo, our answers in c are underestimates.",
+      "ai_explanation": {
+        "concept_rule": "If the period $T$ is an overestimate, then the rate of travel $\\frac{1}{T}$ is an underestimate, leading to an underestimate of distance for a given time.",
+        "step_by_step": [
+          "Actual orbital period is slightly less than 28 days (approx 27.3 days).",
+          "Since $28$ is an overestimate of the denominator, $\\frac{t}{28}$ is an underestimate of the fraction of the orbit completed.",
+          "Therefore, the calculated distances are underestimates."
+        ],
+        "common_pitfalls": "Thinking that overestimating the period results in an overestimate of the distance."
+      }
+    }
+  ]
+}

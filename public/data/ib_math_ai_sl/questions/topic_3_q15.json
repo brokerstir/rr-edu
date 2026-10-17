@@ -1,0 +1,59 @@
+{
+  "id": "topic_3_q15",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 15,
+  "question_text": "Find the perimeter and area of triangle ABC:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$2.3125\\text{ touchdowns}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the formula mean = sum(xf) / sum(f)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean value"
+        }
+      ],
+      "solution": "$\\bar{x} = \\frac{\\sum xf}{\\sum f} = \\frac{74}{32} = 2.3125\\text{ touchdowns}$",
+      "ai_explanation": {
+        "concept_rule": "For a frequency distribution, the mean is the sum of products of values and frequencies divided by total frequency.",
+        "step_by_step": [
+          "Sum products $\\sum xf = 0 + 10 + 14 + 18 + 16 + 10 + 6 = 74$.",
+          "Sum frequencies $\\sum f = 2 + 10 + 7 + 6 + 4 + 2 + 1 = 32$.",
+          "Compute $\\bar{x} = 74 / 32 = 2.3125$."
+        ],
+        "common_pitfalls": "Dividing by the number of rows (7) rather than the sum of frequencies (32)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$Refer to column graph of touchdowns vs frequency$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plot axes with touchdowns on horizontal axis and frequency on vertical axis"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct heights for bars representing touchdown frequencies"
+        }
+      ],
+      "solution": "Draw a vertical column graph with touchdowns scored on the horizontal axis ($0$ to $6$) and frequency on the vertical axis ($0$ to $10$). Bars correspond to the given frequencies.",
+      "ai_explanation": {
+        "concept_rule": "A column graph displays discrete data where the height of each column represents the frequency of the category.",
+        "step_by_step": [
+          "Label the horizontal axis 'touchdowns' and vertical axis 'frequency'.",
+          "Draw columns of equal width for each touchdown value from 0 to 6 with heights equal to their respective frequencies."
+        ],
+        "common_pitfalls": "Forgetting to label axes or drawing joined histogram bars instead of separated columns for discrete data."
+      }
+    }
+  ]
+}

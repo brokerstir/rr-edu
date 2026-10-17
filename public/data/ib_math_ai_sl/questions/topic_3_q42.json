@@ -1,0 +1,154 @@
+{
+  "id": "topic_3_q42",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 42,
+  "question_text": "Terrence owns a fast food chain. The locations of his restaurants in a particular city are shown in the Voronoi diagram alongside.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the closest restaurant for someone living at $(-2, 8)$.",
+      "final_answer": "$\\text{Restaurant A}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifies that $(-2, 8)$ lies in cell A and names restaurant A"
+        }
+      ],
+      "solution": "$(-2, 8)$ is in cell A, so the closest restaurant is A.",
+      "ai_explanation": {
+        "concept_rule": "In a Voronoi diagram, any point lying within a cell is closest to the site (generator) of that cell.",
+        "step_by_step": [
+          "Locate the coordinates $(-2, 8)$ on the given Voronoi diagram.",
+          "Identify which cell contains the point $(-2, 8)$, which is cell A.",
+          "Conclude that restaurant A is the closest restaurant."
+        ],
+        "common_pitfalls": "Misreading coordinates on the axes."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the closest restaurant for someone living at $(5, -5)$.",
+      "final_answer": "$\\text{Restaurant C}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifies that $(5, -5)$ lies in cell C and names restaurant C"
+        }
+      ],
+      "solution": "$(5, -5)$ is in cell C, so the closest restaurant is C.",
+      "ai_explanation": {
+        "concept_rule": "Points in a specific cell in a Voronoi diagram are closest to that cell's generating site.",
+        "step_by_step": [
+          "Plot or locate $(5, -5)$ on the grid.",
+          "Observe that the point lies within cell C.",
+          "Conclude that restaurant C is the closest."
+        ],
+        "common_pitfalls": "Confusing the sign of the y-coordinate."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Find the closest restaurant for someone living at $(-9, -6)$.",
+      "final_answer": "$\\text{Restaurant D}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifies that $(-9, -6)$ lies in cell D and names restaurant D"
+        }
+      ],
+      "solution": "$(-9, -6)$ is in cell D, so the closest restaurant is D.",
+      "ai_explanation": {
+        "concept_rule": "A location belongs to the Voronoi cell containing it.",
+        "step_by_step": [
+          "Locate $(-9, -6)$ on the diagram.",
+          "Identify that it falls into the region/cell D.",
+          "Conclude that restaurant D is the closest."
+        ],
+        "common_pitfalls": "Misinterpreting which cell the region extends into at the edges."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Terrence opens a new restaurant E at $(2, 4)$. Redraw the diagram to include the new restaurant.",
+      "final_answer": "$\\text{Voronoi diagram updated with site E}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Constructing perpendicular bisectors between site E and adjacent sites"
+        },
+        {
+          "code": "A1",
+          "desc": "Removing internal edge segments to form the new cell E"
+        }
+      ],
+      "solution": "We construct $\\text{PB}(\\text{A}, \\text{E})$, $\\text{PB}(\\text{B}, \\text{E})$, $\\text{PB}(\\text{C}, \\text{E})$, and $\\text{PB}(\\text{D}, \\text{E})$ within cells A, B, C, and D respectively. We then remove the segments of edges which now lie within cell E, giving us the Voronoi diagram which includes site E.",
+      "ai_explanation": {
+        "concept_rule": "Adding a new site to an existing Voronoi diagram involves drawing perpendicular bisectors with neighbouring sites in their respective cells and deleting the old boundaries enclosed by the new cell.",
+        "step_by_step": [
+          "Identify all existing sites whose cells border or contain the new site E.",
+          "Construct the perpendicular bisector between E and each neighbouring site (A, B, C, D) within each respective cell.",
+          "Erase the segments of the old Voronoi edges that are now inside the newly created cell E."
+        ],
+        "common_pitfalls": "Drawing perpendicular bisectors across the entire plane instead of restricting them to the relevant Voronoi cells."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Determine the area of the region whose closest restaurant is E.",
+      "final_answer": "$42\\text{ km}^2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using the area of a trapezium formula with correct parallel sides and height"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $42\\text{ km}^2$"
+        }
+      ],
+      "solution": "$\\text{Area of region} = \\text{area of cell E} = \\left(\\frac{10 + 4}{2}\\right) \\times 6 = 42\\text{ km}^2$",
+      "ai_explanation": {
+        "concept_rule": "The area of a trapezoid is given by $A = \\frac{a+b}{2}h$, where $a$ and $b$ are lengths of parallel sides and $h$ is the perpendicular distance between them.",
+        "step_by_step": [
+          "Identify the vertices of cell E: $(-2, 2)$, $(-2, -2)$, $(4, -2)$, and $(4, 8)$.",
+          "Observe that the vertical sides are parallel: length on the left is $2 - (-2) = 4\\text{ km}$, length on the right is $8 - (-2) = 10\\text{ km}$.",
+          "Determine the horizontal distance between the parallel sides: $4 - (-2) = 6\\text{ km}$.",
+          "Calculate the area: $\\frac{4 + 10}{2} \\times 6 = 7 \\times 6 = 42\\text{ km}^2$."
+        ],
+        "common_pitfalls": "Confusing height and base lengths or incorrectly calculating segment lengths from coordinates."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "What proportion of residents who are now closest to restaurant E were originally closest to restaurant B?",
+      "final_answer": "$0.357$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Finding the area of the triangular portion of cell E that was originally cell B"
+        },
+        {
+          "code": "M1",
+          "desc": "Dividing this area by the total area of cell E"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct proportion $\\frac{15}{42} \\approx 0.357$"
+        }
+      ],
+      "solution": "$\\text{Area of cell E that was cell B} = \\frac{1}{2} \\times 3 \\times 10 = 15\\text{ km}^2$\nAssuming that the density of residents is constant throughout the city, the proportion of residents now closest to E who were originally closest to B is $\\frac{15}{42} \\approx 0.357$.",
+      "ai_explanation": {
+        "concept_rule": "Assuming a uniform population density, the proportion of residents corresponds directly to the ratio of the sub-area to the total area.",
+        "step_by_step": [
+          "Identify the region of cell E that previously belonged to cell B, which forms a triangle with base $3\\text{ km}$ and height $10\\text{ km}$.",
+          "Calculate the area of this triangle: $\\frac{1}{2} \\times 3 \\times 10 = 15\\text{ km}^2$.",
+          "Divide by the total area of cell E ($42\\text{ km}^2$): $\\frac{15}{42}$.",
+          "Convert to a decimal rounded to 3 significant figures: $\\approx 0.357$."
+        ],
+        "common_pitfalls": "Dividing by the area of the original cell B instead of the total area of new cell E."
+      }
+    }
+  ]
+}

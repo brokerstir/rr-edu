@@ -1,0 +1,4307 @@
+[
+  {
+    "id": "topic_2_q18",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 18,
+    "question_text": "For each of the following quadratics:\ni Find the axes intercepts.\nii Find the axis of symmetry.\niii Find the coordinates of the vertex, and state whether it is a maximum turning point or a minimum turning point.\niv Sketch the quadratic.\nv State the domain and range.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = -(x - 1)(x + 3)$",
+        "final_answer": "$y\\text{-intercept is } 3$; $x\\text{-intercepts are } 1\\text{ and } -3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set x = 0 to find the y-intercept, and y = 0 to find x-intercepts"
+          },
+          {
+            "code": "A1",
+            "desc": "State correct intercepts"
+          }
+        ],
+        "solution": "$y = -(x - 1)(x + 3) = -(x^2 + 2x - 3) = -x^2 - 2x + 3$ has $a = -1$, $b = -2$, and $c = 3$.\nWhen $x = 0$, $y = 3$\n$\\therefore$ the $y$-intercept is $3$.\nWhen $y = 0$, $-(x - 1)(x + 3) = 0$\n$\\therefore (x - 1)(x + 3) = 0$\n$\\therefore x - 1 = 0$ or $x + 3 = 0$ {null factor law}\n$\\therefore x = 1$ or $-3$\n$\\therefore$ the $x$-intercepts are $1$ and $-3$.",
+        "ai_explanation": {
+          "concept_rule": "Find $y$-intercept by substituting $x=0$. Find $x$-intercepts by substituting $y=0$ and solving using the null factor law.",
+          "step_by_step": [
+            "Substitute $x = 0$ into $y = -(0 - 1)(0 + 3) = -(-1)(3) = 3$.",
+            "Set $-(x-1)(x+3) = 0$, giving $x - 1 = 0 \\implies x = 1$ or $x + 3 = 0 \\implies x = -3$."
+          ],
+          "common_pitfalls": "Confusing the signs when solving $x - 1 = 0$ and $x + 3 = 0$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = 2(x + 7)(x - 2)$",
+        "final_answer": "$x = -1$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find the midpoint between 1 and -3"
+          },
+          {
+            "code": "A1",
+            "desc": "State the axis of symmetry equation x = -1"
+          }
+        ],
+        "solution": "The $x$-intercepts are $1$ and $-3$.\n$-1$ is halfway between $1$ and $-3$, so the axis of symmetry is $x = -1$.",
+        "ai_explanation": {
+          "concept_rule": "The axis of symmetry equation is $x = \\frac{x_1 + x_2}{2}$.",
+          "step_by_step": [
+            "Calculate the midpoint of intercepts: $\\frac{1 + (-3)}{2} = \\frac{-2}{2} = -1$.",
+            "Write the equation of the vertical line: $x = -1$."
+          ],
+          "common_pitfalls": "Writing the answer simply as $-1$ instead of an equation of a line $x = -1$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q19",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 19,
+    "question_text": "Find the equation of the quadratic with graph:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$y = 2(x - 2)(x - 5)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up factored form y = a(x - 2)(x - 5) and substitute (6, 8)"
+          },
+          {
+            "code": "A1",
+            "desc": "Find a = 2 and state the equation"
+          }
+        ],
+        "solution": "The $x$-intercepts are $2$ and $5$.\n$\\therefore$ the quadratic has the form $y = a(x - 2)(x - 5)$ where $a > 0$.\nBut when $x = 6$, $y = 8$.\n$$\\therefore 8 = a(4)(1)$$\n$$\\therefore a = 2$$\nThe quadratic is $y = 2(x - 2)(x - 5)$.",
+        "ai_explanation": {
+          "concept_rule": "A quadratic with known roots $p$ and $q$ can be written as $y = a(x - p)(x - q)$. Substitute an additional known point to solve for $a$.",
+          "step_by_step": [
+            "Write equation using intercepts: $y = a(x - 2)(x - 5)$.",
+            "Substitute the given point $(6, 8)$: $8 = a(6 - 2)(6 - 5) = a(4)(1) = 4a$.",
+            "Solve for $a$: $a = 2$.",
+            "Write the final equation: $y = 2(x - 2)(x - 5)$."
+          ],
+          "common_pitfalls": "Setting up factors as $(x + 2)(x + 5)$ instead of $(x - 2)(x - 5)$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$y = -\\frac{1}{6}(x + 3)(x - 9)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine the other x-intercept using symmetry about x = 3"
+          },
+          {
+            "code": "M1",
+            "desc": "Set up factored form and substitute vertex (3, 6) to find a"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain a = -1/6 and state quadratic equation"
+          }
+        ],
+        "solution": "The vertex is $(3, 6)$.\n$\\therefore$ the axis of symmetry is $x = 3$.\nThe axis of symmetry $x = 3$ lies midway between the $x$-intercepts.\nFrom the graph, one intercept is $9$, which is $9 - 3 = 6$ units from the axis.\n$\\therefore$ the other $x$-intercept is $3 - 6 = -3$.\n$\\therefore$ the quadratic has the form $y = a(x + 3)(x - 9)$ where $a < 0$.\nBut when $x = 3$, $y = 6$.\n$$\\therefore 6 = a(6)(-6)$$\n$$\\therefore a = -\\frac{1}{6}$$\nThe quadratic is $y = -\\frac{1}{6}(x + 3)(x - 9)$.",
+        "ai_explanation": {
+          "concept_rule": "Use the symmetry of the parabola to find unknown intercepts from the vertex, then substitute the vertex into the intercept form to solve for $a$.",
+          "step_by_step": [
+            "The axis of symmetry is $x = 3$.",
+            "The distance from $x = 3$ to the given $x$-intercept $9$ is 6 units, so the other intercept is $3 - 6 = -3$.",
+            "Form the equation: $y = a(x + 3)(x - 9)$.",
+            "Substitute the vertex $(3, 6)$: $6 = a(3 + 3)(3 - 9) = a(6)(-6) = -36a$.",
+            "Solve for $a$: $a = -\\frac{6}{36} = -\\frac{1}{6}$."
+          ],
+          "common_pitfalls": "Neglecting to find the missing intercept before using the factored form."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q20",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 20,
+    "question_text": "Find the coordinates of the point(s) of intersection of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = x^2 - 4x - 5$ and $y = 3x - 11$",
+        "final_answer": "$(1, -8)\\text{ and }(6, 7)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph both equations or equate X^2 - 4X - 5 = 3X - 11"
+          },
+          {
+            "code": "A1",
+            "desc": "Identify both intersection points correctly"
+          }
+        ],
+        "solution": "We graph $Y_1 = X^2 - 4X - 5$ and $Y_2 = 3X - 11$ on the same set of axes.\nThe graphs intersect at $(1, -8)$ and $(6, 7)$.",
+        "ai_explanation": {
+          "concept_rule": "The points of intersection of two curves are the points where their coordinates satisfy both equations simultaneously.",
+          "step_by_step": [
+            "Graph the parabola $Y_1 = X^2 - 4X - 5$ and the line $Y_2 = 3X - 11$.",
+            "Use the calculator intersection function (or solve algebraically: $X^2 - 7X + 6 = 0 \\implies (X-1)(X-6) = 0$).",
+            "When $X = 1$, $Y = 3(1) - 11 = -8$.",
+            "When $X = 6$, $Y = 3(6) - 11 = 7$.",
+            "The intersection points are $(1, -8)$ and $(6, 7)$."
+          ],
+          "common_pitfalls": "Providing only the $x$-values instead of full coordinate pairs $(x, y)$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = -2x^2 + 5x$ and $y = 5 - 2x$",
+        "final_answer": "$(1, 3)\\text{ and }(\\frac{5}{2}, 0)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph both equations or equate -2X^2 + 5X = 5 - 2X"
+          },
+          {
+            "code": "A1",
+            "desc": "Identify both intersection points correctly"
+          }
+        ],
+        "solution": "We graph $Y_1 = -2X^2 + 5X$ and $Y_2 = 5 - 2X$ on the same set of axes.\nThe graphs intersect at $(1, 3)$ and $(\\frac{5}{2}, 0)$ (or $(2.5, 0)$).",
+        "ai_explanation": {
+          "concept_rule": "Intersection points satisfy both $Y_1$ and $Y_2$.",
+          "step_by_step": [
+            "Equate the two functions: $-2X^2 + 5X = 5 - 2X \\implies 2X^2 - 7X + 5 = 0$.",
+            "Factor the quadratic: $(2X - 5)(X - 1) = 0$, giving $X = 1$ or $X = 2.5 = \\frac{5}{2}$.",
+            "Calculate $Y$-values: For $X = 1$, $Y = 5 - 2(1) = 3$. For $X = 2.5$, $Y = 5 - 2(2.5) = 0$.",
+            "State intersection points: $(1, 3)$ and $(\\frac{5}{2}, 0)$."
+          ],
+          "common_pitfalls": "Arithmetic errors when factoring $2X^2 - 7X + 5 = 0$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q21",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 21,
+    "question_text": "Find, to 3 significant figures, the coordinates of the points of intersection of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = x^2 - 2$ and $y = -x^2 + x + 6$",
+        "final_answer": "$(-1.77, 1.12)\\text{ and }(2.27, 3.13)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph both quadratics using technology"
+          },
+          {
+            "code": "A1",
+            "desc": "State intersection points rounded to 2 decimal places"
+          }
+        ],
+        "solution": "We graph $Y_1 = X^2 - 2$ and $Y_2 = -X^2 + X + 6$ on the same set of axes.\nUsing technology to find the intersection points:\nThe graphs intersect at $(-1.77, 1.12)$ and $(2.27, 3.13)$.",
+        "ai_explanation": {
+          "concept_rule": "Use graphic calculator technology to locate the intersection points of two non-factorable quadratic functions.",
+          "step_by_step": [
+            "Enter $Y_1 = X^2 - 2$ and $Y_2 = -X^2 + X + 6$ into the graphing tool.",
+            "Use the intersection command to find the left point: $X \\approx -1.7656, Y \\approx 1.1172 \\implies (-1.77, 1.12)$.",
+            "Find the right point: $X \\approx 2.2656, Y \\approx 3.1328 \\implies (2.27, 3.13)$."
+          ],
+          "common_pitfalls": "Rounding prematurely or rounding to the wrong number of decimal places."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = 5x^2 - x$ and $y = x^2 - 4x + 4$",
+        "final_answer": "$(-1.44, 11.9)\\text{ and }(0.693, 1.71)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph both quadratics using technology"
+          },
+          {
+            "code": "A1",
+            "desc": "State intersection points rounded appropriately"
+          }
+        ],
+        "solution": "We graph $Y_1 = 5X^2 - X$ and $Y_2 = X^2 - 4X + 4$ on the same set of axes.\nUsing technology to find the intersection points:\nThe graphs intersect at $(-1.44, 11.9)$ and $(0.693, 1.71)$.",
+        "ai_explanation": {
+          "concept_rule": "Technology-assisted solution of quadratic systems $5x^2 - x = x^2 - 4x + 4 \\implies 4x^2 + 3x - 4 = 0$.",
+          "step_by_step": [
+            "Plot $Y_1 = 5X^2 - X$ and $Y_2 = X^2 - 4X + 4$.",
+            "Use the intersection solver to locate the first intersection: $X \\approx -1.443, Y \\approx 11.864 \\implies (-1.44, 11.9)$.",
+            "Locate the second intersection: $X \\approx 0.6930, Y \\approx 1.708 \\implies (0.693, 1.71)$."
+          ],
+          "common_pitfalls": "Reading off only the $X$-coordinate from the calculator screen."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q22",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 22,
+    "question_text": "The daily profit made by a local baker selling $x$ homemade pies is given by $P = -0.05x^2 + 9x - 60$ dollars.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Copy and complete this table:\n\n\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\nx & 0 & 20 & 40 & 60 & 80 & 100 \\\\\n\\hline\nP & & 100 & & 300 & & 340 \\\\\n\\hline\n\\end{array}",
+        "final_answer": "$Table values: for $x = 0, 20, 40, 60, 80, 100$, $P = -60, 100, 220, 300, 340, 340$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute given values of x into P = -0.05x^2 + 9x - 60"
+          },
+          {
+            "code": "A1",
+            "desc": "Complete the table with correct P values"
+          }
+        ],
+        "solution": "When $x = 0$, $P = -0.05(0)^2 + 9(0) - 60 = -60\\text{ dollars}$\nWhen $x = 40$, $P = -0.05(40)^2 + 9(40) - 60 = 220\\text{ dollars}$\nWhen $x = 80$, $P = -0.05(80)^2 + 9(80) - 60 = 340\\text{ dollars}$\n\nSo,\n$$\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\nx & 0 & 20 & 40 & 60 & 80 & 100 \\\\\n\\hline\nP & -60 & 100 & 220 & 300 & 340 & 340 \\\\\n\\hline\n\\end{array}$$",
+        "ai_explanation": {
+          "concept_rule": "Substitute given values of $x$ into the profit formula to find the corresponding values of $P$.",
+          "step_by_step": [
+            "For $x = 0$: $P = -60$.",
+            "For $x = 20$: $P = -0.05(400) + 180 - 60 = -20 + 120 = 100$.",
+            "For $x = 40$: $P = -0.05(1600) + 360 - 60 = -80 + 300 = 220$.",
+            "For $x = 60$: $P = -0.05(3600) + 540 - 60 = -180 + 480 = 300$.",
+            "For $x = 80$: $P = -0.05(6400) + 720 - 60 = -320 + 660 = 340$.",
+            "For $x = 100$: $P = -0.05(10000) + 900 - 60 = -500 + 840 = 340$."
+          ],
+          "common_pitfalls": "Order of operations: squaring $x$ before multiplying by $-0.05$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Use the points in a to sketch the graph of $P$ against $x$.",
+        "final_answer": "$Graph of profit function $P$ against $x$ plotted through the table points$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plot the points from table on Cartesian axes"
+          },
+          {
+            "code": "A1",
+            "desc": "Draw a smooth parabola connecting the points"
+          }
+        ],
+        "solution": "Plot the points $(0, -60)$, $(20, 100)$, $(40, 220)$, $(60, 300)$, $(80, 340)$, and $(100, 340)$ on a set of axes with $x$ on the horizontal axis and $P(\\$)$ on the vertical axis, and connect them with a smooth parabolic curve.",
+        "ai_explanation": {
+          "concept_rule": "Plot each calculated $(x, P)$ coordinate pair and join them with a smooth parabolic curve.",
+          "step_by_step": [
+            "Set up the axes: $x$ from 0 to 100+ and $P$ from $-60$ to 350+.",
+            "Plot the computed points.",
+            "Draw a smooth downward-opening curve representing $P = -0.05x^2 + 9x - 60$."
+          ],
+          "common_pitfalls": "Connecting points with straight line segments instead of a smooth curve."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Find the number of pies that need to be sold to maximise the profit",
+        "final_answer": "$90\\text{ pies}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use axis of symmetry formula x = -b/(2a)"
+          },
+          {
+            "code": "A1",
+            "desc": "Conclude profit is maximised when 90 pies are sold"
+          }
+        ],
+        "solution": "$P$ has $a = -0.05$, $b = 9$, and $c = -60$.\nNow $$-\\frac{b}{2a} = -\\frac{9}{2(-0.05)} = 90$$\n$\\therefore$ the axis of symmetry is $x = 90$.\nSince $a < 0$, the parabola opens downwards.\n$\\therefore$ the profit is maximised when $90$ pies are sold.",
+        "ai_explanation": {
+          "concept_rule": "The maximum of a downward-opening parabola occurs at the vertex, given by $x = -\\frac{b}{2a}$.",
+          "step_by_step": [
+            "Identify $a = -0.05$ and $b = 9$.",
+            "Calculate $x = -\\frac{9}{2(-0.05)} = -\\frac{9}{-0.1} = 90$.",
+            "Since $a < 0$, this turning point is a maximum, so 90 pies maximise profit."
+          ],
+          "common_pitfalls": "Division by a decimal: dividing 9 by $0.1$ gives 90, not 0.9."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "Find the maximum possible daily profit",
+        "final_answer": "$\\$345$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute x = 90 into the profit function"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate maximum profit as $345"
+          }
+        ],
+        "solution": "When $x = 90$,\n$$P = -0.05(90)^2 + 9(90) - 60 = 345\\text{ dollars}$$\n$\\therefore$ the maximum possible daily profit is $\\$345$.",
+        "ai_explanation": {
+          "concept_rule": "The maximum profit is the value of $P$ at the vertex $x = 90$.",
+          "step_by_step": [
+            "Substitute $x = 90$ into $P(x)$.",
+            "Calculate: $-0.05(8100) + 9(90) - 60 = -405 + 810 - 60 = 345$.",
+            "State the maximum profit as $\\$345$."
+          ],
+          "common_pitfalls": "Forgetting to subtract 60 at the end."
+        }
+      },
+      {
+        "subpart": "c iii",
+        "stem": "Find the number of pies that need to be sold to make a profit of $200",
+        "final_answer": "$between $37$ and $143$ pies$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set P = 200 and rearrange to -0.05x^2 + 9x - 260 = 0"
+          },
+          {
+            "code": "M1",
+            "desc": "Solve quadratic to find x approx 36.1 and 143.9"
+          },
+          {
+            "code": "A1",
+            "desc": "Round to nearest whole pies yielding at least $200 profit (37 to 143)"
+          }
+        ],
+        "solution": "When $P = 200$,\n$$-0.05x^2 + 9x - 60 = 200$$\n$$\\therefore -0.05x^2 + 9x - 260 = 0$$\n$$\\therefore x \\approx 143.9 \\text{ or } 36.1 \\quad \\{\\text{technology}\\}$$\nNow when:\n$$x = 36, \\quad P = 199.2$$\n$$x = 37, \\quad P = 204.55$$\n$$x = 143, \\quad P = 204.55$$\nand $$x = 144, \\quad P = 199.2$$\n$\\therefore$ between $37$ and $143$ pies must be sold to make a profit of $\\$200$ (or more).",
+        "ai_explanation": {
+          "concept_rule": "To find the integer number of pies giving at least $\\$200$ profit, solve $P(x) = 200$ and check integer values inside the interval.",
+          "step_by_step": [
+            "Set $-0.05x^2 + 9x - 60 = 200 \\implies -0.05x^2 + 9x - 260 = 0$.",
+            "Solve using the quadratic formula or graphics calculator: $x \\approx 36.1$ and $x \\approx 143.9$.",
+            "Since pies must be whole integers and profit increases towards the vertex, evaluate boundary integers: $x=36$ gives $P < 200$, while $x=37$ gives $P > 200$. Similarly, $x=143$ gives $P > 200$, while $x=144$ gives $P < 200$.",
+            "Conclude that between 37 and 143 pies must be sold."
+          ],
+          "common_pitfalls": "Rounding $36.1$ down to 36, which yields a profit below $\\$200$."
+        }
+      },
+      {
+        "subpart": "c iv",
+        "stem": "Find the amount of money the baker loses if no pies are sold.",
+        "final_answer": "$The baker loses $\\$60$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate P at x = 0"
+          },
+          {
+            "code": "A1",
+            "desc": "Interpret P = -60 as a loss of $60"
+          }
+        ],
+        "solution": "When $x = 0$, $P = -60$.\n$\\therefore$ the baker loses $\\$60$ if no pies are sold.",
+        "ai_explanation": {
+          "concept_rule": "The $y$-intercept represents the starting value or fixed costs when zero units are produced/sold.",
+          "step_by_step": [
+            "Substitute $x = 0$ into the profit equation: $P = -60$.",
+            "A negative profit signifies a financial loss of $\\$60$."
+          ],
+          "common_pitfalls": "Stating the loss as $-\\$60$ instead of $\\$60$ loss."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q23",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 23,
+    "question_text": "Jacob's rainwater tank started leaking. The amount of water in the tank after $t$ hours is given by $W(t) = 1000 - 0.5t$ litres.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find $W(0)$, and interpret your answer.",
+        "final_answer": "$1000\\text{ L}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute t = 0 into W(t)"
+          },
+          {
+            "code": "A1",
+            "desc": "State the initial amount is 1000 L"
+          }
+        ],
+        "solution": "$$W(0) = 1000$$\nThe initial amount of water in the tank was $1000\\text{ L}$.",
+        "ai_explanation": {
+          "concept_rule": "The initial amount corresponds to time $t = 0$.",
+          "step_by_step": [
+            "Substitute $t = 0$ into $W(t) = 1000 - 0.5t$.",
+            "Calculate $W(0) = 1000 - 0 = 1000\\text{ L}$."
+          ],
+          "common_pitfalls": "Omitting the units (litres)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find $t$ when $W(t) = 700$, and explain what this represents.",
+        "final_answer": "$600\\text{ hours}$ (or $25\\text{ days}$)",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set W(t) = 700 and solve for t"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain t = 600 hours (25 days)"
+          }
+        ],
+        "solution": "$W(t) = 700$, so\n$$700 = 1000 - 0.5t$$\n$$\\therefore 0.5t = 300$$\n$$\\therefore t = 600$$\nAfter $600\\text{ hours}$, or $25\\text{ days}$, the amount of water in the tank is $700\\text{ L}$.",
+        "ai_explanation": {
+          "concept_rule": "Set the function equal to the target volume and solve the linear equation for $t$.",
+          "step_by_step": [
+            "Write the equation: $700 = 1000 - 0.5t$.",
+            "Rearrange: $0.5t = 1000 - 700 = 300$.",
+            "Solve for $t$: $t = \\frac{300}{0.5} = 600\\text{ hours}$.",
+            "Convert to days: $\\frac{600}{24} = 25\\text{ days}$."
+          ],
+          "common_pitfalls": "Multiplying 300 by 0.5 instead of dividing by 0.5."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "How long will it take for the tank to empty?",
+        "final_answer": "$2000\\text{ hours}$ (or $83\\text{ days}, 8\\text{ hours}$)",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set W(t) = 0 and solve for t"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain t = 2000 hours (83 days, 8 hours)"
+          }
+        ],
+        "solution": "The tank is empty when $W(t) = 0$.\nThis occurs when:\n$$0.5t = 1000$$\n$$\\therefore t = 2000$$\nIt will take $2000\\text{ hours}$, or $83\\text{ days}, 8\\text{ hours}$, for the tank to empty.",
+        "ai_explanation": {
+          "concept_rule": "An empty tank means the remaining volume $W(t) = 0$.",
+          "step_by_step": [
+            "Set $W(t) = 0$: $1000 - 0.5t = 0$.",
+            "Solve: $0.5t = 1000 \\implies t = 2000\\text{ hours}$.",
+            "Convert to days: $2000 \\div 24 = 83$ with a remainder of $8\\text{ hours}$."
+          ],
+          "common_pitfalls": "Incorrect conversion from hours to days and hours ($2000/24 = 83.333...$ days, where $0.333 \\times 24 = 8$ hours)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q24",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 24,
+    "question_text": "Consider the graph of $y = f(x)$ alongside.\nDecide whether each statement is true or false:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$0$ is in the domain of $f$.",
+        "final_answer": "$True$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Check if x = 0 lies within the domain -6 <= x <= 6 and x != 3"
+          },
+          {
+            "code": "A1",
+            "desc": "State that the statement is true"
+          }
+        ],
+        "solution": "From the graph, the domain is $\\{x \\mid -6 \\leqslant x \\leqslant 6 \\text{ and } x \\neq 3\\}$.\n$x = 0$ satisfies $-6 \\leqslant x \\leqslant 6$ and $x \\neq 3$.\n$\\therefore$ \"$0$ is in the domain of $f$\" is true.",
+        "ai_explanation": {
+          "concept_rule": "The domain of a function is the set of all possible input values ($x$-values) for which the function is defined.",
+          "step_by_step": [
+            "Identify the domain of $f$ from the graph: $\\{x \\mid -6 \\leqslant x \\leqslant 6 \\text{ and } x \\neq 3\\}$.",
+            "Check whether $x = 0$ is included in this interval.",
+            "Since $-6 \\leqslant 0 \\leqslant 6$ and $0 \\neq 3$, $0$ is in the domain."
+          ],
+          "common_pitfalls": "Confusing the domain ($x$-values) with the range ($y$-values)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$0$ is in the range of $f$.",
+        "final_answer": "$True$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Check if y = 0 lies within the range 0 <= y <= 5"
+          },
+          {
+            "code": "A1",
+            "desc": "State that the statement is true"
+          }
+        ],
+        "solution": "From the graph, the range is $\\{y \\mid 0 \\leqslant y \\leqslant 5\\}$.\n$y = 0$ satisfies $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$0$ is in the range of $f$\" is true.",
+        "ai_explanation": {
+          "concept_rule": "The range of a function is the set of all possible output values ($y$-values).",
+          "step_by_step": [
+            "Determine the range of the function from the given graph: $[0, 5]$.",
+            "Check if $y = 0$ is included in $[0, 5]$.",
+            "Since $0$ is the minimum value and included, the statement is true."
+          ],
+          "common_pitfalls": "Assuming open intervals when endpoints are closed (solid dots)."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$6$ is in the range of $f$.",
+        "final_answer": "$False$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Check if y = 6 lies within the range 0 <= y <= 5"
+          },
+          {
+            "code": "A1",
+            "desc": "State that the statement is false"
+          }
+        ],
+        "solution": "From the graph, the range is $\\{y \\mid 0 \\leqslant y \\leqslant 5\\}$.\n$y = 6$ does not satisfy $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$6$ is in the range of $f$\" is false.",
+        "ai_explanation": {
+          "concept_rule": "A value is in the range if there exists at least one $x$ in the domain such that $f(x) = y$.",
+          "step_by_step": [
+            "The maximum $y$-value on the graph is $5$.",
+            "$6 > 5$, so $y = 6$ is outside the range.",
+            "Conclude that the statement is false."
+          ],
+          "common_pitfalls": "Mistaking the $x$-coordinate $6$ for a $y$-coordinate."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "$3$ is in the domain of $f$.",
+        "final_answer": "$False$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Check if x = 3 satisfies x != 3"
+          },
+          {
+            "code": "A1",
+            "desc": "State that the statement is false"
+          }
+        ],
+        "solution": "$x = 3$ does not satisfy $x \\neq 3$.\n$\\therefore$ \"$3$ is in the domain of $f$\" is false.",
+        "ai_explanation": {
+          "concept_rule": "An excluded point or open circle at an $x$-value means that value is not in the domain.",
+          "step_by_step": [
+            "There is an open circle at $x = 3$ on the graph.",
+            "Hence, $x = 3$ is explicitly excluded from the domain.",
+            "Conclude that the statement is false."
+          ],
+          "common_pitfalls": "Ignoring the open circle at $(3, 2)$."
+        }
+      },
+      {
+        "subpart": "e",
+        "stem": "$2$ is in the range of $f$.",
+        "final_answer": "$True$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Check if y = 2 lies within the range 0 <= y <= 5"
+          },
+          {
+            "code": "A1",
+            "desc": "State that the statement is true"
+          }
+        ],
+        "solution": "$y = 2$ satisfies $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$2$ is in the range of $f$\" is true.",
+        "ai_explanation": {
+          "concept_rule": "A horizontal line at $y = 2$ intersects the graph if $2$ is in the range.",
+          "step_by_step": [
+            "Check whether $y = 2$ is attained on the graph.",
+            "Even though there is a hole at $(3,2)$, the graph passes through $y = 2$ at another point (e.g., near $x = -3$ or the $y$-intercept).",
+            "Since $0 \\leqslant 2 \\leqslant 5$, $2$ is in the range."
+          ],
+          "common_pitfalls": "Thinking $y = 2$ is excluded because of the open circle at $(3,2)$, neglecting other points with $y = 2$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q25",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 25,
+    "question_text": "A function $f$ is defined as $f(x) = \\sqrt{x + 4}$ for $-4 \\leqslant x \\leqslant 12$, $x \\in \\mathbb{R}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Find $f(-4)$",
+        "final_answer": "$0$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute x = -4 into f(x)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving 0"
+          }
+        ],
+        "solution": "$f(-4) = \\sqrt{-4 + 4} = \\sqrt{0} = 0$",
+        "ai_explanation": {
+          "concept_rule": "To evaluate a function at a point, substitute the value into the function's expression.",
+          "step_by_step": [
+            "Substitute $x = -4$ into $f(x) = \\sqrt{x+4}$.",
+            "Evaluate $\\sqrt{-4+4} = \\sqrt{0} = 0$."
+          ],
+          "common_pitfalls": "Arithmetic errors under the radical."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Find $f(0)$",
+        "final_answer": "$2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute x = 0 into f(x)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving 2"
+          }
+        ],
+        "solution": "$f(0) = \\sqrt{0 + 4} = \\sqrt{4} = 2$",
+        "ai_explanation": {
+          "concept_rule": "Substitute the given $x$-value into the function rule.",
+          "step_by_step": [
+            "Substitute $x = 0$ into $f(x) = \\sqrt{x+4}$.",
+            "Evaluate $\\sqrt{4} = 2$."
+          ],
+          "common_pitfalls": "Writing $\\pm 2$ instead of the principal square root $+2$."
+        }
+      },
+      {
+        "subpart": "a iii",
+        "stem": "Find $f(12)$",
+        "final_answer": "$4$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute x = 12 into f(x)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving 4"
+          }
+        ],
+        "solution": "$f(12) = \\sqrt{12 + 4} = \\sqrt{16} = 4$",
+        "ai_explanation": {
+          "concept_rule": "Substitute the value of $x$ into $f(x)$.",
+          "step_by_step": [
+            "Substitute $x = 12$ into $f(x) = \\sqrt{x+4}$.",
+            "Compute $\\sqrt{16} = 4$."
+          ],
+          "common_pitfalls": "None."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Sketch $y = f(x)$.",
+        "final_answer": "$Graph of $y = \\sqrt{x+4}$ from $x = -4$ to $x = 12$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plot key points (-4, 0), (0, 2), (12, 4)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct shape of square root curve over domain [-4, 12]"
+          }
+        ],
+        "solution": "Plot the points $(-4, 0)$, $(0, 2)$, and $(12, 4)$, and draw a smooth curve representing $y = f(x) = \\sqrt{x+4}$ restricted to the domain $-4 \\leqslant x \\leqslant 12$.",
+        "ai_explanation": {
+          "concept_rule": "The graph of $y = \\sqrt{x+4}$ is the top half of a horizontal parabola shifted 4 units to the left.",
+          "step_by_step": [
+            "Plot the start point at $(-4, 0)$.",
+            "Plot the $y$-intercept at $(0, 2)$.",
+            "Plot the endpoint at $(12, 4)$.",
+            "Draw an increasing concave-down curve between these endpoints."
+          ],
+          "common_pitfalls": "Extending the curve beyond the restricted domain $[-4, 12]$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Hence write down the range of $f(x)$.",
+        "final_answer": "$\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State correct range in set or interval notation"
+          }
+        ],
+        "solution": "The minimum value of $f(x)$ is $f(-4) = 0$ and the maximum value is $f(12) = 4$.\n$\\therefore$ the range is $\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$.",
+        "ai_explanation": {
+          "concept_rule": "For a strictly increasing continuous function, the range is $[f(x_{\\min}), f(x_{\\max})]$.",
+          "step_by_step": [
+            "Identify the minimum $y$-value at $x = -4$, which is $0$.",
+            "Identify the maximum $y$-value at $x = 12$, which is $4$.",
+            "Write the range as $\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$ or $[0, 4]$."
+          ],
+          "common_pitfalls": "Using strict inequalities instead of non-strict inequalities."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q26",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 26,
+    "question_text": "State the domain and range of each function:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$f(x) = \\sqrt{5 - x}$",
+        "final_answer": "$Domain: $\\{x \\mid x \\leqslant 5\\}$, Range: $\\{y \\mid y \\geqslant 0\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set expression under square root >= 0"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain {x | x <= 5}"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct range {y | y >= 0}"
+          }
+        ],
+        "solution": "$f(x) = \\sqrt{5-x}$\n$\\sqrt{5-x}$ is defined when $5 - x \\geqslant 0 \\implies x \\leqslant 5$.\n$\\therefore$ the domain is $\\{x \\mid x \\leqslant 5\\}$.\nA square root cannot be negative.\n$\\therefore$ the range is $\\{y \\mid y \\geqslant 0\\}$.",
+        "ai_explanation": {
+          "concept_rule": "The radicand of a square root must be non-negative, and the principal square root output is always non-negative.",
+          "step_by_step": [
+            "Set $5 - x \\geqslant 0$, which gives $x \\leqslant 5$. This gives the domain.",
+            "As $x$ decreases from $5$ to $-\\infty$, $\\sqrt{5-x}$ increases from $0$ to $\\infty$.",
+            "Thus, the range is $y \\geqslant 0$."
+          ],
+          "common_pitfalls": "Reversing the inequality incorrectly when dividing/multiplying by $-1$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$f(x) = \\frac{2}{x + 4}$",
+        "final_answer": "$Domain: $\\{x \\mid x \\neq -4\\}$, Range: $\\{y \\mid y \\neq 0\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set denominator not equal to 0"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain {x | x != -4}"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct range {y | y != 0}"
+          }
+        ],
+        "solution": "$f(x) = \\frac{2}{x+4}$\n$\\frac{1}{x+4}$ is defined when $x + 4 \\neq 0 \\implies x \\neq -4$.\n$\\therefore$ the domain is $\\{x \\mid x \\neq -4\\}$.\nNo matter how large or small $x$ is, $y = f(x)$ is never zero.\n$\\therefore$ the range is $\\{y \\mid y \\neq 0\\}$.",
+        "ai_explanation": {
+          "concept_rule": "A rational function is undefined where its denominator is zero. A constant divided by a polynomial cannot equal zero.",
+          "step_by_step": [
+            "The denominator cannot be zero: $x + 4 \\neq 0 \\implies x \\neq -4$.",
+            "Since the numerator is a non-zero constant ($2$), the fraction $\\frac{2}{x+4}$ can never equal $0$.",
+            "Hence, the range is all real numbers except $0$."
+          ],
+          "common_pitfalls": "Forgetting that a fraction with a non-zero numerator cannot equal zero."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$f(x) = \\frac{1}{(x - 1)^2}$",
+        "final_answer": "$Domain: $\\{x \\mid x \\neq 1\\}$, Range: $\\{y \\mid y > 0\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set denominator not equal to 0"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain {x | x != 1}"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct range {y | y > 0}"
+          }
+        ],
+        "solution": "$f(x) = \\frac{1}{(x-1)^2}$\n$\\frac{1}{(x-1)^2}$ is defined when $(x-1)^2 \\neq 0 \\implies x - 1 \\neq 0 \\implies x \\neq 1$.\n$\\therefore$ the domain is $\\{x \\mid x \\neq 1\\}$.\n$y = f(x)$ is always positive and never zero.\n$\\therefore$ the range is $\\{y \\mid y > 0\\}$.",
+        "ai_explanation": {
+          "concept_rule": "Squared real expressions are always non-negative; when in the denominator, they are strictly positive.",
+          "step_by_step": [
+            "Find domain restriction: $(x-1)^2 \\neq 0 \\implies x \\neq 1$.",
+            "For any $x \\neq 1$, $(x-1)^2 > 0$, so $\\frac{1}{(x-1)^2} > 0$.",
+            "The range is strictly positive real numbers, $\\{y \\mid y > 0\\}$."
+          ],
+          "common_pitfalls": "Writing $y \\geqslant 0$ instead of $y > 0$ (the function cannot equal $0$)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q27",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 27,
+    "question_text": "Consider $h(x) = x^2 - 2^{-x} + \\frac{1}{x}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Determine $h(-2)$.",
+        "final_answer": "$-\\frac{1}{2}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute x = -2 into h(x)"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify to get -1/2"
+          }
+        ],
+        "solution": "$h(-2) = (-2)^2 - 2^{-(-2)} + \\frac{1}{-2} = 4 - 4 - \\frac{1}{2} = -\\frac{1}{2}$",
+        "ai_explanation": {
+          "concept_rule": "Substitute the value into the function and apply exponent rules: $2^{-(-2)} = 2^2 = 4$.",
+          "step_by_step": [
+            "Compute $(-2)^2 = 4$.",
+            "Compute $2^{-(-2)} = 2^2 = 4$.",
+            "Compute $\\frac{1}{-2} = -\\frac{1}{2}$.",
+            "Combine terms: $4 - 4 - \\frac{1}{2} = -\\frac{1}{2}$."
+          ],
+          "common_pitfalls": "Sign errors with negative exponents, like treating $-(-2)$ as $-2$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Solve $h(x) = 2$.",
+        "final_answer": "$x \\approx 0.381$ or $1.28$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Graph Y1 = h(x) and Y2 = 2 and find intersection points"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain x approximately 0.381 and 1.28"
+          }
+        ],
+        "solution": "We graph $Y_1 = X^2 - 2^{-X} + \\frac{1}{X}$ and $Y_2 = 2$ on the same set of axes, and find their points of intersection.\nThe solution to $h(x) = 2$ is $x \\approx 0.381$ or $1.28$.",
+        "ai_explanation": {
+          "concept_rule": "Solutions to $h(x) = c$ correspond to the $x$-coordinates of the intersections between $y = h(x)$ and $y = c$.",
+          "step_by_step": [
+            "Enter $Y_1 = x^2 - 2^{-x} + \\frac{1}{x}$ and $Y_2 = 2$ into the GDC.",
+            "Use the intersection feature to locate points where $Y_1 = Y_2$.",
+            "Read off the $x$-values: $x \\approx 0.381$ and $x \\approx 1.28$."
+          ],
+          "common_pitfalls": "Missing one of the intersection branches."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Write down the equation of the vertical asymptote.",
+        "final_answer": "$x = 0$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the equation of the vertical asymptote x = 0"
+          }
+        ],
+        "solution": "The vertical asymptote is $x = 0$.",
+        "ai_explanation": {
+          "concept_rule": "A vertical asymptote occurs where the function approaches $\\pm\\infty$, typically where a denominator becomes zero.",
+          "step_by_step": [
+            "The term $\\frac{1}{x}$ in $h(x)$ is undefined at $x = 0$.",
+            "As $x \\to 0$, $|h(x)| \\to \\infty$.",
+            "Thus, the vertical asymptote is the line $x = 0$."
+          ],
+          "common_pitfalls": "Writing just '0' instead of the line equation '$x = 0$'."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Sketch $y = h(x)$, illustrating your results from a, b, and c.",
+        "final_answer": "$Sketch of $y = h(x)$ showing asymptotes and key features$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Sketch the two branches with vertical asymptote at x = 0"
+          },
+          {
+            "code": "A1",
+            "desc": "Indicate key points like (-2, -1/2), (0.381, 2), (1.28, 2)"
+          }
+        ],
+        "solution": "Sketch the curve with a vertical asymptote at $x = 0$. For $x < 0$, the curve passes through $(-2, -\\frac{1}{2})$ and has a local maximum below $y = 0.741$. For $x > 0$, the curve has a local minimum at approximately $y = 1.30$, and passes through $(0.381, 2)$ and $(1.28, 2)$.",
+        "ai_explanation": {
+          "concept_rule": "Use the features from previous parts (asymptotes, points, intersections) to draw an accurate sketch.",
+          "step_by_step": [
+            "Draw the dashed asymptote line at $x = 0$.",
+            "Plot the branch for $x < 0$ showing it approaching $-\\infty$ as $x \\to -\\infty$ and as $x \\to 0^-$.",
+            "Plot the branch for $x > 0$ showing it approaching $+\\infty$ as $x \\to 0^+$ and increasing as $x \\to +\\infty$."
+          ],
+          "common_pitfalls": "Drawing a continuous curve crossing through the asymptote at $x = 0$."
+        }
+      },
+      {
+        "subpart": "e",
+        "stem": "Determine the range of $y = h(x)$.",
+        "final_answer": "$\\{y \\mid y < 0.741 \\text{ or } y > 1.30, \\, y \\in \\mathbb{R}\\}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find local maximum of left branch and local minimum of right branch"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct range in inequality/set notation"
+          }
+        ],
+        "solution": "Using technology, the range is $\\{y \\mid y < 0.741 \\text{ or } y > 1.30, \\, y \\in \\mathbb{R}\\}$.",
+        "ai_explanation": {
+          "concept_rule": "The range corresponds to all possible $y$-values taken by the function across all parts of its domain.",
+          "step_by_step": [
+            "Use GDC to find the local maximum of the branch $x < 0$, which is approximately $y \\approx 0.741$.",
+            "Find the local minimum of the branch $x > 0$, which is approximately $y \\approx 1.30$.",
+            "Combine the two intervals: $y < 0.741$ or $y > 1.30$."
+          ],
+          "common_pitfalls": "Overlooking that there is a gap in $y$-values where the function is never defined."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q28",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 28,
+    "question_text": "Consider $f(x) = 2^{x-1}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find $f(1)$ and $f(2)$.",
+        "final_answer": "$f(1) = 1, \\, f(2) = 2$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "f(1) = 1"
+          },
+          {
+            "code": "A1",
+            "desc": "f(2) = 2"
+          }
+        ],
+        "solution": "$f(1) = 2^{1-1} = 2^0 = 1$\n$f(2) = 2^{2-1} = 2^1 = 2$",
+        "ai_explanation": {
+          "concept_rule": "Substitute the given inputs into the exponential function $f(x) = 2^{x-1}$.",
+          "step_by_step": [
+            "For $x = 1$: $2^{1-1} = 2^0 = 1$.",
+            "For $x = 2$: $2^{2-1} = 2^1 = 2$."
+          ],
+          "common_pitfalls": "Forgetting that $2^0 = 1$, not $0$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Graph $y = f(x)$ and its inverse function on the same set of axes.",
+        "final_answer": "$Graph of $y = f^{-1}(x)$ as reflection across $y = x$$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "State that the graph of f^-1(x) is the reflection of f(x) across y = x"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct sketch of reflected curve passing through (1, 1) and (2, 2)"
+          }
+        ],
+        "solution": "The graph of $y = f^{-1}(x)$ is the reflection of the graph $y = f(x)$ in the line $y = x$.",
+        "ai_explanation": {
+          "concept_rule": "The graph of the inverse function $f^{-1}(x)$ is obtained by reflecting $y = f(x)$ across the line $y = x$.",
+          "step_by_step": [
+            "Draw the line $y = x$.",
+            "Reflect the curve $y = 2^{x-1}$ across $y = x$.",
+            "Note that points $(1, 1)$ and $(2, 2)$ lie on $y = x$, so they remain invariant on the inverse graph."
+          ],
+          "common_pitfalls": "Reflecting across the $x$-axis or $y$-axis instead of the line $y = x$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "State the domain and range of $f^{-1}(x)$.",
+        "final_answer": "$Domain of $f^{-1}$: $\\{x \\mid x > 0\\}$, Range of $f^{-1}$: $\\{y \\mid y \\in \\mathbb{R}\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "State domain and range of f(x)"
+          },
+          {
+            "code": "A1",
+            "desc": "Domain of f^-1 is range of f, and range of f^-1 is domain of f"
+          }
+        ],
+        "solution": "The domain of $f(x)$ is $\\{x \\mid x \\in \\mathbb{R}\\}$ and the range of $f(x)$ is $\\{y \\mid y > 0\\}$.\n$\\therefore$ the domain of $f^{-1}(x)$ is $\\{x \\mid x > 0\\}$ and the range of $f^{-1}(x)$ is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+        "ai_explanation": {
+          "concept_rule": "The domain of $f^{-1}$ is the range of $f$, and the range of $f^{-1}$ is the domain of $f$.",
+          "step_by_step": [
+            "Find the domain of $f(x)$: all real numbers, $\\mathbb{R}$.",
+            "Find the range of $f(x)$: since $2^{x-1} > 0$, range is $y > 0$.",
+            "Swap them to find domain and range of $f^{-1}(x)$."
+          ],
+          "common_pitfalls": "Keeping the variable as $y$ for domain or $x$ for range."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q29",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 29,
+    "question_text": "Copy the graphs of the following functions and draw the graphs of $y = x$ and $y = f^{-1}(x)$ on the same set of axes. In each case, state the domain and range of both $f$ and $f^{-1}$.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Domain of $f$: $\\{x \\mid 0 \\leqslant x \\leqslant 3\\}$, Range of $f$: $\\{y \\mid -3 \\leqslant y \\leqslant 0\\}$, Domain of $f^{-1}$: $\\{x \\mid -3 \\leqslant x \\leqslant 0\\}$, Range of $f^{-1}$: $\\{y \\mid 0 \\leqslant y \\leqslant 3\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f^-1"
+          }
+        ],
+        "solution": "Domain of $f$: $\\{x \\mid 0 \\leqslant x \\leqslant 3\\}$\nRange of $f$: $\\{y \\mid -3 \\leqslant y \\leqslant 0\\}$\nDomain of $f^{-1}$: $\\{x \\mid -3 \\leqslant x \\leqslant 0\\}$\nRange of $f^{-1}$: $\\{y \\mid 0 \\leqslant y \\leqslant 3\\}$",
+        "ai_explanation": {
+          "concept_rule": "Domain is the set of $x$-values, range is the set of $y$-values. For an inverse function, domain and range swap.",
+          "step_by_step": [
+            "From the graph of $f$, $x$ runs from $0$ to $3$, so domain of $f$ is $[0, 3]$.",
+            "$y$ runs from $-3$ to $0$, so range of $f$ is $[-3, 0]$.",
+            "Swap these to find the domain and range of $f^{-1}$."
+          ],
+          "common_pitfalls": "Writing interval bounds in the wrong order, e.g., $0 \\leqslant y \\leqslant -3$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$Domain of $f$: $\\{x \\mid -2 \\leqslant x \\leqslant 1\\}$, Range of $f$: $\\{y \\mid -1 \\leqslant y \\leqslant 2\\}$, Domain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x \\leqslant 2\\}$, Range of $f^{-1}$: $\\{y \\mid -2 \\leqslant y \\leqslant 1\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f^-1"
+          }
+        ],
+        "solution": "Domain of $f$: $\\{x \\mid -2 \\leqslant x \\leqslant 1\\}$\nRange of $f$: $\\{y \\mid -1 \\leqslant y \\leqslant 2\\}$\nDomain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x \\leqslant 2\\}$\nRange of $f^{-1}$: $\\{y \\mid -2 \\leqslant y \\leqslant 1\\}$",
+        "ai_explanation": {
+          "concept_rule": "The domain and range of an inverse function are obtained directly by interchanging the domain and range of the original function.",
+          "step_by_step": [
+            "Read endpoints of $f$: from $(-2, -1)$ to $(1, 2)$.",
+            "Domain of $f$ is $[-2, 1]$, range is $[-1, 2]$.",
+            "Interchange to get domain of $f^{-1}$ as $[-1, 2]$ and range of $f^{-1}$ as $[-2, 1]$."
+          ],
+          "common_pitfalls": "Mixing up $x$ and $y$ notation in the set descriptions."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "$Domain of $f$: $\\{x \\mid -3 \\leqslant x < 6\\}$, Range of $f$: $\\{y \\mid -1 \\leqslant y < 2\\}$, Domain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x < 2\\}$, Range of $f^{-1}$: $\\{y \\mid -3 \\leqslant y < 6\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f (including strict inequality at open circle)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct domain and range for f^-1"
+          }
+        ],
+        "solution": "Domain of $f$: $\\{x \\mid -3 \\leqslant x < 6\\}$\nRange of $f$: $\\{y \\mid -1 \\leqslant y < 2\\}$\nDomain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x < 2\\}$\nRange of $f^{-1}$: $\\{y \\mid -3 \\leqslant y < 6\\}$",
+        "ai_explanation": {
+          "concept_rule": "Solid circles denote inclusive endpoints ($\\,\\leqslant\\,$), whereas open circles denote exclusive endpoints ($<$).",
+          "step_by_step": [
+            "The endpoint $(-3, -1)$ is a solid dot, so it is included.",
+            "The endpoint $(6, 2)$ is an open circle, so it is excluded.",
+            "Domain of $f$ is $[-3, 6)$ and range of $f$ is $[-1, 2)$.",
+            "Interchange to find the domain and range of $f^{-1}$."
+          ],
+          "common_pitfalls": "Using non-strict inequality $\\leqslant$ at the open circle."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q30",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 30,
+    "question_text": "The moon is approximately $3.84 \\times 10^5\\text{ km}$ from the Earth, and completes one full orbit in about $28\\text{ days}$.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find a model for the distance $D\\text{ km}$ travelled by the moon in $t\\text{ days}$.",
+        "final_answer": "$D = \\frac{192\\,000\\pi}{7}t$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate fraction of orbit completed in t days and corresponding angle"
+          },
+          {
+            "code": "M1",
+            "desc": "Apply arc length formula D = (theta / 360) * 2 * pi * r"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify to get D = (192000*pi/7)*t"
+          }
+        ],
+        "solution": "The moon completes one full orbit in about $28$ days.\n$\\therefore$ it completes $\\frac{t}{28}$ of an orbit after $t$ days.\nSo, after $t$ days the moon has travelled through $\\frac{t}{28} \\times 360^\\circ = \\left(\\frac{90t}{7}\\right)^\\circ$.\n$\\therefore$ the distance $D\\text{ km}$ travelled by the moon in $t$ days is given by\n$D = \\frac{\\frac{90t}{7}}{360} \\times 2\\pi \\times (3.84 \\times 10^5)$\n$= \\frac{192\\,000\\pi}{7}t$",
+        "ai_explanation": {
+          "concept_rule": "Arc length of a circle of radius $r$ through an angle $\\theta$ is $s = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+          "step_by_step": [
+            "The proportion of orbit in $t$ days is $\\frac{t}{28}$.",
+            "Multiply the full circumference $2\\pi (3.84 \\times 10^5)$ by $\\frac{t}{28}$.",
+            "Simplify $\\frac{2 \\times 3.84 \\times 10^5}{28} = \\frac{768\\,000}{28} = \\frac{192\\,000}{7}$.",
+            "Result: $D = \\frac{192\\,000\\pi}{7}t$."
+          ],
+          "common_pitfalls": "Forgetting to include $\\pi$ or making an arithmetic error when simplifying fractions."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "List any assumptions you have made in a.",
+        "final_answer": "$Assumptions: the moon has a circular orbit; the moon moves at a constant speed along its orbit.$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "State that the orbit is assumed to be circular"
+          },
+          {
+            "code": "R1",
+            "desc": "State that the speed is assumed to be constant"
+          }
+        ],
+        "solution": "We have assumed that:\n- the moon has a circular orbit\n- the moon moves at a constant speed along its orbit.",
+        "ai_explanation": {
+          "concept_rule": "Mathematical models require simplifying assumptions to apply standard geometric formulas.",
+          "step_by_step": [
+            "The model uses the formula for circumference of a circle, which assumes a circular orbit.",
+            "The model assumes proportional travel per day, which assumes constant speed."
+          ],
+          "common_pitfalls": "Stating real-world facts rather than the mathematical assumptions of the model."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Use your model in a to estimate the distance travelled by the moon:\nin one full orbit",
+        "final_answer": "$\\approx 2.41 \\times 10^6\\text{ km}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute t = 28 into distance formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate distance to 3 s.f."
+          }
+        ],
+        "solution": "One full orbit is about $28$ days.\nWhen $t = 28$, $D = \\frac{192\\,000\\pi}{7} \\times 28 \\approx 2.41 \\times 10^6$.\n$\\therefore$ the moon travels about $2.41 \\times 10^6\\text{ km}$ in one full orbit.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the time for one orbit into the linear distance function.",
+          "step_by_step": [
+            "Set $t = 28$.",
+            "Evaluate $D = \\frac{192\\,000\\pi}{7} \\times 28 = 768\\,000\\pi$.",
+            "Compute $768\\,000\\pi \\approx 2.4127 \\times 10^6 \\approx 2.41 \\times 10^6\\text{ km}$."
+          ],
+          "common_pitfalls": "Rounding to the wrong number of significant figures."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "Use your model in a to estimate the distance travelled by the moon:\nin 7 days.",
+        "final_answer": "$\\approx 6.03 \\times 10^5\\text{ km}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute t = 7 into distance formula"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate distance to 3 s.f."
+          }
+        ],
+        "solution": "When $t = 7$, $D = \\frac{192\\,000\\pi}{7} \\times 7 \\approx 6.03 \\times 10^5$.\n$\\therefore$ the moon travels about $6.03 \\times 10^5\\text{ km}$ in $7$ days.",
+        "ai_explanation": {
+          "concept_rule": "Substitute $t = 7$ into the distance formula.",
+          "step_by_step": [
+            "Set $t = 7$.",
+            "Evaluate $D = \\frac{192\\,000\\pi}{7} \\times 7 = 192\\,000\\pi$.",
+            "Compute $192\\,000\\pi \\approx 6.03185 \\times 10^5 \\approx 6.03 \\times 10^5\\text{ km}$."
+          ],
+          "common_pitfalls": "Miscalculating powers of ten in scientific notation."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "The moon actually completes an orbit of the Earth in 27 days, 7 hours, and 43 minutes. Discuss whether your answers in c are overestimates or underestimates.",
+        "final_answer": "$Underestimates$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Explain that overestimating orbit time underestimates the fraction per day"
+          },
+          {
+            "code": "A1",
+            "desc": "Conclude that distance answers in (c) are underestimates"
+          }
+        ],
+        "solution": "In our model, the time it takes for the moon to complete one full orbit is an overestimate.\n$\\therefore$ the fraction of an orbit it has travelled after $t$ days is an underestimate.\n$\\therefore$ our model is an underestimate of the actual distance travelled by the moon in $t$ days.\nSo, our answers in c are underestimates.",
+        "ai_explanation": {
+          "concept_rule": "If the period $T$ is an overestimate, then the rate of travel $\\frac{1}{T}$ is an underestimate, leading to an underestimate of distance for a given time.",
+          "step_by_step": [
+            "Actual orbital period is slightly less than 28 days (approx 27.3 days).",
+            "Since $28$ is an overestimate of the denominator, $\\frac{t}{28}$ is an underestimate of the fraction of the orbit completed.",
+            "Therefore, the calculated distances are underestimates."
+          ],
+          "common_pitfalls": "Thinking that overestimating the period results in an overestimate of the distance."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q31",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 31,
+    "question_text": "In one hour, Isabelita can prepare 120 spring rolls, and Arturo can prepare 100 spring rolls.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "How long will it take to prepare 600 spring rolls if:\nIsabelita works by herself",
+        "final_answer": "$5\\text{ hours}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Divide 600 by 120"
+          },
+          {
+            "code": "A1",
+            "desc": "State 5 hours"
+          }
+        ],
+        "solution": "Isabelita can prepare $600$ spring rolls in $\\frac{600}{120} = 5\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "$\\text{Time} = \\frac{\\text{Total Work}}{\\text{Rate of Work}}$.",
+          "step_by_step": [
+            "Identify total work: $600$ spring rolls.",
+            "Identify rate: $120$ rolls per hour.",
+            "Divide: $\\frac{600}{120} = 5\\text{ hours}$."
+          ],
+          "common_pitfalls": "Dividing rate by total work instead of total work by rate."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "How long will it take to prepare 600 spring rolls if:\nArturo works by himself",
+        "final_answer": "$6\\text{ hours}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Divide 600 by 100"
+          },
+          {
+            "code": "A1",
+            "desc": "State 6 hours"
+          }
+        ],
+        "solution": "Arturo can prepare $600$ spring rolls in $\\frac{600}{100} = 6\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "$\\text{Time} = \\frac{\\text{Total Work}}{\\text{Rate of Work}}$.",
+          "step_by_step": [
+            "Total spring rolls = $600$.",
+            "Arturo's rate = $100$ rolls per hour.",
+            "Time taken = $\\frac{600}{100} = 6\\text{ hours}$."
+          ],
+          "common_pitfalls": "None."
+        }
+      },
+      {
+        "subpart": "a iii",
+        "stem": "How long will it take to prepare 600 spring rolls if:\nIsabelita and Arturo work together?",
+        "final_answer": "$\\frac{30}{11} \\approx 2.73\\text{ hours} \\approx 2\\text{ hours } 44\\text{ minutes}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Add rates: 1/5 + 1/6 = 11/30 of the job per hour"
+          },
+          {
+            "code": "M1",
+            "desc": "Take reciprocal to find total time: 30/11 hours"
+          },
+          {
+            "code": "A1",
+            "desc": "Convert to hours and minutes"
+          }
+        ],
+        "solution": "Isabelita can complete $\\frac{120}{600} = \\frac{1}{5}$ of the job each hour, and Arturo can complete $\\frac{100}{600} = \\frac{1}{6}$ of the job each hour.\nSo, working together they can complete $\\frac{1}{5} + \\frac{1}{6} = \\frac{11}{30}$ of the job each hour.\n$\\therefore$ it would take them $\\frac{30}{11} \\approx 2.73\\text{ hours} \\approx 2\\text{ hours } 44\\text{ minutes}$ to complete the job together.",
+        "ai_explanation": {
+          "concept_rule": "Combined work rate is the sum of individual work rates.",
+          "step_by_step": [
+            "Find combined rate: $120 + 100 = 220$ spring rolls per hour (or $\\frac{1}{5} + \\frac{1}{6} = \\frac{11}{30}$ of the job/hour).",
+            "Calculate time: $\\frac{600}{220} = \\frac{30}{11}\\text{ hours}$.",
+            "Convert decimal hours to minutes: $\\frac{8}{11} \\times 60 \\approx 43.6 \\approx 44\\text{ minutes}$.",
+            "Total time is approximately $2\\text{ hours } 44\\text{ minutes}$."
+          ],
+          "common_pitfalls": "Averaging the two times $\\frac{5+6}{2} = 5.5$ instead of adding rates."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Discuss any assumptions you have made in a, and whether or not they are reasonable.",
+        "final_answer": "$In a i and a ii: assumed constant work rate; in a iii: assumed they work together without hindering each other.$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "State and evaluate constant rate assumption for (a i) and (a ii)"
+          },
+          {
+            "code": "R1",
+            "desc": "State and evaluate independence/no hindrance assumption for (a iii)"
+          }
+        ],
+        "solution": "In a i and a ii, we assume that Isabelita and Arturo can work at a constant rate over many hours. It is likely that they would slow down or need a rest, so this assumption may not be reasonable.\nIn a iii, we assume that Isabelita and Arturo can work without getting in each other's way. This assumption seems reasonable.",
+        "ai_explanation": {
+          "concept_rule": "Assessing assumptions involves identifying the mathematical conditions imposed and discussing their realism in a practical context.",
+          "step_by_step": [
+            "For individual work: constant productivity ignores fatigue and breaks.",
+            "For joint work: independent rates assume shared space does not decrease productivity."
+          ],
+          "common_pitfalls": "Failing to explain whether the assumption is reasonable or not."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q32",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 32,
+    "question_text": "An oven technician charges a call-out fee of $\\$50$ and an additional $\\$20$ per hour for the duration of the appointment.\nLet $\\$C$ be the amount charged for an appointment lasting $t$ hours.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Sketch the graph of $C$ against $t$ for $0 \\leqslant t \\leqslant 3$.",
+        "final_answer": "$Graph of $C$ against $t$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Draw line starting at (0, 50) and passing through (1, 70), (2, 90), (3, 110)"
+          }
+        ],
+        "solution": "Graph plotted showing the cost $C$ on the vertical axis starting from $(0, 50)$ and increasing linearly with $t$ on the horizontal axis.",
+        "ai_explanation": {
+          "concept_rule": "A linear cost function produces a straight-line graph starting at the fixed cost.",
+          "step_by_step": [
+            "Identify vertical axis as Cost $C$ in dollars.",
+            "Identify horizontal axis as time $t$ in hours.",
+            "Draw line with vertical intercept $50$ and slope $20$."
+          ],
+          "common_pitfalls": "Starting the graph at the origin $(0, 0)$ instead of the intercept $(0, 50)$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the linear model connecting $C$ and $t$.",
+        "final_answer": "$C = 20t + 50$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find intercept (50) and gradient: (70 - 50)/(1 - 0) = 20"
+          },
+          {
+            "code": "A1",
+            "desc": "Write equation C = 20t + 50"
+          }
+        ],
+        "solution": "The $C$-intercept is $50$.\nThe gradient is $\\frac{70 - 50}{1 - 0} = 20$.\n$\\therefore C = 20t + 50$",
+        "ai_explanation": {
+          "concept_rule": "A linear relation has form $y = mx + c$, where $m$ is the gradient and $c$ is the vertical intercept.",
+          "step_by_step": [
+            "Read vertical intercept: $c = 50$.",
+            "Calculate slope: $m = \\frac{70 - 50}{1 - 0} = 20$.",
+            "Form the linear equation: $C = 20t + 50$."
+          ],
+          "common_pitfalls": "Using standard variables $y$ and $x$ instead of specified variables $C$ and $t$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Use your model to calculate the amount charged for a $1\\frac{1}{2}$ hour appointment.",
+        "final_answer": "$\\$80$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute t = 1.5 into linear equation"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate cost $80"
+          }
+        ],
+        "solution": "When $t = 1\\frac{1}{2} = \\frac{3}{2}$,\n$C = 20\\left(\\frac{3}{2}\\right) + 50 = 80$\n$\\therefore \\$80$ is charged for a $1\\frac{1}{2}$ hour appointment.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the given time value into the cost formula.",
+          "step_by_step": [
+            "Convert $1\\frac{1}{2}$ hours to decimal $1.5$ or fraction $\\frac{3}{2}$.",
+            "Substitute into $C = 20(1.5) + 50$.",
+            "Compute $30 + 50 = 80$."
+          ],
+          "common_pitfalls": "Omitting the currency symbol."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Mikhal schedules an appointment to repair his oven. The technician arrives at 9:00 am, and the total amount charged is $\\$118$. At what time did the technician complete the repairs?",
+        "final_answer": "$12:24\\text{ pm}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set C = 118 and solve for t"
+          },
+          {
+            "code": "A1",
+            "desc": "Find t = 3.4 hours = 3 hours 24 minutes"
+          },
+          {
+            "code": "A1",
+            "desc": "Add time to 9:00 am to get 12:24 pm"
+          }
+        ],
+        "solution": "When $C = 118$,\n$118 = 20t + 50$\n$\\therefore 20t = 68$\n$\\therefore t = 3.4$\n$\\therefore$ the appointment lasted $3.4\\text{ hours} = 3\\text{ hours } 24\\text{ minutes}$.\n$12:24\\text{ pm}$ is $3\\text{ hours and } 24\\text{ minutes}$ after $9:00\\text{ am}$.\n$\\therefore$ the technician completed the repairs at $12:24\\text{ pm}$.",
+        "ai_explanation": {
+          "concept_rule": "Solve a linear equation for $t$, convert decimal hours into minutes ($0.4 \\times 60 = 24$), and add to the start time.",
+          "step_by_step": [
+            "Set $118 = 20t + 50$.",
+            "Subtract $50$: $20t = 68$.",
+            "Divide by $20$: $t = 3.4\\text{ hours}$.",
+            "Convert $0.4\\text{ hours}$ to minutes: $0.4 \\times 60 = 24\\text{ minutes}$.",
+            "Add $3\\text{ h } 24\\text{ min}$ to $9:00\\text{ am}$: $12:24\\text{ pm}$."
+          ],
+          "common_pitfalls": "Treating $0.4\\text{ hours}$ as $40\\text{ minutes}$ instead of $24\\text{ minutes}$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q33",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 33,
+    "question_text": "The cost of hiring a car is summarised in the table alongside.\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\text{Hire period } (t \\text{ days}) & \\text{Cost} \\\\\n\\hline\n1 - 2 & \\$40 \\text{ per day} \\\\\n3 - 6 & \\$33 \\text{ per day} \\\\\n7+ & \\$29 \\text{ per day} \\\\\n\\hline\n\\end{array}$$\n\nLet $\\$C$ be the total cost of hiring a car for $t$ days.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Draw a graph of $C$ against $t$ for $0 \\leqslant t \\leqslant 10$.",
+        "final_answer": "$\\text{Step graph of } C \\text{ against } t$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plotting step functions according to given daily rates"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct open and closed circles representing domain endpoints"
+          }
+        ],
+        "solution": "For $1 \\le t \\le 2$, cost is $\\$40$ per day: for $t = 1$, $C = 40$; for $t = 2$, $C = 80$.\nFor $3 \\le t \\le 6$, cost is $\\$33$ per day: for $t = 3$, $C = 99$; for $t = 4$, $C = 132$; for $t = 5$, $C = 165$; for $t = 6$, $C = 198$.\nFor $t \\ge 7$, cost is $\\$29$ per day: for $t = 7$, $C = 203$; for $t = 8$, $C = 232$; for $t = 9$, $C = 261$; for $t = 10$, $C = 290$.\nThe graph is plotted with horizontal discrete segments or discrete points corresponding to the hire period $t$ (days) vs cost $C$ (\\$).",
+        "ai_explanation": {
+          "concept_rule": "A step or piecewise function represents rates that change over intervals of time.",
+          "step_by_step": [
+            "Identify the cost per day for each bracket of days.",
+            "Multiply the number of days by the daily rate to find total cost.",
+            "Plot the costs against the days on the axes."
+          ],
+          "common_pitfalls": "Applying the rate only to additional days rather than all days rented in that bracket."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "Find the cost of hiring a car for:\n2 days",
+        "final_answer": "$\\$80$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct cost read from the graph for 2 days"
+          }
+        ],
+        "solution": "From the graph, it costs $\\$80$ to hire a car for $2$ days.",
+        "ai_explanation": {
+          "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+          "step_by_step": [
+            "Locate $t = 2$ on the horizontal axis.",
+            "Read the vertical value: $C = 80$."
+          ],
+          "common_pitfalls": "Misreading the vertical scale increments."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "Find the cost of hiring a car for:\n5 days",
+        "final_answer": "$\\$165$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct cost read from the graph for 5 days"
+          }
+        ],
+        "solution": "From the graph, it costs $\\$165$ to hire a car for $5$ days.",
+        "ai_explanation": {
+          "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+          "step_by_step": [
+            "Locate $t = 5$ on the horizontal axis.",
+            "Read the vertical value: $C = 165$."
+          ],
+          "common_pitfalls": "Misreading the scale on the vertical axis."
+        }
+      },
+      {
+        "subpart": "b iii",
+        "stem": "Find the cost of hiring a car for:\n9 days.",
+        "final_answer": "$\\$261$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct cost read from the graph for 9 days"
+          }
+        ],
+        "solution": "From the graph, it costs $\\$261$ to hire a car for $9$ days.",
+        "ai_explanation": {
+          "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+          "step_by_step": [
+            "Locate $t = 9$ on the horizontal axis.",
+            "Read the vertical value: $C = 261$."
+          ],
+          "common_pitfalls": "Confusing day brackets."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Georgia and Tim are planning an 8 day holiday. They require a car for the first 2 days, and the last 3 days.\nIs it cheaper for them to hire one car for the first 2 days and a separate car for the last 3 days, or to hire one car for the whole holiday?",
+        "final_answer": "$\\text{It is cheaper to hire one car for the first 2 days, and a separate car for the last 3 days.}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating the total cost of separate hires vs single hire"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct conclusion based on cost comparison"
+          }
+        ],
+        "solution": "If they hire a car for the first $2$ days, and the last $3$ days, they will spend $\\$80 + \\$99 = \\$179$.\nIf they hire a car for the whole $8$ days, they will spend $\\$232$.\n$\\therefore$ it is cheaper for Georgia and Tim to hire one car for the first $2$ days, and a separate car for the last $3$ days.",
+        "ai_explanation": {
+          "concept_rule": "Compare total expenditure across two hiring strategies.",
+          "step_by_step": [
+            "Calculate cost of split hire: $2$ days cost $\\$80$, $3$ days cost $\\$99$, total = $\\$179$.",
+            "Calculate cost of continuous hire: $8$ days cost $\\$232$.",
+            "Compare $\\$179$ and $\\$232$ to determine the cheaper option."
+          ],
+          "common_pitfalls": "Assuming a single longer rental is always cheaper than multiple shorter rentals."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q34",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 34,
+    "question_text": "Stephen and Hugh take a walk in a national park. They measure their elevation in metres above sea level before they start, and every hour throughout their walk. Their elevation after $t$ hours can be modelled by the function $y = at^3 + bt^2 + ct + d$ for $0 \\le t \\le 3$.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "State the value of $d$.",
+        "final_answer": "$d = 49$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $t = 0$ into the cubic polynomial"
+          },
+          {
+            "code": "A1",
+            "desc": "State the value of $d$"
+          }
+        ],
+        "solution": "When $t = 0$, $y = 49$.\n$\\therefore d = 49$",
+        "ai_explanation": {
+          "concept_rule": "The $y$-intercept corresponds to the constant term of a polynomial when $t = 0$.",
+          "step_by_step": [
+            "Set $t = 0$ in $y = at^3 + bt^2 + ct + d$.",
+            "Observe that $y(0) = d$.",
+            "From the graph, $(0, 49)$ is given, so $d = 49$."
+          ],
+          "common_pitfalls": "Incorrectly reading the $y$-intercept."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Use technology to find $a$, $b$, and $c$.",
+        "final_answer": "$a = -\\frac{19}{3},\\, b = 28,\\, c = -\\frac{80}{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute known points $(1,44), (2,57), (3,50)$ to set up three linear equations"
+          },
+          {
+            "code": "M1",
+            "desc": "Solve system of linear equations using technology or elimination"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct values of $a$, $b$, and $c$"
+          }
+        ],
+        "solution": "When $t = 1$, $y = 44$:\n$a(1)^3 + b(1)^2 + c(1) + 49 = 44 \\implies a + b + c = -5$\n\nWhen $t = 2$, $y = 57$:\n$a(2)^3 + b(2)^2 + c(2) + 49 = 57 \\implies 8a + 4b + 2c = 8$\n\nWhen $t = 3$, $y = 50$:\n$a(3)^3 + b(3)^2 + c(3) + 49 = 50 \\implies 27a + 9b + 3c = 1$\n\nSo, we have the system of equations:\n$\\begin{cases} a + b + c = -5 \\\\ 8a + 4b + 2c = 8 \\\\ 27a + 9b + 3c = 1 \\end{cases}$\n\nSolving these equations simultaneously using technology, we find that $a = -\\frac{19}{3}$, $b = 28$, and $c = -\\frac{80}{3}$.",
+        "ai_explanation": {
+          "concept_rule": "A cubic function with four unknown coefficients can be determined using four known points.",
+          "step_by_step": [
+            "Substitute $(1, 44)$, $(2, 57)$, and $(3, 50)$ along with $d = 49$ into $y = at^3 + bt^2 + ct + d$.",
+            "Simplify each into a standard linear equation in $a, b, c$.",
+            "Solve the resulting $3 \\times 3$ system using matrix methods or substitution/elimination."
+          ],
+          "common_pitfalls": "Arithmetic errors when expanding powers of $t$ or moving constant terms."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Estimate their elevation after $2\\frac{1}{2}$ hours.",
+        "final_answer": "$58.375\\text{ m}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $t = 2.5$ into the cubic model"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct evaluated height"
+          }
+        ],
+        "solution": "$y = -\\frac{19}{3}t^3 + 28t^2 - \\frac{80}{3}t + 49$\nWhen $t = 2\\frac{1}{2} = \\frac{5}{2}$:\n$y = -\\frac{19}{3}\\left(\\frac{5}{2}\\right)^3 + 28\\left(\\frac{5}{2}\\right)^2 - \\frac{80}{3}\\left(\\frac{5}{2}\\right) + 49 = 58.375$\n$\\therefore$ we estimate that Stephen and Hugh's elevation after $2\\frac{1}{2}$ hours is $58.375\\text{ m}$.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate the model polynomial at a specific value of $t$.",
+          "step_by_step": [
+            "Write $t = 2.5$ as a fraction $\\frac{5}{2}$.",
+            "Substitute into $y = -\\frac{19}{3}t^3 + 28t^2 - \\frac{80}{3}t + 49$.",
+            "Compute each term and sum to find $y = 58.375$."
+          ],
+          "common_pitfalls": "Errors in order of operations (cubing before multiplying by coefficient)."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Their actual elevation after $2\\frac{1}{2}$ hours is $60\\text{ m}$. Calculate the percentage error in your estimate in c.",
+        "final_answer": "$2.71\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use percentage error formula $\\frac{|V_A - V_E|}{V_E} \\times 100\\%$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct percentage error rounded to 3 significant figures"
+          }
+        ],
+        "solution": "$\\text{Percentage error} = \\frac{|V_A - V_E|}{V_E} \\times 100\\%$\n$= \\frac{|58.375 - 60|}{60} \\times 100\\%$\n$= \\frac{1.625}{60} \\times 100\\%$\n$\\approx 2.71\\%$",
+        "ai_explanation": {
+          "concept_rule": "Percentage error is the absolute difference between approximate and exact values, divided by the exact value, expressed as a percentage.",
+          "step_by_step": [
+            "Identify $V_A = 58.375$ and $V_E = 60$.",
+            "Find absolute difference: $|58.375 - 60| = 1.625$.",
+            "Divide by $60$ and multiply by $100\\%$ to get $\\approx 2.71\\%$."
+          ],
+          "common_pitfalls": "Dividing by the approximate value instead of the exact value."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q35",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 35,
+    "question_text": "Suppose $w \\propto z$ and that $w = 27$ when $z = 9$. Find:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$w$ when $z = 2$",
+        "final_answer": "$w = 6$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify scale factor for $z$ and apply to $w$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $w$"
+          }
+        ],
+        "solution": "$z$ is multiplied by $\\frac{2}{9}$\n$\\therefore w$ is multiplied by $\\frac{2}{9}$ {as $w \\propto z$}\n$\\therefore w = 27 \\times \\frac{2}{9} = 6$",
+        "ai_explanation": {
+          "concept_rule": "In direct variation $w \\propto z$, scaling $z$ by a factor $k$ scales $w$ by the same factor $k$.",
+          "step_by_step": [
+            "Find the factor multiplying $z$: $\\frac{2}{9}$.",
+            "Multiply initial $w = 27$ by $\\frac{2}{9}$.",
+            "Obtain $w = 6$."
+          ],
+          "common_pitfalls": "Multiplying by the reciprocal factor."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$z$ when $w = 45$.",
+        "final_answer": "$z = 15$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify scale factor for $w$ and apply to $z$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $z$"
+          }
+        ],
+        "solution": "$w$ is multiplied by $\\frac{45}{27} = \\frac{5}{3}$\n$\\therefore z$ is multiplied by $\\frac{5}{3}$ {as $w \\propto z$}\n$\\therefore z = 9 \\times \\frac{5}{3} = 15$",
+        "ai_explanation": {
+          "concept_rule": "Direct proportionality maintains the same multiplier between corresponding values.",
+          "step_by_step": [
+            "Calculate scale factor: $\\frac{45}{27} = \\frac{5}{3}$.",
+            "Multiply $z = 9$ by $\\frac{5}{3}$.",
+            "Calculate $z = 15$."
+          ],
+          "common_pitfalls": "Dividing instead of multiplying by the scale factor."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q36",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 36,
+    "question_text": "The potential difference $V$ across a resistor is proportional to the current $I$ running through it. When the potential difference is $9\\text{ volts}$, the current is $0.01\\text{ amps}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the proportionality constant.",
+        "final_answer": "$k = 900$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $V = 9$ and $I = 0.01$ into $V = kI$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for constant $k$"
+          }
+        ],
+        "solution": "$V \\propto I$, so $V = kI$ where $k$ is the proportionality constant.\nWhen $V = 9\\text{ volts}$, $I = 0.01\\text{ amps}$, so $9 = k(0.01)$\n$\\therefore k = \\frac{9}{0.01} = 900$",
+        "ai_explanation": {
+          "concept_rule": "Direct proportionality means $V = kI$ where $k = \\frac{V}{I}$.",
+          "step_by_step": [
+            "State relationship $V = kI$.",
+            "Substitute given values $V = 9$ and $I = 0.01$.",
+            "Divide $9$ by $0.01$ to find $k = 900$."
+          ],
+          "common_pitfalls": "Dividing $0.01$ by $9$ instead of $9$ by $0.01$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the current running through the resistor if the potential difference is $12\\text{ volts}$.",
+        "final_answer": "$I \\approx 0.0133\\text{ amps}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $V = 12$ and $k = 900$ into equation"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct current $I$"
+          }
+        ],
+        "solution": "When $V = 12\\text{ volts}$, $12 = 900I$\n$\\therefore I \\approx 0.0133\\text{ amps}$",
+        "ai_explanation": {
+          "concept_rule": "Substitute known voltage into $V = kI$ to find current $I$.",
+          "step_by_step": [
+            "Write equation $12 = 900I$.",
+            "Solve for $I$: $I = \\frac{12}{900} = \\frac{1}{75}$.",
+            "Convert to decimal: $I \\approx 0.0133\\text{ amps}$."
+          ],
+          "common_pitfalls": "Multiplying $12$ by $900$ instead of dividing."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the potential difference if there is $0.018\\text{ amps}$ of current running through the resistor.",
+        "final_answer": "$V = 16.2\\text{ volts}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $I = 0.018$ into $V = 900I$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct voltage $V$"
+          }
+        ],
+        "solution": "When $I = 0.018\\text{ amps}$, $V = 900(0.018) = 16.2\\text{ volts}$",
+        "ai_explanation": {
+          "concept_rule": "Calculate voltage by multiplying proportionality constant by given current.",
+          "step_by_step": [
+            "Use equation $V = 900I$.",
+            "Substitute $I = 0.018$.",
+            "Evaluate $900 \\times 0.018 = 16.2$."
+          ],
+          "common_pitfalls": "Misplacing the decimal point during multiplication."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q37",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 37,
+    "question_text": "The table below shows the cost of purchasing $x\\text{ kg}$ of tomatoes. Weight ($x\\text{ kg}$): 0, 1, 2, 3, 4, 5. Cost ($\\$C$): 0, 3.5, 7, 10.5, 14, 17.5.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Draw the graph of $C$ against $t$.",
+        "final_answer": "$\\text{Straight-line graph plotted from }(0,0)\\text{ to }(5,17.5)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plotting data points accurately on axes"
+          },
+          {
+            "code": "A1",
+            "desc": "Drawing straight line connecting points through origin"
+          }
+        ],
+        "solution": "Points $(0,0), (1,3.5), (2,7), (3,10.5), (4,14), (5,17.5)$ are plotted on the Cartesian plane with Weight ($x$ kg) on the horizontal axis and Cost ($C$ \\$) on the vertical axis, and connected with a straight line.",
+        "ai_explanation": {
+          "concept_rule": "A table of directly proportional values produces a linear graph starting at the origin.",
+          "step_by_step": [
+            "Set up horizontal axis for $x$ and vertical axis for $C$.",
+            "Plot the given points from the table.",
+            "Draw a straight line through all points starting from $(0,0)$."
+          ],
+          "common_pitfalls": "Starting the line from the first positive data point rather than the origin."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Explain why $C$ and $x$ are directly proportional.",
+        "final_answer": "$C \\text{ and } x \\text{ are directly proportional.}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Reasoning based on straight line passing through origin"
+          }
+        ],
+        "solution": "The graph of $C$ against $x$ is a straight line which passes through the origin.\n$\\therefore C$ and $x$ are directly proportional.",
+        "ai_explanation": {
+          "concept_rule": "Two variables are directly proportional if and only if their graph is a straight line that passes through the origin $(0,0)$.",
+          "step_by_step": [
+            "Examine the shape of the graph: it is a straight line.",
+            "Check whether it passes through $(0,0)$: yes.",
+            "Conclude direct proportionality."
+          ],
+          "common_pitfalls": "Stating variables are directly proportional without mentioning that the line passes through the origin."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Find a formula connecting $C$ and $x$.",
+        "final_answer": "$C = 3.5x$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate gradient $\\frac{3.5-0}{1-0}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Write equation $C = 3.5x$"
+          }
+        ],
+        "solution": "The gradient of the line $= \\frac{3.5 - 0}{1 - 0} = 3.5$\n$\\therefore C = 3.5x$",
+        "ai_explanation": {
+          "concept_rule": "The slope of a direct variation line $y = mx$ is given by $m = \\frac{\\Delta y}{\\Delta x}$.",
+          "step_by_step": [
+            "Use points $(0,0)$ and $(1, 3.5)$ to compute gradient: $\\frac{3.5-0}{1-0} = 3.5$.",
+            "Since $y$-intercept is $0$, equation is $C = 3.5x$."
+          ],
+          "common_pitfalls": "Inverting the rise and run."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "Hence find the cost of purchasing $10\\text{ kg}$ of tomatoes.",
+        "final_answer": "$\\$35$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 10$ into $C = 3.5x$"
+          },
+          {
+            "code": "A1",
+            "desc": "State total cost"
+          }
+        ],
+        "solution": "When $x = 10$, $C = 3.5(10) = 35$\n$\\therefore$ purchasing $10\\text{ kg}$ of tomatoes costs $\\$35$.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate linear equation $C = 3.5x$ at $x = 10$.",
+          "step_by_step": [
+            "Substitute $x = 10$ into $C = 3.5x$.",
+            "Calculate $3.5 \\times 10 = 35$."
+          ],
+          "common_pitfalls": "Using the wrong unit or miscalculating simple multiplication."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q38",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 38,
+    "question_text": "The mass of an orange is directly proportional to the cube of its diameter. The diameter of orange A is $14.6\\%$ larger than that of orange B. What percentage heavier is orange A than orange B?",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "The mass of an orange is directly proportional to the cube of its diameter. The diameter of orange A is $14.6\\%$ larger than that of orange B. What percentage heavier is orange A than orange B?",
+        "final_answer": "$\\text{Orange A is about } 50.5\\% \\text{ heavier than orange B}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify scale factor of diameter $1.146$ and cube it"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculate percentage increase in mass"
+          },
+          {
+            "code": "A1",
+            "desc": "State correct percentage increase of about $50.5\\%$"
+          }
+        ],
+        "solution": "The mass $m\\text{ g}$ of an orange is directly proportional to the cube of its diameter $d$, so $m \\propto d^3$.\nIf $d$ is increased by $14.6\\%$, then $d$ is multiplied by $1.146$.\n$\\therefore d^3$ is multiplied by $(1.146)^3$.\n$\\therefore m$ is multiplied by $(1.146)^3 \\approx 1.505$ {as $m \\propto d^3$}\n$\\therefore m$ is increased by about $50.5\\%$.\nSo, orange A is about $50.5\\%$ heavier than orange B.",
+        "ai_explanation": {
+          "concept_rule": "When a quantity varies directly with the cube of another, multiplying the independent variable by $k$ multiplies the dependent variable by $k^3$.",
+          "step_by_step": [
+            "Represent a $14.6\\%$ increase as multiplier $1 + 0.146 = 1.146$.",
+            "Cube this multiplier: $(1.146)^3 \\approx 1.50508$.",
+            "Convert multiplier back to percentage increase: $(1.50508 - 1) \\times 100\\% \\approx 50.5\\%$."
+          ],
+          "common_pitfalls": "Multiplying the percentage increase by 3 directly ($3 \\times 14.6\\% = 43.8\\%$) instead of cubing the multiplier."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q39",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 39,
+    "question_text": "Suppose $y$ is inversely proportional to $x$. Explain what happens to $y$ if:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$x$ is tripled",
+        "final_answer": "$y \\text{ is divided by } 3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply inverse proportion factor when $x$ is multiplied by 3"
+          },
+          {
+            "code": "A1",
+            "desc": "Conclude $y$ is divided by 3 (or multiplied by $\\frac{1}{3}$)"
+          }
+        ],
+        "solution": "If $x$ is tripled, then $x$ is multiplied by $3$.\n$\\therefore y$ is multiplied by $\\frac{1}{3}$.\n$\\therefore y$ is divided by $3$.",
+        "ai_explanation": {
+          "concept_rule": "For inverse variation $y \\propto \\frac{1}{x}$, multiplying $x$ by $k$ results in multiplying $y$ by $\\frac{1}{k}$.",
+          "step_by_step": [
+            "Tripling $x$ means $x_{new} = 3x$.",
+            "Substitute into inverse relation: $y_{new} = \\frac{1}{3x} = \\frac{1}{3}y$.",
+            "Thus, $y$ is divided by $3$."
+          ],
+          "common_pitfalls": "Tripling $y$ instead of dividing by 3."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$x$ is divided by $4$",
+        "final_answer": "$y \\text{ is multiplied by } 4$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply reciprocal of scale factor $\\frac{1}{4}$ to $y$"
+          },
+          {
+            "code": "A1",
+            "desc": "Conclude $y$ is multiplied by 4"
+          }
+        ],
+        "solution": "If $x$ is divided by $4$, then $x$ is multiplied by $\\frac{1}{4}$.\n$\\therefore y$ is multiplied by $4$.",
+        "ai_explanation": {
+          "concept_rule": "In inverse variation, dividing the independent variable by $k$ multiplies the dependent variable by $k$.",
+          "step_by_step": [
+            "Dividing $x$ by $4$ is multiplying by $\\frac{1}{4}$.",
+            "The reciprocal of $\\frac{1}{4}$ is $4$.",
+            "Therefore, $y$ is multiplied by $4$."
+          ],
+          "common_pitfalls": "Dividing $y$ by 4 instead of multiplying."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$x$ is multiplied by $\\frac{5}{3}$",
+        "final_answer": "$y \\text{ is multiplied by } \\frac{3}{5}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Take reciprocal of multiplier $\\frac{5}{3}$"
+          },
+          {
+            "code": "A1",
+            "desc": "State new multiplier for $y$"
+          }
+        ],
+        "solution": "If $x$ is multiplied by $\\frac{5}{3}$, then $y$ is multiplied by $\\frac{3}{5}$.",
+        "ai_explanation": {
+          "concept_rule": "If $y \\propto \\frac{1}{x}$, any factor $m$ multiplying $x$ will multiply $y$ by $\\frac{1}{m}$.",
+          "step_by_step": [
+            "Identify multiplier of $x$: $\\frac{5}{3}$.",
+            "Take reciprocal: $\\frac{1}{5/3} = \\frac{3}{5}$.",
+            "Conclude $y$ is multiplied by $\\frac{3}{5}$."
+          ],
+          "common_pitfalls": "Keeping the same fraction $\\frac{5}{3}$."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "$x$ is decreased by $60\\%$.",
+        "final_answer": "$y \\text{ is increased by } 150\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find multiplier for $x$ as $0.4$ and take reciprocal"
+          },
+          {
+            "code": "A1",
+            "desc": "Convert multiplier $2.5$ to percentage increase"
+          }
+        ],
+        "solution": "If $x$ is decreased by $60\\%$, then $x$ is multiplied by $1 - 0.6 = 0.4$.\n$\\therefore y$ is multiplied by $\\frac{1}{0.4} = 2.5$.\n$\\therefore y$ is increased by $150\\%$.",
+        "ai_explanation": {
+          "concept_rule": "A percentage decrease of $p$ gives a factor of $1 - p$. The inverse factor is $\\frac{1}{1 - p}$, from which percentage change is calculated.",
+          "step_by_step": [
+            "Calculate multiplier for $x$: $1 - 0.60 = 0.4$.",
+            "Calculate multiplier for $y$: $\\frac{1}{0.4} = 2.5$.",
+            "Convert multiplier to percentage increase: $(2.5 - 1) \\times 100\\% = 150\\%$."
+          ],
+          "common_pitfalls": "Thinking a $60\\%$ decrease in $x$ causes a $60\\%$ increase in $y$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q40",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 40,
+    "question_text": "When a constant force is applied by an object, the pressure applied by the object is inversely proportional to the area over which the force is applied. When applied to an area of $2\\text{ m}^2$, the object applies $300\\text{ Pa}$ of pressure.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the pressure when the force is applied over $0.8\\text{ m}^2$.",
+        "final_answer": "$750\\text{ Pa}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine constant $k = 600$ from given conditions"
+          },
+          {
+            "code": "M1",
+            "desc": "Substitute $A = 0.8$ into $P = \\frac{600}{A}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct pressure"
+          }
+        ],
+        "solution": "The pressure $P$ is inversely proportional to the area $A$, so $P = \\frac{k}{A}$ where $k$ is a constant.\nWhen $A = 2\\text{ m}^2$, $P = 300\\text{ Pa}$, so $300 = \\frac{k}{2} \\implies k = 600$.\nSo, $P = \\frac{600}{A}$.\nWhen $A = 0.8\\text{ m}^2$, $P = \\frac{600}{0.8} = 750\\text{ Pa}$.",
+        "ai_explanation": {
+          "concept_rule": "For inverse proportionality $P = \\frac{k}{A}$, find constant $k = P \\times A$ then compute new $P$.",
+          "step_by_step": [
+            "Calculate $k = 300 \\times 2 = 600$.",
+            "Substitute $A = 0.8$: $P = \\frac{600}{0.8}$.",
+            "Evaluate $P = 750\\text{ Pa}$."
+          ],
+          "common_pitfalls": "Multiplying $600$ by $0.8$ instead of dividing."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the percentage increase in area required to reduce the pressure by $15\\%$.",
+        "final_answer": "$A \\text{ is increased by about } 17.6\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find multiplier for $P$ as $0.85$ and reciprocal for $A$"
+          },
+          {
+            "code": "A1",
+            "desc": "State percentage increase in $A$"
+          }
+        ],
+        "solution": "If $P$ is reduced by $15\\%$, then $P$ is multiplied by $1 - 0.15 = 0.85$.\n$\\therefore A$ is multiplied by $\\frac{1}{0.85} \\approx 1.176$ {as $P \\propto \\frac{1}{A}$}\n$\\therefore A$ is increased by about $17.6\\%$.",
+        "ai_explanation": {
+          "concept_rule": "When $P$ changes by a factor $f$, $A$ changes by $\\frac{1}{f}$ because $A \\propto \\frac{1}{P}$.",
+          "step_by_step": [
+            "A $15\\%$ reduction in $P$ gives multiplier $1 - 0.15 = 0.85$.",
+            "Calculate multiplier for $A$: $\\frac{1}{0.85} \\approx 1.17647$.",
+            "Calculate percentage increase: $(1.17647 - 1) \\times 100\\% \\approx 17.6\\%$."
+          ],
+          "common_pitfalls": "Assuming area simply increases by $15\\%$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q41",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 41,
+    "question_text": "Suppose $A$ is inversely proportional to the cube of $r$, and that $A = 7$ when $r = 2$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find $A$ when $r = 5$.",
+        "final_answer": "$A = 0.448$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine scale factor for $r$ and cube it"
+          },
+          {
+            "code": "M1",
+            "desc": "Apply reciprocal of scale factor to $A$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $A$"
+          }
+        ],
+        "solution": "$r$ is multiplied by $\\frac{5}{2}$\n$\\therefore r^3$ is multiplied by $\\left(\\frac{5}{2}\\right)^3 = \\frac{125}{8}$\n$\\therefore A$ is multiplied by $\\frac{8}{125}$ {as $A \\propto \\frac{1}{r^3}$}\n$\\therefore A = 7 \\times \\frac{8}{125} = \\frac{56}{125} = 0.448$",
+        "ai_explanation": {
+          "concept_rule": "In an inverse cube relationship $A \\propto \\frac{1}{r^3}$, scaling $r$ by $k$ scales $A$ by $\\frac{1}{k^3}$.",
+          "step_by_step": [
+            "Scale factor for $r$ from $2$ to $5$ is $\\frac{5}{2}$.",
+            "Cube the scale factor: $\\left(\\frac{5}{2}\\right)^3 = \\frac{125}{8}$.",
+            "Multiply initial $A = 7$ by reciprocal $\\frac{8}{125}$ to get $0.448$."
+          ],
+          "common_pitfalls": "Squaring instead of cubing the ratio."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find $r$ when $A = 16$.",
+        "final_answer": "$r \\approx 1.52$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find scale factor for $A$ and determine multiplier for $r^3$"
+          },
+          {
+            "code": "M1",
+            "desc": "Take cube root of scale factor"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $r$"
+          }
+        ],
+        "solution": "$A$ is multiplied by $\\frac{16}{7}$\n$\\therefore r^3$ is multiplied by $\\frac{7}{16}$ {as $A \\propto \\frac{1}{r^3}$}\n$\\therefore r$ is multiplied by $\\sqrt[3]{\\frac{7}{16}}$\n$\\therefore r = 2 \\times \\sqrt[3]{\\frac{7}{16}} \\approx 1.52$",
+        "ai_explanation": {
+          "concept_rule": "To find $r$ when $A$ is scaled, invert the scale factor of $A$ and take the cube root.",
+          "step_by_step": [
+            "Scale factor for $A$ from $7$ to $16$ is $\\frac{16}{7}$.",
+            "Since $r^3 \\propto \\frac{1}{A}$, $r^3$ is multiplied by $\\frac{7}{16}$.",
+            "Take cube root: factor for $r$ is $\\sqrt[3]{\\frac{7}{16}}$.",
+            "Multiply initial $r = 2$ by $\\sqrt[3]{\\frac{7}{16}}$ to get $\\approx 1.52$."
+          ],
+          "common_pitfalls": "Taking the square root instead of the cube root."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q42",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 42,
+    "question_text": "An ice cream cone company wants to adjust the existing dimensions of their cones, but maintain the same volume. Their cones currently have radius $2.8\\text{ cm}$ and height $14.3\\text{ cm}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Explain why the height of the cone is inversely proportional to the square of its radius.",
+        "final_answer": "$h \\propto \\frac{1}{r^2}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rearrange cone volume formula $V = \\frac{1}{3}\\pi r^2 h$ for $h$"
+          },
+          {
+            "code": "A1",
+            "desc": "Conclude inverse square proportionality"
+          }
+        ],
+        "solution": "The volume of a cone $V = \\frac{1}{3}\\pi r^2 h$\n$\\therefore h = \\frac{3V}{\\pi r^2}$\n$\\therefore h \\propto \\frac{1}{r^2}$ {as $V$ is a constant}",
+        "ai_explanation": {
+          "concept_rule": "Rearranging a geometric formula for one variable while treating constant quantities allows identifying proportionality.",
+          "step_by_step": [
+            "Start with $V = \\frac{1}{3}\\pi r^2 h$.",
+            "Solve for $h$: $h = \\frac{3V}{\\pi}\\cdot\\frac{1}{r^2}$.",
+            "Since $\\frac{3V}{\\pi}$ is constant, $h \\propto \\frac{1}{r^2}$."
+          ],
+          "common_pitfalls": "Forgetting the square on $r$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the height of the cone if the radius chosen is $3.2\\text{ cm}$.",
+        "final_answer": "$10.9\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find multiplier for $r$ and square it"
+          },
+          {
+            "code": "M1",
+            "desc": "Multiply initial height $14.3$ by reciprocal of $r^2$ multiplier"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct new height rounded to 3 significant figures"
+          }
+        ],
+        "solution": "If the radius of the cone is increased to $3.2\\text{ cm}$, then $r$ is multiplied by $\\frac{3.2}{2.8} = \\frac{8}{7}$.\n$\\therefore r^2$ is multiplied by $\\left(\\frac{8}{7}\\right)^2 = \\frac{64}{49}$.\n$\\therefore h$ is multiplied by $\\frac{49}{64}$ {as $h \\propto \\frac{1}{r^2}$}\nSo, the height of the cone is decreased to $14.3 \\times \\frac{49}{64} \\approx 10.9\\text{ cm}$.",
+        "ai_explanation": {
+          "concept_rule": "Using $h \\propto \\frac{1}{r^2}$, multiplying $r$ by $k$ multiplies $h$ by $\\frac{1}{k^2}$.",
+          "step_by_step": [
+            "Scale factor of $r$: $\\frac{3.2}{2.8} = \\frac{8}{7}$.",
+            "Square scale factor: $\\left(\\frac{8}{7}\\right)^2 = \\frac{64}{49}$.",
+            "Scale factor of $h$ is reciprocal: $\\frac{49}{64}$.",
+            "Multiply original height by $\\frac{49}{64}$: $14.3 \\times \\frac{49}{64} \\approx 10.9\\text{ cm}$."
+          ],
+          "common_pitfalls": "Multiplying by $\\frac{64}{49}$ instead of $\\frac{49}{64}$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the radius of the cone if the height chosen is $10.8\\text{ cm}$.",
+        "final_answer": "$3.22\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Determine scale factor for $h$ and invert for $r^2$"
+          },
+          {
+            "code": "M1",
+            "desc": "Take square root to find multiplier for $r$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct new radius rounded to 3 significant figures"
+          }
+        ],
+        "solution": "If the height of the cone is decreased to $10.8\\text{ cm}$, then $h$ is multiplied by $\\frac{10.8}{14.3} = \\frac{108}{143}$.\n$\\therefore r^2$ is multiplied by $\\frac{143}{108}$ {as $h \\propto \\frac{1}{r^2}$}\n$\\therefore r$ is multiplied by $\\sqrt{\\frac{143}{108}}$ {as $r > 0$}\nSo, the radius of the cone is increased to $2.8 \\times \\sqrt{\\frac{143}{108}} \\approx 3.22\\text{ cm}$.",
+        "ai_explanation": {
+          "concept_rule": "Since $r \\propto \\frac{1}{\\sqrt{h}}$, multiplying $h$ by factor $k$ multiplies $r$ by $\\frac{1}{\\sqrt{k}}$.",
+          "step_by_step": [
+            "Find multiplier for $h$: $\\frac{10.8}{14.3} = \\frac{108}{143}$.",
+            "Invert to find multiplier for $r^2$: $\\frac{143}{108}$.",
+            "Take square root for $r$: $\\sqrt{\\frac{143}{108}}$.",
+            "Multiply initial radius by this factor: $2.8 \\times \\sqrt{\\frac{143}{108}} \\approx 3.22\\text{ cm}$."
+          ],
+          "common_pitfalls": "Forgetting to take the square root of the factor."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "It is decided that the possible values for the radius should be between $2.5\\text{ cm}$ and $3.5\\text{ cm}$. Can you suggest why this was done?",
+        "final_answer": "$\\text{The cones would otherwise be too thin or too wide to be practical to eat.}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Sensible practical reason related to dimensions of ice cream cone"
+          }
+        ],
+        "solution": "The cones would otherwise be too thin or too wide to be practical to eat.",
+        "ai_explanation": {
+          "concept_rule": "Practical constraints limit the acceptable aspect ratio (radius to height) of physical items.",
+          "step_by_step": [
+            "Consider what happens if radius is extremely large: the cone is flat and cannot hold ice cream.",
+            "Consider what happens if height is extremely large: the cone is long and narrow, making it fragile and impractical.",
+            "Conclude that practical eating constraints bound the dimensions."
+          ],
+          "common_pitfalls": "Giving a purely mathematical answer instead of addressing practical context."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q43",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 43,
+    "question_text": "It is suspected that $y$ is inversely proportional to a power of $x$.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Calculate $x^2y$, $x^3y$, and $x^4y$ for the marked points.",
+        "final_answer": "$\\begin{array}{|c|c|c|c|}\\hline x & 1 & 2 & 4 \\\\\\hline y & 2 & \\frac{1}{4} & \\frac{1}{32} \\\\\\hline x^2y & 2 & 1 & \\frac{1}{2} \\\\\\hline x^3y & 2 & 2 & 2 \\\\\\hline x^4y & 2 & 4 & 8 \\\\\\hline\\end{array}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate products $x^2y$, $x^3y$, and $x^4y$ for each column"
+          },
+          {
+            "code": "A1",
+            "desc": "Complete the table correctly"
+          }
+        ],
+        "solution": "For $x = 1, y = 2$:\n$x^2y = 1^2(2) = 2$, $x^3y = 1^3(2) = 2$, $x^4y = 1^4(2) = 2$.\n\nFor $x = 2, y = \\frac{1}{4}$:\n$x^2y = 2^2\\left(\\frac{1}{4}\\right) = 1$, $x^3y = 2^3\\left(\\frac{1}{4}\\right) = 2$, $x^4y = 2^4\\left(\\frac{1}{4}\\right) = 4$.\n\nFor $x = 4, y = \\frac{1}{32}$:\n$x^2y = 4^2\\left(\\frac{1}{32}\\right) = \\frac{1}{2}$, $x^3y = 4^3\\left(\\frac{1}{32}\\right) = 2$, $x^4y = 4^4\\left(\\frac{1}{32}\\right) = 8$.",
+        "ai_explanation": {
+          "concept_rule": "Compute candidate power products $x^n y$ to identify which yields a constant value.",
+          "step_by_step": [
+            "For each column, compute $x^2 y$, $x^3 y$, and $x^4 y$.",
+            "Fill in each calculated value into the table.",
+            "Observe which row produces a constant value across all columns."
+          ],
+          "common_pitfalls": "Errors in simplifying powers of 2 and 4."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Hence determine the correct model connecting $y$ and $x$.",
+        "final_answer": "$y = \\frac{2}{x^3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify that $x^3y = 2$ is constant"
+          },
+          {
+            "code": "A1",
+            "desc": "Express equation in the form $y = \\frac{2}{x^3}$"
+          }
+        ],
+        "solution": "$x^3y = 2$ for each point.\n$\\therefore x^3y = 2$ or $y = \\frac{2}{x^3}$ is the correct model.",
+        "ai_explanation": {
+          "concept_rule": "A relationship of the form $x^n y = k$ corresponds to an inverse variation model $y = \\frac{k}{x^n}$.",
+          "step_by_step": [
+            "Observe that the row $x^3y$ has the constant value $2$ across all points.",
+            "Set up relation $x^3y = 2$.",
+            "Rearrange to solve for $y$: $y = \\frac{2}{x^3}$."
+          ],
+          "common_pitfalls": "Choosing a row where values vary instead of remaining constant."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the value of $y$ when $x = 5$.",
+        "final_answer": "$y = \\frac{2}{125}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 5$ into $y = \\frac{2}{x^3}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate $y$"
+          }
+        ],
+        "solution": "When $x = 5$, $y = \\frac{2}{5^3} = \\frac{2}{125}$.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the value of $x$ into the established model to find the corresponding value of $y$.",
+          "step_by_step": [
+            "Use the model $y = \\frac{2}{x^3}$.",
+            "Substitute $x = 5$: $y = \\frac{2}{5^3}$.",
+            "Evaluate denominator $5^3 = 125$ to get $y = \\frac{2}{125}$."
+          ],
+          "common_pitfalls": "Computing $5^3$ as $15$ or $25$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q44",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 44,
+    "question_text": "The diameters of circular rugs and their corresponding masses are recorded in the table below: $\\begin{array}{|c|c|c|c|c|} \\hline \\text{Diameter } (d\\text{ m}) & 0.77 & 1.22 & 1.69 & 2.25 \\\\ \\hline \\text{Mass } (m\\text{ kg}) & 0.97 & 2.44 & 4.68 & 8.30 \\\\ \\hline \\end{array}$",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Do you think there is direct variation or inverse variation between the variables? Explain your answer.",
+        "final_answer": "$\\text{We expect direct variation between the variables.}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "State that as diameter increases, mass increases, implying direct variation"
+          }
+        ],
+        "solution": "As the diameter of a rug increases, we expect the mass of the rug to increase.\n$\\therefore$ we expect direct variation between the variables.",
+        "ai_explanation": {
+          "concept_rule": "When an increase in one variable leads to an increase in another variable, a direct variation relationship is expected.",
+          "step_by_step": [
+            "Analyze the physical scenario: a larger rug has more material.",
+            "More material means greater mass.",
+            "Conclude that mass increases as diameter increases, so direct variation is expected."
+          ],
+          "common_pitfalls": "Confusing direct variation with inverse variation."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Use technology to obtain a power model which best fits the data.",
+        "final_answer": "$m \\approx 1.64d^2$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Identify correlation coefficient close to 1 indicating an excellent fit"
+          },
+          {
+            "code": "A1",
+            "desc": "State conclusion that power is close to 2 and give model"
+          }
+        ],
+        "solution": "The correlation coefficient $r$ is very close to 1, so the fit is excellent. The power is very close to 2, so it is reasonable to conclude that $m$ is directly proportional to $d^2$. The model is $m \\approx 1.64d^2$.",
+        "ai_explanation": {
+          "concept_rule": "Power regression models fit data to the form $y = ax^b$. If $b \\approx 2$, the relationship is approximately quadratic.",
+          "step_by_step": [
+            "Observe the regression output parameters where $b \\approx 2.00$ and $r \\approx 1$.",
+            "Conclude direct proportionality to $d^2$ and state the model $m \\approx 1.64d^2$."
+          ],
+          "common_pitfalls": "Confusing direct proportionality with linear proportionality."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Estimate the mass of a rug with diameter $1.5\\text{ m}$.",
+        "final_answer": "$\\approx 3.69\\text{ kg}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $d = 1.5$ into the model"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate mass correctly with units"
+          }
+        ],
+        "solution": "When $d = 1.5$, $m \\approx 1.64(1.5)^2 \\approx 3.69$. So, a rug with diameter $1.5\\text{ m}$ has mass $\\approx 3.69\\text{ kg}$.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the given independent variable into the model to predict the dependent variable.",
+          "step_by_step": [
+            "Substitute $d = 1.5$ into $m = 1.64d^2$.",
+            "Evaluate $1.64 \\times 2.25 = 3.69\\text{ kg}$."
+          ],
+          "common_pitfalls": "Forgetting to square the diameter value."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q45",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 45,
+    "question_text": "For each data set, obtain the power model which best fits the data:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\begin{array}{|c|c|c|c|c|} \\hline x & 2 & 3 & 5 & 6 \\\\ \\hline y & 1.13 & 8.60 & 111 & 275 \\\\ \\hline \\end{array}$",
+        "final_answer": "$y \\approx 0.0353x^5$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Observe correlation coefficient $r \\approx 1$ and power $b \\approx 5$"
+          },
+          {
+            "code": "A1",
+            "desc": "State the model equation"
+          }
+        ],
+        "solution": "The correlation coefficient $r$ is very close to 1, so the fit is excellent. The power is very close to 5, so it is reasonable to conclude that $y$ is directly proportional to $x^5$. The model is $y \\approx 0.0353x^5$.",
+        "ai_explanation": {
+          "concept_rule": "Power regression fits $y = ax^b$. When $b$ is near an integer, we infer direct proportionality to $x^b$.",
+          "step_by_step": [
+            "Read the calculator output: $a \\approx 0.035267$, $b \\approx 5.0028$, $r \\approx 0.999999$.",
+            "Round parameters to 3 significant figures to write $y \\approx 0.0353x^5$."
+          ],
+          "common_pitfalls": "Incorrect rounding of the coefficient $a$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\begin{array}{|c|c|c|c|c|c|} \\hline x & 1 & 4 & 5 & 7 & 8 \\\\ \\hline y & 72.1 & 4.6 & 2.9 & 1.5 & 1.1 \\\\ \\hline \\end{array}$",
+        "final_answer": "$y \\approx \\frac{72.6}{x^2}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Observe power $b \\approx -2$ indicating inverse square relationship"
+          },
+          {
+            "code": "A1",
+            "desc": "State model in fractional form"
+          }
+        ],
+        "solution": "The correlation coefficient $r$ is very close to $-1$, so the fit is excellent. The power is very close to $-2$, so it is reasonable to conclude that $y$ is inversely proportional to $x^2$. The model is $y \\approx \\frac{72.6}{x^2}$.",
+        "ai_explanation": {
+          "concept_rule": "A power regression with negative power $b = -n$ corresponds to an inverse relationship $y = \\frac{a}{x^n}$.",
+          "step_by_step": [
+            "From the calculator output, $a \\approx 72.59$, $b \\approx -2.00$, $r \\approx -0.9999$.",
+            "Express $y = 72.6 x^{-2}$ as $y \\approx \\frac{72.6}{x^2}$."
+          ],
+          "common_pitfalls": "Misinterpreting a negative power as a linear negative correlation."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q46",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 46,
+    "question_text": "If $f(x) = 2 \\times 3^{-x}$, find:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$f(0)$",
+        "final_answer": "$2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 0$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to obtain 2"
+          }
+        ],
+        "solution": "$f(0) = 2 \\times 3^0 = 2$",
+        "ai_explanation": {
+          "concept_rule": "Any non-zero number to the power of 0 is 1: $b^0 = 1$.",
+          "step_by_step": [
+            "Replace $x$ with $0$: $f(0) = 2 \\times 3^{-0} = 2 \\times 3^0$.",
+            "Evaluate $3^0 = 1$, giving $2 \\times 1 = 2$."
+          ],
+          "common_pitfalls": "Mistakenly evaluating $3^0$ as $0$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$f(1)$",
+        "final_answer": "$\\frac{2}{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 1$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify negative exponent"
+          }
+        ],
+        "solution": "$f(1) = 2 \\times 3^{-1} = \\frac{2}{3}$",
+        "ai_explanation": {
+          "concept_rule": "Negative exponent rule: $b^{-n} = \\frac{1}{b^n}$.",
+          "step_by_step": [
+            "Substitute $x = 1$: $f(1) = 2 \\times 3^{-1}$.",
+            "Write $3^{-1} = \\frac{1}{3}$.",
+            "Multiply: $2 \\times \\frac{1}{3} = \\frac{2}{3}$."
+          ],
+          "common_pitfalls": "Writing $2 \\times 3^{-1}$ as $(2 \\times 3)^{-1} = \\frac{1}{6}$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$f(-2)$",
+        "final_answer": "$18$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = -2$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate the power and product"
+          }
+        ],
+        "solution": "$f(-2) = 2 \\times 3^2 = 18$",
+        "ai_explanation": {
+          "concept_rule": "Substituting a negative number into a negative power gives a positive exponent: $-(-2) = 2$.",
+          "step_by_step": [
+            "Substitute $x = -2$: $f(-2) = 2 \\times 3^{-(-2)} = 2 \\times 3^2$.",
+            "Compute $3^2 = 9$.",
+            "Compute $2 \\times 9 = 18$."
+          ],
+          "common_pitfalls": "Sign error resulting in $3^{-2} = \\frac{1}{9}$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q47",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 47,
+    "question_text": "For the function $g(x) = 5^x - 5$, show that:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "the $y$-intercept is $-4$",
+        "final_answer": "$-4$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $g(0)$"
+          },
+          {
+            "code": "A1",
+            "desc": "State the $y$-intercept"
+          }
+        ],
+        "solution": "$g(0) = 5^0 - 5 = -4$. Therefore, the $y$-intercept is $-4$.",
+        "ai_explanation": {
+          "concept_rule": "The $y$-intercept occurs where $x = 0$.",
+          "step_by_step": [
+            "Substitute $x = 0$ into $g(x) = 5^x - 5$.",
+            "Evaluate $5^0 - 5 = 1 - 5 = -4$.",
+            "Conclude that the $y$-intercept is $-4$."
+          ],
+          "common_pitfalls": "Thinking $5^0 = 0$ resulting in $-5$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "the $x$-intercept is $1$.",
+        "final_answer": "$1$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $g(1)$ or solve $5^x - 5 = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "State the $x$-intercept"
+          }
+        ],
+        "solution": "$g(1) = 5^1 - 5 = 0$. Therefore, the $x$-intercept is $1$.",
+        "ai_explanation": {
+          "concept_rule": "The $x$-intercept occurs where $g(x) = 0$.",
+          "step_by_step": [
+            "Set $5^x - 5 = 0$.",
+            "Solve $5^x = 5^1$, which gives $x = 1$.",
+            "Conclude the $x$-intercept is $1$."
+          ],
+          "common_pitfalls": "Solving $5^x = 5$ as $x = 0$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q48",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 48,
+    "question_text": "Construct a table of values for $x = -3, -2, -1, 0, 1, 2, 3$, then use your table to graph each function:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = 4 \\times 2^x$",
+        "final_answer": "$Table of values: $\\{(-3, 0.5), (-2, 1), (-1, 2), (0, 4), (1, 8), (2, 16), (3, 32)\\}$ and graph$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate table of values for $x \\in [-3, 3]$"
+          },
+          {
+            "code": "A1",
+            "desc": "Plot points and sketch smooth exponential curve"
+          }
+        ],
+        "solution": "Table of values for $y = 4 \\times 2^x$:\n$x = -3 \\implies y = 4 \\times 2^{-3} = \\frac{1}{2}$\n$x = -2 \\implies y = 4 \\times 2^{-2} = 1$\n$x = -1 \\implies y = 4 \\times 2^{-1} = 2$\n$x = 0 \\implies y = 4 \\times 2^0 = 4$\n$x = 1 \\implies y = 4 \\times 2^1 = 8$\n$x = 2 \\implies y = 4 \\times 2^2 = 16$\n$x = 3 \\implies y = 4 \\times 2^3 = 32$\nPlot these points and draw a smooth exponential growth curve passing through them.",
+        "ai_explanation": {
+          "concept_rule": "Exponential function $y = a \\times b^x$ exhibits exponential growth when $b > 1$.",
+          "step_by_step": [
+            "Compute values of $y$ for $x \\in \\{-3, -2, -1, 0, 1, 2, 3\\}$.",
+            "Identify the horizontal asymptote as $y = 0$.",
+            "Plot the points and connect them with a smooth curve."
+          ],
+          "common_pitfalls": "Drawing a straight line between points instead of a smooth exponential curve."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = 7 + 3^{-x}$",
+        "final_answer": "$Table of values: $\\{(-3, 34), (-2, 16), (-1, 10), (0, 8), (1, \\frac{22}{3}), (2, \\frac{64}{9}), (3, \\frac{190}{27})\\}$ and graph$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate table of values for $x \\in [-3, 3]$"
+          },
+          {
+            "code": "A1",
+            "desc": "Plot points and sketch exponential decay curve with asymptote $y = 7$"
+          }
+        ],
+        "solution": "Table of values for $y = 7 + 3^{-x}$:\n$x = -3 \\implies y = 7 + 3^3 = 34$\n$x = -2 \\implies y = 7 + 3^2 = 16$\n$x = -1 \\implies y = 7 + 3^1 = 10$\n$x = 0 \\implies y = 7 + 3^0 = 8$\n$x = 1 \\implies y = 7 + 3^{-1} = \\frac{22}{3}$\n$x = 2 \\implies y = 7 + 3^{-2} = \\frac{64}{9}$\n$x = 3 \\implies y = 7 + 3^{-3} = \\frac{190}{27}$\nPlot the points and draw a decreasing exponential curve with horizontal asymptote $y = 7$.",
+        "ai_explanation": {
+          "concept_rule": "Functions of the form $y = c + b^{-x}$ decay toward the horizontal asymptote $y = c$ as $x \\to \\infty$.",
+          "step_by_step": [
+            "Evaluate $y$ for each integer $x$ from $-3$ to $3$.",
+            "Recognize that as $x \\to \\infty$, $3^{-x} \\to 0$, so $y \\to 7$.",
+            "Plot points and sketch curve approaching $y = 7$ from above."
+          ],
+          "common_pitfalls": "Forgetting to add 7 to each term."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q49",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 49,
+    "question_text": "Consider $y = -1 + 2^{-x}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the $y$-intercept.",
+        "final_answer": "$y\\text{-intercept} = 0, x\\text{-intercept} = 0$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 0$ into $y = -1 + 2^{-x}$"
+          },
+          {
+            "code": "A1",
+            "desc": "State that both intercepts are 0"
+          }
+        ],
+        "solution": "When $x = 0$, $y = -1 + 1 = 0$. Therefore, the $y$-intercept is 0, and the $x$-intercept is 0.",
+        "ai_explanation": {
+          "concept_rule": "Find $y$-intercept by evaluating $y$ at $x = 0$. If $y = 0$ when $x = 0$, the origin $(0,0)$ is both the $x$- and $y$-intercept.",
+          "step_by_step": [
+            "Substitute $x = 0$: $y = -1 + 2^0 = -1 + 1 = 0$.",
+            "Since $(0,0)$ lies on the curve, the graph passes through the origin.",
+            "Conclude both intercepts are 0."
+          ],
+          "common_pitfalls": "Assuming an exponential function cannot have intercepts at the origin."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find any asymptotes of the function.",
+        "final_answer": "$y = -1$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the horizontal asymptote equation"
+          }
+        ],
+        "solution": "The horizontal asymptote is $y = -1$.",
+        "ai_explanation": {
+          "concept_rule": "As $x \\to \\infty$, $2^{-x} \\to 0$, so $y = -1 + 2^{-x} \\to -1$.",
+          "step_by_step": [
+            "Analyze the behavior of $2^{-x}$ as $x \\to \\infty$.",
+            "Since $2^{-x} \\to 0$, $y \\to -1 + 0 = -1$.",
+            "State the equation as $y = -1$."
+          ],
+          "common_pitfalls": "Writing just '$-1$' instead of the line equation '$y = -1$'."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "State the domain and range of the function.",
+        "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y > -1\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the domain"
+          },
+          {
+            "code": "A1",
+            "desc": "State the range"
+          }
+        ],
+        "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$. The range is $\\{y \\mid y > -1\\}$.",
+        "ai_explanation": {
+          "concept_rule": "The exponential function is defined for all real numbers, and $2^{-x} > 0$ for all $x$, so $-1 + 2^{-x} > -1$.",
+          "step_by_step": [
+            "Domain is all real numbers $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+            "Since $2^{-x} > 0$, $y = -1 + 2^{-x} > -1$.",
+            "Range is $\\{y \\mid y > -1\\}$."
+          ],
+          "common_pitfalls": "Writing range as $y \\ge -1$ instead of strict inequality $y > -1$."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Hence sketch the function.",
+        "final_answer": "$Graph of $y = -1 + 2^{-x}$ showing asymptote $y = -1$ and passing through $(0,0)$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Show horizontal asymptote $y = -1$"
+          },
+          {
+            "code": "A1",
+            "desc": "Sketch decreasing exponential curve through $(0,0)$"
+          }
+        ],
+        "solution": "Sketch the curve of $y = -1 + 2^{-x}$ passing through the origin $(0,0)$, decreasing as $x$ increases, and approaching the horizontal dashed asymptote $y = -1$.",
+        "ai_explanation": {
+          "concept_rule": "A decreasing exponential curve transformed downward by 1 unit.",
+          "step_by_step": [
+            "Draw the asymptote $y = -1$ with a dashed line.",
+            "Plot the intercept $(0,0)$.",
+            "Draw a smooth decreasing curve approaching $y = -1$ as $x \\to \\infty$."
+          ],
+          "common_pitfalls": "Letting the curve cross the horizontal asymptote."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q50",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 50,
+    "question_text": "The exponential function $y = a \\times 2^x + b$ passes through the points alongside: $\\begin{array}{|c|c|c|c|c|} \\hline x & 0 & 1 & 2 & 3 \\\\ \\hline y & 20 & p & 35 & q \\\\ \\hline \\end{array}$",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Write down two linear equations which could be used to determine the values of $a$ and $b$.",
+        "final_answer": "$a + b = 20 \\text{ and } 4a + b = 35$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $(0, 20)$ into the model"
+          },
+          {
+            "code": "A1",
+            "desc": "Form equation (1): $a + b = 20$"
+          },
+          {
+            "code": "M1",
+            "desc": "Substitute $(2, 35)$ into the model"
+          },
+          {
+            "code": "A1",
+            "desc": "Form equation (2): $4a + b = 35$"
+          }
+        ],
+        "solution": "When $x = 0$, $y = 20 \\implies 20 = a \\times 2^0 + b \\implies a + b = 20 \\quad \\text{--- (1)}$. When $x = 2$, $y = 35 \\implies 35 = a \\times 2^2 + b \\implies 4a + b = 35 \\quad \\text{--- (2)}$.",
+        "ai_explanation": {
+          "concept_rule": "Substitute known coordinate pairs into the general formula to set up a system of linear equations in $a$ and $b$.",
+          "step_by_step": [
+            "At $x = 0$, $2^0 = 1$, so $a(1) + b = 20$, giving $a + b = 20$.",
+            "At $x = 2$, $2^2 = 4$, so $a(4) + b = 35$, giving $4a + b = 35$."
+          ],
+          "common_pitfalls": "Incorrectly calculating $2^0$ as 0."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Solve the linear equations simultaneously to find $a$ and $b$.",
+        "final_answer": "$a = 5 \\text{ and } b = 15$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Solve the simultaneous equations for $a$"
+          },
+          {
+            "code": "A1",
+            "desc": "Find $a = 5$"
+          },
+          {
+            "code": "A1",
+            "desc": "Find $b = 15$"
+          }
+        ],
+        "solution": "Using (1), $b = 20 - a \\quad \\text{--- (3)}$. Substituting $b = 20 - a$ into (2) gives $4a + 20 - a = 35 \\implies 3a = 15 \\implies a = 5$. Substituting $a = 5$ into (3) gives $b = 20 - 5 = 15$. Therefore, $a = 5$ and $b = 15$.",
+        "ai_explanation": {
+          "concept_rule": "Solve simultaneous linear equations by substitution or elimination.",
+          "step_by_step": [
+            "Subtract equation (1) from equation (2): $(4a + b) - (a + b) = 35 - 20 \\implies 3a = 15$.",
+            "Divide by 3: $a = 5$.",
+            "Substitute $a = 5$ into $a + b = 20$: $5 + b = 20 \\implies b = 15$."
+          ],
+          "common_pitfalls": "Arithmetic errors when subtracting negative numbers."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Hence find the values of $p$ and $q$.",
+        "final_answer": "$p = 25, q = 55$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 1$ into $y = 5 \\times 2^x + 15$ to find $p$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain $p = 25$"
+          },
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 3$ into $y = 5 \\times 2^x + 15$ to find $q$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain $q = 55$"
+          }
+        ],
+        "solution": "Using part b, $y = 5 \\times 2^x + 15$.\nWhen $x = 1$, $y = p \\implies p = 5 \\times 2^1 + 15 = 10 + 15 = 25$.\nWhen $x = 3$, $y = q \\implies q = 5 \\times 2^3 + 15 = 5 \\times 8 + 15 = 40 + 15 = 55$.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate the fully determined model $y = 5 \\times 2^x + 15$ at given $x$-values.",
+          "step_by_step": [
+            "For $p$, evaluate at $x = 1$: $5(2) + 15 = 25$.",
+            "For $q$, evaluate at $x = 3$: $5(8) + 15 = 55$."
+          ],
+          "common_pitfalls": "Calculating $5 \\times 2^3$ as $(5 \\times 2)^3 = 1000$ instead of following order of operations."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q51",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 51,
+    "question_text": "Consider the exponential function $f(x) = 2 \\times \\left(\\frac{1}{3}\\right)^x + 1$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Find $f(0)$",
+        "final_answer": "$3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 0$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to obtain 3"
+          }
+        ],
+        "solution": "$f(0) = 2 + 1 = 3$",
+        "ai_explanation": {
+          "concept_rule": "$(\\frac{1}{3})^0 = 1$, so $f(0) = 2(1) + 1$.",
+          "step_by_step": [
+            "Substitute $x = 0$: $f(0) = 2 \\times (\\frac{1}{3})^0 + 1$.",
+            "Simplify to $2(1) + 1 = 3$."
+          ],
+          "common_pitfalls": "Miscalculating the zero power as 0."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Find $f(2)$",
+        "final_answer": "$\\frac{11}{9}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = 2$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify to obtain $\\frac{11}{9}$"
+          }
+        ],
+        "solution": "$f(2) = 2 \\times \\left(\\frac{1}{3}\\right)^2 + 1 = \\frac{2}{9} + 1 = \\frac{11}{9}$",
+        "ai_explanation": {
+          "concept_rule": "Square the fraction and add 1.",
+          "step_by_step": [
+            "Calculate $(\\frac{1}{3})^2 = \\frac{1}{9}$.",
+            "Multiply by 2: $2 \\times \\frac{1}{9} = \\frac{2}{9}$.",
+            "Add 1: $\\frac{2}{9} + \\frac{9}{9} = \\frac{11}{9}$."
+          ],
+          "common_pitfalls": "Failing to find a common denominator when adding 1."
+        }
+      },
+      {
+        "subpart": "a iii",
+        "stem": "Find $f(-1)$",
+        "final_answer": "$7$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $x = -1$ into $f(x)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate to obtain 7"
+          }
+        ],
+        "solution": "$f(-1) = 2 \\times \\left(\\frac{1}{3}\\right)^{-1} + 1 = 2 \\times 3 + 1 = 7$",
+        "ai_explanation": {
+          "concept_rule": "A fraction to a negative power is inverted: $(\\frac{1}{3})^{-1} = 3$.",
+          "step_by_step": [
+            "Invert base: $(\\frac{1}{3})^{-1} = 3$.",
+            "Multiply: $2 \\times 3 = 6$.",
+            "Add 1: $6 + 1 = 7$."
+          ],
+          "common_pitfalls": "Inverting the entire expression rather than just the base of the exponent."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "State the equation of the horizontal asymptote.",
+        "final_answer": "$y = 1$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the horizontal asymptote"
+          }
+        ],
+        "solution": "The horizontal asymptote is $y = 1$.",
+        "ai_explanation": {
+          "concept_rule": "As $x \\to \\infty$, $(\\frac{1}{3})^x \\to 0$, so $f(x) \\to 1$.",
+          "step_by_step": [
+            "Examine behavior as $x \\to \\infty$.",
+            "$2(\\frac{1}{3})^x \\to 0$.",
+            "Therefore, $y = 0 + 1 = 1$ is the asymptote."
+          ],
+          "common_pitfalls": "Stating $y = 0$ without considering the vertical translation $+1$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Sketch the graph of the function.",
+        "final_answer": "$Graph of $f(x) = 2 \\times (\\frac{1}{3})^x + 1$ showing asymptote $y = 1$ and key points$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Draw horizontal asymptote $y = 1$"
+          },
+          {
+            "code": "A1",
+            "desc": "Sketch decreasing curve passing through $(-1, 7)$, $(0, 3)$, and $(2, \\frac{11}{9})$"
+          }
+        ],
+        "solution": "Sketch the curve showing a horizontal asymptote at $y = 1$, passing through $(-1, 7)$, $(0, 3)$, and $(2, \\frac{11}{9})$.",
+        "ai_explanation": {
+          "concept_rule": "Graph of an exponential decay function shifted up by 1.",
+          "step_by_step": [
+            "Draw the horizontal line $y = 1$ as a dashed line.",
+            "Plot the $y$-intercept $(0, 3)$ and points $(-1, 7)$, $(2, \\frac{11}{9})$.",
+            "Draw a smooth decreasing curve asymptotic to $y = 1$."
+          ],
+          "common_pitfalls": "Drawing the curve crossing the asymptote line $y = 1$."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "State the domain and range of the function.",
+        "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y > 1\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State domain"
+          },
+          {
+            "code": "A1",
+            "desc": "State range"
+          }
+        ],
+        "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$. The range is $\\{y \\mid y > 1\\}$.",
+        "ai_explanation": {
+          "concept_rule": "Domain of any basic exponential function is $\\mathbb{R}$. Since $2(\\frac{1}{3})^x > 0$, the range is $y > 1$.",
+          "step_by_step": [
+            "The function is defined for all $x$, so domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+            "Since $2(\\frac{1}{3})^x > 0$ for all $x$, $f(x) > 1$.",
+            "Range is $\\{y \\mid y > 1\\}$."
+          ],
+          "common_pitfalls": "Including the asymptote boundary in the range ($y \\ge 1$)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q52",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 52,
+    "question_text": "Use technology to solve:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$5^x = 14$",
+        "final_answer": "$x \\approx 1.64$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up graphs $Y_1 = 5^X$ and $Y_2 = 14$"
+          },
+          {
+            "code": "A1",
+            "desc": "Find intersection point $x \\approx 1.64$"
+          }
+        ],
+        "solution": "We graph $Y_1 = 5^X$ and $Y_2 = 14$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 1.64$.",
+        "ai_explanation": {
+          "concept_rule": "Solve an exponential equation graphically by finding the $x$-coordinate of the intersection of $Y_1$ and $Y_2$.",
+          "step_by_step": [
+            "Plot $Y_1 = 5^x$ and $Y_2 = 14$.",
+            "Find the intersection using the intersect function on technology.",
+            "Round to 3 significant figures: $x \\approx 1.64$."
+          ],
+          "common_pitfalls": "Reading the $y$-value instead of the $x$-value from the intersection display."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$3 \\times 2^{x-1} = 60$",
+        "final_answer": "$x \\approx 5.32$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up graphs $Y_1 = 3 \\times 2^{X-1}$ and $Y_2 = 60$"
+          },
+          {
+            "code": "A1",
+            "desc": "Find intersection point $x \\approx 5.32$"
+          }
+        ],
+        "solution": "We graph $Y_1 = 3 \\times 2^{X-1}$ and $Y_2 = 60$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 5.32$.",
+        "ai_explanation": {
+          "concept_rule": "Graphical solution of $3 \\times 2^{x-1} = 60$.",
+          "step_by_step": [
+            "Enter $Y_1 = 3 \\times 2^{x-1}$ and $Y_2 = 60$.",
+            "Calculate intersection point: $x = 5.3219...$",
+            "Round to 3 significant figures: $x \\approx 5.32$."
+          ],
+          "common_pitfalls": "Entering $3 \\times 2^{x}-1$ instead of $3 \\times 2^{x-1}$ into the calculator."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$40 \\times (0.9)^x = 25$",
+        "final_answer": "$x \\approx 4.46$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up graphs $Y_1 = 40 \\times (0.9)^X$ and $Y_2 = 25$"
+          },
+          {
+            "code": "A1",
+            "desc": "Find intersection point $x \\approx 4.46$"
+          }
+        ],
+        "solution": "We graph $Y_1 = 40 \\times (0.9)^X$ and $Y_2 = 25$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 4.46$.",
+        "ai_explanation": {
+          "concept_rule": "Graphical solution of $40 \\times (0.9)^x = 25$.",
+          "step_by_step": [
+            "Enter $Y_1 = 40 \\times (0.9)^x$ and $Y_2 = 25$.",
+            "Find the intersection on technology: $x = 4.4629...$",
+            "Round to 3 significant figures: $x \\approx 4.46$."
+          ],
+          "common_pitfalls": "Incorrect viewing window preventing the intersection point from being displayed."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q53",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 53,
+    "question_text": "The graph shows the function $f(x) = 2.5 - a^x$ where $a$ is a positive constant. The point $(3, -5.5)$ lies on the graph.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Write down the coordinates of $P$.",
+        "final_answer": "$(0, 1.5)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $f(0) = 2.5 - a^0$"
+          },
+          {
+            "code": "A1",
+            "desc": "State the coordinates of $P$"
+          }
+        ],
+        "solution": "$f(0) = 2.5 - a^0 = 2.5 - 1 = 1.5 \\quad \\{a > 0\\}$. Therefore, $P$ has coordinates $(0, 1.5)$.",
+        "ai_explanation": {
+          "concept_rule": "Point $P$ is the $y$-intercept where $x = 0$.",
+          "step_by_step": [
+            "Substitute $x = 0$ into $f(x) = 2.5 - a^x$.",
+            "Use $a^0 = 1$ to get $f(0) = 2.5 - 1 = 1.5$.",
+            "State coordinates as $(0, 1.5)$."
+          ],
+          "common_pitfalls": "Forgetting that $a^0 = 1$ for any $a > 0$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the value of $a$.",
+        "final_answer": "$a = 2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $(3, -5.5)$ into $f(x)$"
+          },
+          {
+            "code": "M1",
+            "desc": "Solve for $a^3$"
+          },
+          {
+            "code": "A1",
+            "desc": "Determine $a = 2$"
+          }
+        ],
+        "solution": "The point $(3, -5.5)$ lies on the graph $\\implies f(3) = -5.5 \\implies -5.5 = 2.5 - a^3 \\implies a^3 = 8 \\implies a = 2$.",
+        "ai_explanation": {
+          "concept_rule": "A given point satisfies the equation of the function.",
+          "step_by_step": [
+            "Set $-5.5 = 2.5 - a^3$.",
+            "Rearrange to solve for $a^3$: $a^3 = 2.5 + 5.5 = 8$.",
+            "Take the cube root: $a = \\sqrt[3]{8} = 2$."
+          ],
+          "common_pitfalls": "Sign error when rearranging $-5.5 = 2.5 - a^3$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the equation of the horizontal asymptote.",
+        "final_answer": "$y = 2.5$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the horizontal asymptote equation"
+          }
+        ],
+        "solution": "The horizontal asymptote has equation $y = 2.5$.",
+        "ai_explanation": {
+          "concept_rule": "As $x \\to -\\infty$, $a^x \\to 0$ (for $a > 1$), so $f(x) \\to 2.5$.",
+          "step_by_step": [
+            "Analyze behavior as $x \\to -\\infty$: $2^x \\to 0$.",
+            "Thus $f(x) \\to 2.5 - 0 = 2.5$.",
+            "The horizontal asymptote is $y = 2.5$."
+          ],
+          "common_pitfalls": "Confusing the horizontal asymptote with an axis intercept."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q54",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 54,
+    "question_text": "The population of bees in a hive after $t$ weeks is given by $P(t) = a(0.95)^t + b$.\nInitially, there are 2500 bees, and after 2 weeks there are 2383 bees.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Find the value of $a$.",
+        "final_answer": "$a = 1200$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up equations using $P(0) = 2500$ and $P(2) = 2383$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve simultaneously to find $a = 1200$"
+          }
+        ],
+        "solution": "$P(t) = a(0.95)^t + b$. Now $P(0) = 2500 \\implies 2500 = a(0.95)^0 + b \\implies a + b = 2500 \\quad \\text{--- (1)}$. And $P(2) = 2383 \\implies 2383 = a(0.95)^2 + b \\implies 0.9025a + b = 2383 \\quad \\text{--- (2)}$. Solving (1) and (2) simultaneously, we find: $a = 1200$.",
+        "ai_explanation": {
+          "concept_rule": "Formulate two equations from known values and solve the system.",
+          "step_by_step": [
+            "Substitute $t = 0$: $a(1) + b = 2500$.",
+            "Substitute $t = 2$: $a(0.9025) + b = 2383$.",
+            "Subtract (2) from (1): $0.0975a = 117 \\implies a = 1200$."
+          ],
+          "common_pitfalls": "Incorrect squaring of 0.95."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Find the value of $b$.",
+        "final_answer": "$b = 1300$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $a = 1200$ into $a + b = 2500$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain $b = 1300$"
+          }
+        ],
+        "solution": "From $a + b = 2500$ and $a = 1200$, $b = 2500 - 1200 = 1300$.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the value of $a$ into one of the linear equations to find $b$.",
+          "step_by_step": [
+            "Use equation $a + b = 2500$.",
+            "Substitute $a = 1200$: $1200 + b = 2500$.",
+            "Subtract 1200: $b = 1300$."
+          ],
+          "common_pitfalls": "Simple subtraction errors."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "Find the population after 3 weeks.",
+        "final_answer": "$\\approx 2330\\text{ bees}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $P(3) = 1200(0.95)^3 + 1300$"
+          },
+          {
+            "code": "A1",
+            "desc": "Round answer appropriately to nearest ten"
+          }
+        ],
+        "solution": "$P(t) = 1200(0.95)^t + 1300$. $P(3) = 1200(0.95)^3 + 1300 = 2328.85$. After 3 weeks, there are about 2330 bees.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate the population model at $t = 3$.",
+          "step_by_step": [
+            "Substitute $t = 3$ into $P(t) = 1200(0.95)^t + 1300$.",
+            "Calculate $1200 \\times 0.857375 + 1300 = 1028.85 + 1300 = 2328.85$.",
+            "Round to nearest ten: about 2330 bees."
+          ],
+          "common_pitfalls": "Forgetting to add $b = 1300$."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "Find the population after 5 weeks.",
+        "final_answer": "$\\approx 2230\\text{ bees}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluate $P(5) = 1200(0.95)^5 + 1300$"
+          },
+          {
+            "code": "A1",
+            "desc": "Round answer appropriately to nearest ten"
+          }
+        ],
+        "solution": "$P(5) = 1200(0.95)^5 + 1300 \\approx 2228.54$. After 5 weeks, there are about 2230 bees.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate the population model at $t = 5$.",
+          "step_by_step": [
+            "Substitute $t = 5$ into $P(t) = 1200(0.95)^t + 1300$.",
+            "Calculate $1200(0.95)^5 + 1300 \\approx 928.54 + 1300 = 2228.54$.",
+            "Round to nearest ten: about 2230 bees."
+          ],
+          "common_pitfalls": "Incorrect exponent evaluation."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "State the horizontal asymptote, and interpret this value.",
+        "final_answer": "$1300\\text{ bees}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Identify horizontal asymptote $P = 1300$"
+          },
+          {
+            "code": "A1",
+            "desc": "State that population approaches 1300 bees"
+          }
+        ],
+        "solution": "The horizontal asymptote is $P = 1300$. As $t \\to \\infty$, the population approaches 1300 bees.",
+        "ai_explanation": {
+          "concept_rule": "As $t \\to \\infty$, $(0.95)^t \\to 0$, so $P(t) \\to b$.",
+          "step_by_step": [
+            "Analyze the long-term behavior as $t \\to \\infty$.",
+            "Since $0.95 < 1$, $(0.95)^t \\to 0$.",
+            "Therefore $P(t) \\to 1200(0) + 1300 = 1300$."
+          ],
+          "common_pitfalls": "Assuming population decreases to 0 instead of the asymptote."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q55",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 55,
+    "question_text": "The graph alongside shows the percentage $P$ of radioactive Carbon-14 remaining in an organism $t$ thousands of years after it dies.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Use the graph to estimate the percentage of Carbon-14 remaining after 4000 years.",
+        "final_answer": "$\\approx 60\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Read graph at $t = 4$"
+          },
+          {
+            "code": "A1",
+            "desc": "State approximate percentage"
+          }
+        ],
+        "solution": "When $t = 4$, $P \\approx 60$. Therefore, there is about $60\\%$ of Carbon-14 remaining after 4000 years.",
+        "ai_explanation": {
+          "concept_rule": "Extract information directly from the given graph of $P$ against $t$.",
+          "step_by_step": [
+            "Locate $t = 4$ on the horizontal axis (representing thousands of years).",
+            "Move vertically to meet the curve.",
+            "Read corresponding value on the vertical axis: $P \\approx 60\\%$."
+          ],
+          "common_pitfalls": "Misreading the scale of the axes."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Use the graph to estimate the number of years for the percentage of Carbon-14 to fall to 50%.",
+        "final_answer": "$\\approx 5500\\text{ years}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Read graph at $P = 50$ to find $t$"
+          },
+          {
+            "code": "A1",
+            "desc": "Convert $t$ in thousands to years"
+          }
+        ],
+        "solution": "When $P = 50$, $t \\approx 5.5$. Therefore, it will take approximately 5500 years for the percentage of Carbon-14 to fall to $50\\%$.",
+        "ai_explanation": {
+          "concept_rule": "Find the independent variable corresponding to a given percentage on the graph.",
+          "step_by_step": [
+            "Locate $P = 50$ on the vertical axis.",
+            "Move horizontally to meet the curve.",
+            "Read the $t$-value: $t \\approx 5.5$ thousand years, which is 5500 years."
+          ],
+          "common_pitfalls": "Forgetting to multiply $t$ by 1000 to express in years."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "The equation of the graph is $P = 100 \\times (1.1318)^{-t},\\; t \\ge 0$.\nCalculate the percentage of Carbon-14 remaining after 8000 years.",
+        "final_answer": "$\\approx 37.1\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $t = 8$ into the equation"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate percentage to 3 significant figures"
+          }
+        ],
+        "solution": "When $t = 8$, $P = 100 \\times (1.1318)^{-8} \\approx 37.1$. Therefore, there is about $37.1\\%$ of Carbon-14 remaining after 8000 years.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the value of $t$ (in thousands of years) into the formula.",
+          "step_by_step": [
+            "Substitute $t = 8$ into $P = 100 \\times (1.1318)^{-t}$.",
+            "Compute $(1.1318)^{-8} \\approx 0.3707$.",
+            "Multiply by 100: $\\approx 37.1\\%$."
+          ],
+          "common_pitfalls": "Substituting $t = 8000$ instead of $t = 8$."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "The equation of the graph is $P = 100 \\times (1.1318)^{-t},\\; t \\ge 0$.\nHow long will it take for the percentage to fall to 15%?",
+        "final_answer": "$\\approx 15300\\text{ years}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up equation $15 = 100 \\times (1.1318)^{-t}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for $t \\approx 15.3$ using technology"
+          },
+          {
+            "code": "A1",
+            "desc": "State answer in years"
+          }
+        ],
+        "solution": "When $P = 15$, $15 = 100 \\times (1.1318)^{-t} \\implies t \\approx 15.3$ \\{using technology\\}. Therefore, it will take approximately 15300 years for the percentage of Carbon-14 to fall to $15\\%$.",
+        "ai_explanation": {
+          "concept_rule": "Solve an exponential equation using graphing technology or logarithms.",
+          "step_by_step": [
+            "Set up $15 = 100(1.1318)^{-t}$.",
+            "Solve with GDC: $t \\approx 15.3226$.",
+            "Convert $t$ to years: $15.3226 \\times 1000 \\approx 15300$ years."
+          ],
+          "common_pitfalls": "Leaving the final answer as 15.3 without converting from thousands of years to years."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q56",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 56,
+    "question_text": "The number of people $N$ on a small island $t$ years after settlement, increases according to the formula $N = 120 \\times (1.04)^t$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the number of people who started the settlement.",
+        "final_answer": "$120\\text{ people}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $t = 0$ into $N = 120 \\times (1.04)^t$"
+          },
+          {
+            "code": "A1",
+            "desc": "State initial population"
+          }
+        ],
+        "solution": "When $t = 0$, $N = 120$. Therefore, there were 120 people who started the settlement.",
+        "ai_explanation": {
+          "concept_rule": "The initial quantity is found when $t = 0$.",
+          "step_by_step": [
+            "Substitute $t = 0$ into $N = 120 \\times (1.04)^t$.",
+            "Evaluate $(1.04)^0 = 1$.",
+            "$N = 120 \\times 1 = 120$."
+          ],
+          "common_pitfalls": "Assuming initial population requires complex calculations."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the number of people on the island after 4 years.",
+        "final_answer": "$\\approx 140\\text{ people}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute $t = 4$ into $N = 120 \\times (1.04)^t$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluate and round to nearest whole number"
+          }
+        ],
+        "solution": "When $t = 4$, $N = 120 \\times (1.04)^4 \\approx 140$. Therefore, there were about 140 people on the island after 4 years.",
+        "ai_explanation": {
+          "concept_rule": "Evaluate exponential growth model after a given time period.",
+          "step_by_step": [
+            "Substitute $t = 4$ into the formula.",
+            "Calculate $120 \\times (1.04)^4 = 120 \\times 1.16985856 \\approx 140.38$.",
+            "Round to a whole number of people: about 140 people."
+          ],
+          "common_pitfalls": "Not rounding to a whole number when reporting people."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "How many years will it take for the number of people to double?",
+        "final_answer": "$t \\approx 17.7\\text{ years}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up the doubling equation $240 = 120 \\times (1.04)^t$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $t \\approx 17.7$ years"
+          }
+        ],
+        "solution": "When $N = 120 \\times 2 = 240$, $240 = 120 \\times (1.04)^t$.\nUsing technology, $t \\approx 17.7$.\nTherefore, it will take about $17.7$ years for the number of people to double.",
+        "ai_explanation": {
+          "concept_rule": "To find the doubling time in an exponential growth model $N(t) = N_0 b^t$, set $N(t) = 2N_0$ and solve for $t$ using logarithms or graphical technology.",
+          "step_by_step": [
+            "Double the initial value to get $N = 240$.",
+            "Set $240 = 120 \\times (1.04)^t$.",
+            "Divide by 120 to obtain $2 = (1.04)^t$.",
+            "Solve for $t = \\frac{\\ln 2}{\\ln 1.04} \\approx 17.7$ years."
+          ],
+          "common_pitfalls": "Forgetting that doubling refers to twice the initial value, or incorrectly applying logarithms without isolating the exponential base first."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q57",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 57,
+    "question_text": "A radioactive substance has a half-life of 4 days. The weight of a sample of this substance after $t$ days is $W(t) = 100 \\times a^t\\text{ mg}$, where $a > 0$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the initial weight of the sample.",
+        "final_answer": "$100\\text{ mg}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Evaluating $W(0)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating initial weight as $100\\text{ mg}$"
+          }
+        ],
+        "solution": "$W(t) = 100 \\times a^t$\n$W(0) = 100 \\times a^0 = 100$ (since $a > 0$).\nThe initial weight of the sample is $100\\text{ mg}$.",
+        "ai_explanation": {
+          "concept_rule": "The initial value in an exponential function $f(t) = k \\cdot a^t$ is found at $t = 0$, where $a^0 = 1$.",
+          "step_by_step": [
+            "Substitute $t = 0$ into $W(t)$.",
+            "Use the property $a^0 = 1$ for any non-zero $a$.",
+            "Calculate $W(0) = 100\\text{ mg}$."
+          ],
+          "common_pitfalls": "Assuming $a^0 = 0$ instead of $1$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Calculate the value of $a$, correct to 4 decimal places, and interpret this value.",
+        "final_answer": "$a = \\frac{1}{\\sqrt[4]{2}} \\approx 0.8409$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Formulating the equation for half-life at $t = 4$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation and interpretation of $a$"
+          }
+        ],
+        "solution": "After 4 days, the sample is $\\frac{1}{2} \\times 100 = 50\\text{ mg}$.\n$\\therefore W(4) = 50$\n$50 = 100 \\times a^4$\n$a^4 = \\frac{1}{2}$\n$a = \\frac{1}{\\sqrt[4]{2}} \\approx 0.8409$ (as $a > 0$).\nThe weight of the sample on any given day is reduced to about $84.09\\%$ of this weight the following day.",
+        "ai_explanation": {
+          "concept_rule": "The growth/decay factor $a$ is obtained by solving $a^n = \\text{fraction remaining}$ over $n$ time intervals.",
+          "step_by_step": [
+            "Recognize that half-life is 4 days, meaning $W(4) = 50$.",
+            "Set up $100 \\times a^4 = 50$.",
+            "Simplify to $a^4 = 0.5$.",
+            "Take the fourth root: $a = (0.5)^{1/4} \\approx 0.8409$."
+          ],
+          "common_pitfalls": "Dividing 0.5 by 4 instead of taking the fourth root."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the weight of the sample after 6 days.",
+        "final_answer": "$\\approx 35.4\\text{ mg}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substituting $t = 6$ into the model"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating weight to about $35.4\\text{ mg}$"
+          }
+        ],
+        "solution": "$W(t) = 100 \\times \\left(\\frac{1}{\\sqrt[4]{2}}\\right)^t$\n$W(6) = 100 \\times \\left(\\frac{1}{\\sqrt[4]{2}}\\right)^6 \\approx 35.4$\nThe weight of the sample after 6 days is about $35.4\\text{ mg}$.",
+        "ai_explanation": {
+          "concept_rule": "Substitute the given time value into the established exponential formula.",
+          "step_by_step": [
+            "Identify $t = 6$.",
+            "Evaluate $W(6) = 100 \\times (2^{-1/4})^6 = 100 \\times 2^{-1.5}$.",
+            "Compute $100 \\times \\frac{1}{2\\sqrt{2}} \\approx 35.36\\text{ mg}$."
+          ],
+          "common_pitfalls": "Rounding intermediate values of $a$ too early, leading to rounding errors in the final result."
+        }
+      },
+      {
+        "subpart": "d i",
+        "stem": "How long will it take for the weight of the sample to fall to 60 mg?",
+        "final_answer": "$\\approx 2.95\\text{ days}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $W(t) = 60$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $t \\approx 2.95$ days"
+          }
+        ],
+        "solution": "When $W(t) = 60$, $60 = 100 \\times 2^{-\\frac{t}{4}}$.\nUsing technology, $t \\approx 2.95$.\nIt will take about $2.95$ days for the weight to fall to $60\\text{ mg}$.",
+        "ai_explanation": {
+          "concept_rule": "Solve an exponential equation for the unknown time $t$ given a target output value.",
+          "step_by_step": [
+            "Set $60 = 100 \\times 2^{-t/4}$.",
+            "Divide by 100 to get $0.6 = 2^{-t/4}$.",
+            "Take natural logs: $\\ln(0.6) = -\\frac{t}{4} \\ln 2$.",
+            "Compute $t = -\\frac{4 \\ln(0.6)}{\\ln 2} \\approx 2.95$ days."
+          ],
+          "common_pitfalls": "Sign error when working with negative exponents."
+        }
+      },
+      {
+        "subpart": "d ii",
+        "stem": "How long will it take for the weight of the sample to fall to 30 mg?",
+        "final_answer": "$\\approx 6.95\\text{ days}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting $W(t) = 30$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving for $t \\approx 6.95$ days"
+          }
+        ],
+        "solution": "When $W(t) = 30$, $30 = 100 \\times 2^{-\\frac{t}{4}}$.\nUsing technology, $t \\approx 6.95$.\nIt will take about $6.95$ days for the weight to fall to $30\\text{ mg}$.",
+        "ai_explanation": {
+          "concept_rule": "Solve an exponential decay equation using logarithms or graphing calculator.",
+          "step_by_step": [
+            "Set $30 = 100 \\times 2^{-t/4}$.",
+            "Divide by 100: $0.3 = 2^{-t/4}$.",
+            "Solve for $t$: $t = -\\frac{4 \\ln(0.3)}{\\ln 2} \\approx 6.95$ days."
+          ],
+          "common_pitfalls": "Incorrect calculation of logarithms with base 2 or natural logarithms."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q58",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 58,
+    "question_text": "Sketch on the same set of axes the graph of $y = e^x$:\nFor each graph, state the $y$-intercept and equation of the horizontal asymptote.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = e^x - 1$",
+        "final_answer": "$y\\text{-intercept} = 0$, horizontal asymptote: $y = -1$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Identifying transformation as a vertical translation of 1 unit downwards"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating $y$-intercept is 0 and horizontal asymptote is $y = -1$"
+          }
+        ],
+        "solution": "$y = e^x - 1$ is a vertical translation of $y = e^x$ by 1 unit downwards.\nThe $y$-intercept is $0$, and the horizontal asymptote is $y = -1$.",
+        "ai_explanation": {
+          "concept_rule": "For a vertical translation $y = f(x) + c$, the horizontal asymptote shifts by $c$ to $y = c$, and the $y$-intercept shifts to $f(0) + c$.",
+          "step_by_step": [
+            "Start with $y = e^x$ having horizontal asymptote $y = 0$ and $y$-intercept $(0,1)$.",
+            "Shift downwards by 1 unit.",
+            "Asymptote becomes $y = 0 - 1 = -1$.",
+            "Intercept becomes $(0, 1 - 1) = (0, 0)$."
+          ],
+          "common_pitfalls": "Forgetting to translate the horizontal asymptote along with the function."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = 2e^x$",
+        "final_answer": "$y\\text{-intercept} = 2$, horizontal asymptote: $y = 0$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Identifying transformation as a vertical stretch with scale factor 2"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating $y$-intercept is 2 and horizontal asymptote is $y = 0$"
+          }
+        ],
+        "solution": "$y = 2e^x$ is a vertical stretch of $y = e^x$ with scale factor 2.\nThe $y$-intercept is $2$, and the horizontal asymptote is $y = 0$.",
+        "ai_explanation": {
+          "concept_rule": "A vertical dilation $y = a f(x)$ multiplies all $y$-values by $a$. If the asymptote is $y = 0$, it remains $y = 0$.",
+          "step_by_step": [
+            "Identify parent function $y = e^x$ with $y$-intercept $(0,1)$ and asymptote $y = 0$.",
+            "Multiply $y$-values by 2.",
+            "New $y$-intercept is $(0, 2)$.",
+            "The horizontal asymptote remains $y = 2 \\times 0 = 0$."
+          ],
+          "common_pitfalls": "Thinking the horizontal asymptote shifts to $y = 2$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$y = e^{\\frac{x}{2}}$",
+        "final_answer": "$y\\text{-intercept} = 1$, horizontal asymptote: $y = 0$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Identifying transformation as a horizontal stretch with scale factor 3"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating $y$-intercept is 1 and horizontal asymptote is $y = 0$"
+          }
+        ],
+        "solution": "$y = e^{\\frac{x}{3}}$ is a horizontal stretch of $y = e^x$ with scale factor 3.\nThe $y$-intercept is $1$, and the horizontal asymptote is $y = 0$.",
+        "ai_explanation": {
+          "concept_rule": "A horizontal dilation $y = f(kx)$ has a scale factor of $\\frac{1}{k}$. It stretches/compresses horizontally without altering the horizontal asymptote or $y$-intercept.",
+          "step_by_step": [
+            "Identify parent function $y = e^x$.",
+            "Replace $x$ with $\\frac{x}{3}$, which corresponds to a horizontal stretch of scale factor 3.",
+            "At $x = 0$, $y = e^0 = 1$, so $y$-intercept is 1.",
+            "As $x \\to -\\infty$, $y \\to 0$, so the horizontal asymptote is $y = 0$."
+          ],
+          "common_pitfalls": "Confusing the scale factor as $\\frac{1}{3}$ instead of 3."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q59",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 59,
+    "question_text": "",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Use technology to help sketch the graph of $f(x) = 6 - e^{-0.5x}$.",
+        "final_answer": "$Horizontal asymptote at $y = 6$, $y$-intercept at $(0, 5)$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Graphing $f(x) = 6 - e^{-0.5x}$ showing correct shape, asymptote $y = 6$, and intercept $(0,5)$"
+          }
+        ],
+        "solution": "For $f(x) = 6 - e^{-0.5x}$:\nAs $x \\to \\infty$, $e^{-0.5x} \\to 0$, hence $y \\to 6$, giving a horizontal asymptote at $y = 6$.\nWhen $x = 0$, $y = 6 - e^0 = 5$, giving the $y$-intercept $(0, 5)$.\nAs $x \\to -\\infty$, $e^{-0.5x} \\to \\infty$, hence $y \\to -\\infty$.",
+        "ai_explanation": {
+          "concept_rule": "Analyze asymptotic behavior and axis intercepts to sketch transformed exponential functions.",
+          "step_by_step": [
+            "Determine $y$-intercept by finding $f(0) = 6 - 1 = 5$.",
+            "Determine behavior as $x \\to \\infty$: $e^{-0.5x} \\to 0$, so $f(x) \\to 6$.",
+            "Determine behavior as $x \\to -\\infty$: $e^{-0.5x} \\to \\infty$, so $f(x) \\to -\\infty$.",
+            "Sketch an increasing curve approaching $y = 6$ from below."
+          ],
+          "common_pitfalls": "Drawing the horizontal asymptote on the negative $x$-axis instead of the positive $x$-axis."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "State the domain and range of $f(x)$.",
+        "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y < 6\\}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Stating domain as $\\{x \\mid x \\in \\mathbb{R}\\}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating range as $\\{y \\mid y < 6\\}$"
+          }
+        ],
+        "solution": "The domain of $f(x)$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range of $f(x)$ is $\\{y \\mid y < 6\\}$.",
+        "ai_explanation": {
+          "concept_rule": "The domain of an exponential function of the form $c - e^{kx}$ is all real numbers; its range is determined by the horizontal asymptote and the sign of the coefficient.",
+          "step_by_step": [
+            "The exponential function is defined for all real $x$, so domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+            "Since $e^{-0.5x} > 0$ for all $x$, $6 - e^{-0.5x} < 6$.",
+            "Thus, range is $\\{y \\mid y < 6\\}$."
+          ],
+          "common_pitfalls": "Writing $y \\le 6$ instead of strict inequality $y < 6$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Describe the behaviour of $y = f(x)$ as $x \\to \\pm\\infty$.",
+        "final_answer": "$As $x \\to -\\infty, y \\to -\\infty$; as $x \\to \\infty, y \\to 6$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Stating behavior as $x \\to -\\infty$"
+          },
+          {
+            "code": "A1",
+            "desc": "Stating behavior as $x \\to \\infty$"
+          }
+        ],
+        "solution": "As $x \\to -\\infty$, $y = f(x) \\to -\\infty$.\nAs $x \\to \\infty$, $y = f(x) \\to 6$.",
+        "ai_explanation": {
+          "concept_rule": "End-behavior describes limits of the function as $x \\to \\pm\\infty$.",
+          "step_by_step": [
+            "Evaluate $\\lim_{x \\to -\\infty} (6 - e^{-0.5x}) = 6 - \\infty = -\\infty$.",
+            "Evaluate $\\lim_{x \\to \\infty} (6 - e^{-0.5x}) = 6 - 0 = 6$."
+          ],
+          "common_pitfalls": "Mixing up the directions $+\\infty$ and $-\\infty$ due to the negative sign in the exponent."
+        }
+      },
+      {
+        "subpart": "d i",
+        "stem": "Find $k$ such that $f(x) = k$ has: one solution",
+        "final_answer": "$k < 6$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identifying condition for one solution as $k < 6$"
+          }
+        ],
+        "solution": "From the graph in a:\n$f(x) = k$ has one solution if $k < 6$.",
+        "ai_explanation": {
+          "concept_rule": "The horizontal line $y = k$ intersects the graph of $f(x)$ once for any value within the range of $f(x)$.",
+          "step_by_step": [
+            "The range of $f(x)$ is $y < 6$.",
+            "Since $f(x)$ is strictly increasing, any horizontal line $y = k$ with $k < 6$ intersects the curve exactly once."
+          ],
+          "common_pitfalls": "Including $k = 6$ where the line is an asymptote and never intersects."
+        }
+      },
+      {
+        "subpart": "d ii",
+        "stem": "Find $k$ such that $f(x) = k$ has: no solutions.",
+        "final_answer": "$k \\ge 6$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identifying condition for no solutions as $k \\ge 6$"
+          }
+        ],
+        "solution": "From the graph in a:\n$f(x) = k$ has no solutions if $k \\ge 6$.",
+        "ai_explanation": {
+          "concept_rule": "Values of $k$ outside the range of $f(x)$ yield no intersections with $y = k$.",
+          "step_by_step": [
+            "The curve never reaches or exceeds the asymptote $y = 6$.",
+            "Therefore, for all $k \\ge 6$, $y = k$ does not intersect $f(x)$."
+          ],
+          "common_pitfalls": "Forgetting to include $k = 6$ in the set of no solutions."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q60",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 60,
+    "question_text": "Find the amplitude, principal axis, and period of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$f(x) = \\sin 4x$",
+        "final_answer": "$Amplitude $= 1$, principal axis: $y = 0$, period $= 90^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude $= 1$"
+          },
+          {
+            "code": "A1",
+            "desc": "Principal axis is $y = 0$"
+          },
+          {
+            "code": "A1",
+            "desc": "Period $= 90^\\circ$"
+          }
+        ],
+        "solution": "For $y = f(x) = \\sin 4x$:\n$\\bullet$ the amplitude is $|1| = 1$\n$\\bullet$ the principal axis is $y = 0$\n$\\bullet$ the period is $\\frac{360^\\circ}{4} = 90^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "For $y = A \\sin(Bx) + D$, amplitude is $|A|$, principal axis is $y = D$, and period is $\\frac{360^\\circ}{B}$.",
+          "step_by_step": [
+            "Identify $A = 1$, $B = 4$, $D = 0$.",
+            "Calculate amplitude: $|1| = 1$.",
+            "Find principal axis: $y = 0$.",
+            "Compute period: $\\frac{360^\\circ}{4} = 90^\\circ$."
+          ],
+          "common_pitfalls": "Multiplying $360^\\circ$ by 4 instead of dividing."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$f(x) = -2\\sin\\frac{x}{3} - 1$",
+        "final_answer": "$Amplitude $= 2$, principal axis: $y = -1$, period $= 720^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude $= 2$"
+          },
+          {
+            "code": "A1",
+            "desc": "Principal axis is $y = -1$"
+          },
+          {
+            "code": "A1",
+            "desc": "Period $= 720^\\circ$"
+          }
+        ],
+        "solution": "For $y = f(x) = -2\\sin\\frac{x}{2} - 1$:\n$\\bullet$ the amplitude is $|-2| = 2$\n$\\bullet$ the principal axis is $y = -1$\n$\\bullet$ the period is $\\frac{360^\\circ}{\\frac{1}{2}} = 720^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "Amplitude is always positive: $|A|$. Period is $\\frac{360^\\circ}{B}$. Principal axis is $y = D$.",
+          "step_by_step": [
+            "Identify parameters: $A = -2$, $B = \\frac{1}{2}$, $D = -1$.",
+            "Amplitude is $|-2| = 2$.",
+            "Principal axis is $y = -1$.",
+            "Period is $\\frac{360^\\circ}{1/2} = 720^\\circ$."
+          ],
+          "common_pitfalls": "Stating amplitude as a negative number $(-2)$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q61",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 61,
+    "question_text": "For each of the following functions:\ni State the amplitude.\nii State the principal axis.\niii State the period.\niv Sketch the function.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$y = \\sin x + 2$ for $-180^\\circ \\le x \\le 180^\\circ$",
+        "final_answer": "$amplitude $= 1$, principal axis: $y = 2$, period $= 360^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude, principal axis, and period correctly determined"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate sketch of $y = \\sin x + 2$"
+          }
+        ],
+        "solution": "i amplitude $= 1$\nii principal axis is $y = 2$\niii period $= \\frac{360^\\circ}{1} = 360^\\circ$\niv The sketch of $y = \\sin x + 2$ is a vertical translation of $y = \\sin x$ upwards by 2 units, oscillating between 1 and 3.",
+        "ai_explanation": {
+          "concept_rule": "For $y = \\sin x + 2$, the baseline of oscillation is shifted upwards by 2 units.",
+          "step_by_step": [
+            "Amplitude is $1$.",
+            "Principal axis is the vertical shift $y = 2$.",
+            "Period is $\\frac{360^\\circ}{1} = 360^\\circ$.",
+            "Oscillates between minimum $2 - 1 = 1$ and maximum $2 + 1 = 3$."
+          ],
+          "common_pitfalls": "Drawing the curve oscillating around $y = 0$ instead of $y = 2$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$y = 3\\cos 2x$ for $0^\\circ \\le x \\le 360^\\circ$",
+        "final_answer": "$amplitude $= 3$, principal axis: $y = 0$, period $= 180^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude, principal axis, and period correctly determined"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate sketch of $y = 3\\cos 2x$"
+          }
+        ],
+        "solution": "i amplitude $= 3$\nii principal axis is $y = 0$\niii period $= \\frac{360^\\circ}{2} = 180^\\circ$\niv The sketch of $y = 3\\cos 2x$ oscillates between $-3$ and $3$, with two full cycles completed in $360^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "The function $y = A\\cos(Bx)$ has amplitude $|A|$ and period $\\frac{360^\\circ}{B}$.",
+          "step_by_step": [
+            "Identify $A = 3$, $B = 2$, $D = 0$.",
+            "Amplitude $= 3$.",
+            "Principal axis is $y = 0$.",
+            "Period $= \\frac{360^\\circ}{2} = 180^\\circ$.",
+            "Sketch cosine curve starting at maximum $(0, 3)$."
+          ],
+          "common_pitfalls": "Plotting a period of $360^\\circ$ instead of $180^\\circ$."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$y = \\cos\\frac{x}{2} - 1$ for $0^\\circ \\le x \\le 360^\\circ$",
+        "final_answer": "$amplitude $= 1$, principal axis: $y = -1$, period $= 720^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude, principal axis, and period correctly determined"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate sketch of $y = \\cos\\frac{x}{2} - 1$"
+          }
+        ],
+        "solution": "i amplitude $= 1$\nii principal axis is $y = -1$\niii period $= \\frac{360^\\circ}{\\frac{1}{2}} = 720^\\circ$\niv The sketch of $y = \\cos\\frac{x}{2} - 1$ oscillates between maximum 0 and minimum $-2$ around $y = -1$.",
+        "ai_explanation": {
+          "concept_rule": "For $y = \\cos\\left(\\frac{x}{2}\\right) - 1$, $B = \\frac{1}{2}$ stretches the period horizontally to $720^\\circ$, and $D = -1$ lowers the graph.",
+          "step_by_step": [
+            "Amplitude is $1$.",
+            "Principal axis is $y = -1$.",
+            "Period is $\\frac{360^\\circ}{0.5} = 720^\\circ$.",
+            "At $x = 0$, $y = 1 - 1 = 0$ (maximum)."
+          ],
+          "common_pitfalls": "Calculating the period as $180^\\circ$ by multiplying $\\frac{1}{2}$ by 360 instead of dividing."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "$y = 10 - 6\\sin 3x$ for $0^\\circ \\le x \\le 360^\\circ$",
+        "final_answer": "$amplitude $= 6$, principal axis: $y = 10$, period $= 120^\\circ$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Amplitude, principal axis, and period correctly determined"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate sketch of $y = 10 - 6\\sin 3x$"
+          }
+        ],
+        "solution": "i amplitude $= |-6| = 6$\nii principal axis is $y = 10$\niii period $= \\frac{360^\\circ}{3} = 120^\\circ$\niv The sketch of $y = 10 - 6\\sin 3x$ has principal axis $y = 10$, amplitude 6 (oscillates between 4 and 16), and is vertically reflected.",
+        "ai_explanation": {
+          "concept_rule": "In $y = D - A\\sin(Bx)$, the negative sign reflects the sine wave vertically across its midline $y = D$.",
+          "step_by_step": [
+            "Amplitude is $|-6| = 6$.",
+            "Principal axis is $y = 10$.",
+            "Period is $\\frac{360^\\circ}{3} = 120^\\circ$.",
+            "Graph starts at $(0, 10)$ and decreases first because of the negative sine term."
+          ],
+          "common_pitfalls": "Starting the sine curve increasing upwards rather than downwards due to the negative sign."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_2_q62",
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_number": 62,
+    "question_text": "Find the unknowns in each function:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$f(x) = a\\cos 2x + d$",
+        "final_answer": "$a = -3, d = 2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up equation using point $(45^\\circ, 2)$ to find $d$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $d = 2$"
+          },
+          {
+            "code": "M1",
+            "desc": "Using point $(120^\\circ, 3.5)$ to solve for $a$"
+          },
+          {
+            "code": "A1",
+            "desc": "Finding $a = -3$"
+          }
+        ],
+        "solution": "$f(45^\\circ) = 2 \\implies a\\cos 90^\\circ + d = 2 \\implies d = 2$\n$f(120^\\circ) = 3.5 \\implies a\\cos 240^\\circ + d = 3.5$\n$-\\frac{1}{2}a + 2 = 3.5$\n$-\\frac{1}{2}a = 1.5$\n$a = -3$",
+        "ai_explanation": {
+          "concept_rule": "Substitute known points into $f(x) = a\\cos 2x + d$ to set up linear equations in $a$ and $d$.",
+          "step_by_step": [
+            "Substitute $x = 45^\\circ$: $\\cos(2 \\times 45^\\circ) = \\cos 90^\\circ = 0$.",
+            "Thus, $a(0) + d = 2 \\implies d = 2$.",
+            "Substitute $x = 120^\\circ$: $\\cos(2 \\times 120^\\circ) = \\cos 240^\\circ = -0.5$.",
+            "Equation becomes $-0.5a + 2 = 3.5 \\implies -0.5a = 1.5 \\implies a = -3$."
+          ],
+          "common_pitfalls": "Evaluating $\\cos 240^\\circ$ as positive $0.5$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$f(x) = a\\sin x + d$",
+        "final_answer": "$a = 4, d = 3$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up two simultaneous equations using given coordinates"
+          },
+          {
+            "code": "A1",
+            "desc": "Solving to obtain $a = 4$ and $d = 3$"
+          }
+        ],
+        "solution": "$f(90^\\circ) = 7 \\implies a\\sin 90^\\circ + d = 7 \\implies a + d = 7$ ...(1)\n$f(210^\\circ) = 1 \\implies a\\sin 210^\\circ + d = 1 \\implies -\\frac{1}{2}a + d = 1$ ...(2)\nSolving (1) and (2) simultaneously:\nSubtract (2) from (1): $\\frac{3}{2}a = 6 \\implies a = 4$\nSubstitute $a = 4$ into (1): $4 + d = 7 \\implies d = 3$",
+        "ai_explanation": {
+          "concept_rule": "Use exact trigonometric values for known angles to form a linear system in $a$ and $d$.",
+          "step_by_step": [
+            "Evaluate $\\sin 90^\\circ = 1$, giving equation $a + d = 7$.",
+            "Evaluate $\\sin 210^\\circ = -\\frac{1}{2}$, giving equation $-\\frac{1}{2}a + d = 1$.",
+            "Subtract the second equation from the first to eliminate $d$: $\\frac{3}{2}a = 6 \\implies a = 4$.",
+            "Substitute $a = 4$ into the first equation to find $d = 3$."
+          ],
+          "common_pitfalls": "Incorrect value for $\\sin 210^\\circ$ (forgetting the negative sign in the third quadrant)."
+        }
+      }
+    ]
+  }
+]

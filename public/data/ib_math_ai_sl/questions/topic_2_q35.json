@@ -1,0 +1,60 @@
+{
+  "id": "topic_2_q35",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 35,
+  "question_text": "Suppose $w \\propto z$ and that $w = 27$ when $z = 9$. Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$w$ when $z = 2$",
+      "final_answer": "$w = 6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify scale factor for $z$ and apply to $w$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $w$"
+        }
+      ],
+      "solution": "$z$ is multiplied by $\\frac{2}{9}$\n$\\therefore w$ is multiplied by $\\frac{2}{9}$ {as $w \\propto z$}\n$\\therefore w = 27 \\times \\frac{2}{9} = 6$",
+      "ai_explanation": {
+        "concept_rule": "In direct variation $w \\propto z$, scaling $z$ by a factor $k$ scales $w$ by the same factor $k$.",
+        "step_by_step": [
+          "Find the factor multiplying $z$: $\\frac{2}{9}$.",
+          "Multiply initial $w = 27$ by $\\frac{2}{9}$.",
+          "Obtain $w = 6$."
+        ],
+        "common_pitfalls": "Multiplying by the reciprocal factor."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$z$ when $w = 45$.",
+      "final_answer": "$z = 15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify scale factor for $w$ and apply to $z$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $z$"
+        }
+      ],
+      "solution": "$w$ is multiplied by $\\frac{45}{27} = \\frac{5}{3}$\n$\\therefore z$ is multiplied by $\\frac{5}{3}$ {as $w \\propto z$}\n$\\therefore z = 9 \\times \\frac{5}{3} = 15$",
+      "ai_explanation": {
+        "concept_rule": "Direct proportionality maintains the same multiplier between corresponding values.",
+        "step_by_step": [
+          "Calculate scale factor: $\\frac{45}{27} = \\frac{5}{3}$.",
+          "Multiply $z = 9$ by $\\frac{5}{3}$.",
+          "Calculate $z = 15$."
+        ],
+        "common_pitfalls": "Dividing instead of multiplying by the scale factor."
+      }
+    }
+  ]
+}

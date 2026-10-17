@@ -1,0 +1,65 @@
+{
+  "id": "topic_3_q36",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 36,
+  "question_text": "Monument X is observed from two points B and C which are 330 m apart. $\\mathrm{X}\\hat{\\mathrm{B}}\\mathrm{C}$ is $63^\\circ$ and $\\mathrm{B}\\hat{\\mathrm{C}}\\mathrm{X}$ is $75^\\circ$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a neat, labelled diagram to illustrate this information.",
+      "final_answer": "$Scatter plot with line of best fit passing through $(\\bar{x}, \\bar{y}) = (120, 22.125)$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Scatter plot of data points"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly drawn line of best fit through the mean point"
+        }
+      ],
+      "solution": "Calculate the mean point:\n$\\bar{x} = \\frac{88 + 97 + 105 + 110 + 125 + 140 + 145 + 150}{8} = 120$\n$\\bar{y} = \\frac{28 + 26 + 26 + 23 + 21 + 19 + 18 + 16}{8} = 22.125$\n\nPlot the data points and draw the line of best fit through the mean point $(120, 22.125)$.",
+      "ai_explanation": {
+        "concept_rule": "A line of best fit drawn by eye should always pass through the mean point $(\\bar{x}, \\bar{y})$ and balance the distribution of points above and below.",
+        "step_by_step": [
+          "Find the mean of the $x$-values and the mean of the $y$-values.",
+          "Plot the mean point $(120, 22.125)$.",
+          "Draw a straight line passing through this point that best follows the trend of data points."
+        ],
+        "common_pitfalls": "Failing to make the line of best fit pass through the mean point."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the distance between the monument and B.",
+      "final_answer": "$476\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate the third angle $\\text{C}\\hat{\\text{X}}\\text{B}$"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply the sine rule to solve for $x$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final distance of about $476\\text{ m}$"
+        }
+      ],
+      "solution": "Let $XB$ be $x\\text{ m}$.\n$$\\text{C}\\hat{\\text{X}}\\text{B} = 180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ \\quad \\{\\text{angles in a triangle}\\}$$\n$$\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ} \\quad \\{\\text{sine rule}\\}$$\n$$x = \\frac{330\\sin 75^\\circ}{\\sin 42^\\circ} \\approx 476$$\nThe distance between the monument and B is about $476\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "Use the angle sum of a triangle to find the missing angle, then apply the sine rule.",
+        "step_by_step": [
+          "Calculate angle at $X$: $180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ$.",
+          "Set up the sine rule equation: $\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ}$.",
+          "Solve for $x$: $x = \\frac{330\\sin 75^\\circ}{\\sin 42^\\circ} \\approx 476$.",
+          "State the contextual conclusion: the distance is about $476\\text{ m}$."
+        ],
+        "common_pitfalls": "Using the sine rule with $63^\\circ$ instead of $42^\\circ$ opposite side $330$."
+      }
+    }
+  ]
+}

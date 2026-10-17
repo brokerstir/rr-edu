@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q31",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 31,
+  "question_text": "Find $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Each scatter diagram shows a positive association between $x$ and $y$$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that as $x$ increases, $y$ increases, showing a positive association"
+        }
+      ],
+      "solution": "In each scatter diagram, as $x$ increases $y$ generally increases.\n$\\therefore$ each scatter diagram shows a positive association between $x$ and $y$.",
+      "ai_explanation": {
+        "concept_rule": "A positive association exists when higher values of one variable correspond to higher values of the other variable.",
+        "step_by_step": [
+          "Examine diagrams A, B, and C.",
+          "Notice that in all three, the points trend upwards from left to right.",
+          "Conclude that all three show a positive association."
+        ],
+        "common_pitfalls": "Confusing the direction of association (positive) with its strength."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$Weak: B, Moderate: A, Strong: C$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Weak correctly paired with B"
+        },
+        {
+          "code": "A1",
+          "desc": "Moderate correctly paired with A"
+        },
+        {
+          "code": "A1",
+          "desc": "Strong correctly paired with C"
+        }
+      ],
+      "solution": "\\begin{array}{|c|c|}\n\\hline\n\\text{Strength of correlation} & \\text{Scatter diagram} \\\\\n\\hline\n\\text{Weak} & \\mathbf{B} \\\\\n\\text{Moderate} & \\mathbf{A} \\\\\n\\text{Strong} & \\mathbf{C} \\\\\n\\hline\n\\end{array}",
+      "ai_explanation": {
+        "concept_rule": "The strength of correlation is judged by how tightly the data points cluster around a linear trend line.",
+        "step_by_step": [
+          "In C, points are very close to a straight line $\\implies$ Strong.",
+          "In A, points follow a clear upward trend but are moderately scattered $\\implies$ Moderate.",
+          "In B, points are widely scattered with only a slight upward trend $\\implies$ Weak."
+        ],
+        "common_pitfalls": "Swapping weak and moderate due to misjudging the dispersion of points."
+      }
+    }
+  ]
+}

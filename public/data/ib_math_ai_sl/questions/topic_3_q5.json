@@ -1,0 +1,26 @@
+{
+  "id": "topic_3_q5",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 5,
+  "question_text": "A sector of a circle of radius $10\\text{ cm}$ has perimeter $40\\text{ cm}$. Find:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the arc length of the sector",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "the area of the sector.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "topic_2_q62",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 62,
+  "question_text": "Find the unknowns in each function:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = a\\cos 2x + d$",
+      "final_answer": "$a = -3, d = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equation using point $(45^\\circ, 2)$ to find $d$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $d = 2$"
+        },
+        {
+          "code": "M1",
+          "desc": "Using point $(120^\\circ, 3.5)$ to solve for $a$"
+        },
+        {
+          "code": "A1",
+          "desc": "Finding $a = -3$"
+        }
+      ],
+      "solution": "$f(45^\\circ) = 2 \\implies a\\cos 90^\\circ + d = 2 \\implies d = 2$\n$f(120^\\circ) = 3.5 \\implies a\\cos 240^\\circ + d = 3.5$\n$-\\frac{1}{2}a + 2 = 3.5$\n$-\\frac{1}{2}a = 1.5$\n$a = -3$",
+      "ai_explanation": {
+        "concept_rule": "Substitute known points into $f(x) = a\\cos 2x + d$ to set up linear equations in $a$ and $d$.",
+        "step_by_step": [
+          "Substitute $x = 45^\\circ$: $\\cos(2 \\times 45^\\circ) = \\cos 90^\\circ = 0$.",
+          "Thus, $a(0) + d = 2 \\implies d = 2$.",
+          "Substitute $x = 120^\\circ$: $\\cos(2 \\times 120^\\circ) = \\cos 240^\\circ = -0.5$.",
+          "Equation becomes $-0.5a + 2 = 3.5 \\implies -0.5a = 1.5 \\implies a = -3$."
+        ],
+        "common_pitfalls": "Evaluating $\\cos 240^\\circ$ as positive $0.5$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = a\\sin x + d$",
+      "final_answer": "$a = 4, d = 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up two simultaneous equations using given coordinates"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving to obtain $a = 4$ and $d = 3$"
+        }
+      ],
+      "solution": "$f(90^\\circ) = 7 \\implies a\\sin 90^\\circ + d = 7 \\implies a + d = 7$ ...(1)\n$f(210^\\circ) = 1 \\implies a\\sin 210^\\circ + d = 1 \\implies -\\frac{1}{2}a + d = 1$ ...(2)\nSolving (1) and (2) simultaneously:\nSubtract (2) from (1): $\\frac{3}{2}a = 6 \\implies a = 4$\nSubstitute $a = 4$ into (1): $4 + d = 7 \\implies d = 3$",
+      "ai_explanation": {
+        "concept_rule": "Use exact trigonometric values for known angles to form a linear system in $a$ and $d$.",
+        "step_by_step": [
+          "Evaluate $\\sin 90^\\circ = 1$, giving equation $a + d = 7$.",
+          "Evaluate $\\sin 210^\\circ = -\\frac{1}{2}$, giving equation $-\\frac{1}{2}a + d = 1$.",
+          "Subtract the second equation from the first to eliminate $d$: $\\frac{3}{2}a = 6 \\implies a = 4$.",
+          "Substitute $a = 4$ into the first equation to find $d = 3$."
+        ],
+        "common_pitfalls": "Incorrect value for $\\sin 210^\\circ$ (forgetting the negative sign in the third quadrant)."
+      }
+    }
+  ]
+}

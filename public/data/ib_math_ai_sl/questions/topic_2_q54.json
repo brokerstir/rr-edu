@@ -1,0 +1,135 @@
+{
+  "id": "topic_2_q54",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 54,
+  "question_text": "The population of bees in a hive after $t$ weeks is given by $P(t) = a(0.95)^t + b$.\nInitially, there are 2500 bees, and after 2 weeks there are 2383 bees.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find the value of $a$.",
+      "final_answer": "$a = 1200$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equations using $P(0) = 2500$ and $P(2) = 2383$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve simultaneously to find $a = 1200$"
+        }
+      ],
+      "solution": "$P(t) = a(0.95)^t + b$. Now $P(0) = 2500 \\implies 2500 = a(0.95)^0 + b \\implies a + b = 2500 \\quad \\text{--- (1)}$. And $P(2) = 2383 \\implies 2383 = a(0.95)^2 + b \\implies 0.9025a + b = 2383 \\quad \\text{--- (2)}$. Solving (1) and (2) simultaneously, we find: $a = 1200$.",
+      "ai_explanation": {
+        "concept_rule": "Formulate two equations from known values and solve the system.",
+        "step_by_step": [
+          "Substitute $t = 0$: $a(1) + b = 2500$.",
+          "Substitute $t = 2$: $a(0.9025) + b = 2383$.",
+          "Subtract (2) from (1): $0.0975a = 117 \\implies a = 1200$."
+        ],
+        "common_pitfalls": "Incorrect squaring of 0.95."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find the value of $b$.",
+      "final_answer": "$b = 1300$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $a = 1200$ into $a + b = 2500$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $b = 1300$"
+        }
+      ],
+      "solution": "From $a + b = 2500$ and $a = 1200$, $b = 2500 - 1200 = 1300$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the value of $a$ into one of the linear equations to find $b$.",
+        "step_by_step": [
+          "Use equation $a + b = 2500$.",
+          "Substitute $a = 1200$: $1200 + b = 2500$.",
+          "Subtract 1200: $b = 1300$."
+        ],
+        "common_pitfalls": "Simple subtraction errors."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find the population after 3 weeks.",
+      "final_answer": "$\\approx 2330\\text{ bees}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $P(3) = 1200(0.95)^3 + 1300$"
+        },
+        {
+          "code": "A1",
+          "desc": "Round answer appropriately to nearest ten"
+        }
+      ],
+      "solution": "$P(t) = 1200(0.95)^t + 1300$. $P(3) = 1200(0.95)^3 + 1300 = 2328.85$. After 3 weeks, there are about 2330 bees.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate the population model at $t = 3$.",
+        "step_by_step": [
+          "Substitute $t = 3$ into $P(t) = 1200(0.95)^t + 1300$.",
+          "Calculate $1200 \\times 0.857375 + 1300 = 1028.85 + 1300 = 2328.85$.",
+          "Round to nearest ten: about 2330 bees."
+        ],
+        "common_pitfalls": "Forgetting to add $b = 1300$."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the population after 5 weeks.",
+      "final_answer": "$\\approx 2230\\text{ bees}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $P(5) = 1200(0.95)^5 + 1300$"
+        },
+        {
+          "code": "A1",
+          "desc": "Round answer appropriately to nearest ten"
+        }
+      ],
+      "solution": "$P(5) = 1200(0.95)^5 + 1300 \\approx 2228.54$. After 5 weeks, there are about 2230 bees.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate the population model at $t = 5$.",
+        "step_by_step": [
+          "Substitute $t = 5$ into $P(t) = 1200(0.95)^t + 1300$.",
+          "Calculate $1200(0.95)^5 + 1300 \\approx 928.54 + 1300 = 2228.54$.",
+          "Round to nearest ten: about 2230 bees."
+        ],
+        "common_pitfalls": "Incorrect exponent evaluation."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "State the horizontal asymptote, and interpret this value.",
+      "final_answer": "$1300\\text{ bees}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify horizontal asymptote $P = 1300$"
+        },
+        {
+          "code": "A1",
+          "desc": "State that population approaches 1300 bees"
+        }
+      ],
+      "solution": "The horizontal asymptote is $P = 1300$. As $t \\to \\infty$, the population approaches 1300 bees.",
+      "ai_explanation": {
+        "concept_rule": "As $t \\to \\infty$, $(0.95)^t \\to 0$, so $P(t) \\to b$.",
+        "step_by_step": [
+          "Analyze the long-term behavior as $t \\to \\infty$.",
+          "Since $0.95 < 1$, $(0.95)^t \\to 0$.",
+          "Therefore $P(t) \\to 1200(0) + 1300 = 1300$."
+        ],
+        "common_pitfalls": "Assuming population decreases to 0 instead of the asymptote."
+      }
+    }
+  ]
+}

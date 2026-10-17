@@ -1,0 +1,135 @@
+{
+  "id": "topic_2_q24",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 24,
+  "question_text": "Consider the graph of $y = f(x)$ alongside.\nDecide whether each statement is true or false:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$0$ is in the domain of $f$.",
+      "final_answer": "$True$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Check if x = 0 lies within the domain -6 <= x <= 6 and x != 3"
+        },
+        {
+          "code": "A1",
+          "desc": "State that the statement is true"
+        }
+      ],
+      "solution": "From the graph, the domain is $\\{x \\mid -6 \\leqslant x \\leqslant 6 \\text{ and } x \\neq 3\\}$.\n$x = 0$ satisfies $-6 \\leqslant x \\leqslant 6$ and $x \\neq 3$.\n$\\therefore$ \"$0$ is in the domain of $f$\" is true.",
+      "ai_explanation": {
+        "concept_rule": "The domain of a function is the set of all possible input values ($x$-values) for which the function is defined.",
+        "step_by_step": [
+          "Identify the domain of $f$ from the graph: $\\{x \\mid -6 \\leqslant x \\leqslant 6 \\text{ and } x \\neq 3\\}$.",
+          "Check whether $x = 0$ is included in this interval.",
+          "Since $-6 \\leqslant 0 \\leqslant 6$ and $0 \\neq 3$, $0$ is in the domain."
+        ],
+        "common_pitfalls": "Confusing the domain ($x$-values) with the range ($y$-values)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$0$ is in the range of $f$.",
+      "final_answer": "$True$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Check if y = 0 lies within the range 0 <= y <= 5"
+        },
+        {
+          "code": "A1",
+          "desc": "State that the statement is true"
+        }
+      ],
+      "solution": "From the graph, the range is $\\{y \\mid 0 \\leqslant y \\leqslant 5\\}$.\n$y = 0$ satisfies $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$0$ is in the range of $f$\" is true.",
+      "ai_explanation": {
+        "concept_rule": "The range of a function is the set of all possible output values ($y$-values).",
+        "step_by_step": [
+          "Determine the range of the function from the given graph: $[0, 5]$.",
+          "Check if $y = 0$ is included in $[0, 5]$.",
+          "Since $0$ is the minimum value and included, the statement is true."
+        ],
+        "common_pitfalls": "Assuming open intervals when endpoints are closed (solid dots)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$6$ is in the range of $f$.",
+      "final_answer": "$False$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Check if y = 6 lies within the range 0 <= y <= 5"
+        },
+        {
+          "code": "A1",
+          "desc": "State that the statement is false"
+        }
+      ],
+      "solution": "From the graph, the range is $\\{y \\mid 0 \\leqslant y \\leqslant 5\\}$.\n$y = 6$ does not satisfy $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$6$ is in the range of $f$\" is false.",
+      "ai_explanation": {
+        "concept_rule": "A value is in the range if there exists at least one $x$ in the domain such that $f(x) = y$.",
+        "step_by_step": [
+          "The maximum $y$-value on the graph is $5$.",
+          "$6 > 5$, so $y = 6$ is outside the range.",
+          "Conclude that the statement is false."
+        ],
+        "common_pitfalls": "Mistaking the $x$-coordinate $6$ for a $y$-coordinate."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$3$ is in the domain of $f$.",
+      "final_answer": "$False$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Check if x = 3 satisfies x != 3"
+        },
+        {
+          "code": "A1",
+          "desc": "State that the statement is false"
+        }
+      ],
+      "solution": "$x = 3$ does not satisfy $x \\neq 3$.\n$\\therefore$ \"$3$ is in the domain of $f$\" is false.",
+      "ai_explanation": {
+        "concept_rule": "An excluded point or open circle at an $x$-value means that value is not in the domain.",
+        "step_by_step": [
+          "There is an open circle at $x = 3$ on the graph.",
+          "Hence, $x = 3$ is explicitly excluded from the domain.",
+          "Conclude that the statement is false."
+        ],
+        "common_pitfalls": "Ignoring the open circle at $(3, 2)$."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "$2$ is in the range of $f$.",
+      "final_answer": "$True$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Check if y = 2 lies within the range 0 <= y <= 5"
+        },
+        {
+          "code": "A1",
+          "desc": "State that the statement is true"
+        }
+      ],
+      "solution": "$y = 2$ satisfies $0 \\leqslant y \\leqslant 5$.\n$\\therefore$ \"$2$ is in the range of $f$\" is true.",
+      "ai_explanation": {
+        "concept_rule": "A horizontal line at $y = 2$ intersects the graph if $2$ is in the range.",
+        "step_by_step": [
+          "Check whether $y = 2$ is attained on the graph.",
+          "Even though there is a hole at $(3,2)$, the graph passes through $y = 2$ at another point (e.g., near $x = -3$ or the $y$-intercept).",
+          "Since $0 \\leqslant 2 \\leqslant 5$, $2$ is in the range."
+        ],
+        "common_pitfalls": "Thinking $y = 2$ is excluded because of the open circle at $(3,2)$, neglecting other points with $y = 2$."
+      }
+    }
+  ]
+}

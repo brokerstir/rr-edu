@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q27",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 27,
+  "question_text": "In triangle ABC, $AB = 72\\text{ cm}$, $BC = 61\\text{ cm}$, and $\\mathrm{A\\widehat{B}C} = 43^\\circ$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate the length of AC.",
+      "final_answer": "$Cumulative frequency curve drawn through points (8, 8), (9, 67), (10, 141), (11, 163), (12, 164)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Correct cumulative frequencies computed: 8, 67, 141, 163, 164"
+        },
+        {
+          "code": "A1",
+          "desc": "Cumulative frequency curve plotted correctly against upper class boundaries"
+        }
+      ],
+      "solution": "Cumulative frequency table:\n$7 < h \\leqslant 8$: CF $= 8$\n$8 < h \\leqslant 9$: CF $= 8 + 59 = 67$\n$9 < h \\leqslant 10$: CF $= 67 + 74 = 141$\n$10 < h \\leqslant 11$: CF $= 141 + 22 = 163$\n$11 < h \\leqslant 12$: CF $= 163 + 1 = 164$\nPlot points $(7, 0), (8, 8), (9, 67), (10, 141), (11, 163), (12, 164)$ and join with a smooth curve.",
+      "ai_explanation": {
+        "concept_rule": "Cumulative frequencies are plotted against the upper boundary of each class interval.",
+        "step_by_step": [
+          "Sum frequencies cumulatively to get 8, 67, 141, 163, 164.",
+          "Plot points at upper boundaries: $h = 8, 9, 10, 11, 12$, starting at $(7, 0)$.",
+          "Draw a smooth S-shaped curve (ogive) through the points."
+        ],
+        "common_pitfalls": "Plotting points at midpoints instead of upper boundaries."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the measure of $\\mathrm{A\\widehat{C}B}$.",
+      "final_answer": "$\\approx 9.1\\text{ m}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Locate 50% of 164 = 82 on the cumulative frequency axis"
+        },
+        {
+          "code": "A1",
+          "desc": "Read correct median height from the graph"
+        }
+      ],
+      "solution": "The median is the 50th percentile. As $50\\%$ of $164$ is $82$, we start with the cumulative frequency $82$ and find the corresponding height.\nFrom the graph, the median $\\approx 9.1\\text{ m}$.",
+      "ai_explanation": {
+        "concept_rule": "The median corresponds to $0.5 \\times N$ on the cumulative frequency axis.",
+        "step_by_step": [
+          "Calculate $50\\%$ of $164 = 82$.",
+          "Find 82 on the vertical axis, go across to the curve, and read down to the horizontal axis.",
+          "The corresponding height is approximately $9.1\\text{ m}$."
+        ],
+        "common_pitfalls": "Reading 50 directly from the cumulative frequency axis instead of $50\\%$ of 164."
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "topic_2_q33",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 33,
+  "question_text": "The cost of hiring a car is summarised in the table alongside.\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\text{Hire period } (t \\text{ days}) & \\text{Cost} \\\\\n\\hline\n1 - 2 & \\$40 \\text{ per day} \\\\\n3 - 6 & \\$33 \\text{ per day} \\\\\n7+ & \\$29 \\text{ per day} \\\\\n\\hline\n\\end{array}$$\n\nLet $\\$C$ be the total cost of hiring a car for $t$ days.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a graph of $C$ against $t$ for $0 \\leqslant t \\leqslant 10$.",
+      "final_answer": "$\\text{Step graph of } C \\text{ against } t$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plotting step functions according to given daily rates"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct open and closed circles representing domain endpoints"
+        }
+      ],
+      "solution": "For $1 \\le t \\le 2$, cost is $\\$40$ per day: for $t = 1$, $C = 40$; for $t = 2$, $C = 80$.\nFor $3 \\le t \\le 6$, cost is $\\$33$ per day: for $t = 3$, $C = 99$; for $t = 4$, $C = 132$; for $t = 5$, $C = 165$; for $t = 6$, $C = 198$.\nFor $t \\ge 7$, cost is $\\$29$ per day: for $t = 7$, $C = 203$; for $t = 8$, $C = 232$; for $t = 9$, $C = 261$; for $t = 10$, $C = 290$.\nThe graph is plotted with horizontal discrete segments or discrete points corresponding to the hire period $t$ (days) vs cost $C$ (\\$).",
+      "ai_explanation": {
+        "concept_rule": "A step or piecewise function represents rates that change over intervals of time.",
+        "step_by_step": [
+          "Identify the cost per day for each bracket of days.",
+          "Multiply the number of days by the daily rate to find total cost.",
+          "Plot the costs against the days on the axes."
+        ],
+        "common_pitfalls": "Applying the rate only to additional days rather than all days rented in that bracket."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Find the cost of hiring a car for:\n2 days",
+      "final_answer": "$\\$80$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct cost read from the graph for 2 days"
+        }
+      ],
+      "solution": "From the graph, it costs $\\$80$ to hire a car for $2$ days.",
+      "ai_explanation": {
+        "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+        "step_by_step": [
+          "Locate $t = 2$ on the horizontal axis.",
+          "Read the vertical value: $C = 80$."
+        ],
+        "common_pitfalls": "Misreading the vertical scale increments."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Find the cost of hiring a car for:\n5 days",
+      "final_answer": "$\\$165$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct cost read from the graph for 5 days"
+        }
+      ],
+      "solution": "From the graph, it costs $\\$165$ to hire a car for $5$ days.",
+      "ai_explanation": {
+        "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+        "step_by_step": [
+          "Locate $t = 5$ on the horizontal axis.",
+          "Read the vertical value: $C = 165$."
+        ],
+        "common_pitfalls": "Misreading the scale on the vertical axis."
+      }
+    },
+    {
+      "subpart": "b iii",
+      "stem": "Find the cost of hiring a car for:\n9 days.",
+      "final_answer": "$\\$261$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct cost read from the graph for 9 days"
+        }
+      ],
+      "solution": "From the graph, it costs $\\$261$ to hire a car for $9$ days.",
+      "ai_explanation": {
+        "concept_rule": "Reading coordinate values $(t, C)$ from the graph.",
+        "step_by_step": [
+          "Locate $t = 9$ on the horizontal axis.",
+          "Read the vertical value: $C = 261$."
+        ],
+        "common_pitfalls": "Confusing day brackets."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Georgia and Tim are planning an 8 day holiday. They require a car for the first 2 days, and the last 3 days.\nIs it cheaper for them to hire one car for the first 2 days and a separate car for the last 3 days, or to hire one car for the whole holiday?",
+      "final_answer": "$\\text{It is cheaper to hire one car for the first 2 days, and a separate car for the last 3 days.}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating the total cost of separate hires vs single hire"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct conclusion based on cost comparison"
+        }
+      ],
+      "solution": "If they hire a car for the first $2$ days, and the last $3$ days, they will spend $\\$80 + \\$99 = \\$179$.\nIf they hire a car for the whole $8$ days, they will spend $\\$232$.\n$\\therefore$ it is cheaper for Georgia and Tim to hire one car for the first $2$ days, and a separate car for the last $3$ days.",
+      "ai_explanation": {
+        "concept_rule": "Compare total expenditure across two hiring strategies.",
+        "step_by_step": [
+          "Calculate cost of split hire: $2$ days cost $\\$80$, $3$ days cost $\\$99$, total = $\\$179$.",
+          "Calculate cost of continuous hire: $8$ days cost $\\$232$.",
+          "Compare $\\$179$ and $\\$232$ to determine the cheaper option."
+        ],
+        "common_pitfalls": "Assuming a single longer rental is always cheaper than multiple shorter rentals."
+      }
+    }
+  ]
+}

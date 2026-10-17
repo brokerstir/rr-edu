@@ -1,0 +1,86 @@
+{
+  "id": "topic_3_q23",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 23,
+  "question_text": "Consider the rectangular prism shown. Find the angle between the following line segments and the base plane ABCO:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "[CD]",
+      "final_answer": "$\\text{minimum} = 85,\\ Q_1 = 107,\\ \\text{median} = 121.5,\\ Q_3 = 137.5,\\ \\text{maximum} = 156$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identification of medians/quartiles from 24 data values"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct five-number summary values"
+        }
+      ],
+      "solution": "The ordered data set is: $85, 96, 98, 100, 105, 106, 108, 108, 112, 112, 118, 120, 123, 125, 126, 128, 133, 135, 140, 144, 144, 148, 148, 156$ (24 data values).\n$\\text{median} = \\frac{120 + 123}{2} = 121.5$\nLower half has 12 values: $Q_1 = \\frac{106 + 108}{2} = 107$\nUpper half has 12 values: $Q_3 = \\frac{135 + 140}{2} = 137.5$\n$\\text{minimum} = 85$, $\\text{maximum} = 156$\nSo the five-number summary is:\n$\\text{minimum} = 85$, $Q_1 = 107$, $\\text{median} = 121.5$, $Q_3 = 137.5$, $\\text{maximum} = 156$",
+      "ai_explanation": {
+        "concept_rule": "The five-number summary consists of the minimum, lower quartile ($Q_1$), median, upper quartile ($Q_3$), and maximum.",
+        "step_by_step": [
+          "Ensure the $24$ values are ordered.",
+          "Find the median between the 12th and 13th values: $(120+123)/2 = 121.5$.",
+          "Find $Q_1$ as the median of the first 12 values: $(106+108)/2 = 107$.",
+          "Find $Q_3$ as the median of the upper 12 values: $(135+140)/2 = 137.5$.",
+          "Identify min $= 85$ and max $= 156$."
+        ],
+        "common_pitfalls": "Forgetting to take the average of the two middle numbers for an even number of data points."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "[OF]",
+      "final_answer": "$Boxplot drawn with Min = 85, $Q_1 = 107$, Median = 121.5, $Q_3 = 137.5$, Max = 156$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Appropriate scale drawn covering 80 to 160"
+        },
+        {
+          "code": "A1",
+          "desc": "Boxplot correctly plotted using the five-number summary"
+        }
+      ],
+      "solution": "Draw an axis from 80 to 160 with labels. Construct a box with edges at $Q_1 = 107$ and $Q_3 = 137.5$, with a line through the median $121.5$. Extend whiskers to the minimum $85$ and maximum $156$.",
+      "ai_explanation": {
+        "concept_rule": "A boxplot visually displays the five-number summary along a uniform number line.",
+        "step_by_step": [
+          "Draw an axis with an even scale covering from at least 85 to 156.",
+          "Draw vertical lines at $Q_1 = 107$, median $= 121.5$, and $Q_3 = 137.5$ and connect them to form a box.",
+          "Draw whiskers extending from the box to the minimum ($85$) and maximum ($156$)."
+        ],
+        "common_pitfalls": "Using an uneven scale or misplotting points between tick marks."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "[AG]",
+      "final_answer": "$\\text{Range} = 71,\\ \\text{IQR} = 30.5$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct range calculation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct IQR calculation"
+        }
+      ],
+      "solution": "$\\text{Range} = \\text{maximum} - \\text{minimum} = 156 - 85 = 71$\n$\\text{IQR} = Q_3 - Q_1 = 137.5 - 107 = 30.5$",
+      "ai_explanation": {
+        "concept_rule": "$\\text{Range} = \\text{maximum} - \\text{minimum}$; $\\text{IQR} = Q_3 - Q_1$.",
+        "step_by_step": [
+          "Subtract minimum from maximum: $156 - 85 = 71$.",
+          "Subtract lower quartile from upper quartile: $137.5 - 107 = 30.5$."
+        ],
+        "common_pitfalls": "Confusing the definitions of range and interquartile range."
+      }
+    }
+  ]
+}

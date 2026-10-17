@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q52",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 52,
+  "question_text": "Use technology to solve:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$5^x = 14$",
+      "final_answer": "$x \\approx 1.64$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up graphs $Y_1 = 5^X$ and $Y_2 = 14$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find intersection point $x \\approx 1.64$"
+        }
+      ],
+      "solution": "We graph $Y_1 = 5^X$ and $Y_2 = 14$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 1.64$.",
+      "ai_explanation": {
+        "concept_rule": "Solve an exponential equation graphically by finding the $x$-coordinate of the intersection of $Y_1$ and $Y_2$.",
+        "step_by_step": [
+          "Plot $Y_1 = 5^x$ and $Y_2 = 14$.",
+          "Find the intersection using the intersect function on technology.",
+          "Round to 3 significant figures: $x \\approx 1.64$."
+        ],
+        "common_pitfalls": "Reading the $y$-value instead of the $x$-value from the intersection display."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$3 \\times 2^{x-1} = 60$",
+      "final_answer": "$x \\approx 5.32$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up graphs $Y_1 = 3 \\times 2^{X-1}$ and $Y_2 = 60$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find intersection point $x \\approx 5.32$"
+        }
+      ],
+      "solution": "We graph $Y_1 = 3 \\times 2^{X-1}$ and $Y_2 = 60$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 5.32$.",
+      "ai_explanation": {
+        "concept_rule": "Graphical solution of $3 \\times 2^{x-1} = 60$.",
+        "step_by_step": [
+          "Enter $Y_1 = 3 \\times 2^{x-1}$ and $Y_2 = 60$.",
+          "Calculate intersection point: $x = 5.3219...$",
+          "Round to 3 significant figures: $x \\approx 5.32$."
+        ],
+        "common_pitfalls": "Entering $3 \\times 2^{x}-1$ instead of $3 \\times 2^{x-1}$ into the calculator."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$40 \\times (0.9)^x = 25$",
+      "final_answer": "$x \\approx 4.46$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up graphs $Y_1 = 40 \\times (0.9)^X$ and $Y_2 = 25$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find intersection point $x \\approx 4.46$"
+        }
+      ],
+      "solution": "We graph $Y_1 = 40 \\times (0.9)^X$ and $Y_2 = 25$ on the same set of axes, and find their point of intersection. The solution is $x \\approx 4.46$.",
+      "ai_explanation": {
+        "concept_rule": "Graphical solution of $40 \\times (0.9)^x = 25$.",
+        "step_by_step": [
+          "Enter $Y_1 = 40 \\times (0.9)^x$ and $Y_2 = 25$.",
+          "Find the intersection on technology: $x = 4.4629...$",
+          "Round to 3 significant figures: $x \\approx 4.46$."
+        ],
+        "common_pitfalls": "Incorrect viewing window preventing the intersection point from being displayed."
+      }
+    }
+  ]
+}

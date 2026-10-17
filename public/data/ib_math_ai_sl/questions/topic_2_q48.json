@@ -1,0 +1,60 @@
+{
+  "id": "topic_2_q48",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 48,
+  "question_text": "Construct a table of values for $x = -3, -2, -1, 0, 1, 2, 3$, then use your table to graph each function:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = 4 \\times 2^x$",
+      "final_answer": "$Table of values: $\\{(-3, 0.5), (-2, 1), (-1, 2), (0, 4), (1, 8), (2, 16), (3, 32)\\}$ and graph$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate table of values for $x \\in [-3, 3]$"
+        },
+        {
+          "code": "A1",
+          "desc": "Plot points and sketch smooth exponential curve"
+        }
+      ],
+      "solution": "Table of values for $y = 4 \\times 2^x$:\n$x = -3 \\implies y = 4 \\times 2^{-3} = \\frac{1}{2}$\n$x = -2 \\implies y = 4 \\times 2^{-2} = 1$\n$x = -1 \\implies y = 4 \\times 2^{-1} = 2$\n$x = 0 \\implies y = 4 \\times 2^0 = 4$\n$x = 1 \\implies y = 4 \\times 2^1 = 8$\n$x = 2 \\implies y = 4 \\times 2^2 = 16$\n$x = 3 \\implies y = 4 \\times 2^3 = 32$\nPlot these points and draw a smooth exponential growth curve passing through them.",
+      "ai_explanation": {
+        "concept_rule": "Exponential function $y = a \\times b^x$ exhibits exponential growth when $b > 1$.",
+        "step_by_step": [
+          "Compute values of $y$ for $x \\in \\{-3, -2, -1, 0, 1, 2, 3\\}$.",
+          "Identify the horizontal asymptote as $y = 0$.",
+          "Plot the points and connect them with a smooth curve."
+        ],
+        "common_pitfalls": "Drawing a straight line between points instead of a smooth exponential curve."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 7 + 3^{-x}$",
+      "final_answer": "$Table of values: $\\{(-3, 34), (-2, 16), (-1, 10), (0, 8), (1, \\frac{22}{3}), (2, \\frac{64}{9}), (3, \\frac{190}{27})\\}$ and graph$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate table of values for $x \\in [-3, 3]$"
+        },
+        {
+          "code": "A1",
+          "desc": "Plot points and sketch exponential decay curve with asymptote $y = 7$"
+        }
+      ],
+      "solution": "Table of values for $y = 7 + 3^{-x}$:\n$x = -3 \\implies y = 7 + 3^3 = 34$\n$x = -2 \\implies y = 7 + 3^2 = 16$\n$x = -1 \\implies y = 7 + 3^1 = 10$\n$x = 0 \\implies y = 7 + 3^0 = 8$\n$x = 1 \\implies y = 7 + 3^{-1} = \\frac{22}{3}$\n$x = 2 \\implies y = 7 + 3^{-2} = \\frac{64}{9}$\n$x = 3 \\implies y = 7 + 3^{-3} = \\frac{190}{27}$\nPlot the points and draw a decreasing exponential curve with horizontal asymptote $y = 7$.",
+      "ai_explanation": {
+        "concept_rule": "Functions of the form $y = c + b^{-x}$ decay toward the horizontal asymptote $y = c$ as $x \\to \\infty$.",
+        "step_by_step": [
+          "Evaluate $y$ for each integer $x$ from $-3$ to $3$.",
+          "Recognize that as $x \\to \\infty$, $3^{-x} \\to 0$, so $y \\to 7$.",
+          "Plot points and sketch curve approaching $y = 7$ from above."
+        ],
+        "common_pitfalls": "Forgetting to add 7 to each term."
+      }
+    }
+  ]
+}

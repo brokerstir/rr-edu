@@ -1,0 +1,31 @@
+{
+  "id": "topic_3_q10",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 10,
+  "question_text": "The distance from $\\text{P}(k, 6, -5)$ to $\\text{Q}(2, -1, -8)$ is 9 units. Find the possible values of $k$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The distance from $\\text{P}(k, 6, -5)$ to $\\text{Q}(2, -1, -8)$ is 9 units. Find the possible values of $k$.",
+      "final_answer": "$26\\text{ customers}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct mode stated with units"
+        }
+      ],
+      "solution": "26 is the data value which occurs most often, so the mode is 26 customers.",
+      "ai_explanation": {
+        "concept_rule": "The mode is the value that appears most frequently in a dataset.",
+        "step_by_step": [
+          "Inspect the data set for the most frequent number.",
+          "26 appears twice, while all other numbers appear once.",
+          "Therefore, the mode is 26 customers."
+        ],
+        "common_pitfalls": "Missing repeated values or reporting the frequency instead of the value."
+      }
+    }
+  ]
+}

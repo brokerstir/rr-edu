@@ -1,0 +1,50 @@
+{
+  "id": "topic_3_q37",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 37,
+  "question_text": "The 5th hole at the Flagstaff golf course has the layout shown. From T to A on the fairway, the distance is 240 m, and from A to F the distance is 135 m.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the distance from T to F in a straight line.",
+      "final_answer": "$Strong, positive correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct description of the relationship"
+        }
+      ],
+      "solution": "There is a strong, positive correlation between the age of an individual and their annual income.",
+      "ai_explanation": {
+        "concept_rule": "Look at the direction and dispersion of points in the scatter plot to deduce strength and direction.",
+        "step_by_step": [
+          "As age increases, annual income generally increases, showing a positive direction.",
+          "The points lie closely along an upward trend line, showing strong correlation."
+        ],
+        "common_pitfalls": "Using vague terms instead of standard statistical descriptors."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the measure of $\\mathrm{A}\\hat{\\mathrm{T}}\\mathrm{F}$.",
+      "final_answer": "$No$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Justification explaining that age alone does not cause higher income"
+        }
+      ],
+      "solution": "No, the relationship is more likely dependent on the amount of professional experience or qualifications an individual has.",
+      "ai_explanation": {
+        "concept_rule": "Correlation does not imply causation; confounding variables like experience often drive the association.",
+        "step_by_step": [
+          "Consider whether growing older directly causes someone's salary to increase automatically.",
+          "Recognise that increased experience, promotions, and qualifications over time are the real underlying drivers."
+        ],
+        "common_pitfalls": "Assuming an observed trend automatically proves a direct cause-and-effect relationship."
+      }
+    }
+  ]
+}

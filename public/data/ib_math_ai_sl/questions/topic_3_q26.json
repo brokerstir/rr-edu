@@ -1,0 +1,84 @@
+{
+  "id": "topic_3_q26",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 26,
+  "question_text": "Triangle ABC has $AB = 8\\text{ cm}$, $BC = 10\\text{ cm}$, and $AC = 12\\text{ cm}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a diagram clearly showing this information.",
+      "final_answer": "$Old: $\\text{min}=6, Q_1=7, \\text{med}=7.75, Q_3=8, \\text{max}=9$; New: $\\text{min}=4, Q_1=6.25, \\text{med}=7.25, Q_3=8, \\text{max}=9$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct five-number summary for old recipe"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct five-number summary for new recipe"
+        }
+      ],
+      "solution": "The five number summaries are:\nOld recipe: $\\text{minimum} = 6$, $Q_1 = 7$, $\\text{median} = 7.75$, $Q_3 = 8$, $\\text{maximum} = 9$\nNew recipe: $\\text{minimum} = 4$, $Q_1 = 6.25$, $\\text{median} = 7.25$, $Q_3 = 8$, $\\text{maximum} = 9$",
+      "ai_explanation": {
+        "concept_rule": "Read the values directly from the calculator screen outputs (minX, Q1, Med, Q3, maxX).",
+        "step_by_step": [
+          "For Old recipe: read $\\text{minX}=6$, $Q_1=7$, $\\text{Med}=7.75$, $Q_3=8$, $\\text{maxX}=9$.",
+          "For New recipe: read $\\text{minX}=4$, $Q_1=6.25$, $\\text{Med}=7.25$, $Q_3=8$, $\\text{maxX}=9$."
+        ],
+        "common_pitfalls": "Mixing up the values between the two recipes."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the smallest angle in triangle ABC.",
+      "final_answer": "$Parallel boxplots drawn on the same scale from 3 to 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Appropriate common scale drawn"
+        },
+        {
+          "code": "A1",
+          "desc": "Both boxplots accurately plotted"
+        }
+      ],
+      "solution": "Draw parallel boxplots on the same horizontal axis from 3 to 10. The old recipe boxplot has whiskers from 6 to 9 with box from 7 to 8 and median line at 7.75. The new recipe boxplot has whiskers from 4 to 9 with box from 6.25 to 8 and median line at 7.25.",
+      "ai_explanation": {
+        "concept_rule": "Parallel boxplots use the same scale to allow direct visual comparison between two data sets.",
+        "step_by_step": [
+          "Draw a single horizontal axis from 3 to 10.",
+          "Plot the five-number summary of the old recipe above the axis.",
+          "Plot the five-number summary of the new recipe below or parallel to the first."
+        ],
+        "common_pitfalls": "Using different scales for the two boxplots, which prevents valid comparison."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the area of triangle ABC.",
+      "final_answer": "$The distributor should not adopt the new recipe$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Comparison of summary statistics (minimum, Q1, median higher for old recipe)"
+        },
+        {
+          "code": "R1",
+          "desc": "Valid conclusion/recommendation based on data"
+        }
+      ],
+      "solution": "The minimum, $Q_1$, and the median are higher for the old recipe, and $Q_3$ and the maximum are the same for both recipes.\nThe group generally preferred the old recipe over the new recipe, so the distributor should not adopt this new recipe for their drink.",
+      "ai_explanation": {
+        "concept_rule": "Comparing distributions requires comparing measures of center (median) and spread (IQR/range), as well as corresponding quartiles.",
+        "step_by_step": [
+          "Compare medians: $7.75 > 7.25$, meaning the middle score is higher for the old recipe.",
+          "Compare lower quartiles and minimums: both are higher for the old recipe.",
+          "Conclude that overall satisfaction is higher with the old recipe, so the new recipe should not be adopted."
+        ],
+        "common_pitfalls": "Failing to connect the statistical comparison to the practical decision requested."
+      }
+    }
+  ]
+}

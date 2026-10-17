@@ -1,0 +1,110 @@
+{
+  "id": "topic_2_q39",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 39,
+  "question_text": "Suppose $y$ is inversely proportional to $x$. Explain what happens to $y$ if:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$x$ is tripled",
+      "final_answer": "$y \\text{ is divided by } 3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply inverse proportion factor when $x$ is multiplied by 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude $y$ is divided by 3 (or multiplied by $\\frac{1}{3}$)"
+        }
+      ],
+      "solution": "If $x$ is tripled, then $x$ is multiplied by $3$.\n$\\therefore y$ is multiplied by $\\frac{1}{3}$.\n$\\therefore y$ is divided by $3$.",
+      "ai_explanation": {
+        "concept_rule": "For inverse variation $y \\propto \\frac{1}{x}$, multiplying $x$ by $k$ results in multiplying $y$ by $\\frac{1}{k}$.",
+        "step_by_step": [
+          "Tripling $x$ means $x_{new} = 3x$.",
+          "Substitute into inverse relation: $y_{new} = \\frac{1}{3x} = \\frac{1}{3}y$.",
+          "Thus, $y$ is divided by $3$."
+        ],
+        "common_pitfalls": "Tripling $y$ instead of dividing by 3."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$x$ is divided by $4$",
+      "final_answer": "$y \\text{ is multiplied by } 4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply reciprocal of scale factor $\\frac{1}{4}$ to $y$"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude $y$ is multiplied by 4"
+        }
+      ],
+      "solution": "If $x$ is divided by $4$, then $x$ is multiplied by $\\frac{1}{4}$.\n$\\therefore y$ is multiplied by $4$.",
+      "ai_explanation": {
+        "concept_rule": "In inverse variation, dividing the independent variable by $k$ multiplies the dependent variable by $k$.",
+        "step_by_step": [
+          "Dividing $x$ by $4$ is multiplying by $\\frac{1}{4}$.",
+          "The reciprocal of $\\frac{1}{4}$ is $4$.",
+          "Therefore, $y$ is multiplied by $4$."
+        ],
+        "common_pitfalls": "Dividing $y$ by 4 instead of multiplying."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$x$ is multiplied by $\\frac{5}{3}$",
+      "final_answer": "$y \\text{ is multiplied by } \\frac{3}{5}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Take reciprocal of multiplier $\\frac{5}{3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State new multiplier for $y$"
+        }
+      ],
+      "solution": "If $x$ is multiplied by $\\frac{5}{3}$, then $y$ is multiplied by $\\frac{3}{5}$.",
+      "ai_explanation": {
+        "concept_rule": "If $y \\propto \\frac{1}{x}$, any factor $m$ multiplying $x$ will multiply $y$ by $\\frac{1}{m}$.",
+        "step_by_step": [
+          "Identify multiplier of $x$: $\\frac{5}{3}$.",
+          "Take reciprocal: $\\frac{1}{5/3} = \\frac{3}{5}$.",
+          "Conclude $y$ is multiplied by $\\frac{3}{5}$."
+        ],
+        "common_pitfalls": "Keeping the same fraction $\\frac{5}{3}$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "$x$ is decreased by $60\\%$.",
+      "final_answer": "$y \\text{ is increased by } 150\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find multiplier for $x$ as $0.4$ and take reciprocal"
+        },
+        {
+          "code": "A1",
+          "desc": "Convert multiplier $2.5$ to percentage increase"
+        }
+      ],
+      "solution": "If $x$ is decreased by $60\\%$, then $x$ is multiplied by $1 - 0.6 = 0.4$.\n$\\therefore y$ is multiplied by $\\frac{1}{0.4} = 2.5$.\n$\\therefore y$ is increased by $150\\%$.",
+      "ai_explanation": {
+        "concept_rule": "A percentage decrease of $p$ gives a factor of $1 - p$. The inverse factor is $\\frac{1}{1 - p}$, from which percentage change is calculated.",
+        "step_by_step": [
+          "Calculate multiplier for $x$: $1 - 0.60 = 0.4$.",
+          "Calculate multiplier for $y$: $\\frac{1}{0.4} = 2.5$.",
+          "Convert multiplier to percentage increase: $(2.5 - 1) \\times 100\\% = 150\\%$."
+        ],
+        "common_pitfalls": "Thinking a $60\\%$ decrease in $x$ causes a $60\\%$ increase in $y$."
+      }
+    }
+  ]
+}

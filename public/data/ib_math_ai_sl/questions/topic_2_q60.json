@@ -1,0 +1,70 @@
+{
+  "id": "topic_2_q60",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 60,
+  "question_text": "Find the amplitude, principal axis, and period of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\sin 4x$",
+      "final_answer": "$Amplitude $= 1$, principal axis: $y = 0$, period $= 90^\\circ$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude $= 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period $= 90^\\circ$"
+        }
+      ],
+      "solution": "For $y = f(x) = \\sin 4x$:\n$\\bullet$ the amplitude is $|1| = 1$\n$\\bullet$ the principal axis is $y = 0$\n$\\bullet$ the period is $\\frac{360^\\circ}{4} = 90^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "For $y = A \\sin(Bx) + D$, amplitude is $|A|$, principal axis is $y = D$, and period is $\\frac{360^\\circ}{B}$.",
+        "step_by_step": [
+          "Identify $A = 1$, $B = 4$, $D = 0$.",
+          "Calculate amplitude: $|1| = 1$.",
+          "Find principal axis: $y = 0$.",
+          "Compute period: $\\frac{360^\\circ}{4} = 90^\\circ$."
+        ],
+        "common_pitfalls": "Multiplying $360^\\circ$ by 4 instead of dividing."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = -2\\sin\\frac{x}{3} - 1$",
+      "final_answer": "$Amplitude $= 2$, principal axis: $y = -1$, period $= 720^\\circ$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Amplitude $= 2$"
+        },
+        {
+          "code": "A1",
+          "desc": "Principal axis is $y = -1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Period $= 720^\\circ$"
+        }
+      ],
+      "solution": "For $y = f(x) = -2\\sin\\frac{x}{2} - 1$:\n$\\bullet$ the amplitude is $|-2| = 2$\n$\\bullet$ the principal axis is $y = -1$\n$\\bullet$ the period is $\\frac{360^\\circ}{\\frac{1}{2}} = 720^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Amplitude is always positive: $|A|$. Period is $\\frac{360^\\circ}{B}$. Principal axis is $y = D$.",
+        "step_by_step": [
+          "Identify parameters: $A = -2$, $B = \\frac{1}{2}$, $D = -1$.",
+          "Amplitude is $|-2| = 2$.",
+          "Principal axis is $y = -1$.",
+          "Period is $\\frac{360^\\circ}{1/2} = 720^\\circ$."
+        ],
+        "common_pitfalls": "Stating amplitude as a negative number $(-2)$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "topic_3_q24",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 24,
+  "question_text": "Consider the triangular prism shown.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "State the coordinates of M.",
+      "final_answer": "$(-5, 4, 6)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the 3D midpoint formula to coordinates of A and D"
+        },
+        {
+          "code": "A1",
+          "desc": "State the correct coordinates of M"
+        }
+      ],
+      "solution": "$M$ is the midpoint of $[\\text{AD}]$ which is $\\left(\\frac{0+(-10)}{2}, \\frac{4+4}{2}, \\frac{6+6}{2}\\right)$ or $(-5, 4, 6)$.",
+      "ai_explanation": {
+        "concept_rule": "The midpoint of two points $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ is given by $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$.",
+        "step_by_step": [
+          "Identify coordinates: $A(0, 4, 6)$ and $D(-10, 4, 6)$.",
+          "Compute the average of each coordinate component: $\\frac{0-10}{2} = -5$, $\\frac{4+4}{2} = 4$, $\\frac{6+6}{2} = 6$.",
+          "Write the coordinates of $M$ as $(-5, 4, 6)$."
+        ],
+        "common_pitfalls": "Subtracting coordinates instead of adding them when calculating the midpoint."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the measure of $\\mathrm{C\\widehat{M}D}$.",
+      "final_answer": "$Boxplot drawn with Min = 0, $Q_1 = 4$, Median = 6, $Q_3 = 12.5$, Max = 34$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Appropriate scale drawn from 0 to 35"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct boxplot showing the five-number summary"
+        }
+      ],
+      "solution": "Construct a boxplot with minimum at $0$, lower quartile at $4$, median at $6$, upper quartile at $12.5$, and maximum at $34$.",
+      "ai_explanation": {
+        "concept_rule": "Use the five-number summary to draw the box and whiskers on a linear scale.",
+        "step_by_step": [
+          "Draw horizontal scale from 0 to at least 35.",
+          "Mark min at 0, $Q_1$ at 4, median at 6, $Q_3$ at 12.5, max at 34.",
+          "Draw box from $Q_1$ to $Q_3$ with vertical line at median, and whiskers to min and max."
+        ],
+        "common_pitfalls": "Plotting $Q_3 = 12.5$ inaccurately on the axis."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Find the angle between the following line segments and the base plane BECO: [OD]",
+      "final_answer": "$29.1^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify coordinates of projection point N and compute distance NO"
+        },
+        {
+          "code": "M1",
+          "desc": "Use tangent ratio with DN and NO"
+        },
+        {
+          "code": "A1",
+          "desc": "Find the angle to one decimal place"
+        }
+      ],
+      "solution": "The required angle is $\\text{D}\\widehat{\\text{O}}\\text{N}$, where $N$ has coordinates $(-10, 4, 0)$.\nNow $\\text{DN} = 6\\text{ units}$\nand $\\text{NO} = \\sqrt{(-10 - 0)^2 + (4 - 0)^2 + (0 - 0)^2} = \\sqrt{(-10)^2 + 4^2 + 0^2} = \\sqrt{116}\\text{ units}$\n$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{116}}$\n$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{116}}\\right) \\approx 29.1^\\circ$\nThe angle is about $29.1^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The angle between a line segment and a plane is determined by projecting the segment's endpoint perpendicularly onto the plane.",
+        "step_by_step": [
+          "Project $D(-10, 4, 6)$ vertically onto the horizontal base plane ($z=0$) to get $N(-10, 4, 0)$.",
+          "Find the vertical height $\\text{DN} = 6$ units.",
+          "Find the horizontal distance $\\text{NO} = \\sqrt{(-10)^2 + 4^2} = \\sqrt{116}$.",
+          "Calculate $\\tan\\theta = \\frac{6}{\\sqrt{116}}$ and $\\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{116}}\\right) \\approx 29.1^\\circ$."
+        ],
+        "common_pitfalls": "Using the wrong coordinates for the projected point $N$ on the base plane."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Find the angle between the following line segments and the base plane BECO: [EM]",
+      "final_answer": "$43.1^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify coordinates of point P and calculate PE"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tangent ratio with height MP and base PE"
+        },
+        {
+          "code": "A1",
+          "desc": "Compute the angle to one decimal place"
+        }
+      ],
+      "solution": "The required angle is $\\text{M}\\widehat{\\text{E}}\\text{P}$, where $P$ has coordinates $(-5, 4, 0)$.\nNow $\\text{MP} = 6\\text{ units}$\nand $\\text{PE} = \\sqrt{(-10 - (-5))^2 + (8 - 4)^2 + (0 - 0)^2} = \\sqrt{(-5)^2 + 4^2 + 0^2} = \\sqrt{41}\\text{ units}$\n$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{41}}$\n$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{41}}\\right) \\approx 43.1^\\circ$\nThe angle is about $43.1^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The angle a line segment makes with the base plane is found by dropping a perpendicular from the top endpoint to the base plane.",
+        "step_by_step": [
+          "Project $M(-5, 4, 6)$ vertically onto the base plane to get $P(-5, 4, 0)$.",
+          "Identify the vertical height $\\text{MP} = 6$.",
+          "Calculate base length $\\text{PE} = \\sqrt{(-10 - (-5))^2 + (8 - 4)^2} = \\sqrt{25 + 16} = \\sqrt{41}$.",
+          "Solve $\\tan\\theta = \\frac{6}{\\sqrt{41}}$ to find $\\theta \\approx 43.1^\\circ$."
+        ],
+        "common_pitfalls": "Using point $D$ or $A$ instead of the midpoint $M$ to determine the projection."
+      }
+    }
+  ]
+}

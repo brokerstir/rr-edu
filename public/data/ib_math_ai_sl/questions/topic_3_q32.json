@@ -1,0 +1,52 @@
+{
+  "id": "topic_3_q32",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 32,
+  "question_text": "Find the value of $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Scatter plot of Camera B vs Camera A$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly plotted points on the Cartesian plane with axes labelled"
+        }
+      ],
+      "solution": "Plot the points $(x, y)$ representing (Camera A, Camera B): $(8.5, 7)$, $(8, 6)$, $(9, 7.5)$, $(7, 9)$, $(8.5, 7.5)$, and $(7.5, 6)$ on a scatter plot.",
+      "ai_explanation": {
+        "concept_rule": "A scatter plot graphically represents bivariate data by plotting ordered pairs $(x, y)$ on a coordinate plane.",
+        "step_by_step": [
+          "Label the horizontal axis as Camera A and the vertical axis as Camera B.",
+          "Choose appropriate scale markings from 5 to 11 on the horizontal axis and 5 to 10 on the vertical axis.",
+          "Plot the given coordinate pairs: $(8.5, 7), (8, 6), (9, 7.5), (7, 9), (8.5, 7.5), (7.5, 6)$."
+        ],
+        "common_pitfalls": "Swapping the $x$ and $y$ variables or incorrectly scaling the axes."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$(7, 9)$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identification of the outlier point and its interpretation"
+        }
+      ],
+      "solution": "The point $(7, 9)$ appears to be an outlier. This corresponds to the review scoring camera A a 7, and camera B a 9.",
+      "ai_explanation": {
+        "concept_rule": "An outlier in bivariate data is a point that does not follow the general trend or pattern seen in the rest of the data.",
+        "step_by_step": [
+          "Observe the overall pattern of the plotted points.",
+          "Identify the point that lies noticeably far from the general cluster, which is $(7, 9)$.",
+          "Interpret the coordinates in context: Camera A score of 7 and Camera B score of 9."
+        ],
+        "common_pitfalls": "Identifying the highest or lowest single value instead of the point deviating from the bivariate trend."
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "topic_2_q31",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 31,
+  "question_text": "In one hour, Isabelita can prepare 120 spring rolls, and Arturo can prepare 100 spring rolls.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "How long will it take to prepare 600 spring rolls if:\nIsabelita works by herself",
+      "final_answer": "$5\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Divide 600 by 120"
+        },
+        {
+          "code": "A1",
+          "desc": "State 5 hours"
+        }
+      ],
+      "solution": "Isabelita can prepare $600$ spring rolls in $\\frac{600}{120} = 5\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "$\\text{Time} = \\frac{\\text{Total Work}}{\\text{Rate of Work}}$.",
+        "step_by_step": [
+          "Identify total work: $600$ spring rolls.",
+          "Identify rate: $120$ rolls per hour.",
+          "Divide: $\\frac{600}{120} = 5\\text{ hours}$."
+        ],
+        "common_pitfalls": "Dividing rate by total work instead of total work by rate."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "How long will it take to prepare 600 spring rolls if:\nArturo works by himself",
+      "final_answer": "$6\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Divide 600 by 100"
+        },
+        {
+          "code": "A1",
+          "desc": "State 6 hours"
+        }
+      ],
+      "solution": "Arturo can prepare $600$ spring rolls in $\\frac{600}{100} = 6\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "$\\text{Time} = \\frac{\\text{Total Work}}{\\text{Rate of Work}}$.",
+        "step_by_step": [
+          "Total spring rolls = $600$.",
+          "Arturo's rate = $100$ rolls per hour.",
+          "Time taken = $\\frac{600}{100} = 6\\text{ hours}$."
+        ],
+        "common_pitfalls": "None."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "How long will it take to prepare 600 spring rolls if:\nIsabelita and Arturo work together?",
+      "final_answer": "$\\frac{30}{11} \\approx 2.73\\text{ hours} \\approx 2\\text{ hours } 44\\text{ minutes}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Add rates: 1/5 + 1/6 = 11/30 of the job per hour"
+        },
+        {
+          "code": "M1",
+          "desc": "Take reciprocal to find total time: 30/11 hours"
+        },
+        {
+          "code": "A1",
+          "desc": "Convert to hours and minutes"
+        }
+      ],
+      "solution": "Isabelita can complete $\\frac{120}{600} = \\frac{1}{5}$ of the job each hour, and Arturo can complete $\\frac{100}{600} = \\frac{1}{6}$ of the job each hour.\nSo, working together they can complete $\\frac{1}{5} + \\frac{1}{6} = \\frac{11}{30}$ of the job each hour.\n$\\therefore$ it would take them $\\frac{30}{11} \\approx 2.73\\text{ hours} \\approx 2\\text{ hours } 44\\text{ minutes}$ to complete the job together.",
+      "ai_explanation": {
+        "concept_rule": "Combined work rate is the sum of individual work rates.",
+        "step_by_step": [
+          "Find combined rate: $120 + 100 = 220$ spring rolls per hour (or $\\frac{1}{5} + \\frac{1}{6} = \\frac{11}{30}$ of the job/hour).",
+          "Calculate time: $\\frac{600}{220} = \\frac{30}{11}\\text{ hours}$.",
+          "Convert decimal hours to minutes: $\\frac{8}{11} \\times 60 \\approx 43.6 \\approx 44\\text{ minutes}$.",
+          "Total time is approximately $2\\text{ hours } 44\\text{ minutes}$."
+        ],
+        "common_pitfalls": "Averaging the two times $\\frac{5+6}{2} = 5.5$ instead of adding rates."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Discuss any assumptions you have made in a, and whether or not they are reasonable.",
+      "final_answer": "$In a i and a ii: assumed constant work rate; in a iii: assumed they work together without hindering each other.$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State and evaluate constant rate assumption for (a i) and (a ii)"
+        },
+        {
+          "code": "R1",
+          "desc": "State and evaluate independence/no hindrance assumption for (a iii)"
+        }
+      ],
+      "solution": "In a i and a ii, we assume that Isabelita and Arturo can work at a constant rate over many hours. It is likely that they would slow down or need a rest, so this assumption may not be reasonable.\nIn a iii, we assume that Isabelita and Arturo can work without getting in each other's way. This assumption seems reasonable.",
+      "ai_explanation": {
+        "concept_rule": "Assessing assumptions involves identifying the mathematical conditions imposed and discussing their realism in a practical context.",
+        "step_by_step": [
+          "For individual work: constant productivity ignores fatigue and breaks.",
+          "For joint work: independent rates assume shared space does not decrease productivity."
+        ],
+        "common_pitfalls": "Failing to explain whether the assumption is reasonable or not."
+      }
+    }
+  ]
+}

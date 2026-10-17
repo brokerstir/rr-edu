@@ -1,0 +1,53 @@
+{
+  "id": "topic_3_q25",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 25,
+  "question_text": "Find the area of:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\text{minimum} = 15,\\ Q_1 = 30,\\ \\text{median} = 50,\\ Q_3 = 60,\\ \\text{maximum} = 70$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct five-number summary read from site 1 boxplot"
+        }
+      ],
+      "solution": "The five-number summary for site 1 is:\n$\\text{minimum} = 15$, $Q_1 = 30$, $\\text{median} = 50$, $Q_3 = 60$, $\\text{maximum} = 70$",
+      "ai_explanation": {
+        "concept_rule": "Read the five key values (whisker ends, box edges, and central line) from the boxplot for site 1.",
+        "step_by_step": [
+          "Lower whisker ends at 15.",
+          "Lower box edge is at 30.",
+          "Middle line is at 50.",
+          "Upper box edge is at 60.",
+          "Upper whisker ends at 70."
+        ],
+        "common_pitfalls": "Misreading the scale on the vertical axis."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$Site 3$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct site identified"
+        }
+      ],
+      "solution": "Site 3 has the greatest range of weights.",
+      "ai_explanation": {
+        "concept_rule": "Range is the overall length from the end of the lower whisker to the end of the upper whisker.",
+        "step_by_step": [
+          "Observe overall spread for each site: Site 1 runs from 15 to 70 (range = 55). Site 2 runs from about 10 to 55 (range = 45). Site 3 runs from about 5 to 75 (range = 70).",
+          "Site 3 has the largest overall whisker-to-whisker span."
+        ],
+        "common_pitfalls": "Looking only at the length of the box (IQR) instead of total range."
+      }
+    }
+  ]
+}

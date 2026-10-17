@@ -1,0 +1,60 @@
+{
+  "id": "topic_2_q47",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 47,
+  "question_text": "For the function $g(x) = 5^x - 5$, show that:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the $y$-intercept is $-4$",
+      "final_answer": "$-4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $g(0)$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the $y$-intercept"
+        }
+      ],
+      "solution": "$g(0) = 5^0 - 5 = -4$. Therefore, the $y$-intercept is $-4$.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept occurs where $x = 0$.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $g(x) = 5^x - 5$.",
+          "Evaluate $5^0 - 5 = 1 - 5 = -4$.",
+          "Conclude that the $y$-intercept is $-4$."
+        ],
+        "common_pitfalls": "Thinking $5^0 = 0$ resulting in $-5$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the $x$-intercept is $1$.",
+      "final_answer": "$1$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $g(1)$ or solve $5^x - 5 = 0$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the $x$-intercept"
+        }
+      ],
+      "solution": "$g(1) = 5^1 - 5 = 0$. Therefore, the $x$-intercept is $1$.",
+      "ai_explanation": {
+        "concept_rule": "The $x$-intercept occurs where $g(x) = 0$.",
+        "step_by_step": [
+          "Set $5^x - 5 = 0$.",
+          "Solve $5^x = 5^1$, which gives $x = 1$.",
+          "Conclude the $x$-intercept is $1$."
+        ],
+        "common_pitfalls": "Solving $5^x = 5$ as $x = 0$."
+      }
+    }
+  ]
+}

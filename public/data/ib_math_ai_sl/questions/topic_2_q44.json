@@ -1,0 +1,79 @@
+{
+  "id": "topic_2_q44",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 44,
+  "question_text": "The diameters of circular rugs and their corresponding masses are recorded in the table below: $\\begin{array}{|c|c|c|c|c|} \\hline \\text{Diameter } (d\\text{ m}) & 0.77 & 1.22 & 1.69 & 2.25 \\\\ \\hline \\text{Mass } (m\\text{ kg}) & 0.97 & 2.44 & 4.68 & 8.30 \\\\ \\hline \\end{array}$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Do you think there is direct variation or inverse variation between the variables? Explain your answer.",
+      "final_answer": "$\\text{We expect direct variation between the variables.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that as diameter increases, mass increases, implying direct variation"
+        }
+      ],
+      "solution": "As the diameter of a rug increases, we expect the mass of the rug to increase.\n$\\therefore$ we expect direct variation between the variables.",
+      "ai_explanation": {
+        "concept_rule": "When an increase in one variable leads to an increase in another variable, a direct variation relationship is expected.",
+        "step_by_step": [
+          "Analyze the physical scenario: a larger rug has more material.",
+          "More material means greater mass.",
+          "Conclude that mass increases as diameter increases, so direct variation is expected."
+        ],
+        "common_pitfalls": "Confusing direct variation with inverse variation."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Use technology to obtain a power model which best fits the data.",
+      "final_answer": "$m \\approx 1.64d^2$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identify correlation coefficient close to 1 indicating an excellent fit"
+        },
+        {
+          "code": "A1",
+          "desc": "State conclusion that power is close to 2 and give model"
+        }
+      ],
+      "solution": "The correlation coefficient $r$ is very close to 1, so the fit is excellent. The power is very close to 2, so it is reasonable to conclude that $m$ is directly proportional to $d^2$. The model is $m \\approx 1.64d^2$.",
+      "ai_explanation": {
+        "concept_rule": "Power regression models fit data to the form $y = ax^b$. If $b \\approx 2$, the relationship is approximately quadratic.",
+        "step_by_step": [
+          "Observe the regression output parameters where $b \\approx 2.00$ and $r \\approx 1$.",
+          "Conclude direct proportionality to $d^2$ and state the model $m \\approx 1.64d^2$."
+        ],
+        "common_pitfalls": "Confusing direct proportionality with linear proportionality."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Estimate the mass of a rug with diameter $1.5\\text{ m}$.",
+      "final_answer": "$\\approx 3.69\\text{ kg}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $d = 1.5$ into the model"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate mass correctly with units"
+        }
+      ],
+      "solution": "When $d = 1.5$, $m \\approx 1.64(1.5)^2 \\approx 3.69$. So, a rug with diameter $1.5\\text{ m}$ has mass $\\approx 3.69\\text{ kg}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given independent variable into the model to predict the dependent variable.",
+        "step_by_step": [
+          "Substitute $d = 1.5$ into $m = 1.64d^2$.",
+          "Evaluate $1.64 \\times 2.25 = 3.69\\text{ kg}$."
+        ],
+        "common_pitfalls": "Forgetting to square the diameter value."
+      }
+    }
+  ]
+}

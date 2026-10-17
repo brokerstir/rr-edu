@@ -1,0 +1,137 @@
+{
+  "id": "topic_2_q57",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 57,
+  "question_text": "A radioactive substance has a half-life of 4 days. The weight of a sample of this substance after $t$ days is $W(t) = 100 \\times a^t\\text{ mg}$, where $a > 0$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the initial weight of the sample.",
+      "final_answer": "$100\\text{ mg}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluating $W(0)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating initial weight as $100\\text{ mg}$"
+        }
+      ],
+      "solution": "$W(t) = 100 \\times a^t$\n$W(0) = 100 \\times a^0 = 100$ (since $a > 0$).\nThe initial weight of the sample is $100\\text{ mg}$.",
+      "ai_explanation": {
+        "concept_rule": "The initial value in an exponential function $f(t) = k \\cdot a^t$ is found at $t = 0$, where $a^0 = 1$.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $W(t)$.",
+          "Use the property $a^0 = 1$ for any non-zero $a$.",
+          "Calculate $W(0) = 100\\text{ mg}$."
+        ],
+        "common_pitfalls": "Assuming $a^0 = 0$ instead of $1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate the value of $a$, correct to 4 decimal places, and interpret this value.",
+      "final_answer": "$a = \\frac{1}{\\sqrt[4]{2}} \\approx 0.8409$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Formulating the equation for half-life at $t = 4$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation and interpretation of $a$"
+        }
+      ],
+      "solution": "After 4 days, the sample is $\\frac{1}{2} \\times 100 = 50\\text{ mg}$.\n$\\therefore W(4) = 50$\n$50 = 100 \\times a^4$\n$a^4 = \\frac{1}{2}$\n$a = \\frac{1}{\\sqrt[4]{2}} \\approx 0.8409$ (as $a > 0$).\nThe weight of the sample on any given day is reduced to about $84.09\\%$ of this weight the following day.",
+      "ai_explanation": {
+        "concept_rule": "The growth/decay factor $a$ is obtained by solving $a^n = \\text{fraction remaining}$ over $n$ time intervals.",
+        "step_by_step": [
+          "Recognize that half-life is 4 days, meaning $W(4) = 50$.",
+          "Set up $100 \\times a^4 = 50$.",
+          "Simplify to $a^4 = 0.5$.",
+          "Take the fourth root: $a = (0.5)^{1/4} \\approx 0.8409$."
+        ],
+        "common_pitfalls": "Dividing 0.5 by 4 instead of taking the fourth root."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the weight of the sample after 6 days.",
+      "final_answer": "$\\approx 35.4\\text{ mg}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substituting $t = 6$ into the model"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating weight to about $35.4\\text{ mg}$"
+        }
+      ],
+      "solution": "$W(t) = 100 \\times \\left(\\frac{1}{\\sqrt[4]{2}}\\right)^t$\n$W(6) = 100 \\times \\left(\\frac{1}{\\sqrt[4]{2}}\\right)^6 \\approx 35.4$\nThe weight of the sample after 6 days is about $35.4\\text{ mg}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given time value into the established exponential formula.",
+        "step_by_step": [
+          "Identify $t = 6$.",
+          "Evaluate $W(6) = 100 \\times (2^{-1/4})^6 = 100 \\times 2^{-1.5}$.",
+          "Compute $100 \\times \\frac{1}{2\\sqrt{2}} \\approx 35.36\\text{ mg}$."
+        ],
+        "common_pitfalls": "Rounding intermediate values of $a$ too early, leading to rounding errors in the final result."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "How long will it take for the weight of the sample to fall to 60 mg?",
+      "final_answer": "$\\approx 2.95\\text{ days}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $W(t) = 60$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $t \\approx 2.95$ days"
+        }
+      ],
+      "solution": "When $W(t) = 60$, $60 = 100 \\times 2^{-\\frac{t}{4}}$.\nUsing technology, $t \\approx 2.95$.\nIt will take about $2.95$ days for the weight to fall to $60\\text{ mg}$.",
+      "ai_explanation": {
+        "concept_rule": "Solve an exponential equation for the unknown time $t$ given a target output value.",
+        "step_by_step": [
+          "Set $60 = 100 \\times 2^{-t/4}$.",
+          "Divide by 100 to get $0.6 = 2^{-t/4}$.",
+          "Take natural logs: $\\ln(0.6) = -\\frac{t}{4} \\ln 2$.",
+          "Compute $t = -\\frac{4 \\ln(0.6)}{\\ln 2} \\approx 2.95$ days."
+        ],
+        "common_pitfalls": "Sign error when working with negative exponents."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "How long will it take for the weight of the sample to fall to 30 mg?",
+      "final_answer": "$\\approx 6.95\\text{ days}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting $W(t) = 30$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $t \\approx 6.95$ days"
+        }
+      ],
+      "solution": "When $W(t) = 30$, $30 = 100 \\times 2^{-\\frac{t}{4}}$.\nUsing technology, $t \\approx 6.95$.\nIt will take about $6.95$ days for the weight to fall to $30\\text{ mg}$.",
+      "ai_explanation": {
+        "concept_rule": "Solve an exponential decay equation using logarithms or graphing calculator.",
+        "step_by_step": [
+          "Set $30 = 100 \\times 2^{-t/4}$.",
+          "Divide by 100: $0.3 = 2^{-t/4}$.",
+          "Solve for $t$: $t = -\\frac{4 \\ln(0.3)}{\\ln 2} \\approx 6.95$ days."
+        ],
+        "common_pitfalls": "Incorrect calculation of logarithms with base 2 or natural logarithms."
+      }
+    }
+  ]
+}

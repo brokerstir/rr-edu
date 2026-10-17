@@ -1,0 +1,26 @@
+{
+  "id": "topic_3_q1",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 1,
+  "question_text": "For the given figure, find to 3 significant figures:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the perimeter",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "the area.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

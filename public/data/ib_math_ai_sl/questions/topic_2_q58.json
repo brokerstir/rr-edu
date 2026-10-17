@@ -1,0 +1,88 @@
+{
+  "id": "topic_2_q58",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 58,
+  "question_text": "Sketch on the same set of axes the graph of $y = e^x$:\nFor each graph, state the $y$-intercept and equation of the horizontal asymptote.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = e^x - 1$",
+      "final_answer": "$y\\text{-intercept} = 0$, horizontal asymptote: $y = -1$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identifying transformation as a vertical translation of 1 unit downwards"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating $y$-intercept is 0 and horizontal asymptote is $y = -1$"
+        }
+      ],
+      "solution": "$y = e^x - 1$ is a vertical translation of $y = e^x$ by 1 unit downwards.\nThe $y$-intercept is $0$, and the horizontal asymptote is $y = -1$.",
+      "ai_explanation": {
+        "concept_rule": "For a vertical translation $y = f(x) + c$, the horizontal asymptote shifts by $c$ to $y = c$, and the $y$-intercept shifts to $f(0) + c$.",
+        "step_by_step": [
+          "Start with $y = e^x$ having horizontal asymptote $y = 0$ and $y$-intercept $(0,1)$.",
+          "Shift downwards by 1 unit.",
+          "Asymptote becomes $y = 0 - 1 = -1$.",
+          "Intercept becomes $(0, 1 - 1) = (0, 0)$."
+        ],
+        "common_pitfalls": "Forgetting to translate the horizontal asymptote along with the function."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = 2e^x$",
+      "final_answer": "$y\\text{-intercept} = 2$, horizontal asymptote: $y = 0$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identifying transformation as a vertical stretch with scale factor 2"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating $y$-intercept is 2 and horizontal asymptote is $y = 0$"
+        }
+      ],
+      "solution": "$y = 2e^x$ is a vertical stretch of $y = e^x$ with scale factor 2.\nThe $y$-intercept is $2$, and the horizontal asymptote is $y = 0$.",
+      "ai_explanation": {
+        "concept_rule": "A vertical dilation $y = a f(x)$ multiplies all $y$-values by $a$. If the asymptote is $y = 0$, it remains $y = 0$.",
+        "step_by_step": [
+          "Identify parent function $y = e^x$ with $y$-intercept $(0,1)$ and asymptote $y = 0$.",
+          "Multiply $y$-values by 2.",
+          "New $y$-intercept is $(0, 2)$.",
+          "The horizontal asymptote remains $y = 2 \\times 0 = 0$."
+        ],
+        "common_pitfalls": "Thinking the horizontal asymptote shifts to $y = 2$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$y = e^{\\frac{x}{2}}$",
+      "final_answer": "$y\\text{-intercept} = 1$, horizontal asymptote: $y = 0$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Identifying transformation as a horizontal stretch with scale factor 3"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating $y$-intercept is 1 and horizontal asymptote is $y = 0$"
+        }
+      ],
+      "solution": "$y = e^{\\frac{x}{3}}$ is a horizontal stretch of $y = e^x$ with scale factor 3.\nThe $y$-intercept is $1$, and the horizontal asymptote is $y = 0$.",
+      "ai_explanation": {
+        "concept_rule": "A horizontal dilation $y = f(kx)$ has a scale factor of $\\frac{1}{k}$. It stretches/compresses horizontally without altering the horizontal asymptote or $y$-intercept.",
+        "step_by_step": [
+          "Identify parent function $y = e^x$.",
+          "Replace $x$ with $\\frac{x}{3}$, which corresponds to a horizontal stretch of scale factor 3.",
+          "At $x = 0$, $y = e^0 = 1$, so $y$-intercept is 1.",
+          "As $x \\to -\\infty$, $y \\to 0$, so the horizontal asymptote is $y = 0$."
+        ],
+        "common_pitfalls": "Confusing the scale factor as $\\frac{1}{3}$ instead of 3."
+      }
+    }
+  ]
+}

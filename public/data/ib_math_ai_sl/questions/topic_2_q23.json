@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q23",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 23,
+  "question_text": "Jacob's rainwater tank started leaking. The amount of water in the tank after $t$ hours is given by $W(t) = 1000 - 0.5t$ litres.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $W(0)$, and interpret your answer.",
+      "final_answer": "$1000\\text{ L}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute t = 0 into W(t)"
+        },
+        {
+          "code": "A1",
+          "desc": "State the initial amount is 1000 L"
+        }
+      ],
+      "solution": "$$W(0) = 1000$$\nThe initial amount of water in the tank was $1000\\text{ L}$.",
+      "ai_explanation": {
+        "concept_rule": "The initial amount corresponds to time $t = 0$.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $W(t) = 1000 - 0.5t$.",
+          "Calculate $W(0) = 1000 - 0 = 1000\\text{ L}$."
+        ],
+        "common_pitfalls": "Omitting the units (litres)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $t$ when $W(t) = 700$, and explain what this represents.",
+      "final_answer": "$600\\text{ hours}$ (or $25\\text{ days}$)",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set W(t) = 700 and solve for t"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain t = 600 hours (25 days)"
+        }
+      ],
+      "solution": "$W(t) = 700$, so\n$$700 = 1000 - 0.5t$$\n$$\\therefore 0.5t = 300$$\n$$\\therefore t = 600$$\nAfter $600\\text{ hours}$, or $25\\text{ days}$, the amount of water in the tank is $700\\text{ L}$.",
+      "ai_explanation": {
+        "concept_rule": "Set the function equal to the target volume and solve the linear equation for $t$.",
+        "step_by_step": [
+          "Write the equation: $700 = 1000 - 0.5t$.",
+          "Rearrange: $0.5t = 1000 - 700 = 300$.",
+          "Solve for $t$: $t = \\frac{300}{0.5} = 600\\text{ hours}$.",
+          "Convert to days: $\\frac{600}{24} = 25\\text{ days}$."
+        ],
+        "common_pitfalls": "Multiplying 300 by 0.5 instead of dividing by 0.5."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "How long will it take for the tank to empty?",
+      "final_answer": "$2000\\text{ hours}$ (or $83\\text{ days}, 8\\text{ hours}$)",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set W(t) = 0 and solve for t"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain t = 2000 hours (83 days, 8 hours)"
+        }
+      ],
+      "solution": "The tank is empty when $W(t) = 0$.\nThis occurs when:\n$$0.5t = 1000$$\n$$\\therefore t = 2000$$\nIt will take $2000\\text{ hours}$, or $83\\text{ days}, 8\\text{ hours}$, for the tank to empty.",
+      "ai_explanation": {
+        "concept_rule": "An empty tank means the remaining volume $W(t) = 0$.",
+        "step_by_step": [
+          "Set $W(t) = 0$: $1000 - 0.5t = 0$.",
+          "Solve: $0.5t = 1000 \\implies t = 2000\\text{ hours}$.",
+          "Convert to days: $2000 \\div 24 = 83$ with a remainder of $8\\text{ hours}$."
+        ],
+        "common_pitfalls": "Incorrect conversion from hours to days and hours ($2000/24 = 83.333...$ days, where $0.333 \\times 24 = 8$ hours)."
+      }
+    }
+  ]
+}

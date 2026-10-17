@@ -1,0 +1,90 @@
+{
+  "id": "topic_3_q22",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 22,
+  "question_text": "Find the angle between the following line segments and the base plane of the triangular prism:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "[AE]",
+      "final_answer": "$4\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct minimum value identified from the boxplot"
+        }
+      ],
+      "solution": "From the boxplot, the left whisker terminates at $4$.\n$\\text{minimum value} = 4\\text{ cm}$",
+      "ai_explanation": {
+        "concept_rule": "The minimum value on a boxplot corresponds to the leftmost point of the lower whisker.",
+        "step_by_step": [
+          "Locate the left end of the whisker on the horizontal axis.",
+          "Read off the value at this point, which is $4\\text{ cm}$."
+        ],
+        "common_pitfalls": "Confusing the minimum with the lower quartile (the left edge of the box)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "[BD]",
+      "final_answer": "$22\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct maximum value identified from the boxplot"
+        }
+      ],
+      "solution": "From the boxplot, the right whisker terminates at $22$.\n$\\text{maximum value} = 22\\text{ cm}$",
+      "ai_explanation": {
+        "concept_rule": "The maximum value on a boxplot corresponds to the rightmost point of the upper whisker.",
+        "step_by_step": [
+          "Locate the right end of the whisker on the horizontal axis.",
+          "Read off the value at this point, which is $22\\text{ cm}$."
+        ],
+        "common_pitfalls": "Confusing the maximum with the upper quartile (the right edge of the box)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "[BE]",
+      "final_answer": "$17\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct median value identified from the boxplot"
+        }
+      ],
+      "solution": "From the boxplot, the vertical line inside the box is at $17$.\n$\\text{median} = 17\\text{ cm}$",
+      "ai_explanation": {
+        "concept_rule": "The median in a boxplot is indicated by the vertical line dividing the box into two parts.",
+        "step_by_step": [
+          "Identify the line inside the central box.",
+          "Read off the corresponding value on the scale, which is $17\\text{ cm}$."
+        ],
+        "common_pitfalls": "Mistaking the midpoint of the box for the median line."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "[AM]",
+      "final_answer": "$19\\text{ cm}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct upper quartile identified from the boxplot"
+        }
+      ],
+      "solution": "From the boxplot, the right edge of the box is at $19$.\n$\\text{upper quartile} = 19\\text{ cm}$",
+      "ai_explanation": {
+        "concept_rule": "The upper quartile ($Q_3$) is represented by the right boundary of the box.",
+        "step_by_step": [
+          "Locate the right-hand boundary of the rectangular box.",
+          "Read the value on the axis, which is $19\\text{ cm}$."
+        ],
+        "common_pitfalls": "Reading the maximum value at the end of the whisker instead of the box boundary."
+      }
+    }
+  ]
+}

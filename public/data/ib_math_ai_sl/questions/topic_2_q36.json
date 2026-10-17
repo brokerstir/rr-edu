@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q36",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 36,
+  "question_text": "The potential difference $V$ across a resistor is proportional to the current $I$ running through it. When the potential difference is $9\\text{ volts}$, the current is $0.01\\text{ amps}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the proportionality constant.",
+      "final_answer": "$k = 900$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $V = 9$ and $I = 0.01$ into $V = kI$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for constant $k$"
+        }
+      ],
+      "solution": "$V \\propto I$, so $V = kI$ where $k$ is the proportionality constant.\nWhen $V = 9\\text{ volts}$, $I = 0.01\\text{ amps}$, so $9 = k(0.01)$\n$\\therefore k = \\frac{9}{0.01} = 900$",
+      "ai_explanation": {
+        "concept_rule": "Direct proportionality means $V = kI$ where $k = \\frac{V}{I}$.",
+        "step_by_step": [
+          "State relationship $V = kI$.",
+          "Substitute given values $V = 9$ and $I = 0.01$.",
+          "Divide $9$ by $0.01$ to find $k = 900$."
+        ],
+        "common_pitfalls": "Dividing $0.01$ by $9$ instead of $9$ by $0.01$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the current running through the resistor if the potential difference is $12\\text{ volts}$.",
+      "final_answer": "$I \\approx 0.0133\\text{ amps}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $V = 12$ and $k = 900$ into equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct current $I$"
+        }
+      ],
+      "solution": "When $V = 12\\text{ volts}$, $12 = 900I$\n$\\therefore I \\approx 0.0133\\text{ amps}$",
+      "ai_explanation": {
+        "concept_rule": "Substitute known voltage into $V = kI$ to find current $I$.",
+        "step_by_step": [
+          "Write equation $12 = 900I$.",
+          "Solve for $I$: $I = \\frac{12}{900} = \\frac{1}{75}$.",
+          "Convert to decimal: $I \\approx 0.0133\\text{ amps}$."
+        ],
+        "common_pitfalls": "Multiplying $12$ by $900$ instead of dividing."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the potential difference if there is $0.018\\text{ amps}$ of current running through the resistor.",
+      "final_answer": "$V = 16.2\\text{ volts}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $I = 0.018$ into $V = 900I$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct voltage $V$"
+        }
+      ],
+      "solution": "When $I = 0.018\\text{ amps}$, $V = 900(0.018) = 16.2\\text{ volts}$",
+      "ai_explanation": {
+        "concept_rule": "Calculate voltage by multiplying proportionality constant by given current.",
+        "step_by_step": [
+          "Use equation $V = 900I$.",
+          "Substitute $I = 0.018$.",
+          "Evaluate $900 \\times 0.018 = 16.2$."
+        ],
+        "common_pitfalls": "Misplacing the decimal point during multiplication."
+      }
+    }
+  ]
+}

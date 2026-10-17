@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q53",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 53,
+  "question_text": "The graph shows the function $f(x) = 2.5 - a^x$ where $a$ is a positive constant. The point $(3, -5.5)$ lies on the graph.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down the coordinates of $P$.",
+      "final_answer": "$(0, 1.5)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate $f(0) = 2.5 - a^0$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the coordinates of $P$"
+        }
+      ],
+      "solution": "$f(0) = 2.5 - a^0 = 2.5 - 1 = 1.5 \\quad \\{a > 0\\}$. Therefore, $P$ has coordinates $(0, 1.5)$.",
+      "ai_explanation": {
+        "concept_rule": "Point $P$ is the $y$-intercept where $x = 0$.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $f(x) = 2.5 - a^x$.",
+          "Use $a^0 = 1$ to get $f(0) = 2.5 - 1 = 1.5$.",
+          "State coordinates as $(0, 1.5)$."
+        ],
+        "common_pitfalls": "Forgetting that $a^0 = 1$ for any $a > 0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the value of $a$.",
+      "final_answer": "$a = 2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $(3, -5.5)$ into $f(x)$"
+        },
+        {
+          "code": "M1",
+          "desc": "Solve for $a^3$"
+        },
+        {
+          "code": "A1",
+          "desc": "Determine $a = 2$"
+        }
+      ],
+      "solution": "The point $(3, -5.5)$ lies on the graph $\\implies f(3) = -5.5 \\implies -5.5 = 2.5 - a^3 \\implies a^3 = 8 \\implies a = 2$.",
+      "ai_explanation": {
+        "concept_rule": "A given point satisfies the equation of the function.",
+        "step_by_step": [
+          "Set $-5.5 = 2.5 - a^3$.",
+          "Rearrange to solve for $a^3$: $a^3 = 2.5 + 5.5 = 8$.",
+          "Take the cube root: $a = \\sqrt[3]{8} = 2$."
+        ],
+        "common_pitfalls": "Sign error when rearranging $-5.5 = 2.5 - a^3$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the equation of the horizontal asymptote.",
+      "final_answer": "$y = 2.5$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the horizontal asymptote equation"
+        }
+      ],
+      "solution": "The horizontal asymptote has equation $y = 2.5$.",
+      "ai_explanation": {
+        "concept_rule": "As $x \\to -\\infty$, $a^x \\to 0$ (for $a > 1$), so $f(x) \\to 2.5$.",
+        "step_by_step": [
+          "Analyze behavior as $x \\to -\\infty$: $2^x \\to 0$.",
+          "Thus $f(x) \\to 2.5 - 0 = 2.5$.",
+          "The horizontal asymptote is $y = 2.5$."
+        ],
+        "common_pitfalls": "Confusing the horizontal asymptote with an axis intercept."
+      }
+    }
+  ]
+}

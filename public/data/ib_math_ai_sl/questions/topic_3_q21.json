@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q21",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 21,
+  "question_text": "A helicopter lands $5\\text{ km}$ east and $7\\text{ km}$ south of its starting point.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the helicopter's distance from its starting point.",
+      "final_answer": "$\\text{minimum} = 4,\\; Q_1 = 12,\\; \\text{median} = 16,\\; Q_3 = 18,\\; \\text{maximum} = 31$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find median and quartiles from the 19 ordered values"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly state the five-number summary"
+        }
+      ],
+      "solution": "The ordered data set is:\n$4, 9, 10, 12, 12, 14, 14, 15, 16, 16, 16, 17, 18, 18, 18, 20, 23, 26, 31$ ($19$ data values)\n$$\\text{median} = 16 \\quad (\\text{10th value})$$\nLower half ($9$ values): $4, 9, 10, 12, 12, 14, 14, 15, 16 \\implies Q_1 = 12$\nUpper half ($9$ values): $16, 17, 18, 18, 18, 20, 23, 26, 31 \\implies Q_3 = 18$\nSo the five-number summary is:\n$$\\begin{cases} \\text{minimum} = 4 \\\\ Q_1 = 12 \\\\ \\text{median} = 16 \\\\ Q_3 = 18 \\\\ \\text{maximum} = 31 \\end{cases}$$",
+      "ai_explanation": {
+        "concept_rule": "The five-number summary consists of the minimum, first quartile ($Q_1$), median, third quartile ($Q_3$), and maximum.",
+        "step_by_step": [
+          "Identify min $= 4$ and max $= 31$.",
+          "There are 19 values. The median is the 10th value, which is 16.",
+          "Excluding the 10th value gives 9 values below it; the median of these 9 values is the 5th value: $Q_1 = 12$.",
+          "Excluding the 10th value gives 9 values above it; the median of these 9 values is the 15th value overall (5th of the upper half): $Q_3 = 18$."
+        ],
+        "common_pitfalls": "Including the median when finding the quartiles of an odd-sized dataset."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the helicopter's bearing from its starting point.",
+      "final_answer": "$6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate $Q_3 - Q_1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $18 - 12 = 6$"
+        }
+      ],
+      "solution": "$$\\text{IQR} = Q_3 - Q_1 = 18 - 12 = 6$$",
+      "ai_explanation": {
+        "concept_rule": "IQR is $Q_3 - Q_1$.",
+        "step_by_step": [
+          "Subtract $Q_1 = 12$ from $Q_3 = 18$.",
+          "$18 - 12 = 6$."
+        ],
+        "common_pitfalls": "Using the wrong quartile values."
+      }
+    }
+  ]
+}

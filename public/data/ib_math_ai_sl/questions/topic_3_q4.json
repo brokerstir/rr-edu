@@ -1,0 +1,18 @@
+{
+  "id": "topic_3_q4",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 4,
+  "question_text": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

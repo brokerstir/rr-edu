@@ -1,0 +1,167 @@
+{
+  "id": "topic_2_q22",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 22,
+  "question_text": "The daily profit made by a local baker selling $x$ homemade pies is given by $P = -0.05x^2 + 9x - 60$ dollars.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Copy and complete this table:\n\n\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\nx & 0 & 20 & 40 & 60 & 80 & 100 \\\\\n\\hline\nP & & 100 & & 300 & & 340 \\\\\n\\hline\n\\end{array}",
+      "final_answer": "$Table values: for $x = 0, 20, 40, 60, 80, 100$, $P = -60, 100, 220, 300, 340, 340$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute given values of x into P = -0.05x^2 + 9x - 60"
+        },
+        {
+          "code": "A1",
+          "desc": "Complete the table with correct P values"
+        }
+      ],
+      "solution": "When $x = 0$, $P = -0.05(0)^2 + 9(0) - 60 = -60\\text{ dollars}$\nWhen $x = 40$, $P = -0.05(40)^2 + 9(40) - 60 = 220\\text{ dollars}$\nWhen $x = 80$, $P = -0.05(80)^2 + 9(80) - 60 = 340\\text{ dollars}$\n\nSo,\n$$\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\nx & 0 & 20 & 40 & 60 & 80 & 100 \\\\\n\\hline\nP & -60 & 100 & 220 & 300 & 340 & 340 \\\\\n\\hline\n\\end{array}$$",
+      "ai_explanation": {
+        "concept_rule": "Substitute given values of $x$ into the profit formula to find the corresponding values of $P$.",
+        "step_by_step": [
+          "For $x = 0$: $P = -60$.",
+          "For $x = 20$: $P = -0.05(400) + 180 - 60 = -20 + 120 = 100$.",
+          "For $x = 40$: $P = -0.05(1600) + 360 - 60 = -80 + 300 = 220$.",
+          "For $x = 60$: $P = -0.05(3600) + 540 - 60 = -180 + 480 = 300$.",
+          "For $x = 80$: $P = -0.05(6400) + 720 - 60 = -320 + 660 = 340$.",
+          "For $x = 100$: $P = -0.05(10000) + 900 - 60 = -500 + 840 = 340$."
+        ],
+        "common_pitfalls": "Order of operations: squaring $x$ before multiplying by $-0.05$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Use the points in a to sketch the graph of $P$ against $x$.",
+      "final_answer": "$Graph of profit function $P$ against $x$ plotted through the table points$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plot the points from table on Cartesian axes"
+        },
+        {
+          "code": "A1",
+          "desc": "Draw a smooth parabola connecting the points"
+        }
+      ],
+      "solution": "Plot the points $(0, -60)$, $(20, 100)$, $(40, 220)$, $(60, 300)$, $(80, 340)$, and $(100, 340)$ on a set of axes with $x$ on the horizontal axis and $P(\\$)$ on the vertical axis, and connect them with a smooth parabolic curve.",
+      "ai_explanation": {
+        "concept_rule": "Plot each calculated $(x, P)$ coordinate pair and join them with a smooth parabolic curve.",
+        "step_by_step": [
+          "Set up the axes: $x$ from 0 to 100+ and $P$ from $-60$ to 350+.",
+          "Plot the computed points.",
+          "Draw a smooth downward-opening curve representing $P = -0.05x^2 + 9x - 60$."
+        ],
+        "common_pitfalls": "Connecting points with straight line segments instead of a smooth curve."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Find the number of pies that need to be sold to maximise the profit",
+      "final_answer": "$90\\text{ pies}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use axis of symmetry formula x = -b/(2a)"
+        },
+        {
+          "code": "A1",
+          "desc": "Conclude profit is maximised when 90 pies are sold"
+        }
+      ],
+      "solution": "$P$ has $a = -0.05$, $b = 9$, and $c = -60$.\nNow $$-\\frac{b}{2a} = -\\frac{9}{2(-0.05)} = 90$$\n$\\therefore$ the axis of symmetry is $x = 90$.\nSince $a < 0$, the parabola opens downwards.\n$\\therefore$ the profit is maximised when $90$ pies are sold.",
+      "ai_explanation": {
+        "concept_rule": "The maximum of a downward-opening parabola occurs at the vertex, given by $x = -\\frac{b}{2a}$.",
+        "step_by_step": [
+          "Identify $a = -0.05$ and $b = 9$.",
+          "Calculate $x = -\\frac{9}{2(-0.05)} = -\\frac{9}{-0.1} = 90$.",
+          "Since $a < 0$, this turning point is a maximum, so 90 pies maximise profit."
+        ],
+        "common_pitfalls": "Division by a decimal: dividing 9 by $0.1$ gives 90, not 0.9."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Find the maximum possible daily profit",
+      "final_answer": "$\\$345$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = 90 into the profit function"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate maximum profit as $345"
+        }
+      ],
+      "solution": "When $x = 90$,\n$$P = -0.05(90)^2 + 9(90) - 60 = 345\\text{ dollars}$$\n$\\therefore$ the maximum possible daily profit is $\\$345$.",
+      "ai_explanation": {
+        "concept_rule": "The maximum profit is the value of $P$ at the vertex $x = 90$.",
+        "step_by_step": [
+          "Substitute $x = 90$ into $P(x)$.",
+          "Calculate: $-0.05(8100) + 9(90) - 60 = -405 + 810 - 60 = 345$.",
+          "State the maximum profit as $\\$345$."
+        ],
+        "common_pitfalls": "Forgetting to subtract 60 at the end."
+      }
+    },
+    {
+      "subpart": "c iii",
+      "stem": "Find the number of pies that need to be sold to make a profit of $200",
+      "final_answer": "$between $37$ and $143$ pies$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set P = 200 and rearrange to -0.05x^2 + 9x - 260 = 0"
+        },
+        {
+          "code": "M1",
+          "desc": "Solve quadratic to find x approx 36.1 and 143.9"
+        },
+        {
+          "code": "A1",
+          "desc": "Round to nearest whole pies yielding at least $200 profit (37 to 143)"
+        }
+      ],
+      "solution": "When $P = 200$,\n$$-0.05x^2 + 9x - 60 = 200$$\n$$\\therefore -0.05x^2 + 9x - 260 = 0$$\n$$\\therefore x \\approx 143.9 \\text{ or } 36.1 \\quad \\{\\text{technology}\\}$$\nNow when:\n$$x = 36, \\quad P = 199.2$$\n$$x = 37, \\quad P = 204.55$$\n$$x = 143, \\quad P = 204.55$$\nand $$x = 144, \\quad P = 199.2$$\n$\\therefore$ between $37$ and $143$ pies must be sold to make a profit of $\\$200$ (or more).",
+      "ai_explanation": {
+        "concept_rule": "To find the integer number of pies giving at least $\\$200$ profit, solve $P(x) = 200$ and check integer values inside the interval.",
+        "step_by_step": [
+          "Set $-0.05x^2 + 9x - 60 = 200 \\implies -0.05x^2 + 9x - 260 = 0$.",
+          "Solve using the quadratic formula or graphics calculator: $x \\approx 36.1$ and $x \\approx 143.9$.",
+          "Since pies must be whole integers and profit increases towards the vertex, evaluate boundary integers: $x=36$ gives $P < 200$, while $x=37$ gives $P > 200$. Similarly, $x=143$ gives $P > 200$, while $x=144$ gives $P < 200$.",
+          "Conclude that between 37 and 143 pies must be sold."
+        ],
+        "common_pitfalls": "Rounding $36.1$ down to 36, which yields a profit below $\\$200$."
+      }
+    },
+    {
+      "subpart": "c iv",
+      "stem": "Find the amount of money the baker loses if no pies are sold.",
+      "final_answer": "$The baker loses $\\$60$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Evaluate P at x = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Interpret P = -60 as a loss of $60"
+        }
+      ],
+      "solution": "When $x = 0$, $P = -60$.\n$\\therefore$ the baker loses $\\$60$ if no pies are sold.",
+      "ai_explanation": {
+        "concept_rule": "The $y$-intercept represents the starting value or fixed costs when zero units are produced/sold.",
+        "step_by_step": [
+          "Substitute $x = 0$ into the profit equation: $P = -60$.",
+          "A negative profit signifies a financial loss of $\\$60$."
+        ],
+        "common_pitfalls": "Stating the loss as $-\\$60$ instead of $\\$60$ loss."
+      }
+    }
+  ]
+}

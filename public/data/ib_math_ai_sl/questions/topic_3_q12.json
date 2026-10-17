@@ -1,0 +1,36 @@
+{
+  "id": "topic_3_q12",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 12,
+  "question_text": "Sydney tower in Australia is the second tallest observation tower in the Southern Hemisphere.\nFind the volume of the tower.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Sydney tower in Australia is the second tallest observation tower in the Southern Hemisphere.\nFind the volume of the tower.",
+      "final_answer": "$a = 13, b = 16$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up equation for the mean and solving for a + b"
+        },
+        {
+          "code": "A1",
+          "desc": "Using the ordering inequalities to deduce integer values of a and b"
+        }
+      ],
+      "solution": "$\\frac{9 + 10 + a + 13 + b + 16 + 21}{7} = 14 \\implies \\frac{69 + a + b}{7} = 14 \\implies 69 + a + b = 98 \\implies a + b = 29$. Now, $a$ and $b$ are integers such that $10 \\leqslant a \\leqslant 13$ and $13 \\leqslant b \\leqslant 16$. The maximum possible value for $a$ is 13, and maximum for $b$ is 16; since $13 + 16 = 29$, the only possible solution is $a = 13$ and $b = 16$.",
+      "ai_explanation": {
+        "concept_rule": "The mean formula produces a linear equation; ordering constraints restrict possible integer solutions.",
+        "step_by_step": [
+          "Sum the 7 values and set $(69 + a + b)/7 = 14$.",
+          "Multiply by 7: $69 + a + b = 98$, giving $a + b = 29$.",
+          "From the order, $10 \\le a \\le 13$ and $13 \\le b \\le 16$.",
+          "The maximum possible sum is $13 + 16 = 29$, so $a$ must be 13 and $b$ must be 16."
+        ],
+        "common_pitfalls": "Overlooking the ordering conditions $10 \\le a \\le 13$ and $13 \\le b \\le 16$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "topic_3_q14",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 14,
+  "question_text": "Find all unknown angles:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\text{Mean} \\approx 4776\\text{ steps}, \\text{Median} = 4173\\text{ steps}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Correct method for mean and median for n = 14"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurate mean and median values"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{10613 + 5453 + \\dots + 8888}{14} = \\frac{66866}{14} \\approx 4776\\text{ steps}$. As $n = 14$, $\\frac{n+1}{2} = 7.5$. So the median is the average of the 7th and 8th data values. The ordered data set is: $261, 1468, 2939, 3417, 3504, 3526, 4093, 4253, 5453, 5570, 6321, 6560, 8888, 10613$. $\\therefore \\text{median} = \\frac{4093 + 4253}{2} = 4173\\text{ steps}$.",
+      "ai_explanation": {
+        "concept_rule": "Sum all 14 data points and divide by 14 for the mean. For the median, average the 7th and 8th ordered values.",
+        "step_by_step": [
+          "Sum the 14 values: 66866.",
+          "Divide by 14: $66866 / 14 \\approx 4776.14 \\approx 4776$.",
+          "Order values and find 7th (4093) and 8th (4253) values.",
+          "Average them: $(4093 + 4253)/2 = 4173$."
+        ],
+        "common_pitfalls": "Calculating the median without first sorting the step counts."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$Median$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Selecting median and stating it is not affected by extreme values"
+        }
+      ],
+      "solution": "The median is not affected by extreme values. So, the median is the most suitable to determine the typical number of steps taken by Janice each day.",
+      "ai_explanation": {
+        "concept_rule": "When data contains extreme values (outliers such as 261 or 10613), the median is a more robust and representative measure of central tendency than the mean.",
+        "step_by_step": [
+          "Check the data for extreme values (e.g. 261 is very low, 10613 is very high).",
+          "Recognize that extreme values pull the mean away from the typical centre.",
+          "Choose the median as the suitable measure."
+        ],
+        "common_pitfalls": "Choosing the mean by default without considering skewness or extreme values."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

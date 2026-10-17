@@ -1,0 +1,2985 @@
+[
+  {
+    "id": "topic_3_q1",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 1,
+    "question_text": "For the given figure, find to 3 significant figures:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "the perimeter",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "b",
+        "stem": "the area.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q2",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 2,
+    "question_text": "Find the surface area of each solid:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q3",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 3,
+    "question_text": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q4",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 4,
+    "question_text": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "A pipe used to drain stormwater is made from $3\\text{ m}^3$ of concrete. Find the length of the pipe.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q5",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 5,
+    "question_text": "A sector of a circle of radius $10\\text{ cm}$ has perimeter $40\\text{ cm}$. Find:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "the arc length of the sector",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "b",
+        "stem": "the area of the sector.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q6",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 6,
+    "question_text": "A large artificial ice cream for a shop front display is to be made with a hemisphere on top of an inverted cone.\nThe total height of the structure is $7\\text{ m}$, and the cone is $4\\text{ m}$ high.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Show that the radius of the cone is $3\\text{ m}$.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "b",
+        "stem": "Calculate the total volume of the ice cream.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the slant height of the cone.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "d",
+        "stem": "Find the total surface area of the ice cream.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      },
+      {
+        "subpart": "e",
+        "stem": "The ice cream is to be made from a lightweight polymer, weighing $1.23\\text{ kg per m}^2$. Calculate the total weight of the ice cream.",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q7",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 7,
+    "question_text": "Find the volume of:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Positively skewed, no outliers$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct statement describing the positive skewness and lack of outliers"
+          }
+        ],
+        "solution": "The data is positively skewed. There are no outliers.",
+        "ai_explanation": {
+          "concept_rule": "Skewness describes the asymmetry of a distribution; when the tail extends toward higher values, it is positively skewed.",
+          "step_by_step": [
+            "Observe the shape of the data distribution.",
+            "Identify that data stretches more to the right, showing positive skew.",
+            "Check for any data points lying far beyond the whiskers or main cluster to conclude there are no outliers."
+          ],
+          "common_pitfalls": "Confusing positively skewed (tail to the right) with negatively skewed (tail to the left)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$29.2\\%$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Adding frequencies for 3 or more children and dividing by total frequency"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation to obtain approximately 29.2%"
+          }
+        ],
+        "solution": "$\\frac{3 + 3 + 1}{24} \\times 100\\% \\approx 29.2\\%$ of families have 3 or more children.",
+        "ai_explanation": {
+          "concept_rule": "The percentage is calculated as the favorable count divided by the total count multiplied by 100%.",
+          "step_by_step": [
+            "Count the families having 3, 4, or more children: $3 + 3 + 1 = 7$.",
+            "Divide by the total number of families, $24$.",
+            "Multiply by $100\\%$ to get $29.166...\\% \\approx 29.2\\%$."
+          ],
+          "common_pitfalls": "Forgetting to include all categories that meet the '3 or more' condition."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q8",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 8,
+    "question_text": "How many of these petrol containers can be completely filled with $300\\text{ L}$ of petrol?",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "How many of these petrol containers can be completely filled with $300\\text{ L}$ of petrol?",
+        "final_answer": "$See completed frequency table$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Correctly grouping marks into intervals of 10"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate tallies and frequencies summing to 30"
+          }
+        ],
+        "solution": "Construct the frequency table with class intervals: 0-9 (0), 10-19 (0), 20-29 (2), 30-39 (2), 40-49 (4), 50-59 (7), 60-69 (5), 70-79 (6), 80-89 (2), 90-99 (2). Total = 30.",
+        "ai_explanation": {
+          "concept_rule": "Grouped frequency distributions organize continuous or large discrete datasets into non-overlapping class intervals.",
+          "step_by_step": [
+            "Define consistent class intervals from 0-9 to 90-99.",
+            "Tally each given score into its corresponding interval.",
+            "Sum the tallies to record frequencies and check that the total equals 30."
+          ],
+          "common_pitfalls": "Placing boundary values in two overlapping intervals if classes are poorly defined."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q9",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 9,
+    "question_text": "For each pair of points, find:\ni the distance AB\nii the midpoint of [AB].",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\text{A}(2, 4, 1)$ and $\\text{B}(4, 0, 7)$",
+        "final_answer": "$Continuous variable$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Stating that height is continuous with reasoning"
+          }
+        ],
+        "solution": "The height of an emperor penguin is a numerical variable which can be measured. $\\therefore$ height is a continuous variable.",
+        "ai_explanation": {
+          "concept_rule": "Continuous variables can take any value within a range and are measured rather than counted.",
+          "step_by_step": [
+            "Determine whether height is counted (discrete) or measured (continuous).",
+            "Since height can take any fractional value along a continuous scale, it is a continuous variable."
+          ],
+          "common_pitfalls": "Confusing continuous variables with discrete numerical variables."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\text{A}(3, -5, 2)$ and $\\text{B}(-1, 2, -3)$",
+        "final_answer": "$50$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct sum of frequencies"
+          }
+        ],
+        "solution": "$3 + 5 + 14 + 19 + 8 + 1 = 50$ emperor penguins were measured.",
+        "ai_explanation": {
+          "concept_rule": "Total sample size is found by summing all the class frequencies.",
+          "step_by_step": [
+            "Add the frequencies: $3 + 5 + 14 + 19 + 8 + 1$.",
+            "The total is $50$."
+          ],
+          "common_pitfalls": "Arithmetic errors when adding multiple numbers."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$\\text{A}(-6, 0, 5)$ and $\\text{B}(-3, -3, 1)$",
+        "final_answer": "$See histogram$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Correct axes, labels, and class boundaries"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct bar heights matching class frequencies"
+          }
+        ],
+        "solution": "Draw a frequency histogram with penguin heights ($105$ to $135\\text{ cm}$) on the horizontal axis and frequencies ($0$ to $20$) on the vertical axis.",
+        "ai_explanation": {
+          "concept_rule": "A continuous grouped data histogram uses continuous class boundaries on the x-axis with contiguous rectangles.",
+          "step_by_step": [
+            "Mark the class intervals: $105-110, 110-115, \\dots, 130-135$ on the horizontal axis.",
+            "Mark frequencies on the vertical axis up to 20.",
+            "Draw bars for each interval matching heights $3, 5, 14, 19, 8, 1$."
+          ],
+          "common_pitfalls": "Plotting midpoints instead of full intervals as column widths."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q10",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 10,
+    "question_text": "The distance from $\\text{P}(k, 6, -5)$ to $\\text{Q}(2, -1, -8)$ is 9 units. Find the possible values of $k$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "The distance from $\\text{P}(k, 6, -5)$ to $\\text{Q}(2, -1, -8)$ is 9 units. Find the possible values of $k$.",
+        "final_answer": "$26\\text{ customers}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct mode stated with units"
+          }
+        ],
+        "solution": "26 is the data value which occurs most often, so the mode is 26 customers.",
+        "ai_explanation": {
+          "concept_rule": "The mode is the value that appears most frequently in a dataset.",
+          "step_by_step": [
+            "Inspect the data set for the most frequent number.",
+            "26 appears twice, while all other numbers appear once.",
+            "Therefore, the mode is 26 customers."
+          ],
+          "common_pitfalls": "Missing repeated values or reporting the frequency instead of the value."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q11",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 11,
+    "question_text": "Suppose A is $(3, 4, -6)$, and $\\text{M}\\left(-\\frac{1}{2}, 9, -7\\right)$ is the midpoint of [AB]. Find the coordinates of B.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "Suppose A is $(3, 4, -6)$, and $\\text{M}\\left(-\\frac{1}{2}, 9, -7\\right)$ is the midpoint of [AB]. Find the coordinates of B.",
+        "final_answer": "$Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating sum of visitors and dividing by 30 for both exhibits"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct mean values for Exhibit A and Exhibit B"
+          }
+        ],
+        "solution": "Exhibit A: $\\text{mean} = \\frac{42 + 49 + 55 + 48 + \\dots + 32}{30} = \\frac{1644}{30} = 54.8\\text{ visitors}$. Exhibit B: $\\text{mean} = \\frac{59 + 51 + 60 + 44 + \\dots + 46}{30} = \\frac{1711}{30} \\approx 57.0\\text{ visitors}$.",
+        "ai_explanation": {
+          "concept_rule": "The mean of a dataset is the sum of values divided by sample size $n$.",
+          "step_by_step": [
+            "For Exhibit A, sum all 30 values to get 1644, then divide by 30 to get 54.8.",
+            "For Exhibit B, sum all 30 values to get 1711, then divide by 30 to get approximately 57.0."
+          ],
+          "common_pitfalls": "Transcribing numbers incorrectly when summing 30 values."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q12",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 12,
+    "question_text": "Sydney tower in Australia is the second tallest observation tower in the Southern Hemisphere.\nFind the volume of the tower.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "Sydney tower in Australia is the second tallest observation tower in the Southern Hemisphere.\nFind the volume of the tower.",
+        "final_answer": "$a = 13, b = 16$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Setting up equation for the mean and solving for a + b"
+          },
+          {
+            "code": "A1",
+            "desc": "Using the ordering inequalities to deduce integer values of a and b"
+          }
+        ],
+        "solution": "$\\frac{9 + 10 + a + 13 + b + 16 + 21}{7} = 14 \\implies \\frac{69 + a + b}{7} = 14 \\implies 69 + a + b = 98 \\implies a + b = 29$. Now, $a$ and $b$ are integers such that $10 \\leqslant a \\leqslant 13$ and $13 \\leqslant b \\leqslant 16$. The maximum possible value for $a$ is 13, and maximum for $b$ is 16; since $13 + 16 = 29$, the only possible solution is $a = 13$ and $b = 16$.",
+        "ai_explanation": {
+          "concept_rule": "The mean formula produces a linear equation; ordering constraints restrict possible integer solutions.",
+          "step_by_step": [
+            "Sum the 7 values and set $(69 + a + b)/7 = 14$.",
+            "Multiply by 7: $69 + a + b = 98$, giving $a + b = 29$.",
+            "From the order, $10 \\le a \\le 13$ and $13 \\le b \\le 16$.",
+            "The maximum possible sum is $13 + 16 = 29$, so $a$ must be 13 and $b$ must be 16."
+          ],
+          "common_pitfalls": "Overlooking the ordering conditions $10 \\le a \\le 13$ and $13 \\le b \\le 16$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q13",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 13,
+    "question_text": "Find, correct to 3 significant figures, all unknown sides:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$\\text{Mean} = 7.77\\text{ hours}, \\text{Median} = 7.55\\text{ hours}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Correct calculation for mean and locating middle terms for median"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate mean and median values with units"
+          }
+        ],
+        "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{30} = \\frac{233.1}{30} = 7.77\\text{ hours}$. As $n = 30$, $\\frac{n+1}{2} = 15.5$, so the median is the average of the 15th and 16th values. The 15th value is 7.5 and 16th value is 7.6. $\\therefore \\text{median} = \\frac{7.5 + 7.6}{2} = 7.55\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "The mean sums all observations and divides by $n=30$. The median is the average of the 15th and 16th ordered data points.",
+          "step_by_step": [
+            "Sum the 30 values to get $233.1$; divide by $30$ to get $7.77$.",
+            "Arrange the data in ascending order.",
+            "Identify the 15th value ($7.5$) and the 16th value ($7.6$).",
+            "Average them: $(7.5 + 7.6)/2 = 7.55$."
+          ],
+          "common_pitfalls": "Miscounting sorted positions and selecting incorrect values for the median."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$11.5\\text{ hours}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly identifying the outlier"
+          }
+        ],
+        "solution": "The outlier is $11.5\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "An outlier is an extreme data point that lies significantly outside the general pattern of the data.",
+          "step_by_step": [
+            "Inspect the dataset: most values range between 5.8 and 9.1.",
+            "The maximum value 11.5 is far greater than 9.1.",
+            "Conclude 11.5 is the outlier."
+          ],
+          "common_pitfalls": "Identifying a value at the lower end when the extreme value is at the upper end."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "$\\text{Mean} \\approx 7.64\\text{ hours}, \\text{Median} = 7.5\\text{ hours}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Recalculating mean and median with n = 29"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct recalculated mean and median values"
+          }
+        ],
+        "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{29} = \\frac{221.6}{29} \\approx 7.64\\text{ hours}$. As $n = 29$ with the outlier removed, $\\frac{n+1}{2} = 15$. The 15th value in the ordered data set is 7.5. $\\therefore \\text{median} = 7.5\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "Removing an outlier decreases sample size to $n=29$. The new mean uses the reduced sum divided by 29, and the new median is the 15th ordered value.",
+          "step_by_step": [
+            "Subtract 11.5 from total sum: $233.1 - 11.5 = 221.6$.",
+            "Calculate new mean: $221.6 / 29 \\approx 7.64$.",
+            "Find median position: $(29 + 1)/2 = 15$.",
+            "The 15th value is $7.5$, so median = $7.5$."
+          ],
+          "common_pitfalls": "Dividing by 30 instead of 29 after removing the outlier."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q14",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 14,
+    "question_text": "Find all unknown angles:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$\\text{Mean} \\approx 4776\\text{ steps}, \\text{Median} = 4173\\text{ steps}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Correct method for mean and median for n = 14"
+          },
+          {
+            "code": "A1",
+            "desc": "Accurate mean and median values"
+          }
+        ],
+        "solution": "$\\text{mean} = \\frac{10613 + 5453 + \\dots + 8888}{14} = \\frac{66866}{14} \\approx 4776\\text{ steps}$. As $n = 14$, $\\frac{n+1}{2} = 7.5$. So the median is the average of the 7th and 8th data values. The ordered data set is: $261, 1468, 2939, 3417, 3504, 3526, 4093, 4253, 5453, 5570, 6321, 6560, 8888, 10613$. $\\therefore \\text{median} = \\frac{4093 + 4253}{2} = 4173\\text{ steps}$.",
+        "ai_explanation": {
+          "concept_rule": "Sum all 14 data points and divide by 14 for the mean. For the median, average the 7th and 8th ordered values.",
+          "step_by_step": [
+            "Sum the 14 values: 66866.",
+            "Divide by 14: $66866 / 14 \\approx 4776.14 \\approx 4776$.",
+            "Order values and find 7th (4093) and 8th (4253) values.",
+            "Average them: $(4093 + 4253)/2 = 4173$."
+          ],
+          "common_pitfalls": "Calculating the median without first sorting the step counts."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$Median$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Selecting median and stating it is not affected by extreme values"
+          }
+        ],
+        "solution": "The median is not affected by extreme values. So, the median is the most suitable to determine the typical number of steps taken by Janice each day.",
+        "ai_explanation": {
+          "concept_rule": "When data contains extreme values (outliers such as 261 or 10613), the median is a more robust and representative measure of central tendency than the mean.",
+          "step_by_step": [
+            "Check the data for extreme values (e.g. 261 is very low, 10613 is very high).",
+            "Recognize that extreme values pull the mean away from the typical centre.",
+            "Choose the median as the suitable measure."
+          ],
+          "common_pitfalls": "Choosing the mean by default without considering skewness or extreme values."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "",
+        "mark_breakdown": [],
+        "solution": "",
+        "ai_explanation": null
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q15",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 15,
+    "question_text": "Find the perimeter and area of triangle ABC:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$2.3125\\text{ touchdowns}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using the formula mean = sum(xf) / sum(f)"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct mean value"
+          }
+        ],
+        "solution": "$\\bar{x} = \\frac{\\sum xf}{\\sum f} = \\frac{74}{32} = 2.3125\\text{ touchdowns}$",
+        "ai_explanation": {
+          "concept_rule": "For a frequency distribution, the mean is the sum of products of values and frequencies divided by total frequency.",
+          "step_by_step": [
+            "Sum products $\\sum xf = 0 + 10 + 14 + 18 + 16 + 10 + 6 = 74$.",
+            "Sum frequencies $\\sum f = 2 + 10 + 7 + 6 + 4 + 2 + 1 = 32$.",
+            "Compute $\\bar{x} = 74 / 32 = 2.3125$."
+          ],
+          "common_pitfalls": "Dividing by the number of rows (7) rather than the sum of frequencies (32)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$Refer to column graph of touchdowns vs frequency$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Plot axes with touchdowns on horizontal axis and frequency on vertical axis"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct heights for bars representing touchdown frequencies"
+          }
+        ],
+        "solution": "Draw a vertical column graph with touchdowns scored on the horizontal axis ($0$ to $6$) and frequency on the vertical axis ($0$ to $10$). Bars correspond to the given frequencies.",
+        "ai_explanation": {
+          "concept_rule": "A column graph displays discrete data where the height of each column represents the frequency of the category.",
+          "step_by_step": [
+            "Label the horizontal axis 'touchdowns' and vertical axis 'frequency'.",
+            "Draw columns of equal width for each touchdown value from 0 to 6 with heights equal to their respective frequencies."
+          ],
+          "common_pitfalls": "Forgetting to label axes or drawing joined histogram bars instead of separated columns for discrete data."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q16",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 16,
+    "question_text": "Find all unknowns in these figures:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Cumulative frequencies: $78, 195, 264, 282, 284$; Total $= 284$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating successive running totals of frequencies"
+          },
+          {
+            "code": "A1",
+            "desc": "All cumulative frequencies correctly evaluated"
+          }
+        ],
+        "solution": "\\begin{array}{|c|c|c|}\n\\hline\n\\text{Number of cars} & \\text{Frequency} & \\text{Cumulative frequency} \\\\\n\\hline\n0 & 78 & 78 \\\\\n1 & 117 & 195 \\\\\n2 & 69 & 264 \\\\\n3 & 18 & 282 \\\\\n4 & 2 & 284 \\\\\n\\hline\n\\text{Total} & 284 & \\\\\n\\hline\n\\end{array}",
+        "ai_explanation": {
+          "concept_rule": "Cumulative frequency is found by calculating the running total of frequencies up to each category.",
+          "step_by_step": [
+            "Row 0: $78$",
+            "Row 1: $78 + 117 = 195$",
+            "Row 2: $195 + 69 = 264$",
+            "Row 3: $264 + 18 = 282$",
+            "Row 4: $282 + 2 = 284$",
+            "Total frequency $= 284$."
+          ],
+          "common_pitfalls": "Arithmetic errors when adding subsequent frequencies."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$0.485$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate side AD using tangent in triangle ACD"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculate angle theta in triangle ADE using tangent"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculate length AE and angle EAB"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate x using cosine in triangle ABE"
+          }
+        ],
+        "solution": "In triangle $ACD$, $\\tan 40^\\circ = \\frac{AD}{8} \\implies AD = 8\\tan 40^\\circ$. In triangle $ADE$, $\\tan\\theta = \\frac{5}{AD} = \\frac{5}{8\\tan 40^\\circ} \\implies \\theta = \\tan^{-1}\\left(\\frac{5}{8\\tan 40^\\circ}\\right) \\approx 36.68^\\circ \\approx 36.7^\\circ$. Also, $\\sin 36.68^\\circ \\approx \\frac{5}{AE} \\implies AE \\approx \\frac{5}{\\sin 36.68^\\circ}$. Now $D\\hat{A}C = 90^\\circ - 40^\\circ = 50^\\circ$ {angles in triangle $ACD$}, so $E\\hat{A}B \\approx 50^\\circ + 36.68^\\circ \\approx 86.68^\\circ$. In triangle $ABE$, $\\cos E\\hat{A}B = \\frac{x}{AE} \\implies \\cos 86.68^\\circ \\approx \\frac{x}{\\frac{5}{\\sin 36.68^\\circ}} \\implies x \\approx \\frac{5\\cos 86.68^\\circ}{\\sin 36.68^\\circ} \\approx 0.485$.",
+        "ai_explanation": {
+          "concept_rule": "Apply trigonometric ratios sequentially across adjacent right-angled triangles sharing common sides.",
+          "step_by_step": [
+            "Find length $AD$ using $\\tan 40^\\circ = \\frac{AD}{8}$.",
+            "Find angle $\\theta$ and hypotenuse $AE$ in $\\triangle ADE$.",
+            "Compute angle $D\\hat{A}C$ and sum it with $\\theta$ to determine angle $E\\hat{A}B$.",
+            "Use $\\cos E\\hat{A}B = \\frac{x}{AE}$ to calculate $x$."
+          ],
+          "common_pitfalls": "Confusing which side is adjacent and opposite for angles measured at vertex $A$ versus other vertices."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q17",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 17,
+    "question_text": "A rhombus has diagonals of length $5\\text{ cm}$ and $8\\text{ cm}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Draw a diagram and label it with the given information.",
+        "final_answer": "$a = 10$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up equation using mean formula: $\\bar{x} = \\frac{\\sum xf}{\\sum f} = 11$"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify equation to $a + 67 = 77$ and solve for $a$"
+          }
+        ],
+        "solution": "$$\\bar{x} = \\frac{\\sum x f}{\\sum f}$$\n$$\\therefore 11 = \\frac{7 \\times 1 + 9 \\times 2 + a \\times 1 + 13 \\times 2 + 16 \\times 1}{1 + 2 + 1 + 2 + 1}$$\n$$\\therefore 11 = \\frac{a + 67}{7}$$\n$$\\therefore a + 67 = 77$$\n$$\\therefore a = 10$$",
+        "ai_explanation": {
+          "concept_rule": "Mean $\\bar{x} = \\frac{\\sum x f}{\\sum f}$. Form a linear equation to solve for an unknown score.",
+          "step_by_step": [
+            "Calculate total frequency: $\\sum f = 1 + 2 + 1 + 2 + 1 = 7$.",
+            "Calculate $\\sum xf = 7(1) + 9(2) + a(1) + 13(2) + 16(1) = 7 + 18 + a + 26 + 16 = a + 67$.",
+            "Equate to mean: $\\frac{a + 67}{7} = 11$.",
+            "Multiply by 7: $a + 67 = 77 \\implies a = 10$."
+          ],
+          "common_pitfalls": "Forgetting to multiply each score by its respective frequency."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the length of the sides of the rhombus.",
+        "final_answer": "$19\\text{ goals}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Set up the equation for the new mean of 8 games: $\\frac{k + 77}{8} = 12$"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for $k$ to find the required goals"
+          }
+        ],
+        "solution": "Let $k$ be the number of goals that Kai will need to score in the next game.\nSince she averaged $11$ goals in her first $7$ games, her average after the next game $= \\frac{7 \\times 11 + k}{8} = \\frac{k + 77}{8}$.\nFor her overall average to improve to $12$, we require:\n$$\\frac{k + 77}{8} = 12$$\n$$\\therefore k + 77 = 96$$\n$$\\therefore k = 19$$\nSo, Kai will need to score $19$ goals in the next game to improve her overall average to $12$.",
+        "ai_explanation": {
+          "concept_rule": "New mean equals total sum of all scores (previous sum plus new score) divided by total number of games.",
+          "step_by_step": [
+            "Previous total score: $7 \\times 11 = 77$.",
+            "Total score after 8 games: $77 + k$.",
+            "Required total score for an average of 12: $8 \\times 12 = 96$.",
+            "Solve for $k$: $k = 96 - 77 = 19$."
+          ],
+          "common_pitfalls": "Dividing by 7 instead of 8 for the new mean."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the measure of the larger angle in the rhombus.",
+        "final_answer": "$116^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use tangent ratio with half-angles of the rhombus"
+          },
+          {
+            "code": "A1",
+            "desc": "Multiply by 2 to obtain the full obtuse angle"
+          }
+        ],
+        "solution": "Let $\\theta$ be the larger angle in the rhombus. $A\\hat{C}B = \\frac{\\theta}{2}$ {diagonals of a rhombus bisect its angles}. $\\tan\\frac{\\theta}{2} = \\frac{4}{2.5} \\implies \\frac{\\theta}{2} = \\tan^{-1}\\left(\\frac{4}{2.5}\\right) \\implies \\theta = 2\\tan^{-1}\\left(\\frac{4}{2.5}\\right) \\approx 116^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "Diagonals of a rhombus bisect the vertex angles.",
+          "step_by_step": [
+            "Recognize that the larger angle is split into two equal halves $\\frac{\\theta}{2}$ opposite the larger half-diagonal ($4\\text{ cm}$).",
+            "Set up $\\tan\\frac{\\theta}{2} = \\frac{4}{2.5}$.",
+            "Evaluate $\\frac{\\theta}{2}$ and double it to find $\\theta \\approx 116^\\circ$."
+          ],
+          "common_pitfalls": "Finding the acute angle instead of the larger (obtuse) angle by choosing $\\frac{2.5}{4}$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q18",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 18,
+    "question_text": "Find the unknowns, correct to 3 significant figures:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$\\approx €139$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find midpoints and compute $\\sum xf = 12370$"
+          },
+          {
+            "code": "A1",
+            "desc": "Divide by total frequency $\\sum f = 89$ to get $\\approx €139$"
+          }
+        ],
+        "solution": "$$\\bar{x} = \\frac{\\sum x f}{\\sum f} = \\frac{12370}{89} \\approx 139$$\n$\\therefore$ the mean weekly rent was about €$139$.",
+        "ai_explanation": {
+          "concept_rule": "For grouped data, the mean is estimated using the class midpoint $x$ as representative of each interval: $\\bar{x} = \\frac{\\sum fx}{\\sum f}$.",
+          "step_by_step": [
+            "Determine midpoints $x$: $90, 110, 130, 150, 170, 190$.",
+            "Compute products $xf$ and sum: $270 + 1650 + 3380 + 4500 + 2380 + 190 = 12370$.",
+            "Sum the frequencies: $3 + 15 + 26 + 30 + 14 + 1 = 89$.",
+            "Calculate mean: $\\frac{12370}{89} \\approx 138.99 \\approx 139$."
+          ],
+          "common_pitfalls": "Using the interval limits instead of midpoints."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$\\approx 0.506$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Sum frequencies for intervals where $r \\ge 140$"
+          },
+          {
+            "code": "A1",
+            "desc": "Divide by total frequency: $\\frac{30 + 14 + 1}{89} \\approx 0.506$"
+          }
+        ],
+        "solution": "$$\\text{P}(r \\ge 140) = \\frac{30 + 14 + 1}{89} \\approx 0.506$$",
+        "ai_explanation": {
+          "concept_rule": "The probability of an event from a frequency distribution is the sum of favorable frequencies divided by the total frequency.",
+          "step_by_step": [
+            "Identify intervals with $r \\ge 140$: $140 \\le r < 160$, $160 \\le r < 180$, and $180 \\le r < 200$.",
+            "Add their frequencies: $30 + 14 + 1 = 45$.",
+            "Divide by the total frequency $89$: $\\frac{45}{89} \\approx 0.506$."
+          ],
+          "common_pitfalls": "Leaving out the last class interval or miscounting the classes included."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "$63.8^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find shared vertical height x using sine in the right triangle"
+          },
+          {
+            "code": "M1",
+            "desc": "Use x to set up sine equation for theta/2"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for theta"
+          }
+        ],
+        "solution": "In the blue right angled triangle, $\\sin 25^\\circ = \\frac{x}{10} \\implies x = 10\\sin 25^\\circ$. In the pink right angled triangle, $\\sin\\frac{\\theta}{2} = \\frac{x}{8} \\implies \\sin\\frac{\\theta}{2} = \\frac{10\\sin 25^\\circ}{8} \\implies \\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{10\\sin 25^\\circ}{8}\\right) \\implies \\theta = 2\\sin^{-1}\\left(\\frac{10\\sin 25^\\circ}{8}\\right) \\approx 63.8^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "Using a common perpendicular segment between two triangles to relate their angle measures.",
+          "step_by_step": [
+            "Solve for the common side $x = 10\\sin 25^\\circ$.",
+            "Substitute $x$ into $\\sin\\frac{\\theta}{2} = \\frac{x}{8}$.",
+            "Calculate $\\frac{\\theta}{2}$ and double it to find $\\theta \\approx 63.8^\\circ$."
+          ],
+          "common_pitfalls": "Using an incorrect hypotenuse ($10$ instead of $8$) for the pink triangle."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q19",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 19,
+    "question_text": "Find the value of the unknown:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$45.6^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Recognize angle in a semicircle is a right angle"
+          },
+          {
+            "code": "M1",
+            "desc": "Identify hypotenuse as diameter (10 cm)"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for theta using cosine"
+          }
+        ],
+        "solution": "$A\\hat{C}B = 90^\\circ$ {angle in a semi-circle}, so $\\triangle ABC$ is right angled at $C$. Since the radius is $5\\text{ cm}$, the diameter is $AB = 10\\text{ cm}$. $\\cos\\theta = \\frac{7}{AB} = \\frac{7}{10} \\implies \\theta = \\cos^{-1}\\left(\\frac{7}{10}\\right) \\approx 45.6^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "Thales's theorem: An angle inscribed in a semicircle is a right angle ($90^\\circ$).",
+          "step_by_step": [
+            "Recognize that $\\triangle ABC$ is a right-angled triangle with hypotenuse equal to the diameter $2 \\times 5 = 10\\text{ cm}$.",
+            "Set up $\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{7}{10}$.",
+            "Calculate $\\theta = \\cos^{-1}(0.7) \\approx 45.6^\\circ$."
+          ],
+          "common_pitfalls": "Using the radius $5\\text{ cm}$ as the hypotenuse instead of the diameter $10\\text{ cm}$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$61.6$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use tangent-radius property to identify right angle"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for x using tangent"
+          }
+        ],
+        "solution": "We construct the right angled triangle as shown. For the shaded triangle, $\\tan 18^\\circ = \\frac{20}{x} \\implies x = \\frac{20}{\\tan 18^\\circ} \\approx 61.6$.",
+        "ai_explanation": {
+          "concept_rule": "A tangent to a circle is perpendicular to the radius at the point of contact.",
+          "step_by_step": [
+            "Identify that the radius of $20\\text{ m}$ is perpendicular to the tangent line.",
+            "In the resulting right triangle, set up $\\tan 18^\\circ = \\frac{20}{x}$.",
+            "Solve for $x = \\frac{20}{\\tan 18^\\circ} \\approx 61.6$."
+          ],
+          "common_pitfalls": "Confusing sine and tangent when dealing with tangent lines to circles."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "",
+        "final_answer": "$97.2^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Construct altitude to split chord and apex angle"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve for theta using sine"
+          }
+        ],
+        "solution": "We construct the altitude as shown. For the shaded triangle, $\\sin\\frac{\\theta}{2} = \\frac{3}{4} \\implies \\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{3}{4}\\right) \\implies \\theta = 2\\sin^{-1}\\left(\\frac{3}{4}\\right) \\approx 97.2^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "The perpendicular from the center of a circle to a chord bisects the chord and the central angle.",
+          "step_by_step": [
+            "The chord of length $6\\text{ m}$ is bisected into two segments of $3\\text{ m}$.",
+            "The radius of $4\\text{ m}$ serves as the hypotenuse.",
+            "Formulate $\\sin\\frac{\\theta}{2} = \\frac{3}{4}$.",
+            "Compute $\\theta = 2\\sin^{-1}(0.75) \\approx 97.2^\\circ$."
+          ],
+          "common_pitfalls": "Using $6$ instead of $3$ as the opposite side length."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q20",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 20,
+    "question_text": "At 2:35 pm Fari sees an airplane directly overhead. At 2:38 pm he estimates that the angle of elevation to the plane is $15^\\circ$. The plane is travelling in a straight line at $110\\text{ m s}^{-1}$. Calculate:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "the height of the plane above the ground",
+        "final_answer": "$Cailan: $\\text{range} = 13$, $\\text{IQR} = 6$; Miles: $\\text{range} = 9$, $\\text{IQR} = 5$$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate range and quartiles for Cailan"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain Cailan's range $= 13$ and IQR $= 6$"
+          },
+          {
+            "code": "M1",
+            "desc": "Calculate range and quartiles for Miles"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain Miles's range $= 9$ and IQR $= 5$"
+          }
+        ],
+        "solution": "Cailan:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 92 - 79 = 13$$\nWe have an even number of data values, so we include all data values when we split the data set into two:\nLower half: $79, 80, 81, 83, 84$; Upper half: $85, 86, 87, 90, 92$\n$$Q_1 = \\text{median of lower half} = 81$$\n$$Q_3 = \\text{median of upper half} = 87$$\n$$\\text{IQR} = Q_3 - Q_1 = 87 - 81 = 6$$\n\nMiles:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 91 - 82 = 9$$\nWe have an even number of data values, so we include all data values when we split the data set into two:\nLower half: $82, 82, 83, 84, 84$; Upper half: $85, 87, 88, 90, 91$\n$$Q_1 = \\text{median of lower half} = 83$$\n$$Q_3 = \\text{median of upper half} = 88$$\n$$\\text{IQR} = Q_3 - Q_1 = 88 - 83 = 5$$",
+        "ai_explanation": {
+          "concept_rule": "To find spread, calculate range as $\\max - \\min$ and IQR as $Q_3 - Q_1$ by splitting the 10 data values into two halves of 5 values each.",
+          "step_by_step": [
+            "For Cailan: range is $92 - 79 = 13$. The middle of the first 5 values is 81 ($Q_1$), and middle of upper 5 values is 87 ($Q_3$). IQR is $87 - 81 = 6$.",
+            "For Miles: range is $91 - 82 = 9$. The middle of the first 5 values is 83 ($Q_1$), and middle of upper 5 values is 88 ($Q_3$). IQR is $88 - 83 = 5$."
+          ],
+          "common_pitfalls": "Misidentifying the median of the 5-element halves."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "the angle of elevation to the plane at 2:42 pm.",
+        "final_answer": "$6.55^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate total horizontal distance y"
+          },
+          {
+            "code": "M1",
+            "desc": "Set up tangent ratio with height and new horizontal distance"
+          },
+          {
+            "code": "A1",
+            "desc": "Calculate angle of elevation theta"
+          }
+        ],
+        "solution": "$y = \\text{speed} \\times \\text{time} = 110 \\times 420 = 46\\,200\\text{ m}$ {7 minutes = 420 seconds}. $\\tan\\theta \\approx \\frac{5305.39}{46\\,200} \\implies \\theta \\approx \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right) \\approx 6.55^\\circ$. Therefore, the angle of elevation of the plane at 2:42 pm is approximately $6.55^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "Angle of elevation: $\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$.",
+          "step_by_step": [
+            "Convert $7\\text{ minutes}$ to $420\\text{ seconds}$.",
+            "Calculate new horizontal distance: $y = 110 \\times 420 = 46\\,200\\text{ m}$.",
+            "Set up $\\tan\\theta = \\frac{5305.39}{46\\,200}$.",
+            "Solve for $\\theta = \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right) \\approx 6.55^\\circ$."
+          ],
+          "common_pitfalls": "Using the rounded height $5310$ instead of unrounded value, or miscalculating elapsed time."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q21",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 21,
+    "question_text": "A helicopter lands $5\\text{ km}$ east and $7\\text{ km}$ south of its starting point.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the helicopter's distance from its starting point.",
+        "final_answer": "$\\text{minimum} = 4,\\; Q_1 = 12,\\; \\text{median} = 16,\\; Q_3 = 18,\\; \\text{maximum} = 31$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Find median and quartiles from the 19 ordered values"
+          },
+          {
+            "code": "A1",
+            "desc": "Correctly state the five-number summary"
+          }
+        ],
+        "solution": "The ordered data set is:\n$4, 9, 10, 12, 12, 14, 14, 15, 16, 16, 16, 17, 18, 18, 18, 20, 23, 26, 31$ ($19$ data values)\n$$\\text{median} = 16 \\quad (\\text{10th value})$$\nLower half ($9$ values): $4, 9, 10, 12, 12, 14, 14, 15, 16 \\implies Q_1 = 12$\nUpper half ($9$ values): $16, 17, 18, 18, 18, 20, 23, 26, 31 \\implies Q_3 = 18$\nSo the five-number summary is:\n$$\\begin{cases} \\text{minimum} = 4 \\\\ Q_1 = 12 \\\\ \\text{median} = 16 \\\\ Q_3 = 18 \\\\ \\text{maximum} = 31 \\end{cases}$$",
+        "ai_explanation": {
+          "concept_rule": "The five-number summary consists of the minimum, first quartile ($Q_1$), median, third quartile ($Q_3$), and maximum.",
+          "step_by_step": [
+            "Identify min $= 4$ and max $= 31$.",
+            "There are 19 values. The median is the 10th value, which is 16.",
+            "Excluding the 10th value gives 9 values below it; the median of these 9 values is the 5th value: $Q_1 = 12$.",
+            "Excluding the 10th value gives 9 values above it; the median of these 9 values is the 15th value overall (5th of the upper half): $Q_3 = 18$."
+          ],
+          "common_pitfalls": "Including the median when finding the quartiles of an odd-sized dataset."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the helicopter's bearing from its starting point.",
+        "final_answer": "$6$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate $Q_3 - Q_1$"
+          },
+          {
+            "code": "A1",
+            "desc": "Obtain $18 - 12 = 6$"
+          }
+        ],
+        "solution": "$$\\text{IQR} = Q_3 - Q_1 = 18 - 12 = 6$$",
+        "ai_explanation": {
+          "concept_rule": "IQR is $Q_3 - Q_1$.",
+          "step_by_step": [
+            "Subtract $Q_1 = 12$ from $Q_3 = 18$.",
+            "$18 - 12 = 6$."
+          ],
+          "common_pitfalls": "Using the wrong quartile values."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q22",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 22,
+    "question_text": "Find the angle between the following line segments and the base plane of the triangular prism:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "[AE]",
+        "final_answer": "$4\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct minimum value identified from the boxplot"
+          }
+        ],
+        "solution": "From the boxplot, the left whisker terminates at $4$.\n$\\text{minimum value} = 4\\text{ cm}$",
+        "ai_explanation": {
+          "concept_rule": "The minimum value on a boxplot corresponds to the leftmost point of the lower whisker.",
+          "step_by_step": [
+            "Locate the left end of the whisker on the horizontal axis.",
+            "Read off the value at this point, which is $4\\text{ cm}$."
+          ],
+          "common_pitfalls": "Confusing the minimum with the lower quartile (the left edge of the box)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "[BD]",
+        "final_answer": "$22\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct maximum value identified from the boxplot"
+          }
+        ],
+        "solution": "From the boxplot, the right whisker terminates at $22$.\n$\\text{maximum value} = 22\\text{ cm}$",
+        "ai_explanation": {
+          "concept_rule": "The maximum value on a boxplot corresponds to the rightmost point of the upper whisker.",
+          "step_by_step": [
+            "Locate the right end of the whisker on the horizontal axis.",
+            "Read off the value at this point, which is $22\\text{ cm}$."
+          ],
+          "common_pitfalls": "Confusing the maximum with the upper quartile (the right edge of the box)."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "[BE]",
+        "final_answer": "$17\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct median value identified from the boxplot"
+          }
+        ],
+        "solution": "From the boxplot, the vertical line inside the box is at $17$.\n$\\text{median} = 17\\text{ cm}$",
+        "ai_explanation": {
+          "concept_rule": "The median in a boxplot is indicated by the vertical line dividing the box into two parts.",
+          "step_by_step": [
+            "Identify the line inside the central box.",
+            "Read off the corresponding value on the scale, which is $17\\text{ cm}$."
+          ],
+          "common_pitfalls": "Mistaking the midpoint of the box for the median line."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "[AM]",
+        "final_answer": "$19\\text{ cm}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct upper quartile identified from the boxplot"
+          }
+        ],
+        "solution": "From the boxplot, the right edge of the box is at $19$.\n$\\text{upper quartile} = 19\\text{ cm}$",
+        "ai_explanation": {
+          "concept_rule": "The upper quartile ($Q_3$) is represented by the right boundary of the box.",
+          "step_by_step": [
+            "Locate the right-hand boundary of the rectangular box.",
+            "Read the value on the axis, which is $19\\text{ cm}$."
+          ],
+          "common_pitfalls": "Reading the maximum value at the end of the whisker instead of the box boundary."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q23",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 23,
+    "question_text": "Consider the rectangular prism shown. Find the angle between the following line segments and the base plane ABCO:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "[CD]",
+        "final_answer": "$\\text{minimum} = 85,\\ Q_1 = 107,\\ \\text{median} = 121.5,\\ Q_3 = 137.5,\\ \\text{maximum} = 156$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identification of medians/quartiles from 24 data values"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct five-number summary values"
+          }
+        ],
+        "solution": "The ordered data set is: $85, 96, 98, 100, 105, 106, 108, 108, 112, 112, 118, 120, 123, 125, 126, 128, 133, 135, 140, 144, 144, 148, 148, 156$ (24 data values).\n$\\text{median} = \\frac{120 + 123}{2} = 121.5$\nLower half has 12 values: $Q_1 = \\frac{106 + 108}{2} = 107$\nUpper half has 12 values: $Q_3 = \\frac{135 + 140}{2} = 137.5$\n$\\text{minimum} = 85$, $\\text{maximum} = 156$\nSo the five-number summary is:\n$\\text{minimum} = 85$, $Q_1 = 107$, $\\text{median} = 121.5$, $Q_3 = 137.5$, $\\text{maximum} = 156$",
+        "ai_explanation": {
+          "concept_rule": "The five-number summary consists of the minimum, lower quartile ($Q_1$), median, upper quartile ($Q_3$), and maximum.",
+          "step_by_step": [
+            "Ensure the $24$ values are ordered.",
+            "Find the median between the 12th and 13th values: $(120+123)/2 = 121.5$.",
+            "Find $Q_1$ as the median of the first 12 values: $(106+108)/2 = 107$.",
+            "Find $Q_3$ as the median of the upper 12 values: $(135+140)/2 = 137.5$.",
+            "Identify min $= 85$ and max $= 156$."
+          ],
+          "common_pitfalls": "Forgetting to take the average of the two middle numbers for an even number of data points."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "[OF]",
+        "final_answer": "$Boxplot drawn with Min = 85, $Q_1 = 107$, Median = 121.5, $Q_3 = 137.5$, Max = 156$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Appropriate scale drawn covering 80 to 160"
+          },
+          {
+            "code": "A1",
+            "desc": "Boxplot correctly plotted using the five-number summary"
+          }
+        ],
+        "solution": "Draw an axis from 80 to 160 with labels. Construct a box with edges at $Q_1 = 107$ and $Q_3 = 137.5$, with a line through the median $121.5$. Extend whiskers to the minimum $85$ and maximum $156$.",
+        "ai_explanation": {
+          "concept_rule": "A boxplot visually displays the five-number summary along a uniform number line.",
+          "step_by_step": [
+            "Draw an axis with an even scale covering from at least 85 to 156.",
+            "Draw vertical lines at $Q_1 = 107$, median $= 121.5$, and $Q_3 = 137.5$ and connect them to form a box.",
+            "Draw whiskers extending from the box to the minimum ($85$) and maximum ($156$)."
+          ],
+          "common_pitfalls": "Using an uneven scale or misplotting points between tick marks."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "[AG]",
+        "final_answer": "$\\text{Range} = 71,\\ \\text{IQR} = 30.5$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct range calculation"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct IQR calculation"
+          }
+        ],
+        "solution": "$\\text{Range} = \\text{maximum} - \\text{minimum} = 156 - 85 = 71$\n$\\text{IQR} = Q_3 - Q_1 = 137.5 - 107 = 30.5$",
+        "ai_explanation": {
+          "concept_rule": "$\\text{Range} = \\text{maximum} - \\text{minimum}$; $\\text{IQR} = Q_3 - Q_1$.",
+          "step_by_step": [
+            "Subtract minimum from maximum: $156 - 85 = 71$.",
+            "Subtract lower quartile from upper quartile: $137.5 - 107 = 30.5$."
+          ],
+          "common_pitfalls": "Confusing the definitions of range and interquartile range."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q24",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 24,
+    "question_text": "Consider the triangular prism shown.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "State the coordinates of M.",
+        "final_answer": "$(-5, 4, 6)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply the 3D midpoint formula to coordinates of A and D"
+          },
+          {
+            "code": "A1",
+            "desc": "State the correct coordinates of M"
+          }
+        ],
+        "solution": "$M$ is the midpoint of $[\\text{AD}]$ which is $\\left(\\frac{0+(-10)}{2}, \\frac{4+4}{2}, \\frac{6+6}{2}\\right)$ or $(-5, 4, 6)$.",
+        "ai_explanation": {
+          "concept_rule": "The midpoint of two points $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ is given by $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$.",
+          "step_by_step": [
+            "Identify coordinates: $A(0, 4, 6)$ and $D(-10, 4, 6)$.",
+            "Compute the average of each coordinate component: $\\frac{0-10}{2} = -5$, $\\frac{4+4}{2} = 4$, $\\frac{6+6}{2} = 6$.",
+            "Write the coordinates of $M$ as $(-5, 4, 6)$."
+          ],
+          "common_pitfalls": "Subtracting coordinates instead of adding them when calculating the midpoint."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the measure of $\\mathrm{C\\widehat{M}D}$.",
+        "final_answer": "$Boxplot drawn with Min = 0, $Q_1 = 4$, Median = 6, $Q_3 = 12.5$, Max = 34$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Appropriate scale drawn from 0 to 35"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct boxplot showing the five-number summary"
+          }
+        ],
+        "solution": "Construct a boxplot with minimum at $0$, lower quartile at $4$, median at $6$, upper quartile at $12.5$, and maximum at $34$.",
+        "ai_explanation": {
+          "concept_rule": "Use the five-number summary to draw the box and whiskers on a linear scale.",
+          "step_by_step": [
+            "Draw horizontal scale from 0 to at least 35.",
+            "Mark min at 0, $Q_1$ at 4, median at 6, $Q_3$ at 12.5, max at 34.",
+            "Draw box from $Q_1$ to $Q_3$ with vertical line at median, and whiskers to min and max."
+          ],
+          "common_pitfalls": "Plotting $Q_3 = 12.5$ inaccurately on the axis."
+        }
+      },
+      {
+        "subpart": "c i",
+        "stem": "Find the angle between the following line segments and the base plane BECO: [OD]",
+        "final_answer": "$29.1^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify coordinates of projection point N and compute distance NO"
+          },
+          {
+            "code": "M1",
+            "desc": "Use tangent ratio with DN and NO"
+          },
+          {
+            "code": "A1",
+            "desc": "Find the angle to one decimal place"
+          }
+        ],
+        "solution": "The required angle is $\\text{D}\\widehat{\\text{O}}\\text{N}$, where $N$ has coordinates $(-10, 4, 0)$.\nNow $\\text{DN} = 6\\text{ units}$\nand $\\text{NO} = \\sqrt{(-10 - 0)^2 + (4 - 0)^2 + (0 - 0)^2} = \\sqrt{(-10)^2 + 4^2 + 0^2} = \\sqrt{116}\\text{ units}$\n$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{116}}$\n$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{116}}\\right) \\approx 29.1^\\circ$\nThe angle is about $29.1^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "The angle between a line segment and a plane is determined by projecting the segment's endpoint perpendicularly onto the plane.",
+          "step_by_step": [
+            "Project $D(-10, 4, 6)$ vertically onto the horizontal base plane ($z=0$) to get $N(-10, 4, 0)$.",
+            "Find the vertical height $\\text{DN} = 6$ units.",
+            "Find the horizontal distance $\\text{NO} = \\sqrt{(-10)^2 + 4^2} = \\sqrt{116}$.",
+            "Calculate $\\tan\\theta = \\frac{6}{\\sqrt{116}}$ and $\\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{116}}\\right) \\approx 29.1^\\circ$."
+          ],
+          "common_pitfalls": "Using the wrong coordinates for the projected point $N$ on the base plane."
+        }
+      },
+      {
+        "subpart": "c ii",
+        "stem": "Find the angle between the following line segments and the base plane BECO: [EM]",
+        "final_answer": "$43.1^\\circ$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify coordinates of point P and calculate PE"
+          },
+          {
+            "code": "M1",
+            "desc": "Set up tangent ratio with height MP and base PE"
+          },
+          {
+            "code": "A1",
+            "desc": "Compute the angle to one decimal place"
+          }
+        ],
+        "solution": "The required angle is $\\text{M}\\widehat{\\text{E}}\\text{P}$, where $P$ has coordinates $(-5, 4, 0)$.\nNow $\\text{MP} = 6\\text{ units}$\nand $\\text{PE} = \\sqrt{(-10 - (-5))^2 + (8 - 4)^2 + (0 - 0)^2} = \\sqrt{(-5)^2 + 4^2 + 0^2} = \\sqrt{41}\\text{ units}$\n$\\therefore \\tan\\theta = \\frac{6}{\\sqrt{41}}$\n$\\therefore \\theta = \\tan^{-1}\\left(\\frac{6}{\\sqrt{41}}\\right) \\approx 43.1^\\circ$\nThe angle is about $43.1^\\circ$.",
+        "ai_explanation": {
+          "concept_rule": "The angle a line segment makes with the base plane is found by dropping a perpendicular from the top endpoint to the base plane.",
+          "step_by_step": [
+            "Project $M(-5, 4, 6)$ vertically onto the base plane to get $P(-5, 4, 0)$.",
+            "Identify the vertical height $\\text{MP} = 6$.",
+            "Calculate base length $\\text{PE} = \\sqrt{(-10 - (-5))^2 + (8 - 4)^2} = \\sqrt{25 + 16} = \\sqrt{41}$.",
+            "Solve $\\tan\\theta = \\frac{6}{\\sqrt{41}}$ to find $\\theta \\approx 43.1^\\circ$."
+          ],
+          "common_pitfalls": "Using point $D$ or $A$ instead of the midpoint $M$ to determine the projection."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q25",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 25,
+    "question_text": "Find the area of:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$\\text{minimum} = 15,\\ Q_1 = 30,\\ \\text{median} = 50,\\ Q_3 = 60,\\ \\text{maximum} = 70$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct five-number summary read from site 1 boxplot"
+          }
+        ],
+        "solution": "The five-number summary for site 1 is:\n$\\text{minimum} = 15$, $Q_1 = 30$, $\\text{median} = 50$, $Q_3 = 60$, $\\text{maximum} = 70$",
+        "ai_explanation": {
+          "concept_rule": "Read the five key values (whisker ends, box edges, and central line) from the boxplot for site 1.",
+          "step_by_step": [
+            "Lower whisker ends at 15.",
+            "Lower box edge is at 30.",
+            "Middle line is at 50.",
+            "Upper box edge is at 60.",
+            "Upper whisker ends at 70."
+          ],
+          "common_pitfalls": "Misreading the scale on the vertical axis."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$Site 3$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct site identified"
+          }
+        ],
+        "solution": "Site 3 has the greatest range of weights.",
+        "ai_explanation": {
+          "concept_rule": "Range is the overall length from the end of the lower whisker to the end of the upper whisker.",
+          "step_by_step": [
+            "Observe overall spread for each site: Site 1 runs from 15 to 70 (range = 55). Site 2 runs from about 10 to 55 (range = 45). Site 3 runs from about 5 to 75 (range = 70).",
+            "Site 3 has the largest overall whisker-to-whisker span."
+          ],
+          "common_pitfalls": "Looking only at the length of the box (IQR) instead of total range."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q26",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 26,
+    "question_text": "Triangle ABC has $AB = 8\\text{ cm}$, $BC = 10\\text{ cm}$, and $AC = 12\\text{ cm}$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Draw a diagram clearly showing this information.",
+        "final_answer": "$Old: $\\text{min}=6, Q_1=7, \\text{med}=7.75, Q_3=8, \\text{max}=9$; New: $\\text{min}=4, Q_1=6.25, \\text{med}=7.25, Q_3=8, \\text{max}=9$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct five-number summary for old recipe"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct five-number summary for new recipe"
+          }
+        ],
+        "solution": "The five number summaries are:\nOld recipe: $\\text{minimum} = 6$, $Q_1 = 7$, $\\text{median} = 7.75$, $Q_3 = 8$, $\\text{maximum} = 9$\nNew recipe: $\\text{minimum} = 4$, $Q_1 = 6.25$, $\\text{median} = 7.25$, $Q_3 = 8$, $\\text{maximum} = 9$",
+        "ai_explanation": {
+          "concept_rule": "Read the values directly from the calculator screen outputs (minX, Q1, Med, Q3, maxX).",
+          "step_by_step": [
+            "For Old recipe: read $\\text{minX}=6$, $Q_1=7$, $\\text{Med}=7.75$, $Q_3=8$, $\\text{maxX}=9$.",
+            "For New recipe: read $\\text{minX}=4$, $Q_1=6.25$, $\\text{Med}=7.25$, $Q_3=8$, $\\text{maxX}=9$."
+          ],
+          "common_pitfalls": "Mixing up the values between the two recipes."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the smallest angle in triangle ABC.",
+        "final_answer": "$Parallel boxplots drawn on the same scale from 3 to 10$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Appropriate common scale drawn"
+          },
+          {
+            "code": "A1",
+            "desc": "Both boxplots accurately plotted"
+          }
+        ],
+        "solution": "Draw parallel boxplots on the same horizontal axis from 3 to 10. The old recipe boxplot has whiskers from 6 to 9 with box from 7 to 8 and median line at 7.75. The new recipe boxplot has whiskers from 4 to 9 with box from 6.25 to 8 and median line at 7.25.",
+        "ai_explanation": {
+          "concept_rule": "Parallel boxplots use the same scale to allow direct visual comparison between two data sets.",
+          "step_by_step": [
+            "Draw a single horizontal axis from 3 to 10.",
+            "Plot the five-number summary of the old recipe above the axis.",
+            "Plot the five-number summary of the new recipe below or parallel to the first."
+          ],
+          "common_pitfalls": "Using different scales for the two boxplots, which prevents valid comparison."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the area of triangle ABC.",
+        "final_answer": "$The distributor should not adopt the new recipe$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Comparison of summary statistics (minimum, Q1, median higher for old recipe)"
+          },
+          {
+            "code": "R1",
+            "desc": "Valid conclusion/recommendation based on data"
+          }
+        ],
+        "solution": "The minimum, $Q_1$, and the median are higher for the old recipe, and $Q_3$ and the maximum are the same for both recipes.\nThe group generally preferred the old recipe over the new recipe, so the distributor should not adopt this new recipe for their drink.",
+        "ai_explanation": {
+          "concept_rule": "Comparing distributions requires comparing measures of center (median) and spread (IQR/range), as well as corresponding quartiles.",
+          "step_by_step": [
+            "Compare medians: $7.75 > 7.25$, meaning the middle score is higher for the old recipe.",
+            "Compare lower quartiles and minimums: both are higher for the old recipe.",
+            "Conclude that overall satisfaction is higher with the old recipe, so the new recipe should not be adopted."
+          ],
+          "common_pitfalls": "Failing to connect the statistical comparison to the practical decision requested."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q27",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 27,
+    "question_text": "In triangle ABC, $AB = 72\\text{ cm}$, $BC = 61\\text{ cm}$, and $\\mathrm{A\\widehat{B}C} = 43^\\circ$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Calculate the length of AC.",
+        "final_answer": "$Cumulative frequency curve drawn through points (8, 8), (9, 67), (10, 141), (11, 163), (12, 164)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Correct cumulative frequencies computed: 8, 67, 141, 163, 164"
+          },
+          {
+            "code": "A1",
+            "desc": "Cumulative frequency curve plotted correctly against upper class boundaries"
+          }
+        ],
+        "solution": "Cumulative frequency table:\n$7 < h \\leqslant 8$: CF $= 8$\n$8 < h \\leqslant 9$: CF $= 8 + 59 = 67$\n$9 < h \\leqslant 10$: CF $= 67 + 74 = 141$\n$10 < h \\leqslant 11$: CF $= 141 + 22 = 163$\n$11 < h \\leqslant 12$: CF $= 163 + 1 = 164$\nPlot points $(7, 0), (8, 8), (9, 67), (10, 141), (11, 163), (12, 164)$ and join with a smooth curve.",
+        "ai_explanation": {
+          "concept_rule": "Cumulative frequencies are plotted against the upper boundary of each class interval.",
+          "step_by_step": [
+            "Sum frequencies cumulatively to get 8, 67, 141, 163, 164.",
+            "Plot points at upper boundaries: $h = 8, 9, 10, 11, 12$, starting at $(7, 0)$.",
+            "Draw a smooth S-shaped curve (ogive) through the points."
+          ],
+          "common_pitfalls": "Plotting points at midpoints instead of upper boundaries."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the measure of $\\mathrm{A\\widehat{C}B}$.",
+        "final_answer": "$\\approx 9.1\\text{ m}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Locate 50% of 164 = 82 on the cumulative frequency axis"
+          },
+          {
+            "code": "A1",
+            "desc": "Read correct median height from the graph"
+          }
+        ],
+        "solution": "The median is the 50th percentile. As $50\\%$ of $164$ is $82$, we start with the cumulative frequency $82$ and find the corresponding height.\nFrom the graph, the median $\\approx 9.1\\text{ m}$.",
+        "ai_explanation": {
+          "concept_rule": "The median corresponds to $0.5 \\times N$ on the cumulative frequency axis.",
+          "step_by_step": [
+            "Calculate $50\\%$ of $164 = 82$.",
+            "Find 82 on the vertical axis, go across to the curve, and read down to the horizontal axis.",
+            "The corresponding height is approximately $9.1\\text{ m}$."
+          ],
+          "common_pitfalls": "Reading 50 directly from the cumulative frequency axis instead of $50\\%$ of 164."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q28",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 28,
+    "question_text": "The area of the triangle shown is $4\\text{ m}^2$.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Given that $\\theta$ is obtuse, find the value of $\\theta$.",
+        "final_answer": "$\\text{mean} \\approx 24.1,\\ \\text{standard deviation} \\approx 6.71$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct mean"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct standard deviation"
+          }
+        ],
+        "solution": "Using technology:\n$\\text{mean} \\approx 24.1$, $\\text{standard deviation} \\approx 6.71$",
+        "ai_explanation": {
+          "concept_rule": "Use the statistics function on a calculator to enter data and compute sample mean ($\\bar{x}$) and sample standard deviation ($s_x$).",
+          "step_by_step": [
+            "Enter the 12 data values into the calculator.",
+            "Calculate 1-variable statistics.",
+            "Identify $\\bar{x} \\approx 24.083 \\approx 24.1$ and $s_x \\approx 6.71$ (or $\\sigma_x \\approx 6.71$ as shown on screen)."
+          ],
+          "common_pitfalls": "Rounding prematurely before writing down the final answer."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find $x$.",
+        "final_answer": "$Contestants taking 32 minutes and 40 minutes$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate threshold: mean + 1 standard deviation"
+          },
+          {
+            "code": "A1",
+            "desc": "Correctly identify contestants exceeding threshold"
+          }
+        ],
+        "solution": "Contestants with times greater than $24.1 + 6.71 \\approx 30.81\\text{ minutes}$ will be eliminated.\nSo, the contestants who took 32 minutes and 40 minutes are immediately eliminated.",
+        "ai_explanation": {
+          "concept_rule": "Elimination threshold is one standard deviation above the mean: $\\bar{x} + s$.",
+          "step_by_step": [
+            "Add one standard deviation to the mean: $24.1 + 6.71 = 30.81\\text{ minutes}$.",
+            "Identify all times in the data set that are strictly greater than $30.81$.",
+            "The times are $32$ and $40$."
+          ],
+          "common_pitfalls": "Subtracting the standard deviation instead of adding it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q29",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 29,
+    "question_text": "Find:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "the area of the triangle",
+        "final_answer": "$Anthony: $\\mu = 3.8\\text{ h}, \\sigma \\approx 1.50\\text{ h}$; Katherine: $\\mu = 3.65\\text{ h}, \\sigma \\approx 0.502\\text{ h}$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct mean and standard deviation for Anthony"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct mean and standard deviation for Katherine"
+          }
+        ],
+        "solution": "Using technology:\nAnthony:\nThe mean $\\mu = 3.8\\text{ hours}$ and the standard deviation $\\sigma \\approx 1.50\\text{ hours}$.\nKatherine:\nThe mean $\\mu = 3.65\\text{ hours}$ and the standard deviation $\\sigma \\approx 0.502\\text{ hours}$.",
+        "ai_explanation": {
+          "concept_rule": "Calculate population mean $\\mu = \\frac{\\sum x}{n}$ and population standard deviation $\\sigma = \\sqrt{\\frac{\\sum (x-\\mu)^2}{n}}$.",
+          "step_by_step": [
+            "Enter Anthony's 10 values into the calculator: $\\bar{x} = 3.8$, $\\sigma_x \\approx 1.5033 \\approx 1.50$.",
+            "Enter Katherine's 10 values: $\\bar{x} = 3.65$, $\\sigma_x \\approx 0.5025 \\approx 0.502$."
+          ],
+          "common_pitfalls": "Using sample standard deviation ($s_x$) instead of population standard deviation ($\\sigma_x$) when specified."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "the length of [AC].",
+        "final_answer": "$Anthony generally practised for longer$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Valid comparison of means"
+          }
+        ],
+        "solution": "Anthony's mean is higher than Katherine's, so Anthony generally practised for longer.",
+        "ai_explanation": {
+          "concept_rule": "The mean is a measure of central tendency; a higher mean indicates a higher typical value.",
+          "step_by_step": [
+            "Compare the means: Anthony's mean is $3.8\\text{ h}$, Katherine's mean is $3.65\\text{ h}$.",
+            "Conclude that Anthony spent more time on average practising."
+          ],
+          "common_pitfalls": "Comparing standard deviations instead of means to evaluate who practised longer."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q30",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 30,
+    "question_text": "",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find $\\cos\\theta$ but not $\\theta$.",
+        "final_answer": "$\\frac{5}{8}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply the cosine rule to triangle BAD to express cos theta"
+          },
+          {
+            "code": "A1",
+            "desc": "Simplify to find the exact fraction 5/8"
+          }
+        ],
+        "solution": "By the cosine rule in $\\Delta\\text{BAD}$:\n$\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2 \\times 60 \\times 20}$\n$\\therefore \\cos\\theta = \\frac{1500}{2400}$\n$\\therefore \\cos\\theta = \\frac{5}{8}$",
+        "ai_explanation": {
+          "concept_rule": "The cosine rule for an angle is $\\cos\\theta = \\frac{b^2 + c^2 - a^2}{2bc}$, where $a$ is the side opposite to $\\theta$.",
+          "step_by_step": [
+            "In $\\Delta\\text{BAD}$, the sides adjacent to $\\theta$ are $60$ and $20$, and the opposite side is $50$.",
+            "Substitute into the formula: $\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2(60)(20)}$.",
+            "Compute the numerator: $3600 + 400 - 2500 = 1500$.",
+            "Compute the denominator: $2400$.",
+            "Simplify the fraction: $\\frac{1500}{2400} = \\frac{5}{8}$."
+          ],
+          "common_pitfalls": "Using the wrong opposite side (e.g., 60 instead of 50)."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Hence find the value of $x$.",
+        "final_answer": "$62.6$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply the cosine rule in triangle ABC with AC = 20 + x"
+          },
+          {
+            "code": "M1",
+            "desc": "Substitute cos theta = 5/8 and expand to form a quadratic equation"
+          },
+          {
+            "code": "A1",
+            "desc": "Solve the quadratic equation and reject the negative solution"
+          }
+        ],
+        "solution": "By the cosine rule in $\\Delta\\text{ABC}$:\n$65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\cos\\theta$\n$\\therefore 65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\left(\\frac{5}{8}\\right)\\quad \\{\\text{using a}\\}$\n$\\therefore 4225 = 3600 + 400 + 40x + x^2 - 1500 - 75x$\n$\\therefore x^2 - 35x - 1725 = 0$\n$\\therefore x \\approx -27.7\\text{ or } 62.6\\quad \\{\\text{technology}\\}$\n$\\therefore x \\approx 62.6\\quad \\{x > 0\\}$",
+        "ai_explanation": {
+          "concept_rule": "A shared angle between two overlapping triangles allows substituting $\\cos\\theta$ into a larger triangle to solve for unknown segment lengths.",
+          "step_by_step": [
+            "In $\\Delta\\text{ABC}$, the side opposite angle $\\theta$ is $65$, and the adjacent sides are $60$ and $(20+x)$.",
+            "Write the cosine rule: $65^2 = 60^2 + (20+x)^2 - 2(60)(20+x)\\cos\\theta$.",
+            "Substitute $\\cos\\theta = \\frac{5}{8}$ from part a.",
+            "Expand and simplify the terms to form the quadratic equation $x^2 - 35x - 1725 = 0$.",
+            "Solve using technology or the quadratic formula to obtain $x \\approx 62.6$ (since $x > 0$)."
+          ],
+          "common_pitfalls": "Errors in expanding $(20+x)^2$ or in multiplying $-120(20+x)\\left(\\frac{5}{8}\\right)$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q31",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 31,
+    "question_text": "Find $x$:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Each scatter diagram shows a positive association between $x$ and $y$$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "State that as $x$ increases, $y$ increases, showing a positive association"
+          }
+        ],
+        "solution": "In each scatter diagram, as $x$ increases $y$ generally increases.\n$\\therefore$ each scatter diagram shows a positive association between $x$ and $y$.",
+        "ai_explanation": {
+          "concept_rule": "A positive association exists when higher values of one variable correspond to higher values of the other variable.",
+          "step_by_step": [
+            "Examine diagrams A, B, and C.",
+            "Notice that in all three, the points trend upwards from left to right.",
+            "Conclude that all three show a positive association."
+          ],
+          "common_pitfalls": "Confusing the direction of association (positive) with its strength."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$Weak: B, Moderate: A, Strong: C$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Weak correctly paired with B"
+          },
+          {
+            "code": "A1",
+            "desc": "Moderate correctly paired with A"
+          },
+          {
+            "code": "A1",
+            "desc": "Strong correctly paired with C"
+          }
+        ],
+        "solution": "\\begin{array}{|c|c|}\n\\hline\n\\text{Strength of correlation} & \\text{Scatter diagram} \\\\\n\\hline\n\\text{Weak} & \\mathbf{B} \\\\\n\\text{Moderate} & \\mathbf{A} \\\\\n\\text{Strong} & \\mathbf{C} \\\\\n\\hline\n\\end{array}",
+        "ai_explanation": {
+          "concept_rule": "The strength of correlation is judged by how tightly the data points cluster around a linear trend line.",
+          "step_by_step": [
+            "In C, points are very close to a straight line $\\implies$ Strong.",
+            "In A, points follow a clear upward trend but are moderately scattered $\\implies$ Moderate.",
+            "In B, points are widely scattered with only a slight upward trend $\\implies$ Weak."
+          ],
+          "common_pitfalls": "Swapping weak and moderate due to misjudging the dispersion of points."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q32",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 32,
+    "question_text": "Find the value of $x$:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Scatter plot of Camera B vs Camera A$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly plotted points on the Cartesian plane with axes labelled"
+          }
+        ],
+        "solution": "Plot the points $(x, y)$ representing (Camera A, Camera B): $(8.5, 7)$, $(8, 6)$, $(9, 7.5)$, $(7, 9)$, $(8.5, 7.5)$, and $(7.5, 6)$ on a scatter plot.",
+        "ai_explanation": {
+          "concept_rule": "A scatter plot graphically represents bivariate data by plotting ordered pairs $(x, y)$ on a coordinate plane.",
+          "step_by_step": [
+            "Label the horizontal axis as Camera A and the vertical axis as Camera B.",
+            "Choose appropriate scale markings from 5 to 11 on the horizontal axis and 5 to 10 on the vertical axis.",
+            "Plot the given coordinate pairs: $(8.5, 7), (8, 6), (9, 7.5), (7, 9), (8.5, 7.5), (7.5, 6)$."
+          ],
+          "common_pitfalls": "Swapping the $x$ and $y$ variables or incorrectly scaling the axes."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$(7, 9)$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identification of the outlier point and its interpretation"
+          }
+        ],
+        "solution": "The point $(7, 9)$ appears to be an outlier. This corresponds to the review scoring camera A a 7, and camera B a 9.",
+        "ai_explanation": {
+          "concept_rule": "An outlier in bivariate data is a point that does not follow the general trend or pattern seen in the rest of the data.",
+          "step_by_step": [
+            "Observe the overall pattern of the plotted points.",
+            "Identify the point that lies noticeably far from the general cluster, which is $(7, 9)$.",
+            "Interpret the coordinates in context: Camera A score of 7 and Camera B score of 9."
+          ],
+          "common_pitfalls": "Identifying the highest or lowest single value instead of the point deviating from the bivariate trend."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q33",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 33,
+    "question_text": "Find the value of $x$:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "",
+        "final_answer": "$Scatter plot of Mathematics scores vs Language scores$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly drawn scatter plot with points plotted accurately"
+          }
+        ],
+        "solution": "Plot the points $(x, y)$ representing Language ($x$) and Mathematics ($y$): $(12.5, 32)$, $(15.0, 45)$, $(10.5, 27)$, $(12.0, 38)$, $(9.5, 18)$, $(10.5, 25)$, $(15.5, 35)$, $(10.0, 22)$, $(14.0, 40)$, $(12.0, 40)$.",
+        "ai_explanation": {
+          "concept_rule": "Scatter plots display pairs of numerical values to identify relationships between two quantitative variables.",
+          "step_by_step": [
+            "Place Language ($x$) on the horizontal axis and Mathematics ($y$) on the vertical axis.",
+            "Mark the axes suitably (e.g., $x$ from 8 to 18, $y$ from 15 to 55).",
+            "Plot each of the 10 data points precisely."
+          ],
+          "common_pitfalls": "Plotting repeated values only once instead of plotting all observations."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "",
+        "final_answer": "$r \\approx 0.819$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use of technology to find linear regression statistics"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of Pearson's correlation coefficient rounded to 3 decimal places"
+          }
+        ],
+        "solution": "Using technology:\n$a = 3.45284197$\n$b = -9.7520299$\n$r = 0.8188878$\n$r^2 = 0.67057723$\n$\\text{MSe} = 29.3021549$\n\nSo, $r \\approx 0.819$.",
+        "ai_explanation": {
+          "concept_rule": "Pearson's correlation coefficient $r$ measures the strength and direction of a linear relationship between two variables.",
+          "step_by_step": [
+            "Enter the data pairs into a statistical calculator or software.",
+            "Perform a linear regression analysis of form $y = ax + b$.",
+            "Read the value of $r = 0.8188878...$ and round to three decimal places."
+          ],
+          "common_pitfalls": "Confusing the coefficient of determination $r^2$ with the correlation coefficient $r$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q34",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 34,
+    "question_text": "In quadrilateral ABCD, the diagonal [BD] has length 8 km. Find the length of the diagonal [AC].",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "",
+        "stem": "In quadrilateral ABCD, the diagonal [BD] has length 8 km. Find the length of the diagonal [AC].",
+        "final_answer": "$6.54\\text{ km}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Use cosine rule to find angle $\\theta$ in $\\triangle\\text{ABD}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $\\theta \\approx 30.8^\\circ$"
+          },
+          {
+            "code": "M1",
+            "desc": "Use cosine rule to find angle $\\phi$ in $\\triangle\\text{DBC}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $\\phi \\approx 48.2^\\circ$"
+          },
+          {
+            "code": "M1",
+            "desc": "Determine combined angle $\\text{A}\\hat{\\text{B}}\\text{C} = \\theta + \\phi$"
+          },
+          {
+            "code": "M1",
+            "desc": "Apply cosine rule in $\\triangle\\text{ABC}$ to find $\\text{AC}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct final length $\\text{AC} \\approx 6.54\\text{ km}$"
+          }
+        ],
+        "solution": "By the cosine rule in $\\triangle\\text{ABD}$:\n$$\\cos \\theta = \\frac{8^2 + 4^2 - 5^2}{2 \\times 8 \\times 4}$$\n$$\\cos \\theta = \\frac{55}{64}$$\n$$\\theta = \\cos^{-1}\\left(\\frac{55}{64}\\right) \\approx 30.8^\\circ$$\n\nBy the cosine rule in $\\triangle\\text{DBC}$:\n$$\\cos \\phi = \\frac{8^2 + 6^2 - 6^2}{2 \\times 8 \\times 6}$$\n$$\\cos \\phi = \\frac{64}{96} = \\frac{2}{3}$$\n$$\\phi = \\cos^{-1}\\left(\\frac{2}{3}\\right) \\approx 48.2^\\circ$$\n\nNow $\\text{A}\\hat{\\text{B}}\\text{C} = \\theta + \\phi \\approx 30.8^\\circ + 48.2^\\circ \\approx 78.9^\\circ$\n\nBy the cosine rule in $\\triangle\\text{ABC}$:\n$$\\text{AC}^2 \\approx 4^2 + 6^2 - 2 \\times 4 \\times 6 \\times \\cos 78.9^\\circ$$\n$$\\text{AC} \\approx \\sqrt{4^2 + 6^2 - 2 \\times 4 \\times 6 \\times \\cos 78.9^\\circ}$$\n$$\\text{AC} \\approx 6.54\\text{ km}$$",
+        "ai_explanation": {
+          "concept_rule": "The cosine rule for an angle is $\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$, and for a side is $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+          "step_by_step": [
+            "Find angle $\\theta$ at vertex $B$ in triangle $ABD$ using the side lengths $8, 4, 5$.",
+            "Find angle $\\phi$ at vertex $B$ in triangle $DBC$ using the side lengths $8, 6, 6$.",
+            "Sum angles $\\theta$ and $\\phi$ to obtain the total angle $\\text{A}\\hat{\\text{B}}\\text{C} \\approx 78.9^\\circ$.",
+            "Use the cosine rule in the outer triangle $ABC$ with sides $AB = 4$, $BC = 6$, and angle $78.9^\\circ$ to find $AC$."
+          ],
+          "common_pitfalls": "Rounding intermediate angles too early, which can lead to slight inaccuracies in the final answer."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q35",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 35,
+    "question_text": "Quadrilateral PQRS has the measurements shown.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the length of [PR].",
+        "final_answer": "$Scatter plot of Interest rate vs Exchange rate$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Accurately plotted scatter plot"
+          }
+        ],
+        "solution": "Plot the points: $(2.85, 7.40)$, $(2.95, 7.50)$, $(2.90, 7.55)$, $(2.75, 7.25)$, $(2.65, 7.25)$, $(2.80, 7.35)$, $(3.05, 7.65)$, $(2.98, 7.75)$, $(2.95, 7.60)$.",
+        "ai_explanation": {
+          "concept_rule": "Graphing paired values with exchange rate on the $x$-axis and interest rate on the $y$-axis.",
+          "step_by_step": [
+            "Draw axes with exchange rate on the horizontal axis (range $2.6$ to $3.1$) and interest rate on the vertical axis (range $7.2$ to $7.8$).",
+            "Plot each coordinate pair accurately."
+          ],
+          "common_pitfalls": "Misreading decimal values on finely graduated scales."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Determine the measure of the angle marked $\\theta$.",
+        "final_answer": "$r \\approx 0.915$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Linear regression calculation using technology"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of $r$ rounded to 3 decimal places"
+          }
+        ],
+        "solution": "Using technology:\n$a = 1.2903368$\n$b = 3.76734262$\n$r = 0.9151128$\n$r^2 = 0.83743144$\n\nSo, $r \\approx 0.915$.",
+        "ai_explanation": {
+          "concept_rule": "Calculation of Pearson's correlation coefficient via technology.",
+          "step_by_step": [
+            "Enter exchange rates as list 1 and interest rates as list 2.",
+            "Calculate linear regression $y = ax + b$.",
+            "Obtain $r \\approx 0.915$."
+          ],
+          "common_pitfalls": "Rounding to the incorrect number of decimal places."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q36",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 36,
+    "question_text": "Monument X is observed from two points B and C which are 330 m apart. $\\mathrm{X}\\hat{\\mathrm{B}}\\mathrm{C}$ is $63^\\circ$ and $\\mathrm{B}\\hat{\\mathrm{C}}\\mathrm{X}$ is $75^\\circ$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Draw a neat, labelled diagram to illustrate this information.",
+        "final_answer": "$Scatter plot with line of best fit passing through $(\\bar{x}, \\bar{y}) = (120, 22.125)$$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Scatter plot of data points"
+          },
+          {
+            "code": "A1",
+            "desc": "Correctly drawn line of best fit through the mean point"
+          }
+        ],
+        "solution": "Calculate the mean point:\n$\\bar{x} = \\frac{88 + 97 + 105 + 110 + 125 + 140 + 145 + 150}{8} = 120$\n$\\bar{y} = \\frac{28 + 26 + 26 + 23 + 21 + 19 + 18 + 16}{8} = 22.125$\n\nPlot the data points and draw the line of best fit through the mean point $(120, 22.125)$.",
+        "ai_explanation": {
+          "concept_rule": "A line of best fit drawn by eye should always pass through the mean point $(\\bar{x}, \\bar{y})$ and balance the distribution of points above and below.",
+          "step_by_step": [
+            "Find the mean of the $x$-values and the mean of the $y$-values.",
+            "Plot the mean point $(120, 22.125)$.",
+            "Draw a straight line passing through this point that best follows the trend of data points."
+          ],
+          "common_pitfalls": "Failing to make the line of best fit pass through the mean point."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the distance between the monument and B.",
+        "final_answer": "$476\\text{ m}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculate the third angle $\\text{C}\\hat{\\text{X}}\\text{B}$"
+          },
+          {
+            "code": "M1",
+            "desc": "Apply the sine rule to solve for $x$"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct final distance of about $476\\text{ m}$"
+          }
+        ],
+        "solution": "Let $XB$ be $x\\text{ m}$.\n$$\\text{C}\\hat{\\text{X}}\\text{B} = 180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ \\quad \\{\\text{angles in a triangle}\\}$$\n$$\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ} \\quad \\{\\text{sine rule}\\}$$\n$$x = \\frac{330\\sin 75^\\circ}{\\sin 42^\\circ} \\approx 476$$\nThe distance between the monument and B is about $476\\text{ m}$.",
+        "ai_explanation": {
+          "concept_rule": "Use the angle sum of a triangle to find the missing angle, then apply the sine rule.",
+          "step_by_step": [
+            "Calculate angle at $X$: $180^\\circ - 63^\\circ - 75^\\circ = 42^\\circ$.",
+            "Set up the sine rule equation: $\\frac{x}{\\sin 75^\\circ} = \\frac{330}{\\sin 42^\\circ}$.",
+            "Solve for $x$: $x = \\frac{330\\sin 75^\\circ}{\\sin 42^\\circ} \\approx 476$.",
+            "State the contextual conclusion: the distance is about $476\\text{ m}$."
+          ],
+          "common_pitfalls": "Using the sine rule with $63^\\circ$ instead of $42^\\circ$ opposite side $330$."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q37",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 37,
+    "question_text": "The 5th hole at the Flagstaff golf course has the layout shown. From T to A on the fairway, the distance is 240 m, and from A to F the distance is 135 m.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the distance from T to F in a straight line.",
+        "final_answer": "$Strong, positive correlation$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct description of the relationship"
+          }
+        ],
+        "solution": "There is a strong, positive correlation between the age of an individual and their annual income.",
+        "ai_explanation": {
+          "concept_rule": "Look at the direction and dispersion of points in the scatter plot to deduce strength and direction.",
+          "step_by_step": [
+            "As age increases, annual income generally increases, showing a positive direction.",
+            "The points lie closely along an upward trend line, showing strong correlation."
+          ],
+          "common_pitfalls": "Using vague terms instead of standard statistical descriptors."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the measure of $\\mathrm{A}\\hat{\\mathrm{T}}\\mathrm{F}$.",
+        "final_answer": "$No$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Justification explaining that age alone does not cause higher income"
+          }
+        ],
+        "solution": "No, the relationship is more likely dependent on the amount of professional experience or qualifications an individual has.",
+        "ai_explanation": {
+          "concept_rule": "Correlation does not imply causation; confounding variables like experience often drive the association.",
+          "step_by_step": [
+            "Consider whether growing older directly causes someone's salary to increase automatically.",
+            "Recognise that increased experience, promotions, and qualifications over time are the real underlying drivers."
+          ],
+          "common_pitfalls": "Assuming an observed trend automatically proves a direct cause-and-effect relationship."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q38",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 38,
+    "question_text": "The diagram below shows the routes of two triangular orienteering courses ABC and DEF. The distance from E to F is 20% longer than the distance from A to C.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Find the length of [EF].",
+        "final_answer": "$Scatter plot of Mass vs Volume$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct scatter plot plotted with all points"
+          }
+        ],
+        "solution": "Plot the points $(x, y)$ representing Volume and Mass: $(3, 40)$, $(6, 95)$, $(4, 50)$, $(7, 160)$, $(16, 285)$, $(8, 130)$, $(5, 65)$, $(12, 210)$, $(9, 155)$, $(6, 90)$, $(10, 170)$, $(11, 190)$.",
+        "ai_explanation": {
+          "concept_rule": "Plotting pairs of data values $(x, y)$ on a Cartesian graph.",
+          "step_by_step": [
+            "Set the horizontal axis as Volume ($x\\text{ cm}^3$) and the vertical axis as Mass ($y\\text{ g}$).",
+            "Accurately plot all 12 points."
+          ],
+          "common_pitfalls": "Omitting duplicate $x$-values such as $(6, 95)$ and $(6, 90)$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Find the measure of $\\mathrm{D}\\hat{\\mathrm{E}}\\mathrm{F}$.",
+        "final_answer": "$r \\approx 0.980$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Computing linear regression using technology"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct value of correlation coefficient $r$"
+          }
+        ],
+        "solution": "Using technology:\n$a = 19.1171662$\n$b = -17.86376$\n$r = 0.98019806$\n$r^2 = 0.96078823$\n$\\text{MSe} = 228.081743$\n\nSo, $r \\approx 0.980$.",
+        "ai_explanation": {
+          "concept_rule": "Calculate Pearson's correlation coefficient $r$ with technology using all 12 data pairs.",
+          "step_by_step": [
+            "Enter all data into lists.",
+            "Run linear regression.",
+            "Read $r = 0.980198... \\approx 0.980$."
+          ],
+          "common_pitfalls": "Excluding the potential outlier prematurely in part b."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Find the total area covered by course 2.",
+        "final_answer": "$Strong, positive correlation$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correct description of the relationship"
+          }
+        ],
+        "solution": "There appears to be a strong, positive correlation between the volume of a sample of silver and its mass.",
+        "ai_explanation": {
+          "concept_rule": "An $r$ value close to 1 indicates a strong positive linear relationship.",
+          "step_by_step": [
+            "Since $r \\approx 0.980$, state that the correlation is strong and positive."
+          ],
+          "common_pitfalls": "Failing to state the direction of the correlation."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Find the total length of course 1.",
+        "final_answer": "$The data point $(7, 160)$ is an outlier, agreeing with the jeweller that sample D is fake.$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identification of sample D as an outlier and agreement with the jeweller"
+          }
+        ],
+        "solution": "The data point $(7, 160)$ which corresponds to sample D appears to be an outlier. We therefore agree with the jeweller that there is a fake sample.",
+        "ai_explanation": {
+          "concept_rule": "An outlier deviates substantially from the trend line formed by other observations.",
+          "step_by_step": [
+            "Examine the scatter plot to find which point lies furthest away from the linear trend.",
+            "Identify $(7, 160)$ corresponding to sample D.",
+            "Conclude that this supports the claim of a fake sample."
+          ],
+          "common_pitfalls": "Confusing sample D with sample E, which has a larger value but fits the trend."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q39",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 39,
+    "question_text": "Find the equation of the perpendicular bisector of:",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$\\mathrm{A}(3, 5)$ and $\\mathrm{B}(7, 3)$",
+        "final_answer": "$y \\approx 2.43x + 32.0$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using technology to find coefficients for linear regression"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct regression equation rounded appropriately"
+          }
+        ],
+        "solution": "Using technology:\n$a = 2.43264433$\n$b = 32.0298316$\n$r = 0.91326692$\n$r^2 = 0.83405646$\n$\\text{MSe} = 104.88158$\n\nUsing technology, the least squares regression line is $y \\approx 2.43x + 32.0$.",
+        "ai_explanation": {
+          "concept_rule": "The least squares regression line has the form $y = ax + b$, where $a$ is the gradient and $b$ is the $y$-intercept.",
+          "step_by_step": [
+            "Enter study time as $x$ and examination result as $y$.",
+            "Perform linear regression.",
+            "Identify $a \\approx 2.43$ and $b \\approx 32.0$."
+          ],
+          "common_pitfalls": "Swapping the gradient $a$ and the $y$-intercept $b$."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$\\mathrm{M}(7, 2)$ and $\\mathrm{N}(1, -5)$",
+        "final_answer": "$r \\approx 0.913$, strong positive correlation",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Quoting $r$ and correctly interpreting correlation"
+          }
+        ],
+        "solution": "From a, $r \\approx 0.913$.\nSo, there is a strong, positive correlation between the number of hours that a student studies and their examination result.",
+        "ai_explanation": {
+          "concept_rule": "The correlation coefficient $r$ indicates the strength and direction of the linear relationship.",
+          "step_by_step": [
+            "State $r \\approx 0.913$ from the regression output.",
+            "Conclude that it shows a strong, positive correlation."
+          ],
+          "common_pitfalls": "Writing only the numerical value without interpreting it in words."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q40",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 40,
+    "question_text": "A line segment has equation $4x - 3y + 2 = 0$. Its midpoint is $(4, 6)$.",
+    "has_diagram": false,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "State the gradient of the line segment.",
+        "final_answer": "$\\frac{4}{3}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Rearrange line into slope-intercept form $y = mx + c$"
+          },
+          {
+            "code": "A1",
+            "desc": "Identify the gradient"
+          }
+        ],
+        "solution": "$$4x - 3y + 2 = 0$$\n$$3y = 4x + 2$$\n$$y = \\frac{4}{3}x + \\frac{2}{3} \\text{ has gradient } \\frac{4}{3}$$",
+        "ai_explanation": {
+          "concept_rule": "In the form $y = mx + c$, $m$ represents the gradient of the straight line.",
+          "step_by_step": [
+            "Start with $4x - 3y + 2 = 0$.",
+            "Isolate $3y$: $3y = 4x + 2$.",
+            "Divide by $3$: $y = \\frac{4}{3}x + \\frac{2}{3}$.",
+            "The coefficient of $x$ is the gradient, which is $\\frac{4}{3}$."
+          ],
+          "common_pitfalls": "Forgetting to divide every term by the coefficient of $y$."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "State the gradient of its perpendicular bisector.",
+        "final_answer": "$-\\frac{3}{4}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "State the negative reciprocal gradient"
+          }
+        ],
+        "solution": "The perpendicular bisector has gradient $-\\frac{3}{4}$.",
+        "ai_explanation": {
+          "concept_rule": "Perpendicular lines have gradients that satisfy $m_1 m_2 = -1$.",
+          "step_by_step": [
+            "The line's gradient is $\\frac{4}{3}$.",
+            "The perpendicular gradient is $-\\frac{1}{4/3} = -\\frac{3}{4}$."
+          ],
+          "common_pitfalls": "Negating without inverting, or inverting without negating."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "State the equation of the perpendicular bisector. Write your answer in the form $ax + by + d = 0$.",
+        "final_answer": "$3x + 4y = 36$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Substitute given point and perpendicular gradient into line equation"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct equation in general or standard form"
+          }
+        ],
+        "solution": "The equation of the perpendicular bisector is\n$$3x + 4y = 3(4) + 4(6)$$\nwhich is $3x + 4y = 36$\nor $3x + 4y - 36 = 0$",
+        "ai_explanation": {
+          "concept_rule": "A line with gradient $-\\frac{a}{b}$ can be written as $ax + by = ax_0 + by_0$ through point $(x_0, y_0)$.",
+          "step_by_step": [
+            "The gradient is $-\\frac{3}{4}$, so the equation is in the form $3x + 4y = C$.",
+            "Substitute the midpoint coordinates $(4, 6)$: $C = 3(4) + 4(6) = 12 + 24 = 36$.",
+            "The equation is $3x + 4y = 36$."
+          ],
+          "common_pitfalls": "Using the original line's gradient instead of the perpendicular bisector's gradient."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q41",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 41,
+    "question_text": "This Voronoi diagram shows the bus stops in a particular suburb. Children living in the area walk to the nearest stop to catch the bus to school.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Identify the nearest bus stop for a child living at $(0, -2)$.",
+        "final_answer": "$\\text{H}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identify cell containing the point $(0, -2)$"
+          }
+        ],
+        "solution": "$(0, -2)$ lies in cell H, so the nearest bus stop is H.",
+        "ai_explanation": {
+          "concept_rule": "In a Voronoi diagram, every point within a cell is closer to that cell's site than to any other site.",
+          "step_by_step": [
+            "Locate $(0, -2)$ on the Voronoi diagram.",
+            "Observe that $(0, -2)$ lies within cell H.",
+            "Conclude that the nearest bus stop is H."
+          ],
+          "common_pitfalls": "Misreading coordinates $(x, y)$ as $(y, x)$."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Identify the nearest bus stop for a child living at $(3, 2)$.",
+        "final_answer": "$\\text{C}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identify cell containing the point $(3, 2)$"
+          }
+        ],
+        "solution": "$(3, 2)$ lies in cell C, so the nearest bus stop is C.",
+        "ai_explanation": {
+          "concept_rule": "Points in cell C are closest to site C.",
+          "step_by_step": [
+            "Locate point $(3, 2)$ on the grid.",
+            "Identify that it falls inside the region/cell labeled C.",
+            "Hence, the closest bus stop is C."
+          ],
+          "common_pitfalls": "Confusing cell labels."
+        }
+      },
+      {
+        "subpart": "a iii",
+        "stem": "Identify the nearest bus stop for a child living at $(-5, 5)$.",
+        "final_answer": "$\\text{A}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identify cell containing the point $(-5, 5)$"
+          }
+        ],
+        "solution": "$(-5, 5)$ lies in cell A, so the nearest bus stop is A.",
+        "ai_explanation": {
+          "concept_rule": "Points in cell A are closest to site A.",
+          "step_by_step": [
+            "Locate point $(-5, 5)$ on the Voronoi diagram.",
+            "Observe that this position lies inside cell A.",
+            "The nearest bus stop is therefore A."
+          ],
+          "common_pitfalls": "Sign errors when locating negative coordinates."
+        }
+      },
+      {
+        "subpart": "a iv",
+        "stem": "Identify the nearest bus stop for a child living at $(-1, -4)$.",
+        "final_answer": "$\\text{E}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Identify cell containing the point $(-1, -4)$"
+          }
+        ],
+        "solution": "$(-1, -4)$ lies in cell E, so the nearest bus stop is E.",
+        "ai_explanation": {
+          "concept_rule": "Points in cell E are closest to site E.",
+          "step_by_step": [
+            "Locate $(-1, -4)$ in the third quadrant.",
+            "Observe that it falls in region E.",
+            "Conclude the nearest bus stop is E."
+          ],
+          "common_pitfalls": "Mixing up quadrant III coordinates."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "Jerome is closest to bus stops B, C, and G. Where does Jerome live?",
+        "final_answer": "$(2, 3)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identify the Voronoi vertex equidistant to cells B, C, and G"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct coordinates of the vertex"
+          }
+        ],
+        "solution": "Jerome must live at the vertex adjacent to cells B, C, and G.\n$\\therefore$ Jerome lives at $(2, 3)$.",
+        "ai_explanation": {
+          "concept_rule": "A Voronoi vertex is equidistant to the sites whose cells meet at that vertex.",
+          "step_by_step": [
+            "Identify the cells corresponding to stops B, C, and G.",
+            "Find the intersection/vertex shared by cells B, C, and G.",
+            "Read off the coordinates of this vertex from the grid: $(2, 3)$."
+          ],
+          "common_pitfalls": "Selecting an edge rather than the triple vertex."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "Jerome is closest to bus stops B, C, and G. How far does Jerome need to walk to get to any of these bus stops?",
+        "final_answer": "$2.24\\text{ km}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Apply the distance formula between vertex $(2, 3)$ and stop B $(3, 5)$"
+          },
+          {
+            "code": "A1",
+            "desc": "Exact distance $\\sqrt{5}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Round to 3 significant figures: $2.24\\text{ km}$"
+          }
+        ],
+        "solution": "Distance Jerome needs to walk = distance between vertex and B\n$$= \\sqrt{(2-3)^2 + (3-5)^2}$$\n$$= \\sqrt{(-1)^2 + (-2)^2}$$\n$$= \\sqrt{5}$$\n$$\\approx 2.24\\text{ km}$$\nSo, Jerome needs to walk about $2.24\\text{ km}$ to get to any one of stops B, C, and G.",
+        "ai_explanation": {
+          "concept_rule": "The distance formula between points $(x_1, y_1)$ and $(x_2, y_2)$ is $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
+          "step_by_step": [
+            "Find the coordinates of site B: $(3, 5)$.",
+            "Compute the Euclidean distance from vertex $(2, 3)$ to $(3, 5)$: $\\sqrt{(2-3)^2 + (3-5)^2} = \\sqrt{1 + 4} = \\sqrt{5}$.",
+            "Evaluate $\\sqrt{5} \\approx 2.24\\text{ km}$."
+          ],
+          "common_pitfalls": "Squaring negative numbers incorrectly (e.g., writing $(-1)^2 = -1$)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q42",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 42,
+    "question_text": "Terrence owns a fast food chain. The locations of his restaurants in a particular city are shown in the Voronoi diagram alongside.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a i",
+        "stem": "Find the closest restaurant for someone living at $(-2, 8)$.",
+        "final_answer": "$\\text{Restaurant A}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly identifies that $(-2, 8)$ lies in cell A and names restaurant A"
+          }
+        ],
+        "solution": "$(-2, 8)$ is in cell A, so the closest restaurant is A.",
+        "ai_explanation": {
+          "concept_rule": "In a Voronoi diagram, any point lying within a cell is closest to the site (generator) of that cell.",
+          "step_by_step": [
+            "Locate the coordinates $(-2, 8)$ on the given Voronoi diagram.",
+            "Identify which cell contains the point $(-2, 8)$, which is cell A.",
+            "Conclude that restaurant A is the closest restaurant."
+          ],
+          "common_pitfalls": "Misreading coordinates on the axes."
+        }
+      },
+      {
+        "subpart": "a ii",
+        "stem": "Find the closest restaurant for someone living at $(5, -5)$.",
+        "final_answer": "$\\text{Restaurant C}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly identifies that $(5, -5)$ lies in cell C and names restaurant C"
+          }
+        ],
+        "solution": "$(5, -5)$ is in cell C, so the closest restaurant is C.",
+        "ai_explanation": {
+          "concept_rule": "Points in a specific cell in a Voronoi diagram are closest to that cell's generating site.",
+          "step_by_step": [
+            "Plot or locate $(5, -5)$ on the grid.",
+            "Observe that the point lies within cell C.",
+            "Conclude that restaurant C is the closest."
+          ],
+          "common_pitfalls": "Confusing the sign of the y-coordinate."
+        }
+      },
+      {
+        "subpart": "a iii",
+        "stem": "Find the closest restaurant for someone living at $(-9, -6)$.",
+        "final_answer": "$\\text{Restaurant D}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly identifies that $(-9, -6)$ lies in cell D and names restaurant D"
+          }
+        ],
+        "solution": "$(-9, -6)$ is in cell D, so the closest restaurant is D.",
+        "ai_explanation": {
+          "concept_rule": "A location belongs to the Voronoi cell containing it.",
+          "step_by_step": [
+            "Locate $(-9, -6)$ on the diagram.",
+            "Identify that it falls into the region/cell D.",
+            "Conclude that restaurant D is the closest."
+          ],
+          "common_pitfalls": "Misinterpreting which cell the region extends into at the edges."
+        }
+      },
+      {
+        "subpart": "b i",
+        "stem": "Terrence opens a new restaurant E at $(2, 4)$. Redraw the diagram to include the new restaurant.",
+        "final_answer": "$\\text{Voronoi diagram updated with site E}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Constructing perpendicular bisectors between site E and adjacent sites"
+          },
+          {
+            "code": "A1",
+            "desc": "Removing internal edge segments to form the new cell E"
+          }
+        ],
+        "solution": "We construct $\\text{PB}(\\text{A}, \\text{E})$, $\\text{PB}(\\text{B}, \\text{E})$, $\\text{PB}(\\text{C}, \\text{E})$, and $\\text{PB}(\\text{D}, \\text{E})$ within cells A, B, C, and D respectively. We then remove the segments of edges which now lie within cell E, giving us the Voronoi diagram which includes site E.",
+        "ai_explanation": {
+          "concept_rule": "Adding a new site to an existing Voronoi diagram involves drawing perpendicular bisectors with neighbouring sites in their respective cells and deleting the old boundaries enclosed by the new cell.",
+          "step_by_step": [
+            "Identify all existing sites whose cells border or contain the new site E.",
+            "Construct the perpendicular bisector between E and each neighbouring site (A, B, C, D) within each respective cell.",
+            "Erase the segments of the old Voronoi edges that are now inside the newly created cell E."
+          ],
+          "common_pitfalls": "Drawing perpendicular bisectors across the entire plane instead of restricting them to the relevant Voronoi cells."
+        }
+      },
+      {
+        "subpart": "b ii",
+        "stem": "Determine the area of the region whose closest restaurant is E.",
+        "final_answer": "$42\\text{ km}^2$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Using the area of a trapezium formula with correct parallel sides and height"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $42\\text{ km}^2$"
+          }
+        ],
+        "solution": "$\\text{Area of region} = \\text{area of cell E} = \\left(\\frac{10 + 4}{2}\\right) \\times 6 = 42\\text{ km}^2$",
+        "ai_explanation": {
+          "concept_rule": "The area of a trapezoid is given by $A = \\frac{a+b}{2}h$, where $a$ and $b$ are lengths of parallel sides and $h$ is the perpendicular distance between them.",
+          "step_by_step": [
+            "Identify the vertices of cell E: $(-2, 2)$, $(-2, -2)$, $(4, -2)$, and $(4, 8)$.",
+            "Observe that the vertical sides are parallel: length on the left is $2 - (-2) = 4\\text{ km}$, length on the right is $8 - (-2) = 10\\text{ km}$.",
+            "Determine the horizontal distance between the parallel sides: $4 - (-2) = 6\\text{ km}$.",
+            "Calculate the area: $\\frac{4 + 10}{2} \\times 6 = 7 \\times 6 = 42\\text{ km}^2$."
+          ],
+          "common_pitfalls": "Confusing height and base lengths or incorrectly calculating segment lengths from coordinates."
+        }
+      },
+      {
+        "subpart": "b iii",
+        "stem": "What proportion of residents who are now closest to restaurant E were originally closest to restaurant B?",
+        "final_answer": "$0.357$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Finding the area of the triangular portion of cell E that was originally cell B"
+          },
+          {
+            "code": "M1",
+            "desc": "Dividing this area by the total area of cell E"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct proportion $\\frac{15}{42} \\approx 0.357$"
+          }
+        ],
+        "solution": "$\\text{Area of cell E that was cell B} = \\frac{1}{2} \\times 3 \\times 10 = 15\\text{ km}^2$\nAssuming that the density of residents is constant throughout the city, the proportion of residents now closest to E who were originally closest to B is $\\frac{15}{42} \\approx 0.357$.",
+        "ai_explanation": {
+          "concept_rule": "Assuming a uniform population density, the proportion of residents corresponds directly to the ratio of the sub-area to the total area.",
+          "step_by_step": [
+            "Identify the region of cell E that previously belonged to cell B, which forms a triangle with base $3\\text{ km}$ and height $10\\text{ km}$.",
+            "Calculate the area of this triangle: $\\frac{1}{2} \\times 3 \\times 10 = 15\\text{ km}^2$.",
+            "Divide by the total area of cell E ($42\\text{ km}^2$): $\\frac{15}{42}$.",
+            "Convert to a decimal rounded to 3 significant figures: $\\approx 0.357$."
+          ],
+          "common_pitfalls": "Dividing by the area of the original cell B instead of the total area of new cell E."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q43",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 43,
+    "question_text": "Consider the Voronoi diagram alongside.\nRedraw the diagram with a new site added at:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$(2, -5)$",
+        "final_answer": "$\\text{Voronoi diagram with added site}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Drawing perpendicular bisectors between the new site and surrounding sites"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct resulting cell boundaries"
+          }
+        ],
+        "solution": "We construct the perpendicular bisectors between the new site and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new site.",
+        "ai_explanation": {
+          "concept_rule": "The incremental algorithm for Voronoi diagrams adds a site by constructing perpendicular bisectors with adjacent sites in existing cells, then deleting redundant internal edges.",
+          "step_by_step": [
+            "Identify adjacent sites to the new site.",
+            "Construct perpendicular bisector segments within the respective existing cells.",
+            "Delete internal Voronoi edges to form the new cell."
+          ],
+          "common_pitfalls": "Failing to remove the old boundary segments that lie inside the new cell."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "the vertex of the existing diagram.",
+        "final_answer": "$\\text{Voronoi diagram with added site}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Drawing perpendicular bisectors between the new site and surrounding sites"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct resulting cell boundaries"
+          }
+        ],
+        "solution": "We construct the perpendicular bisectors between the new site and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new site.",
+        "ai_explanation": {
+          "concept_rule": "The incremental algorithm for Voronoi diagrams adds a site by constructing perpendicular bisectors with adjacent sites in existing cells, then deleting redundant internal edges.",
+          "step_by_step": [
+            "Identify adjacent sites to the new site.",
+            "Construct perpendicular bisector segments within the respective existing cells.",
+            "Delete internal Voronoi edges to form the new cell."
+          ],
+          "common_pitfalls": "Failing to remove the old boundary segments that lie inside the new cell."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q44",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 44,
+    "question_text": "The internet speed is measured at 6 pm at three exchanges in a particular area.\n\n| Location | Internet speed (Mbps) |\n| :---: | :---: |\n| A | 44.3 |\n| B | 42.7 |\n| C | 45.9 |\n\nUse nearest neighbour interpolation to estimate the internet speed at 6 pm at:",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "$(12, 16)$",
+        "final_answer": "$42.7\\text{ Mbps}$",
+        "mark_breakdown": [
+          {
+            "code": "A1",
+            "desc": "Correctly states the speed estimate is $42.7\\text{ Mbps}$ as $(12, 16)$ is closest to B"
+          }
+        ],
+        "solution": "$(12, 16)$ is closest to B, so we estimate the internet speed at 6 pm to be $42.7\\text{ Mbps}$ at $(12, 16)$.",
+        "ai_explanation": {
+          "concept_rule": "Nearest neighbor interpolation uses the value of the nearest site in the Voronoi diagram.",
+          "step_by_step": [
+            "Identify which cell $(12, 16)$ belongs to by inspecting the diagram (cell B).",
+            "Take the internet speed measured at site B, which is $42.7\\text{ Mbps}$."
+          ],
+          "common_pitfalls": "Averaging values instead of taking the nearest neighbor's value when the point is clearly inside one cell."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "$(-20, -12)$",
+        "final_answer": "$45.1\\text{ Mbps}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Recognizing the point is on the edge between A and C and taking the mean of speeds at A and C"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $45.1\\text{ Mbps}$"
+          }
+        ],
+        "solution": "$(-20, -12)$ is on the edge equidistant from A and C, so we estimate the internet speed at 6 pm to be $\\frac{44.3 + 45.9}{2} = 45.1\\text{ Mbps}$ at $(-20, -12)$.",
+        "ai_explanation": {
+          "concept_rule": "If a point lies on an edge between two cells, it is equidistant to both sites, so the estimated value is the mean of the values of the two sites.",
+          "step_by_step": [
+            "Identify that $(-20, -12)$ lies on the Voronoi edge separating cell A and cell C.",
+            "Take the internet speeds at A ($44.3\\text{ Mbps}$) and C ($45.9\\text{ Mbps}$).",
+            "Calculate the mean: $\\frac{44.3 + 45.9}{2} = 45.1\\text{ Mbps}$."
+          ],
+          "common_pitfalls": "Using values from an unrelated site (such as B)."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "$(-4, -4)$",
+        "final_answer": "$44.3\\text{ Mbps}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Recognizing the point is a Voronoi vertex equidistant from A, B, and C and taking the mean of all three"
+          },
+          {
+            "code": "A1",
+            "desc": "Correct calculation giving $44.3\\text{ Mbps}$"
+          }
+        ],
+        "solution": "$(-4, 4)$ is the vertex equidistant from A, B, and C, so we estimate the internet speed at 6 pm to be $\\frac{44.3 + 42.7 + 45.9}{3} = 44.3\\text{ Mbps}$ at $(-4, 4)$.",
+        "ai_explanation": {
+          "concept_rule": "If a point is a Voronoi vertex, it is equidistant to the three adjacent sites, so the estimate is the mean of the values at those three sites.",
+          "step_by_step": [
+            "Identify that $(-4, 4)$ is a Voronoi vertex where cells A, B, and C meet.",
+            "Obtain values: A ($44.3$), B ($42.7$), and C ($45.9$).",
+            "Calculate the mean: $\\frac{44.3 + 42.7 + 45.9}{3} = \\frac{132.9}{3} = 44.3\\text{ Mbps}$."
+          ],
+          "common_pitfalls": "Dividing by 2 instead of 3."
+        }
+      }
+    ]
+  },
+  {
+    "id": "topic_3_q45",
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_number": 45,
+    "question_text": "This Voronoi diagram shows the locations of a particular bank's automatic teller machines (ATMs) around a city.\nAfter receiving customer feedback, the bank has decided to add a new ATM.\nThe new ATM will be placed so that it is as far as possible from the existing ATMs.",
+    "has_diagram": true,
+    "subparts": [
+      {
+        "subpart": "a",
+        "stem": "Where should the bank place the new ATM?",
+        "final_answer": "$(4, 0)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Calculating distances from Voronoi vertices $V_1$ and $V_2$ to site A (or any adjacent site)"
+          },
+          {
+            "code": "A1",
+            "desc": "Comparing the distances $\\sqrt{52}$ and $\\sqrt{58}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Concluding the largest empty circle is centered at $(4, 0)$"
+          }
+        ],
+        "solution": "The new ATM needs to be placed at the centre of the largest empty circle, which will be centred at one of the vertices $V_1(1, 3)$ or $V_2(4, 0)$.\n$V_1\\text{A} = \\sqrt{(7 - 1)^2 + (7 - 3)^2} = \\sqrt{6^2 + 4^2} = \\sqrt{52}\\text{ km}$\n$V_2\\text{A} = \\sqrt{(7 - 4)^2 + (7 - 0)^2} = \\sqrt{3^2 + 7^2} = \\sqrt{58}\\text{ km}$\nSo, the largest empty circle has centre $V_2(4, 0)$.\n$\\therefore$ the new ATM should be placed at $(4, 0)$.",
+        "ai_explanation": {
+          "concept_rule": "The largest empty circle problem is solved by finding the Voronoi vertex that is furthest from its nearest sites.",
+          "step_by_step": [
+            "Identify candidate Voronoi vertices: $V_1(1, 3)$ and $V_2(4, 0)$.",
+            "Calculate the distance from $V_1$ to any of its equidistant sites (e.g., site A at $(7, 7)$): $\\sqrt{(7-1)^2 + (7-3)^2} = \\sqrt{52}$.",
+            "Calculate the distance from $V_2$ to site A: $\\sqrt{(7-4)^2 + (7-0)^2} = \\sqrt{58}$.",
+            "Since $\\sqrt{58} > \\sqrt{52}$, $V_2$ has the larger empty circle radius.",
+            "Conclude the new ATM should be placed at $(4, 0)$."
+          ],
+          "common_pitfalls": "Testing random points inside cells instead of Voronoi vertices."
+        }
+      },
+      {
+        "subpart": "b",
+        "stem": "Redraw the Voronoi diagram with the new ATM.",
+        "final_answer": "$\\text{Voronoi diagram with new ATM at }(4, 0)$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Constructing perpendicular bisectors between the new ATM at $(4, 0)$ and neighboring sites"
+          },
+          {
+            "code": "A1",
+            "desc": "Removing segments within the new cell to produce the correct updated Voronoi diagram"
+          }
+        ],
+        "solution": "We construct the perpendicular bisectors between the site of the new ATM and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new ATM at $(4, 0)$.",
+        "ai_explanation": {
+          "concept_rule": "Updating a Voronoi diagram with an additional site involves drawing perpendicular bisectors between the new site and the sites of the cells it intersects, then deleting internal segments.",
+          "step_by_step": [
+            "Place the new ATM site at $(4, 0)$.",
+            "Construct perpendicular bisector segments between the new site and sites A, B, C, and D within their cells.",
+            "Erase edges from the original diagram that fall within the new cell."
+          ],
+          "common_pitfalls": "Not removing the original Voronoi vertex and old edge segments that are subsumed by the new cell."
+        }
+      },
+      {
+        "subpart": "c",
+        "stem": "Allan is currently at $(-1, 1)$ and needs to withdraw money. How far does Allan need to walk to get to the nearest ATM?",
+        "final_answer": "$4.47\\text{ km}$",
+        "mark_breakdown": [
+          {
+            "code": "M1",
+            "desc": "Identifying that $(-1, 1)$ is in cell C so ATM C at $(-3, -3)$ is closest"
+          },
+          {
+            "code": "M1",
+            "desc": "Using the distance formula $\\sqrt{(-1 - (-3))^2 + (1 - (-3))^2}$"
+          },
+          {
+            "code": "A1",
+            "desc": "Evaluating to $\\sqrt{20} \\approx 4.47\\text{ km}$"
+          }
+        ],
+        "solution": "$(-1, 1)$ is in cell C, so Allan is closest to ATM C.\n$\\therefore \\text{distance Allan needs to walk} = \\sqrt{(-1 - (-3))^2 + (1 - (-3))^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20} \\approx 4.47\\text{ km}$",
+        "ai_explanation": {
+          "concept_rule": "The distance to the closest site is the Euclidean distance from the point to the generator of the cell containing that point.",
+          "step_by_step": [
+            "Determine which cell contains $(-1, 1)$ using the updated Voronoi diagram from part b, which is cell C.",
+            "Identify the coordinates of ATM C: $(-3, -3)$.",
+            "Calculate Euclidean distance: $d = \\sqrt{(-1 - (-3))^2 + (1 - (-3))^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20}$.",
+            "Round to 3 significant figures: $\\approx 4.47\\text{ km}$."
+          ],
+          "common_pitfalls": "Mistakenly choosing the newly added ATM or calculating the distance to a vertex instead of the site."
+        }
+      },
+      {
+        "subpart": "d",
+        "stem": "Write down an assumption made in c.",
+        "final_answer": "$\\text{The path Allan walks is a straight line.}$",
+        "mark_breakdown": [
+          {
+            "code": "R1",
+            "desc": "Stating the assumption of straight-line travel (Euclidean distance)"
+          }
+        ],
+        "solution": "In c, we assume that the path Allan has to walk to get to the nearest ATM is a straight line.",
+        "ai_explanation": {
+          "concept_rule": "Euclidean distance assumes direct, straight-line displacement without obstacles, road networks, or terrain effects.",
+          "step_by_step": [
+            "Review the method used in part c (Euclidean distance formula).",
+            "State the underlying real-world assumption: Allan can travel along the straight-line path directly to the ATM."
+          ],
+          "common_pitfalls": "Stating non-mathematical or irrelevant assumptions (e.g., walking speed or ATM functionality)."
+        }
+      }
+    ]
+  }
+]

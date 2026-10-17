@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q29",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 29,
+  "question_text": "Copy the graphs of the following functions and draw the graphs of $y = x$ and $y = f^{-1}(x)$ on the same set of axes. In each case, state the domain and range of both $f$ and $f^{-1}$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Domain of $f$: $\\{x \\mid 0 \\leqslant x \\leqslant 3\\}$, Range of $f$: $\\{y \\mid -3 \\leqslant y \\leqslant 0\\}$, Domain of $f^{-1}$: $\\{x \\mid -3 \\leqslant x \\leqslant 0\\}$, Range of $f^{-1}$: $\\{y \\mid 0 \\leqslant y \\leqslant 3\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f^-1"
+        }
+      ],
+      "solution": "Domain of $f$: $\\{x \\mid 0 \\leqslant x \\leqslant 3\\}$\nRange of $f$: $\\{y \\mid -3 \\leqslant y \\leqslant 0\\}$\nDomain of $f^{-1}$: $\\{x \\mid -3 \\leqslant x \\leqslant 0\\}$\nRange of $f^{-1}$: $\\{y \\mid 0 \\leqslant y \\leqslant 3\\}$",
+      "ai_explanation": {
+        "concept_rule": "Domain is the set of $x$-values, range is the set of $y$-values. For an inverse function, domain and range swap.",
+        "step_by_step": [
+          "From the graph of $f$, $x$ runs from $0$ to $3$, so domain of $f$ is $[0, 3]$.",
+          "$y$ runs from $-3$ to $0$, so range of $f$ is $[-3, 0]$.",
+          "Swap these to find the domain and range of $f^{-1}$."
+        ],
+        "common_pitfalls": "Writing interval bounds in the wrong order, e.g., $0 \\leqslant y \\leqslant -3$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$Domain of $f$: $\\{x \\mid -2 \\leqslant x \\leqslant 1\\}$, Range of $f$: $\\{y \\mid -1 \\leqslant y \\leqslant 2\\}$, Domain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x \\leqslant 2\\}$, Range of $f^{-1}$: $\\{y \\mid -2 \\leqslant y \\leqslant 1\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f^-1"
+        }
+      ],
+      "solution": "Domain of $f$: $\\{x \\mid -2 \\leqslant x \\leqslant 1\\}$\nRange of $f$: $\\{y \\mid -1 \\leqslant y \\leqslant 2\\}$\nDomain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x \\leqslant 2\\}$\nRange of $f^{-1}$: $\\{y \\mid -2 \\leqslant y \\leqslant 1\\}$",
+      "ai_explanation": {
+        "concept_rule": "The domain and range of an inverse function are obtained directly by interchanging the domain and range of the original function.",
+        "step_by_step": [
+          "Read endpoints of $f$: from $(-2, -1)$ to $(1, 2)$.",
+          "Domain of $f$ is $[-2, 1]$, range is $[-1, 2]$.",
+          "Interchange to get domain of $f^{-1}$ as $[-1, 2]$ and range of $f^{-1}$ as $[-2, 1]$."
+        ],
+        "common_pitfalls": "Mixing up $x$ and $y$ notation in the set descriptions."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$Domain of $f$: $\\{x \\mid -3 \\leqslant x < 6\\}$, Range of $f$: $\\{y \\mid -1 \\leqslant y < 2\\}$, Domain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x < 2\\}$, Range of $f^{-1}$: $\\{y \\mid -3 \\leqslant y < 6\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f (including strict inequality at open circle)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain and range for f^-1"
+        }
+      ],
+      "solution": "Domain of $f$: $\\{x \\mid -3 \\leqslant x < 6\\}$\nRange of $f$: $\\{y \\mid -1 \\leqslant y < 2\\}$\nDomain of $f^{-1}$: $\\{x \\mid -1 \\leqslant x < 2\\}$\nRange of $f^{-1}$: $\\{y \\mid -3 \\leqslant y < 6\\}$",
+      "ai_explanation": {
+        "concept_rule": "Solid circles denote inclusive endpoints ($\\,\\leqslant\\,$), whereas open circles denote exclusive endpoints ($<$).",
+        "step_by_step": [
+          "The endpoint $(-3, -1)$ is a solid dot, so it is included.",
+          "The endpoint $(6, 2)$ is an open circle, so it is excluded.",
+          "Domain of $f$ is $[-3, 6)$ and range of $f$ is $[-1, 2)$.",
+          "Interchange to find the domain and range of $f^{-1}$."
+        ],
+        "common_pitfalls": "Using non-strict inequality $\\leqslant$ at the open circle."
+      }
+    }
+  ]
+}

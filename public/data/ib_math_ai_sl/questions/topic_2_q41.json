@@ -1,0 +1,69 @@
+{
+  "id": "topic_2_q41",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 41,
+  "question_text": "Suppose $A$ is inversely proportional to the cube of $r$, and that $A = 7$ when $r = 2$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $A$ when $r = 5$.",
+      "final_answer": "$A = 0.448$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine scale factor for $r$ and cube it"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply reciprocal of scale factor to $A$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $A$"
+        }
+      ],
+      "solution": "$r$ is multiplied by $\\frac{5}{2}$\n$\\therefore r^3$ is multiplied by $\\left(\\frac{5}{2}\\right)^3 = \\frac{125}{8}$\n$\\therefore A$ is multiplied by $\\frac{8}{125}$ {as $A \\propto \\frac{1}{r^3}$}\n$\\therefore A = 7 \\times \\frac{8}{125} = \\frac{56}{125} = 0.448$",
+      "ai_explanation": {
+        "concept_rule": "In an inverse cube relationship $A \\propto \\frac{1}{r^3}$, scaling $r$ by $k$ scales $A$ by $\\frac{1}{k^3}$.",
+        "step_by_step": [
+          "Scale factor for $r$ from $2$ to $5$ is $\\frac{5}{2}$.",
+          "Cube the scale factor: $\\left(\\frac{5}{2}\\right)^3 = \\frac{125}{8}$.",
+          "Multiply initial $A = 7$ by reciprocal $\\frac{8}{125}$ to get $0.448$."
+        ],
+        "common_pitfalls": "Squaring instead of cubing the ratio."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $r$ when $A = 16$.",
+      "final_answer": "$r \\approx 1.52$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find scale factor for $A$ and determine multiplier for $r^3$"
+        },
+        {
+          "code": "M1",
+          "desc": "Take cube root of scale factor"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $r$"
+        }
+      ],
+      "solution": "$A$ is multiplied by $\\frac{16}{7}$\n$\\therefore r^3$ is multiplied by $\\frac{7}{16}$ {as $A \\propto \\frac{1}{r^3}$}\n$\\therefore r$ is multiplied by $\\sqrt[3]{\\frac{7}{16}}$\n$\\therefore r = 2 \\times \\sqrt[3]{\\frac{7}{16}} \\approx 1.52$",
+      "ai_explanation": {
+        "concept_rule": "To find $r$ when $A$ is scaled, invert the scale factor of $A$ and take the cube root.",
+        "step_by_step": [
+          "Scale factor for $A$ from $7$ to $16$ is $\\frac{16}{7}$.",
+          "Since $r^3 \\propto \\frac{1}{A}$, $r^3$ is multiplied by $\\frac{7}{16}$.",
+          "Take cube root: factor for $r$ is $\\sqrt[3]{\\frac{7}{16}}$.",
+          "Multiply initial $r = 2$ by $\\sqrt[3]{\\frac{7}{16}}$ to get $\\approx 1.52$."
+        ],
+        "common_pitfalls": "Taking the square root instead of the cube root."
+      }
+    }
+  ]
+}

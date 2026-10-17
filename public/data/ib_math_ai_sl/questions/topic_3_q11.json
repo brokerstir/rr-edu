@@ -1,0 +1,34 @@
+{
+  "id": "topic_3_q11",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 11,
+  "question_text": "Suppose A is $(3, 4, -6)$, and $\\text{M}\\left(-\\frac{1}{2}, 9, -7\\right)$ is the midpoint of [AB]. Find the coordinates of B.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "Suppose A is $(3, 4, -6)$, and $\\text{M}\\left(-\\frac{1}{2}, 9, -7\\right)$ is the midpoint of [AB]. Find the coordinates of B.",
+      "final_answer": "$Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating sum of visitors and dividing by 30 for both exhibits"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean values for Exhibit A and Exhibit B"
+        }
+      ],
+      "solution": "Exhibit A: $\\text{mean} = \\frac{42 + 49 + 55 + 48 + \\dots + 32}{30} = \\frac{1644}{30} = 54.8\\text{ visitors}$. Exhibit B: $\\text{mean} = \\frac{59 + 51 + 60 + 44 + \\dots + 46}{30} = \\frac{1711}{30} \\approx 57.0\\text{ visitors}$.",
+      "ai_explanation": {
+        "concept_rule": "The mean of a dataset is the sum of values divided by sample size $n$.",
+        "step_by_step": [
+          "For Exhibit A, sum all 30 values to get 1644, then divide by 30 to get 54.8.",
+          "For Exhibit B, sum all 30 values to get 1711, then divide by 30 to get approximately 57.0."
+        ],
+        "common_pitfalls": "Transcribing numbers incorrectly when summing 30 values."
+      }
+    }
+  ]
+}

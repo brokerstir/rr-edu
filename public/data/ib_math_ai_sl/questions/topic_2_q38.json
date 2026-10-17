@@ -1,0 +1,39 @@
+{
+  "id": "topic_2_q38",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 38,
+  "question_text": "The mass of an orange is directly proportional to the cube of its diameter. The diameter of orange A is $14.6\\%$ larger than that of orange B. What percentage heavier is orange A than orange B?",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The mass of an orange is directly proportional to the cube of its diameter. The diameter of orange A is $14.6\\%$ larger than that of orange B. What percentage heavier is orange A than orange B?",
+      "final_answer": "$\\text{Orange A is about } 50.5\\% \\text{ heavier than orange B}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify scale factor of diameter $1.146$ and cube it"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate percentage increase in mass"
+        },
+        {
+          "code": "A1",
+          "desc": "State correct percentage increase of about $50.5\\%$"
+        }
+      ],
+      "solution": "The mass $m\\text{ g}$ of an orange is directly proportional to the cube of its diameter $d$, so $m \\propto d^3$.\nIf $d$ is increased by $14.6\\%$, then $d$ is multiplied by $1.146$.\n$\\therefore d^3$ is multiplied by $(1.146)^3$.\n$\\therefore m$ is multiplied by $(1.146)^3 \\approx 1.505$ {as $m \\propto d^3$}\n$\\therefore m$ is increased by about $50.5\\%$.\nSo, orange A is about $50.5\\%$ heavier than orange B.",
+      "ai_explanation": {
+        "concept_rule": "When a quantity varies directly with the cube of another, multiplying the independent variable by $k$ multiplies the dependent variable by $k^3$.",
+        "step_by_step": [
+          "Represent a $14.6\\%$ increase as multiplier $1 + 0.146 = 1.146$.",
+          "Cube this multiplier: $(1.146)^3 \\approx 1.50508$.",
+          "Convert multiplier back to percentage increase: $(1.50508 - 1) \\times 100\\% \\approx 50.5\\%$."
+        ],
+        "common_pitfalls": "Multiplying the percentage increase by 3 directly ($3 \\times 14.6\\% = 43.8\\%$) instead of cubing the multiplier."
+      }
+    }
+  ]
+}

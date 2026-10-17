@@ -1,0 +1,83 @@
+{
+  "id": "topic_3_q13",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 13,
+  "question_text": "Find, correct to 3 significant figures, all unknown sides:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\text{Mean} = 7.77\\text{ hours}, \\text{Median} = 7.55\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Correct calculation for mean and locating middle terms for median"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurate mean and median values with units"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{30} = \\frac{233.1}{30} = 7.77\\text{ hours}$. As $n = 30$, $\\frac{n+1}{2} = 15.5$, so the median is the average of the 15th and 16th values. The 15th value is 7.5 and 16th value is 7.6. $\\therefore \\text{median} = \\frac{7.5 + 7.6}{2} = 7.55\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "The mean sums all observations and divides by $n=30$. The median is the average of the 15th and 16th ordered data points.",
+        "step_by_step": [
+          "Sum the 30 values to get $233.1$; divide by $30$ to get $7.77$.",
+          "Arrange the data in ascending order.",
+          "Identify the 15th value ($7.5$) and the 16th value ($7.6$).",
+          "Average them: $(7.5 + 7.6)/2 = 7.55$."
+        ],
+        "common_pitfalls": "Miscounting sorted positions and selecting incorrect values for the median."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$11.5\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly identifying the outlier"
+        }
+      ],
+      "solution": "The outlier is $11.5\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "An outlier is an extreme data point that lies significantly outside the general pattern of the data.",
+        "step_by_step": [
+          "Inspect the dataset: most values range between 5.8 and 9.1.",
+          "The maximum value 11.5 is far greater than 9.1.",
+          "Conclude 11.5 is the outlier."
+        ],
+        "common_pitfalls": "Identifying a value at the lower end when the extreme value is at the upper end."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$\\text{Mean} \\approx 7.64\\text{ hours}, \\text{Median} = 7.5\\text{ hours}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recalculating mean and median with n = 29"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct recalculated mean and median values"
+        }
+      ],
+      "solution": "$\\text{mean} = \\frac{7.5 + 6.8 + \\dots + 8.5}{29} = \\frac{221.6}{29} \\approx 7.64\\text{ hours}$. As $n = 29$ with the outlier removed, $\\frac{n+1}{2} = 15$. The 15th value in the ordered data set is 7.5. $\\therefore \\text{median} = 7.5\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "Removing an outlier decreases sample size to $n=29$. The new mean uses the reduced sum divided by 29, and the new median is the 15th ordered value.",
+        "step_by_step": [
+          "Subtract 11.5 from total sum: $233.1 - 11.5 = 221.6$.",
+          "Calculate new mean: $221.6 / 29 \\approx 7.64$.",
+          "Find median position: $(29 + 1)/2 = 15$.",
+          "The 15th value is $7.5$, so median = $7.5$."
+        ],
+        "common_pitfalls": "Dividing by 30 instead of 29 after removing the outlier."
+      }
+    }
+  ]
+}

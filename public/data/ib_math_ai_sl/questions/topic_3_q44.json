@@ -1,0 +1,80 @@
+{
+  "id": "topic_3_q44",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 44,
+  "question_text": "The internet speed is measured at 6 pm at three exchanges in a particular area.\n\n| Location | Internet speed (Mbps) |\n| :---: | :---: |\n| A | 44.3 |\n| B | 42.7 |\n| C | 45.9 |\n\nUse nearest neighbour interpolation to estimate the internet speed at 6 pm at:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(12, 16)$",
+      "final_answer": "$42.7\\text{ Mbps}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly states the speed estimate is $42.7\\text{ Mbps}$ as $(12, 16)$ is closest to B"
+        }
+      ],
+      "solution": "$(12, 16)$ is closest to B, so we estimate the internet speed at 6 pm to be $42.7\\text{ Mbps}$ at $(12, 16)$.",
+      "ai_explanation": {
+        "concept_rule": "Nearest neighbor interpolation uses the value of the nearest site in the Voronoi diagram.",
+        "step_by_step": [
+          "Identify which cell $(12, 16)$ belongs to by inspecting the diagram (cell B).",
+          "Take the internet speed measured at site B, which is $42.7\\text{ Mbps}$."
+        ],
+        "common_pitfalls": "Averaging values instead of taking the nearest neighbor's value when the point is clearly inside one cell."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$(-20, -12)$",
+      "final_answer": "$45.1\\text{ Mbps}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognizing the point is on the edge between A and C and taking the mean of speeds at A and C"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $45.1\\text{ Mbps}$"
+        }
+      ],
+      "solution": "$(-20, -12)$ is on the edge equidistant from A and C, so we estimate the internet speed at 6 pm to be $\\frac{44.3 + 45.9}{2} = 45.1\\text{ Mbps}$ at $(-20, -12)$.",
+      "ai_explanation": {
+        "concept_rule": "If a point lies on an edge between two cells, it is equidistant to both sites, so the estimated value is the mean of the values of the two sites.",
+        "step_by_step": [
+          "Identify that $(-20, -12)$ lies on the Voronoi edge separating cell A and cell C.",
+          "Take the internet speeds at A ($44.3\\text{ Mbps}$) and C ($45.9\\text{ Mbps}$).",
+          "Calculate the mean: $\\frac{44.3 + 45.9}{2} = 45.1\\text{ Mbps}$."
+        ],
+        "common_pitfalls": "Using values from an unrelated site (such as B)."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$(-4, -4)$",
+      "final_answer": "$44.3\\text{ Mbps}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognizing the point is a Voronoi vertex equidistant from A, B, and C and taking the mean of all three"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving $44.3\\text{ Mbps}$"
+        }
+      ],
+      "solution": "$(-4, 4)$ is the vertex equidistant from A, B, and C, so we estimate the internet speed at 6 pm to be $\\frac{44.3 + 42.7 + 45.9}{3} = 44.3\\text{ Mbps}$ at $(-4, 4)$.",
+      "ai_explanation": {
+        "concept_rule": "If a point is a Voronoi vertex, it is equidistant to the three adjacent sites, so the estimate is the mean of the values at those three sites.",
+        "step_by_step": [
+          "Identify that $(-4, 4)$ is a Voronoi vertex where cells A, B, and C meet.",
+          "Obtain values: A ($44.3$), B ($42.7$), and C ($45.9$).",
+          "Calculate the mean: $\\frac{44.3 + 42.7 + 45.9}{3} = \\frac{132.9}{3} = 44.3\\text{ Mbps}$."
+        ],
+        "common_pitfalls": "Dividing by 2 instead of 3."
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "topic_3_q45",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 45,
+  "question_text": "This Voronoi diagram shows the locations of a particular bank's automatic teller machines (ATMs) around a city.\nAfter receiving customer feedback, the bank has decided to add a new ATM.\nThe new ATM will be placed so that it is as far as possible from the existing ATMs.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Where should the bank place the new ATM?",
+      "final_answer": "$(4, 0)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating distances from Voronoi vertices $V_1$ and $V_2$ to site A (or any adjacent site)"
+        },
+        {
+          "code": "A1",
+          "desc": "Comparing the distances $\\sqrt{52}$ and $\\sqrt{58}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Concluding the largest empty circle is centered at $(4, 0)$"
+        }
+      ],
+      "solution": "The new ATM needs to be placed at the centre of the largest empty circle, which will be centred at one of the vertices $V_1(1, 3)$ or $V_2(4, 0)$.\n$V_1\\text{A} = \\sqrt{(7 - 1)^2 + (7 - 3)^2} = \\sqrt{6^2 + 4^2} = \\sqrt{52}\\text{ km}$\n$V_2\\text{A} = \\sqrt{(7 - 4)^2 + (7 - 0)^2} = \\sqrt{3^2 + 7^2} = \\sqrt{58}\\text{ km}$\nSo, the largest empty circle has centre $V_2(4, 0)$.\n$\\therefore$ the new ATM should be placed at $(4, 0)$.",
+      "ai_explanation": {
+        "concept_rule": "The largest empty circle problem is solved by finding the Voronoi vertex that is furthest from its nearest sites.",
+        "step_by_step": [
+          "Identify candidate Voronoi vertices: $V_1(1, 3)$ and $V_2(4, 0)$.",
+          "Calculate the distance from $V_1$ to any of its equidistant sites (e.g., site A at $(7, 7)$): $\\sqrt{(7-1)^2 + (7-3)^2} = \\sqrt{52}$.",
+          "Calculate the distance from $V_2$ to site A: $\\sqrt{(7-4)^2 + (7-0)^2} = \\sqrt{58}$.",
+          "Since $\\sqrt{58} > \\sqrt{52}$, $V_2$ has the larger empty circle radius.",
+          "Conclude the new ATM should be placed at $(4, 0)$."
+        ],
+        "common_pitfalls": "Testing random points inside cells instead of Voronoi vertices."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Redraw the Voronoi diagram with the new ATM.",
+      "final_answer": "$\\text{Voronoi diagram with new ATM at }(4, 0)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Constructing perpendicular bisectors between the new ATM at $(4, 0)$ and neighboring sites"
+        },
+        {
+          "code": "A1",
+          "desc": "Removing segments within the new cell to produce the correct updated Voronoi diagram"
+        }
+      ],
+      "solution": "We construct the perpendicular bisectors between the site of the new ATM and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new ATM at $(4, 0)$.",
+      "ai_explanation": {
+        "concept_rule": "Updating a Voronoi diagram with an additional site involves drawing perpendicular bisectors between the new site and the sites of the cells it intersects, then deleting internal segments.",
+        "step_by_step": [
+          "Place the new ATM site at $(4, 0)$.",
+          "Construct perpendicular bisector segments between the new site and sites A, B, C, and D within their cells.",
+          "Erase edges from the original diagram that fall within the new cell."
+        ],
+        "common_pitfalls": "Not removing the original Voronoi vertex and old edge segments that are subsumed by the new cell."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Allan is currently at $(-1, 1)$ and needs to withdraw money. How far does Allan need to walk to get to the nearest ATM?",
+      "final_answer": "$4.47\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identifying that $(-1, 1)$ is in cell C so ATM C at $(-3, -3)$ is closest"
+        },
+        {
+          "code": "M1",
+          "desc": "Using the distance formula $\\sqrt{(-1 - (-3))^2 + (1 - (-3))^2}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluating to $\\sqrt{20} \\approx 4.47\\text{ km}$"
+        }
+      ],
+      "solution": "$(-1, 1)$ is in cell C, so Allan is closest to ATM C.\n$\\therefore \\text{distance Allan needs to walk} = \\sqrt{(-1 - (-3))^2 + (1 - (-3))^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20} \\approx 4.47\\text{ km}$",
+      "ai_explanation": {
+        "concept_rule": "The distance to the closest site is the Euclidean distance from the point to the generator of the cell containing that point.",
+        "step_by_step": [
+          "Determine which cell contains $(-1, 1)$ using the updated Voronoi diagram from part b, which is cell C.",
+          "Identify the coordinates of ATM C: $(-3, -3)$.",
+          "Calculate Euclidean distance: $d = \\sqrt{(-1 - (-3))^2 + (1 - (-3))^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20}$.",
+          "Round to 3 significant figures: $\\approx 4.47\\text{ km}$."
+        ],
+        "common_pitfalls": "Mistakenly choosing the newly added ATM or calculating the distance to a vertex instead of the site."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Write down an assumption made in c.",
+      "final_answer": "$\\text{The path Allan walks is a straight line.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Stating the assumption of straight-line travel (Euclidean distance)"
+        }
+      ],
+      "solution": "In c, we assume that the path Allan has to walk to get to the nearest ATM is a straight line.",
+      "ai_explanation": {
+        "concept_rule": "Euclidean distance assumes direct, straight-line displacement without obstacles, road networks, or terrain effects.",
+        "step_by_step": [
+          "Review the method used in part c (Euclidean distance formula).",
+          "State the underlying real-world assumption: Allan can travel along the straight-line path directly to the ATM."
+        ],
+        "common_pitfalls": "Stating non-mathematical or irrelevant assumptions (e.g., walking speed or ATM functionality)."
+      }
+    }
+  ]
+}

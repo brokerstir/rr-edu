@@ -1,0 +1,90 @@
+{
+  "id": "topic_3_q18",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 18,
+  "question_text": "Find the unknowns, correct to 3 significant figures:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$\\approx €139$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find midpoints and compute $\\sum xf = 12370$"
+        },
+        {
+          "code": "A1",
+          "desc": "Divide by total frequency $\\sum f = 89$ to get $\\approx €139$"
+        }
+      ],
+      "solution": "$$\\bar{x} = \\frac{\\sum x f}{\\sum f} = \\frac{12370}{89} \\approx 139$$\n$\\therefore$ the mean weekly rent was about €$139$.",
+      "ai_explanation": {
+        "concept_rule": "For grouped data, the mean is estimated using the class midpoint $x$ as representative of each interval: $\\bar{x} = \\frac{\\sum fx}{\\sum f}$.",
+        "step_by_step": [
+          "Determine midpoints $x$: $90, 110, 130, 150, 170, 190$.",
+          "Compute products $xf$ and sum: $270 + 1650 + 3380 + 4500 + 2380 + 190 = 12370$.",
+          "Sum the frequencies: $3 + 15 + 26 + 30 + 14 + 1 = 89$.",
+          "Calculate mean: $\\frac{12370}{89} \\approx 138.99 \\approx 139$."
+        ],
+        "common_pitfalls": "Using the interval limits instead of midpoints."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$\\approx 0.506$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sum frequencies for intervals where $r \\ge 140$"
+        },
+        {
+          "code": "A1",
+          "desc": "Divide by total frequency: $\\frac{30 + 14 + 1}{89} \\approx 0.506$"
+        }
+      ],
+      "solution": "$$\\text{P}(r \\ge 140) = \\frac{30 + 14 + 1}{89} \\approx 0.506$$",
+      "ai_explanation": {
+        "concept_rule": "The probability of an event from a frequency distribution is the sum of favorable frequencies divided by the total frequency.",
+        "step_by_step": [
+          "Identify intervals with $r \\ge 140$: $140 \\le r < 160$, $160 \\le r < 180$, and $180 \\le r < 200$.",
+          "Add their frequencies: $30 + 14 + 1 = 45$.",
+          "Divide by the total frequency $89$: $\\frac{45}{89} \\approx 0.506$."
+        ],
+        "common_pitfalls": "Leaving out the last class interval or miscounting the classes included."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$63.8^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find shared vertical height x using sine in the right triangle"
+        },
+        {
+          "code": "M1",
+          "desc": "Use x to set up sine equation for theta/2"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for theta"
+        }
+      ],
+      "solution": "In the blue right angled triangle, $\\sin 25^\\circ = \\frac{x}{10} \\implies x = 10\\sin 25^\\circ$. In the pink right angled triangle, $\\sin\\frac{\\theta}{2} = \\frac{x}{8} \\implies \\sin\\frac{\\theta}{2} = \\frac{10\\sin 25^\\circ}{8} \\implies \\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{10\\sin 25^\\circ}{8}\\right) \\implies \\theta = 2\\sin^{-1}\\left(\\frac{10\\sin 25^\\circ}{8}\\right) \\approx 63.8^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Using a common perpendicular segment between two triangles to relate their angle measures.",
+        "step_by_step": [
+          "Solve for the common side $x = 10\\sin 25^\\circ$.",
+          "Substitute $x$ into $\\sin\\frac{\\theta}{2} = \\frac{x}{8}$.",
+          "Calculate $\\frac{\\theta}{2}$ and double it to find $\\theta \\approx 63.8^\\circ$."
+        ],
+        "common_pitfalls": "Using an incorrect hypotenuse ($10$ instead of $8$) for the pink triangle."
+      }
+    }
+  ]
+}

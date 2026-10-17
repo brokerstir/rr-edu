@@ -1,0 +1,148 @@
+{
+  "id": "topic_3_q41",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 41,
+  "question_text": "This Voronoi diagram shows the bus stops in a particular suburb. Children living in the area walk to the nearest stop to catch the bus to school.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Identify the nearest bus stop for a child living at $(0, -2)$.",
+      "final_answer": "$\\text{H}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify cell containing the point $(0, -2)$"
+        }
+      ],
+      "solution": "$(0, -2)$ lies in cell H, so the nearest bus stop is H.",
+      "ai_explanation": {
+        "concept_rule": "In a Voronoi diagram, every point within a cell is closer to that cell's site than to any other site.",
+        "step_by_step": [
+          "Locate $(0, -2)$ on the Voronoi diagram.",
+          "Observe that $(0, -2)$ lies within cell H.",
+          "Conclude that the nearest bus stop is H."
+        ],
+        "common_pitfalls": "Misreading coordinates $(x, y)$ as $(y, x)$."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Identify the nearest bus stop for a child living at $(3, 2)$.",
+      "final_answer": "$\\text{C}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify cell containing the point $(3, 2)$"
+        }
+      ],
+      "solution": "$(3, 2)$ lies in cell C, so the nearest bus stop is C.",
+      "ai_explanation": {
+        "concept_rule": "Points in cell C are closest to site C.",
+        "step_by_step": [
+          "Locate point $(3, 2)$ on the grid.",
+          "Identify that it falls inside the region/cell labeled C.",
+          "Hence, the closest bus stop is C."
+        ],
+        "common_pitfalls": "Confusing cell labels."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Identify the nearest bus stop for a child living at $(-5, 5)$.",
+      "final_answer": "$\\text{A}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify cell containing the point $(-5, 5)$"
+        }
+      ],
+      "solution": "$(-5, 5)$ lies in cell A, so the nearest bus stop is A.",
+      "ai_explanation": {
+        "concept_rule": "Points in cell A are closest to site A.",
+        "step_by_step": [
+          "Locate point $(-5, 5)$ on the Voronoi diagram.",
+          "Observe that this position lies inside cell A.",
+          "The nearest bus stop is therefore A."
+        ],
+        "common_pitfalls": "Sign errors when locating negative coordinates."
+      }
+    },
+    {
+      "subpart": "a iv",
+      "stem": "Identify the nearest bus stop for a child living at $(-1, -4)$.",
+      "final_answer": "$\\text{E}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identify cell containing the point $(-1, -4)$"
+        }
+      ],
+      "solution": "$(-1, -4)$ lies in cell E, so the nearest bus stop is E.",
+      "ai_explanation": {
+        "concept_rule": "Points in cell E are closest to site E.",
+        "step_by_step": [
+          "Locate $(-1, -4)$ in the third quadrant.",
+          "Observe that it falls in region E.",
+          "Conclude the nearest bus stop is E."
+        ],
+        "common_pitfalls": "Mixing up quadrant III coordinates."
+      }
+    },
+    {
+      "subpart": "b i",
+      "stem": "Jerome is closest to bus stops B, C, and G. Where does Jerome live?",
+      "final_answer": "$(2, 3)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify the Voronoi vertex equidistant to cells B, C, and G"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct coordinates of the vertex"
+        }
+      ],
+      "solution": "Jerome must live at the vertex adjacent to cells B, C, and G.\n$\\therefore$ Jerome lives at $(2, 3)$.",
+      "ai_explanation": {
+        "concept_rule": "A Voronoi vertex is equidistant to the sites whose cells meet at that vertex.",
+        "step_by_step": [
+          "Identify the cells corresponding to stops B, C, and G.",
+          "Find the intersection/vertex shared by cells B, C, and G.",
+          "Read off the coordinates of this vertex from the grid: $(2, 3)$."
+        ],
+        "common_pitfalls": "Selecting an edge rather than the triple vertex."
+      }
+    },
+    {
+      "subpart": "b ii",
+      "stem": "Jerome is closest to bus stops B, C, and G. How far does Jerome need to walk to get to any of these bus stops?",
+      "final_answer": "$2.24\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the distance formula between vertex $(2, 3)$ and stop B $(3, 5)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Exact distance $\\sqrt{5}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Round to 3 significant figures: $2.24\\text{ km}$"
+        }
+      ],
+      "solution": "Distance Jerome needs to walk = distance between vertex and B\n$$= \\sqrt{(2-3)^2 + (3-5)^2}$$\n$$= \\sqrt{(-1)^2 + (-2)^2}$$\n$$= \\sqrt{5}$$\n$$\\approx 2.24\\text{ km}$$\nSo, Jerome needs to walk about $2.24\\text{ km}$ to get to any one of stops B, C, and G.",
+      "ai_explanation": {
+        "concept_rule": "The distance formula between points $(x_1, y_1)$ and $(x_2, y_2)$ is $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
+        "step_by_step": [
+          "Find the coordinates of site B: $(3, 5)$.",
+          "Compute the Euclidean distance from vertex $(2, 3)$ to $(3, 5)$: $\\sqrt{(2-3)^2 + (3-5)^2} = \\sqrt{1 + 4} = \\sqrt{5}$.",
+          "Evaluate $\\sqrt{5} \\approx 2.24\\text{ km}$."
+        ],
+        "common_pitfalls": "Squaring negative numbers incorrectly (e.g., writing $(-1)^2 = -1$)."
+      }
+    }
+  ]
+}

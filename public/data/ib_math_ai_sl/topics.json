@@ -4,5 +4,17 @@
     "topic_name": "Number and Algebra",
     "question_count": 46,
     "bundle_file": "data/ib_math_ai_sl/topic_1.json"
+  },
+  {
+    "topic_number": 2,
+    "topic_name": "Functions",
+    "question_count": 45,
+    "bundle_file": "data/ib_math_ai_sl/topic_2.json"
+  },
+  {
+    "topic_number": 3,
+    "topic_name": "Geometry and Trigonometry",
+    "question_count": 45,
+    "bundle_file": "data/ib_math_ai_sl/topic_3.json"
   }
 ]

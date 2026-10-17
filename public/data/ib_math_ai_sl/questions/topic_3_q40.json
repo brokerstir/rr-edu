@@ -1,0 +1,81 @@
+{
+  "id": "topic_3_q40",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 40,
+  "question_text": "A line segment has equation $4x - 3y + 2 = 0$. Its midpoint is $(4, 6)$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "State the gradient of the line segment.",
+      "final_answer": "$\\frac{4}{3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Rearrange line into slope-intercept form $y = mx + c$"
+        },
+        {
+          "code": "A1",
+          "desc": "Identify the gradient"
+        }
+      ],
+      "solution": "$$4x - 3y + 2 = 0$$\n$$3y = 4x + 2$$\n$$y = \\frac{4}{3}x + \\frac{2}{3} \\text{ has gradient } \\frac{4}{3}$$",
+      "ai_explanation": {
+        "concept_rule": "In the form $y = mx + c$, $m$ represents the gradient of the straight line.",
+        "step_by_step": [
+          "Start with $4x - 3y + 2 = 0$.",
+          "Isolate $3y$: $3y = 4x + 2$.",
+          "Divide by $3$: $y = \\frac{4}{3}x + \\frac{2}{3}$.",
+          "The coefficient of $x$ is the gradient, which is $\\frac{4}{3}$."
+        ],
+        "common_pitfalls": "Forgetting to divide every term by the coefficient of $y$."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "State the gradient of its perpendicular bisector.",
+      "final_answer": "$-\\frac{3}{4}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the negative reciprocal gradient"
+        }
+      ],
+      "solution": "The perpendicular bisector has gradient $-\\frac{3}{4}$.",
+      "ai_explanation": {
+        "concept_rule": "Perpendicular lines have gradients that satisfy $m_1 m_2 = -1$.",
+        "step_by_step": [
+          "The line's gradient is $\\frac{4}{3}$.",
+          "The perpendicular gradient is $-\\frac{1}{4/3} = -\\frac{3}{4}$."
+        ],
+        "common_pitfalls": "Negating without inverting, or inverting without negating."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the equation of the perpendicular bisector. Write your answer in the form $ax + by + d = 0$.",
+      "final_answer": "$3x + 4y = 36$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute given point and perpendicular gradient into line equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct equation in general or standard form"
+        }
+      ],
+      "solution": "The equation of the perpendicular bisector is\n$$3x + 4y = 3(4) + 4(6)$$\nwhich is $3x + 4y = 36$\nor $3x + 4y - 36 = 0$",
+      "ai_explanation": {
+        "concept_rule": "A line with gradient $-\\frac{a}{b}$ can be written as $ax + by = ax_0 + by_0$ through point $(x_0, y_0)$.",
+        "step_by_step": [
+          "The gradient is $-\\frac{3}{4}$, so the equation is in the form $3x + 4y = C$.",
+          "Substitute the midpoint coordinates $(4, 6)$: $C = 3(4) + 4(6) = 12 + 24 = 36$.",
+          "The equation is $3x + 4y = 36$."
+        ],
+        "common_pitfalls": "Using the original line's gradient instead of the perpendicular bisector's gradient."
+      }
+    }
+  ]
+}

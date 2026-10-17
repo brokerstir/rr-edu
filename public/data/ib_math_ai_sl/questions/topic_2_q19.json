@@ -1,0 +1,67 @@
+{
+  "id": "topic_2_q19",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 19,
+  "question_text": "Find the equation of the quadratic with graph:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$y = 2(x - 2)(x - 5)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up factored form y = a(x - 2)(x - 5) and substitute (6, 8)"
+        },
+        {
+          "code": "A1",
+          "desc": "Find a = 2 and state the equation"
+        }
+      ],
+      "solution": "The $x$-intercepts are $2$ and $5$.\n$\\therefore$ the quadratic has the form $y = a(x - 2)(x - 5)$ where $a > 0$.\nBut when $x = 6$, $y = 8$.\n$$\\therefore 8 = a(4)(1)$$\n$$\\therefore a = 2$$\nThe quadratic is $y = 2(x - 2)(x - 5)$.",
+      "ai_explanation": {
+        "concept_rule": "A quadratic with known roots $p$ and $q$ can be written as $y = a(x - p)(x - q)$. Substitute an additional known point to solve for $a$.",
+        "step_by_step": [
+          "Write equation using intercepts: $y = a(x - 2)(x - 5)$.",
+          "Substitute the given point $(6, 8)$: $8 = a(6 - 2)(6 - 5) = a(4)(1) = 4a$.",
+          "Solve for $a$: $a = 2$.",
+          "Write the final equation: $y = 2(x - 2)(x - 5)$."
+        ],
+        "common_pitfalls": "Setting up factors as $(x + 2)(x + 5)$ instead of $(x - 2)(x - 5)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$y = -\\frac{1}{6}(x + 3)(x - 9)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine the other x-intercept using symmetry about x = 3"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up factored form and substitute vertex (3, 6) to find a"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain a = -1/6 and state quadratic equation"
+        }
+      ],
+      "solution": "The vertex is $(3, 6)$.\n$\\therefore$ the axis of symmetry is $x = 3$.\nThe axis of symmetry $x = 3$ lies midway between the $x$-intercepts.\nFrom the graph, one intercept is $9$, which is $9 - 3 = 6$ units from the axis.\n$\\therefore$ the other $x$-intercept is $3 - 6 = -3$.\n$\\therefore$ the quadratic has the form $y = a(x + 3)(x - 9)$ where $a < 0$.\nBut when $x = 3$, $y = 6$.\n$$\\therefore 6 = a(6)(-6)$$\n$$\\therefore a = -\\frac{1}{6}$$\nThe quadratic is $y = -\\frac{1}{6}(x + 3)(x - 9)$.",
+      "ai_explanation": {
+        "concept_rule": "Use the symmetry of the parabola to find unknown intercepts from the vertex, then substitute the vertex into the intercept form to solve for $a$.",
+        "step_by_step": [
+          "The axis of symmetry is $x = 3$.",
+          "The distance from $x = 3$ to the given $x$-intercept $9$ is 6 units, so the other intercept is $3 - 6 = -3$.",
+          "Form the equation: $y = a(x + 3)(x - 9)$.",
+          "Substitute the vertex $(3, 6)$: $6 = a(3 + 3)(3 - 9) = a(6)(-6) = -36a$.",
+          "Solve for $a$: $a = -\\frac{6}{36} = -\\frac{1}{6}$."
+        ],
+        "common_pitfalls": "Neglecting to find the missing intercept before using the factored form."
+      }
+    }
+  ]
+}

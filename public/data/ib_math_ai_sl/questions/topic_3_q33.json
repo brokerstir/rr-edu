@@ -1,0 +1,56 @@
+{
+  "id": "topic_3_q33",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 33,
+  "question_text": "Find the value of $x$:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Scatter plot of Mathematics scores vs Language scores$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correctly drawn scatter plot with points plotted accurately"
+        }
+      ],
+      "solution": "Plot the points $(x, y)$ representing Language ($x$) and Mathematics ($y$): $(12.5, 32)$, $(15.0, 45)$, $(10.5, 27)$, $(12.0, 38)$, $(9.5, 18)$, $(10.5, 25)$, $(15.5, 35)$, $(10.0, 22)$, $(14.0, 40)$, $(12.0, 40)$.",
+      "ai_explanation": {
+        "concept_rule": "Scatter plots display pairs of numerical values to identify relationships between two quantitative variables.",
+        "step_by_step": [
+          "Place Language ($x$) on the horizontal axis and Mathematics ($y$) on the vertical axis.",
+          "Mark the axes suitably (e.g., $x$ from 8 to 18, $y$ from 15 to 55).",
+          "Plot each of the 10 data points precisely."
+        ],
+        "common_pitfalls": "Plotting repeated values only once instead of plotting all observations."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$r \\approx 0.819$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use of technology to find linear regression statistics"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of Pearson's correlation coefficient rounded to 3 decimal places"
+        }
+      ],
+      "solution": "Using technology:\n$a = 3.45284197$\n$b = -9.7520299$\n$r = 0.8188878$\n$r^2 = 0.67057723$\n$\\text{MSe} = 29.3021549$\n\nSo, $r \\approx 0.819$.",
+      "ai_explanation": {
+        "concept_rule": "Pearson's correlation coefficient $r$ measures the strength and direction of a linear relationship between two variables.",
+        "step_by_step": [
+          "Enter the data pairs into a statistical calculator or software.",
+          "Perform a linear regression analysis of form $y = ax + b$.",
+          "Read the value of $r = 0.8188878...$ and round to three decimal places."
+        ],
+        "common_pitfalls": "Confusing the coefficient of determination $r^2$ with the correlation coefficient $r$."
+      }
+    }
+  ]
+}

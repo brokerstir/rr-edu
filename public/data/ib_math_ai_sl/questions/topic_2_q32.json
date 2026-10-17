@@ -1,0 +1,112 @@
+{
+  "id": "topic_2_q32",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 32,
+  "question_text": "An oven technician charges a call-out fee of $\\$50$ and an additional $\\$20$ per hour for the duration of the appointment.\nLet $\\$C$ be the amount charged for an appointment lasting $t$ hours.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Sketch the graph of $C$ against $t$ for $0 \\leqslant t \\leqslant 3$.",
+      "final_answer": "$Graph of $C$ against $t$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Draw line starting at (0, 50) and passing through (1, 70), (2, 90), (3, 110)"
+        }
+      ],
+      "solution": "Graph plotted showing the cost $C$ on the vertical axis starting from $(0, 50)$ and increasing linearly with $t$ on the horizontal axis.",
+      "ai_explanation": {
+        "concept_rule": "A linear cost function produces a straight-line graph starting at the fixed cost.",
+        "step_by_step": [
+          "Identify vertical axis as Cost $C$ in dollars.",
+          "Identify horizontal axis as time $t$ in hours.",
+          "Draw line with vertical intercept $50$ and slope $20$."
+        ],
+        "common_pitfalls": "Starting the graph at the origin $(0, 0)$ instead of the intercept $(0, 50)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the linear model connecting $C$ and $t$.",
+      "final_answer": "$C = 20t + 50$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find intercept (50) and gradient: (70 - 50)/(1 - 0) = 20"
+        },
+        {
+          "code": "A1",
+          "desc": "Write equation C = 20t + 50"
+        }
+      ],
+      "solution": "The $C$-intercept is $50$.\nThe gradient is $\\frac{70 - 50}{1 - 0} = 20$.\n$\\therefore C = 20t + 50$",
+      "ai_explanation": {
+        "concept_rule": "A linear relation has form $y = mx + c$, where $m$ is the gradient and $c$ is the vertical intercept.",
+        "step_by_step": [
+          "Read vertical intercept: $c = 50$.",
+          "Calculate slope: $m = \\frac{70 - 50}{1 - 0} = 20$.",
+          "Form the linear equation: $C = 20t + 50$."
+        ],
+        "common_pitfalls": "Using standard variables $y$ and $x$ instead of specified variables $C$ and $t$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Use your model to calculate the amount charged for a $1\\frac{1}{2}$ hour appointment.",
+      "final_answer": "$\\$80$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute t = 1.5 into linear equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate cost $80"
+        }
+      ],
+      "solution": "When $t = 1\\frac{1}{2} = \\frac{3}{2}$,\n$C = 20\\left(\\frac{3}{2}\\right) + 50 = 80$\n$\\therefore \\$80$ is charged for a $1\\frac{1}{2}$ hour appointment.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given time value into the cost formula.",
+        "step_by_step": [
+          "Convert $1\\frac{1}{2}$ hours to decimal $1.5$ or fraction $\\frac{3}{2}$.",
+          "Substitute into $C = 20(1.5) + 50$.",
+          "Compute $30 + 50 = 80$."
+        ],
+        "common_pitfalls": "Omitting the currency symbol."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Mikhal schedules an appointment to repair his oven. The technician arrives at 9:00 am, and the total amount charged is $\\$118$. At what time did the technician complete the repairs?",
+      "final_answer": "$12:24\\text{ pm}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set C = 118 and solve for t"
+        },
+        {
+          "code": "A1",
+          "desc": "Find t = 3.4 hours = 3 hours 24 minutes"
+        },
+        {
+          "code": "A1",
+          "desc": "Add time to 9:00 am to get 12:24 pm"
+        }
+      ],
+      "solution": "When $C = 118$,\n$118 = 20t + 50$\n$\\therefore 20t = 68$\n$\\therefore t = 3.4$\n$\\therefore$ the appointment lasted $3.4\\text{ hours} = 3\\text{ hours } 24\\text{ minutes}$.\n$12:24\\text{ pm}$ is $3\\text{ hours and } 24\\text{ minutes}$ after $9:00\\text{ am}$.\n$\\therefore$ the technician completed the repairs at $12:24\\text{ pm}$.",
+      "ai_explanation": {
+        "concept_rule": "Solve a linear equation for $t$, convert decimal hours into minutes ($0.4 \\times 60 = 24$), and add to the start time.",
+        "step_by_step": [
+          "Set $118 = 20t + 50$.",
+          "Subtract $50$: $20t = 68$.",
+          "Divide by $20$: $t = 3.4\\text{ hours}$.",
+          "Convert $0.4\\text{ hours}$ to minutes: $0.4 \\times 60 = 24\\text{ minutes}$.",
+          "Add $3\\text{ h } 24\\text{ min}$ to $9:00\\text{ am}$: $12:24\\text{ pm}$."
+        ],
+        "common_pitfalls": "Treating $0.4\\text{ hours}$ as $40\\text{ minutes}$ instead of $24\\text{ minutes}$."
+      }
+    }
+  ]
+}

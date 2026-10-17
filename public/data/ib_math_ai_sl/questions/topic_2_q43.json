@@ -1,0 +1,85 @@
+{
+  "id": "topic_2_q43",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 43,
+  "question_text": "It is suspected that $y$ is inversely proportional to a power of $x$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Calculate $x^2y$, $x^3y$, and $x^4y$ for the marked points.",
+      "final_answer": "$\\begin{array}{|c|c|c|c|}\\hline x & 1 & 2 & 4 \\\\\\hline y & 2 & \\frac{1}{4} & \\frac{1}{32} \\\\\\hline x^2y & 2 & 1 & \\frac{1}{2} \\\\\\hline x^3y & 2 & 2 & 2 \\\\\\hline x^4y & 2 & 4 & 8 \\\\\\hline\\end{array}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate products $x^2y$, $x^3y$, and $x^4y$ for each column"
+        },
+        {
+          "code": "A1",
+          "desc": "Complete the table correctly"
+        }
+      ],
+      "solution": "For $x = 1, y = 2$:\n$x^2y = 1^2(2) = 2$, $x^3y = 1^3(2) = 2$, $x^4y = 1^4(2) = 2$.\n\nFor $x = 2, y = \\frac{1}{4}$:\n$x^2y = 2^2\\left(\\frac{1}{4}\\right) = 1$, $x^3y = 2^3\\left(\\frac{1}{4}\\right) = 2$, $x^4y = 2^4\\left(\\frac{1}{4}\\right) = 4$.\n\nFor $x = 4, y = \\frac{1}{32}$:\n$x^2y = 4^2\\left(\\frac{1}{32}\\right) = \\frac{1}{2}$, $x^3y = 4^3\\left(\\frac{1}{32}\\right) = 2$, $x^4y = 4^4\\left(\\frac{1}{32}\\right) = 8$.",
+      "ai_explanation": {
+        "concept_rule": "Compute candidate power products $x^n y$ to identify which yields a constant value.",
+        "step_by_step": [
+          "For each column, compute $x^2 y$, $x^3 y$, and $x^4 y$.",
+          "Fill in each calculated value into the table.",
+          "Observe which row produces a constant value across all columns."
+        ],
+        "common_pitfalls": "Errors in simplifying powers of 2 and 4."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence determine the correct model connecting $y$ and $x$.",
+      "final_answer": "$y = \\frac{2}{x^3}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Identify that $x^3y = 2$ is constant"
+        },
+        {
+          "code": "A1",
+          "desc": "Express equation in the form $y = \\frac{2}{x^3}$"
+        }
+      ],
+      "solution": "$x^3y = 2$ for each point.\n$\\therefore x^3y = 2$ or $y = \\frac{2}{x^3}$ is the correct model.",
+      "ai_explanation": {
+        "concept_rule": "A relationship of the form $x^n y = k$ corresponds to an inverse variation model $y = \\frac{k}{x^n}$.",
+        "step_by_step": [
+          "Observe that the row $x^3y$ has the constant value $2$ across all points.",
+          "Set up relation $x^3y = 2$.",
+          "Rearrange to solve for $y$: $y = \\frac{2}{x^3}$."
+        ],
+        "common_pitfalls": "Choosing a row where values vary instead of remaining constant."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the value of $y$ when $x = 5$.",
+      "final_answer": "$y = \\frac{2}{125}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 5$ into $y = \\frac{2}{x^3}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate $y$"
+        }
+      ],
+      "solution": "When $x = 5$, $y = \\frac{2}{5^3} = \\frac{2}{125}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute the value of $x$ into the established model to find the corresponding value of $y$.",
+        "step_by_step": [
+          "Use the model $y = \\frac{2}{x^3}$.",
+          "Substitute $x = 5$: $y = \\frac{2}{5^3}$.",
+          "Evaluate denominator $5^3 = 125$ to get $y = \\frac{2}{125}$."
+        ],
+        "common_pitfalls": "Computing $5^3$ as $15$ or $25$."
+      }
+    }
+  ]
+}

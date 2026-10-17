@@ -1,0 +1,121 @@
+{
+  "id": "topic_2_q59",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 59,
+  "question_text": "",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Use technology to help sketch the graph of $f(x) = 6 - e^{-0.5x}$.",
+      "final_answer": "$Horizontal asymptote at $y = 6$, $y$-intercept at $(0, 5)$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Graphing $f(x) = 6 - e^{-0.5x}$ showing correct shape, asymptote $y = 6$, and intercept $(0,5)$"
+        }
+      ],
+      "solution": "For $f(x) = 6 - e^{-0.5x}$:\nAs $x \\to \\infty$, $e^{-0.5x} \\to 0$, hence $y \\to 6$, giving a horizontal asymptote at $y = 6$.\nWhen $x = 0$, $y = 6 - e^0 = 5$, giving the $y$-intercept $(0, 5)$.\nAs $x \\to -\\infty$, $e^{-0.5x} \\to \\infty$, hence $y \\to -\\infty$.",
+      "ai_explanation": {
+        "concept_rule": "Analyze asymptotic behavior and axis intercepts to sketch transformed exponential functions.",
+        "step_by_step": [
+          "Determine $y$-intercept by finding $f(0) = 6 - 1 = 5$.",
+          "Determine behavior as $x \\to \\infty$: $e^{-0.5x} \\to 0$, so $f(x) \\to 6$.",
+          "Determine behavior as $x \\to -\\infty$: $e^{-0.5x} \\to \\infty$, so $f(x) \\to -\\infty$.",
+          "Sketch an increasing curve approaching $y = 6$ from below."
+        ],
+        "common_pitfalls": "Drawing the horizontal asymptote on the negative $x$-axis instead of the positive $x$-axis."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the domain and range of $f(x)$.",
+      "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y < 6\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating domain as $\\{x \\mid x \\in \\mathbb{R}\\}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating range as $\\{y \\mid y < 6\\}$"
+        }
+      ],
+      "solution": "The domain of $f(x)$ is $\\{x \\mid x \\in \\mathbb{R}\\}$.\nThe range of $f(x)$ is $\\{y \\mid y < 6\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of an exponential function of the form $c - e^{kx}$ is all real numbers; its range is determined by the horizontal asymptote and the sign of the coefficient.",
+        "step_by_step": [
+          "The exponential function is defined for all real $x$, so domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $e^{-0.5x} > 0$ for all $x$, $6 - e^{-0.5x} < 6$.",
+          "Thus, range is $\\{y \\mid y < 6\\}$."
+        ],
+        "common_pitfalls": "Writing $y \\le 6$ instead of strict inequality $y < 6$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Describe the behaviour of $y = f(x)$ as $x \\to \\pm\\infty$.",
+      "final_answer": "$As $x \\to -\\infty, y \\to -\\infty$; as $x \\to \\infty, y \\to 6$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating behavior as $x \\to -\\infty$"
+        },
+        {
+          "code": "A1",
+          "desc": "Stating behavior as $x \\to \\infty$"
+        }
+      ],
+      "solution": "As $x \\to -\\infty$, $y = f(x) \\to -\\infty$.\nAs $x \\to \\infty$, $y = f(x) \\to 6$.",
+      "ai_explanation": {
+        "concept_rule": "End-behavior describes limits of the function as $x \\to \\pm\\infty$.",
+        "step_by_step": [
+          "Evaluate $\\lim_{x \\to -\\infty} (6 - e^{-0.5x}) = 6 - \\infty = -\\infty$.",
+          "Evaluate $\\lim_{x \\to \\infty} (6 - e^{-0.5x}) = 6 - 0 = 6$."
+        ],
+        "common_pitfalls": "Mixing up the directions $+\\infty$ and $-\\infty$ due to the negative sign in the exponent."
+      }
+    },
+    {
+      "subpart": "d i",
+      "stem": "Find $k$ such that $f(x) = k$ has: one solution",
+      "final_answer": "$k < 6$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identifying condition for one solution as $k < 6$"
+        }
+      ],
+      "solution": "From the graph in a:\n$f(x) = k$ has one solution if $k < 6$.",
+      "ai_explanation": {
+        "concept_rule": "The horizontal line $y = k$ intersects the graph of $f(x)$ once for any value within the range of $f(x)$.",
+        "step_by_step": [
+          "The range of $f(x)$ is $y < 6$.",
+          "Since $f(x)$ is strictly increasing, any horizontal line $y = k$ with $k < 6$ intersects the curve exactly once."
+        ],
+        "common_pitfalls": "Including $k = 6$ where the line is an asymptote and never intersects."
+      }
+    },
+    {
+      "subpart": "d ii",
+      "stem": "Find $k$ such that $f(x) = k$ has: no solutions.",
+      "final_answer": "$k \\ge 6$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identifying condition for no solutions as $k \\ge 6$"
+        }
+      ],
+      "solution": "From the graph in a:\n$f(x) = k$ has no solutions if $k \\ge 6$.",
+      "ai_explanation": {
+        "concept_rule": "Values of $k$ outside the range of $f(x)$ yield no intersections with $y = k$.",
+        "step_by_step": [
+          "The curve never reaches or exceeds the asymptote $y = 6$.",
+          "Therefore, for all $k \\ge 6$, $y = k$ does not intersect $f(x)$."
+        ],
+        "common_pitfalls": "Forgetting to include $k = 6$ in the set of no solutions."
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "topic_2_q45",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 45,
+  "question_text": "For each data set, obtain the power model which best fits the data:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\begin{array}{|c|c|c|c|c|} \\hline x & 2 & 3 & 5 & 6 \\\\ \\hline y & 1.13 & 8.60 & 111 & 275 \\\\ \\hline \\end{array}$",
+      "final_answer": "$y \\approx 0.0353x^5$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Observe correlation coefficient $r \\approx 1$ and power $b \\approx 5$"
+        },
+        {
+          "code": "A1",
+          "desc": "State the model equation"
+        }
+      ],
+      "solution": "The correlation coefficient $r$ is very close to 1, so the fit is excellent. The power is very close to 5, so it is reasonable to conclude that $y$ is directly proportional to $x^5$. The model is $y \\approx 0.0353x^5$.",
+      "ai_explanation": {
+        "concept_rule": "Power regression fits $y = ax^b$. When $b$ is near an integer, we infer direct proportionality to $x^b$.",
+        "step_by_step": [
+          "Read the calculator output: $a \\approx 0.035267$, $b \\approx 5.0028$, $r \\approx 0.999999$.",
+          "Round parameters to 3 significant figures to write $y \\approx 0.0353x^5$."
+        ],
+        "common_pitfalls": "Incorrect rounding of the coefficient $a$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\begin{array}{|c|c|c|c|c|c|} \\hline x & 1 & 4 & 5 & 7 & 8 \\\\ \\hline y & 72.1 & 4.6 & 2.9 & 1.5 & 1.1 \\\\ \\hline \\end{array}$",
+      "final_answer": "$y \\approx \\frac{72.6}{x^2}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Observe power $b \\approx -2$ indicating inverse square relationship"
+        },
+        {
+          "code": "A1",
+          "desc": "State model in fractional form"
+        }
+      ],
+      "solution": "The correlation coefficient $r$ is very close to $-1$, so the fit is excellent. The power is very close to $-2$, so it is reasonable to conclude that $y$ is inversely proportional to $x^2$. The model is $y \\approx \\frac{72.6}{x^2}$.",
+      "ai_explanation": {
+        "concept_rule": "A power regression with negative power $b = -n$ corresponds to an inverse relationship $y = \\frac{a}{x^n}$.",
+        "step_by_step": [
+          "From the calculator output, $a \\approx 72.59$, $b \\approx -2.00$, $r \\approx -0.9999$.",
+          "Express $y = 72.6 x^{-2}$ as $y \\approx \\frac{72.6}{x^2}$."
+        ],
+        "common_pitfalls": "Misinterpreting a negative power as a linear negative correlation."
+      }
+    }
+  ]
+}

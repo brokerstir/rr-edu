@@ -1,0 +1,18 @@
+{
+  "id": "topic_3_q3",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 3,
+  "question_text": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

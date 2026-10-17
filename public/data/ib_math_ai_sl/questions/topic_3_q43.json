@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q43",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 43,
+  "question_text": "Consider the Voronoi diagram alongside.\nRedraw the diagram with a new site added at:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$(2, -5)$",
+      "final_answer": "$\\text{Voronoi diagram with added site}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Drawing perpendicular bisectors between the new site and surrounding sites"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct resulting cell boundaries"
+        }
+      ],
+      "solution": "We construct the perpendicular bisectors between the new site and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new site.",
+      "ai_explanation": {
+        "concept_rule": "The incremental algorithm for Voronoi diagrams adds a site by constructing perpendicular bisectors with adjacent sites in existing cells, then deleting redundant internal edges.",
+        "step_by_step": [
+          "Identify adjacent sites to the new site.",
+          "Construct perpendicular bisector segments within the respective existing cells.",
+          "Delete internal Voronoi edges to form the new cell."
+        ],
+        "common_pitfalls": "Failing to remove the old boundary segments that lie inside the new cell."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the vertex of the existing diagram.",
+      "final_answer": "$\\text{Voronoi diagram with added site}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Drawing perpendicular bisectors between the new site and surrounding sites"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct resulting cell boundaries"
+        }
+      ],
+      "solution": "We construct the perpendicular bisectors between the new site and each of the original ones, within their respective cells. We then remove the segments of edges which lie within the new cell, giving us the Voronoi diagram which includes the new site.",
+      "ai_explanation": {
+        "concept_rule": "The incremental algorithm for Voronoi diagrams adds a site by constructing perpendicular bisectors with adjacent sites in existing cells, then deleting redundant internal edges.",
+        "step_by_step": [
+          "Identify adjacent sites to the new site.",
+          "Construct perpendicular bisector segments within the respective existing cells.",
+          "Delete internal Voronoi edges to form the new cell."
+        ],
+        "common_pitfalls": "Failing to remove the old boundary segments that lie inside the new cell."
+      }
+    }
+  ]
+}

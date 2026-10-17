@@ -1,0 +1,84 @@
+{
+  "id": "topic_2_q28",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 28,
+  "question_text": "Consider $f(x) = 2^{x-1}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $f(1)$ and $f(2)$.",
+      "final_answer": "$f(1) = 1, \\, f(2) = 2$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "f(1) = 1"
+        },
+        {
+          "code": "A1",
+          "desc": "f(2) = 2"
+        }
+      ],
+      "solution": "$f(1) = 2^{1-1} = 2^0 = 1$\n$f(2) = 2^{2-1} = 2^1 = 2$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given inputs into the exponential function $f(x) = 2^{x-1}$.",
+        "step_by_step": [
+          "For $x = 1$: $2^{1-1} = 2^0 = 1$.",
+          "For $x = 2$: $2^{2-1} = 2^1 = 2$."
+        ],
+        "common_pitfalls": "Forgetting that $2^0 = 1$, not $0$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Graph $y = f(x)$ and its inverse function on the same set of axes.",
+      "final_answer": "$Graph of $y = f^{-1}(x)$ as reflection across $y = x$$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "State that the graph of f^-1(x) is the reflection of f(x) across y = x"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct sketch of reflected curve passing through (1, 1) and (2, 2)"
+        }
+      ],
+      "solution": "The graph of $y = f^{-1}(x)$ is the reflection of the graph $y = f(x)$ in the line $y = x$.",
+      "ai_explanation": {
+        "concept_rule": "The graph of the inverse function $f^{-1}(x)$ is obtained by reflecting $y = f(x)$ across the line $y = x$.",
+        "step_by_step": [
+          "Draw the line $y = x$.",
+          "Reflect the curve $y = 2^{x-1}$ across $y = x$.",
+          "Note that points $(1, 1)$ and $(2, 2)$ lie on $y = x$, so they remain invariant on the inverse graph."
+        ],
+        "common_pitfalls": "Reflecting across the $x$-axis or $y$-axis instead of the line $y = x$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "State the domain and range of $f^{-1}(x)$.",
+      "final_answer": "$Domain of $f^{-1}$: $\\{x \\mid x > 0\\}$, Range of $f^{-1}$: $\\{y \\mid y \\in \\mathbb{R}\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "State domain and range of f(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Domain of f^-1 is range of f, and range of f^-1 is domain of f"
+        }
+      ],
+      "solution": "The domain of $f(x)$ is $\\{x \\mid x \\in \\mathbb{R}\\}$ and the range of $f(x)$ is $\\{y \\mid y > 0\\}$.\n$\\therefore$ the domain of $f^{-1}(x)$ is $\\{x \\mid x > 0\\}$ and the range of $f^{-1}(x)$ is $\\{y \\mid y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The domain of $f^{-1}$ is the range of $f$, and the range of $f^{-1}$ is the domain of $f$.",
+        "step_by_step": [
+          "Find the domain of $f(x)$: all real numbers, $\\mathbb{R}$.",
+          "Find the range of $f(x)$: since $2^{x-1} > 0$, range is $y > 0$.",
+          "Swap them to find domain and range of $f^{-1}(x)$."
+        ],
+        "common_pitfalls": "Keeping the variable as $y$ for domain or $x$ for range."
+      }
+    }
+  ]
+}

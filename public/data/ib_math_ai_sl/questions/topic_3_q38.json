@@ -1,0 +1,95 @@
+{
+  "id": "topic_3_q38",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 38,
+  "question_text": "The diagram below shows the routes of two triangular orienteering courses ABC and DEF. The distance from E to F is 20% longer than the distance from A to C.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the length of [EF].",
+      "final_answer": "$Scatter plot of Mass vs Volume$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct scatter plot plotted with all points"
+        }
+      ],
+      "solution": "Plot the points $(x, y)$ representing Volume and Mass: $(3, 40)$, $(6, 95)$, $(4, 50)$, $(7, 160)$, $(16, 285)$, $(8, 130)$, $(5, 65)$, $(12, 210)$, $(9, 155)$, $(6, 90)$, $(10, 170)$, $(11, 190)$.",
+      "ai_explanation": {
+        "concept_rule": "Plotting pairs of data values $(x, y)$ on a Cartesian graph.",
+        "step_by_step": [
+          "Set the horizontal axis as Volume ($x\\text{ cm}^3$) and the vertical axis as Mass ($y\\text{ g}$).",
+          "Accurately plot all 12 points."
+        ],
+        "common_pitfalls": "Omitting duplicate $x$-values such as $(6, 95)$ and $(6, 90)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the measure of $\\mathrm{D}\\hat{\\mathrm{E}}\\mathrm{F}$.",
+      "final_answer": "$r \\approx 0.980$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Computing linear regression using technology"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of correlation coefficient $r$"
+        }
+      ],
+      "solution": "Using technology:\n$a = 19.1171662$\n$b = -17.86376$\n$r = 0.98019806$\n$r^2 = 0.96078823$\n$\\text{MSe} = 228.081743$\n\nSo, $r \\approx 0.980$.",
+      "ai_explanation": {
+        "concept_rule": "Calculate Pearson's correlation coefficient $r$ with technology using all 12 data pairs.",
+        "step_by_step": [
+          "Enter all data into lists.",
+          "Run linear regression.",
+          "Read $r = 0.980198... \\approx 0.980$."
+        ],
+        "common_pitfalls": "Excluding the potential outlier prematurely in part b."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the total area covered by course 2.",
+      "final_answer": "$Strong, positive correlation$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct description of the relationship"
+        }
+      ],
+      "solution": "There appears to be a strong, positive correlation between the volume of a sample of silver and its mass.",
+      "ai_explanation": {
+        "concept_rule": "An $r$ value close to 1 indicates a strong positive linear relationship.",
+        "step_by_step": [
+          "Since $r \\approx 0.980$, state that the correlation is strong and positive."
+        ],
+        "common_pitfalls": "Failing to state the direction of the correlation."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the total length of course 1.",
+      "final_answer": "$The data point $(7, 160)$ is an outlier, agreeing with the jeweller that sample D is fake.$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Identification of sample D as an outlier and agreement with the jeweller"
+        }
+      ],
+      "solution": "The data point $(7, 160)$ which corresponds to sample D appears to be an outlier. We therefore agree with the jeweller that there is a fake sample.",
+      "ai_explanation": {
+        "concept_rule": "An outlier deviates substantially from the trend line formed by other observations.",
+        "step_by_step": [
+          "Examine the scatter plot to find which point lies furthest away from the linear trend.",
+          "Identify $(7, 160)$ corresponding to sample D.",
+          "Conclude that this supports the claim of a fake sample."
+        ],
+        "common_pitfalls": "Confusing sample D with sample E, which has a larger value but fits the trend."
+      }
+    }
+  ]
+}

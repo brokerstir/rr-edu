@@ -1,0 +1,50 @@
+{
+  "id": "topic_3_q6",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 6,
+  "question_text": "A large artificial ice cream for a shop front display is to be made with a hemisphere on top of an inverted cone.\nThe total height of the structure is $7\\text{ m}$, and the cone is $4\\text{ m}$ high.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Show that the radius of the cone is $3\\text{ m}$.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "b",
+      "stem": "Calculate the total volume of the ice cream.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the slant height of the cone.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "d",
+      "stem": "Find the total surface area of the ice cream.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    },
+    {
+      "subpart": "e",
+      "stem": "The ice cream is to be made from a lightweight polymer, weighing $1.23\\text{ kg per m}^2$. Calculate the total weight of the ice cream.",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

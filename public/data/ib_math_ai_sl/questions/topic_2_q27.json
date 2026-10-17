@@ -1,0 +1,132 @@
+{
+  "id": "topic_2_q27",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 27,
+  "question_text": "Consider $h(x) = x^2 - 2^{-x} + \\frac{1}{x}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Determine $h(-2)$.",
+      "final_answer": "$-\\frac{1}{2}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = -2 into h(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to get -1/2"
+        }
+      ],
+      "solution": "$h(-2) = (-2)^2 - 2^{-(-2)} + \\frac{1}{-2} = 4 - 4 - \\frac{1}{2} = -\\frac{1}{2}$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the value into the function and apply exponent rules: $2^{-(-2)} = 2^2 = 4$.",
+        "step_by_step": [
+          "Compute $(-2)^2 = 4$.",
+          "Compute $2^{-(-2)} = 2^2 = 4$.",
+          "Compute $\\frac{1}{-2} = -\\frac{1}{2}$.",
+          "Combine terms: $4 - 4 - \\frac{1}{2} = -\\frac{1}{2}$."
+        ],
+        "common_pitfalls": "Sign errors with negative exponents, like treating $-(-2)$ as $-2$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Solve $h(x) = 2$.",
+      "final_answer": "$x \\approx 0.381$ or $1.28$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph Y1 = h(x) and Y2 = 2 and find intersection points"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain x approximately 0.381 and 1.28"
+        }
+      ],
+      "solution": "We graph $Y_1 = X^2 - 2^{-X} + \\frac{1}{X}$ and $Y_2 = 2$ on the same set of axes, and find their points of intersection.\nThe solution to $h(x) = 2$ is $x \\approx 0.381$ or $1.28$.",
+      "ai_explanation": {
+        "concept_rule": "Solutions to $h(x) = c$ correspond to the $x$-coordinates of the intersections between $y = h(x)$ and $y = c$.",
+        "step_by_step": [
+          "Enter $Y_1 = x^2 - 2^{-x} + \\frac{1}{x}$ and $Y_2 = 2$ into the GDC.",
+          "Use the intersection feature to locate points where $Y_1 = Y_2$.",
+          "Read off the $x$-values: $x \\approx 0.381$ and $x \\approx 1.28$."
+        ],
+        "common_pitfalls": "Missing one of the intersection branches."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Write down the equation of the vertical asymptote.",
+      "final_answer": "$x = 0$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the equation of the vertical asymptote x = 0"
+        }
+      ],
+      "solution": "The vertical asymptote is $x = 0$.",
+      "ai_explanation": {
+        "concept_rule": "A vertical asymptote occurs where the function approaches $\\pm\\infty$, typically where a denominator becomes zero.",
+        "step_by_step": [
+          "The term $\\frac{1}{x}$ in $h(x)$ is undefined at $x = 0$.",
+          "As $x \\to 0$, $|h(x)| \\to \\infty$.",
+          "Thus, the vertical asymptote is the line $x = 0$."
+        ],
+        "common_pitfalls": "Writing just '0' instead of the line equation '$x = 0$'."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Sketch $y = h(x)$, illustrating your results from a, b, and c.",
+      "final_answer": "$Sketch of $y = h(x)$ showing asymptotes and key features$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Sketch the two branches with vertical asymptote at x = 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Indicate key points like (-2, -1/2), (0.381, 2), (1.28, 2)"
+        }
+      ],
+      "solution": "Sketch the curve with a vertical asymptote at $x = 0$. For $x < 0$, the curve passes through $(-2, -\\frac{1}{2})$ and has a local maximum below $y = 0.741$. For $x > 0$, the curve has a local minimum at approximately $y = 1.30$, and passes through $(0.381, 2)$ and $(1.28, 2)$.",
+      "ai_explanation": {
+        "concept_rule": "Use the features from previous parts (asymptotes, points, intersections) to draw an accurate sketch.",
+        "step_by_step": [
+          "Draw the dashed asymptote line at $x = 0$.",
+          "Plot the branch for $x < 0$ showing it approaching $-\\infty$ as $x \\to -\\infty$ and as $x \\to 0^-$.",
+          "Plot the branch for $x > 0$ showing it approaching $+\\infty$ as $x \\to 0^+$ and increasing as $x \\to +\\infty$."
+        ],
+        "common_pitfalls": "Drawing a continuous curve crossing through the asymptote at $x = 0$."
+      }
+    },
+    {
+      "subpart": "e",
+      "stem": "Determine the range of $y = h(x)$.",
+      "final_answer": "$\\{y \\mid y < 0.741 \\text{ or } y > 1.30, \\, y \\in \\mathbb{R}\\}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find local maximum of left branch and local minimum of right branch"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range in inequality/set notation"
+        }
+      ],
+      "solution": "Using technology, the range is $\\{y \\mid y < 0.741 \\text{ or } y > 1.30, \\, y \\in \\mathbb{R}\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The range corresponds to all possible $y$-values taken by the function across all parts of its domain.",
+        "step_by_step": [
+          "Use GDC to find the local maximum of the branch $x < 0$, which is approximately $y \\approx 0.741$.",
+          "Find the local minimum of the branch $x > 0$, which is approximately $y \\approx 1.30$.",
+          "Combine the two intervals: $y < 0.741$ or $y > 1.30$."
+        ],
+        "common_pitfalls": "Overlooking that there is a gap in $y$-values where the function is never defined."
+      }
+    }
+  ]
+}

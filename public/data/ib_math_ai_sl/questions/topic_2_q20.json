@@ -1,0 +1,63 @@
+{
+  "id": "topic_2_q20",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 20,
+  "question_text": "Find the coordinates of the point(s) of intersection of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$y = x^2 - 4x - 5$ and $y = 3x - 11$",
+      "final_answer": "$(1, -8)\\text{ and }(6, 7)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph both equations or equate X^2 - 4X - 5 = 3X - 11"
+        },
+        {
+          "code": "A1",
+          "desc": "Identify both intersection points correctly"
+        }
+      ],
+      "solution": "We graph $Y_1 = X^2 - 4X - 5$ and $Y_2 = 3X - 11$ on the same set of axes.\nThe graphs intersect at $(1, -8)$ and $(6, 7)$.",
+      "ai_explanation": {
+        "concept_rule": "The points of intersection of two curves are the points where their coordinates satisfy both equations simultaneously.",
+        "step_by_step": [
+          "Graph the parabola $Y_1 = X^2 - 4X - 5$ and the line $Y_2 = 3X - 11$.",
+          "Use the calculator intersection function (or solve algebraically: $X^2 - 7X + 6 = 0 \\implies (X-1)(X-6) = 0$).",
+          "When $X = 1$, $Y = 3(1) - 11 = -8$.",
+          "When $X = 6$, $Y = 3(6) - 11 = 7$.",
+          "The intersection points are $(1, -8)$ and $(6, 7)$."
+        ],
+        "common_pitfalls": "Providing only the $x$-values instead of full coordinate pairs $(x, y)$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$y = -2x^2 + 5x$ and $y = 5 - 2x$",
+      "final_answer": "$(1, 3)\\text{ and }(\\frac{5}{2}, 0)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Graph both equations or equate -2X^2 + 5X = 5 - 2X"
+        },
+        {
+          "code": "A1",
+          "desc": "Identify both intersection points correctly"
+        }
+      ],
+      "solution": "We graph $Y_1 = -2X^2 + 5X$ and $Y_2 = 5 - 2X$ on the same set of axes.\nThe graphs intersect at $(1, 3)$ and $(\\frac{5}{2}, 0)$ (or $(2.5, 0)$).",
+      "ai_explanation": {
+        "concept_rule": "Intersection points satisfy both $Y_1$ and $Y_2$.",
+        "step_by_step": [
+          "Equate the two functions: $-2X^2 + 5X = 5 - 2X \\implies 2X^2 - 7X + 5 = 0$.",
+          "Factor the quadratic: $(2X - 5)(X - 1) = 0$, giving $X = 1$ or $X = 2.5 = \\frac{5}{2}$.",
+          "Calculate $Y$-values: For $X = 1$, $Y = 5 - 2(1) = 3$. For $X = 2.5$, $Y = 5 - 2(2.5) = 0$.",
+          "State intersection points: $(1, 3)$ and $(\\frac{5}{2}, 0)$."
+        ],
+        "common_pitfalls": "Arithmetic errors when factoring $2X^2 - 7X + 5 = 0$."
+      }
+    }
+  ]
+}

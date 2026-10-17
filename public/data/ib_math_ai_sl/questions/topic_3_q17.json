@@ -1,0 +1,87 @@
+{
+  "id": "topic_3_q17",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 17,
+  "question_text": "A rhombus has diagonals of length $5\\text{ cm}$ and $8\\text{ cm}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw a diagram and label it with the given information.",
+      "final_answer": "$a = 10$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up equation using mean formula: $\\bar{x} = \\frac{\\sum xf}{\\sum f} = 11$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify equation to $a + 67 = 77$ and solve for $a$"
+        }
+      ],
+      "solution": "$$\\bar{x} = \\frac{\\sum x f}{\\sum f}$$\n$$\\therefore 11 = \\frac{7 \\times 1 + 9 \\times 2 + a \\times 1 + 13 \\times 2 + 16 \\times 1}{1 + 2 + 1 + 2 + 1}$$\n$$\\therefore 11 = \\frac{a + 67}{7}$$\n$$\\therefore a + 67 = 77$$\n$$\\therefore a = 10$$",
+      "ai_explanation": {
+        "concept_rule": "Mean $\\bar{x} = \\frac{\\sum x f}{\\sum f}$. Form a linear equation to solve for an unknown score.",
+        "step_by_step": [
+          "Calculate total frequency: $\\sum f = 1 + 2 + 1 + 2 + 1 = 7$.",
+          "Calculate $\\sum xf = 7(1) + 9(2) + a(1) + 13(2) + 16(1) = 7 + 18 + a + 26 + 16 = a + 67$.",
+          "Equate to mean: $\\frac{a + 67}{7} = 11$.",
+          "Multiply by 7: $a + 67 = 77 \\implies a = 10$."
+        ],
+        "common_pitfalls": "Forgetting to multiply each score by its respective frequency."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the length of the sides of the rhombus.",
+      "final_answer": "$19\\text{ goals}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set up the equation for the new mean of 8 games: $\\frac{k + 77}{8} = 12$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for $k$ to find the required goals"
+        }
+      ],
+      "solution": "Let $k$ be the number of goals that Kai will need to score in the next game.\nSince she averaged $11$ goals in her first $7$ games, her average after the next game $= \\frac{7 \\times 11 + k}{8} = \\frac{k + 77}{8}$.\nFor her overall average to improve to $12$, we require:\n$$\\frac{k + 77}{8} = 12$$\n$$\\therefore k + 77 = 96$$\n$$\\therefore k = 19$$\nSo, Kai will need to score $19$ goals in the next game to improve her overall average to $12$.",
+      "ai_explanation": {
+        "concept_rule": "New mean equals total sum of all scores (previous sum plus new score) divided by total number of games.",
+        "step_by_step": [
+          "Previous total score: $7 \\times 11 = 77$.",
+          "Total score after 8 games: $77 + k$.",
+          "Required total score for an average of 12: $8 \\times 12 = 96$.",
+          "Solve for $k$: $k = 96 - 77 = 19$."
+        ],
+        "common_pitfalls": "Dividing by 7 instead of 8 for the new mean."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Find the measure of the larger angle in the rhombus.",
+      "final_answer": "$116^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use tangent ratio with half-angles of the rhombus"
+        },
+        {
+          "code": "A1",
+          "desc": "Multiply by 2 to obtain the full obtuse angle"
+        }
+      ],
+      "solution": "Let $\\theta$ be the larger angle in the rhombus. $A\\hat{C}B = \\frac{\\theta}{2}$ {diagonals of a rhombus bisect its angles}. $\\tan\\frac{\\theta}{2} = \\frac{4}{2.5} \\implies \\frac{\\theta}{2} = \\tan^{-1}\\left(\\frac{4}{2.5}\\right) \\implies \\theta = 2\\tan^{-1}\\left(\\frac{4}{2.5}\\right) \\approx 116^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Diagonals of a rhombus bisect the vertex angles.",
+        "step_by_step": [
+          "Recognize that the larger angle is split into two equal halves $\\frac{\\theta}{2}$ opposite the larger half-diagonal ($4\\text{ cm}$).",
+          "Set up $\\tan\\frac{\\theta}{2} = \\frac{4}{2.5}$.",
+          "Evaluate $\\frac{\\theta}{2}$ and double it to find $\\theta \\approx 116^\\circ$."
+        ],
+        "common_pitfalls": "Finding the acute angle instead of the larger (obtuse) angle by choosing $\\frac{2.5}{4}$."
+      }
+    }
+  ]
+}

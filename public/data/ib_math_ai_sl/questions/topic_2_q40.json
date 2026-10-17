@@ -1,0 +1,64 @@
+{
+  "id": "topic_2_q40",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 40,
+  "question_text": "When a constant force is applied by an object, the pressure applied by the object is inversely proportional to the area over which the force is applied. When applied to an area of $2\\text{ m}^2$, the object applies $300\\text{ Pa}$ of pressure.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the pressure when the force is applied over $0.8\\text{ m}^2$.",
+      "final_answer": "$750\\text{ Pa}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Determine constant $k = 600$ from given conditions"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $A = 0.8$ into $P = \\frac{600}{A}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct pressure"
+        }
+      ],
+      "solution": "The pressure $P$ is inversely proportional to the area $A$, so $P = \\frac{k}{A}$ where $k$ is a constant.\nWhen $A = 2\\text{ m}^2$, $P = 300\\text{ Pa}$, so $300 = \\frac{k}{2} \\implies k = 600$.\nSo, $P = \\frac{600}{A}$.\nWhen $A = 0.8\\text{ m}^2$, $P = \\frac{600}{0.8} = 750\\text{ Pa}$.",
+      "ai_explanation": {
+        "concept_rule": "For inverse proportionality $P = \\frac{k}{A}$, find constant $k = P \\times A$ then compute new $P$.",
+        "step_by_step": [
+          "Calculate $k = 300 \\times 2 = 600$.",
+          "Substitute $A = 0.8$: $P = \\frac{600}{0.8}$.",
+          "Evaluate $P = 750\\text{ Pa}$."
+        ],
+        "common_pitfalls": "Multiplying $600$ by $0.8$ instead of dividing."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the percentage increase in area required to reduce the pressure by $15\\%$.",
+      "final_answer": "$A \\text{ is increased by about } 17.6\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Find multiplier for $P$ as $0.85$ and reciprocal for $A$"
+        },
+        {
+          "code": "A1",
+          "desc": "State percentage increase in $A$"
+        }
+      ],
+      "solution": "If $P$ is reduced by $15\\%$, then $P$ is multiplied by $1 - 0.15 = 0.85$.\n$\\therefore A$ is multiplied by $\\frac{1}{0.85} \\approx 1.176$ {as $P \\propto \\frac{1}{A}$}\n$\\therefore A$ is increased by about $17.6\\%$.",
+      "ai_explanation": {
+        "concept_rule": "When $P$ changes by a factor $f$, $A$ changes by $\\frac{1}{f}$ because $A \\propto \\frac{1}{P}$.",
+        "step_by_step": [
+          "A $15\\%$ reduction in $P$ gives multiplier $1 - 0.15 = 0.85$.",
+          "Calculate multiplier for $A$: $\\frac{1}{0.85} \\approx 1.17647$.",
+          "Calculate percentage increase: $(1.17647 - 1) \\times 100\\% \\approx 17.6\\%$."
+        ],
+        "common_pitfalls": "Assuming area simply increases by $15\\%$."
+      }
+    }
+  ]
+}

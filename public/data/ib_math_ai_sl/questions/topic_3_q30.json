@@ -1,0 +1,68 @@
+{
+  "id": "topic_3_q30",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 30,
+  "question_text": "",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find $\\cos\\theta$ but not $\\theta$.",
+      "final_answer": "$\\frac{5}{8}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the cosine rule to triangle BAD to express cos theta"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to find the exact fraction 5/8"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta\\text{BAD}$:\n$\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2 \\times 60 \\times 20}$\n$\\therefore \\cos\\theta = \\frac{1500}{2400}$\n$\\therefore \\cos\\theta = \\frac{5}{8}$",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule for an angle is $\\cos\\theta = \\frac{b^2 + c^2 - a^2}{2bc}$, where $a$ is the side opposite to $\\theta$.",
+        "step_by_step": [
+          "In $\\Delta\\text{BAD}$, the sides adjacent to $\\theta$ are $60$ and $20$, and the opposite side is $50$.",
+          "Substitute into the formula: $\\cos\\theta = \\frac{60^2 + 20^2 - 50^2}{2(60)(20)}$.",
+          "Compute the numerator: $3600 + 400 - 2500 = 1500$.",
+          "Compute the denominator: $2400$.",
+          "Simplify the fraction: $\\frac{1500}{2400} = \\frac{5}{8}$."
+        ],
+        "common_pitfalls": "Using the wrong opposite side (e.g., 60 instead of 50)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Hence find the value of $x$.",
+      "final_answer": "$62.6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Apply the cosine rule in triangle ABC with AC = 20 + x"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute cos theta = 5/8 and expand to form a quadratic equation"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve the quadratic equation and reject the negative solution"
+        }
+      ],
+      "solution": "By the cosine rule in $\\Delta\\text{ABC}$:\n$65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\cos\\theta$\n$\\therefore 65^2 = 60^2 + (20 + x)^2 - 2(60)(20 + x)\\left(\\frac{5}{8}\\right)\\quad \\{\\text{using a}\\}$\n$\\therefore 4225 = 3600 + 400 + 40x + x^2 - 1500 - 75x$\n$\\therefore x^2 - 35x - 1725 = 0$\n$\\therefore x \\approx -27.7\\text{ or } 62.6\\quad \\{\\text{technology}\\}$\n$\\therefore x \\approx 62.6\\quad \\{x > 0\\}$",
+      "ai_explanation": {
+        "concept_rule": "A shared angle between two overlapping triangles allows substituting $\\cos\\theta$ into a larger triangle to solve for unknown segment lengths.",
+        "step_by_step": [
+          "In $\\Delta\\text{ABC}$, the side opposite angle $\\theta$ is $65$, and the adjacent sides are $60$ and $(20+x)$.",
+          "Write the cosine rule: $65^2 = 60^2 + (20+x)^2 - 2(60)(20+x)\\cos\\theta$.",
+          "Substitute $\\cos\\theta = \\frac{5}{8}$ from part a.",
+          "Expand and simplify the terms to form the quadratic equation $x^2 - 35x - 1725 = 0$.",
+          "Solve using technology or the quadratic formula to obtain $x \\approx 62.6$ (since $x > 0$)."
+        ],
+        "common_pitfalls": "Errors in expanding $(20+x)^2$ or in multiplying $-120(20+x)\\left(\\frac{5}{8}\\right)$."
+      }
+    }
+  ]
+}

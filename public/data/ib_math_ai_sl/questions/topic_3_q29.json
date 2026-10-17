@@ -1,0 +1,54 @@
+{
+  "id": "topic_3_q29",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 29,
+  "question_text": "Find:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the area of the triangle",
+      "final_answer": "$Anthony: $\\mu = 3.8\\text{ h}, \\sigma \\approx 1.50\\text{ h}$; Katherine: $\\mu = 3.65\\text{ h}, \\sigma \\approx 0.502\\text{ h}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct mean and standard deviation for Anthony"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct mean and standard deviation for Katherine"
+        }
+      ],
+      "solution": "Using technology:\nAnthony:\nThe mean $\\mu = 3.8\\text{ hours}$ and the standard deviation $\\sigma \\approx 1.50\\text{ hours}$.\nKatherine:\nThe mean $\\mu = 3.65\\text{ hours}$ and the standard deviation $\\sigma \\approx 0.502\\text{ hours}$.",
+      "ai_explanation": {
+        "concept_rule": "Calculate population mean $\\mu = \\frac{\\sum x}{n}$ and population standard deviation $\\sigma = \\sqrt{\\frac{\\sum (x-\\mu)^2}{n}}$.",
+        "step_by_step": [
+          "Enter Anthony's 10 values into the calculator: $\\bar{x} = 3.8$, $\\sigma_x \\approx 1.5033 \\approx 1.50$.",
+          "Enter Katherine's 10 values: $\\bar{x} = 3.65$, $\\sigma_x \\approx 0.5025 \\approx 0.502$."
+        ],
+        "common_pitfalls": "Using sample standard deviation ($s_x$) instead of population standard deviation ($\\sigma_x$) when specified."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the length of [AC].",
+      "final_answer": "$Anthony generally practised for longer$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Valid comparison of means"
+        }
+      ],
+      "solution": "Anthony's mean is higher than Katherine's, so Anthony generally practised for longer.",
+      "ai_explanation": {
+        "concept_rule": "The mean is a measure of central tendency; a higher mean indicates a higher typical value.",
+        "step_by_step": [
+          "Compare the means: Anthony's mean is $3.8\\text{ h}$, Katherine's mean is $3.65\\text{ h}$.",
+          "Conclude that Anthony spent more time on average practising."
+        ],
+        "common_pitfalls": "Comparing standard deviations instead of means to evaluate who practised longer."
+      }
+    }
+  ]
+}

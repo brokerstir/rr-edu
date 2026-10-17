@@ -1,0 +1,86 @@
+{
+  "id": "topic_2_q56",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 56,
+  "question_text": "The number of people $N$ on a small island $t$ years after settlement, increases according to the formula $N = 120 \\times (1.04)^t$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the number of people who started the settlement.",
+      "final_answer": "$120\\text{ people}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 0$ into $N = 120 \\times (1.04)^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "State initial population"
+        }
+      ],
+      "solution": "When $t = 0$, $N = 120$. Therefore, there were 120 people who started the settlement.",
+      "ai_explanation": {
+        "concept_rule": "The initial quantity is found when $t = 0$.",
+        "step_by_step": [
+          "Substitute $t = 0$ into $N = 120 \\times (1.04)^t$.",
+          "Evaluate $(1.04)^0 = 1$.",
+          "$N = 120 \\times 1 = 120$."
+        ],
+        "common_pitfalls": "Assuming initial population requires complex calculations."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find the number of people on the island after 4 years.",
+      "final_answer": "$\\approx 140\\text{ people}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $t = 4$ into $N = 120 \\times (1.04)^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate and round to nearest whole number"
+        }
+      ],
+      "solution": "When $t = 4$, $N = 120 \\times (1.04)^4 \\approx 140$. Therefore, there were about 140 people on the island after 4 years.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate exponential growth model after a given time period.",
+        "step_by_step": [
+          "Substitute $t = 4$ into the formula.",
+          "Calculate $120 \\times (1.04)^4 = 120 \\times 1.16985856 \\approx 140.38$.",
+          "Round to a whole number of people: about 140 people."
+        ],
+        "common_pitfalls": "Not rounding to a whole number when reporting people."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "How many years will it take for the number of people to double?",
+      "final_answer": "$t \\approx 17.7\\text{ years}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Setting up the doubling equation $240 = 120 \\times (1.04)^t$"
+        },
+        {
+          "code": "A1",
+          "desc": "Solving for $t \\approx 17.7$ years"
+        }
+      ],
+      "solution": "When $N = 120 \\times 2 = 240$, $240 = 120 \\times (1.04)^t$.\nUsing technology, $t \\approx 17.7$.\nTherefore, it will take about $17.7$ years for the number of people to double.",
+      "ai_explanation": {
+        "concept_rule": "To find the doubling time in an exponential growth model $N(t) = N_0 b^t$, set $N(t) = 2N_0$ and solve for $t$ using logarithms or graphical technology.",
+        "step_by_step": [
+          "Double the initial value to get $N = 240$.",
+          "Set $240 = 120 \\times (1.04)^t$.",
+          "Divide by 120 to obtain $2 = (1.04)^t$.",
+          "Solve for $t = \\frac{\\ln 2}{\\ln 1.04} \\approx 17.7$ years."
+        ],
+        "common_pitfalls": "Forgetting that doubling refers to twice the initial value, or incorrectly applying logarithms without isolating the exponential base first."
+      }
+    }
+  ]
+}

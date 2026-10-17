@@ -1,0 +1,97 @@
+{
+  "id": "topic_2_q26",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 26,
+  "question_text": "State the domain and range of each function:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$f(x) = \\sqrt{5 - x}$",
+      "final_answer": "$Domain: $\\{x \\mid x \\leqslant 5\\}$, Range: $\\{y \\mid y \\geqslant 0\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set expression under square root >= 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain {x | x <= 5}"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range {y | y >= 0}"
+        }
+      ],
+      "solution": "$f(x) = \\sqrt{5-x}$\n$\\sqrt{5-x}$ is defined when $5 - x \\geqslant 0 \\implies x \\leqslant 5$.\n$\\therefore$ the domain is $\\{x \\mid x \\leqslant 5\\}$.\nA square root cannot be negative.\n$\\therefore$ the range is $\\{y \\mid y \\geqslant 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The radicand of a square root must be non-negative, and the principal square root output is always non-negative.",
+        "step_by_step": [
+          "Set $5 - x \\geqslant 0$, which gives $x \\leqslant 5$. This gives the domain.",
+          "As $x$ decreases from $5$ to $-\\infty$, $\\sqrt{5-x}$ increases from $0$ to $\\infty$.",
+          "Thus, the range is $y \\geqslant 0$."
+        ],
+        "common_pitfalls": "Reversing the inequality incorrectly when dividing/multiplying by $-1$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$f(x) = \\frac{2}{x + 4}$",
+      "final_answer": "$Domain: $\\{x \\mid x \\neq -4\\}$, Range: $\\{y \\mid y \\neq 0\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set denominator not equal to 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain {x | x != -4}"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range {y | y != 0}"
+        }
+      ],
+      "solution": "$f(x) = \\frac{2}{x+4}$\n$\\frac{1}{x+4}$ is defined when $x + 4 \\neq 0 \\implies x \\neq -4$.\n$\\therefore$ the domain is $\\{x \\mid x \\neq -4\\}$.\nNo matter how large or small $x$ is, $y = f(x)$ is never zero.\n$\\therefore$ the range is $\\{y \\mid y \\neq 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "A rational function is undefined where its denominator is zero. A constant divided by a polynomial cannot equal zero.",
+        "step_by_step": [
+          "The denominator cannot be zero: $x + 4 \\neq 0 \\implies x \\neq -4$.",
+          "Since the numerator is a non-zero constant ($2$), the fraction $\\frac{2}{x+4}$ can never equal $0$.",
+          "Hence, the range is all real numbers except $0$."
+        ],
+        "common_pitfalls": "Forgetting that a fraction with a non-zero numerator cannot equal zero."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$f(x) = \\frac{1}{(x - 1)^2}$",
+      "final_answer": "$Domain: $\\{x \\mid x \\neq 1\\}$, Range: $\\{y \\mid y > 0\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Set denominator not equal to 0"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct domain {x | x != 1}"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct range {y | y > 0}"
+        }
+      ],
+      "solution": "$f(x) = \\frac{1}{(x-1)^2}$\n$\\frac{1}{(x-1)^2}$ is defined when $(x-1)^2 \\neq 0 \\implies x - 1 \\neq 0 \\implies x \\neq 1$.\n$\\therefore$ the domain is $\\{x \\mid x \\neq 1\\}$.\n$y = f(x)$ is always positive and never zero.\n$\\therefore$ the range is $\\{y \\mid y > 0\\}$.",
+      "ai_explanation": {
+        "concept_rule": "Squared real expressions are always non-negative; when in the denominator, they are strictly positive.",
+        "step_by_step": [
+          "Find domain restriction: $(x-1)^2 \\neq 0 \\implies x \\neq 1$.",
+          "For any $x \\neq 1$, $(x-1)^2 > 0$, so $\\frac{1}{(x-1)^2} > 0$.",
+          "The range is strictly positive real numbers, $\\{y \\mid y > 0\\}$."
+        ],
+        "common_pitfalls": "Writing $y \\geqslant 0$ instead of $y > 0$ (the function cannot equal $0$)."
+      }
+    }
+  ]
+}

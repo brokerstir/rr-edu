@@ -1,0 +1,55 @@
+{
+  "id": "topic_3_q39",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 39,
+  "question_text": "Find the equation of the perpendicular bisector of:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\mathrm{A}(3, 5)$ and $\\mathrm{B}(7, 3)$",
+      "final_answer": "$y \\approx 2.43x + 32.0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Using technology to find coefficients for linear regression"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct regression equation rounded appropriately"
+        }
+      ],
+      "solution": "Using technology:\n$a = 2.43264433$\n$b = 32.0298316$\n$r = 0.91326692$\n$r^2 = 0.83405646$\n$\\text{MSe} = 104.88158$\n\nUsing technology, the least squares regression line is $y \\approx 2.43x + 32.0$.",
+      "ai_explanation": {
+        "concept_rule": "The least squares regression line has the form $y = ax + b$, where $a$ is the gradient and $b$ is the $y$-intercept.",
+        "step_by_step": [
+          "Enter study time as $x$ and examination result as $y$.",
+          "Perform linear regression.",
+          "Identify $a \\approx 2.43$ and $b \\approx 32.0$."
+        ],
+        "common_pitfalls": "Swapping the gradient $a$ and the $y$-intercept $b$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\mathrm{M}(7, 2)$ and $\\mathrm{N}(1, -5)$",
+      "final_answer": "$r \\approx 0.913$, strong positive correlation",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Quoting $r$ and correctly interpreting correlation"
+        }
+      ],
+      "solution": "From a, $r \\approx 0.913$.\nSo, there is a strong, positive correlation between the number of hours that a student studies and their examination result.",
+      "ai_explanation": {
+        "concept_rule": "The correlation coefficient $r$ indicates the strength and direction of the linear relationship.",
+        "step_by_step": [
+          "State $r \\approx 0.913$ from the regression output.",
+          "Conclude that it shows a strong, positive correlation."
+        ],
+        "common_pitfalls": "Writing only the numerical value without interpreting it in words."
+      }
+    }
+  ]
+}

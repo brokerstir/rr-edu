@@ -1,0 +1,72 @@
+{
+  "id": "topic_3_q20",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 20,
+  "question_text": "At 2:35 pm Fari sees an airplane directly overhead. At 2:38 pm he estimates that the angle of elevation to the plane is $15^\\circ$. The plane is travelling in a straight line at $110\\text{ m s}^{-1}$. Calculate:",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "the height of the plane above the ground",
+      "final_answer": "$Cailan: $\\text{range} = 13$, $\\text{IQR} = 6$; Miles: $\\text{range} = 9$, $\\text{IQR} = 5$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate range and quartiles for Cailan"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain Cailan's range $= 13$ and IQR $= 6$"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate range and quartiles for Miles"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain Miles's range $= 9$ and IQR $= 5$"
+        }
+      ],
+      "solution": "Cailan:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 92 - 79 = 13$$\nWe have an even number of data values, so we include all data values when we split the data set into two:\nLower half: $79, 80, 81, 83, 84$; Upper half: $85, 86, 87, 90, 92$\n$$Q_1 = \\text{median of lower half} = 81$$\n$$Q_3 = \\text{median of upper half} = 87$$\n$$\\text{IQR} = Q_3 - Q_1 = 87 - 81 = 6$$\n\nMiles:\n$$\\text{range} = \\text{maximum} - \\text{minimum} = 91 - 82 = 9$$\nWe have an even number of data values, so we include all data values when we split the data set into two:\nLower half: $82, 82, 83, 84, 84$; Upper half: $85, 87, 88, 90, 91$\n$$Q_1 = \\text{median of lower half} = 83$$\n$$Q_3 = \\text{median of upper half} = 88$$\n$$\\text{IQR} = Q_3 - Q_1 = 88 - 83 = 5$$",
+      "ai_explanation": {
+        "concept_rule": "To find spread, calculate range as $\\max - \\min$ and IQR as $Q_3 - Q_1$ by splitting the 10 data values into two halves of 5 values each.",
+        "step_by_step": [
+          "For Cailan: range is $92 - 79 = 13$. The middle of the first 5 values is 81 ($Q_1$), and middle of upper 5 values is 87 ($Q_3$). IQR is $87 - 81 = 6$.",
+          "For Miles: range is $91 - 82 = 9$. The middle of the first 5 values is 83 ($Q_1$), and middle of upper 5 values is 88 ($Q_3$). IQR is $88 - 83 = 5$."
+        ],
+        "common_pitfalls": "Misidentifying the median of the 5-element halves."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "the angle of elevation to the plane at 2:42 pm.",
+      "final_answer": "$6.55^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate total horizontal distance y"
+        },
+        {
+          "code": "M1",
+          "desc": "Set up tangent ratio with height and new horizontal distance"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate angle of elevation theta"
+        }
+      ],
+      "solution": "$y = \\text{speed} \\times \\text{time} = 110 \\times 420 = 46\\,200\\text{ m}$ {7 minutes = 420 seconds}. $\\tan\\theta \\approx \\frac{5305.39}{46\\,200} \\implies \\theta \\approx \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right) \\approx 6.55^\\circ$. Therefore, the angle of elevation of the plane at 2:42 pm is approximately $6.55^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Angle of elevation: $\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$.",
+        "step_by_step": [
+          "Convert $7\\text{ minutes}$ to $420\\text{ seconds}$.",
+          "Calculate new horizontal distance: $y = 110 \\times 420 = 46\\,200\\text{ m}$.",
+          "Set up $\\tan\\theta = \\frac{5305.39}{46\\,200}$.",
+          "Solve for $\\theta = \\tan^{-1}\\left(\\frac{5305.39}{46\\,200}\\right) \\approx 6.55^\\circ$."
+        ],
+        "common_pitfalls": "Using the rounded height $5310$ instead of unrounded value, or miscalculating elapsed time."
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "topic_3_q9",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 9,
+  "question_text": "For each pair of points, find:\ni the distance AB\nii the midpoint of [AB].",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "$\\text{A}(2, 4, 1)$ and $\\text{B}(4, 0, 7)$",
+      "final_answer": "$Continuous variable$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Stating that height is continuous with reasoning"
+        }
+      ],
+      "solution": "The height of an emperor penguin is a numerical variable which can be measured. $\\therefore$ height is a continuous variable.",
+      "ai_explanation": {
+        "concept_rule": "Continuous variables can take any value within a range and are measured rather than counted.",
+        "step_by_step": [
+          "Determine whether height is counted (discrete) or measured (continuous).",
+          "Since height can take any fractional value along a continuous scale, it is a continuous variable."
+        ],
+        "common_pitfalls": "Confusing continuous variables with discrete numerical variables."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "$\\text{A}(3, -5, 2)$ and $\\text{B}(-1, 2, -3)$",
+      "final_answer": "$50$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct sum of frequencies"
+        }
+      ],
+      "solution": "$3 + 5 + 14 + 19 + 8 + 1 = 50$ emperor penguins were measured.",
+      "ai_explanation": {
+        "concept_rule": "Total sample size is found by summing all the class frequencies.",
+        "step_by_step": [
+          "Add the frequencies: $3 + 5 + 14 + 19 + 8 + 1$.",
+          "The total is $50$."
+        ],
+        "common_pitfalls": "Arithmetic errors when adding multiple numbers."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "$\\text{A}(-6, 0, 5)$ and $\\text{B}(-3, -3, 1)$",
+      "final_answer": "$See histogram$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Correct axes, labels, and class boundaries"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct bar heights matching class frequencies"
+        }
+      ],
+      "solution": "Draw a frequency histogram with penguin heights ($105$ to $135\\text{ cm}$) on the horizontal axis and frequencies ($0$ to $20$) on the vertical axis.",
+      "ai_explanation": {
+        "concept_rule": "A continuous grouped data histogram uses continuous class boundaries on the x-axis with contiguous rectangles.",
+        "step_by_step": [
+          "Mark the class intervals: $105-110, 110-115, \\dots, 130-135$ on the horizontal axis.",
+          "Mark frequencies on the vertical axis up to 20.",
+          "Draw bars for each interval matching heights $3, 5, 14, 19, 8, 1$."
+        ],
+        "common_pitfalls": "Plotting midpoints instead of full intervals as column widths."
+      }
+    }
+  ]
+}

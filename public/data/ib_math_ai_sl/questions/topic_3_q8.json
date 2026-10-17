@@ -1,0 +1,35 @@
+{
+  "id": "topic_3_q8",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 8,
+  "question_text": "How many of these petrol containers can be completely filled with $300\\text{ L}$ of petrol?",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "How many of these petrol containers can be completely filled with $300\\text{ L}$ of petrol?",
+      "final_answer": "$See completed frequency table$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Correctly grouping marks into intervals of 10"
+        },
+        {
+          "code": "A1",
+          "desc": "Accurate tallies and frequencies summing to 30"
+        }
+      ],
+      "solution": "Construct the frequency table with class intervals: 0-9 (0), 10-19 (0), 20-29 (2), 30-39 (2), 40-49 (4), 50-59 (7), 60-69 (5), 70-79 (6), 80-89 (2), 90-99 (2). Total = 30.",
+      "ai_explanation": {
+        "concept_rule": "Grouped frequency distributions organize continuous or large discrete datasets into non-overlapping class intervals.",
+        "step_by_step": [
+          "Define consistent class intervals from 0-9 to 90-99.",
+          "Tally each given score into its corresponding interval.",
+          "Sum the tallies to record frequencies and check that the total equals 30."
+        ],
+        "common_pitfalls": "Placing boundary values in two overlapping intervals if classes are poorly defined."
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "topic_3_q28",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 28,
+  "question_text": "The area of the triangle shown is $4\\text{ m}^2$.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Given that $\\theta$ is obtuse, find the value of $\\theta$.",
+      "final_answer": "$\\text{mean} \\approx 24.1,\\ \\text{standard deviation} \\approx 6.71$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct mean"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct standard deviation"
+        }
+      ],
+      "solution": "Using technology:\n$\\text{mean} \\approx 24.1$, $\\text{standard deviation} \\approx 6.71$",
+      "ai_explanation": {
+        "concept_rule": "Use the statistics function on a calculator to enter data and compute sample mean ($\\bar{x}$) and sample standard deviation ($s_x$).",
+        "step_by_step": [
+          "Enter the 12 data values into the calculator.",
+          "Calculate 1-variable statistics.",
+          "Identify $\\bar{x} \\approx 24.083 \\approx 24.1$ and $s_x \\approx 6.71$ (or $\\sigma_x \\approx 6.71$ as shown on screen)."
+        ],
+        "common_pitfalls": "Rounding prematurely before writing down the final answer."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find $x$.",
+      "final_answer": "$Contestants taking 32 minutes and 40 minutes$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate threshold: mean + 1 standard deviation"
+        },
+        {
+          "code": "A1",
+          "desc": "Correctly identify contestants exceeding threshold"
+        }
+      ],
+      "solution": "Contestants with times greater than $24.1 + 6.71 \\approx 30.81\\text{ minutes}$ will be eliminated.\nSo, the contestants who took 32 minutes and 40 minutes are immediately eliminated.",
+      "ai_explanation": {
+        "concept_rule": "Elimination threshold is one standard deviation above the mean: $\\bar{x} + s$.",
+        "step_by_step": [
+          "Add one standard deviation to the mean: $24.1 + 6.71 = 30.81\\text{ minutes}$.",
+          "Identify all times in the data set that are strictly greater than $30.81$.",
+          "The times are $32$ and $40$."
+        ],
+        "common_pitfalls": "Subtracting the standard deviation instead of adding it."
+      }
+    }
+  ]
+}

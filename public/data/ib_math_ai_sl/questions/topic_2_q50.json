@@ -1,0 +1,103 @@
+{
+  "id": "topic_2_q50",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 50,
+  "question_text": "The exponential function $y = a \\times 2^x + b$ passes through the points alongside: $\\begin{array}{|c|c|c|c|c|} \\hline x & 0 & 1 & 2 & 3 \\\\ \\hline y & 20 & p & 35 & q \\\\ \\hline \\end{array}$",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Write down two linear equations which could be used to determine the values of $a$ and $b$.",
+      "final_answer": "$a + b = 20 \\text{ and } 4a + b = 35$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $(0, 20)$ into the model"
+        },
+        {
+          "code": "A1",
+          "desc": "Form equation (1): $a + b = 20$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $(2, 35)$ into the model"
+        },
+        {
+          "code": "A1",
+          "desc": "Form equation (2): $4a + b = 35$"
+        }
+      ],
+      "solution": "When $x = 0$, $y = 20 \\implies 20 = a \\times 2^0 + b \\implies a + b = 20 \\quad \\text{--- (1)}$. When $x = 2$, $y = 35 \\implies 35 = a \\times 2^2 + b \\implies 4a + b = 35 \\quad \\text{--- (2)}$.",
+      "ai_explanation": {
+        "concept_rule": "Substitute known coordinate pairs into the general formula to set up a system of linear equations in $a$ and $b$.",
+        "step_by_step": [
+          "At $x = 0$, $2^0 = 1$, so $a(1) + b = 20$, giving $a + b = 20$.",
+          "At $x = 2$, $2^2 = 4$, so $a(4) + b = 35$, giving $4a + b = 35$."
+        ],
+        "common_pitfalls": "Incorrectly calculating $2^0$ as 0."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Solve the linear equations simultaneously to find $a$ and $b$.",
+      "final_answer": "$a = 5 \\text{ and } b = 15$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Solve the simultaneous equations for $a$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find $a = 5$"
+        },
+        {
+          "code": "A1",
+          "desc": "Find $b = 15$"
+        }
+      ],
+      "solution": "Using (1), $b = 20 - a \\quad \\text{--- (3)}$. Substituting $b = 20 - a$ into (2) gives $4a + 20 - a = 35 \\implies 3a = 15 \\implies a = 5$. Substituting $a = 5$ into (3) gives $b = 20 - 5 = 15$. Therefore, $a = 5$ and $b = 15$.",
+      "ai_explanation": {
+        "concept_rule": "Solve simultaneous linear equations by substitution or elimination.",
+        "step_by_step": [
+          "Subtract equation (1) from equation (2): $(4a + b) - (a + b) = 35 - 20 \\implies 3a = 15$.",
+          "Divide by 3: $a = 5$.",
+          "Substitute $a = 5$ into $a + b = 20$: $5 + b = 20 \\implies b = 15$."
+        ],
+        "common_pitfalls": "Arithmetic errors when subtracting negative numbers."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence find the values of $p$ and $q$.",
+      "final_answer": "$p = 25, q = 55$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 1$ into $y = 5 \\times 2^x + 15$ to find $p$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $p = 25$"
+        },
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 3$ into $y = 5 \\times 2^x + 15$ to find $q$"
+        },
+        {
+          "code": "A1",
+          "desc": "Obtain $q = 55$"
+        }
+      ],
+      "solution": "Using part b, $y = 5 \\times 2^x + 15$.\nWhen $x = 1$, $y = p \\implies p = 5 \\times 2^1 + 15 = 10 + 15 = 25$.\nWhen $x = 3$, $y = q \\implies q = 5 \\times 2^3 + 15 = 5 \\times 8 + 15 = 40 + 15 = 55$.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate the fully determined model $y = 5 \\times 2^x + 15$ at given $x$-values.",
+        "step_by_step": [
+          "For $p$, evaluate at $x = 1$: $5(2) + 15 = 25$.",
+          "For $q$, evaluate at $x = 3$: $5(8) + 15 = 55$."
+        ],
+        "common_pitfalls": "Calculating $5 \\times 2^3$ as $(5 \\times 2)^3 = 1000$ instead of following order of operations."
+      }
+    }
+  ]
+}

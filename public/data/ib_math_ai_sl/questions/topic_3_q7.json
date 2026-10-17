@@ -1,0 +1,64 @@
+{
+  "id": "topic_3_q7",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 7,
+  "question_text": "Find the volume of:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Positively skewed, no outliers$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Correct statement describing the positive skewness and lack of outliers"
+        }
+      ],
+      "solution": "The data is positively skewed. There are no outliers.",
+      "ai_explanation": {
+        "concept_rule": "Skewness describes the asymmetry of a distribution; when the tail extends toward higher values, it is positively skewed.",
+        "step_by_step": [
+          "Observe the shape of the data distribution.",
+          "Identify that data stretches more to the right, showing positive skew.",
+          "Check for any data points lying far beyond the whiskers or main cluster to conclude there are no outliers."
+        ],
+        "common_pitfalls": "Confusing positively skewed (tail to the right) with negatively skewed (tail to the left)."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$29.2\\%$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Adding frequencies for 3 or more children and dividing by total frequency"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation to obtain approximately 29.2%"
+        }
+      ],
+      "solution": "$\\frac{3 + 3 + 1}{24} \\times 100\\% \\approx 29.2\\%$ of families have 3 or more children.",
+      "ai_explanation": {
+        "concept_rule": "The percentage is calculated as the favorable count divided by the total count multiplied by 100%.",
+        "step_by_step": [
+          "Count the families having 3, 4, or more children: $3 + 3 + 1 = 7$.",
+          "Divide by the total number of families, $24$.",
+          "Multiply by $100\\%$ to get $29.166...\\% \\approx 29.2\\%$."
+        ],
+        "common_pitfalls": "Forgetting to include all categories that meet the '3 or more' condition."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "",
+      "mark_breakdown": [],
+      "solution": "",
+      "ai_explanation": null
+    }
+  ]
+}

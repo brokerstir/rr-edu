@@ -1,0 +1,90 @@
+{
+  "id": "topic_3_q19",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 19,
+  "question_text": "Find the value of the unknown:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$45.6^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Recognize angle in a semicircle is a right angle"
+        },
+        {
+          "code": "M1",
+          "desc": "Identify hypotenuse as diameter (10 cm)"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for theta using cosine"
+        }
+      ],
+      "solution": "$A\\hat{C}B = 90^\\circ$ {angle in a semi-circle}, so $\\triangle ABC$ is right angled at $C$. Since the radius is $5\\text{ cm}$, the diameter is $AB = 10\\text{ cm}$. $\\cos\\theta = \\frac{7}{AB} = \\frac{7}{10} \\implies \\theta = \\cos^{-1}\\left(\\frac{7}{10}\\right) \\approx 45.6^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "Thales's theorem: An angle inscribed in a semicircle is a right angle ($90^\\circ$).",
+        "step_by_step": [
+          "Recognize that $\\triangle ABC$ is a right-angled triangle with hypotenuse equal to the diameter $2 \\times 5 = 10\\text{ cm}$.",
+          "Set up $\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{7}{10}$.",
+          "Calculate $\\theta = \\cos^{-1}(0.7) \\approx 45.6^\\circ$."
+        ],
+        "common_pitfalls": "Using the radius $5\\text{ cm}$ as the hypotenuse instead of the diameter $10\\text{ cm}$."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$61.6$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use tangent-radius property to identify right angle"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for x using tangent"
+        }
+      ],
+      "solution": "We construct the right angled triangle as shown. For the shaded triangle, $\\tan 18^\\circ = \\frac{20}{x} \\implies x = \\frac{20}{\\tan 18^\\circ} \\approx 61.6$.",
+      "ai_explanation": {
+        "concept_rule": "A tangent to a circle is perpendicular to the radius at the point of contact.",
+        "step_by_step": [
+          "Identify that the radius of $20\\text{ m}$ is perpendicular to the tangent line.",
+          "In the resulting right triangle, set up $\\tan 18^\\circ = \\frac{20}{x}$.",
+          "Solve for $x = \\frac{20}{\\tan 18^\\circ} \\approx 61.6$."
+        ],
+        "common_pitfalls": "Confusing sine and tangent when dealing with tangent lines to circles."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "",
+      "final_answer": "$97.2^\\circ$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Construct altitude to split chord and apex angle"
+        },
+        {
+          "code": "A1",
+          "desc": "Solve for theta using sine"
+        }
+      ],
+      "solution": "We construct the altitude as shown. For the shaded triangle, $\\sin\\frac{\\theta}{2} = \\frac{3}{4} \\implies \\frac{\\theta}{2} = \\sin^{-1}\\left(\\frac{3}{4}\\right) \\implies \\theta = 2\\sin^{-1}\\left(\\frac{3}{4}\\right) \\approx 97.2^\\circ$.",
+      "ai_explanation": {
+        "concept_rule": "The perpendicular from the center of a circle to a chord bisects the chord and the central angle.",
+        "step_by_step": [
+          "The chord of length $6\\text{ m}$ is bisected into two segments of $3\\text{ m}$.",
+          "The radius of $4\\text{ m}$ serves as the hypotenuse.",
+          "Formulate $\\sin\\frac{\\theta}{2} = \\frac{3}{4}$.",
+          "Compute $\\theta = 2\\sin^{-1}(0.75) \\approx 97.2^\\circ$."
+        ],
+        "common_pitfalls": "Using $6$ instead of $3$ as the opposite side length."
+      }
+    }
+  ]
+}

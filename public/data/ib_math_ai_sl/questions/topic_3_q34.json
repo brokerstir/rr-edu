@@ -1,0 +1,56 @@
+{
+  "id": "topic_3_q34",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 34,
+  "question_text": "In quadrilateral ABCD, the diagonal [BD] has length 8 km. Find the length of the diagonal [AC].",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "",
+      "stem": "In quadrilateral ABCD, the diagonal [BD] has length 8 km. Find the length of the diagonal [AC].",
+      "final_answer": "$6.54\\text{ km}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Use cosine rule to find angle $\\theta$ in $\\triangle\\text{ABD}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $\\theta \\approx 30.8^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Use cosine rule to find angle $\\phi$ in $\\triangle\\text{DBC}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $\\phi \\approx 48.2^\\circ$"
+        },
+        {
+          "code": "M1",
+          "desc": "Determine combined angle $\\text{A}\\hat{\\text{B}}\\text{C} = \\theta + \\phi$"
+        },
+        {
+          "code": "M1",
+          "desc": "Apply cosine rule in $\\triangle\\text{ABC}$ to find $\\text{AC}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct final length $\\text{AC} \\approx 6.54\\text{ km}$"
+        }
+      ],
+      "solution": "By the cosine rule in $\\triangle\\text{ABD}$:\n$$\\cos \\theta = \\frac{8^2 + 4^2 - 5^2}{2 \\times 8 \\times 4}$$\n$$\\cos \\theta = \\frac{55}{64}$$\n$$\\theta = \\cos^{-1}\\left(\\frac{55}{64}\\right) \\approx 30.8^\\circ$$\n\nBy the cosine rule in $\\triangle\\text{DBC}$:\n$$\\cos \\phi = \\frac{8^2 + 6^2 - 6^2}{2 \\times 8 \\times 6}$$\n$$\\cos \\phi = \\frac{64}{96} = \\frac{2}{3}$$\n$$\\phi = \\cos^{-1}\\left(\\frac{2}{3}\\right) \\approx 48.2^\\circ$$\n\nNow $\\text{A}\\hat{\\text{B}}\\text{C} = \\theta + \\phi \\approx 30.8^\\circ + 48.2^\\circ \\approx 78.9^\\circ$\n\nBy the cosine rule in $\\triangle\\text{ABC}$:\n$$\\text{AC}^2 \\approx 4^2 + 6^2 - 2 \\times 4 \\times 6 \\times \\cos 78.9^\\circ$$\n$$\\text{AC} \\approx \\sqrt{4^2 + 6^2 - 2 \\times 4 \\times 6 \\times \\cos 78.9^\\circ}$$\n$$\\text{AC} \\approx 6.54\\text{ km}$$",
+      "ai_explanation": {
+        "concept_rule": "The cosine rule for an angle is $\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$, and for a side is $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+        "step_by_step": [
+          "Find angle $\\theta$ at vertex $B$ in triangle $ABD$ using the side lengths $8, 4, 5$.",
+          "Find angle $\\phi$ at vertex $B$ in triangle $DBC$ using the side lengths $8, 6, 6$.",
+          "Sum angles $\\theta$ and $\\phi$ to obtain the total angle $\\text{A}\\hat{\\text{B}}\\text{C} \\approx 78.9^\\circ$.",
+          "Use the cosine rule in the outer triangle $ABC$ with sides $AB = 4$, $BC = 6$, and angle $78.9^\\circ$ to find $AC$."
+        ],
+        "common_pitfalls": "Rounding intermediate angles too early, which can lead to slight inaccuracies in the final answer."
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "topic_2_q49",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 49,
+  "question_text": "Consider $y = -1 + 2^{-x}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the $y$-intercept.",
+      "final_answer": "$y\\text{-intercept} = 0, x\\text{-intercept} = 0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 0$ into $y = -1 + 2^{-x}$"
+        },
+        {
+          "code": "A1",
+          "desc": "State that both intercepts are 0"
+        }
+      ],
+      "solution": "When $x = 0$, $y = -1 + 1 = 0$. Therefore, the $y$-intercept is 0, and the $x$-intercept is 0.",
+      "ai_explanation": {
+        "concept_rule": "Find $y$-intercept by evaluating $y$ at $x = 0$. If $y = 0$ when $x = 0$, the origin $(0,0)$ is both the $x$- and $y$-intercept.",
+        "step_by_step": [
+          "Substitute $x = 0$: $y = -1 + 2^0 = -1 + 1 = 0$.",
+          "Since $(0,0)$ lies on the curve, the graph passes through the origin.",
+          "Conclude both intercepts are 0."
+        ],
+        "common_pitfalls": "Assuming an exponential function cannot have intercepts at the origin."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Find any asymptotes of the function.",
+      "final_answer": "$y = -1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the horizontal asymptote equation"
+        }
+      ],
+      "solution": "The horizontal asymptote is $y = -1$.",
+      "ai_explanation": {
+        "concept_rule": "As $x \\to \\infty$, $2^{-x} \\to 0$, so $y = -1 + 2^{-x} \\to -1$.",
+        "step_by_step": [
+          "Analyze the behavior of $2^{-x}$ as $x \\to \\infty$.",
+          "Since $2^{-x} \\to 0$, $y \\to -1 + 0 = -1$.",
+          "State the equation as $y = -1$."
+        ],
+        "common_pitfalls": "Writing just '$-1$' instead of the line equation '$y = -1$'."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "State the domain and range of the function.",
+      "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y > -1\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the domain"
+        },
+        {
+          "code": "A1",
+          "desc": "State the range"
+        }
+      ],
+      "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$. The range is $\\{y \\mid y > -1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "The exponential function is defined for all real numbers, and $2^{-x} > 0$ for all $x$, so $-1 + 2^{-x} > -1$.",
+        "step_by_step": [
+          "Domain is all real numbers $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $2^{-x} > 0$, $y = -1 + 2^{-x} > -1$.",
+          "Range is $\\{y \\mid y > -1\\}$."
+        ],
+        "common_pitfalls": "Writing range as $y \\ge -1$ instead of strict inequality $y > -1$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "Hence sketch the function.",
+      "final_answer": "$Graph of $y = -1 + 2^{-x}$ showing asymptote $y = -1$ and passing through $(0,0)$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Show horizontal asymptote $y = -1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch decreasing exponential curve through $(0,0)$"
+        }
+      ],
+      "solution": "Sketch the curve of $y = -1 + 2^{-x}$ passing through the origin $(0,0)$, decreasing as $x$ increases, and approaching the horizontal dashed asymptote $y = -1$.",
+      "ai_explanation": {
+        "concept_rule": "A decreasing exponential curve transformed downward by 1 unit.",
+        "step_by_step": [
+          "Draw the asymptote $y = -1$ with a dashed line.",
+          "Plot the intercept $(0,0)$.",
+          "Draw a smooth decreasing curve approaching $y = -1$ as $x \\to \\infty$."
+        ],
+        "common_pitfalls": "Letting the curve cross the horizontal asymptote."
+      }
+    }
+  ]
+}

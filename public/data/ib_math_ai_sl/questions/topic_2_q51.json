@@ -1,0 +1,155 @@
+{
+  "id": "topic_2_q51",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 51,
+  "question_text": "Consider the exponential function $f(x) = 2 \\times \\left(\\frac{1}{3}\\right)^x + 1$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find $f(0)$",
+      "final_answer": "$3$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 0$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to obtain 3"
+        }
+      ],
+      "solution": "$f(0) = 2 + 1 = 3$",
+      "ai_explanation": {
+        "concept_rule": "$(\\frac{1}{3})^0 = 1$, so $f(0) = 2(1) + 1$.",
+        "step_by_step": [
+          "Substitute $x = 0$: $f(0) = 2 \\times (\\frac{1}{3})^0 + 1$.",
+          "Simplify to $2(1) + 1 = 3$."
+        ],
+        "common_pitfalls": "Miscalculating the zero power as 0."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find $f(2)$",
+      "final_answer": "$\\frac{11}{9}$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 2$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Simplify to obtain $\\frac{11}{9}$"
+        }
+      ],
+      "solution": "$f(2) = 2 \\times \\left(\\frac{1}{3}\\right)^2 + 1 = \\frac{2}{9} + 1 = \\frac{11}{9}$",
+      "ai_explanation": {
+        "concept_rule": "Square the fraction and add 1.",
+        "step_by_step": [
+          "Calculate $(\\frac{1}{3})^2 = \\frac{1}{9}$.",
+          "Multiply by 2: $2 \\times \\frac{1}{9} = \\frac{2}{9}$.",
+          "Add 1: $\\frac{2}{9} + \\frac{9}{9} = \\frac{11}{9}$."
+        ],
+        "common_pitfalls": "Failing to find a common denominator when adding 1."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Find $f(-1)$",
+      "final_answer": "$7$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = -1$ into $f(x)$"
+        },
+        {
+          "code": "A1",
+          "desc": "Evaluate to obtain 7"
+        }
+      ],
+      "solution": "$f(-1) = 2 \\times \\left(\\frac{1}{3}\\right)^{-1} + 1 = 2 \\times 3 + 1 = 7$",
+      "ai_explanation": {
+        "concept_rule": "A fraction to a negative power is inverted: $(\\frac{1}{3})^{-1} = 3$.",
+        "step_by_step": [
+          "Invert base: $(\\frac{1}{3})^{-1} = 3$.",
+          "Multiply: $2 \\times 3 = 6$.",
+          "Add 1: $6 + 1 = 7$."
+        ],
+        "common_pitfalls": "Inverting the entire expression rather than just the base of the exponent."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "State the equation of the horizontal asymptote.",
+      "final_answer": "$y = 1$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State the horizontal asymptote"
+        }
+      ],
+      "solution": "The horizontal asymptote is $y = 1$.",
+      "ai_explanation": {
+        "concept_rule": "As $x \\to \\infty$, $(\\frac{1}{3})^x \\to 0$, so $f(x) \\to 1$.",
+        "step_by_step": [
+          "Examine behavior as $x \\to \\infty$.",
+          "$2(\\frac{1}{3})^x \\to 0$.",
+          "Therefore, $y = 0 + 1 = 1$ is the asymptote."
+        ],
+        "common_pitfalls": "Stating $y = 0$ without considering the vertical translation $+1$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Sketch the graph of the function.",
+      "final_answer": "$Graph of $f(x) = 2 \\times (\\frac{1}{3})^x + 1$ showing asymptote $y = 1$ and key points$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Draw horizontal asymptote $y = 1$"
+        },
+        {
+          "code": "A1",
+          "desc": "Sketch decreasing curve passing through $(-1, 7)$, $(0, 3)$, and $(2, \\frac{11}{9})$"
+        }
+      ],
+      "solution": "Sketch the curve showing a horizontal asymptote at $y = 1$, passing through $(-1, 7)$, $(0, 3)$, and $(2, \\frac{11}{9})$.",
+      "ai_explanation": {
+        "concept_rule": "Graph of an exponential decay function shifted up by 1.",
+        "step_by_step": [
+          "Draw the horizontal line $y = 1$ as a dashed line.",
+          "Plot the $y$-intercept $(0, 3)$ and points $(-1, 7)$, $(2, \\frac{11}{9})$.",
+          "Draw a smooth decreasing curve asymptotic to $y = 1$."
+        ],
+        "common_pitfalls": "Drawing the curve crossing the asymptote line $y = 1$."
+      }
+    },
+    {
+      "subpart": "d",
+      "stem": "State the domain and range of the function.",
+      "final_answer": "$Domain: $\\{x \\mid x \\in \\mathbb{R}\\}$, Range: $\\{y \\mid y > 1\\}$$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State domain"
+        },
+        {
+          "code": "A1",
+          "desc": "State range"
+        }
+      ],
+      "solution": "The domain is $\\{x \\mid x \\in \\mathbb{R}\\}$. The range is $\\{y \\mid y > 1\\}$.",
+      "ai_explanation": {
+        "concept_rule": "Domain of any basic exponential function is $\\mathbb{R}$. Since $2(\\frac{1}{3})^x > 0$, the range is $y > 1$.",
+        "step_by_step": [
+          "The function is defined for all $x$, so domain is $\\{x \\mid x \\in \\mathbb{R}\\}$.",
+          "Since $2(\\frac{1}{3})^x > 0$ for all $x$, $f(x) > 1$.",
+          "Range is $\\{y \\mid y > 1\\}$."
+        ],
+        "common_pitfalls": "Including the asymptote boundary in the range ($y \\ge 1$)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "topic_2_q25",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 25,
+  "question_text": "A function $f$ is defined as $f(x) = \\sqrt{x + 4}$ for $-4 \\leqslant x \\leqslant 12$, $x \\in \\mathbb{R}$.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a i",
+      "stem": "Find $f(-4)$",
+      "final_answer": "$0$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = -4 into f(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving 0"
+        }
+      ],
+      "solution": "$f(-4) = \\sqrt{-4 + 4} = \\sqrt{0} = 0$",
+      "ai_explanation": {
+        "concept_rule": "To evaluate a function at a point, substitute the value into the function's expression.",
+        "step_by_step": [
+          "Substitute $x = -4$ into $f(x) = \\sqrt{x+4}$.",
+          "Evaluate $\\sqrt{-4+4} = \\sqrt{0} = 0$."
+        ],
+        "common_pitfalls": "Arithmetic errors under the radical."
+      }
+    },
+    {
+      "subpart": "a ii",
+      "stem": "Find $f(0)$",
+      "final_answer": "$2$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = 0 into f(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving 2"
+        }
+      ],
+      "solution": "$f(0) = \\sqrt{0 + 4} = \\sqrt{4} = 2$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the given $x$-value into the function rule.",
+        "step_by_step": [
+          "Substitute $x = 0$ into $f(x) = \\sqrt{x+4}$.",
+          "Evaluate $\\sqrt{4} = 2$."
+        ],
+        "common_pitfalls": "Writing $\\pm 2$ instead of the principal square root $+2$."
+      }
+    },
+    {
+      "subpart": "a iii",
+      "stem": "Find $f(12)$",
+      "final_answer": "$4$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute x = 12 into f(x)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct calculation giving 4"
+        }
+      ],
+      "solution": "$f(12) = \\sqrt{12 + 4} = \\sqrt{16} = 4$",
+      "ai_explanation": {
+        "concept_rule": "Substitute the value of $x$ into $f(x)$.",
+        "step_by_step": [
+          "Substitute $x = 12$ into $f(x) = \\sqrt{x+4}$.",
+          "Compute $\\sqrt{16} = 4$."
+        ],
+        "common_pitfalls": "None."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Sketch $y = f(x)$.",
+      "final_answer": "$Graph of $y = \\sqrt{x+4}$ from $x = -4$ to $x = 12$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plot key points (-4, 0), (0, 2), (12, 4)"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct shape of square root curve over domain [-4, 12]"
+        }
+      ],
+      "solution": "Plot the points $(-4, 0)$, $(0, 2)$, and $(12, 4)$, and draw a smooth curve representing $y = f(x) = \\sqrt{x+4}$ restricted to the domain $-4 \\leqslant x \\leqslant 12$.",
+      "ai_explanation": {
+        "concept_rule": "The graph of $y = \\sqrt{x+4}$ is the top half of a horizontal parabola shifted 4 units to the left.",
+        "step_by_step": [
+          "Plot the start point at $(-4, 0)$.",
+          "Plot the $y$-intercept at $(0, 2)$.",
+          "Plot the endpoint at $(12, 4)$.",
+          "Draw an increasing concave-down curve between these endpoints."
+        ],
+        "common_pitfalls": "Extending the curve beyond the restricted domain $[-4, 12]$."
+      }
+    },
+    {
+      "subpart": "c",
+      "stem": "Hence write down the range of $f(x)$.",
+      "final_answer": "$\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "State correct range in set or interval notation"
+        }
+      ],
+      "solution": "The minimum value of $f(x)$ is $f(-4) = 0$ and the maximum value is $f(12) = 4$.\n$\\therefore$ the range is $\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$.",
+      "ai_explanation": {
+        "concept_rule": "For a strictly increasing continuous function, the range is $[f(x_{\\min}), f(x_{\\max})]$.",
+        "step_by_step": [
+          "Identify the minimum $y$-value at $x = -4$, which is $0$.",
+          "Identify the maximum $y$-value at $x = 12$, which is $4$.",
+          "Write the range as $\\{y \\mid 0 \\leqslant y \\leqslant 4\\}$ or $[0, 4]$."
+        ],
+        "common_pitfalls": "Using strict inequalities instead of non-strict inequalities."
+      }
+    }
+  ]
+}

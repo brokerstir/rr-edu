@@ -1,0 +1,55 @@
+{
+  "id": "topic_3_q35",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 35,
+  "question_text": "Quadrilateral PQRS has the measurements shown.",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Find the length of [PR].",
+      "final_answer": "$Scatter plot of Interest rate vs Exchange rate$",
+      "mark_breakdown": [
+        {
+          "code": "A1",
+          "desc": "Accurately plotted scatter plot"
+        }
+      ],
+      "solution": "Plot the points: $(2.85, 7.40)$, $(2.95, 7.50)$, $(2.90, 7.55)$, $(2.75, 7.25)$, $(2.65, 7.25)$, $(2.80, 7.35)$, $(3.05, 7.65)$, $(2.98, 7.75)$, $(2.95, 7.60)$.",
+      "ai_explanation": {
+        "concept_rule": "Graphing paired values with exchange rate on the $x$-axis and interest rate on the $y$-axis.",
+        "step_by_step": [
+          "Draw axes with exchange rate on the horizontal axis (range $2.6$ to $3.1$) and interest rate on the vertical axis (range $7.2$ to $7.8$).",
+          "Plot each coordinate pair accurately."
+        ],
+        "common_pitfalls": "Misreading decimal values on finely graduated scales."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Determine the measure of the angle marked $\\theta$.",
+      "final_answer": "$r \\approx 0.915$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Linear regression calculation using technology"
+        },
+        {
+          "code": "A1",
+          "desc": "Correct value of $r$ rounded to 3 decimal places"
+        }
+      ],
+      "solution": "Using technology:\n$a = 1.2903368$\n$b = 3.76734262$\n$r = 0.9151128$\n$r^2 = 0.83743144$\n\nSo, $r \\approx 0.915$.",
+      "ai_explanation": {
+        "concept_rule": "Calculation of Pearson's correlation coefficient via technology.",
+        "step_by_step": [
+          "Enter exchange rates as list 1 and interest rates as list 2.",
+          "Calculate linear regression $y = ax + b$.",
+          "Obtain $r \\approx 0.915$."
+        ],
+        "common_pitfalls": "Rounding to the incorrect number of decimal places."
+      }
+    }
+  ]
+}

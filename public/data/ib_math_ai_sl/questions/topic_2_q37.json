@@ -1,0 +1,104 @@
+{
+  "id": "topic_2_q37",
+  "topic_number": 2,
+  "topic_name": "Functions",
+  "question_number": 37,
+  "question_text": "The table below shows the cost of purchasing $x\\text{ kg}$ of tomatoes. Weight ($x\\text{ kg}$): 0, 1, 2, 3, 4, 5. Cost ($\\$C$): 0, 3.5, 7, 10.5, 14, 17.5.",
+  "has_diagram": false,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "Draw the graph of $C$ against $t$.",
+      "final_answer": "$\\text{Straight-line graph plotted from }(0,0)\\text{ to }(5,17.5)$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Plotting data points accurately on axes"
+        },
+        {
+          "code": "A1",
+          "desc": "Drawing straight line connecting points through origin"
+        }
+      ],
+      "solution": "Points $(0,0), (1,3.5), (2,7), (3,10.5), (4,14), (5,17.5)$ are plotted on the Cartesian plane with Weight ($x$ kg) on the horizontal axis and Cost ($C$ \\$) on the vertical axis, and connected with a straight line.",
+      "ai_explanation": {
+        "concept_rule": "A table of directly proportional values produces a linear graph starting at the origin.",
+        "step_by_step": [
+          "Set up horizontal axis for $x$ and vertical axis for $C$.",
+          "Plot the given points from the table.",
+          "Draw a straight line through all points starting from $(0,0)$."
+        ],
+        "common_pitfalls": "Starting the line from the first positive data point rather than the origin."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "Explain why $C$ and $x$ are directly proportional.",
+      "final_answer": "$C \\text{ and } x \\text{ are directly proportional.}$",
+      "mark_breakdown": [
+        {
+          "code": "R1",
+          "desc": "Reasoning based on straight line passing through origin"
+        }
+      ],
+      "solution": "The graph of $C$ against $x$ is a straight line which passes through the origin.\n$\\therefore C$ and $x$ are directly proportional.",
+      "ai_explanation": {
+        "concept_rule": "Two variables are directly proportional if and only if their graph is a straight line that passes through the origin $(0,0)$.",
+        "step_by_step": [
+          "Examine the shape of the graph: it is a straight line.",
+          "Check whether it passes through $(0,0)$: yes.",
+          "Conclude direct proportionality."
+        ],
+        "common_pitfalls": "Stating variables are directly proportional without mentioning that the line passes through the origin."
+      }
+    },
+    {
+      "subpart": "c i",
+      "stem": "Find a formula connecting $C$ and $x$.",
+      "final_answer": "$C = 3.5x$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate gradient $\\frac{3.5-0}{1-0}$"
+        },
+        {
+          "code": "A1",
+          "desc": "Write equation $C = 3.5x$"
+        }
+      ],
+      "solution": "The gradient of the line $= \\frac{3.5 - 0}{1 - 0} = 3.5$\n$\\therefore C = 3.5x$",
+      "ai_explanation": {
+        "concept_rule": "The slope of a direct variation line $y = mx$ is given by $m = \\frac{\\Delta y}{\\Delta x}$.",
+        "step_by_step": [
+          "Use points $(0,0)$ and $(1, 3.5)$ to compute gradient: $\\frac{3.5-0}{1-0} = 3.5$.",
+          "Since $y$-intercept is $0$, equation is $C = 3.5x$."
+        ],
+        "common_pitfalls": "Inverting the rise and run."
+      }
+    },
+    {
+      "subpart": "c ii",
+      "stem": "Hence find the cost of purchasing $10\\text{ kg}$ of tomatoes.",
+      "final_answer": "$\\$35$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Substitute $x = 10$ into $C = 3.5x$"
+        },
+        {
+          "code": "A1",
+          "desc": "State total cost"
+        }
+      ],
+      "solution": "When $x = 10$, $C = 3.5(10) = 35$\n$\\therefore$ purchasing $10\\text{ kg}$ of tomatoes costs $\\$35$.",
+      "ai_explanation": {
+        "concept_rule": "Evaluate linear equation $C = 3.5x$ at $x = 10$.",
+        "step_by_step": [
+          "Substitute $x = 10$ into $C = 3.5x$.",
+          "Calculate $3.5 \\times 10 = 35$."
+        ],
+        "common_pitfalls": "Using the wrong unit or miscalculating simple multiplication."
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "topic_3_q16",
+  "topic_number": 3,
+  "topic_name": "Geometry and Trigonometry",
+  "question_number": 16,
+  "question_text": "Find all unknowns in these figures:",
+  "has_diagram": true,
+  "subparts": [
+    {
+      "subpart": "a",
+      "stem": "",
+      "final_answer": "$Cumulative frequencies: $78, 195, 264, 282, 284$; Total $= 284$$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculating successive running totals of frequencies"
+        },
+        {
+          "code": "A1",
+          "desc": "All cumulative frequencies correctly evaluated"
+        }
+      ],
+      "solution": "\\begin{array}{|c|c|c|}\n\\hline\n\\text{Number of cars} & \\text{Frequency} & \\text{Cumulative frequency} \\\\\n\\hline\n0 & 78 & 78 \\\\\n1 & 117 & 195 \\\\\n2 & 69 & 264 \\\\\n3 & 18 & 282 \\\\\n4 & 2 & 284 \\\\\n\\hline\n\\text{Total} & 284 & \\\\\n\\hline\n\\end{array}",
+      "ai_explanation": {
+        "concept_rule": "Cumulative frequency is found by calculating the running total of frequencies up to each category.",
+        "step_by_step": [
+          "Row 0: $78$",
+          "Row 1: $78 + 117 = 195$",
+          "Row 2: $195 + 69 = 264$",
+          "Row 3: $264 + 18 = 282$",
+          "Row 4: $282 + 2 = 284$",
+          "Total frequency $= 284$."
+        ],
+        "common_pitfalls": "Arithmetic errors when adding subsequent frequencies."
+      }
+    },
+    {
+      "subpart": "b",
+      "stem": "",
+      "final_answer": "$0.485$",
+      "mark_breakdown": [
+        {
+          "code": "M1",
+          "desc": "Calculate side AD using tangent in triangle ACD"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate angle theta in triangle ADE using tangent"
+        },
+        {
+          "code": "M1",
+          "desc": "Calculate length AE and angle EAB"
+        },
+        {
+          "code": "A1",
+          "desc": "Calculate x using cosine in triangle ABE"
+        }
+      ],
+      "solution": "In triangle $ACD$, $\\tan 40^\\circ = \\frac{AD}{8} \\implies AD = 8\\tan 40^\\circ$. In triangle $ADE$, $\\tan\\theta = \\frac{5}{AD} = \\frac{5}{8\\tan 40^\\circ} \\implies \\theta = \\tan^{-1}\\left(\\frac{5}{8\\tan 40^\\circ}\\right) \\approx 36.68^\\circ \\approx 36.7^\\circ$. Also, $\\sin 36.68^\\circ \\approx \\frac{5}{AE} \\implies AE \\approx \\frac{5}{\\sin 36.68^\\circ}$. Now $D\\hat{A}C = 90^\\circ - 40^\\circ = 50^\\circ$ {angles in triangle $ACD$}, so $E\\hat{A}B \\approx 50^\\circ + 36.68^\\circ \\approx 86.68^\\circ$. In triangle $ABE$, $\\cos E\\hat{A}B = \\frac{x}{AE} \\implies \\cos 86.68^\\circ \\approx \\frac{x}{\\frac{5}{\\sin 36.68^\\circ}} \\implies x \\approx \\frac{5\\cos 86.68^\\circ}{\\sin 36.68^\\circ} \\approx 0.485$.",
+      "ai_explanation": {
+        "concept_rule": "Apply trigonometric ratios sequentially across adjacent right-angled triangles sharing common sides.",
+        "step_by_step": [
+          "Find length $AD$ using $\\tan 40^\\circ = \\frac{AD}{8}$.",
+          "Find angle $\\theta$ and hypotenuse $AE$ in $\\triangle ADE$.",
+          "Compute angle $D\\hat{A}C$ and sum it with $\\theta$ to determine angle $E\\hat{A}B$.",
+          "Use $\\cos E\\hat{A}B = \\frac{x}{AE}$ to calculate $x$."
+        ],
+        "common_pitfalls": "Confusing which side is adjacent and opposite for angles measured at vertex $A$ versus other vertices."
+      }
+    }
+  ]
+}
