@@ -23,6 +23,7 @@ function MainApp() {
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [reportModalOpen, setReportModalOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
+  const [isAuditMode, setIsAuditMode] = useState(false);
 
   const [sessionQuestions, setSessionQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -89,9 +90,10 @@ function MainApp() {
     try {
       const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
       const fullTopicData = await res.json();
-      const randomizedSet = generatePracticeSession(fullTopicData, questionCount);
+      const sessionSet = generatePracticeSession(fullTopicData, questionCount);
 
-      setSessionQuestions(randomizedSet);
+      setSessionQuestions(sessionSet);
+      setIsAuditMode(questionCount === 'all');
       setCurrentIndex(0);
       setModalOpen(false);
       setView('practice');
@@ -102,6 +104,7 @@ function MainApp() {
 
   const handleExitPractice = () => {
     setSessionQuestions([]);
+    setIsAuditMode(false);
     setCurrentIndex(0);
     setView('catalog');
   };
@@ -212,6 +215,7 @@ function MainApp() {
         {modalOpen && (
           <SessionLengthModal
             topic={activeTopic}
+            isAdmin={isAdmin}
             onClose={() => setModalOpen(false)}
             onStartSession={handleStartSession}
           />
@@ -237,8 +241,15 @@ function MainApp() {
           </button>
           <div className="border-l border-slate-800 pl-3">
             <div className="text-xs text-slate-400 font-semibold uppercase">Topic {activeTopic?.topic_number}</div>
-            <div className="text-sm font-bold text-white">
-              Question {currentIndex + 1} of {sessionQuestions.length}
+            <div className="text-sm font-bold text-white flex items-center gap-2">
+              <span>
+                Question {currentIndex + 1} of {sessionQuestions.length}
+              </span>
+              {isAuditMode && (
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/30 px-1.5 py-0.5 rounded">
+                  [Audit Mode]
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -270,6 +281,11 @@ function MainApp() {
               <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md">
                 Question {currentIndex + 1}
               </span>
+              {isAuditMode && (
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/15 border border-amber-500/30 px-2 py-0.5 rounded-md">
+                  Sequential Audit
+                </span>
+              )}
 
               {/* Admin Diagnostic Badge & Persistent Issue Reporting Tool */}
               {isAdmin && (
