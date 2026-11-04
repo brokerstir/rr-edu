@@ -26,6 +26,9 @@
 #
 #   5. Inspect entire partition (Profile + Enrollments + Progress):
 #      ./scripts/db_query.sh all "usr_12345"
+#
+#   6. View reported question issues for a course:
+#      ./scripts/db_query.sh issues "ib_math_aa_sl"
 # ==============================================================================
 
 TABLE_NAME="rr-edu-data-dev"
@@ -35,7 +38,7 @@ USER_ID=$2
 COURSE_ID=$3
 
 if [ -z "$COMMAND" ]; then
-  echo "Usage: $0 <users|all|profile|courses|progress> [user_id] [course_id]"
+  echo "Usage: $0 <users|all|profile|courses|progress|issues> [user_id|course_id] [course_id]"
   exit 1
 fi
 
@@ -90,9 +93,32 @@ case $COMMAND in
       --expression-attribute-values "{\":pk\":{\"S\":\"USER#${USER_ID}\"}, \":sk_prefix\":{\"S\":\"${SK_PREFIX}\"}}"
     ;;
 
+  # 6. View reported question issues for a course
+  issues)
+    TARGET_COURSE="${COURSE_ID:-$USER_ID}"
+    if [ -z "$TARGET_COURSE" ]; then
+      echo "Error: course_id required"
+      echo "Usage: $0 issues <course_id>"
+      exit 1
+    fi
+    RAW_RES=$(aws dynamodb query \
+      --table-name "$TABLE_NAME" \
+      --key-condition-expression "PK = :pk" \
+      --expression-attribute-values "{\":pk\":{\"S\":\"ISSUE#${TARGET_COURSE}\"}}")
+
+    if command -v jq >/dev/null 2>&1; then
+      COUNT=$(echo "$RAW_RES" | jq -r '.Count // 0')
+      echo "Found $COUNT issue(s) for course: $TARGET_COURSE"
+      echo "============================================================"
+      echo "$RAW_RES" | jq -r '.Items[] | "Question ID: \(.questionId.S // .SK.S)\nIssue Type:  \(.issueType.S // "N/A")\nStatus:      \(.status.S // "open")\nReported By: \(.reportedBy.S // "Unknown")\nCreated At:  \(.createdAt.S // "N/A")\nNotes:       \(.notes.S // "(no notes)")\n------------------------------------------------------------"'
+    else
+      echo "$RAW_RES"
+    fi
+    ;;
+
   *)
     echo "Unknown command: $COMMAND"
-    echo "Usage: $0 <users|all|profile|courses|progress> [user_id] [course_id]"
+    echo "Usage: $0 <users|all|profile|courses|progress|issues> [user_id|course_id] [course_id]"
     exit 1
     ;;
 esac

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import MathText from './MathText';
 
 export default function SolutionDrawers({ sp }) {

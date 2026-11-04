@@ -364,7 +364,8 @@ resource "aws_iam_role_policy" "cognito_dynamo_policy" {
         Condition = {
           "ForAllValues:StringLike" = {
             "dynamodb:LeadingKeys" = [
-              "USER#*"
+              "USER#*",
+              "ISSUE#*"
             ]
           }
         }

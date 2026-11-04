@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const SESSION_OPTIONS = [
   { label: '3 Questions', count: 3, description: 'Quick sprint for a fast warm-up', icon: '⚡' },

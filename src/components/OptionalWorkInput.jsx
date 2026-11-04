@@ -1,4 +1,4 @@
-import React from 'react';
+
 import MathText from './MathText';
 
 export default function OptionalWorkInput({ value, onChange }) {
