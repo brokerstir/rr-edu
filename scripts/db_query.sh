@@ -29,6 +29,9 @@
 #
 #   6. View reported question issues for a course:
 #      ./scripts/db_query.sh issues "ib_math_aa_sl"
+#
+#   7. View verified audit questions for a course:
+#      ./scripts/db_query.sh verified "ib_math_aa_sl"
 # ==============================================================================
 
 TABLE_NAME="rr-edu-data-dev"
@@ -38,7 +41,7 @@ USER_ID=$2
 COURSE_ID=$3
 
 if [ -z "$COMMAND" ]; then
-  echo "Usage: $0 <users|all|profile|courses|progress|issues> [user_id|course_id] [course_id]"
+  echo "Usage: $0 <users|all|profile|courses|progress|issues|verified> [user_id|course_id] [course_id]"
   exit 1
 fi
 
@@ -116,9 +119,32 @@ case $COMMAND in
     fi
     ;;
 
+  # 7. View verified audit questions for a course
+  verified)
+    TARGET_COURSE="${COURSE_ID:-$USER_ID}"
+    if [ -z "$TARGET_COURSE" ]; then
+      echo "Error: course_id required"
+      echo "Usage: $0 verified <course_id>"
+      exit 1
+    fi
+    RAW_RES=$(aws dynamodb query \
+      --table-name "$TABLE_NAME" \
+      --key-condition-expression "PK = :pk" \
+      --expression-attribute-values "{\":pk\":{\"S\":\"AUDIT#${TARGET_COURSE}\"}}")
+
+    if command -v jq >/dev/null 2>&1; then
+      COUNT=$(echo "$RAW_RES" | jq -r '.Count // 0')
+      echo "Found $COUNT verified question(s) for course: $TARGET_COURSE"
+      echo "============================================================"
+      echo "$RAW_RES" | jq -r '.Items[] | "Question ID: \(.questionId.S // .SK.S)\nTopic:       \(.topicId.S // "N/A")\nStatus:      \(.status.S // "verified")\nVerified By: \(.verifiedBy.S // "Unknown")\nVerified At: \(.verifiedAt.S // "N/A")\n------------------------------------------------------------"'
+    else
+      echo "$RAW_RES"
+    fi
+    ;;
+
   *)
     echo "Unknown command: $COMMAND"
-    echo "Usage: $0 <users|all|profile|courses|progress|issues> [user_id|course_id] [course_id]"
+    echo "Usage: $0 <users|all|profile|courses|progress|issues|verified> [user_id|course_id] [course_id]"
     exit 1
     ;;
 esac
