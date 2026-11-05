@@ -5,6 +5,7 @@
   "question_number": 5,
   "question_text": "Use your calculator to evaluate the following, giving your answer in scientific notation:",
   "has_diagram": false,
+  "verified": true,
   "calculator": true,
   "subparts": [
     {
