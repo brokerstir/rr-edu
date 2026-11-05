@@ -5,6 +5,7 @@
   "question_number": 30,
   "question_text": "",
   "has_diagram": false,
+  "calculator": true,
   "subparts": [
     {
       "subpart": "a",

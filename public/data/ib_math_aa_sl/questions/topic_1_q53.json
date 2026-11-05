@@ -5,6 +5,7 @@
   "question_number": 53,
   "question_text": "The population of kangaroos on an island is given by $K(t) = 3200 \\times (0.85)^t$, where $t$ is the time in years.",
   "has_diagram": false,
+  "calculator": true,
   "subparts": [
     {
       "subpart": "a",
