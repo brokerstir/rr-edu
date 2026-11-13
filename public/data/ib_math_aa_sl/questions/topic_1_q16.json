@@ -5,6 +5,7 @@
   "question_number": 16,
   "question_text": "The first term of a finite arithmetic series is 18 and the sum of the series is $-210$. The common difference is $-3$. Suppose there are $n$ terms in the series.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

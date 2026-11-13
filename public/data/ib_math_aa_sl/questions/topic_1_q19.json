@@ -5,6 +5,7 @@
   "question_number": 19,
   "question_text": "Kapil invested 2000 rupees in a bank account on January 1st 2012. The account pays 8.25% per annum compounded annually.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

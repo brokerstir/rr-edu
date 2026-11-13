@@ -5,6 +5,7 @@
   "question_number": 23,
   "question_text": "Find $x$ if $\\sum_{k=1}^\\infty \\left(\\frac{4x}{3}\\right)^{k-1} = \\frac{5}{2}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

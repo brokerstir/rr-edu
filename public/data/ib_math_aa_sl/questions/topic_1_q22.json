@@ -5,6 +5,7 @@
   "question_number": 22,
   "question_text": "Consider the series $\\sum_{k=1}^\\infty 12(x - 2)^{k-1}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

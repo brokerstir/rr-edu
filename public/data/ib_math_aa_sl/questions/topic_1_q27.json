@@ -5,6 +5,7 @@
   "question_number": 27,
   "question_text": "If $(a + bx)^n = 1 - 12x + 54x^2 - \\dots$, $a > 0$, $n \\in \\mathbb{Z}^+$, find the values of $a$, $b$, and $n$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

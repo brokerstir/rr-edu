@@ -5,6 +5,7 @@
   "question_number": 24,
   "question_text": "Write using factorial notation:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
