@@ -5,6 +5,7 @@
   "question_number": 40,
   "question_text": "Find $x$ in terms of $a$ if $a > 1$ and $\\log_a(x + 2) = \\log_a x + 2$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",
