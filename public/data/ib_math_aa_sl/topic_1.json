@@ -6,6 +6,7 @@
     "question_number": 1,
     "question_text": "Write without brackets:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -99,6 +100,7 @@
     "question_number": 2,
     "question_text": "Simplify:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -183,6 +185,7 @@
     "question_number": 3,
     "question_text": "Expand the brackets and write in simplest form:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -247,6 +250,7 @@
     "question_number": 4,
     "question_text": "Write without negative exponents:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -333,6 +337,8 @@
     "question_number": 5,
     "question_text": "Use your calculator to evaluate the following, giving your answer in scientific notation:",
     "has_diagram": false,
+    "verified": true,
+    "calculator": true,
     "subparts": [
       {
         "subpart": "a",
@@ -418,6 +424,7 @@
     "question_number": 6,
     "question_text": "The fluoride concentration of lakes in a particular region was found to be $3 \\times 10^{-4}\\text{ g per litre}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -480,6 +487,7 @@
     "question_number": 7,
     "question_text": "Find $k$ given the consecutive arithmetic terms:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -578,6 +586,7 @@
     "question_number": 8,
     "question_text": "An empty hamster cage has mass $800\\text{ g}$. When 5 hamsters are placed in the cage, the total mass is $1400\\text{ g}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -637,6 +646,7 @@
     "question_number": 9,
     "question_text": "Find the general term $u_n$ of the geometric sequence which has:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -716,6 +726,8 @@
     "question_number": 10,
     "question_text": "Consider the sequence $2, 2\\sqrt{3}, 6, 6\\sqrt{3}, \\dots$",
     "has_diagram": false,
+    "verified": true,
+    "calculator": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1013,6 +1025,7 @@
     "question_number": 13,
     "question_text": "A television was purchased for £2000, and depreciates at $30\\%$ p.a. for 3 years.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1074,6 +1087,7 @@
     "question_number": 14,
     "question_text": "Find the sum of:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1300,6 +1314,7 @@
     "question_number": 16,
     "question_text": "The first term of a finite arithmetic series is 18 and the sum of the series is $-210$. The common difference is $-3$. Suppose there are $n$ terms in the series.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1516,6 +1531,7 @@
     "question_number": 19,
     "question_text": "Kapil invested 2000 rupees in a bank account on January 1st 2012. The account pays 8.25% per annum compounded annually.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1579,7 +1595,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 20,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -1720,7 +1736,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 21,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -1786,6 +1802,7 @@
     "question_number": 22,
     "question_text": "Consider the series $\\sum_{k=1}^\\infty 12(x - 2)^{k-1}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1851,6 +1868,7 @@
     "question_number": 23,
     "question_text": "Find $x$ if $\\sum_{k=1}^\\infty \\left(\\frac{4x}{3}\\right)^{k-1} = \\frac{5}{2}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -1892,6 +1910,7 @@
     "question_number": 24,
     "question_text": "Write using factorial notation:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1952,7 +1971,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 25,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -2061,7 +2080,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 26,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -2143,6 +2162,7 @@
     "question_number": 27,
     "question_text": "If $(a + bx)^n = 1 - 12x + 54x^2 - \\dots$, $a > 0$, $n \\in \\mathbb{Z}^+$, find the values of $a$, $b$, and $n$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -2243,6 +2263,7 @@
     "question_number": 29,
     "question_text": "Find the coefficient of $x^5$ in the expansion of $(x + 2)(1 - x)^{10}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -2280,8 +2301,9 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 30,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
+    "calculator": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2362,7 +2384,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 31,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -2421,7 +2443,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 32,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -2502,6 +2524,7 @@
     "question_number": 33,
     "question_text": "Without using a calculator, write in simplest rational form:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2673,6 +2696,7 @@
     "question_number": 35,
     "question_text": "Factorise:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2758,6 +2782,7 @@
     "question_number": 36,
     "question_text": "Solve for $x$:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2961,6 +2986,7 @@
     "question_number": 38,
     "question_text": "Find:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3153,6 +3179,7 @@
     "question_number": 40,
     "question_text": "Find $x$ in terms of $a$ if $a > 1$ and $\\log_a(x + 2) = \\log_a x + 2$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -4285,6 +4312,7 @@
     "question_number": 53,
     "question_text": "The population of kangaroos on an island is given by $K(t) = 3200 \\times (0.85)^t$, where $t$ is the time in years.",
     "has_diagram": false,
+    "calculator": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4400,6 +4428,7 @@
     "question_number": 54,
     "question_text": "State, with justification, whether each statement is true or false:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4487,6 +4516,7 @@
     "question_number": 55,
     "question_text": "Prove that the sum of three consecutive odd integers is divisible by 3.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "none",
@@ -4570,7 +4600,7 @@
     "topic_number": 1,
     "topic_name": "Number and Algebra",
     "question_number": 57,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {
@@ -4641,6 +4671,7 @@
     "question_number": 58,
     "question_text": "Suppose $x, y, z > 0$. Show that $xyz = 1 \\Leftrightarrow \\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "none",

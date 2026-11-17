@@ -452,7 +452,11 @@ function MainApp() {
           </div>
 
           <div className="text-lg font-medium text-white leading-relaxed">
-            <MathText text={currentQ?.question_text} />
+            {currentQ?.question_text && (
+              <div className="text-lg font-medium text-white leading-relaxed">
+                <MathText key={currentQ?.id} text={currentQ.question_text} />
+              </div>
+            )}
           </div>
 
           {(currentQ?.diagram_url || currentQ?.diagram || currentQ?.image || currentQ?.diagram_file) && (
