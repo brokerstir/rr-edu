@@ -5,6 +5,7 @@
   "question_number": 29,
   "question_text": "Find the coefficient of $x^5$ in the expansion of $(x + 2)(1 - x)^{10}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

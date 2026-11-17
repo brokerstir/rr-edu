@@ -355,6 +355,7 @@ resource "aws_iam_role_policy" "cognito_dynamo_policy" {
           "dynamodb:GetItem",
           "dynamodb:PutItem",
           "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem",
           "dynamodb:Query"
         ]
         Resource = [
@@ -364,7 +365,9 @@ resource "aws_iam_role_policy" "cognito_dynamo_policy" {
         Condition = {
           "ForAllValues:StringLike" = {
             "dynamodb:LeadingKeys" = [
-              "USER#*"
+              "USER#*",
+              "ISSUE#*",
+              "AUDIT#*"
             ]
           }
         }

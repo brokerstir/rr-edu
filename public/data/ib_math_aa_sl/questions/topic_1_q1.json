@@ -5,6 +5,7 @@
   "question_number": 1,
   "question_text": "Write without brackets:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

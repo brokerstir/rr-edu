@@ -5,6 +5,7 @@
   "question_number": 9,
   "question_text": "Find the general term $u_n$ of the geometric sequence which has:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

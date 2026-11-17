@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
 
-export default function SubpartCard({ sp, resolveDiagramUrl }) {
+export default function SubpartCard({ sp, resolveDiagramUrl, isAdmin = false }) {
   const [userInput, setUserInput] = useState('');
   const [isRevealed, setIsRevealed] = useState(false);
   const [gradeStatus, setGradeStatus] = useState(null); // 'correct' | 'incorrect' | null
@@ -22,7 +22,14 @@ export default function SubpartCard({ sp, resolveDiagramUrl }) {
 
       {/* Subpart Diagram */}
       {subpartImage && (
-        <div className="my-3 flex justify-center p-2 bg-slate-900 rounded-lg border border-slate-800">
+        <div className="my-3 flex flex-col items-center justify-center p-2 bg-slate-900 rounded-lg border border-slate-800 gap-1.5">
+          {isAdmin && (
+            <div className="w-full flex justify-end">
+              <span className="text-[10px] font-mono text-amber-400/90 bg-amber-950/70 border border-amber-800/60 px-2 py-0.5 rounded">
+                Subpart Diagram: {subpartImage.split('/').pop()}
+              </span>
+            </div>
+          )}
           <img
             src={resolveDiagramUrl ? resolveDiagramUrl(subpartImage) : subpartImage}
             alt={`Diagram for subpart ${sp.subpart || ''}`}

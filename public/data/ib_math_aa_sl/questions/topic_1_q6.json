@@ -5,6 +5,7 @@
   "question_number": 6,
   "question_text": "The fluoride concentration of lakes in a particular region was found to be $3 \\times 10^{-4}\\text{ g per litre}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

@@ -5,6 +5,7 @@
   "question_number": 7,
   "question_text": "Find $k$ given the consecutive arithmetic terms:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

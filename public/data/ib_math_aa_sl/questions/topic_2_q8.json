@@ -5,6 +5,7 @@
   "question_number": 8,
   "question_text": "Use technology to solve:",
   "has_diagram": false,
+  "calculator": true,
   "subparts": [
     {
       "subpart": "a",

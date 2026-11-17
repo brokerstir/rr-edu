@@ -5,6 +5,7 @@
   "question_number": 58,
   "question_text": "Suppose $x, y, z > 0$. Show that $xyz = 1 \\Leftrightarrow \\frac{x}{y} + \\frac{y}{z} + \\frac{z}{x} = x^2z + y^2x + z^2y$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "none",

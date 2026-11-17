@@ -5,6 +5,7 @@
   "question_number": 14,
   "question_text": "Find the sum of:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

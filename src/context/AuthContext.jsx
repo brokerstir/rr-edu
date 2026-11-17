@@ -1,4 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react-hooks/set-state-in-effect */
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { Hub } from 'aws-amplify/utils';
 import {
@@ -9,6 +10,7 @@ import {
   signOutUser,
   formatAuthError
 } from '../services/auth';
+import { syncUserProfile } from '../services/dbService';
 
 const AuthContext = createContext(null);
 
@@ -19,8 +21,23 @@ export function AuthProvider({ children }) {
   const checkUser = useCallback(async () => {
     try {
       const userData = await getCurrentAuthUser();
-      setUser(userData);
-      return userData;
+      if (userData) {
+        let profile = null;
+        try {
+          profile = await syncUserProfile(userData);
+        } catch (syncErr) {
+          console.warn('Could not sync user profile in checkUser:', syncErr);
+        }
+        const enrichedUser = {
+          ...userData,
+          role: profile?.role || 'student',
+          tier: profile?.tier || 'free'
+        };
+        setUser(enrichedUser);
+        return enrichedUser;
+      }
+      setUser(null);
+      return null;
     } catch {
       setUser(null);
       return null;
@@ -31,19 +48,9 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     let ignore = false;
-    getCurrentAuthUser()
-      .then((userData) => {
-        if (!ignore) {
-          setUser(userData);
-          setLoading(false);
-        }
-      })
-      .catch(() => {
-        if (!ignore) {
-          setUser(null);
-          setLoading(false);
-        }
-      });
+    checkUser().then(() => {
+      if (ignore) return;
+    });
 
     // Listen for auth state events from Amplify Hub
     const unsubscribe = Hub.listen('auth', ({ payload }) => {
@@ -75,7 +82,19 @@ export function AuthProvider({ children }) {
   const handleVerifyOtp = async (code, email) => {
     const verifiedUser = await submitOtpCode(code, email);
     if (verifiedUser) {
-      setUser(verifiedUser);
+      let profile = null;
+      try {
+        profile = await syncUserProfile(verifiedUser);
+      } catch (syncErr) {
+        console.warn('Could not sync profile upon verifyOtp:', syncErr);
+      }
+      const enrichedUser = {
+        ...verifiedUser,
+        role: profile?.role || 'student',
+        tier: profile?.tier || 'free'
+      };
+      setUser(enrichedUser);
+      return enrichedUser;
     }
     return verifiedUser;
   };
@@ -117,10 +136,13 @@ export function AuthProvider({ children }) {
     setUser(null);
   };
 
+  const isAdmin = Boolean(user && user.role === 'admin');
+
   return (
     <AuthContext.Provider
       value={{
         user,
+        isAdmin,
         loading,
         sendOtp: handleSendOtp,
         verifyOtp: handleVerifyOtp,

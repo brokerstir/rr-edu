@@ -5,6 +5,7 @@
   "question_number": 55,
   "question_text": "Prove that the sum of three consecutive odd integers is divisible by 3.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "none",
