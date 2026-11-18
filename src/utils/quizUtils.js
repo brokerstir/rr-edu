@@ -3,16 +3,16 @@
  * Randomly shuffles and slices questions for a practice session,
  * or preserves original sequential order for admin audit sessions.
  * 
- * @param {Array} allQuestions - Full question list from topic_N.json
- * @param {number|string} count - Desired set size (3, 5, 10, or 'all')
+ * @param {Array} questions - Full question list from topic_N.json
+ * @param {number|string} questionCount - Desired set size (3, 5, or 'all')
  * @returns {Array} Ordered or shuffled subset of questions
  */
-export function generatePracticeSession(allQuestions, count) {
-  if (!allQuestions || allQuestions.length === 0) return [];
+export function generatePracticeSession(questions, questionCount) {
+  if (!questions || questions.length === 0) return [];
 
-  // Admin Audit Mode: bypass random shuffle and retain sequential order
-  if (count === 'all' || count === Infinity) {
-    return [...allQuestions].sort((a, b) => {
+  // Admin Audit Mode: bypass random shuffle and retain sequential order unfiltered
+  if (questionCount === 'all' || questionCount === Infinity) {
+    return [...questions].sort((a, b) => {
       const numA = Number(a.question_number ?? a.number ?? 0);
       const numB = Number(b.question_number ?? b.number ?? 0);
       if (numA && numB && numA !== numB) {
@@ -22,8 +22,13 @@ export function generatePracticeSession(allQuestions, count) {
     });
   }
 
+  // Standard Practice Session: only include verified questions without calculator requirement
+  const eligibleQuestions = questions.filter(
+    (q) => q && q.verified === true && q.calculator !== true
+  );
+
   // Create a shallow copy to prevent mutating the source bundle
-  const shuffled = [...allQuestions];
+  const shuffled = [...eligibleQuestions];
 
   // Fixed Fisher-Yates Shuffle
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -33,9 +38,9 @@ export function generatePracticeSession(allQuestions, count) {
     shuffled[j] = temp;
   }
 
-  if (count <= 0 || count >= shuffled.length) {
+  if (questionCount <= 0 || questionCount >= shuffled.length) {
     return shuffled;
   }
 
-  return shuffled.slice(0, count);
+  return shuffled.slice(0, questionCount);
 }

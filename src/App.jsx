@@ -36,6 +36,61 @@ function MainApp() {
 
   const [sessionQuestions, setSessionQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [subpartResults, setSubpartResults] = useState({});
+  const [sessionAttemptId, setSessionAttemptId] = useState(() => (
+    typeof crypto !== 'undefined' && crypto.randomUUID
+      ? crypto.randomUUID()
+      : Date.now().toString()
+  ));
+
+  const currentQ = sessionQuestions[currentIndex];
+  const currentQId = currentQ?.id;
+
+  // Reset subpart results and generate new sessionAttemptId whenever active question changes
+  useEffect(() => {
+    setSubpartResults({});
+    setSessionAttemptId(
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : Date.now().toString()
+    );
+  }, [currentQId]);
+
+  const handleSubpartResult = useCallback(
+    (subKey, status) => {
+      setSubpartResults((prev) => {
+        const next = { ...prev };
+        if (status === null || status === undefined) {
+          delete next[subKey];
+        } else {
+          next[subKey] = status;
+        }
+        return next;
+      });
+
+      if ((status === 'correct' || status === 'incorrect') && user && currentQ) {
+        const nextMap = { ...subpartResults };
+        nextMap[subKey] = status;
+
+        const totalSubparts = currentQ.subparts?.length || 1;
+        const correctCount = Object.values(nextMap).filter((st) => st === 'correct').length;
+        const score = Math.round((correctCount / totalSubparts) * 100);
+
+        saveQuestionAttempt({
+          userId: resolveUserId(user),
+          courseId: selectedCourse?.id || 'ib_math_aa_sl',
+          topicId: activeTopic?.topic_number,
+          questionId: currentQ.id,
+          sessionAttemptId,
+          mode: 'self',
+          result: 'completed',
+          score,
+          subpartResults: nextMap
+        });
+      }
+    },
+    [user, currentQ, selectedCourse?.id, activeTopic?.topic_number, sessionAttemptId, subpartResults]
+  );
 
   const showToast = useCallback((msg) => {
     setToastMessage(msg);
@@ -297,7 +352,6 @@ function MainApp() {
                         Topic {t.topic_number}
                       </span>
                       <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
-                      <p className="text-xs text-slate-400">{t.question_count} Skill Builder Questions</p>
                     </div>
                     <button
                       onClick={() => handleTopicClick(t)}
@@ -330,8 +384,6 @@ function MainApp() {
   }
 
   // 3. Practice Engine View
-  const currentQ = sessionQuestions[currentIndex];
-
   return (
     <div className="min-h-screen flex flex-col text-slate-100">
       <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
@@ -479,6 +531,7 @@ function MainApp() {
                   subKey={subKey}
                   resolveDiagramUrl={resolveDiagramUrl}
                   isAdmin={isAdmin}
+                  onSubpartResult={handleSubpartResult}
                 />
               );
             })}
@@ -495,25 +548,24 @@ function MainApp() {
           >
             ← Previous Question
           </button>
-          <button
-            disabled={currentIndex === sessionQuestions.length - 1}
-            onClick={() => {
-              if (user && currentQ) {
-                saveQuestionAttempt({
-                  userId: resolveUserId(user),
-                  courseId: selectedCourse?.id || 'ib_math_aa_sl',
-                  questionId: currentQ.id,
-                  mode: 'self',
-                  result: 'completed'
-                });
-              }
-              setCurrentIndex(i => i + 1);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="flex-1 py-3 px-4 bg-indigo-600 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg"
-          >
-            Next Question →
-          </button>
+          {currentIndex === sessionQuestions.length - 1 ? (
+            <button
+              onClick={handleExitPractice}
+              className="flex-1 py-3 px-4 bg-emerald-600 hover:bg-emerald-500 border border-emerald-500 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
+            >
+              Finish Session ✓
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                setCurrentIndex(i => i + 1);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex-1 py-3 px-4 bg-indigo-600 hover:bg-indigo-500 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
+            >
+              Next Question →
+            </button>
+          )}
         </div>
       </footer>
 

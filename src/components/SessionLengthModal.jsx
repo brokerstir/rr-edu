@@ -4,8 +4,7 @@ import { useAuth } from '../context/AuthContext';
 
 const DEFAULT_OPTIONS = [
   { label: '3 Questions', count: 3, description: 'Quick sprint for a fast warm-up', icon: '⚡' },
-  { label: '5 Questions', count: 5, description: 'Standard balanced practice set', icon: '🎯' },
-  { label: '10 Questions', count: 10, description: 'Deep focus drill for test prep', icon: '🔥' }
+  { label: '5 Questions', count: 5, description: 'Standard balanced practice set', icon: '🎯' }
 ];
 
 const ADMIN_OPTION = {

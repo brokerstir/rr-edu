@@ -152,9 +152,6 @@ export default function CourseCatalog({ onSelectCourse, onBackToLanding, user: u
               </div>
 
               <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
-                <span className="text-xs text-slate-400 font-medium">
-                  {c.questionCount} Questions
-                </span>
                 
                 {isUnlocked ? (
                   isEnrolled ? (
