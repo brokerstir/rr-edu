@@ -570,6 +570,7 @@
     "question_number": 8,
     "question_text": "Use technology to solve:",
     "has_diagram": false,
+    "calculator": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4631,7 +4632,7 @@
     "topic_number": 2,
     "topic_name": "Functions",
     "question_number": 54,
-    "question_text": "",
+    "question_text": "Solve the following as stated below:",
     "has_diagram": false,
     "subparts": [
       {

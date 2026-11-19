@@ -23,7 +23,11 @@ async function getDbClient() {
     }
   });
 
-  return DynamoDBDocumentClient.from(client);
+  return DynamoDBDocumentClient.from(client, {
+    marshallOptions: {
+      removeUndefinedValues: true
+    }
+  });
 }
 
 /**
@@ -109,8 +113,19 @@ export async function syncUserProfile(user) {
 
 /**
  * Record a question attempt (supports self-graded & auto-graded history)
+ * Supports idempotent updates within the same question pass via sessionAttemptId.
  */
-export async function saveQuestionAttempt({ userId, courseId, questionId, mode, result, score }) {
+export async function saveQuestionAttempt({
+  userId,
+  courseId,
+  topicId,
+  questionId,
+  sessionAttemptId,
+  mode,
+  result,
+  score,
+  subpartResults
+}) {
   try {
     const db = await getDbClient();
     const resolvedUserId = resolveUserId(userId);
@@ -122,22 +137,68 @@ export async function saveQuestionAttempt({ userId, courseId, questionId, mode, 
     const sk = `PROGRESS#${courseId}#${questionId}`;
 
     // Get current record if exists
-    const existing = await db.send(new GetCommand({
-      TableName: TABLE_NAME,
-      Key: { PK: `USER#${resolvedUserId}`, SK: sk }
-    }));
+    let existingItem = null;
+    try {
+      const existing = await db.send(new GetCommand({
+        TableName: TABLE_NAME,
+        Key: { PK: `USER#${resolvedUserId}`, SK: sk }
+      }));
+      existingItem = existing.Item || null;
+    } catch (fetchErr) {
+      console.warn('Could not read existing progress item before save:', fetchErr);
+    }
 
-    const history = existing.Item?.history || [];
-    history.push({ timestamp, mode, result, score });
+    const history = [...(existingItem?.history || [])];
+    const isSkipped = result === 'skipped';
+
+    let existingAttemptIndex = -1;
+    if (sessionAttemptId) {
+      existingAttemptIndex = history.findIndex(
+        (entry) => entry && entry.sessionAttemptId === sessionAttemptId
+      );
+    }
+
+    let attemptCount = existingItem?.attemptCount || 0;
+
+    if (existingAttemptIndex >= 0) {
+      // Update existing attempt entry in place without incrementing attemptCount
+      history[existingAttemptIndex] = {
+        ...history[existingAttemptIndex],
+        timestamp,
+        mode: mode || history[existingAttemptIndex].mode,
+        result,
+        score,
+        subpartResults
+      };
+    } else {
+      // Append new attempt entry
+      history.push({
+        sessionAttemptId,
+        timestamp,
+        mode,
+        result,
+        score,
+        subpartResults
+      });
+      if (!isSkipped) {
+        attemptCount += 1;
+      }
+    }
+
+    const latestResult = !isSkipped ? result : existingItem?.latestResult;
+    const latestScore = !isSkipped ? score : existingItem?.latestScore;
+    const lastAttemptAt = !isSkipped ? timestamp : (existingItem?.lastAttemptAt || timestamp);
 
     const item = {
       PK: `USER#${resolvedUserId}`,
       SK: sk,
       courseId,
       questionId,
-      attemptCount: (existing.Item?.attemptCount || 0) + 1,
-      lastAttemptAt: timestamp,
-      latestResult: result,
+      topicId: topicId !== undefined ? topicId : existingItem?.topicId,
+      attemptCount,
+      lastAttemptAt,
+      latestResult,
+      latestScore,
       history
     };
 

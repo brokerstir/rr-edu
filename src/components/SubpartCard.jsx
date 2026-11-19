@@ -3,7 +3,7 @@ import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
 
-export default function SubpartCard({ sp, resolveDiagramUrl, isAdmin = false }) {
+export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = false, onSubpartResult }) {
   const [userInput, setUserInput] = useState('');
   const [isRevealed, setIsRevealed] = useState(false);
   const [gradeStatus, setGradeStatus] = useState(null); // 'correct' | 'incorrect' | null
@@ -47,7 +47,10 @@ export default function SubpartCard({ sp, resolveDiagramUrl, isAdmin = false }) 
           />
           <div className="flex justify-end">
             <button
-              onClick={() => setIsRevealed(true)}
+              onClick={() => {
+                setIsRevealed(true);
+                if (onSubpartResult) onSubpartResult(subKey, 'revealed');
+              }}
               className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-semibold text-sm rounded-xl transition-all shadow-md shadow-indigo-600/20"
             >
               Check Answer
@@ -73,13 +76,19 @@ export default function SubpartCard({ sp, resolveDiagramUrl, isAdmin = false }) 
               </div>
               <div className="flex gap-2">
                 <button
-                  onClick={() => setGradeStatus('correct')}
+                  onClick={() => {
+                    setGradeStatus('correct');
+                    if (onSubpartResult) onSubpartResult(subKey, 'correct');
+                  }}
                   className="flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs rounded-lg transition-colors shadow-md shadow-emerald-600/20"
                 >
                   🟩 Got It Right
                 </button>
                 <button
-                  onClick={() => setGradeStatus('incorrect')}
+                  onClick={() => {
+                    setGradeStatus('incorrect');
+                    if (onSubpartResult) onSubpartResult(subKey, 'incorrect');
+                  }}
                   className="flex-1 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-semibold text-xs rounded-lg transition-colors shadow-md shadow-rose-600/20"
                 >
                   🟥 Got It Wrong
@@ -92,7 +101,11 @@ export default function SubpartCard({ sp, resolveDiagramUrl, isAdmin = false }) 
                 {gradeStatus === 'correct' ? '🟩 Marked as Correct' : '🟥 Marked as Incorrect'}
               </span>
               <button
-                onClick={() => { setGradeStatus(null); setIsRevealed(false); }}
+                onClick={() => {
+                  setGradeStatus(null);
+                  setIsRevealed(false);
+                  if (onSubpartResult) onSubpartResult(subKey, null);
+                }}
                 className="text-xs text-slate-400 hover:text-white underline"
               >
                 Reset

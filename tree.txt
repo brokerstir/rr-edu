@@ -1,10 +1,10 @@
-find . -maxdepth 3 -not -path '*/.*' | sort > tree.txt
 .
+./changelog.md
 ./dist
 ./dist/assets
-./dist/assets/index-BNf2IO7b.css
-./dist/assets/index-DLXusHVf.js
-./dist/assets/index.browser-DCX2nmhX.js
+./dist/assets/index-BpzYgPQY.js
+./dist/assets/index-DZ0tnvJf.css
+./dist/assets/index.browser-CXy-dIOx.js
 ./dist/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2
 ./dist/assets/KaTeX_AMS-Regular-DMm9YOAa.woff
 ./dist/assets/KaTeX_AMS-Regular-DRggAlZN.ttf
@@ -1922,7 +1922,9 @@ find . -maxdepth 3 -not -path '*/.*' | sort > tree.txt
 ./scripts/repair_missing_questions.py
 ./scripts/repair_topic_2.py
 ./scripts/requirements.txt
+./scripts/set_calculator.py
 ./scripts/sync_topic_bundles.py
+./scripts/sync_verified_to_files.py
 ./scripts/test_merge_logic.py
 ./src
 ./src/amplifyconfiguration.json
@@ -1939,6 +1941,7 @@ find . -maxdepth 3 -not -path '*/.*' | sort > tree.txt
 ./src/components/LandingPage.jsx
 ./src/components/MathText.jsx
 ./src/components/OptionalWorkInput.jsx
+./src/components/ReportIssueModal.jsx
 ./src/components/SessionLengthModal.jsx
 ./src/components/SolutionDrawers.jsx
 ./src/components/SubpartCard.jsx
