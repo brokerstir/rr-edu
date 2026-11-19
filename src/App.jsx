@@ -7,6 +7,7 @@ import AuthModal from './components/AuthModal';
 import ReportIssueModal from './components/ReportIssueModal';
 import LandingPage from './components/LandingPage';
 import CourseCatalog from './components/CourseCatalog';
+import TopicAnalyticsView from './components/TopicAnalyticsView';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { generatePracticeSession } from './utils/quizUtils';
 import {
@@ -14,7 +15,8 @@ import {
   resolveUserId,
   verifyQuestion,
   unverifyQuestion,
-  getVerifiedQuestions
+  getVerifiedQuestions,
+  fetchCourseProgress
 } from './services/dbService';
 
 function MainApp() {
@@ -26,6 +28,9 @@ function MainApp() {
 
   const [topics, setTopics] = useState([]);
   const [activeTopic, setActiveTopic] = useState(null);
+  const [analyticsTopic, setAnalyticsTopic] = useState(null);
+  const [courseProgress, setCourseProgress] = useState([]);
+  const [topicBundleCache, setTopicBundleCache] = useState({});
   const [modalOpen, setModalOpen] = useState(false);
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [reportModalOpen, setReportModalOpen] = useState(false);
@@ -122,6 +127,25 @@ function MainApp() {
       ignore = true;
     };
   }, [selectedCourse]);
+
+  // Load course progress for the current user and selected course
+  const refreshProgress = useCallback(async () => {
+    if (!user || !selectedCourse?.id) {
+      setCourseProgress([]);
+      return;
+    }
+    try {
+      const items = await fetchCourseProgress(user, selectedCourse.id);
+      setCourseProgress(items || []);
+    } catch (err) {
+      console.warn('Error fetching course progress:', err);
+      setCourseProgress([]);
+    }
+  }, [user, selectedCourse]);
+
+  useEffect(() => {
+    refreshProgress();
+  }, [refreshProgress]);
 
   // Diagram & image URL resolution to ./data/<course_id>/questions/<image_file>
   const resolveDiagramUrl = (imageFile) => {
@@ -243,14 +267,19 @@ function MainApp() {
   const handleStartSession = async (questionCount) => {
     if (!activeTopic || !selectedCourse) return;
     try {
-      const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
-      const fullTopicData = await res.json();
+      let fullTopicData = topicBundleCache[activeTopic.topic_number];
+      if (!fullTopicData) {
+        const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
+        fullTopicData = await res.json();
+        setTopicBundleCache((prev) => ({ ...prev, [activeTopic.topic_number]: fullTopicData }));
+      }
       const sessionSet = generatePracticeSession(fullTopicData, questionCount);
 
       setSessionQuestions(sessionSet);
       setIsAuditMode(questionCount === 'all');
       setCurrentIndex(0);
       setModalOpen(false);
+      setAnalyticsTopic(null);
       setView('practice');
     } catch (err) {
       console.error("Error loading practice bundle:", err);
@@ -262,6 +291,83 @@ function MainApp() {
     setIsAuditMode(false);
     setCurrentIndex(0);
     setView('catalog');
+    refreshProgress();
+  };
+
+  const handleOpenAnalytics = async (topic) => {
+    setActiveTopic(topic);
+    setAnalyticsTopic(topic);
+    if (!topicBundleCache[topic.topic_number] && selectedCourse?.id) {
+      try {
+        const res = await fetch(`./data/${selectedCourse.id}/topic_${topic.topic_number}.json`);
+        const data = await res.json();
+        setTopicBundleCache((prev) => ({ ...prev, [topic.topic_number]: data }));
+      } catch (err) {
+        console.error('Error loading topic questions for analytics:', err);
+      }
+    }
+  };
+
+  const handleLaunchQuestion = async (targetQuestion, targetIndex) => {
+    if (!activeTopic || !selectedCourse) return;
+    try {
+      let fullTopicData = topicBundleCache[activeTopic.topic_number];
+      if (!fullTopicData) {
+        const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
+        fullTopicData = await res.json();
+        setTopicBundleCache((prev) => ({ ...prev, [activeTopic.topic_number]: fullTopicData }));
+      }
+
+      const qIndex = fullTopicData.findIndex(
+        (q) => String(q.id || q.question_number || '') === String(targetQuestion?.id || targetQuestion?.question_number || '')
+      );
+      const startIdx = qIndex >= 0 ? qIndex : (targetIndex >= 0 ? targetIndex : 0);
+
+      setSessionQuestions(fullTopicData);
+      setIsAuditMode(false);
+      setCurrentIndex(startIdx);
+      setAnalyticsTopic(null);
+      setView('practice');
+    } catch (err) {
+      console.error('Error launching question from analytics:', err);
+    }
+  };
+
+  const getTopicProgressStats = (topicNumber, questionCount) => {
+    const topicItems = courseProgress.filter(
+      (item) => String(item.topicId) === String(topicNumber)
+    );
+    const gradedItems = topicItems.filter((item) => {
+      const hasGradedHist = (item.history || []).some(
+        (h) => h && h.result !== 'skipped' && typeof h.score === 'number'
+      );
+      return (
+        hasGradedHist ||
+        (typeof item.latestScore === 'number' && item.latestResult !== 'skipped')
+      );
+    });
+
+    const attemptedCount = gradedItems.length;
+    if (attemptedCount === 0) return null;
+
+    const totalQuestions = questionCount || 0;
+    const sumScore = gradedItems.reduce((acc, item) => {
+      let score = item.latestScore;
+      if (typeof score !== 'number') {
+        const lastGraded = [...(item.history || [])]
+          .reverse()
+          .find((h) => h && h.result !== 'skipped' && typeof h.score === 'number');
+        score = lastGraded ? lastGraded.score : 0;
+      }
+      return acc + score;
+    }, 0);
+    const averageLatestScore = Math.round(sumScore / attemptedCount);
+
+    return {
+      attemptedCount,
+      totalQuestions,
+      averageLatestScore
+    };
   };
 
   // 1. Landing View
@@ -320,15 +426,32 @@ function MainApp() {
         {!selectedCourse ? (
           <CourseCatalog
             user={user}
-            onSelectCourse={(course) => setSelectedCourse(course)}
+            onSelectCourse={(course) => {
+              setSelectedCourse(course);
+              setAnalyticsTopic(null);
+            }}
             onBackToLanding={() => setView('landing')}
+          />
+        ) : analyticsTopic ? (
+          <TopicAnalyticsView
+            topic={analyticsTopic}
+            course={selectedCourse}
+            topicQuestions={topicBundleCache[analyticsTopic.topic_number] || []}
+            courseProgressItems={courseProgress}
+            onBack={() => setAnalyticsTopic(null)}
+            onStartPractice={() => {
+              setActiveTopic(analyticsTopic);
+              setAnalyticsTopic(null);
+              setModalOpen(true);
+            }}
+            onLaunchQuestion={handleLaunchQuestion}
           />
         ) : (
           /* Topic Selection for Course */
           <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <button
-                onClick={() => { setSelectedCourse(null); setTopics([]); }}
+                onClick={() => { setSelectedCourse(null); setTopics([]); setAnalyticsTopic(null); }}
                 className="text-xs font-semibold text-slate-400 hover:text-white"
               >
                 ← All Courses
@@ -345,22 +468,53 @@ function MainApp() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {topics.map(t => (
-                  <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
-                    <div>
-                      <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
-                        Topic {t.topic_number}
-                      </span>
-                      <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
+                {topics.map(t => {
+                  const stats = getTopicProgressStats(t.topic_number, t.question_count);
+                  return (
+                    <div key={t.topic_number} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md uppercase">
+                            Topic {t.topic_number}
+                          </span>
+                          {stats && (
+                            <span className="text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+                              {stats.averageLatestScore}% avg
+                            </span>
+                          )}
+                        </div>
+                        <h2 className="text-xl font-bold text-white mt-3 mb-1">{t.topic_name}</h2>
+                        {stats ? (
+                          <p className="text-xs text-slate-400 mt-2 flex items-center gap-1.5">
+                            <span>📈</span>
+                            <span>
+                              {stats.attemptedCount} / {stats.totalQuestions} attempted ({Math.round((stats.attemptedCount / (stats.totalQuestions || 1)) * 100)}%)
+                            </span>
+                          </p>
+                        ) : (
+                          <p className="text-xs text-slate-500 mt-2">
+                            {t.question_count} questions available
+                          </p>
+                        )}
+                      </div>
+                      <div className="mt-6 flex items-center gap-2">
+                        <button
+                          onClick={() => handleTopicClick(t)}
+                          className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
+                        >
+                          Practice Set →
+                        </button>
+                        <button
+                          onClick={() => handleOpenAnalytics(t)}
+                          className="px-3.5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-sm rounded-xl border border-slate-700 hover:border-slate-600 transition-all shadow-md"
+                          title="View Topic Performance Analytics"
+                        >
+                          Analytics
+                        </button>
+                      </div>
                     </div>
-                    <button
-                      onClick={() => handleTopicClick(t)}
-                      className="mt-6 w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/20"
-                    >
-                      Select Practice Set →
-                    </button>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
