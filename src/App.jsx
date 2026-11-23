@@ -10,6 +10,7 @@ import CourseCatalog from './components/CourseCatalog';
 import TopicAnalyticsView from './components/TopicAnalyticsView';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { generatePracticeSession } from './utils/quizUtils';
+import { computeTopicAnalytics } from './utils/analyticsUtils';
 import {
   saveQuestionAttempt,
   resolveUserId,
@@ -333,6 +334,17 @@ function MainApp() {
   };
 
   const getTopicProgressStats = (topicNumber, questionCount) => {
+    const cachedQuestions = topicBundleCache[topicNumber];
+    if (cachedQuestions && Array.isArray(cachedQuestions) && cachedQuestions.length > 0) {
+      const analytics = computeTopicAnalytics(cachedQuestions, courseProgress);
+      if (analytics.attemptedCount === 0) return null;
+      return {
+        attemptedCount: analytics.attemptedCount,
+        totalQuestions: analytics.totalQuestions,
+        averageLatestScore: analytics.averageLatestScore
+      };
+    }
+
     const topicItems = courseProgress.filter(
       (item) => String(item.topicId) === String(topicNumber)
     );

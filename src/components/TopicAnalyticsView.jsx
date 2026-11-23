@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { computeTopicAnalytics } from '../utils/analyticsUtils';
+import { computeTopicAnalytics, getSubpartStatus } from '../utils/analyticsUtils';
 
 export default function TopicAnalyticsView({
   topic,
@@ -42,52 +42,55 @@ export default function TopicAnalyticsView({
     return attemptedRows;
   }, [attemptedRows, activeFilter]);
 
-  // Helper to extract clean subpart outcome pills
+  // Helper to extract clean subpart outcome pills for all expected subparts
   const renderSubpartPills = (row) => {
-    const results = row.latestSubpartResults;
-    if (!results || typeof results !== 'object') return null;
+    const q = row.question;
+    const expectedSubparts =
+      Array.isArray(q?.subparts) && q.subparts.length > 0
+        ? q.subparts
+        : [{ subpart: 'a' }];
 
-    const entries = Object.entries(results);
-    if (entries.length === 0) return null;
+    const results = row.latestSubpartResults;
 
     return (
       <div className="flex flex-wrap items-center gap-1.5 mt-2 sm:mt-0">
-        {entries.map(([key, val]) => {
-          // Attempt to extract letter index from key (e.g. topic_1_q1_sp_0 -> 'a')
-          let label = key;
-          const spMatch = key.match(/_sp_(\d+)$/);
-          if (spMatch) {
-            const idx = parseInt(spMatch[1], 10);
-            label =
-              row.question?.subparts?.[idx]?.subpart ||
-              String.fromCharCode(97 + idx);
-          } else if (label.startsWith('sp_')) {
-            const idx = parseInt(label.replace('sp_', ''), 10);
-            label = String.fromCharCode(97 + idx);
-          }
+        {expectedSubparts.map((sp, idx) => {
+          const label = sp?.subpart || String.fromCharCode(97 + idx);
+          const val = getSubpartStatus(results, q?.id, sp, idx);
 
           const isCorrect = val === 'correct';
           const isIncorrect = val === 'incorrect';
+          const isAttempted = val !== null && val !== undefined;
 
           let pillStyle;
           let symbol;
+          let title;
+
           if (isCorrect) {
             pillStyle =
               'bg-emerald-500/15 text-emerald-400 border-emerald-500/30';
             symbol = '✓';
+            title = `Subpart ${label}: Correct`;
           } else if (isIncorrect) {
             pillStyle = 'bg-rose-500/15 text-rose-400 border-rose-500/30';
             symbol = '✗';
-          } else {
+            title = `Subpart ${label}: Incorrect`;
+          } else if (isAttempted) {
             pillStyle = 'bg-amber-500/15 text-amber-400 border-amber-500/30';
             symbol = '~';
+            title = `Subpart ${label}: Checked`;
+          } else {
+            // Unattempted / blank subpart
+            pillStyle = 'bg-slate-900/60 text-slate-500 border-slate-800';
+            symbol = '–';
+            title = `Subpart ${label}: Not attempted`;
           }
 
           return (
             <span
-              key={key}
+              key={label || idx}
               className={`text-[11px] font-mono font-medium px-2 py-0.5 rounded border flex items-center gap-1 ${pillStyle}`}
-              title={`Subpart ${label}: ${val}`}
+              title={title}
             >
               <span>{label}</span>
               <span className="font-bold">{symbol}</span>
