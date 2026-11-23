@@ -17,40 +17,30 @@ export default function TopicAnalyticsView({
   }, [topicQuestions, courseProgressItems]);
 
   const {
-    totalQuestions,
     attemptedCount,
     averageLatestScore,
-    firstTryAverageScore,
     masteredCount,
     partialCount,
     missedCount,
-    unattemptedCount,
     questionRows
   } = analytics;
+
+  const attemptedRows = useMemo(() => {
+    return questionRows.filter((r) => r.status !== 'unattempted');
+  }, [questionRows]);
 
   // Filter rows
   const filteredRows = useMemo(() => {
     if (activeFilter === 'needs_review') {
-      return questionRows.filter(
+      return attemptedRows.filter(
         (r) => r.status === 'missed' || r.status === 'partial'
       );
     }
     if (activeFilter === 'mastered') {
-      return questionRows.filter((r) => r.status === 'mastered');
+      return attemptedRows.filter((r) => r.status === 'mastered');
     }
-    if (activeFilter === 'not_started') {
-      return questionRows.filter((r) => r.status === 'unattempted');
-    }
-    return questionRows;
-  }, [questionRows, activeFilter]);
-
-  // Delta calculation for improvement
-  const scoreDelta =
-    averageLatestScore !== null &&
-    firstTryAverageScore !== null &&
-    averageLatestScore > firstTryAverageScore
-      ? averageLatestScore - firstTryAverageScore
-      : 0;
+    return attemptedRows;
+  }, [attemptedRows, activeFilter]);
 
   // Helper to extract clean subpart outcome pills
   const renderSubpartPills = (row) => {
@@ -109,32 +99,18 @@ export default function TopicAnalyticsView({
   };
 
   const getStatusBadge = (status) => {
-    switch (status) {
-      case 'mastered':
-        return (
-          <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
-            Mastered
-          </span>
-        );
-      case 'partial':
-        return (
-          <span className="text-[11px] font-bold text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-0.5 rounded-full">
-            Partial
-          </span>
-        );
-      case 'missed':
-        return (
-          <span className="text-[11px] font-bold text-rose-400 bg-rose-500/10 border border-rose-500/20 px-2.5 py-0.5 rounded-full">
-            Needs Review
-          </span>
-        );
-      default:
-        return (
-          <span className="text-[11px] font-semibold text-slate-400 bg-slate-800 border border-slate-700 px-2.5 py-0.5 rounded-full">
-            Not Started
-          </span>
-        );
+    if (status === 'mastered') {
+      return (
+        <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
+          Mastered
+        </span>
+      );
     }
+    return (
+      <span className="text-[11px] font-bold text-rose-400 bg-rose-500/10 border border-rose-500/20 px-2.5 py-0.5 rounded-full">
+        Needs Review
+      </span>
+    );
   };
 
   return (
@@ -200,20 +176,15 @@ export default function TopicAnalyticsView({
               <span className="text-3xl font-extrabold text-white">
                 {averageLatestScore !== null ? `${averageLatestScore}%` : '—'}
               </span>
-              {scoreDelta > 0 && (
-                <span className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">
-                  +{scoreDelta}% from first try
-                </span>
-              )}
             </div>
           </div>
 
           <div className="text-xs text-slate-400">
-            {firstTryAverageScore !== null ? (
-              <span>First-try avg: <span className="text-slate-200 font-semibold">{firstTryAverageScore}%</span></span>
-            ) : (
-              <span>Complete questions to calculate accuracy</span>
-            )}
+            <span>
+              {averageLatestScore !== null
+                ? 'Average score across latest attempts'
+                : 'Complete questions to calculate accuracy'}
+            </span>
           </div>
         </div>
 
@@ -296,17 +267,7 @@ export default function TopicAnalyticsView({
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              All ({totalQuestions})
-            </button>
-            <button
-              onClick={() => setActiveFilter('needs_review')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                activeFilter === 'needs_review'
-                  ? 'bg-rose-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              Needs Review ({missedCount + partialCount})
+              All Attempted ({attemptedCount})
             </button>
             <button
               onClick={() => setActiveFilter('mastered')}
@@ -319,14 +280,14 @@ export default function TopicAnalyticsView({
               Mastered ({masteredCount})
             </button>
             <button
-              onClick={() => setActiveFilter('not_started')}
+              onClick={() => setActiveFilter('needs_review')}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                activeFilter === 'not_started'
-                  ? 'bg-slate-700 text-white shadow-sm'
+                activeFilter === 'needs_review'
+                  ? 'bg-rose-600 text-white shadow-sm'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              Not Started ({unattemptedCount})
+              Needs Review ({partialCount + missedCount})
             </button>
           </div>
         </div>
@@ -335,7 +296,9 @@ export default function TopicAnalyticsView({
         <div className="space-y-2.5">
           {filteredRows.length === 0 ? (
             <div className="text-center py-10 bg-slate-900 border border-slate-800 rounded-xl text-slate-400 text-xs">
-              No questions found in this filter category.
+              {activeFilter === 'mastered' && 'No mastered questions yet. Keep practicing to reach 100%!'}
+              {activeFilter === 'needs_review' && 'No questions currently needing review. Great job!'}
+              {activeFilter === 'all' && 'No attempted questions yet in this topic.'}
             </div>
           ) : (
             filteredRows.map((row) => {
@@ -348,8 +311,6 @@ export default function TopicAnalyticsView({
                 q.question_number !== undefined
                   ? `Question ${q.question_number}`
                   : `Question ${qIndex + 1}`;
-
-              const isAttempted = row.status !== 'unattempted';
 
               return (
                 <div
@@ -364,20 +325,14 @@ export default function TopicAnalyticsView({
                       </span>
                       {getStatusBadge(row.status)}
                       <span className="text-xs text-slate-400 font-medium">
-                        {isAttempted ? (
-                          <>
-                            <span className="text-slate-200 font-bold">
-                              {row.latestScore}%
-                            </span>
-                            {' • '}
-                            <span>
-                              {row.attemptCount} attempt
-                              {row.attemptCount > 1 ? 's' : ''}
-                            </span>
-                          </>
-                        ) : (
-                          <span>Not attempted</span>
-                        )}
+                        <span className="text-slate-200 font-bold">
+                          {row.latestScore}%
+                        </span>
+                        {' • '}
+                        <span>
+                          {row.attemptCount} attempt
+                          {row.attemptCount > 1 ? 's' : ''}
+                        </span>
                       </span>
                     </div>
 
@@ -388,14 +343,10 @@ export default function TopicAnalyticsView({
                   {/* Right: Practice / Retry Button */}
                   <div className="flex items-center justify-end">
                     <button
-                      onClick={() => onLaunchQuestion(q, qIndex)}
-                      className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all shadow-md active:scale-95 ${
-                        isAttempted
-                          ? 'bg-slate-800 hover:bg-slate-700 text-indigo-300 border border-indigo-500/30 hover:border-indigo-500/60'
-                          : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-indigo-600/20'
-                      }`}
+                      onClick={() => onLaunchQuestion(q)}
+                      className="px-4 py-2 rounded-xl text-xs font-semibold transition-all shadow-md active:scale-95 bg-slate-800 hover:bg-slate-700 text-indigo-300 border border-indigo-500/30 hover:border-indigo-500/60"
                     >
-                      {isAttempted ? 'Retry' : 'Practice'}
+                      Retry
                     </button>
                   </div>
                 </div>
@@ -419,7 +370,11 @@ export default function TopicAnalyticsView({
         <p className="text-xs text-slate-300 leading-relaxed">
           Upgrade to unlock deep diagnostic insights across your entire syllabus:
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+          <div className="bg-slate-950/40 border border-slate-800/80 rounded-xl p-3 space-y-1">
+            <div className="text-xs font-semibold text-white">First-Try & Retry Trends</div>
+            <div className="text-[11px] text-slate-400">Track your first-attempt accuracy baseline and score improvement across retries.</div>
+          </div>
           <div className="bg-slate-950/40 border border-slate-800/80 rounded-xl p-3 space-y-1">
             <div className="text-xs font-semibold text-white">Cross-Topic IB Readiness</div>
             <div className="text-[11px] text-slate-400">Predictive Paper 1 & Paper 2 predicted boundary percentiles.</div>

@@ -36,6 +36,7 @@ function MainApp() {
   const [reportModalOpen, setReportModalOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
   const [isAuditMode, setIsAuditMode] = useState(false);
+  const [isAnalyticsRetry, setIsAnalyticsRetry] = useState(false);
   const [verifiedQuestions, setVerifiedQuestions] = useState(new Set());
   const [verifying, setVerifying] = useState(false);
 
@@ -277,6 +278,7 @@ function MainApp() {
 
       setSessionQuestions(sessionSet);
       setIsAuditMode(questionCount === 'all');
+      setIsAnalyticsRetry(false);
       setCurrentIndex(0);
       setModalOpen(false);
       setAnalyticsTopic(null);
@@ -287,10 +289,18 @@ function MainApp() {
   };
 
   const handleExitPractice = () => {
+    const wasAnalyticsRetry = isAnalyticsRetry;
+    const returnTopic = activeTopic || analyticsTopic;
     setSessionQuestions([]);
     setIsAuditMode(false);
+    setIsAnalyticsRetry(false);
     setCurrentIndex(0);
     setView('catalog');
+    if (wasAnalyticsRetry && returnTopic) {
+      setAnalyticsTopic(returnTopic);
+    } else {
+      setAnalyticsTopic(null);
+    }
     refreshProgress();
   };
 
@@ -308,29 +318,18 @@ function MainApp() {
     }
   };
 
-  const handleLaunchQuestion = async (targetQuestion, targetIndex) => {
-    if (!activeTopic || !selectedCourse) return;
-    try {
-      let fullTopicData = topicBundleCache[activeTopic.topic_number];
-      if (!fullTopicData) {
-        const res = await fetch(`./data/${selectedCourse.id}/topic_${activeTopic.topic_number}.json`);
-        fullTopicData = await res.json();
-        setTopicBundleCache((prev) => ({ ...prev, [activeTopic.topic_number]: fullTopicData }));
-      }
-
-      const qIndex = fullTopicData.findIndex(
-        (q) => String(q.id || q.question_number || '') === String(targetQuestion?.id || targetQuestion?.question_number || '')
-      );
-      const startIdx = qIndex >= 0 ? qIndex : (targetIndex >= 0 ? targetIndex : 0);
-
-      setSessionQuestions(fullTopicData);
-      setIsAuditMode(false);
-      setCurrentIndex(startIdx);
-      setAnalyticsTopic(null);
-      setView('practice');
-    } catch (err) {
-      console.error('Error launching question from analytics:', err);
+  const handleLaunchQuestion = (targetQuestion) => {
+    if (!targetQuestion || !selectedCourse) return;
+    const currentTopic = analyticsTopic || activeTopic;
+    if (currentTopic) {
+      setActiveTopic(currentTopic);
+      setAnalyticsTopic(currentTopic);
     }
+    setSessionQuestions([targetQuestion]);
+    setIsAuditMode(false);
+    setIsAnalyticsRetry(true);
+    setCurrentIndex(0);
+    setView('practice');
   };
 
   const getTopicProgressStats = (topicNumber, questionCount) => {
@@ -429,6 +428,7 @@ function MainApp() {
             onSelectCourse={(course) => {
               setSelectedCourse(course);
               setAnalyticsTopic(null);
+              setIsAnalyticsRetry(false);
             }}
             onBackToLanding={() => setView('landing')}
           />
@@ -451,7 +451,7 @@ function MainApp() {
           <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <button
-                onClick={() => { setSelectedCourse(null); setTopics([]); setAnalyticsTopic(null); }}
+                onClick={() => { setSelectedCourse(null); setTopics([]); setAnalyticsTopic(null); setIsAnalyticsRetry(false); }}
                 className="text-xs font-semibold text-slate-400 hover:text-white"
               >
                 ← All Courses
@@ -543,17 +543,30 @@ function MainApp() {
       <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-0 z-40 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button onClick={handleExitPractice} className="text-slate-400 hover:text-white text-sm font-semibold">
-            ← Topics
+            {isAnalyticsRetry ? '← Back to Analytics' : '← Topics'}
           </button>
           <div className="border-l border-slate-800 pl-3">
             <div className="text-xs text-slate-400 font-semibold uppercase">Topic {activeTopic?.topic_number}</div>
             <div className="text-sm font-bold text-white flex items-center gap-2">
-              <span>
-                Question {currentIndex + 1} of {sessionQuestions.length}
-              </span>
+              {isAnalyticsRetry ? (
+                <span>
+                  {currentQ?.question_number !== undefined
+                    ? `Question ${currentQ.question_number}`
+                    : 'Retry Question'}
+                </span>
+              ) : (
+                <span>
+                  Question {currentIndex + 1} of {sessionQuestions.length}
+                </span>
+              )}
               {isAuditMode && (
                 <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/30 px-1.5 py-0.5 rounded">
                   [Audit Mode]
+                </span>
+              )}
+              {isAnalyticsRetry && (
+                <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 px-1.5 py-0.5 rounded">
+                  [Retry Mode]
                 </span>
               )}
             </div>
@@ -585,7 +598,9 @@ function MainApp() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md">
-                Question {currentIndex + 1}
+                {isAnalyticsRetry
+                  ? (currentQ?.question_number !== undefined ? `Question ${currentQ.question_number}` : 'Question')
+                  : `Question ${currentIndex + 1}`}
               </span>
               {isAuditMode && (
                 <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/15 border border-amber-500/30 px-2 py-0.5 rounded-md">
@@ -695,30 +710,41 @@ function MainApp() {
 
       <footer className="fixed bottom-0 inset-x-0 bg-slate-900/90 backdrop-blur-md border-t border-slate-800 p-4 z-30">
         <div className="max-w-4xl mx-auto flex justify-between gap-3">
-          <button
-            disabled={currentIndex === 0}
-            onClick={() => { setCurrentIndex(i => i - 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-            className="flex-1 py-3 px-4 bg-slate-800 border border-slate-700 disabled:opacity-30 text-slate-200 font-semibold text-sm rounded-xl"
-          >
-            ← Previous Question
-          </button>
-          {currentIndex === sessionQuestions.length - 1 ? (
+          {isAnalyticsRetry ? (
             <button
               onClick={handleExitPractice}
-              className="flex-1 py-3 px-4 bg-emerald-600 hover:bg-emerald-500 border border-emerald-500 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
+              className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-500 border border-indigo-500 text-white font-semibold text-sm rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
             >
-              Finish Session ✓
+              ← Back to Analytics
             </button>
           ) : (
-            <button
-              onClick={() => {
-                setCurrentIndex(i => i + 1);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="flex-1 py-3 px-4 bg-indigo-600 hover:bg-indigo-500 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
-            >
-              Next Question →
-            </button>
+            <>
+              <button
+                disabled={currentIndex === 0}
+                onClick={() => { setCurrentIndex(i => i - 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className="flex-1 py-3 px-4 bg-slate-800 border border-slate-700 disabled:opacity-30 text-slate-200 font-semibold text-sm rounded-xl"
+              >
+                ← Previous Question
+              </button>
+              {currentIndex === sessionQuestions.length - 1 ? (
+                <button
+                  onClick={handleExitPractice}
+                  className="flex-1 py-3 px-4 bg-emerald-600 hover:bg-emerald-500 border border-emerald-500 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
+                >
+                  Finish Session ✓
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    setCurrentIndex(i => i + 1);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className="flex-1 py-3 px-4 bg-indigo-600 hover:bg-indigo-500 border border-indigo-500 disabled:opacity-30 text-white font-semibold text-sm rounded-xl shadow-lg transition-all"
+                >
+                  Next Question →
+                </button>
+              )}
+            </>
           )}
         </div>
       </footer>
