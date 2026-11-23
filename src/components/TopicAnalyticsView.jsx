@@ -19,7 +19,6 @@ export default function TopicAnalyticsView({
   const {
     totalQuestions,
     attemptedCount,
-    coveragePct,
     averageLatestScore,
     firstTryAverageScore,
     masteredCount,
@@ -173,33 +172,21 @@ export default function TopicAnalyticsView({
 
       {/* KPI Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {/* Card 1: Topic Coverage */}
+        {/* Card 1: Questions Attempted */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-lg">
           <div>
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
-              Topic Coverage
+              Questions Attempted
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-3xl font-extrabold text-white">
                 {attemptedCount}
               </span>
-              <span className="text-sm text-slate-400 font-medium">
-                / {totalQuestions} attempted
-              </span>
             </div>
           </div>
 
-          <div>
-            <div className="flex justify-between items-center text-xs font-medium text-slate-400 mb-1.5">
-              <span>Progress</span>
-              <span className="text-white font-bold">{coveragePct}%</span>
-            </div>
-            <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-              <div
-                className="bg-indigo-500 h-2 rounded-full transition-all duration-500"
-                style={{ width: `${coveragePct}%` }}
-              />
-            </div>
+          <div className="text-xs text-slate-400">
+            <span>Unique questions practiced in this topic</span>
           </div>
         </div>
 
@@ -238,27 +225,17 @@ export default function TopicAnalyticsView({
             </div>
             {/* Segmented bar */}
             <div className="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden flex">
-              {totalQuestions > 0 && (
+              {attemptedCount > 0 && (
                 <>
                   <div
-                    style={{ width: `${(masteredCount / totalQuestions) * 100}%` }}
-                    className="bg-emerald-500 h-full"
+                    style={{ width: `${(masteredCount / attemptedCount) * 100}%` }}
+                    className="bg-emerald-500 h-full transition-all duration-500"
                     title={`Mastered: ${masteredCount}`}
                   />
                   <div
-                    style={{ width: `${(partialCount / totalQuestions) * 100}%` }}
-                    className="bg-amber-500 h-full"
-                    title={`Partial: ${partialCount}`}
-                  />
-                  <div
-                    style={{ width: `${(missedCount / totalQuestions) * 100}%` }}
-                    className="bg-rose-500 h-full"
-                    title={`Needs Review: ${missedCount}`}
-                  />
-                  <div
-                    style={{ width: `${(unattemptedCount / totalQuestions) * 100}%` }}
-                    className="bg-slate-700 h-full"
-                    title={`Not Started: ${unattemptedCount}`}
+                    style={{ width: `${((partialCount + missedCount) / attemptedCount) * 100}%` }}
+                    className="bg-rose-500 h-full transition-all duration-500"
+                    title={`Needs Review: ${partialCount + missedCount}`}
                   />
                 </>
               )}
@@ -266,26 +243,16 @@ export default function TopicAnalyticsView({
           </div>
 
           {/* Counts legend */}
-          <div className="grid grid-cols-2 gap-2 text-xs">
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
               <span className="text-slate-400">Mastered:</span>
               <span className="text-white font-bold">{masteredCount}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-amber-500 inline-block" />
-              <span className="text-slate-400">Partial:</span>
-              <span className="text-white font-bold">{partialCount}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-rose-500 inline-block" />
               <span className="text-slate-400">Needs Review:</span>
-              <span className="text-white font-bold">{missedCount}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-slate-600 inline-block" />
-              <span className="text-slate-400">Not Started:</span>
-              <span className="text-white font-bold">{unattemptedCount}</span>
+              <span className="text-white font-bold">{partialCount + missedCount}</span>
             </div>
           </div>
         </div>
