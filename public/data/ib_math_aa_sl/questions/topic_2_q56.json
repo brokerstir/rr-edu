@@ -5,6 +5,7 @@
   "question_number": 56,
   "question_text": "Consider the function $g: x \\mapsto 4 - \\ln(x-2)$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

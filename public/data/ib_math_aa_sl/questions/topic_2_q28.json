@@ -5,6 +5,7 @@
   "question_number": 28,
   "question_text": "Consider the graph of $y = f(x)$ alongside. Decide whether each statement is true or false:",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

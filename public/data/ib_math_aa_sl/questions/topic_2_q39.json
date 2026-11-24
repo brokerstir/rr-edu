@@ -5,6 +5,7 @@
   "question_number": 39,
   "question_text": "Suppose $f: x \\mapsto \\ln x$ and $g: x \\mapsto 3 + x$. Find:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

@@ -5,6 +5,7 @@
   "question_number": 1,
   "question_text": "A line segment has equation $4x - 3y + 2 = 0$. Its midpoint is $(4, 6)$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a i",

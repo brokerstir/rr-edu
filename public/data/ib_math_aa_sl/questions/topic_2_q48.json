@@ -5,6 +5,7 @@
   "question_number": 48,
   "question_text": "The population $P$ of a species after $n$ months follows the rule $P = 1000 + a e^{kn}$. The initial population was 2000. After 1 year the population was 4000. Find how long it will take for the population to reach 10 000.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

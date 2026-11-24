@@ -5,6 +5,7 @@
   "question_number": 13,
   "question_text": "The function $f$ can be written in the form $f(x) = a(x - p)(x - q)$ where $p > q$.",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

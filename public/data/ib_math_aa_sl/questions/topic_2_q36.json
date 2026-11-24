@@ -5,6 +5,7 @@
   "question_number": 36,
   "question_text": "Suppose $f(x) = \\sqrt[3]{x}$. Find $g(x)$ given that:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

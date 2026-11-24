@@ -5,6 +5,7 @@
   "question_number": 20,
   "question_text": "A quadratic function cuts the $y$-axis at 4, and touches the lines $y = x - 5$ and $y = -2x$. Find the quadratic function.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

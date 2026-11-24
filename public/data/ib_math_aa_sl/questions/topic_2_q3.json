@@ -5,6 +5,7 @@
   "question_number": 3,
   "question_text": "Line $L$ has equation $y = 3 - 2x$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

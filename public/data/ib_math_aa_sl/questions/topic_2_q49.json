@@ -5,6 +5,7 @@
   "question_number": 49,
   "question_text": "Show that $\\left(\\frac{e^x + e^{-x}}{2}\\right)^2 - \\left(\\frac{e^x - e^{-x}}{2}\\right)^2 = 1$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

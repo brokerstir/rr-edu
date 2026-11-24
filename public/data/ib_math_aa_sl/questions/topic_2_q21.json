@@ -5,6 +5,7 @@
   "question_number": 21,
   "question_text": "A factory manufactures $x$ radios per day.\nThe production cost of each radio is $\\left(26 + \\frac{10}{x}\\right)$ euros, and the income from selling each radio is $\\left(42 - \\frac{x}{15}\\right)$ euros.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

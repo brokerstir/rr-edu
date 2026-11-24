@@ -5,6 +5,7 @@
   "question_number": 5,
   "question_text": "Solve for $x$:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

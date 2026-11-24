@@ -5,6 +5,7 @@
   "question_number": 45,
   "question_text": "The number of people $N$ on a small island $t$ years after settlement, increases according to the formula $N = 120 \\times (1.04)^t$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

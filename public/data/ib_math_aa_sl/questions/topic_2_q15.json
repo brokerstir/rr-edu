@@ -5,6 +5,7 @@
   "question_number": 15,
   "question_text": "For what values of $m$ does the graph of $y = mx^2 + 4x + 6$ lie entirely above the $x$-axis?",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

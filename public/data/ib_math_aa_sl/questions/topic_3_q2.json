@@ -5,6 +5,7 @@
   "question_number": 2,
   "question_text": "The surface area of a beach ball is $2800\\text{ cm}^2$. Find the radius of the beach ball.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

@@ -5,6 +5,7 @@
   "question_number": 7,
   "question_text": "Find $m$ given that $mx^2 + (m - 2)x + m = 0$ has a repeated root.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

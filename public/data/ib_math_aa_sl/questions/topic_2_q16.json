@@ -5,6 +5,7 @@
   "question_number": 16,
   "question_text": "The line with equation $y = kx - 2$ is a tangent to the quadratic $y = 3x^2 + x + 1$. Find $k$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

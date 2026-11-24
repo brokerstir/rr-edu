@@ -5,6 +5,7 @@
   "question_number": 58,
   "question_text": "Find the equation of the resulting image when $y = \\frac{2}{x}$ is:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

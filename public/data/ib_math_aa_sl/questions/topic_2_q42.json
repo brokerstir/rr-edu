@@ -5,6 +5,7 @@
   "question_number": 42,
   "question_text": "The exponential function $y = a \\times 2^x + b$ passes through the points alongside:\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline y & 20 & p & 35 & q \\\\\\hline\\end{array}$$",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
