@@ -27,31 +27,36 @@
 #   5. Inspect entire partition (Profile + Enrollments + Progress):
 #      ./scripts/db_query.sh all "usr_12345"
 #
-#   6. View reported question issues for a course:
+#   6. View reported question issues for a course (optional status filter: open|closed):
 #      ./scripts/db_query.sh issues "ib_math_aa_sl"
+#      ./scripts/db_query.sh issues "ib_math_aa_sl" open
+#      ./scripts/db_query.sh issues "ib_math_aa_sl" closed
 #
-#   7. View verified audit questions for a course:
+#   7. Close a reported question issue in DynamoDB:
+#      ./scripts/db_query.sh close-issue "ib_math_aa_sl" "topic_2_q30"
+#
+#   8. View verified audit questions for a course:
 #      ./scripts/db_query.sh verified "ib_math_aa_sl"
 #
 # ── ATTEMPT ANALYTICS COMMANDS ───────────────────────────────────────────────
-#   8.  All PROGRESS items grouped by user, with per-question breakdown
+#   9.  All PROGRESS items grouped by user, with per-question breakdown
 #       and subpart outcomes from the latest graded history entry:
 #       ./scripts/db_query.sh attempts
 #       ./scripts/db_query.sh attempts ib_math_aa_sl
 #
-#   9.  Per-user leaderboard (attempts, mastery, avg score, last active):
+#   10. Per-user leaderboard (attempts, mastery, avg score, last active):
 #       ./scripts/db_query.sh user-summary
 #       ./scripts/db_query.sh user-summary ib_math_aa_sl
 #
-#   10. Per-question aggregates across all users (weakest spots first):
+#   11. Per-question aggregates across all users (weakest spots first):
 #       ./scripts/db_query.sh question-stats
 #       ./scripts/db_query.sh question-stats ib_math_aa_sl
 #
-#   11. Per-topic aggregates (attempts, unique questions, users, avg score):
+#   12. Per-topic aggregates (attempts, unique questions, users, avg score):
 #       ./scripts/db_query.sh topic-stats
 #       ./scripts/db_query.sh topic-stats ib_math_aa_sl
 #
-#   12. Full attempt history for one question across all users:
+#   13. Full attempt history for one question across all users:
 #       ./scripts/db_query.sh question-attempts topic_1_q3
 #       ./scripts/db_query.sh question-attempts topic_1_q3 ib_math_aa_sl
 # ==============================================================================
@@ -64,7 +69,7 @@ COURSE_ID=$3
 
 USAGE_SHORT="Usage: $0 <command> [args...]
   User commands:      users | profile | courses | progress | all
-  Audit commands:     issues | verified
+  Issue/Audit:        issues | close-issue | verified
   Analytics commands: attempts | user-summary | question-stats | topic-stats | question-attempts"
 
 if [ -z "$COMMAND" ]; then
@@ -217,26 +222,119 @@ case $COMMAND in
       --expression-attribute-values "{\":pk\":{\"S\":\"USER#${USER_ID}\"}, \":sk_prefix\":{\"S\":\"${SK_PREFIX}\"}}"
     ;;
 
-  # 6. View reported question issues for a course
+  # 6. View reported question issues for a course (optional status filter: open | closed)
+  # Usage: ./scripts/db_query.sh issues <course_id> [open|closed]
   issues)
-    TARGET_COURSE="${COURSE_ID:-$USER_ID}"
+    TARGET_COURSE="$2"
+    STATUS_FILTER=$(echo "${3:-}" | tr '[:upper:]' '[:lower:]')
+
     if [ -z "$TARGET_COURSE" ]; then
       echo "Error: course_id required"
-      echo "Usage: $0 issues <course_id>"
+      echo "Usage: $0 issues <course_id> [open|closed]"
       exit 1
     fi
+
     RAW_RES=$(aws dynamodb query \
       --table-name "$TABLE_NAME" \
       --key-condition-expression "PK = :pk" \
       --expression-attribute-values "{\":pk\":{\"S\":\"ISSUE#${TARGET_COURSE}\"}}")
 
     if command -v jq >/dev/null 2>&1; then
-      COUNT=$(echo "$RAW_RES" | jq -r '.Count // 0')
-      echo "Found $COUNT issue(s) for course: $TARGET_COURSE"
-      echo "============================================================"
-      echo "$RAW_RES" | jq -r '.Items[] | "Question ID: \(.questionId.S // .SK.S)\nIssue Type:  \(.issueType.S // "N/A")\nStatus:      \(.status.S // "open")\nReported By: \(.reportedBy.S // "Unknown")\nCreated At:  \(.createdAt.S // "N/A")\nNotes:       \(.notes.S // "(no notes)")\n------------------------------------------------------------"'
+      FILTER_ARG="$STATUS_FILTER"
+      echo "$RAW_RES" | jq -r --arg statusFilter "$FILTER_ARG" --arg course "$TARGET_COURSE" '
+        .Items // [] |
+        (if ($statusFilter == "open" or $statusFilter == "closed") then
+          map(select((.status.S // "open") == $statusFilter))
+        else
+          .
+        end) as $filtered |
+        ($filtered | length) as $count |
+        (if ($statusFilter == "open" or $statusFilter == "closed") then
+          "Found \($count) \($statusFilter) issue(s) for course: \($course)"
+        else
+          "Found \($count) total issue(s) for course: \($course)"
+        end),
+        "============================================================",
+        (
+          $filtered[] |
+          "Question ID: \(.questionId.S // "N/A")",
+          "Topic ID:    \(.topicId.S // "N/A")",
+          "SK:          \(.SK.S // "N/A")",
+          "Issue Type:  \(.issueType.S // "N/A")",
+          "Status:      \(.status.S // "open")",
+          "Reported By: \(.reportedBy.S // "Unknown")",
+          "Created At:  \(.createdAt.S // "N/A")",
+          "Updated At:  \(.updatedAt.S // "N/A")",
+          "Notes:       \(.notes.S // "(no notes)")",
+          "------------------------------------------------------------"
+        )
+      '
     else
       echo "$RAW_RES"
+    fi
+    ;;
+
+  # 7. Close a reported question issue
+  # Usage: ./scripts/db_query.sh close-issue <course_id> <question_id>
+  close-issue)
+    TARGET_COURSE="$2"
+    TARGET_QID="$3"
+
+    if [ -z "$TARGET_COURSE" ] || [ -z "$TARGET_QID" ]; then
+      echo "Error: course_id and question_id are required"
+      echo "Usage: $0 close-issue <course_id> <question_id>"
+      echo "Example: $0 close-issue ib_math_aa_sl topic_2_q30"
+      exit 1
+    fi
+
+    echo "Looking up issue for question '$TARGET_QID' in course '$TARGET_COURSE'..."
+    LOOKUP_RES=$(aws dynamodb query \
+      --table-name "$TABLE_NAME" \
+      --key-condition-expression "PK = :pk" \
+      --expression-attribute-values "{\":pk\":{\"S\":\"ISSUE#${TARGET_COURSE}\"}}")
+
+    TARGET_ITEM=$(echo "$LOOKUP_RES" | jq -c --arg qid "$TARGET_QID" '
+      [.Items[] | select((.questionId.S // "") == $qid or (.SK.S // "") == $qid or ((.SK.S // "") | endswith("#Q#" + $qid)))] | first // empty
+    ')
+
+    if [ -z "$TARGET_ITEM" ] || [ "$TARGET_ITEM" = "null" ]; then
+      echo "Error: No issue found for question '$TARGET_QID' in course '$TARGET_COURSE'."
+      exit 1
+    fi
+
+    FOUND_SK=$(echo "$TARGET_ITEM" | jq -r '.SK.S // empty')
+    CURR_STATUS=$(echo "$TARGET_ITEM" | jq -r '.status.S // "open"')
+    FOUND_TOPIC=$(echo "$TARGET_ITEM" | jq -r '.topicId.S // "N/A"')
+
+    echo "Found issue:"
+    echo "  PK:       ISSUE#${TARGET_COURSE}"
+    echo "  SK:       $FOUND_SK"
+    echo "  Topic ID: $FOUND_TOPIC"
+    echo "  Current:  $CURR_STATUS"
+
+    if [ "$CURR_STATUS" = "closed" ]; then
+      echo "Issue is already marked as closed."
+      exit 0
+    fi
+
+    NOW_ISO=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+    UPDATE_RES=$(aws dynamodb update-item \
+      --table-name "$TABLE_NAME" \
+      --key "{\"PK\":{\"S\":\"ISSUE#${TARGET_COURSE}\"},\"SK\":{\"S\":\"${FOUND_SK}\"}}" \
+      --update-expression "SET #st = :closed, #ua = :now" \
+      --expression-attribute-names '{"#st":"status","#ua":"updatedAt"}' \
+      --expression-attribute-values "{\":closed\":{\"S\":\"closed\"},\":now\":{\"S\":\"${NOW_ISO}\"}}" \
+      --return-values ALL_NEW)
+
+    if [ $? -eq 0 ]; then
+      echo "✅ Successfully updated issue status to 'closed'."
+      echo "------------------------------------------------------------"
+      echo "$UPDATE_RES" | jq -r '.Attributes | "Question ID: \(.questionId.S // "N/A")\nTopic ID:    \(.topicId.S // "N/A")\nSK:          \(.SK.S // "N/A")\nStatus:      \(.status.S // "N/A")\nUpdated At:  \(.updatedAt.S // "N/A")"'
+      echo "------------------------------------------------------------"
+    else
+      echo "Error updating issue."
+      exit 1
     fi
     ;;
 

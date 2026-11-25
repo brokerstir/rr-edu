@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
+import AnswerGraph from './AnswerGraph';
 
 export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = false, onSubpartResult }) {
   const [userInput, setUserInput] = useState('');
@@ -68,6 +69,13 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
           <div className="p-3 bg-slate-950 rounded-lg text-center text-lg font-bold text-white border border-slate-800">
             <MathText text={sp.final_answer} />
           </div>
+
+          {/* Answer Graph if present */}
+          {sp.graphSpec && (
+            <div className="pt-2">
+              <AnswerGraph spec={sp.graphSpec} />
+            </div>
+          )}
 
           {!gradeStatus ? (
             <div className="space-y-2 pt-1">

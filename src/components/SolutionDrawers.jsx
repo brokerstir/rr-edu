@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MathText from './MathText';
+import AnswerGraph from './AnswerGraph';
 
 export default function SolutionDrawers({ sp }) {
   const [showMarkscheme, setShowMarkscheme] = useState(false);
@@ -58,6 +59,11 @@ export default function SolutionDrawers({ sp }) {
             Clean Worked Derivation
           </div>
           <MathText text={sp.solution} />
+          {sp.graphSpec && (
+            <div className="mt-3 pt-3 border-t border-emerald-800/30">
+              <AnswerGraph spec={sp.graphSpec} />
+            </div>
+          )}
         </div>
       )}
 
