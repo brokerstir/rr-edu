@@ -5,6 +5,7 @@
   "question_number": 41,
   "question_text": "Consider $y = -1 + 2^{-x}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

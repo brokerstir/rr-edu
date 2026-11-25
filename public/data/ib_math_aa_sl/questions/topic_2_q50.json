@@ -5,6 +5,7 @@
   "question_number": 50,
   "question_text": "Consider $f(x) = 2^{x-1}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

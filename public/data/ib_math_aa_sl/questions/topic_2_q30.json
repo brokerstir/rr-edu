@@ -5,6 +5,7 @@
   "question_number": 30,
   "question_text": "Consider the function $k(t) = 2t - 4$ for $0 \\leqslant t < 4$, $t \\in \\mathbb{Z}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

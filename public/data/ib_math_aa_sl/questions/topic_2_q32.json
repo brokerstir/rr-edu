@@ -5,6 +5,7 @@
   "question_number": 32,
   "question_text": "Consider the graph of $y = f(x)$ where $f(x) = 2 + \\frac{4}{x+1}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
