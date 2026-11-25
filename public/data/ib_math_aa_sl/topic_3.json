@@ -1061,6 +1061,7 @@
     "question_number": 13,
     "question_text": "A rhombus has diagonals of length $5\\text{ cm}$ and $8\\text{ cm}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
