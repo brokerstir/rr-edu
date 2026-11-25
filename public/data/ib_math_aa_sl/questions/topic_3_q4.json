@@ -5,6 +5,7 @@
   "question_number": 4,
   "question_text": "A sector of a circle of radius $10\\text{ cm}$ has perimeter $40\\text{ cm}$. Find:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

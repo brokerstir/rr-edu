@@ -5,6 +5,7 @@
   "question_number": 9,
   "question_text": "The distance from $P(k, 6, -5)$ to $Q(2, -1, -8)$ is $9$ units. Find the possible values of $k$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",

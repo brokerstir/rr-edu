@@ -5,6 +5,7 @@
   "question_number": 8,
   "question_text": "For each pair of points, find:\ni the distance AB\nii the midpoint of [AB].",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a i",
