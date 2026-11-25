@@ -5,6 +5,7 @@
   "question_number": 50,
   "question_text": "Consider $f(x) = 2^{x-1}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
@@ -53,6 +54,91 @@
           "Reflect the curve across $y = x$ to obtain $y = f^{-1}(x)$, with asymptote $x = 0$."
         ],
         "common_pitfalls": "Drawing the asymptotes incorrectly on the wrong axes."
+      },
+      "graphSpec": {
+        "domain": [
+          -1,
+          5
+        ],
+        "range": [
+          -1,
+          5
+        ],
+        "xStep": 1,
+        "yStep": 1,
+        "xLabel": "x",
+        "yLabel": "y",
+        "title": "y = 2^{x-1} \\text{ and } y = f^{-1}(x)",
+        "caption": "Curves f(x) = 2^{x-1} and f^{-1}(x) = \\log_2(x) + 1 reflected across the dashed line y = x, intersecting at (1, 1) and (2, 2).",
+        "functions": [
+          {
+            "expr": "x",
+            "label": "y = x",
+            "color": "#94a3b8",
+            "strokeWidth": 1.5,
+            "dashed": true
+          },
+          {
+            "expr": "2^(x - 1)",
+            "label": "y = 2^{x-1}",
+            "color": "#38bdf8",
+            "strokeWidth": 2.2
+          },
+          {
+            "expr": "log2(x) + 1",
+            "domain": [
+              0.03,
+              5
+            ],
+            "label": "y = \\log_2(x) + 1",
+            "color": "#a855f7",
+            "strokeWidth": 2.2
+          }
+        ],
+        "asymptotes": [
+          {
+            "axis": "y",
+            "value": 0,
+            "label": "y = 0",
+            "color": "#f43f5e"
+          },
+          {
+            "axis": "x",
+            "value": 0,
+            "label": "x = 0",
+            "color": "#f43f5e"
+          }
+        ],
+        "points": [
+          {
+            "x": 1,
+            "y": 1,
+            "label": "(1, 1)",
+            "labelPos": "top",
+            "color": "#38bdf8"
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "label": "(2, 2)",
+            "labelPos": "left",
+            "color": "#38bdf8"
+          },
+          {
+            "x": 0,
+            "y": 0.5,
+            "label": "(0, 0.5)",
+            "labelPos": "left",
+            "color": "#38bdf8"
+          },
+          {
+            "x": 0.5,
+            "y": 0,
+            "label": "(0.5, 0)",
+            "labelPos": "bottom",
+            "color": "#a855f7"
+          }
+        ]
       }
     },
     {

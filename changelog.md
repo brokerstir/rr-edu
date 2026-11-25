@@ -1,5 +1,28 @@
 # Changelog
 
+## [Released] - `feature-add-graphs` - 2026-11-25
+## [Released] - `feature-basic-analytics` - 2026-11-25
+
+### Added
+- **Free-Tier Topic Analytics View (`TopicAnalyticsView.jsx` & `analyticsUtils.js`):**
+  - Built per-topic performance dashboard displaying **Questions Attempted**, **Current Accuracy**, and a **Mastery Breakdown** bar (`Mastered` vs. `Needs Review`), with first-try deltas and cross-topic insights positioned behind the Premium Analytics preview.
+  - Added question-level breakdown rows with status filtering (`All Attempted`, `Mastered`, `Needs Review`) and per-subpart outcome pills.
+  - Implemented an isolated single-question **Retry** portal that launches just the selected question without exposing the full topic question bank, refreshing topic analytics automatically upon return.
+- **Coordinate Function Graphing (`AnswerGraph.jsx` & `scripts/add_answer_graphs.mjs`):**
+  - Created a dark-theme SVG graph renderer supporting mathematical expressions, asymptote discontinuity handling, dashed asymptotes, discrete/open points, and piecewise segments.
+  - Integrated `<AnswerGraph />` into `SubpartCard.jsx` (revealed answers) and `SolutionDrawers.jsx` (worked solutions).
+  - Built CLI batch-patcher `scripts/add_answer_graphs.mjs` to sync `graphSpec` metadata across standalone question JSONs and topic bundles, and added graphs to flagged Topic 2 questions (e.g., `topic_2_q30`).
+- **Vector Geometry & Trigonometry Diagrams (`GeometryDiagram.jsx` & `scripts/add_diagrams.mjs`):**
+  - Created a declarative SVG geometry component supporting vertices, labeled segments, right-angle markers, angle arcs, and circles/sectors.
+  - Wired `<GeometryDiagram />` into both question/subpart prompts (`diagramSpec`) and answer reveals/worked solutions (`answerDiagramSpec`).
+  - Built CLI batch-patcher `scripts/add_diagrams.mjs` and added diagrams to Topic 3 questions across both prompt and answer views (e.g., `topic_3_q11`, `topic_3_q13`).
+- **Admin Issue Triage CLI (`scripts/db_query.sh`):**
+  - Added status filtering (`issues <course_id> [open|closed]`) and a `close-issue <course_id> <question_id>` command for resolving DynamoDB question issues as fixes are verified.
+
+### To-Do / Next Steps
+- Continue auditing IB Math AA SL Topic 2 and Topic 3 questions to identify remaining open issues missing coordinate graphs or geometric diagrams in question prompts or revealed answers.
+- Register and batch-patch remaining Topic 2 (`graphSpec`) and Topic 3 (`diagramSpec` / `answerDiagramSpec`) items and close resolved issues in DynamoDB.
+
 ## [Released] - `feature-branch-1` - 2026-11-19
 
 ### Added

@@ -5,6 +5,7 @@
   "question_number": 11,
   "question_text": "Find the perimeter and area of triangle ABC:",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
@@ -34,6 +35,88 @@
           "Use the formula $\\text{Area} = \\frac{1}{2} \\times AC \\times BC$ to calculate the area."
         ],
         "common_pitfalls": "Mixing up opposite and adjacent sides relative to angle $B = 41^\\circ$."
+      },
+      "diagramSpec": {
+        "caption": "Diagram not to scale",
+        "points": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": 0,
+            "label": "C",
+            "labelOffset": [
+              -14,
+              12
+            ]
+          },
+          {
+            "id": "B",
+            "x": 8.053,
+            "y": 0,
+            "label": "B",
+            "labelOffset": [
+              16,
+              12
+            ]
+          },
+          {
+            "id": "A",
+            "x": 0,
+            "y": 7,
+            "label": "A",
+            "labelOffset": [
+              -14,
+              -12
+            ]
+          }
+        ],
+        "segments": [
+          {
+            "from": "C",
+            "to": "A",
+            "label": "7 cm",
+            "labelOffset": [
+              -22,
+              0
+            ]
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "label": "",
+            "labelOffset": [
+              0,
+              14
+            ]
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "label": "",
+            "labelOffset": [
+              12,
+              -12
+            ]
+          }
+        ],
+        "rightAngles": [
+          {
+            "vertex": "C",
+            "arm1": "B",
+            "arm2": "A",
+            "size": 14
+          }
+        ],
+        "angles": [
+          {
+            "vertex": "B",
+            "from": "A",
+            "to": "C",
+            "label": "41°",
+            "radius": 30,
+            "color": "#818cf8"
+          }
+        ]
       }
     },
     {
@@ -64,6 +147,111 @@
           "Compute the area as $\\frac{1}{2} \\times AC \\times BC \\approx 21.5\\text{ m}^2$."
         ],
         "common_pitfalls": "Using the wrong angle ($28^\\circ$ instead of $62^\\circ$) for the overall triangle $ABC$."
+      },
+      "diagramSpec": {
+        "caption": "Diagram not to scale",
+        "points": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": 0,
+            "label": "C",
+            "labelOffset": [
+              -14,
+              12
+            ]
+          },
+          {
+            "id": "B",
+            "x": 4.785,
+            "y": 0,
+            "label": "B",
+            "labelOffset": [
+              16,
+              12
+            ]
+          },
+          {
+            "id": "A",
+            "x": 0,
+            "y": 9,
+            "label": "A",
+            "labelOffset": [
+              -14,
+              -12
+            ]
+          },
+          {
+            "id": "D",
+            "x": 3.731,
+            "y": 1.984,
+            "label": "D",
+            "labelOffset": [
+              14,
+              -12
+            ]
+          }
+        ],
+        "segments": [
+          {
+            "from": "C",
+            "to": "A",
+            "label": "9 m",
+            "labelOffset": [
+              -22,
+              0
+            ]
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "label": "",
+            "labelOffset": [
+              0,
+              14
+            ]
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "label": "",
+            "labelOffset": [
+              12,
+              -12
+            ]
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "dashed": true,
+            "color": "#94a3b8"
+          }
+        ],
+        "rightAngles": [
+          {
+            "vertex": "C",
+            "arm1": "B",
+            "arm2": "A",
+            "size": 14
+          },
+          {
+            "vertex": "D",
+            "arm1": "C",
+            "arm2": "B",
+            "size": 12,
+            "color": "#94a3b8"
+          }
+        ],
+        "angles": [
+          {
+            "vertex": "C",
+            "from": "D",
+            "to": "B",
+            "label": "28°",
+            "radius": 26,
+            "color": "#818cf8"
+          }
+        ]
       }
     }
   ]

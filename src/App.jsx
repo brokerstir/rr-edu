@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
+import GeometryDiagram from './components/GeometryDiagram';
 import SessionLengthModal from './components/SessionLengthModal';
 import AuthModal from './components/AuthModal';
 import ReportIssueModal from './components/ReportIssueModal';
@@ -691,6 +692,13 @@ function MainApp() {
               </div>
             )}
           </div>
+
+          {/* Top-Level Question Geometry Diagram */}
+          {currentQ?.diagramSpec && (
+            <div className="my-4">
+              <GeometryDiagram spec={currentQ.diagramSpec} />
+            </div>
+          )}
 
           {(currentQ?.diagram_url || currentQ?.diagram || currentQ?.image || currentQ?.diagram_file) && (
             <div className="my-4 flex justify-center p-3 bg-slate-950/60 rounded-xl border border-slate-800">

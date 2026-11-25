@@ -5,6 +5,7 @@
   "question_number": 32,
   "question_text": "Consider the graph of $y = f(x)$ where $f(x) = 2 + \\frac{4}{x+1}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
@@ -117,6 +118,67 @@
           "Draw two hyperbolic branches approaching the asymptotes."
         ],
         "common_pitfalls": "Omitting labels on asymptotes or axis intercepts."
+      },
+      "graphSpec": {
+        "domain": [
+          -6,
+          4
+        ],
+        "range": [
+          -5,
+          8
+        ],
+        "xStep": 1,
+        "yStep": 1,
+        "xLabel": "x",
+        "yLabel": "y",
+        "title": "f(x) = 2 + \\frac{4}{x + 1}",
+        "caption": "Hyperbola with vertical asymptote x = -1, horizontal asymptote y = 2, intercepts (-3, 0) and (0, 6), and point (-2, -2).",
+        "functions": [
+          {
+            "expr": "2 + 4/(x + 1)",
+            "label": "y = 2 + \\frac{4}{x + 1}",
+            "color": "#38bdf8",
+            "strokeWidth": 2.2
+          }
+        ],
+        "asymptotes": [
+          {
+            "axis": "x",
+            "value": -1,
+            "label": "x = -1",
+            "color": "#f43f5e"
+          },
+          {
+            "axis": "y",
+            "value": 2,
+            "label": "y = 2",
+            "color": "#f43f5e"
+          }
+        ],
+        "points": [
+          {
+            "x": -3,
+            "y": 0,
+            "label": "(-3, 0)",
+            "labelPos": "bottom",
+            "color": "#818cf8"
+          },
+          {
+            "x": 0,
+            "y": 6,
+            "label": "(0, 6)",
+            "labelPos": "right",
+            "color": "#818cf8"
+          },
+          {
+            "x": -2,
+            "y": -2,
+            "label": "(-2, -2)",
+            "labelPos": "left",
+            "color": "#818cf8"
+          }
+        ]
       }
     }
   ]

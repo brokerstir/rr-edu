@@ -6,6 +6,7 @@
     "question_number": 1,
     "question_text": "A line segment has equation $4x - 3y + 2 = 0$. Its midpoint is $(4, 6)$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a i",
@@ -161,6 +162,7 @@
     "question_number": 3,
     "question_text": "Line $L$ has equation $y = 3 - 2x$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -350,6 +352,7 @@
     "question_number": 5,
     "question_text": "Solve for $x$:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -530,6 +533,7 @@
     "question_number": 7,
     "question_text": "Find $m$ given that $mx^2 + (m - 2)x + m = 0$ has a repeated root.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -1023,6 +1027,7 @@
     "question_number": 13,
     "question_text": "The function $f$ can be written in the form $f(x) = a(x - p)(x - q)$ where $p > q$.",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1229,6 +1234,7 @@
     "question_number": 15,
     "question_text": "For what values of $m$ does the graph of $y = mx^2 + 4x + 6$ lie entirely above the $x$-axis?",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -1269,6 +1275,7 @@
     "question_number": 16,
     "question_text": "The line with equation $y = kx - 2$ is a tangent to the quadratic $y = 3x^2 + x + 1$. Find $k$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -1531,6 +1538,7 @@
     "question_number": 20,
     "question_text": "A quadratic function cuts the $y$-axis at 4, and touches the lines $y = x - 5$ and $y = -2x$. Find the quadratic function.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -1576,6 +1584,7 @@
     "question_number": 21,
     "question_text": "A factory manufactures $x$ radios per day.\nThe production cost of each radio is $\\left(26 + \\frac{10}{x}\\right)$ euros, and the income from selling each radio is $\\left(42 - \\frac{x}{15}\\right)$ euros.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1758,6 +1767,7 @@
     "question_number": 23,
     "question_text": "Solve for $x$:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2192,6 +2202,7 @@
     "question_number": 28,
     "question_text": "Consider the graph of $y = f(x)$ alongside. Decide whether each statement is true or false:",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2407,6 +2418,7 @@
     "question_number": 30,
     "question_text": "Consider the function $k(t) = 2t - 4$ for $0 \\leqslant t < 4$, $t \\in \\mathbb{Z}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2482,6 +2494,52 @@
             "Leave points unconnected since $t \\in \\mathbb{Z}$."
           ],
           "common_pitfalls": "Connecting the dots with a solid line."
+        },
+        "graphSpec": {
+          "domain": [
+            -1,
+            5
+          ],
+          "range": [
+            -5,
+            4
+          ],
+          "xStep": 1,
+          "yStep": 1,
+          "xLabel": "t",
+          "yLabel": "k(t)",
+          "title": "k(t) = 2t - 4,  t ∈ {0, 1, 2, 3}",
+          "caption": "Discrete points at (0, -4), (1, -2), (2, 0), and (3, 2). Points are unconnected because domain is restricted to integers.",
+          "points": [
+            {
+              "x": 0,
+              "y": -4,
+              "label": "(0, -4)",
+              "labelPos": "right",
+              "color": "#818cf8"
+            },
+            {
+              "x": 1,
+              "y": -2,
+              "label": "(1, -2)",
+              "labelPos": "right",
+              "color": "#818cf8"
+            },
+            {
+              "x": 2,
+              "y": 0,
+              "label": "(2, 0)",
+              "labelPos": "top",
+              "color": "#818cf8"
+            },
+            {
+              "x": 3,
+              "y": 2,
+              "label": "(3, 2)",
+              "labelPos": "left",
+              "color": "#818cf8"
+            }
+          ]
         }
       }
     ]
@@ -2655,6 +2713,7 @@
     "question_number": 32,
     "question_text": "Consider the graph of $y = f(x)$ where $f(x) = 2 + \\frac{4}{x+1}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2767,6 +2826,67 @@
             "Draw two hyperbolic branches approaching the asymptotes."
           ],
           "common_pitfalls": "Omitting labels on asymptotes or axis intercepts."
+        },
+        "graphSpec": {
+          "domain": [
+            -6,
+            4
+          ],
+          "range": [
+            -5,
+            8
+          ],
+          "xStep": 1,
+          "yStep": 1,
+          "xLabel": "x",
+          "yLabel": "y",
+          "title": "f(x) = 2 + \\frac{4}{x + 1}",
+          "caption": "Hyperbola with vertical asymptote x = -1, horizontal asymptote y = 2, intercepts (-3, 0) and (0, 6), and point (-2, -2).",
+          "functions": [
+            {
+              "expr": "2 + 4/(x + 1)",
+              "label": "y = 2 + \\frac{4}{x + 1}",
+              "color": "#38bdf8",
+              "strokeWidth": 2.2
+            }
+          ],
+          "asymptotes": [
+            {
+              "axis": "x",
+              "value": -1,
+              "label": "x = -1",
+              "color": "#f43f5e"
+            },
+            {
+              "axis": "y",
+              "value": 2,
+              "label": "y = 2",
+              "color": "#f43f5e"
+            }
+          ],
+          "points": [
+            {
+              "x": -3,
+              "y": 0,
+              "label": "(-3, 0)",
+              "labelPos": "bottom",
+              "color": "#818cf8"
+            },
+            {
+              "x": 0,
+              "y": 6,
+              "label": "(0, 6)",
+              "labelPos": "right",
+              "color": "#818cf8"
+            },
+            {
+              "x": -2,
+              "y": -2,
+              "label": "(-2, -2)",
+              "labelPos": "left",
+              "color": "#818cf8"
+            }
+          ]
         }
       }
     ]
@@ -3087,6 +3207,7 @@
     "question_number": 36,
     "question_text": "Suppose $f(x) = \\sqrt[3]{x}$. Find $g(x)$ given that:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3152,6 +3273,7 @@
     "question_number": 37,
     "question_text": "Let $f(x) = \\sqrt{x+4}$ and $g(x) = x^2 - 3$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3304,6 +3426,7 @@
     "question_number": 39,
     "question_text": "Suppose $f: x \\mapsto \\ln x$ and $g: x \\mapsto 3 + x$. Find:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3515,6 +3638,7 @@
     "question_number": 41,
     "question_text": "Consider $y = -1 + 2^{-x}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3610,6 +3734,61 @@
             "Draw the curve decreasing from top-left, passing through $(0,0)$, and approaching $y = -1$ from above as $x \\to \\infty$."
           ],
           "common_pitfalls": "Drawing an increasing exponential graph instead of a decreasing one."
+        },
+        "graphSpec": {
+          "domain": [
+            -3,
+            4
+          ],
+          "range": [
+            -2,
+            5
+          ],
+          "xStep": 1,
+          "yStep": 1,
+          "xLabel": "x",
+          "yLabel": "y",
+          "title": "y = -1 + 2^{-x}",
+          "caption": "Decreasing exponential curve passing through (0, 0), with horizontal asymptote y = -1.",
+          "functions": [
+            {
+              "expr": "-1 + 2^(-x)",
+              "label": "y = -1 + 2^{-x}",
+              "color": "#38bdf8",
+              "strokeWidth": 2.2
+            }
+          ],
+          "asymptotes": [
+            {
+              "axis": "y",
+              "value": -1,
+              "label": "y = -1",
+              "color": "#f43f5e"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "(0, 0)",
+              "labelPos": "top",
+              "color": "#818cf8"
+            },
+            {
+              "x": -1,
+              "y": 1,
+              "label": "(-1, 1)",
+              "labelPos": "right",
+              "color": "#818cf8"
+            },
+            {
+              "x": 1,
+              "y": -0.5,
+              "label": "(1, -0.5)",
+              "labelPos": "bottom",
+              "color": "#818cf8"
+            }
+          ]
         }
       }
     ]
@@ -3621,6 +3800,7 @@
     "question_number": 42,
     "question_text": "The exponential function $y = a \\times 2^x + b$ passes through the points alongside:\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline y & 20 & p & 35 & q \\\\\\hline\\end{array}$$",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3983,6 +4163,7 @@
     "question_number": 45,
     "question_text": "The number of people $N$ on a small island $t$ years after settlement, increases according to the formula $N = 120 \\times (1.04)^t$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4248,6 +4429,7 @@
     "question_number": 48,
     "question_text": "The population $P$ of a species after $n$ months follows the rule $P = 1000 + a e^{kn}$. The initial population was 2000. After 1 year the population was 4000. Find how long it will take for the population to reach 10 000.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -4288,6 +4470,7 @@
     "question_number": 49,
     "question_text": "Show that $\\left(\\frac{e^x + e^{-x}}{2}\\right)^2 - \\left(\\frac{e^x - e^{-x}}{2}\\right)^2 = 1$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -4327,6 +4510,7 @@
     "question_number": 50,
     "question_text": "Consider $f(x) = 2^{x-1}$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4375,6 +4559,91 @@
             "Reflect the curve across $y = x$ to obtain $y = f^{-1}(x)$, with asymptote $x = 0$."
           ],
           "common_pitfalls": "Drawing the asymptotes incorrectly on the wrong axes."
+        },
+        "graphSpec": {
+          "domain": [
+            -1,
+            5
+          ],
+          "range": [
+            -1,
+            5
+          ],
+          "xStep": 1,
+          "yStep": 1,
+          "xLabel": "x",
+          "yLabel": "y",
+          "title": "y = 2^{x-1} \\text{ and } y = f^{-1}(x)",
+          "caption": "Curves f(x) = 2^{x-1} and f^{-1}(x) = \\log_2(x) + 1 reflected across the dashed line y = x, intersecting at (1, 1) and (2, 2).",
+          "functions": [
+            {
+              "expr": "x",
+              "label": "y = x",
+              "color": "#94a3b8",
+              "strokeWidth": 1.5,
+              "dashed": true
+            },
+            {
+              "expr": "2^(x - 1)",
+              "label": "y = 2^{x-1}",
+              "color": "#38bdf8",
+              "strokeWidth": 2.2
+            },
+            {
+              "expr": "log2(x) + 1",
+              "domain": [
+                0.03,
+                5
+              ],
+              "label": "y = \\log_2(x) + 1",
+              "color": "#a855f7",
+              "strokeWidth": 2.2
+            }
+          ],
+          "asymptotes": [
+            {
+              "axis": "y",
+              "value": 0,
+              "label": "y = 0",
+              "color": "#f43f5e"
+            },
+            {
+              "axis": "x",
+              "value": 0,
+              "label": "x = 0",
+              "color": "#f43f5e"
+            }
+          ],
+          "points": [
+            {
+              "x": 1,
+              "y": 1,
+              "label": "(1, 1)",
+              "labelPos": "top",
+              "color": "#38bdf8"
+            },
+            {
+              "x": 2,
+              "y": 2,
+              "label": "(2, 2)",
+              "labelPos": "left",
+              "color": "#38bdf8"
+            },
+            {
+              "x": 0,
+              "y": 0.5,
+              "label": "(0, 0.5)",
+              "labelPos": "left",
+              "color": "#38bdf8"
+            },
+            {
+              "x": 0.5,
+              "y": 0,
+              "label": "(0.5, 0)",
+              "labelPos": "bottom",
+              "color": "#a855f7"
+            }
+          ]
         }
       },
       {
@@ -4530,6 +4799,7 @@
     "question_number": 52,
     "question_text": "Find the equation of the resulting graph $g(x)$ when:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4857,6 +5127,7 @@
     "question_number": 56,
     "question_text": "Consider the function $g: x \\mapsto 4 - \\ln(x-2)$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -5048,6 +5319,7 @@
     "question_number": 58,
     "question_text": "Find the equation of the resulting image when $y = \\frac{2}{x}$ is:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",

@@ -5,6 +5,7 @@
   "question_number": 30,
   "question_text": "Consider the function $k(t) = 2t - 4$ for $0 \\leqslant t < 4$, $t \\in \\mathbb{Z}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
@@ -80,6 +81,52 @@
           "Leave points unconnected since $t \\in \\mathbb{Z}$."
         ],
         "common_pitfalls": "Connecting the dots with a solid line."
+      },
+      "graphSpec": {
+        "domain": [
+          -1,
+          5
+        ],
+        "range": [
+          -5,
+          4
+        ],
+        "xStep": 1,
+        "yStep": 1,
+        "xLabel": "t",
+        "yLabel": "k(t)",
+        "title": "k(t) = 2t - 4,  t ∈ {0, 1, 2, 3}",
+        "caption": "Discrete points at (0, -4), (1, -2), (2, 0), and (3, 2). Points are unconnected because domain is restricted to integers.",
+        "points": [
+          {
+            "x": 0,
+            "y": -4,
+            "label": "(0, -4)",
+            "labelPos": "right",
+            "color": "#818cf8"
+          },
+          {
+            "x": 1,
+            "y": -2,
+            "label": "(1, -2)",
+            "labelPos": "right",
+            "color": "#818cf8"
+          },
+          {
+            "x": 2,
+            "y": 0,
+            "label": "(2, 0)",
+            "labelPos": "top",
+            "color": "#818cf8"
+          },
+          {
+            "x": 3,
+            "y": 2,
+            "label": "(3, 2)",
+            "labelPos": "left",
+            "color": "#818cf8"
+          }
+        ]
       }
     }
   ]

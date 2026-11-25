@@ -2,6 +2,8 @@ import { useState } from 'react';
 import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
+import AnswerGraph from './AnswerGraph';
+import GeometryDiagram from './GeometryDiagram';
 
 export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = false, onSubpartResult }) {
   const [userInput, setUserInput] = useState('');
@@ -21,6 +23,12 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
       </div>
 
       {/* Subpart Diagram */}
+      {sp.diagramSpec && (
+        <div className="my-3">
+          <GeometryDiagram spec={sp.diagramSpec} />
+        </div>
+      )}
+
       {subpartImage && (
         <div className="my-3 flex flex-col items-center justify-center p-2 bg-slate-900 rounded-lg border border-slate-800 gap-1.5">
           {isAdmin && (
@@ -68,6 +76,20 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
           <div className="p-3 bg-slate-950 rounded-lg text-center text-lg font-bold text-white border border-slate-800">
             <MathText text={sp.final_answer} />
           </div>
+
+          {/* Answer Graph if present */}
+          {sp.graphSpec && (
+            <div className="pt-2">
+              <AnswerGraph spec={sp.graphSpec} />
+            </div>
+          )}
+
+          {/* Revealed Answer Diagram if present */}
+          {sp.answerDiagramSpec && (
+            <div className="pt-2">
+              <GeometryDiagram spec={sp.answerDiagramSpec} />
+            </div>
+          )}
 
           {!gradeStatus ? (
             <div className="space-y-2 pt-1">

@@ -5,6 +5,7 @@
   "question_number": 41,
   "question_text": "Consider $y = -1 + 2^{-x}$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
@@ -100,6 +101,61 @@
           "Draw the curve decreasing from top-left, passing through $(0,0)$, and approaching $y = -1$ from above as $x \\to \\infty$."
         ],
         "common_pitfalls": "Drawing an increasing exponential graph instead of a decreasing one."
+      },
+      "graphSpec": {
+        "domain": [
+          -3,
+          4
+        ],
+        "range": [
+          -2,
+          5
+        ],
+        "xStep": 1,
+        "yStep": 1,
+        "xLabel": "x",
+        "yLabel": "y",
+        "title": "y = -1 + 2^{-x}",
+        "caption": "Decreasing exponential curve passing through (0, 0), with horizontal asymptote y = -1.",
+        "functions": [
+          {
+            "expr": "-1 + 2^(-x)",
+            "label": "y = -1 + 2^{-x}",
+            "color": "#38bdf8",
+            "strokeWidth": 2.2
+          }
+        ],
+        "asymptotes": [
+          {
+            "axis": "y",
+            "value": -1,
+            "label": "y = -1",
+            "color": "#f43f5e"
+          }
+        ],
+        "points": [
+          {
+            "x": 0,
+            "y": 0,
+            "label": "(0, 0)",
+            "labelPos": "top",
+            "color": "#818cf8"
+          },
+          {
+            "x": -1,
+            "y": 1,
+            "label": "(-1, 1)",
+            "labelPos": "right",
+            "color": "#818cf8"
+          },
+          {
+            "x": 1,
+            "y": -0.5,
+            "label": "(1, -0.5)",
+            "labelPos": "bottom",
+            "color": "#818cf8"
+          }
+        ]
       }
     }
   ]
