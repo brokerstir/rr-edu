@@ -84,6 +84,13 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
             </div>
           )}
 
+          {/* Revealed Answer Diagram if present */}
+          {sp.answerDiagramSpec && (
+            <div className="pt-2">
+              <GeometryDiagram spec={sp.answerDiagramSpec} />
+            </div>
+          )}
+
           {!gradeStatus ? (
             <div className="space-y-2 pt-1">
               <div className="text-xs text-slate-300 text-center font-medium">

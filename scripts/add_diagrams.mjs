@@ -75,6 +75,41 @@ export const DIAGRAM_SPECS = {
       },
     },
   },
+
+  // Topic 3, Question 13: Rhombus with diagonals of length 5 cm and 8 cm
+  topic_3_q13: {
+    subparts: {
+      // Subpart (a): Draw a diagram and label with half-diagonals 4 cm, 2.5 cm and sides x cm
+      a: {
+        answerDiagramSpec: {
+          title: 'Rhombus with Perpendicular Diagonals',
+          caption: 'Diagonals intersect perpendicularly at center O and bisect each other into 4 cm and 2.5 cm legs.',
+          points: [
+            { id: 'O', x: 0, y: 0, label: 'O', labelOffset: [-10, -10], dot: true },
+            { id: 'Left', x: -4, y: 0, label: '', dot: false },
+            { id: 'Right', x: 4, y: 0, label: '', dot: false },
+            { id: 'Top', x: 0, y: 2.5, label: '', dot: false },
+            { id: 'Bottom', x: 0, y: -2.5, label: '', dot: false },
+          ],
+          segments: [
+            // Outer Rhombus Sides (hypotenuses x cm)
+            { from: 'Left', to: 'Top', label: 'x cm', labelOffset: [-14, -8], color: '#f8fafc', strokeWidth: 2 },
+            { from: 'Top', to: 'Right', label: 'x cm', labelOffset: [14, -8], color: '#f8fafc', strokeWidth: 2 },
+            { from: 'Right', to: 'Bottom', label: 'x cm', labelOffset: [14, 8], color: '#f8fafc', strokeWidth: 2 },
+            { from: 'Bottom', to: 'Left', label: 'x cm', labelOffset: [-14, 8], color: '#f8fafc', strokeWidth: 2 },
+            // Inner Perpendicular Diagonals (dashed)
+            { from: 'Left', to: 'O', label: '4 cm', labelOffset: [0, 12], dashed: true, color: '#94a3b8', strokeWidth: 1.5 },
+            { from: 'O', to: 'Right', label: '4 cm', labelOffset: [0, 12], dashed: true, color: '#94a3b8', strokeWidth: 1.5 },
+            { from: 'Bottom', to: 'O', label: '2.5 cm', labelOffset: [18, 0], dashed: true, color: '#94a3b8', strokeWidth: 1.5 },
+            { from: 'O', to: 'Top', label: '2.5 cm', labelOffset: [18, 0], dashed: true, color: '#94a3b8', strokeWidth: 1.5 },
+          ],
+          rightAngles: [
+            { vertex: 'O', arm1: 'Right', arm2: 'Top', size: 14, color: '#cbd5e1' },
+          ],
+        },
+      },
+    },
+  },
 };
 
 function main() {
@@ -122,16 +157,25 @@ function main() {
       qModified = true;
     }
 
-    // Attach subpart diagramSpecs if configured
+    // Attach subpart diagramSpecs / answerDiagramSpecs if configured
     if (qSpecConfig.subparts && Array.isArray(qData.subparts)) {
       qData.subparts = qData.subparts.map((sp) => {
         const subLetter = (sp.subpart || '').toLowerCase();
-        if (qSpecConfig.subparts[subLetter]) {
+        const subConfig = qSpecConfig.subparts[subLetter];
+        if (subConfig) {
           qModified = true;
-          return {
-            ...sp,
-            diagramSpec: qSpecConfig.subparts[subLetter],
-          };
+          const updatedSp = { ...sp };
+          if (subConfig.diagramSpec !== undefined) {
+            updatedSp.diagramSpec = subConfig.diagramSpec;
+          }
+          if (subConfig.answerDiagramSpec !== undefined) {
+            updatedSp.answerDiagramSpec = subConfig.answerDiagramSpec;
+          }
+          // Also handle shorthand where subConfig itself is the diagramSpec
+          if (!subConfig.diagramSpec && !subConfig.answerDiagramSpec) {
+            updatedSp.diagramSpec = subConfig;
+          }
+          return updatedSp;
         }
         return sp;
       });
@@ -172,12 +216,20 @@ function main() {
           if (qSpecConfig.subparts && Array.isArray(item.subparts)) {
             item.subparts = item.subparts.map((sp) => {
               const subLetter = (sp.subpart || '').toLowerCase();
-              if (qSpecConfig.subparts[subLetter]) {
+              const subConfig = qSpecConfig.subparts[subLetter];
+              if (subConfig) {
                 bundleModified = true;
-                return {
-                  ...sp,
-                  diagramSpec: qSpecConfig.subparts[subLetter],
-                };
+                const updatedSp = { ...sp };
+                if (subConfig.diagramSpec !== undefined) {
+                  updatedSp.diagramSpec = subConfig.diagramSpec;
+                }
+                if (subConfig.answerDiagramSpec !== undefined) {
+                  updatedSp.answerDiagramSpec = subConfig.answerDiagramSpec;
+                }
+                if (!subConfig.diagramSpec && !subConfig.answerDiagramSpec) {
+                  updatedSp.diagramSpec = subConfig;
+                }
+                return updatedSp;
               }
               return sp;
             });

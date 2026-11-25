@@ -25,6 +25,154 @@
           "Label the rhombus side (hypotenuse) as $x\\text{ cm}$."
         ],
         "common_pitfalls": "Using full diagonal lengths rather than half-diagonal lengths for the triangle legs."
+      },
+      "answerDiagramSpec": {
+        "title": "Rhombus with Perpendicular Diagonals",
+        "caption": "Diagonals intersect perpendicularly at center O and bisect each other into 4 cm and 2.5 cm legs.",
+        "points": [
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "labelOffset": [
+              -10,
+              -10
+            ],
+            "dot": true
+          },
+          {
+            "id": "Left",
+            "x": -4,
+            "y": 0,
+            "label": "",
+            "dot": false
+          },
+          {
+            "id": "Right",
+            "x": 4,
+            "y": 0,
+            "label": "",
+            "dot": false
+          },
+          {
+            "id": "Top",
+            "x": 0,
+            "y": 2.5,
+            "label": "",
+            "dot": false
+          },
+          {
+            "id": "Bottom",
+            "x": 0,
+            "y": -2.5,
+            "label": "",
+            "dot": false
+          }
+        ],
+        "segments": [
+          {
+            "from": "Left",
+            "to": "Top",
+            "label": "x cm",
+            "labelOffset": [
+              -14,
+              -8
+            ],
+            "color": "#f8fafc",
+            "strokeWidth": 2
+          },
+          {
+            "from": "Top",
+            "to": "Right",
+            "label": "x cm",
+            "labelOffset": [
+              14,
+              -8
+            ],
+            "color": "#f8fafc",
+            "strokeWidth": 2
+          },
+          {
+            "from": "Right",
+            "to": "Bottom",
+            "label": "x cm",
+            "labelOffset": [
+              14,
+              8
+            ],
+            "color": "#f8fafc",
+            "strokeWidth": 2
+          },
+          {
+            "from": "Bottom",
+            "to": "Left",
+            "label": "x cm",
+            "labelOffset": [
+              -14,
+              8
+            ],
+            "color": "#f8fafc",
+            "strokeWidth": 2
+          },
+          {
+            "from": "Left",
+            "to": "O",
+            "label": "4 cm",
+            "labelOffset": [
+              0,
+              12
+            ],
+            "dashed": true,
+            "color": "#94a3b8",
+            "strokeWidth": 1.5
+          },
+          {
+            "from": "O",
+            "to": "Right",
+            "label": "4 cm",
+            "labelOffset": [
+              0,
+              12
+            ],
+            "dashed": true,
+            "color": "#94a3b8",
+            "strokeWidth": 1.5
+          },
+          {
+            "from": "Bottom",
+            "to": "O",
+            "label": "2.5 cm",
+            "labelOffset": [
+              18,
+              0
+            ],
+            "dashed": true,
+            "color": "#94a3b8",
+            "strokeWidth": 1.5
+          },
+          {
+            "from": "O",
+            "to": "Top",
+            "label": "2.5 cm",
+            "labelOffset": [
+              18,
+              0
+            ],
+            "dashed": true,
+            "color": "#94a3b8",
+            "strokeWidth": 1.5
+          }
+        ],
+        "rightAngles": [
+          {
+            "vertex": "O",
+            "arm1": "Right",
+            "arm2": "Top",
+            "size": 14,
+            "color": "#cbd5e1"
+          }
+        ]
       }
     },
     {
