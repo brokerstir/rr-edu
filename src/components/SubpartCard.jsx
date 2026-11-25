@@ -3,6 +3,7 @@ import MathText from './MathText';
 import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
 import AnswerGraph from './AnswerGraph';
+import GeometryDiagram from './GeometryDiagram';
 
 export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = false, onSubpartResult }) {
   const [userInput, setUserInput] = useState('');
@@ -22,6 +23,12 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
       </div>
 
       {/* Subpart Diagram */}
+      {sp.diagramSpec && (
+        <div className="my-3">
+          <GeometryDiagram spec={sp.diagramSpec} />
+        </div>
+      )}
+
       {subpartImage && (
         <div className="my-3 flex flex-col items-center justify-center p-2 bg-slate-900 rounded-lg border border-slate-800 gap-1.5">
           {isAdmin && (
