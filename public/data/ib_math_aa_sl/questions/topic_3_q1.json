@@ -5,6 +5,7 @@
   "question_number": 1,
   "question_text": "Find the surface area of each solid:",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

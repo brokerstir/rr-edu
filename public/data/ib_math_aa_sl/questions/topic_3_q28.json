@@ -5,6 +5,7 @@
   "question_number": 28,
   "question_text": "In triangle ABC, $\\text{AB} = 15\\text{ cm}$, $\\text{AC} = 12\\text{ cm}$, and $\\text{A}\\widehat{\\text{B}}\\text{C}$ measures $30^\\circ$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

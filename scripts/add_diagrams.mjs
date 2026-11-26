@@ -187,6 +187,48 @@ export const DIAGRAM_SPECS = {
   },
 
   // Topic 3, Question 13: Rhombus with diagonals of length 5 cm and 8 cm
+  topic_3_q20: {
+    subparts: {
+      // Subpart (a): SAS triangle — angle BAC = 82°, AB = 3 m, AC = 2 m
+      a: {
+        title: 'Triangle ABC',
+        caption: 'Diagram not to scale',
+        points: [
+          { id: 'A', x: 0,      y: 0,      label: 'A', labelOffset: [-12, 12] },
+          { id: 'B', x: 3,      y: 0,      label: 'B', labelOffset: [10,  12] },
+          { id: 'C', x: 0.2783, y: 1.9805, label: 'C', labelOffset: [0,  -14] },
+        ],
+        segments: [
+          { from: 'A', to: 'B', label: '3 m',  labelOffset: [0, 14],  color: '#f8fafc', strokeWidth: 2 },
+          { from: 'A', to: 'C', label: '2 m',  labelOffset: [-18, 0], color: '#f8fafc', strokeWidth: 2 },
+          { from: 'B', to: 'C',                                        color: '#f8fafc', strokeWidth: 2 },
+        ],
+        angles: [
+          { vertex: 'A', from: 'B', to: 'C', label: '82°', radius: 0.55, color: '#818cf8' },
+        ],
+      },
+      // Subpart (b): SSA triangle — BC = 7 cm, AB = 5 cm, angle BAC = 62°, angle ACB = 39°
+      b: {
+        title: 'Triangle ABC',
+        caption: 'Diagram not to scale',
+        points: [
+          { id: 'A', x: -2.546, y: 4.908, label: 'A', labelOffset: [0,  -16] },
+          { id: 'B', x: -3.5,   y: 0,     label: 'B', labelOffset: [-14,  8] },
+          { id: 'C', x:  3.5,   y: 0,     label: 'C', labelOffset: [ 12,  8] },
+        ],
+        segments: [
+          { from: 'B', to: 'C', label: '7 cm', labelOffset: [0, 14],  color: '#f8fafc', strokeWidth: 2 },
+          { from: 'A', to: 'B', label: '5 cm', labelOffset: [-20, 0], color: '#f8fafc', strokeWidth: 2 },
+          { from: 'A', to: 'C',                                        color: '#f8fafc', strokeWidth: 2 },
+        ],
+        angles: [
+          { vertex: 'A', from: 'B', to: 'C', label: '62°', radius: 0.9, color: '#818cf8' },
+          { vertex: 'C', from: 'A', to: 'B', label: '39°', radius: 0.9, color: '#818cf8' },
+        ],
+      },
+    },
+  },
+
   topic_3_q13: {
     subparts: {
       // Subpart (a): Draw a diagram and label with half-diagonals 4 cm, 2.5 cm and sides x cm

@@ -5,6 +5,7 @@
   "question_number": 33,
   "question_text": "Let $a = \\sin 20^\\circ$ and $b = \\tan 50^\\circ$. Write, in terms of $a$ and $b$, expressions for:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
