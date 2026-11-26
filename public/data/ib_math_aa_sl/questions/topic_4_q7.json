@@ -5,6 +5,7 @@
   "question_number": 7,
   "question_text": "The number of customers entering a convenience store each hour on a particular day were:\n\n$$14, 23, 26, 34, 24, 18, 26, 16, 25$$\n\nWithout using technology, find the:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
