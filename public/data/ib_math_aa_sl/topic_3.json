@@ -6,6 +6,7 @@
     "question_number": 1,
     "question_text": "Find the surface area of each solid:",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -35,6 +36,152 @@
             "Sum base and lateral areas: $100 + 100\\sqrt{17} \\approx 512\\text{ cm}^2$."
           ],
           "common_pitfalls": "Using the vertical height ($20\\text{ cm}$) instead of the slant height ($5\\sqrt{17}\\text{ cm}$) to calculate the triangle's area."
+        },
+        "diagramSpec": {
+          "title": "Right Square-Based Pyramid",
+          "caption": "Diagram not to scale",
+          "points": [
+            {
+              "id": "Apex",
+              "x": 0,
+              "y": 15,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "FL",
+              "x": -5,
+              "y": -3,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "FR",
+              "x": 3,
+              "y": -3,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "BR",
+              "x": 5,
+              "y": 1,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "BL",
+              "x": -3,
+              "y": 1,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "Center",
+              "x": 0,
+              "y": -1,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "RightArm",
+              "x": 1,
+              "y": -1,
+              "label": "",
+              "dot": false
+            }
+          ],
+          "segments": [
+            {
+              "from": "FL",
+              "to": "FR",
+              "label": "10 cm",
+              "labelOffset": [
+                0,
+                14
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "FR",
+              "to": "BR",
+              "label": "10 cm",
+              "labelOffset": [
+                16,
+                4
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "BR",
+              "to": "BL",
+              "dashed": true,
+              "color": "#64748b",
+              "strokeWidth": 1.5
+            },
+            {
+              "from": "BL",
+              "to": "FL",
+              "dashed": true,
+              "color": "#64748b",
+              "strokeWidth": 1.5
+            },
+            {
+              "from": "Apex",
+              "to": "FL",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "Apex",
+              "to": "FR",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "Apex",
+              "to": "BR",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "Apex",
+              "to": "BL",
+              "dashed": true,
+              "color": "#64748b",
+              "strokeWidth": 1.5
+            },
+            {
+              "from": "Apex",
+              "to": "Center",
+              "label": "20 cm",
+              "labelOffset": [
+                -18,
+                0
+              ],
+              "dashed": true,
+              "color": "#38bdf8",
+              "strokeWidth": 1.6
+            },
+            {
+              "from": "Center",
+              "to": "RightArm",
+              "dashed": true,
+              "color": "#38bdf8",
+              "strokeWidth": 1.2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "Center",
+              "arm1": "RightArm",
+              "arm2": "Apex",
+              "size": 10,
+              "color": "#38bdf8"
+            }
+          ]
         }
       },
       {
@@ -66,6 +213,153 @@
             "Add all parts together to find total surface area $\\approx 281\\text{ cm}^2$."
           ],
           "common_pitfalls": "Forgetting to include the two flat rectangular faces of dimensions $6\\text{ cm} \\times 5\\text{ cm}$."
+        },
+        "diagramSpec": {
+          "title": "Sector Prism",
+          "caption": "Diagram not to scale",
+          "points": [
+            {
+              "id": "O1",
+              "x": -2,
+              "y": 0,
+              "label": "",
+              "dot": true
+            },
+            {
+              "id": "A1",
+              "x": -6.53,
+              "y": 2.11,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "B1",
+              "x": 2.53,
+              "y": 2.11,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "O2",
+              "x": 2,
+              "y": 3,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "A2",
+              "x": -2.53,
+              "y": 5.11,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "B2",
+              "x": 6.53,
+              "y": 5.11,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "ArcRef",
+              "x": -2,
+              "y": -5,
+              "label": "",
+              "dot": false
+            }
+          ],
+          "segments": [
+            {
+              "from": "O1",
+              "to": "A1",
+              "label": "5 cm",
+              "labelOffset": [
+                -12,
+                -10
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "O1",
+              "to": "B1",
+              "label": "",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "O2",
+              "to": "A2",
+              "color": "#f8fafc",
+              "strokeWidth": 1.8
+            },
+            {
+              "from": "O2",
+              "to": "B2",
+              "color": "#f8fafc",
+              "strokeWidth": 1.8
+            },
+            {
+              "from": "O1",
+              "to": "O2",
+              "label": "6 cm",
+              "labelOffset": [
+                12,
+                -10
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 1.8
+            },
+            {
+              "from": "A1",
+              "to": "A2",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "B1",
+              "to": "B2",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "ArcRef",
+              "to": "O2",
+              "dashed": true,
+              "color": "#64748b",
+              "strokeWidth": 1.2
+            }
+          ],
+          "circles": [
+            {
+              "cx": -2,
+              "cy": 0,
+              "r": 5,
+              "startAngle": 155,
+              "endAngle": 385,
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "cx": 2,
+              "cy": 3,
+              "r": 5,
+              "startAngle": 155,
+              "endAngle": 385,
+              "color": "#94a3b8",
+              "strokeWidth": 1.8
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "O1",
+              "from": "B1",
+              "to": "A1",
+              "label": "230°",
+              "radius": 24,
+              "color": "#818cf8"
+            }
+          ]
         }
       },
       {
@@ -91,6 +385,105 @@
             "Total surface area $= 32\\pi + 28\\pi = 60\\pi \\approx 188\\text{ cm}^2$."
           ],
           "common_pitfalls": "Accidentally including the flat circular interface $\\pi r^2$, which is inside the solid and not exposed."
+        },
+        "diagramSpec": {
+          "title": "Composite Solid (Cone on Hemisphere)",
+          "caption": "Diagram not to scale",
+          "points": [
+            {
+              "id": "Apex",
+              "x": 0,
+              "y": 6,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "O",
+              "x": 0,
+              "y": 0,
+              "label": "",
+              "dot": true
+            },
+            {
+              "id": "RightEdge",
+              "x": 4,
+              "y": 0,
+              "label": "",
+              "dot": false
+            },
+            {
+              "id": "LeftEdge",
+              "x": -4,
+              "y": 0,
+              "label": "",
+              "dot": false
+            }
+          ],
+          "segments": [
+            {
+              "from": "Apex",
+              "to": "LeftEdge",
+              "label": "7 cm",
+              "labelOffset": [
+                -14,
+                -6
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "Apex",
+              "to": "RightEdge",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "O",
+              "to": "RightEdge",
+              "label": "4 cm",
+              "labelOffset": [
+                0,
+                -12
+              ],
+              "dashed": true,
+              "color": "#38bdf8",
+              "strokeWidth": 1.6
+            }
+          ],
+          "ellipses": [
+            {
+              "cx": 0,
+              "cy": 0,
+              "rx": 4,
+              "ry": 1.3,
+              "startAngle": 180,
+              "endAngle": 360,
+              "color": "#f8fafc",
+              "strokeWidth": 1.8
+            },
+            {
+              "cx": 0,
+              "cy": 0,
+              "rx": 4,
+              "ry": 1.3,
+              "startAngle": 0,
+              "endAngle": 180,
+              "dashed": true,
+              "color": "#64748b",
+              "strokeWidth": 1.5
+            }
+          ],
+          "circles": [
+            {
+              "cx": 0,
+              "cy": 0,
+              "r": 4,
+              "startAngle": 180,
+              "endAngle": 360,
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            }
+          ]
         }
       }
     ]
@@ -1449,6 +1842,7 @@
     "question_number": 16,
     "question_text": "At 2:35 pm Fari sees an airplane directly overhead. At 2:38 pm he estimates that the angle of elevation to the plane is $15^\\circ$.\nThe plane is travelling in a straight line at $110\\text{ m s}^{-1}$. Calculate:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1519,6 +1913,7 @@
     "question_number": 17,
     "question_text": "A helicopter lands $5\\text{ km}$ east and $7\\text{ km}$ south of its starting point.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1821,6 +2216,7 @@
     "question_number": 20,
     "question_text": "Find the area of:",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1845,6 +2241,82 @@
             "Substitute into the formula: $\\text{Area} = \\frac{1}{2}(2)(3)\\sin(82^{\\circ}) = 3\\sin(82^{\\circ}) \\approx 2.97\\text{ m}^2$."
           ],
           "common_pitfalls": "Calculator in radian mode instead of degree mode."
+        },
+        "diagramSpec": {
+          "title": "Triangle ABC",
+          "caption": "Diagram not to scale",
+          "points": [
+            {
+              "id": "A",
+              "x": 0,
+              "y": 0,
+              "label": "A",
+              "labelOffset": [
+                -12,
+                12
+              ]
+            },
+            {
+              "id": "B",
+              "x": 3,
+              "y": 0,
+              "label": "B",
+              "labelOffset": [
+                10,
+                12
+              ]
+            },
+            {
+              "id": "C",
+              "x": 0.2783,
+              "y": 1.9805,
+              "label": "C",
+              "labelOffset": [
+                0,
+                -14
+              ]
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "3 m",
+              "labelOffset": [
+                0,
+                14
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "label": "2 m",
+              "labelOffset": [
+                -18,
+                0
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "B",
+              "to": "C",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "A",
+              "from": "B",
+              "to": "C",
+              "label": "82°",
+              "radius": 0.55,
+              "color": "#818cf8"
+            }
+          ]
         }
       },
       {
@@ -1874,6 +2346,90 @@
             "Apply the area formula: $\\text{Area} = \\frac{1}{2}(7)(5)\\sin 79^{\\circ} \\approx 17.2\\text{ cm}^2$."
           ],
           "common_pitfalls": "Using one of the given non-included angles ($62^{\\circ}$ or $39^{\\circ}$) directly in the area formula."
+        },
+        "diagramSpec": {
+          "title": "Triangle ABC",
+          "caption": "Diagram not to scale",
+          "points": [
+            {
+              "id": "A",
+              "x": -2.546,
+              "y": 4.908,
+              "label": "A",
+              "labelOffset": [
+                0,
+                -16
+              ]
+            },
+            {
+              "id": "B",
+              "x": -3.5,
+              "y": 0,
+              "label": "B",
+              "labelOffset": [
+                -14,
+                8
+              ]
+            },
+            {
+              "id": "C",
+              "x": 3.5,
+              "y": 0,
+              "label": "C",
+              "labelOffset": [
+                12,
+                8
+              ]
+            }
+          ],
+          "segments": [
+            {
+              "from": "B",
+              "to": "C",
+              "label": "7 cm",
+              "labelOffset": [
+                0,
+                14
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "A",
+              "to": "B",
+              "label": "5 cm",
+              "labelOffset": [
+                -20,
+                0
+              ],
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "color": "#f8fafc",
+              "strokeWidth": 2
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "A",
+              "from": "B",
+              "to": "C",
+              "label": "62°",
+              "radius": 0.9,
+              "color": "#818cf8"
+            },
+            {
+              "vertex": "C",
+              "from": "A",
+              "to": "B",
+              "label": "39°",
+              "radius": 0.9,
+              "color": "#818cf8"
+            }
+          ]
         }
       }
     ]
@@ -2453,6 +3009,7 @@
     "question_number": 28,
     "question_text": "In triangle ABC, $\\text{AB} = 15\\text{ cm}$, $\\text{AC} = 12\\text{ cm}$, and $\\text{A}\\widehat{\\text{B}}\\text{C}$ measures $30^\\circ$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -2795,6 +3352,7 @@
     "question_number": 33,
     "question_text": "Let $a = \\sin 20^\\circ$ and $b = \\tan 50^\\circ$. Write, in terms of $a$ and $b$, expressions for:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3179,6 +3737,7 @@
     "question_number": 37,
     "question_text": "Find $\\theta$ if $0 \\leqslant \\theta \\leqslant 2\\pi$ and:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",

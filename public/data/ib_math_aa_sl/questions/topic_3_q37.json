@@ -5,6 +5,7 @@
   "question_number": 37,
   "question_text": "Find $\\theta$ if $0 \\leqslant \\theta \\leqslant 2\\pi$ and:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

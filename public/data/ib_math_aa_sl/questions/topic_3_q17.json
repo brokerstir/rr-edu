@@ -5,6 +5,7 @@
   "question_number": 17,
   "question_text": "A helicopter lands $5\\text{ km}$ east and $7\\text{ km}$ south of its starting point.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

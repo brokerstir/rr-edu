@@ -15,8 +15,9 @@ export default function GeometryDiagram({ spec }) {
   const rightAnglesList = spec.rightAngles || [];
   const anglesList = spec.angles || [];
   const circlesList = spec.circles || [];
+  const ellipsesList = spec.ellipses || spec.ellipticalArcs || [];
 
-  if (pointsList.length === 0 && circlesList.length === 0) return null;
+  if (pointsList.length === 0 && circlesList.length === 0 && ellipsesList.length === 0) return null;
 
   // 1. Build lookup dictionary for points by ID
   const pointMap = {};
@@ -45,6 +46,17 @@ export default function GeometryDiagram({ spec }) {
     if (cx + r > maxX) maxX = cx + r;
     if (cy - r < minY) minY = cy - r;
     if (cy + r > maxY) maxY = cy + r;
+  });
+
+  ellipsesList.forEach((el) => {
+    const cx = Number(el.cx || 0);
+    const cy = Number(el.cy || 0);
+    const rx = Number(el.rx || 0);
+    const ry = Number(el.ry || 0);
+    if (cx - rx < minX) minX = cx - rx;
+    if (cx + rx > maxX) maxX = cx + rx;
+    if (cy - ry < minY) minY = cy - ry;
+    if (cy + ry > maxY) maxY = cy + ry;
   });
 
   if (!isFinite(minX)) {
@@ -150,6 +162,55 @@ export default function GeometryDiagram({ spec }) {
                 stroke={strokeColor}
                 strokeWidth={c.strokeWidth || 1.8}
                 strokeDasharray={c.dashed ? '4 4' : undefined}
+              />
+            );
+          })}
+
+          {/* Ellipses & Elliptical Arcs for 3D curved surfaces */}
+          {ellipsesList.map((el, idx) => {
+            const scx = toSvgX(el.cx || 0);
+            const scy = toSvgY(el.cy || 0);
+            const srx = (el.rx || 1) * scale;
+            const sry = (el.ry || 1) * scale;
+            const strokeColor = el.color || '#94a3b8';
+
+            if (el.startAngle !== undefined && el.endAngle !== undefined) {
+              // Convert angles (in degrees, math convention CCW from +x axis)
+              const startRad = (el.startAngle * Math.PI) / 180;
+              const endRad = (el.endAngle * Math.PI) / 180;
+
+              const x1 = scx + srx * Math.cos(startRad);
+              const y1 = scy - sry * Math.sin(startRad);
+              const x2 = scx + srx * Math.cos(endRad);
+              const y2 = scy - sry * Math.sin(endRad);
+
+              let angleDiff = el.endAngle - el.startAngle;
+              while (angleDiff < 0) angleDiff += 360;
+              const largeArcFlag = angleDiff > 180 ? 1 : 0;
+
+              return (
+                <path
+                  key={`ellipse-arc-${idx}`}
+                  d={`M ${x1} ${y1} A ${srx} ${sry} 0 ${largeArcFlag} 0 ${x2} ${y2}`}
+                  fill={el.fill || 'none'}
+                  stroke={strokeColor}
+                  strokeWidth={el.strokeWidth || 1.8}
+                  strokeDasharray={el.dashed ? '4 4' : undefined}
+                />
+              );
+            }
+
+            return (
+              <ellipse
+                key={`ellipse-${idx}`}
+                cx={scx}
+                cy={scy}
+                rx={srx}
+                ry={sry}
+                fill={el.fill || 'none'}
+                stroke={strokeColor}
+                strokeWidth={el.strokeWidth || 1.8}
+                strokeDasharray={el.dashed ? '4 4' : undefined}
               />
             );
           })}

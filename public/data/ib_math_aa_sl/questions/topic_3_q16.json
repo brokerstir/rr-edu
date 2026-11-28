@@ -5,6 +5,7 @@
   "question_number": 16,
   "question_text": "At 2:35 pm Fari sees an airplane directly overhead. At 2:38 pm he estimates that the angle of elevation to the plane is $15^\\circ$.\nThe plane is travelling in a straight line at $110\\text{ m s}^{-1}$. Calculate:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
