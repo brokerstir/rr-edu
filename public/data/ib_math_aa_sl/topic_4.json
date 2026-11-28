@@ -60,7 +60,7 @@
       {
         "subpart": "a i",
         "stem": "What are the advantages of surveying 50 students?",
-        "final_answer": "$A survey of 50 students is manageable in time and sufficiently representative of the student body.$",
+        "final_answer": "A survey of 50 students is manageable in time and sufficiently representative of the student body.",
         "mark_breakdown": [
           {
             "code": "R1",
