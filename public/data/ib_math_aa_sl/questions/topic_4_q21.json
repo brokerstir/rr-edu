@@ -55,7 +55,7 @@
     {
       "subpart": "c i",
       "stem": "It was found that the outlier was a recording error, and was removed.\nDescribe the correlation between camera A's scores and camera B's scores.",
-      "final_answer": "$Strong, positive, linear correlation$",
+      "final_answer": "Strong, positive, linear correlation",
       "mark_breakdown": [
         {
           "code": "A1",
@@ -75,7 +75,7 @@
     {
       "subpart": "c ii",
       "stem": "Does an increase in camera A's scores cause an increase in camera B's scores? Explain your answer.",
-      "final_answer": "$No, correlation does not imply causation.$",
+      "final_answer": "No, correlation does not imply causation.",
       "mark_breakdown": [
         {
           "code": "R1",

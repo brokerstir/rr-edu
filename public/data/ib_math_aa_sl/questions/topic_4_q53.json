@@ -5,6 +5,7 @@
   "question_number": 53,
   "question_text": "In a game, a player rolls a biased four-sided die. The probability of obtaining each possible score is shown in the table.\n\n$$\\begin{array}{|l|c|c|c|c|} \\hline \\text{Score} & 1 & 2 & 3 & 4 \\\\ \\hline \\text{Probability} & \\frac{1}{12} & k & \\frac{1}{4} & \\frac{1}{3} \\\\ \\hline \\end{array}$$",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

@@ -4,6 +4,7 @@ import OptionalWorkInput from './OptionalWorkInput';
 import SolutionDrawers from './SolutionDrawers';
 import AnswerGraph from './AnswerGraph';
 import GeometryDiagram from './GeometryDiagram';
+import StatsDiagram from './StatsDiagram';
 
 export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = false, onSubpartResult }) {
   const [userInput, setUserInput] = useState('');
@@ -26,6 +27,13 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
       {sp.diagramSpec && (
         <div className="my-3">
           <GeometryDiagram spec={sp.diagramSpec} />
+        </div>
+      )}
+
+      {/* Subpart Stats Diagram */}
+      {sp.statsSpec && (
+        <div className="my-3">
+          <StatsDiagram spec={sp.statsSpec} />
         </div>
       )}
 
@@ -88,6 +96,13 @@ export default function SubpartCard({ sp, subKey, resolveDiagramUrl, isAdmin = f
           {sp.answerDiagramSpec && (
             <div className="pt-2">
               <GeometryDiagram spec={sp.answerDiagramSpec} />
+            </div>
+          )}
+
+          {/* Revealed Answer Stats Diagram if present */}
+          {sp.answerStatsSpec && (
+            <div className="pt-2">
+              <StatsDiagram spec={sp.answerStatsSpec} />
             </div>
           )}
 

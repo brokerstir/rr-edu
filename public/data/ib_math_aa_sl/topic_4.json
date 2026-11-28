@@ -10,7 +10,7 @@
       {
         "subpart": "a",
         "stem": "coverage error",
-        "final_answer": "$Coverage error$",
+        "final_answer": "Coverage error",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -30,7 +30,7 @@
       {
         "subpart": "b",
         "stem": "measurement error.",
-        "final_answer": "$Measurement error$",
+        "final_answer": "Measurement error",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -56,11 +56,12 @@
     "question_number": 2,
     "question_text": "The students at Hoylebury Middle School are to be surveyed on their attitudes on wearing school uniform. The numbers of students in each year level are shown.\n\n$$\\begin{array}{|c|c|c|}\n\\hline\n& \\text{Boys} & \\text{Girls} \\\\\n\\hline\n\\text{Year 8} & 135 & 140 \\\\\n\\hline\n\\text{Year 9} & 130 & 145 \\\\\n\\hline\n\\text{Year 10} & 125 & 130 \\\\\n\\hline\n\\end{array}$$",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a i",
         "stem": "What are the advantages of surveying 50 students?",
-        "final_answer": "$A survey of 50 students is manageable in time and sufficiently representative of the student body.$",
+        "final_answer": "A survey of 50 students is manageable in time and sufficiently representative of the student body.",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -80,7 +81,7 @@
       {
         "subpart": "a ii",
         "stem": "What are the disadvantages of surveying all students?",
-        "final_answer": "$Surveying all students is time-consuming and risks non-response error due to absences.$",
+        "final_answer": "Surveying all students is time-consuming and risks non-response error due to absences.",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -152,7 +153,7 @@
       {
         "subpart": "c",
         "stem": "Explain why a stratified sample is better than a random sample in this case.",
-        "final_answer": "$A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.$",
+        "final_answer": "A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -182,7 +183,7 @@
       {
         "subpart": "a",
         "stem": "Explain why this is a convenience sample.",
-        "final_answer": "$Convenience sampling$",
+        "final_answer": "Convenience sampling",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -202,7 +203,7 @@
       {
         "subpart": "b",
         "stem": "In what ways will Marie's sample be biased?",
-        "final_answer": "$Biased and not representative$",
+        "final_answer": "Biased and not representative",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -222,7 +223,7 @@
       {
         "subpart": "c",
         "stem": "Suggest a more appropriate sampling method that Marie should use.",
-        "final_answer": "$Stratified sampling by department or floor number$",
+        "final_answer": "Stratified sampling by department or floor number",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -252,7 +253,7 @@
       {
         "subpart": "a",
         "stem": "Identify the sampling method used. Explain your answer.",
-        "final_answer": "$Systematic sampling$",
+        "final_answer": "Systematic sampling",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -326,11 +327,12 @@
     "question_number": 5,
     "question_text": "Classify each variable as categorical, discrete, or continuous:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
         "stem": "The number of houses on a particular street.",
-        "final_answer": "$Discrete variable$",
+        "final_answer": "Discrete variable",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -350,7 +352,7 @@
       {
         "subpart": "b",
         "stem": "The number of hours spent travelling on an airplane.",
-        "final_answer": "$Continuous variable$",
+        "final_answer": "Continuous variable",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -370,7 +372,7 @@
       {
         "subpart": "c",
         "stem": "The brand of laptop someone uses.",
-        "final_answer": "$Categorical variable$",
+        "final_answer": "Categorical variable",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -396,6 +398,7 @@
     "question_number": 6,
     "question_text": "A random sample of people were asked \"How many devices have you used to browse the internet in the last month?\". The results are displayed in the column graph.",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -469,7 +472,7 @@
       {
         "subpart": "d",
         "stem": "Describe the distribution of the data.",
-        "final_answer": "$Positively skewed with no outliers$",
+        "final_answer": "Positively skewed with no outliers",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -486,7 +489,48 @@
           "common_pitfalls": "Confusing positive skew (tail on the right) with negative skew (tail on the left)."
         }
       }
-    ]
+    ],
+    "statsSpec": {
+      "chartType": "bar",
+      "xAxisLabel": "Number of devices",
+      "yAxisLabel": "Number of people",
+      "yDomain": [
+        0,
+        24
+      ],
+      "yStep": 2,
+      "showValues": false,
+      "bars": [
+        {
+          "label": "0",
+          "value": 2
+        },
+        {
+          "label": "1",
+          "value": 14
+        },
+        {
+          "label": "2",
+          "value": 22
+        },
+        {
+          "label": "3",
+          "value": 12
+        },
+        {
+          "label": "4",
+          "value": 3
+        },
+        {
+          "label": "5",
+          "value": 3
+        },
+        {
+          "label": "6",
+          "value": 1
+        }
+      ]
+    }
   },
   {
     "id": "topic_4_q7",
@@ -580,7 +624,7 @@
       {
         "subpart": "a i",
         "stem": "Find the mean number of visitors for each exhibit.",
-        "final_answer": "$Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$$",
+        "final_answer": "Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$",
         "mark_breakdown": [
           {
             "code": "M1",
@@ -612,7 +656,7 @@
       {
         "subpart": "a ii",
         "stem": "Find the median number of visitors for each exhibit.",
-        "final_answer": "$Exhibit A: $53\\text{ visitors}$, Exhibit B: $56\\text{ visitors}$$",
+        "final_answer": "Exhibit A: $53\\text{ visitors}$, Exhibit B: $56\\text{ visitors}$",
         "mark_breakdown": [
           {
             "code": "M1",
@@ -641,7 +685,7 @@
       {
         "subpart": "b",
         "stem": "Which exhibit was more popular? Explain your answer.",
-        "final_answer": "$Exhibit B$",
+        "final_answer": "Exhibit B",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -830,7 +874,7 @@
       {
         "subpart": "c ii",
         "stem": "Which measure of centre is most affected if the outlier is removed?",
-        "final_answer": "$The mean$",
+        "final_answer": "The mean",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -861,7 +905,7 @@
       {
         "subpart": "a",
         "stem": "Add a column to the table showing the cumulative frequency values.",
-        "final_answer": "$Cumulative frequencies: $78, 195, 264, 282, 284$$",
+        "final_answer": "Cumulative frequencies: $78, 195, 264, 282, 284$",
         "mark_breakdown": [
           {
             "code": "M1",
@@ -1456,6 +1500,7 @@
     "question_number": 17,
     "question_text": "These parallel box plots show the weights of particular species of fungi collected from 3 different sites in a forest.",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -1562,7 +1607,46 @@
           "common_pitfalls": "Comparing absolute numbers rather than proportions."
         }
       }
-    ]
+    ],
+    "statsSpec": {
+      "chartType": "boxplot",
+      "orientation": "vertical",
+      "axisLabel": "Weight (grams)",
+      "domain": [
+        0,
+        80
+      ],
+      "step": 10,
+      "plots": [
+        {
+          "label": "Site 1",
+          "min": 15,
+          "q1": 30,
+          "median": 50,
+          "q3": 60,
+          "max": 70,
+          "color": "#818cf8"
+        },
+        {
+          "label": "Site 2",
+          "min": 20,
+          "q1": 25,
+          "median": 30,
+          "q3": 35,
+          "max": 45,
+          "color": "#34d399"
+        },
+        {
+          "label": "Site 3",
+          "min": 5,
+          "q1": 15,
+          "median": 25,
+          "q3": 35,
+          "max": 75,
+          "color": "#fbbf24"
+        }
+      ]
+    }
   },
   {
     "id": "topic_4_q18",
@@ -1855,7 +1939,7 @@
       {
         "subpart": "c i",
         "stem": "It was found that the outlier was a recording error, and was removed.\nDescribe the correlation between camera A's scores and camera B's scores.",
-        "final_answer": "$Strong, positive, linear correlation$",
+        "final_answer": "Strong, positive, linear correlation",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -1875,7 +1959,7 @@
       {
         "subpart": "c ii",
         "stem": "Does an increase in camera A's scores cause an increase in camera B's scores? Explain your answer.",
-        "final_answer": "$No, correlation does not imply causation.$",
+        "final_answer": "No, correlation does not imply causation.",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -1905,7 +1989,7 @@
       {
         "subpart": "a",
         "stem": "Plot the data on a scatter diagram.",
-        "final_answer": "$Scatter plot plotted$",
+        "final_answer": "Scatter plot plotted",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -1954,7 +2038,7 @@
       {
         "subpart": "c",
         "stem": "Use your results to comment on the statement: \"Those who do well in languages also do well in mathematics.\"",
-        "final_answer": "$Moderately reasonable$",
+        "final_answer": "Moderately reasonable",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -1984,7 +2068,7 @@
       {
         "subpart": "a",
         "stem": "Describe the relationship between the age and annual income for these individuals.",
-        "final_answer": "$Strong, positive correlation$",
+        "final_answer": "Strong, positive correlation",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -2024,7 +2108,7 @@
       {
         "subpart": "c",
         "stem": "Draw a line of best fit by eye on the graph.",
-        "final_answer": "$Mean point $(27, 40)$ plotted with line of best fit$",
+        "final_answer": "Mean point $(27, 40)$ plotted with line of best fit",
         "mark_breakdown": [
           {
             "code": "M1",
@@ -2048,7 +2132,7 @@
       {
         "subpart": "d",
         "stem": "Estimate the annual income for someone who is 30 years old. Comment on the reliability of your estimate.",
-        "final_answer": "$Approximately $\\$45\\,000$$",
+        "final_answer": "Approximately $\\$45\\,000$",
         "mark_breakdown": [
           {
             "code": "M1",
@@ -2085,7 +2169,7 @@
       {
         "subpart": "a",
         "stem": "Draw a scatter diagram for this data.",
-        "final_answer": "$Scatter plot plotted$",
+        "final_answer": "Scatter plot plotted",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -2130,7 +2214,7 @@
       {
         "subpart": "c",
         "stem": "Describe the relationship which appears to exist between the volume and mass of the samples of silver.",
-        "final_answer": "$Strong, positive correlation$",
+        "final_answer": "Strong, positive correlation",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -2150,7 +2234,7 @@
       {
         "subpart": "d",
         "stem": "Do you agree with the jeweller that there is a fake sample?",
-        "final_answer": "$Yes, sample D $(7, 160)$ is an outlier$",
+        "final_answer": "Yes, sample D (7, 160) is an outlier",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -2280,7 +2364,7 @@
       {
         "subpart": "c",
         "stem": "Do you think there is a causal relationship between the variables? Explain your answer.",
-        "final_answer": "$Yes, this is a causal relationship$",
+        "final_answer": "Yes, this is a causal relationship",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -2384,7 +2468,7 @@
       {
         "subpart": "b",
         "stem": "Explain the significance of the size and sign of $r$.",
-        "final_answer": "$Very strong, positive correlation$",
+        "final_answer": "Very strong, positive correlation",
         "mark_breakdown": [
           {
             "code": "A1",
@@ -2468,7 +2552,7 @@
       {
         "subpart": "a",
         "stem": "Which regression line should be used to model the relationship between the variables? Explain your answer.",
-        "final_answer": "$Regression line of $x$ against $y$$",
+        "final_answer": "Regression line of $x$ against $y$",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -2518,7 +2602,7 @@
       {
         "subpart": "c",
         "stem": "Comment on the reliability of your estimate.",
-        "final_answer": "$Unreliable (extrapolation)$",
+        "final_answer": "Unreliable (extrapolation)",
         "mark_breakdown": [
           {
             "code": "R1",
@@ -2949,6 +3033,7 @@
     "question_number": 31,
     "question_text": "Suppose $P(A) = 0.37$, $P(B) = 0.41$, and $P(A \\cup B) = 0.78$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3262,6 +3347,7 @@
     "question_number": 35,
     "question_text": "Events $A$ and $B$ are independent. Given that $P(A \\cup B) = 0.63$ and $P(B) = 0.36$, find $P(A)$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -3302,6 +3388,7 @@
     "question_number": 36,
     "question_text": "A box of chocolates contains 6 dark brown, 4 light brown, and 2 white truffles. Two truffles are selected from the box without replacement.\nFind the probability of selecting:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3644,6 +3731,7 @@
     "question_number": 41,
     "question_text": "Solve the following as stated below:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4029,6 +4117,7 @@
     "question_number": 46,
     "question_text": "Josephine's number of safe hits at each softball match has the probability distribution alongside.\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline P(x) & 0.05 & k & 0.5 & 0.3 \\\\\\hline\\end{array}$$\n\nFind:",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -4545,6 +4634,7 @@
     "question_number": 53,
     "question_text": "In a game, a player rolls a biased four-sided die. The probability of obtaining each possible score is shown in the table.\n\n$$\\begin{array}{|l|c|c|c|c|} \\hline \\text{Score} & 1 & 2 & 3 & 4 \\\\ \\hline \\text{Probability} & \\frac{1}{12} & k & \\frac{1}{4} & \\frac{1}{3} \\\\ \\hline \\end{array}$$",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -5116,7 +5206,7 @@
       {
         "subpart": "d ii",
         "stem": "A technician adjusts the machine so the standard deviation is now 2.5 mL. What effect does this have on the operator's guarantee?",
-        "final_answer": "$No longer valid$",
+        "final_answer": "No longer valid",
         "mark_breakdown": [
           {
             "code": "M1",

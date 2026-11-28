@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import MathText from './components/MathText';
 import SubpartCard from './components/SubpartCard';
 import GeometryDiagram from './components/GeometryDiagram';
+import StatsDiagram from './components/StatsDiagram';
 import SessionLengthModal from './components/SessionLengthModal';
 import AuthModal from './components/AuthModal';
 import ReportIssueModal from './components/ReportIssueModal';
@@ -697,6 +698,13 @@ function MainApp() {
           {currentQ?.diagramSpec && (
             <div className="my-4">
               <GeometryDiagram spec={currentQ.diagramSpec} />
+            </div>
+          )}
+
+          {/* Top-Level Question Statistics Diagram */}
+          {currentQ?.statsSpec && (
+            <div className="my-4">
+              <StatsDiagram spec={currentQ.statsSpec} />
             </div>
           )}
 

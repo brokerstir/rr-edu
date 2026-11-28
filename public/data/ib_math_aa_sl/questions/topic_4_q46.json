@@ -5,6 +5,7 @@
   "question_number": 46,
   "question_text": "Josephine's number of safe hits at each softball match has the probability distribution alongside.\n\n$$\\begin{array}{|c|c|c|c|c|}\\hline x & 0 & 1 & 2 & 3 \\\\\\hline P(x) & 0.05 & k & 0.5 & 0.3 \\\\\\hline\\end{array}$$\n\nFind:",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

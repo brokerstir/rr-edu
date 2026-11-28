@@ -9,7 +9,7 @@
     {
       "subpart": "a i",
       "stem": "Find the mean number of visitors for each exhibit.",
-      "final_answer": "$Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$$",
+      "final_answer": "Exhibit A: $54.8\\text{ visitors}$, Exhibit B: $57.0\\text{ visitors}$",
       "mark_breakdown": [
         {
           "code": "M1",
@@ -41,7 +41,7 @@
     {
       "subpart": "a ii",
       "stem": "Find the median number of visitors for each exhibit.",
-      "final_answer": "$Exhibit A: $53\\text{ visitors}$, Exhibit B: $56\\text{ visitors}$$",
+      "final_answer": "Exhibit A: $53\\text{ visitors}$, Exhibit B: $56\\text{ visitors}$",
       "mark_breakdown": [
         {
           "code": "M1",
@@ -70,7 +70,7 @@
     {
       "subpart": "b",
       "stem": "Which exhibit was more popular? Explain your answer.",
-      "final_answer": "$Exhibit B$",
+      "final_answer": "Exhibit B",
       "mark_breakdown": [
         {
           "code": "R1",

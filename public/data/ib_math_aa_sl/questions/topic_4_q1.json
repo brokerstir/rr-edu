@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "coverage error",
-      "final_answer": "$Coverage error$",
+      "final_answer": "Coverage error",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -29,7 +29,7 @@
     {
       "subpart": "b",
       "stem": "measurement error.",
-      "final_answer": "$Measurement error$",
+      "final_answer": "Measurement error",
       "mark_breakdown": [
         {
           "code": "R1",

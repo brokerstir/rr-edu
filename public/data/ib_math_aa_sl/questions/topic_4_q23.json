@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "Describe the relationship between the age and annual income for these individuals.",
-      "final_answer": "$Strong, positive correlation$",
+      "final_answer": "Strong, positive correlation",
       "mark_breakdown": [
         {
           "code": "A1",
@@ -49,7 +49,7 @@
     {
       "subpart": "c",
       "stem": "Draw a line of best fit by eye on the graph.",
-      "final_answer": "$Mean point $(27, 40)$ plotted with line of best fit$",
+      "final_answer": "Mean point $(27, 40)$ plotted with line of best fit",
       "mark_breakdown": [
         {
           "code": "M1",
@@ -73,7 +73,7 @@
     {
       "subpart": "d",
       "stem": "Estimate the annual income for someone who is 30 years old. Comment on the reliability of your estimate.",
-      "final_answer": "$Approximately $\\$45\\,000$$",
+      "final_answer": "Approximately $\\$45\\,000$",
       "mark_breakdown": [
         {
           "code": "M1",

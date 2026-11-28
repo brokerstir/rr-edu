@@ -5,6 +5,7 @@
   "question_number": 36,
   "question_text": "A box of chocolates contains 6 dark brown, 4 light brown, and 2 white truffles. Two truffles are selected from the box without replacement.\nFind the probability of selecting:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

@@ -34,7 +34,7 @@
     {
       "subpart": "b",
       "stem": "Explain the significance of the size and sign of $r$.",
-      "final_answer": "$Very strong, positive correlation$",
+      "final_answer": "Very strong, positive correlation",
       "mark_breakdown": [
         {
           "code": "A1",

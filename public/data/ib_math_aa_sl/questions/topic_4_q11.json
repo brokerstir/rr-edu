@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "Add a column to the table showing the cumulative frequency values.",
-      "final_answer": "$Cumulative frequencies: $78, 195, 264, 282, 284$$",
+      "final_answer": "Cumulative frequencies: $78, 195, 264, 282, 284$",
       "mark_breakdown": [
         {
           "code": "M1",

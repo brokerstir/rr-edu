@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "Which regression line should be used to model the relationship between the variables? Explain your answer.",
-      "final_answer": "$Regression line of $x$ against $y$$",
+      "final_answer": "Regression line of $x$ against $y$",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -59,7 +59,7 @@
     {
       "subpart": "c",
       "stem": "Comment on the reliability of your estimate.",
-      "final_answer": "$Unreliable (extrapolation)$",
+      "final_answer": "Unreliable (extrapolation)",
       "mark_breakdown": [
         {
           "code": "R1",

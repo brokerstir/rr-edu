@@ -5,11 +5,12 @@
   "question_number": 2,
   "question_text": "The students at Hoylebury Middle School are to be surveyed on their attitudes on wearing school uniform. The numbers of students in each year level are shown.\n\n$$\\begin{array}{|c|c|c|}\n\\hline\n& \\text{Boys} & \\text{Girls} \\\\\n\\hline\n\\text{Year 8} & 135 & 140 \\\\\n\\hline\n\\text{Year 9} & 130 & 145 \\\\\n\\hline\n\\text{Year 10} & 125 & 130 \\\\\n\\hline\n\\end{array}$$",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a i",
       "stem": "What are the advantages of surveying 50 students?",
-      "final_answer": "$A survey of 50 students is manageable in time and sufficiently representative of the student body.$",
+      "final_answer": "A survey of 50 students is manageable in time and sufficiently representative of the student body.",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -29,7 +30,7 @@
     {
       "subpart": "a ii",
       "stem": "What are the disadvantages of surveying all students?",
-      "final_answer": "$Surveying all students is time-consuming and risks non-response error due to absences.$",
+      "final_answer": "Surveying all students is time-consuming and risks non-response error due to absences.",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -101,7 +102,7 @@
     {
       "subpart": "c",
       "stem": "Explain why a stratified sample is better than a random sample in this case.",
-      "final_answer": "$A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.$",
+      "final_answer": "A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.",
       "mark_breakdown": [
         {
           "code": "R1",

@@ -5,6 +5,7 @@
   "question_number": 35,
   "question_text": "Events $A$ and $B$ are independent. Given that $P(A \\cup B) = 0.63$ and $P(B) = 0.36$, find $P(A)$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "",
