@@ -78,7 +78,7 @@
     {
       "subpart": "d",
       "stem": "Describe the distribution of the data.",
-      "final_answer": "$Positively skewed with no outliers$",
+      "final_answer": "Positively skewed with no outliers",
       "mark_breakdown": [
         {
           "code": "A1",

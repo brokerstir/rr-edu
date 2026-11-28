@@ -58,7 +58,7 @@
     {
       "subpart": "c",
       "stem": "Do you think there is a causal relationship between the variables? Explain your answer.",
-      "final_answer": "$Yes, this is a causal relationship$",
+      "final_answer": "Yes, this is a causal relationship",
       "mark_breakdown": [
         {
           "code": "R1",

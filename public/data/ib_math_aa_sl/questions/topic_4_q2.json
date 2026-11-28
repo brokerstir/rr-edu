@@ -29,7 +29,7 @@
     {
       "subpart": "a ii",
       "stem": "What are the disadvantages of surveying all students?",
-      "final_answer": "$Surveying all students is time-consuming and risks non-response error due to absences.$",
+      "final_answer": "Surveying all students is time-consuming and risks non-response error due to absences.",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -101,7 +101,7 @@
     {
       "subpart": "c",
       "stem": "Explain why a stratified sample is better than a random sample in this case.",
-      "final_answer": "$A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.$",
+      "final_answer": "A stratified sample guarantees fair representation of each year level and gender, unlike a random sample.",
       "mark_breakdown": [
         {
           "code": "R1",

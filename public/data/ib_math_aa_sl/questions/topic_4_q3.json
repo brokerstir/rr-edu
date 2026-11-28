@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "Explain why this is a convenience sample.",
-      "final_answer": "$Convenience sampling$",
+      "final_answer": "Convenience sampling",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -29,7 +29,7 @@
     {
       "subpart": "b",
       "stem": "In what ways will Marie's sample be biased?",
-      "final_answer": "$Biased and not representative$",
+      "final_answer": "Biased and not representative",
       "mark_breakdown": [
         {
           "code": "R1",
@@ -49,7 +49,7 @@
     {
       "subpart": "c",
       "stem": "Suggest a more appropriate sampling method that Marie should use.",
-      "final_answer": "$Stratified sampling by department or floor number$",
+      "final_answer": "Stratified sampling by department or floor number",
       "mark_breakdown": [
         {
           "code": "R1",

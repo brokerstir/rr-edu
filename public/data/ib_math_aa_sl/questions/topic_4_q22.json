@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "Plot the data on a scatter diagram.",
-      "final_answer": "$Scatter plot plotted$",
+      "final_answer": "Scatter plot plotted",
       "mark_breakdown": [
         {
           "code": "A1",
@@ -58,7 +58,7 @@
     {
       "subpart": "c",
       "stem": "Use your results to comment on the statement: \"Those who do well in languages also do well in mathematics.\"",
-      "final_answer": "$Moderately reasonable$",
+      "final_answer": "Moderately reasonable",
       "mark_breakdown": [
         {
           "code": "R1",

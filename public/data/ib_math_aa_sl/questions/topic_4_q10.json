@@ -98,7 +98,7 @@
     {
       "subpart": "c ii",
       "stem": "Which measure of centre is most affected if the outlier is removed?",
-      "final_answer": "$The mean$",
+      "final_answer": "The mean",
       "mark_breakdown": [
         {
           "code": "R1",

@@ -9,7 +9,7 @@
     {
       "subpart": "a",
       "stem": "The number of houses on a particular street.",
-      "final_answer": "$Discrete variable$",
+      "final_answer": "Discrete variable",
       "mark_breakdown": [
         {
           "code": "A1",
@@ -29,7 +29,7 @@
     {
       "subpart": "b",
       "stem": "The number of hours spent travelling on an airplane.",
-      "final_answer": "$Continuous variable$",
+      "final_answer": "Continuous variable",
       "mark_breakdown": [
         {
           "code": "A1",
@@ -49,7 +49,7 @@
     {
       "subpart": "c",
       "stem": "The brand of laptop someone uses.",
-      "final_answer": "$Categorical variable$",
+      "final_answer": "Categorical variable",
       "mark_breakdown": [
         {
           "code": "A1",

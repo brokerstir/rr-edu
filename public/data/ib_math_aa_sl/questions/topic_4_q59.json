@@ -113,7 +113,7 @@
     {
       "subpart": "d ii",
       "stem": "A technician adjusts the machine so the standard deviation is now 2.5 mL. What effect does this have on the operator's guarantee?",
-      "final_answer": "$No longer valid$",
+      "final_answer": "No longer valid",
       "mark_breakdown": [
         {
           "code": "M1",
