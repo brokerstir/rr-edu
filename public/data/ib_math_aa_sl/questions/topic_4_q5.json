@@ -5,6 +5,7 @@
   "question_number": 5,
   "question_text": "Classify each variable as categorical, discrete, or continuous:",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
