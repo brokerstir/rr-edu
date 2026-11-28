@@ -3033,6 +3033,7 @@
     "question_number": 31,
     "question_text": "Suppose $P(A) = 0.37$, $P(B) = 0.41$, and $P(A \\cup B) = 0.78$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3346,6 +3347,7 @@
     "question_number": 35,
     "question_text": "Events $A$ and $B$ are independent. Given that $P(A \\cup B) = 0.63$ and $P(B) = 0.36$, find $P(A)$.",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "",
@@ -3386,6 +3388,7 @@
     "question_number": 36,
     "question_text": "A box of chocolates contains 6 dark brown, 4 light brown, and 2 white truffles. Two truffles are selected from the box without replacement.\nFind the probability of selecting:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
@@ -3728,6 +3731,7 @@
     "question_number": 41,
     "question_text": "Solve the following as stated below:",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",

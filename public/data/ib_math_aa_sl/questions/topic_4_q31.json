@@ -5,6 +5,7 @@
   "question_number": 31,
   "question_text": "Suppose $P(A) = 0.37$, $P(B) = 0.41$, and $P(A \\cup B) = 0.78$.",
   "has_diagram": false,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",
