@@ -5,6 +5,7 @@
   "question_number": 6,
   "question_text": "A random sample of people were asked \"How many devices have you used to browse the internet in the last month?\". The results are displayed in the column graph.",
   "has_diagram": true,
+  "verified": true,
   "subparts": [
     {
       "subpart": "a",

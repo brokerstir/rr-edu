@@ -56,6 +56,7 @@
     "question_number": 2,
     "question_text": "The students at Hoylebury Middle School are to be surveyed on their attitudes on wearing school uniform. The numbers of students in each year level are shown.\n\n$$\\begin{array}{|c|c|c|}\n\\hline\n& \\text{Boys} & \\text{Girls} \\\\\n\\hline\n\\text{Year 8} & 135 & 140 \\\\\n\\hline\n\\text{Year 9} & 130 & 145 \\\\\n\\hline\n\\text{Year 10} & 125 & 130 \\\\\n\\hline\n\\end{array}$$",
     "has_diagram": false,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a i",
@@ -397,6 +398,7 @@
     "question_number": 6,
     "question_text": "A random sample of people were asked \"How many devices have you used to browse the internet in the last month?\". The results are displayed in the column graph.",
     "has_diagram": true,
+    "verified": true,
     "subparts": [
       {
         "subpart": "a",
