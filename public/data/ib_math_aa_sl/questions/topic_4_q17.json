@@ -111,5 +111,44 @@
         "common_pitfalls": "Comparing absolute numbers rather than proportions."
       }
     }
-  ]
+  ],
+  "statsSpec": {
+    "chartType": "boxplot",
+    "orientation": "vertical",
+    "axisLabel": "Weight (grams)",
+    "domain": [
+      0,
+      80
+    ],
+    "step": 10,
+    "plots": [
+      {
+        "label": "Site 1",
+        "min": 15,
+        "q1": 30,
+        "median": 50,
+        "q3": 60,
+        "max": 70,
+        "color": "#818cf8"
+      },
+      {
+        "label": "Site 2",
+        "min": 20,
+        "q1": 25,
+        "median": 30,
+        "q3": 35,
+        "max": 45,
+        "color": "#34d399"
+      },
+      {
+        "label": "Site 3",
+        "min": 5,
+        "q1": 15,
+        "median": 25,
+        "q3": 35,
+        "max": 75,
+        "color": "#fbbf24"
+      }
+    ]
+  }
 }

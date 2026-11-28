@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MathText from './MathText';
 import AnswerGraph from './AnswerGraph';
 import GeometryDiagram from './GeometryDiagram';
+import StatsDiagram from './StatsDiagram';
 
 export default function SolutionDrawers({ sp }) {
   const [showMarkscheme, setShowMarkscheme] = useState(false);
@@ -68,6 +69,11 @@ export default function SolutionDrawers({ sp }) {
           {sp.answerDiagramSpec && (
             <div className="mt-3 pt-3 border-t border-emerald-800/30">
               <GeometryDiagram spec={sp.answerDiagramSpec} />
+            </div>
+          )}
+          {sp.answerStatsSpec && (
+            <div className="mt-3 pt-3 border-t border-emerald-800/30">
+              <StatsDiagram spec={sp.answerStatsSpec} />
             </div>
           )}
         </div>
