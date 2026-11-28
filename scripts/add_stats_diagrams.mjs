@@ -26,6 +26,27 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 
 // Registry of statistical diagram specifications by question ID
 export const STATS_SPECS = {
+  // Topic 4, Question 6: Column graph of devices used to browse the internet
+  topic_4_q6: {
+    topLevel: {
+      chartType: 'bar',
+      xAxisLabel: 'Number of devices',
+      yAxisLabel: 'Number of people',
+      yDomain: [0, 24],
+      yStep: 2,
+      showValues: false,
+      bars: [
+        { label: '0', value: 2 },
+        { label: '1', value: 14 },
+        { label: '2', value: 22 },
+        { label: '3', value: 12 },
+        { label: '4', value: 3 },
+        { label: '5', value: 3 },
+        { label: '6', value: 1 },
+      ],
+    },
+  },
+
   // Topic 4, Question 17: Parallel box plots of fungus weights across 3 sites
   topic_4_q17: {
     topLevel: {

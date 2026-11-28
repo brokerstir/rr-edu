@@ -95,5 +95,46 @@
         "common_pitfalls": "Confusing positive skew (tail on the right) with negative skew (tail on the left)."
       }
     }
-  ]
+  ],
+  "statsSpec": {
+    "chartType": "bar",
+    "xAxisLabel": "Number of devices",
+    "yAxisLabel": "Number of people",
+    "yDomain": [
+      0,
+      24
+    ],
+    "yStep": 2,
+    "showValues": false,
+    "bars": [
+      {
+        "label": "0",
+        "value": 2
+      },
+      {
+        "label": "1",
+        "value": 14
+      },
+      {
+        "label": "2",
+        "value": 22
+      },
+      {
+        "label": "3",
+        "value": 12
+      },
+      {
+        "label": "4",
+        "value": 3
+      },
+      {
+        "label": "5",
+        "value": 3
+      },
+      {
+        "label": "6",
+        "value": 1
+      }
+    ]
+  }
 }
